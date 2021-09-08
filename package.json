@@ -2,7 +2,7 @@
   "name": "test-graphql",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "https://jmarroyave-compsci.github.io/portfolio-entertainment-client-web-react/app/",
   "dependencies": {
     "@apollo/client": "^3.4.10",
     "@emotion/react": "^11.4.1",
