@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio-entertainment-client-web-react/app/static/css/main.a617e044.chunk.css",
-    "main.js": "/portfolio-entertainment-client-web-react/app/static/js/main.e481a6d3.chunk.js",
-    "main.js.map": "/portfolio-entertainment-client-web-react/app/static/js/main.e481a6d3.chunk.js.map",
+    "main.js": "/portfolio-entertainment-client-web-react/app/static/js/main.33d096a0.chunk.js",
+    "main.js.map": "/portfolio-entertainment-client-web-react/app/static/js/main.33d096a0.chunk.js.map",
     "runtime-main.js": "/portfolio-entertainment-client-web-react/app/static/js/runtime-main.37e8d5bc.js",
     "runtime-main.js.map": "/portfolio-entertainment-client-web-react/app/static/js/runtime-main.37e8d5bc.js.map",
     "static/js/2.63f6b79a.chunk.js": "/portfolio-entertainment-client-web-react/app/static/js/2.63f6b79a.chunk.js",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.37e8d5bc.js",
     "static/js/2.63f6b79a.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.e481a6d3.chunk.js"
+    "static/js/main.33d096a0.chunk.js"
   ]
 }
