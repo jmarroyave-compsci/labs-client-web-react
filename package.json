@@ -2,6 +2,7 @@
   "name": "test-graphql",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "dependencies": {
     "@apollo/client": "^3.4.10",
     "@emotion/react": "^11.4.1",
@@ -22,7 +23,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public -o docs/storybook"
   },
   "eslintConfig": {
     "extends": [
