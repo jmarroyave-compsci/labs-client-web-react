@@ -23,7 +23,6 @@ module.exports = {
       {test: /\.(sa|sc|c)ss$/i, use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']},
       {test: /\.(png|jpg|gif|svg|ico)$/i, use: { loader: 'file-loader', options: {name: '[name].[ext]',outputPath: '/res/img/'}}},
       {test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,use: [{loader: 'file-loader',options: {name: '[name].[ext]',outputPath: '/res/fonts/'}}]},
-      {test: /\.html$/, loader: 'html-loader'},
     ],  
   },
   resolve: {
@@ -45,7 +44,7 @@ module.exports = {
       hash: true,
       template: './static/index.tpl.html',
       filename: 'index.html',
-      baseUrl: '/entertainment-client-web-react/app/',
+      base: '/entertainment-client-web-react/app/',
     }),
   ],
 }
