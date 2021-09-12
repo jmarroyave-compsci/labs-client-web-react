@@ -1,0 +1,13 @@
+.footer{
+    background: #333;
+    background: linear-gradient(90deg, #333 0%, rgba(0,0,0,1) 100%);
+    color: white;
+    padding: 1rem;
+
+    a:visited,
+    a:link{
+        color: white;
+        text-decoration: none;
+    }    
+}
+

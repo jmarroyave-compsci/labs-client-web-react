@@ -1,0 +1,37 @@
+section.route-section {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.drawer-title{
+	font-weight: bold;
+}
+
+.version{
+    font-size: 0.65rem;
+}
+
+.blog-page{
+}
+
+.text-link{
+    text-transform: uppercase;
+    border: 1px solid #cecece;
+    padding: 0.5rem;    
+}
+
+ .card{
+    flex: 1;
+}
+
+ .card .header span{
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+
+
+

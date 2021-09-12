@@ -1,0 +1,59 @@
+.mod-latest-courses{
+	width: 100%;
+	max-width: 400px;
+	display: inline-block;
+	text-align: left;
+
+	.course{
+		background-color: white;
+		padding: 1.5rem 1rem;	
+	    color: #333!important;	
+	    width: 100%;
+
+	    .header{
+	    	color: #888;
+	    	height: 1rem;
+	    	display: block;
+	    	width: 100%;	   
+	    	overflow: hidden; 
+
+			.rating{
+				float: right;
+				display: block;
+				margin-top: -0.75rem;
+			}
+
+			.platform{
+				display: block;
+				float: left;
+			  	font-size: 0.6em;   
+			  	line-height: 1rem;
+			  	text-transform: uppercase;
+			}	
+
+	    }
+
+		.name{
+		  font-size: 1.1em;
+		  line-height: 1.5rem;
+		  padding: 0.25rem 0;	
+		}
+
+		.from{
+		  font-size: 0.75em; 
+		  line-height: 1rem;
+		  text-transform: uppercase;
+		  text-align: justify;
+		  color: #666;
+		}	
+
+		.comments {
+			font-size: 0.8rem;
+			line-height: 1.1rem;
+			padding: 0.5rem 0.5rem;
+			font-style: italic;
+			text-align: center;
+			color: #666;
+		}
+	}
+}

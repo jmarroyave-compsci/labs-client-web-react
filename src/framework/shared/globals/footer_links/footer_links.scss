@@ -1,0 +1,17 @@
+.mod-footer{
+	color: white;
+
+	.section{
+		text-transform: lowercase;
+	}
+
+	.link{
+		padding: 0.5rem;
+	}
+}
+
+.mobile.mod-footer{
+	.link{
+		padding: 1.5rem;
+	}
+}

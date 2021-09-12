@@ -1,0 +1,89 @@
+/*!******************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/framework/shared/globals/footer_links/footer_links.scss ***!
+  \******************************************************************************************************************************************************/
+.mod-footer {
+  color: white;
+}
+.mod-footer .section {
+  text-transform: lowercase;
+}
+.mod-footer .link {
+  padding: 0.5rem;
+}
+
+.mobile.mod-footer .link {
+  padding: 1.5rem;
+}
+/*!************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/framework/shared/globals/social_networks/social_networks.scss ***!
+  \************************************************************************************************************************************************************/
+.mod-social-icons {
+  display: inline-block;
+  text-align: center;
+}
+
+.mod-social-icons a:hover {
+  text-decoration: none;
+}
+
+.mod-social-icons a i {
+  background-color: white;
+  background-position: center center;
+}
+
+.mod-social-icons.sm {
+  font-size: 16px !important;
+  padding: 0;
+}
+
+.mod-social-icons.sm a {
+  font-size: 1em !important;
+  margin-right: 0.15em;
+}
+
+.mod-social-icons.sm a:last-child {
+  margin-right: 0em;
+}
+
+.mod-social-icons.sm a span {
+  font-size: 1em !important;
+}
+
+.mod-social-icons.sm a i {
+  border: 1px solid #cecece;
+  font-size: 1em !important;
+  line-height: 24px !important;
+  border-radius: 6px;
+  height: 28px;
+  width: 28px;
+  padding: 1px 2px;
+}
+
+.mod-social-icons.lg {
+  font-size: 14px !important;
+  padding: 0;
+}
+
+.mod-social-icons.lg a {
+  font-size: 1em !important;
+  margin-right: 0.5em;
+}
+
+.mod-social-icons.lg a:last-child {
+  margin-right: 0em;
+}
+
+.mod-social-icons.sm a span {
+  font-size: 1em !important;
+}
+
+.mod-social-icons.lg a i {
+  font-size: 1em !important;
+  line-height: 32px !important;
+  border-radius: 6px;
+  height: 38px;
+  width: 38px;
+  padding-top: 2px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicmVzL2Nzcy9zcmNfcHJvamVjdF9jb21wb25lbnRzX2FwcF9pbmRleF9qcy1zcmNfZnJhbWV3b3JrX3NoYXJlZF9nbG9iYWxzX2Zvb3Rlcl9saW5rc19mb290ZXJfbGlua3Nfc2MtZDlmYjU0LmZkYjhhMDY4OTNjYTY2YmQ4NGJlLmNzcyIsIm1hcHBpbmdzIjoiOzs7QUFBQTtFQUNDO0FBQ0Q7QUFDQztFQUNDO0FBQ0Y7QUFFQztFQUNDO0FBQUY7O0FBS0M7RUFDQztBQUZGLEM7Ozs7QUNaQTtFQUNJO0VBQ0E7QUFDSjs7QUFFQTtFQUNJO0FBQ0o7O0FBRUE7RUFDSTtFQUNBO0FBQ0o7O0FBRUE7RUFDSTtFQUNBO0FBQ0o7O0FBRUE7RUFDSTtFQUNBO0FBQ0o7O0FBRUE7RUFDSTtBQUNKOztBQUVBO0VBQ0k7QUFDSjs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0FBQ0o7O0FBRUE7RUFDSTtFQUNBO0FBQ0o7O0FBRUE7RUFDSTtFQUNBO0FBQ0o7O0FBRUE7RUFDSTtBQUNKOztBQUVBO0VBQ0k7QUFDSjs7QUFFQTtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtBQUNKLEMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9yZWFjdC8uL3NyYy9mcmFtZXdvcmsvc2hhcmVkL2dsb2JhbHMvZm9vdGVyX2xpbmtzL2Zvb3Rlcl9saW5rcy5zY3NzIiwid2VicGFjazovL3JlYWN0Ly4vc3JjL2ZyYW1ld29yay9zaGFyZWQvZ2xvYmFscy9zb2NpYWxfbmV0d29ya3Mvc29jaWFsX25ldHdvcmtzLnNjc3MiXSwic291cmNlc0NvbnRlbnQiOlsiLm1vZC1mb290ZXJ7XG5cdGNvbG9yOiB3aGl0ZTtcblxuXHQuc2VjdGlvbntcblx0XHR0ZXh0LXRyYW5zZm9ybTogbG93ZXJjYXNlO1xuXHR9XG5cblx0Lmxpbmt7XG5cdFx0cGFkZGluZzogMC41cmVtO1xuXHR9XG59XG5cbi5tb2JpbGUubW9kLWZvb3Rlcntcblx0Lmxpbmt7XG5cdFx0cGFkZGluZzogMS41cmVtO1xuXHR9XG59IiwiLm1vZC1zb2NpYWwtaWNvbnN7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjsgICBcbn1cblxuLm1vZC1zb2NpYWwtaWNvbnMgYTpob3ZlcntcbiAgICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG59ICAgXG5cbi5tb2Qtc29jaWFsLWljb25zIGEgaXsgXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7IFxuICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlciBjZW50ZXI7XG59XG5cbi5tb2Qtc29jaWFsLWljb25zLnNte1xuICAgIGZvbnQtc2l6ZTogMTZweCFpbXBvcnRhbnQ7XG4gICAgcGFkZGluZzogMDsgICBcbn1cblxuLm1vZC1zb2NpYWwtaWNvbnMuc20gYXtcbiAgICBmb250LXNpemU6IDFlbSFpbXBvcnRhbnQ7IFxuICAgIG1hcmdpbi1yaWdodDogMC4xNWVtO1xufVxuXG4ubW9kLXNvY2lhbC1pY29ucy5zbSBhOmxhc3QtY2hpbGR7XG4gICAgbWFyZ2luLXJpZ2h0OiAwZW07XG59XG5cbi5tb2Qtc29jaWFsLWljb25zLnNtIGEgc3BhbntcbiAgICBmb250LXNpemU6IDFlbSFpbXBvcnRhbnQ7XG59IFxuXG4ubW9kLXNvY2lhbC1pY29ucy5zbSBhIGl7IFxuICAgIGJvcmRlcjogMXB4IHNvbGlkICNjZWNlY2U7XG4gICAgZm9udC1zaXplOiAxZW0haW1wb3J0YW50OyBcbiAgICBsaW5lLWhlaWdodDogMjRweCFpbXBvcnRhbnQ7IFxuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBoZWlnaHQ6IDI4cHg7XG4gICAgd2lkdGg6IDI4cHg7ICAgIFxuICAgIHBhZGRpbmc6IDFweCAycHg7XG59XG5cbi5tb2Qtc29jaWFsLWljb25zLmxne1xuICAgIGZvbnQtc2l6ZTogMTRweCFpbXBvcnRhbnQ7XG4gICAgcGFkZGluZzogMDsgICBcbn1cblxuLm1vZC1zb2NpYWwtaWNvbnMubGcgYXtcbiAgICBmb250LXNpemU6IDFlbSFpbXBvcnRhbnQ7IFxuICAgIG1hcmdpbi1yaWdodDogMC41ZW07XG59XG5cbi5tb2Qtc29jaWFsLWljb25zLmxnIGE6bGFzdC1jaGlsZHtcbiAgICBtYXJnaW4tcmlnaHQ6IDBlbTtcbn1cblxuLm1vZC1zb2NpYWwtaWNvbnMuc20gYSBzcGFue1xuICAgIGZvbnQtc2l6ZTogMWVtIWltcG9ydGFudDtcbn0gXG5cbi5tb2Qtc29jaWFsLWljb25zLmxnIGEgaXsgXG4gICAgZm9udC1zaXplOiAxZW0haW1wb3J0YW50OyBcbiAgICBsaW5lLWhlaWdodDogMzJweCFpbXBvcnRhbnQ7IFxuICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICBoZWlnaHQ6IDM4cHg7XG4gICAgd2lkdGg6IDM4cHg7ICAgIFxuICAgIHBhZGRpbmctdG9wOiAycHg7XG59XG5cblxuXG5cbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==*/
