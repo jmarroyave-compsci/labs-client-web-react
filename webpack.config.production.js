@@ -13,16 +13,16 @@ module.exports = {
     ],
   },
   output: {
-    filename: '[name].js',
+    filename: './scripts/[name].js',
     path: path.resolve(__dirname, 'build'),
-    publicPath: '/',
+    publicPath: '/entertainment-client-web-react/app/',
   },  
   module: {
     rules: [
       {test: /\.js$/, use: 'babel-loader', exclude: /node_modules/},
       {test: /\.(sa|sc|c)ss$/i, use: [ MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']},
-      {test: /\.(png|jpg|gif|svg|ico)$/i, use: { loader: 'file-loader', options: {name: '[name].[ext]',outputPath: '/res/img/'}}},
-      {test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,use: [{loader: 'file-loader',options: {name: '[name].[ext]',outputPath: '/res/fonts/'}}]},
+      {test: /\.(png|jpg|gif|svg|ico)$/i, use: { loader: 'file-loader', options: {name: '[name].[ext]',outputPath: 'img/'}}},
+      {test: /\.(woff(2)?|ttf|eot|otf)(\?v=\d+\.\d+\.\d+)?$/,use: [{loader: 'file-loader',options: {name: '[name].[ext]',outputPath: 'fonts/'}}]},
     ],  
   },
   resolve: {
@@ -36,15 +36,26 @@ module.exports = {
   plugins: [
     new MiniCssExtractPlugin({
       linkType: "text/css",
-      filename: 'res/css/[name].[hash].css',
-      chunkFilename: 'res/css/[id].[hash].css'
+      filename: 'css/[name].[hash].css',
+      chunkFilename: 'css/[id].[hash].css'
     }),
     new HtmlWebpackPlugin({
       inject: true,
       hash: true,
       template: './static/index.tpl.html',
       filename: 'index.html',
-      base: '/entertainment-client-web-react/app',
+      base: '/entertainment-client-web-react/app/',
+    }),
+    new CopyWebpackPlugin({
+        patterns: [
+          { from: 'static',
+            globOptions: {
+                ignore: [
+                    '**/index.tpl.html'
+                ]
+            }          
+          }
+        ]
     }),
   ],
 }
