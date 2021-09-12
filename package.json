@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "homepage": "https://jmarroyave-compsci.github.io/entertainment-client-web-react/app/",
   "devDependencies": {
     "@babel/core": "^7.15.5",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
@@ -36,7 +35,7 @@
     "start": "webpack serve",
     "build": "npm run compile",
     "clean": "rm -rf ./build/index.bundle.js",
-    "compile": "webpack --config ./webpack.config.js --progress"
+    "compile": "webpack --config ./webpack.config.production.js --progress"
   },
   "dependencies": {
     "@apollo/client": "^3.4.11",
