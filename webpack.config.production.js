@@ -44,7 +44,7 @@ module.exports = {
       hash: true,
       template: './static/index.tpl.html',
       filename: 'index.html',
-      base: '/entertainment-client-web-react/app/',
+      base: '/entertainment-client-web-react/app',
     }),
   ],
 }
