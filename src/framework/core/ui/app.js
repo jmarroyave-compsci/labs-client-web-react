@@ -24,32 +24,24 @@ const styles = theme => ({
   },
 });
 
-const defaultTheme = createTheme({
-  palette: {
-    primary : { main: '#000000' },
-    secondary : { main: '#ffffff'},
-  }
-});
-
-
 class App extends React.Component {
-	constructor(){
-		super();
-		this.state = {
-			drawerOpen : false,
-		}
+  constructor(){
+    super();
+    this.state = {
+      drawerOpen : false,
+    }
 
-		this.onDrawerOpenClick = this.onDrawerOpenClick.bind(this);
-		this.onDrawerCloseClick = this.onDrawerCloseClick.bind(this);
-	}
+    this.onDrawerOpenClick = this.onDrawerOpenClick.bind(this);
+    this.onDrawerCloseClick = this.onDrawerCloseClick.bind(this);
+  }
 
-	onDrawerOpenClick(){ 
-		this.setState({drawerOpen : true})
-	}
+  onDrawerOpenClick(){ 
+    this.setState({drawerOpen : true})
+  }
 
-	onDrawerCloseClick(){
-		this.setState({drawerOpen : false})
-	}
+  onDrawerCloseClick(){
+    this.setState({drawerOpen : false})
+  }
 
   componentDidUpdate(prevProps) {
     if (this.props.location !== prevProps.location) {
@@ -59,25 +51,17 @@ class App extends React.Component {
 
   componentDidMount(){
     document.getElementById('root').style.display = 'inline-block';
-    document.getElementById('root_splash').style.display = 'none';
+    if(document.getElementById('root_splash'))
+      document.getElementById('root_splash').style.display = 'none';
     document.body.style.overflow = 'unset';
     document.title = this.props.page_title;
   }
 
 
   render() {
-  	var { onSearchQuery, theme, classes, nav, children, title, notifications, search, loading } = this.props;
+    var { onSearchQuery, classes, nav, children, title, notifications, search, loading } = this.props;
 
-    if(theme){
-      theme = createTheme({
-        palette: {
-          primary : theme.primary,
-          secondary: theme.secondary,
-        }
-      })
-    } else {
-      theme = defaultTheme;
-    }
+    var theme = createTheme();
 
     var showDrawer = (nav.drawer.show) ? true : false;
     var drawer = (nav.drawer) ? nav.drawer : {header: null, footer: null};
@@ -92,23 +76,23 @@ class App extends React.Component {
 
     return (
       <MuiThemeProvider theme={theme}>
-      	<div style={{width:'100%'}}>
+        <div style={{width:'100%'}}>
           <ErrorBoundry from="/core/ui/app">
-  	        <CssBaseline />
-  	        <AppBar position="fixed">
-  	          <Toolbar onSearchQuery={onSearchQuery} title={title} nav={links} drawerOpen={this.state.drawerOpen} onDrawerOpenClick={this.onDrawerOpenClick} notifications={notifications} drawer={showDrawer} search={search} loading={loading}/>
-  	        </AppBar>
+            <CssBaseline />
+            <AppBar position="fixed">
+              <Toolbar onSearchQuery={onSearchQuery} title={title} nav={links} drawerOpen={this.state.drawerOpen} onDrawerOpenClick={this.onDrawerOpenClick} notifications={notifications} drawer={showDrawer} search={search} loading={loading}/>
+            </AppBar>
             {showDrawer &&
               <Drawer header={drawer.header} footer={drawer.footer} nav={links} open={this.state.drawerOpen} onDrawerCloseClick={this.onDrawerCloseClick}/>
             }
-      			<div className={classes.content}>
-      				<div className={classes.appBarSpacer}/>
+            <div className={classes.content}>
+              <div className={classes.appBarSpacer}/>
               <ErrorBoundry from="/core/ui/app/children">
-    	  	        {children}
+                  {children}
               </ErrorBoundry>
-      			</div>
+            </div>
           </ErrorBoundry>
-      	</div>
+        </div>
       </MuiThemeProvider>
     );
   }

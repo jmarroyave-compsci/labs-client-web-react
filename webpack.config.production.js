@@ -28,6 +28,7 @@ module.exports = {
   resolve: {
     symlinks : false,
     modules: [
+      path.resolve('./src'),      
       path.resolve('./src/project'),      
       path.resolve('./src/framework'),      
       'node_modules'

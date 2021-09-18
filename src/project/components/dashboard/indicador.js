@@ -1,31 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Number from  'core/ui/number';
+import DashboardCard from 'core/ui/cards/dashboard'
 
 import "./indicador.scss";
 
 class Indicador extends React.Component {
   render() {
-  	var { title, data, smaller, type } = this.props;
+  	var { title, data, smaller, type, icon } = this.props;
 
     return (
-    	<div className="indicador">
-        <div className="row title" style={{textAlign: 'left'}}>
-          <div className="title">{title}</div>
-        </div>
-        <div className="row" >
-          <div className={`content ${(smaller) ? "small" : ""}`}>
-            <div>{this.renderType( type, data )}</div>
-          </div>
-        </div>
-		</div>
+      <DashboardCard icon={icon} title={title} subtitle={this.renderType( type, data )}>
+      </DashboardCard>
+
     );
   }
 
   renderType( type, data ){
     switch(type){
       case "number":
-        return <Number value={data}/>
+        return data
       case "string":
         return data;
     }

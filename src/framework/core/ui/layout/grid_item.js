@@ -6,20 +6,22 @@ class GridItem extends React.Component {
 	render(){
 		var { visible, className, xs, sm, md, style, fill, flex, center } = this.props;
 		visible = (visible)	? visible : true; 
-		style = (style) ? style : {textAlign: 'inherit'};
-		style.textAlign = (center) ? 'center' : style.textAlign;
+
+		var styles = { ...style }
+		styles = (styles) ? styles : {textAlign: 'inherit'};
+		styles.textAlign = (center) ? 'center' : styles.textAlign;
 
 		if(fill) {
-			style.width = "100%";
+			styles.width = "100%";
 		}
 
 		if(flex){
-			style.flex = 1;
+			styles.flex = 1;
 		}
 
 		return (
 			visible &&
-				<Grid className={className} item xs={xs} sm={sm} md={md} style={style}>
+				<Grid className={className} item xs={xs} sm={sm} md={md} style={styles}>
 					{this.props.children} 
 				</Grid>			
 		)

@@ -16,7 +16,7 @@ import Loading from 'core/components/loading';
 const FixedSizeList = lazy(() => import(/* webpackChunkName: "react-window" */ './external/fixed-size-list'));
 
 
-import './assets/css/list.scss';
+import './list.scss';
 
 class List extends React.Component {
   constructor(){

@@ -11,11 +11,6 @@ function PageComponent( props ){
 	return (
 		<GridContainer className="page-module" fill>
 			<GridItem fill>
-				<Section className="section-hero-dark">
-					<Title/>
-				</Section>
-			</GridItem>
-			<GridItem fill>
 				<Section className="section-0">
 					<Dashboard data={(data) ? data.dashboard : null} loading={loading} />
 				</Section>

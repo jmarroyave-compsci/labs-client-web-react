@@ -5,13 +5,18 @@ import { Store } from 'state/store';
 import Hub from 'core/components/hub';
 import NAV from 'config/navigation';
 import Constants from 'config/constants';
-import { AppProvider } from 'state/contexts/app';
 import SERVER from 'config/values/server';
+
+import { AppProvider } from 'state/contexts/app';
 
 
 import "./index.scss";
 import 'core/ui/assets/css/app.scss';
 import 'shared/globals/footer/footer.scss';
+
+import "res/assets/css/material-icon.css";
+import "res/assets/css/roboto.css";
+
 
 import {
   ApolloClient,

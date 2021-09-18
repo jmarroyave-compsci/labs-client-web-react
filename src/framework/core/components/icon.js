@@ -1,5 +1,6 @@
 import React from 'react';
 import UIComponent from './ui_component.js';
+import Icon from "@material-ui/core/Icon";
 import SendIcon from '@material-ui/icons/Send';
 import NextIcon from '@material-ui/icons/NavigateNext';
 import PreviousIcon from '@material-ui/icons/NavigateBefore';
@@ -112,7 +113,7 @@ class UIIcon extends UIComponent {
       case "new":
         return <NewIcon {...this.props}/>;       
       default:
-        return <NotFoundIcon {...this.props}/>;
+        return <Icon {...this.props}>{icon}</Icon>;
     }
   }
 
@@ -130,3 +131,4 @@ class UIIcon extends UIComponent {
 }
 
 export default UIIcon;
+
