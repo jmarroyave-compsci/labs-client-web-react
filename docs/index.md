@@ -1,8 +1,7 @@
 # ReactJS - Web Client - Entertainment 
 
-[DEMO](https://jmarroyave-compsci.github.io/entertainment-client-web-react/app/) 
-
-[Storybook](https://jmarroyave-compsci.github.io/entertainment-client-web-react/storybook/) 
+- [DEMO](https://jmarroyave-compsci.github.io/entertainment-client-web-react/app/) 
+- [Storybook](https://jmarroyave-compsci.github.io/entertainment-client-web-react/storybook/) 
 
 
 ## Available Scripts
