@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact=self.webpackChunkreact||[]).push([[7126],{97126:(e,r,t)=>{t.r(r),t.d(r,{default:()=>u});var n=t(67294);function u(e){return function(e){if(null==e)throw new TypeError("Cannot destructure undefined")}(e),n.createElement("div",{className:"drawer-title"},"App")}}}]);
