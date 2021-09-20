@@ -3,7 +3,7 @@ import { grayColor } from "core/ui/theme";
 const cardFooterStyle = {
   cardFooter: {
     padding: "0",
-    paddingTop: "10px",
+    paddingTop: "0",
     margin: "0 15px 10px",
     borderRadius: "0",
     justifyContent: "space-between",

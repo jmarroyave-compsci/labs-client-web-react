@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact=self.webpackChunkreact||[]).push([[4159],{64159:(e,c,t)=>{t.r(c),t.d(c,{fetchHome:()=>f});var n=t(31200),r=t(56758),f=function(){return function(e){e((0,r.fetchPageHome)()),e((0,n.fetchTrends)())}}}}]);

@@ -4,6 +4,8 @@ import { default as RDTreeMap }  from "react-d3-treemap";
 import "react-d3-treemap/dist/react.d3.treemap.css";
 import ResponsiveWrapper from 'core/ui/components/responsiveness';
 
+const headerHeight = 45;
+
 class TreeMap extends React.Component {
   render() {
     const { title, parentWidth, data, height } = this.props;
@@ -16,7 +18,7 @@ class TreeMap extends React.Component {
         <RDTreeMap  
           id="myTreeMap"
           width={width}
-          height={height}
+          height={height - headerHeight}
           data={data}
           levelsToDisplay={1}
           nodeStyle={{ paddingLeft: 5, paddingRight: 5 }}
@@ -35,7 +37,7 @@ TreeMap.propTypes = {
 TreeMap.defaultProps = {
   data: {},
   title: "title",
-  height: 300,
+  height: 100,
 };
 
 

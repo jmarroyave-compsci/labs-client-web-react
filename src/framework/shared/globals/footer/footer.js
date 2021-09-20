@@ -10,14 +10,10 @@ import { useTheme } from '@material-ui/core/styles';
 
 const Footer = ( {socialNetworksLinks, footerLinks, version} ) => {
 	const theme = useTheme();
-	console.log("them ", theme);
-	console.log("voy");
-
 	const renderSection = (socialNetworksLinks, footerLinks, version, padding) => {
-//style={{backgroundColor: theme.pallete.primary, color: theme.pallete.constrastText, padding: '1rem'}}
 		return (
 			<div >
-				<GridContainer spacing={0} fill className="footer" style={{padding: padding}}>
+				<GridContainer spacing={0} fill className="footer" style={{backgroundColor: theme.palette.primary.main, color: theme.palette.primary.constrastText, padding: '1rem'}}>
 					<GridItem fill>
 						<FooterLinks links={footerLinks}/>
 					</GridItem>					

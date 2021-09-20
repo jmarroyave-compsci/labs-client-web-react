@@ -1,6 +1,7 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom'
-import CoreApp from 'core/ui/app';
+
+import CoreApp from 'core/app/dashboard';
 import uris from 'shared/trends/uris';
 import Footer from 'components/app/footer'
 import Header from 'components/app/header'
@@ -18,12 +19,12 @@ class App extends React.Component {
           title={title}
           page_title={page_title} 
           nav={window.__nav} 
+          footer={<Footer/>}
           >
             <Header noCheck app={app} data={data}/>
             <div className={"content"}>
               {children}
-            </div>
-            <Footer/>
+            </div>          
         </CoreApp>
     )
   }

@@ -7,10 +7,9 @@ import TableRow from "@material-ui/core/TableRow";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import styles from "./tableStyle.js";
-
 const useStyles = makeStyles(styles);
 
-export default function CustomTable(props) {
+var CustomTable = function(props) {
   const classes = useStyles();
   const { tableHead, tableData, tableHeaderColor, showHeader } = props;
 
@@ -39,10 +38,10 @@ export default function CustomTable(props) {
           {tableData.map((prop, key) => {
             return (
               <TableRow key={key} className={classes.tableBodyRow}>
-                {prop.map((prop, key) => {
+                {prop.map((p, key) => {
                   return (
                     <TableCell className={classes.tableCell} key={key}>
-                      {prop}
+                      {p}
                     </TableCell>
                   );
                 })}
@@ -74,3 +73,6 @@ CustomTable.propTypes = {
   tableData: PropTypes.arrayOf(PropTypes.arrayOf(PropTypes.string)),
   showHeader: PropTypes.bool,
 };
+
+
+export default CustomTable;

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact=self.webpackChunkreact||[]).push([[765],{98765:(e,c,n)=>{n.r(c),n(67294),n(65267),describe("App component",(function(){test("Render",(function(){}))}))}}]);

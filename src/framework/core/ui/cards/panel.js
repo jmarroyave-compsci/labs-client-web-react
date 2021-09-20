@@ -44,7 +44,7 @@ export default function CardPanel(props) {
   const { title, subtitle, children, color, footer } = props;
   const classes = useStyles();
   return (
-    <Card>
+    <Card style={{display: 'flex', flexFlow: 'column'}}>
       {(title || subtitle) && 
         <CardHeader color={color}>
           <h4 className={classes.cardTitleWhite}>{title}</h4>
@@ -53,13 +53,12 @@ export default function CardPanel(props) {
           </p>
         </CardHeader>
       }
-      <CardBody>
+      <CardBody style={{flex: 1}}>
         {children}
       </CardBody>
-        {footer && <CardFooter stats>
-          <div className={classes.stats}>
-            {footer}
-          </div>
+        {footer && 
+        <CardFooter stats>
+          {footer}
         </CardFooter>}
     </Card>
   );
@@ -74,5 +73,6 @@ CardPanel.propTypes = {
 
 CardPanel.defaultProps = {
   color: "primary",
- footer: null,
+  footer: null,
+
  }

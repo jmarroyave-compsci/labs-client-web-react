@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 
-export default ChartComponent => (
+export default ChilcComponent => (
   class ResponsiveChart extends Component {
     constructor(props) {
       super(props)
 
       this.state = {
         containerWidth: null,
+        containerHeight: null,
       }
 
       this.fitParentContainer = this.fitParentContainer.bind(this)
@@ -22,7 +23,7 @@ export default ChartComponent => (
       }, 100)
 
       this.observer = new MutationObserver(function(mutations) {
-         if (document.contains(this.chartContainer)) {
+         if (document.contains(this.componentContainer)) {
               this.touch()
               this.observer.disconnect();
           }
@@ -32,7 +33,7 @@ export default ChartComponent => (
     }
 
     touch(){
-      this.setState({containerWidth: this.state.containerWidth + 1})
+      this.setState({containerWidth: this.state.containerWidth - 1})
     }
 
     componentWillUnmount() {
@@ -41,36 +42,39 @@ export default ChartComponent => (
     }
 
     fitParentContainer() {
-      const { containerWidth } = this.state;
-      const currentContainerWidth = this.chartContainer.getBoundingClientRect().width
+      const { containerWidth, containerHeight } = this.state;
+      const rect = this.componentContainer.getBoundingClientRect();
+      const currentContainerWidth = rect.width
+      const currentContainerHeight = rect.height
 
-      const shouldResize = containerWidth !== currentContainerWidth
+      const shouldResize = (containerWidth !== currentContainerWidth)
 
       if (shouldResize) {
         this.setState({
           containerWidth: currentContainerWidth,
+          containerHeight: currentContainerHeight,
         })
       }
     }
 
-    renderChart() {
-      const parentWidth = this.state.containerWidth
+    renderComponent() {
+      const { containerWidth, containerHeight } = this.state
 
       return (
-        <ChartComponent {...this.props} parentWidth={parentWidth} />
+        <ChilcComponent {...this.props} parentWidth={containerWidth} parentHeight={containerHeight} />
       )
     }
 
     render() {
-      const { containerWidth } = this.state
+      const { containerWidth, containerHeight } = this.state
       const shouldRenderChart = containerWidth !== null
 
       return (
         <div
-          ref={(el) => { this.chartContainer = el }}
+          ref={(el) => { this.componentContainer = el }}
           className="Responsive-wrapper"
         >
-          {shouldRenderChart && this.renderChart()}
+          {shouldRenderChart && this.renderComponent()}
         </div>
       )
     }

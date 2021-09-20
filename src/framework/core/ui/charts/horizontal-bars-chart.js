@@ -76,10 +76,13 @@ class HorizontalBarsChart extends Component {
     }
 
     drawChart() {
-        const { height, parentWidth, small } = this.props;
-        var { data, width } = this.props;
+        const { parentWidth, parentHeight, small } = this.props;
+        var { data, width, height } = this.props;
 
         width = (width) ? width : Math.max(parentWidth, width);
+        width = (width <= 0) ? 300 : width;
+
+        //height = (height) ? height : Math.max(parentHeight, height);
 
         // format the data
         data.forEach(function(d) {
@@ -131,7 +134,7 @@ HorizontalBarsChart.propTypes = {
 HorizontalBarsChart.defaultProps = {
     data: [],
     width: null,
-    height: 500,
+    height: 100,
     small: false,
     marginLeft: 80,
 }

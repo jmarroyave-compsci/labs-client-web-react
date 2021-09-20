@@ -3,8 +3,7 @@ import React from 'react';
 import Section from 'core/ui/layout/section';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
-import Title from 'components/pages/home/title';
-import Dashboard from 'components/pages/home/dashboard';
+import Dashboard from 'components/entities/dashboard';
 
 function PageComponent( props ){
 	const { data, loading } = props
@@ -12,7 +11,7 @@ function PageComponent( props ){
 		<GridContainer className="page-module" fill>
 			<GridItem fill>
 				<Section className="section-0">
-					<Dashboard data={(data) ? data.dashboard : null} loading={loading} />
+			 		<Dashboard data={(data) ? data.dashboard : null} loading={loading} />
 				</Section>
 			</GridItem>
 		</GridContainer>
