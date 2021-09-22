@@ -338,12 +338,6 @@
             "task": "Data Server versioning",
             "level": 1,
             "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Deploy",
-            "level": 0,
-            "children": []
           }
         ]
       }
