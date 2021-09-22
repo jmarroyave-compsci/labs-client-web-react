@@ -1,0 +1,1 @@
+(globalThis.webpackChunkreact=globalThis.webpackChunkreact||[]).push([[6149],{76149:()=>{window.matchMedia=jest.fn().mockImplementation((e=>({matches:!1,media:e,onchange:null,addListener:jest.fn(),removeListener:jest.fn()})))}}]);

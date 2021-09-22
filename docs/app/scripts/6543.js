@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkreact=globalThis.webpackChunkreact||[]).push([[6543],{96543:(e,t,a)=>{a.r(t),a.d(t,{default:()=>l});var n=a(67294);class r extends n.Component{render(){return n.createElement("div",null)}}const l=r}}]);

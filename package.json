@@ -48,7 +48,7 @@
     "clean": "rm -rf ./build/index.bundle.js",
     "compile": "webpack --config ./webpack.config.production.js --progress",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs"
+    "build-storybook": "build-storybook -o docs/storybook/"
   },
   "dependencies": {
     "@apollo/client": "^3.4.11",
