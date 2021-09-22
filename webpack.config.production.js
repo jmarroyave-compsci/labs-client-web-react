@@ -15,7 +15,7 @@ module.exports = {
   output: {
     filename: './scripts/[name].js',
     path: path.resolve(__dirname, 'build'),
-    publicPath: '/entertainment-client-web-react/app/',
+    publicPath: '/tv-movies-client-web-react/app/',
   },  
   module: {
     rules: [
@@ -45,7 +45,7 @@ module.exports = {
       hash: true,
       template: './static/index.tpl.html',
       filename: 'index.html',
-      base: '/entertainment-client-web-react/app/',
+      base: '/tv-movies-client-web-react/app/',
     }),
     new CopyWebpackPlugin({
         patterns: [
