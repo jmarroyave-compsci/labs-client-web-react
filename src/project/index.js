@@ -6,9 +6,7 @@ import Hub from 'core/components/hub';
 import NAV from 'config/navigation';
 import Constants from 'config/constants';
 import SERVER from 'config/values/server';
-
 import { AppProvider } from 'state/contexts/app';
-
 
 import "./index.scss";
 import 'core/ui/assets/css/app.scss';

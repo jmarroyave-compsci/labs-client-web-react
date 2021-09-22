@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import DashboardCard from 'core/ui/cards/dashboard'
+import Date from 'core/ui/date';
+import Number from 'core/ui/number';
 
 import "./indicator.scss";
 
@@ -9,8 +11,7 @@ class Indicator extends React.Component {
   	var { title, data, smaller, type, icon } = this.props;
 
     return (
-      <DashboardCard icon={icon} title={title} subtitle={this.renderType( type, data )}>
-      </DashboardCard>
+      <DashboardCard icon={icon} title={title} subtitle={this.renderType( type, data )}/>
 
     );
   }
@@ -18,9 +19,11 @@ class Indicator extends React.Component {
   renderType( type, data ){
     switch(type){
       case "number":
-        return data
+        return <Number value={data} format={"0,0"}/>
       case "string":
         return data;
+      case "date":
+        return <Date value={data}/>;
     }
   }
 }
@@ -29,7 +32,7 @@ export default Indicator;
 
 Indicator.propTypes = {
   title: PropTypes.string,
-  type: PropTypes.oneOf(['number', 'string']),
+  type: PropTypes.oneOf(['number', 'string', 'date']),
   smaller: PropTypes.bool,
 };
 

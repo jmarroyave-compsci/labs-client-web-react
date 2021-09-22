@@ -13,7 +13,7 @@ class App extends React.Component {
     const page_title = `JMArroyave`;
     const title = `JMArroyave`;
     return(
-        <CoreApp 
+        <CoreApp         
           notifications={false} 
           theme={this.context.theme} 
           title={title}

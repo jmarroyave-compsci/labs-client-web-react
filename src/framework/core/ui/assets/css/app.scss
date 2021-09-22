@@ -1,0 +1,73 @@
+html, body {
+  font-weight: lighter; 
+  color: #333;
+  padding: 0px;
+  margin: 0px;
+}
+
+a, a:visited{
+    text-decoration: none;
+}
+
+div{
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+    font-weight: lighter;
+}
+
+div.small{
+    font-size: 0.9rem;
+    line-height: 1rem;
+    font-weight: lighter;
+}
+
+a, p, span, div span, div.small span{
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+ h1 {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    font-weight: lighter;
+    margin: 1.5rem 0;
+    margin: 1rem 0rem;
+}
+
+ h2 {
+    font-size: 2rem;
+    line-height: 2.1rem;
+    font-weight: lighter;
+    margin: 0.8rem 0;
+    margin: 1rem 0rem;
+}
+
+ h3 {
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+    font-weight: lighter;
+    margin: 1rem 0rem;
+}
+
+ h4 {
+    font-size: 1.6rem;
+    line-height: 1.7rem;
+    font-weight: lighter;
+    margin: 1rem 0rem;
+}
+
+ h5 {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+    margin: 1rem 0rem;
+}
+
+ h6 {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    font-weight: lighter;
+    margin: 1rem 0rem;
+}

@@ -1,3 +1,4 @@
+
 class Navigation {
   constructor(){
     this.drawer = {
@@ -12,43 +13,34 @@ class Navigation {
         icon: 'home', 
         route: '/', 
         exact: true,
-        component: 'components/pages/home'
+        component: `pages/home`
       },
       {
         showInMenu: true, 
         showInDrawer: true, 
-        name: 'Movie', 
+        name: 'Movies', 
         icon: 'movie', 
-        route: '/movie', 
+        route: '/movies', 
         exact: true,
-        component: 'components/pages/movie'
+        component: 'pages/movies'
       },
       {
         showInMenu: true, 
         showInDrawer: true, 
-        name: 'Uploads', 
-        icon: 'upload', 
-        route: '/uploads', 
+        name: 'People', 
+        icon: 'people', 
+        route: '/people', 
         exact: true,
-        component: 'components/pages/uploads'
+        component: 'pages/people'
       },
       {
         showInMenu: true, 
         showInDrawer: true, 
-        name: 'Person', 
-        icon: 'person', 
-        route: '/person', 
+        name: 'About', 
+        icon: 'info', 
+        route: '/about', 
         exact: true,
-        component: 'components/pages/person'
-      },
-      {
-        showInMenu: true, 
-        showInDrawer: true, 
-        name: 'Streaming', 
-        icon: 'streaming', 
-        route: '/streaming', 
-        exact: true,
-        component: 'components/pages/streaming'
+        component: 'pages/about'
       },
     ];
   }

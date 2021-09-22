@@ -1,0 +1,354 @@
+{
+  "projects": [],
+  "sprints": {
+    "Sprint 1": {
+      "days": {
+        "Day 1": [
+          {
+            "hour": 0,
+            "task": "Building Starter",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 2": [
+          {
+            "hour": 0,
+            "task": "Building Starter [Web]",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 3": [
+          {
+            "hour": 0,
+            "task": "Building Starter [Web]",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 4": [
+          {
+            "hour": 0,
+            "task": "Building Starter [Web]",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 5": [
+          {
+            "hour": 0,
+            "task": "Building Starter [Web]",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 6": [
+          {
+            "hour": 0,
+            "task": "Building Starter [Web]",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 7": [
+          {
+            "hour": 0,
+            "task": "Building Starter [Web]",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Building Starter [Mobile]",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Release - Starter [Web] -> Web Client",
+            "level": 1,
+            "children": [],
+            "release": true
+          }
+        ]
+      }
+    },
+    "Sprint 2": {
+      "days": {
+        "Day 1": [
+          {
+            "hour": 0,
+            "task": "Building Starter [Mobile]",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: Fixes",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 2": [
+          {
+            "hour": 0,
+            "task": "Building Starter [Mobile]",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 3": [
+          {
+            "hour": 0,
+            "task": "Data: People's network",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Data: Searching more datasets",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Building Starter [Mobile]",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Tests: Web Angular",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 4": [
+          {
+            "hour": 0,
+            "task": "Tests: Web Vue, Web .NET",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 5": [
+          {
+            "hour": 0,
+            "task": "Tests: Web .NET",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: Dashboard design",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 6": [
+          {
+            "hour": 0,
+            "task": "Web Client: Fixes",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: Fixes",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: Dataset component with multiple data rendering",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: Fixes",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: Fixes",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: Release",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Building Starter [Mobile]",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Tests: improve layout",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 7": [
+          {
+            "hour": 0,
+            "task": "Tests: improve layout",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Tests: improve layout",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Tests: improve layout",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Docs: adding index.md to projects",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Docs: adding index.md to projects",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Tests: fixes",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Tests: fixes",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Docs: adding roadmap",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Docs: adding roadmap",
+            "level": 1,
+            "children": []
+          }
+        ]
+      }
+    },
+    "Sprint 3": {
+      "days": {
+        "Day 1": [
+          {
+            "hour": 0,
+            "task": "Web Client: Adding pages for movies, people and about",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: adding themes funcionality",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: fixes",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Data: Importing data from imdb.com",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: Release",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 2": [
+          {
+            "hour": 0,
+            "task": "Docs: adding roadmap",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Data: Importing data from imdb.com",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: Fixes",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: Adding pages for movies, people and about",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: about",
+            "level": 1,
+            "children": []
+          }
+        ],
+        "Day 3": [
+          {
+            "hour": 0,
+            "task": "Docs: roadmap",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Web Client: about",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Data Server versioning",
+            "level": 1,
+            "children": []
+          },
+          {
+            "hour": 0,
+            "task": "Deploy",
+            "level": 0,
+            "children": []
+          }
+        ]
+      }
+    }
+  },
+  "todo": [],
+  "unknown": []
+}

@@ -30,7 +30,7 @@ module.exports = {
     modules: [
       path.resolve('./src'),      
       path.resolve('./src/project'),      
-      path.resolve('./src/framework/src'),      
+      path.resolve('./src/framework'),      
       'node_modules'
     ]
   },
