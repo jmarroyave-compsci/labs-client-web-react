@@ -8,8 +8,12 @@ export default {
 const Template = args => <Layout {...args} />;
 
 export const Controls = Template.bind({});
-
 Controls.args = {
-  loading: false,
   data: mockupData,
+};
+
+export const Loading = Template.bind({});
+Loading.args = {
+  loading: true,
+  data: null,
 };

@@ -14,10 +14,12 @@ export const QRY_DASHBOARD = gql`
   }`;
 
 export default function Page( props ){
-  const { loading, error, data } = useQuery(QRY_DASHBOARD);
-	const params = { loading, error, data };
+  //const { loading, error, data } = useQuery(QRY_DASHBOARD);
+	//const params = { loading, error, data };
+  const params = {  };
+  params.breadcrumbs = [{name: 'about'}]
 	return (
-		<App>
+		<App {...params}>
 			<Layout {...params}/>	
 		</App>
 	)

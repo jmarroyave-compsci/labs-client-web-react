@@ -46,7 +46,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
 
 function Drawer_( props ) {
 	var { nav, footer, header, toggleDrawer, open } = props;  	
-	const options = getOptions(nav);
+	const options = getOptions(nav, open);
 
   return (
     <Drawer variant="permanent" open={open}>
@@ -63,34 +63,43 @@ function Drawer_( props ) {
         </IconButton>
       </MuiToolbar>
       {options}
-      <Divider />
     </Drawer>
 	);
 }
 
-function getOptions(nav){
+function getOptions(nav, open){
   nav = nav.options;
 	nav = (nav) ? nav.filter(item => (item.showInDrawer) ? item : null) : [];
 	var key = 0;
 	var options = [];
   var current = "";
+
 	for(var i = 0; i < nav.length; i++){
 		var item = nav[i];
     var header;
-    if(item.parent && item.parent != current && item.parent != ""){
-      current = item.parent;
-      header= <ListSubheader key={key++}>{current.toUpperCase()}</ListSubheader>
-      options.push(header);
+    if(item.separator){
+        options.push(<Divider key={key++}/>);
+        continue;
     }
+
+    if(item.group){
+      options.push( (open) ? <ListSubheader key={key++}>{item.group.toUpperCase()}</ListSubheader> : <Divider key={key++}/> );
+      continue;
+    } 
+
+    if(item.onMini === false && !open) continue;
+
+    var name = (open) ? ((item.nameOpen) ? item.nameOpen : item.name) : item.name; 
 
 		var opt = 
 		<Link key={key++} to={(item.link) ? item.link : item.route}>
 		    <ListItem button>
-          <ListItemIcon>
-            <Icon>{item.icon}</Icon>
+          {item.icon && <ListItemIcon>
+            <Icon alt={name}>{item.icon}</Icon>
           </ListItemIcon>
+          }
 
-		      <ListItemText primary={item.name} />
+		      <ListItemText inset={(!item.icon)} primary={name} />
 		    </ListItem>
 	    </Link>
 	    options.push(opt);

@@ -36,17 +36,17 @@ class Dashboard extends React.Component {
 function buildData(){
   var resp = [];
 
-  Object.keys(log.sprints).reverse().forEach( sprint => {
+  Object.keys(log.log).reverse().forEach( sprint => {
     //if( sprint != "Sprint 3") return;
 
-    resp.push( { date: sprint, text: sprint, subtitle: null, info: null, iconColor: "primary", contentColor: "primary", icon: "star" } )
-    Object.keys(log.sprints[sprint].days).reverse().forEach( day => {
+
+    Object.keys(log.log[sprint]).reverse().forEach( day => {
       //if( day != "Day 6") return;
 
       var item = { date: `${sprint}-${day}`, text: day, title: day, subtitle: null, info: [], iconColor: "info", icon: "circle" };
       item.info.push("<ul>")
       var tasks = []
-      log.sprints[sprint].days[day].map( m => {        
+      log.log[sprint][day].map( m => {        
         //console.log(m, tasks.find( (item) => (item == m) ));
         if ( tasks.find( (item) => (item.task == m.task) ) ) return;
         tasks.push(m);
@@ -56,6 +56,9 @@ function buildData(){
       item.info = item.info.join("")
       resp.push( item )
     })
+
+    resp.push( { date: sprint, title: sprint, subtitle: null, info: null, iconColor: "primary", contentColor: "primary", icon: "star" } )
+
   })
 
   return resp;
@@ -65,12 +68,12 @@ function buildData(){
 function buildData2(){
   var resp = [];
 
-  Object.keys(log.sprints).reverse().forEach( sprint => {
+  Object.keys(log.log).reverse().forEach( sprint => {
     resp.push( { date: sprint, text: sprint, subtitle: null, info: null, iconColor: "primary", contentColor: "primary", icon: "star" } )
-    Object.keys(log.sprints[sprint].days).reverse().forEach( day => {
+    Object.keys(log.log[sprint]).reverse().forEach( day => {
       var item = { date: `${sprint}-${day}`, text: day, title: day, subtitle: null, info: [], iconColor: "info", icon: "circle" };
       item.info.push("<ul>")
-      log.sprints[sprint].days[day].map( m => {
+      log.log[sprint][day].map( m => {
         var cat = m.task;
         m.children.map( subTask => {
           item.info.push(`<li>${cat} - ${subTask.task}</li>`)

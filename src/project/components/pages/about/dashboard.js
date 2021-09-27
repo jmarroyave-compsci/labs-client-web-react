@@ -9,24 +9,11 @@ import Roadmap from './roadmap';
 class Dashboard extends React.Component {
   render(){
     const { data, loading } = this.props;
-    if( !data || loading ) return this.renderPlaceholder();
+    const { movies, people, lastUpdate } = data | {};
 
-    return this.renderContent(data);
-  }
-
-  renderContent(data){
-    return this.renderTemplate(data);
-  }
-
-  renderPlaceholder(){
-    var p1 = <Placeholder data={[[["-", "100", "100"]],]}/>;
-    return this.renderTemplate(p1, p1);
-  }
-
-  renderTemplate( { movies, people, lastUpdate } ){
     const tileIndicator = (title, data, icon, type) =>               
               <GridItem xs={12} sm={6} md={4} lg={3} style={{paddingRight: '1rem'}}>
-                <Indicator title={title} data={(data) ? data.toString() : data} icon={icon} type={type}/>
+                <Indicator loading={loading} title={title} data={(data) ? data.toString() : data} icon={icon} type={type}/>
               </GridItem>
 
     return (

@@ -26,7 +26,7 @@ export const TimelineItem = function( {text, title, subtitle, info, date, iconCo
         contentArrowStyle={ (contentArrowColor) ? { background: theme.palette[contentColor].dark, color: theme.palette[contentArrowColor].contrastText } : {}}
         date={date}
         iconStyle={(iconColor) ? { background: theme.palette[iconColor].main, color: theme.palette[iconColor].contrastText } : {}}
-        icon={<Icon>{icon}</Icon>}
+        icon={<Icon style={{width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>{icon}</Icon>}
       >
         {title && <h3 className="vertical-timeline-element-title">{title}</h3>}
         {subtitle && <h4 className="vertical-timeline-element-subtitle">{subtitle}</h4>}

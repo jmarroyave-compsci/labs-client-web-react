@@ -1,348 +1,4892 @@
 {
-  "projects": [],
-  "sprints": {
+  "projects": [
+    {
+      "area": null,
+      "hour": 0,
+      "task": "Entertainment Datasets",
+      "level": 0,
+      "children": []
+    }
+  ],
+  "log": {
     "Sprint 1": {
-      "days": {
-        "Day 1": [
-          {
-            "hour": 0,
-            "task": "Building Starter",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 2": [
-          {
-            "hour": 0,
-            "task": "Building Starter [Web]",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 3": [
-          {
-            "hour": 0,
-            "task": "Building Starter [Web]",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 4": [
-          {
-            "hour": 0,
-            "task": "Building Starter [Web]",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 5": [
-          {
-            "hour": 0,
-            "task": "Building Starter [Web]",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 6": [
-          {
-            "hour": 0,
-            "task": "Building Starter [Web]",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 7": [
-          {
-            "hour": 0,
-            "task": "Building Starter [Web]",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Building Starter [Mobile]",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Release - Starter [Web] -> Web Client",
-            "level": 1,
-            "children": [],
-            "release": true
-          }
-        ]
-      }
+      "Day 1": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Building Starter",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Data:",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Importing data from Netflix movies and series dataset",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "https://www.kaggle.com/shivamb/netflix-shows",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Learning:",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "* OAS",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Day 2": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Building Starter [Web]",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Data:",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Importing data from Netflix movies and series dataset",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Import",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "mongo",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Server",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implement",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "git",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Web ReactJS",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implement",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "git",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "Writing scripts",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": 0,
+                      "task": "* GIT",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": 0,
+                      "task": "Data",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": 0,
+                      "task": "Server",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Client: Mobile React Native",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "Implement",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": 0,
+                      "task": "! How to fix \"unsupported class file major version 60\"",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": "Deploy",
+                          "hour": 0,
+                          "task": "-> graddle.properties - distributionUrl=https\\://services.gradle.org/distributions/gradle-7.0-bin.zip",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": 0,
+                      "task": "! Android Studio Gradle Sync failed: The supplied javaHome seems to be invalid",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": "Deploy",
+                          "hour": 0,
+                          "task": "-> uninstall JDK16 and install JDK15",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": "Deploy",
+                          "hour": 0,
+                          "task": "-> Delete JDK16 installation folder",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Day 3": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Building Starter [Web]",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Data:",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Importing data from Netflix movies and series dataset",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "! Bug: MongooseError: Operation `person.findOne()` buffering timed out after 10000ms -> Symbolic Links problem",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implementing dashbaoard",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implmenting dashboard",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "* GrahpQL and Apollo",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Setting DevEnv: Storybook, apollo",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Data with Apollo Client",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Mobile React Native",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implmenting dashboard",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Added starter",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Server:",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implement",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "adding graphql support",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "adding cors support",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "adding parameters",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "OAS, completing entities",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "? does not retrieve related info (director, cast)",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "Writting deploy scripts",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": 0,
+                      "task": "* PowerShell",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": 0,
+                      "task": "Server: updating deploy script",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": 0,
+                      "task": "DB: updating deploy scripts",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": 0,
+                      "task": "Client Web React: updating deploy scripts",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": 0,
+                      "task": "Client Mobile React Native: updating deploy scripts",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Day 4": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Building Starter [Web]",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Data:",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implement",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "adding field people to dashboard",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "fixing some bugs in data",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "camelCasing to maps",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Server:",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implement",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Removing oas-tools",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Generating docs",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "redoc-cli bundle ./api/oas-doc.yaml --options.theme.colors.primary.main=orange",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Refactoring",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Adding logging middleware - morgan",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Adding best practices from",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "oas-generator",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "swagger-generator",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "? tests don't work",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "! paging does not work -> casting the limit param to int",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "x add best practices from",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "test3",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implementing component TreeMap",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implement",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "TreeMap",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Dashboard page",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "! get element width -> React.createRef",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "! TypeError: Cannot read properties of undefined (reading 'displayName') -> export default",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "PieChart",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "X Don't know enough about React Hooks",
+                          "level": 6,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "x testing not implemented",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Server: updating scripts",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Client Web React: updating scripts",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Slow start",
+              "level": 2,
+              "children": [
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "-> prepare a project design to determine the path",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "-> https://public.tableau.com/app/profile/jack.kerschner/viz/Netflix_Catalogue/Story1",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Don't know exactly where the time was invested",
+              "level": 2,
+              "children": [
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "-> add a start time to the log",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "The deploy scripts looks solid",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Slow progress",
+              "level": 2,
+              "children": [
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "-> there are two aproaches, the perfectionist and the good enough, pay attention to the minimun detail and try to solve it vs pay attention to the whole project and try to implement it even if it is not \"perfect\"",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "-> define \"good enough\"",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "-> which is the priority? implement all or implement some things but \"perfect\"?",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "-> a spiral aproach must be considered",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Day 5": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Building Starter [Web]",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Server:",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implementing linting, typescript, dynamic routes",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "01 - 0810|1345 - refactoring and adding best practices",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "refactor",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "nodemon",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "linting",
+                          "level": 5,
+                          "children": [
+                            {
+                              "area": null,
+                              "hour": 0,
+                              "task": "https://medium.com/the-node-js-collection/why-and-how-to-use-eslint-in-your-project-742d0bc61ed7",
+                              "level": 6,
+                              "children": []
+                            },
+                            {
+                              "area": null,
+                              "hour": 0,
+                              "task": "tslint",
+                              "level": 6,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "typescript",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "dynamic routes",
+                          "level": 5,
+                          "children": [
+                            {
+                              "area": null,
+                              "hour": 0,
+                              "task": "adding missing routes",
+                              "level": 8,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "x /docs with a wrong server",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "x test disabled",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "x does not retrieve related info (director, cast)",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implementing indicators",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "03: 1600|1715 - Get project base",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "04: 1715|1745\t- Implementing dashboard indicators, files and basic functionality",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "05: 1745|2300\t- Building old app",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "02 - 1345|1430 - Server: updating deployment scripts",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "have to learn more about typescript",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "DRY - Perfection takes time, don't waste previous efforts",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Windows platform bugs",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ],
+      "Day 6": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Building Starter [Web]",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implementing framework",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "01: 0940|1545\t- Get project jmarroyave up and running",
+                      "level": 5,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "02: 1545| \t- Get component design system up and running",
+                      "level": 5,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "02: 0950|\t\t- Implement dashbard in framework",
+                          "level": 6,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Refactoring",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Problems with version conflicts between webpack, react and storybook",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Webpages",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "dfjaskfj",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ],
+      "Day 7": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Building Starter [Web]",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Fixes",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Minor fixes to TreeMap",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Problems with deployment after changing app from create-react-app to webpack",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Building Starter [Mobile]",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Mobile React Native",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implement",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Version conflicts",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Release - Starter [Web] -> Web Client",
+          "level": 1,
+          "children": [
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Problems with webpack",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "x Must fix .env",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Learnt about webpack",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "SPRINT RETROSPECTIVE",
+              "hour": 0,
+              "task": "Slow speed, bad quality and small achievement",
+              "level": 2,
+              "children": [
+                {
+                  "area": "SPRINT RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "Had to solve the development environment start curve",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "SPRINT RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "The bug solve mindset must be improved",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "SPRINT RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "No roadmap, just imaginary goals",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "SPRINT RETROSPECTIVE",
+              "hour": 0,
+              "task": "Learn best practices",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "SPRINT RETROSPECTIVE",
+              "hour": 0,
+              "task": "Better schedule and time management",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ]
     },
     "Sprint 2": {
-      "days": {
-        "Day 1": [
-          {
-            "hour": 0,
-            "task": "Building Starter [Mobile]",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: Fixes",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 2": [
-          {
-            "hour": 0,
-            "task": "Building Starter [Mobile]",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 3": [
-          {
-            "hour": 0,
-            "task": "Data: People's network",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Data: Searching more datasets",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Building Starter [Mobile]",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Tests: Web Angular",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 4": [
-          {
-            "hour": 0,
-            "task": "Tests: Web Vue, Web .NET",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 5": [
-          {
-            "hour": 0,
-            "task": "Tests: Web .NET",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: Dashboard design",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 6": [
-          {
-            "hour": 0,
-            "task": "Web Client: Fixes",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: Fixes",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: Dataset component with multiple data rendering",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: Fixes",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: Fixes",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: Release",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Building Starter [Mobile]",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Tests: improve layout",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 7": [
-          {
-            "hour": 0,
-            "task": "Tests: improve layout",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Tests: improve layout",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Tests: improve layout",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Docs: adding index.md to projects",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Docs: adding index.md to projects",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Tests: fixes",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Tests: fixes",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Docs: adding roadmap",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Docs: adding roadmap",
-            "level": 1,
-            "children": []
-          }
-        ]
-      }
+      "Day 1": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Building Starter [Mobile]",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Mobile: React Native",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implement",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "downgrading to react 16.13.1, react-native 0.63.4",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "npx react-native init [project-name] --version [X.XX.X]",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "! java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7 -> gradle-7.0-all.zip",
+                          "level": 5,
+                          "children": [
+                            {
+                              "area": null,
+                              "hour": 0,
+                              "task": "C:\\Users\\New_User\\.gradle\\wrapper\\dists\\",
+                              "level": 6,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "! Supplied javaHome must be a valid directory. You supplied: ->",
+                          "level": 5,
+                          "children": [
+                            {
+                              "area": null,
+                              "hour": 0,
+                              "task": "deleting C:\\Users\\New_User\\.gradle",
+                              "level": 6,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "looking for ui libraries",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Web Client: Fixes",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Framework: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implement",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "solving versions conflicts, with react, wepack, storybook",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "add some stories",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "deploying initial repo",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Framework web: initial script",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Minimun deliverable, splitting a minimun task would consume much more time",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ],
+      "Day 2": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Building Starter [Mobile]",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Mobile: React Native",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implementing dashboard and expo publish",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "x Publishing to expo",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "changing app name: https://stackoverflow.com/questions/34794679/change-app-name-in-react-native/34798296",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "expo go: crashes ->",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "absolute imports",
+                          "level": 5,
+                          "children": [
+                            {
+                              "area": null,
+                              "hour": 0,
+                              "task": "https://stackoverflow.com/questions/43681091/how-to-use-import-with-absolute-paths-with-expo-and-react-native",
+                              "level": 6,
+                              "children": []
+                            },
+                            {
+                              "area": null,
+                              "hour": 0,
+                              "task": "https://justinnoel.dev/2019/10/05/absolute-path-imports-in-react-native/",
+                              "level": 6,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "x expo build:web",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "white screen",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "implementing dashboard",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "! bug with barsChart and axis",
+                          "level": 8,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Mobile: React Native",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "updating scrpits",
+                  "level": 4,
+                  "children": []
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "Priorities",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Day 3": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Data: People's network",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Clean and group genres",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "People's network",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Data: Searching more datasets",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Searching more datasets to include",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "download more movie datasets",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Building Starter [Mobile]",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Mobile: React Native",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Implement",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "build APK",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "https://reactnative.dev/docs/signed-apk-android",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "https://github.com/facebook/react-native/issues/11586",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Tests: Web Angular",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Web Angular",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "prepare environment",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "implement dashboard",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Data",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Client: Web Angular",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Start early",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Read, read, read",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ],
+      "Day 4": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Tests: Web Vue, Web .NET",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Web Vue",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "! Invalid component name: \"0\". Component names should conform to valid custom element name in html5 specificatio",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "https://stackoverflow.com/questions/49792383/obscure-error-says-my-component-name-begins-with-a-zero/52357473",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "! TypeError: chart_js__WEBPACK_IMPORTED_MODULE_0__.default is not a constructor",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "version conflicts",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "https://stackoverflow.com/questions/66940954/why-does-nuxt-give-me-this-error-with-vue-chartjs",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Web .NET",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "! Trying with razor",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Day 5": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Tests: Web .NET",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Web .NET",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Trying with aspnet web application",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Web Client: Dashboard design",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Dashboard design",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "creating components",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "setting the app design",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": ".NET version conflict",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ],
+      "Day 6": [
+        {
+          "area": null,
+          "hour": "0900",
+          "task": "Web Client: Fixes",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "0900",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "0900",
+                  "task": "Fixes",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": "0900",
+                      "task": "Fixing bug in resize",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": "1000",
+          "task": "Web Client: Fixes",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "1000",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "1000",
+                  "task": "Fixes",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": "1000",
+                      "task": "Dashboard: fix ranges",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "area": null,
+                  "hour": "1000",
+                  "task": "Dashboard: layout",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": "1000",
+          "task": "Web Client: Dataset component with multiple data rendering",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "1000",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "1000",
+                  "task": "Component Dataset: multi render selector",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": "1100",
+          "task": "Web Client: Fixes",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "1100",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "1100",
+                  "task": "Dashboard: layout",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": "1100",
+                  "task": "Testing site",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": "1100",
+                  "task": "! Fixing theme",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": "1100",
+              "task": "Framework: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "1100",
+                  "task": "Deploying",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": "1200",
+          "task": "Web Client: Fixes",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "1200",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "1200",
+                  "task": "! Fixing theme",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": "1200",
+                  "task": "Deploying 2021.09.02",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": "1200",
+          "task": "Web Client: Release",
+          "level": 1,
+          "children": []
+        },
+        {
+          "area": null,
+          "hour": "1200",
+          "task": "Building Starter [Mobile]",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "1200",
+              "task": "Mobile: React Native",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "1200",
+                  "task": "! Chart bug",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": "1300",
+          "task": "Tests: improve layout",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "1300",
+              "task": "Client: Web Angular",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "1300",
+                  "task": "design: bootstrap",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": "1300",
+              "task": "Client: Web Vue",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "1300",
+                  "task": "design: bootstrap",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "find the best practices, from general to specific",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ],
+      "Day 7": [
+        {
+          "area": null,
+          "hour": "1000",
+          "task": "Tests: improve layout",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "1000",
+              "task": "Client: Web Angular",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "1000",
+                  "task": "design: bootstrap",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": "1000",
+                  "task": "design: dashboard",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": "1100",
+          "task": "Tests: improve layout",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "1100",
+              "task": "Client: Web Angular",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "1100",
+                  "task": "design: dashboard",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Client Web Angular",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": 0,
+          "task": "Tests: improve layout",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Client: Web Vue",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "design: bootstrap",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "design: material ui",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Client Web Vue",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": 0,
+          "task": "Docs: adding index.md to projects",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "adding md site to all projects",
+              "level": 4,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": "1200",
+          "task": "Docs: adding index.md to projects",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": "1200",
+              "task": "adding md site to all projects",
+              "level": 4,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": "1600",
+          "task": "Tests: fixes",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": "1600",
+              "task": "Client: Web Angular",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1600",
+                  "task": "adding storybook support",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1600",
+              "task": "Client: Web Vue",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1600",
+                  "task": "adding storybook support",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": "1700",
+          "task": "Tests: fixes",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": "1700",
+              "task": "Client: Web Vue",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1700",
+                  "task": "adding storybook support",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": "1700",
+          "task": "Docs: adding roadmap",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": "1700",
+              "task": "creating project",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "Deploy",
+              "hour": "1700",
+              "task": "add timeline component",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "Deploy",
+              "hour": "1700",
+              "task": "parse log file",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": "1800",
+          "task": "Docs: adding roadmap",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": "1800",
+              "task": "add timeline component",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "Deploy",
+              "hour": "1800",
+              "task": "parse log file",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "-",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "SPRINT RETROSPECTIVE",
+              "hour": 0,
+              "task": "-",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ]
     },
     "Sprint 3": {
-      "days": {
-        "Day 1": [
-          {
-            "hour": 0,
-            "task": "Web Client: Adding pages for movies, people and about",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: adding themes funcionality",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: fixes",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Data: Importing data from imdb.com",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: Release",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 2": [
-          {
-            "hour": 0,
-            "task": "Docs: adding roadmap",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Data: Importing data from imdb.com",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: Fixes",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: Adding pages for movies, people and about",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: about",
-            "level": 1,
-            "children": []
-          }
-        ],
-        "Day 3": [
-          {
-            "hour": 0,
-            "task": "Docs: roadmap",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Web Client: about",
-            "level": 1,
-            "children": []
-          },
-          {
-            "hour": 0,
-            "task": "Data Server versioning",
-            "level": 1,
-            "children": []
-          }
-        ]
-      }
+      "Day 1": [
+        {
+          "area": "Project Management",
+          "hour": "0700",
+          "task": "current state, retrospective and sprint planning",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "Research",
+          "hour": "0800",
+          "task": "Data",
+          "level": 2,
+          "children": [
+            {
+              "area": "Research",
+              "hour": "0800",
+              "task": "import more sources",
+              "level": 3,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "0800",
+                  "task": "imdb",
+                  "level": 4,
+                  "children": [
+                    {
+                      "area": "Research",
+                      "hour": "0800",
+                      "task": "https://datasets.imdbws.com/",
+                      "level": 5,
+                      "children": []
+                    },
+                    {
+                      "area": "Research",
+                      "hour": "0800",
+                      "task": "https://github.com/andreivinaga/imdb-dataset",
+                      "level": 5,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "Research",
+          "hour": "0800",
+          "task": "Web Client: Adding pages for movies, people and about",
+          "level": 1,
+          "children": [
+            {
+              "area": "Research",
+              "hour": "0800",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "0800",
+                  "task": "adding pages, routes and components skeleton for",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Research",
+                      "hour": "0800",
+                      "task": "person, movie, upload, streaming",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "Research",
+          "hour": "0800",
+          "task": "Web Client: adding themes funcionality",
+          "level": 1,
+          "children": [
+            {
+              "area": "Research",
+              "hour": "1000",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "1000",
+                  "task": "App theming",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Research",
+              "hour": "1100",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "1100",
+                  "task": "App theming",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Research",
+              "hour": "1200",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "1200",
+                  "task": "App theming",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "Research",
+                  "hour": "1200",
+                  "task": "App templates",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Research",
+              "hour": "1300",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "1300",
+                  "task": "App footer",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "Research",
+                  "hour": "1300",
+                  "task": "App layout",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "Research",
+          "hour": "1300",
+          "task": "Web Client: fixes",
+          "level": 1,
+          "children": [
+            {
+              "area": "Research",
+              "hour": "1300",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "1300",
+                  "task": "Dashboard layout",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Research",
+              "hour": "1400",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "1400",
+                  "task": "Card layout",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "Research",
+                  "hour": "1400",
+                  "task": "Card data",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "Research",
+          "hour": "1400",
+          "task": "Data: Importing data from imdb.com",
+          "level": 1,
+          "children": [
+            {
+              "area": "Research",
+              "hour": "0900",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "0900",
+                  "task": "import more sources",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Research",
+                      "hour": "0900",
+                      "task": "imdb",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Research",
+              "hour": "1600",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "1600",
+                  "task": "import more sources",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Research",
+                      "hour": "1600",
+                      "task": "imdb",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Research",
+              "hour": "1700",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "1700",
+                  "task": "import more sources",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Research",
+                      "hour": "1700",
+                      "task": "imdb",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Research",
+              "hour": "1700",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "1700",
+                  "task": "import more sources",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Research",
+                      "hour": "1700",
+                      "task": "imdb",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "Research",
+          "hour": "1700",
+          "task": "Web Client: Release",
+          "level": 1,
+          "children": [
+            {
+              "area": "Research",
+              "hour": "1600",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Research",
+                  "hour": "1600",
+                  "task": "Deploying",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Time fixed tasks, a quality(t) task",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Don't complicate it, it will be complicate by itself",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ],
+      "Day 2": [
+        {
+          "area": "Deploy",
+          "hour": 0,
+          "task": "Docs: adding roadmap",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": "0700",
+              "task": "project structure",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": "0700",
+          "task": "Data: Importing data from imdb.com",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": "0900",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "0900",
+                  "task": "import more sources",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "0900",
+                      "task": "imdb - people",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1000",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1000",
+                  "task": "import more sources",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "1000",
+                      "task": "imdb - people",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1100",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1100",
+                  "task": "import more sources",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "1100",
+                      "task": "imdb - movies",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1200",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1200",
+                  "task": "updating dashboard",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1300",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1300",
+                  "task": "import more sources",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "1300",
+                      "task": "kaggle - netflix",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1500",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1500",
+                  "task": "import more sources",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "1500",
+                      "task": "kaggle - netflix",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1600",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1600",
+                  "task": "import more sources",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "1600",
+                      "task": "dashboard",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1900",
+              "task": "Data",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1900",
+                  "task": "rebuilding DB",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": "1900",
+          "task": "Web Client: Fixes",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": "0700",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "0700",
+                  "task": "git submodules",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "0800",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "0800",
+                  "task": "? git submodules",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "0800",
+                      "task": "looking for a better solution for sharing the framework across projects",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1000",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1000",
+                  "task": "using the page abstraction for a better separation of concerns",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": "1000",
+          "task": "Web Client: Adding pages for movies, people and about",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": "1100",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1100",
+                  "task": "using the page abstraction for a better separation of concerns",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "1100",
+                      "task": "removing current pages",
+                      "level": 4,
+                      "children": []
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": "1100",
+                      "task": "adding page movies",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": "Deploy",
+                          "hour": "1100",
+                          "task": "dashboard",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": "1100",
+                      "task": "adding page people",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": "Deploy",
+                          "hour": "1100",
+                          "task": "dashboard",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": "1100",
+                      "task": "adding page about",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": "Deploy",
+                          "hour": "1100",
+                          "task": "dashboard",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1300",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1300",
+                  "task": "customizing dashboards",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": "1300",
+          "task": "Web Client: about",
+          "level": 1,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": "1700",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1700",
+                  "task": "page about",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "1700",
+                      "task": "adding project timeline",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1800",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1800",
+                  "task": "page about",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "1800",
+                      "task": "adding project timeline",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1900",
+              "task": "Client: Web React",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1900",
+                  "task": "page about",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "1900",
+                      "task": "adding project timeline",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "boilerplate development time vrs the application development time",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "framework progress vrs app progress",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ],
+      "Day 3": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Docs: roadmap",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "0900",
+              "task": "parsing log file",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": null,
+              "hour": "0900",
+              "task": "rewriting tasks to reflect a user story perspective",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": null,
+              "hour": "1000",
+              "task": "rewriting tasks to reflect a user story perspective",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": "1000",
+          "task": "Web Client: about",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "0800",
+              "task": "roadmap component",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": null,
+              "hour": "0900",
+              "task": "roadmap component",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": null,
+              "hour": "1000",
+              "task": "roadmap component",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": "1000",
+          "task": "Data Server versioning",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": "0700",
+              "task": "Updating api uri",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "0700",
+                  "task": "Client: Web Angular",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": "0700",
+                      "task": "api versioning",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "area": null,
+                  "hour": "1100",
+                  "task": "Server:",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": "1100",
+                  "task": "Implementing api versioning",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": "1100",
+                  "task": "Implementing v.1.0",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": "1200",
+              "task": "Data:",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": "1200",
+                  "task": "creating DB Upload version",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "DB",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "Server",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "Deploy",
+                  "hour": "1600",
+                  "task": "Framework Web React",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "Deploy",
+                  "hour": "1600",
+                  "task": "Client Web Vue",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "Deploy",
+                  "hour": "1600",
+                  "task": "Client Web React",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "0800",
+              "task": "Relocating git repos",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "0800",
+                  "task": "Client: Web Angular",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "0800",
+                      "task": "change git repo",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": "Deploy",
+                          "hour": "0800",
+                          "task": "git remote set-url origin new.git.url/here",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": "0800",
+                      "task": "deploy",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1100",
+              "task": "Relocating git repos",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": "1100",
+                  "task": "Client: React Angular",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Deploy",
+                      "hour": "1100",
+                      "task": "change git repo",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": "Deploy",
+                          "hour": "1100",
+                          "task": "git remote set-url origin new.git.url/here",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": "Deploy",
+                      "hour": "1100",
+                      "task": "deploy",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": "1200",
+              "task": "Server",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "Deploy",
+              "hour": "1200",
+              "task": "DB",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "the deployment's nightmare, git's repos relocating",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Roadmap's perspectives: end user, developer, projects involved",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Very low progress in user stories",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Infrastructure day",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ],
+      "Day 4": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Import more data from other sources",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Data: Import IMDB - Ratings",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Data: Import Oscars",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "View stories about data",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "[70*] Oscars story",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "Server : adding 2.0 routes",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "View detailed info about each movie",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Movie page",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "View detailed info about each person",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Person page",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "View detailed info about each person",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Client",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "[60*] Implement search",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Improve Loop",
+              "hour": 0,
+              "task": "UI: Minor fixes",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Improve Loop",
+                  "hour": 0,
+                  "task": "Loading message",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "Improve Loop",
+              "hour": 0,
+              "task": "[120*] DevOps: Implement jenkins",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Improve Loop",
+                  "hour": 0,
+                  "task": "[60*] Install docker",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": "Improve Loop",
+                      "hour": 0,
+                      "task": "Docker.ApiServices.WSL2.WslKernelUpdateNotInstalledException:",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Screenshots",
+              "level": 2,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "Screenshot on deploy",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "Compare images",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "The time record it is more clear in this format than HH00, but the last one increments time awareness and gives a better perspective for the problem solution strategy, the considerations, priorities, best fit stategy.",
+              "level": 2,
+              "children": []
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "many of uncomplete tasks, to respect the worst case timeframe",
+              "level": 2,
+              "children": []
+            }
+          ]
+        }
+      ],
+      "Day 5": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Research and import more data",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Data: Import sources",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "awards",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "[-] oscars",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "https://www.openintro.org/data/index.php?data=oscars",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "https://datahub.io/rufuspollock/oscars-nominees-and-winners",
+                          "level": 5,
+                          "children": []
+                        },
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "https://awardsdatabase.oscars.org/Help/Statistics?file=indexStats.html&url=ampasstorage",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "golden globes",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "https://www.kaggle.com/unanimad/golden-globe-awards",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "emmy awards",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "https://www.kaggle.com/unanimad/emmy-awards",
+                          "level": 5,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "podcasts",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "! https://data.world/brandon-telle/podcasts-dataset",
+                      "level": 4,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "How to navigate in 11M records?",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Search",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "! Client: Textbox on enter does not work if a suggestion it's not selected",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Client: suggestions, search api",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Client: search results page",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Data: search index",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Server:",
+                  "level": 3,
+                  "children": [
+                    {
+                      "area": null,
+                      "hour": 0,
+                      "task": "suggestions",
+                      "level": 4,
+                      "children": [
+                        {
+                          "area": null,
+                          "hour": 0,
+                          "task": "search",
+                          "level": 8,
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Stories: Oscar's awards",
+              "level": 2,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Get insights from imported data",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Detailed info of the movie and the people",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "[120*] Server: route",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "Client: Pages",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Get insights the fetch process",
+          "level": 1,
+          "children": [
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Data:",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "add sources info",
+                  "level": 3,
+                  "children": []
+                },
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "[5*] add pipelines progress",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": null,
+              "hour": 0,
+              "task": "Server:",
+              "level": 2,
+              "children": [
+                {
+                  "area": null,
+                  "hour": 0,
+                  "task": "[5*] routes",
+                  "level": 3,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "Day 6": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Get insights from data",
+          "level": 2,
+          "children": [
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "Basic info of the movie and the people",
+              "level": 3,
+              "children": [
+                {
+                  "area": "STORIES",
+                  "hour": 0,
+                  "task": "Client: layouts",
+                  "level": 4,
+                  "children": []
+                },
+                {
+                  "area": "STORIES",
+                  "hour": 0,
+                  "task": "Client: data pipeline",
+                  "level": 4,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "How to navigate in 11M records?",
+          "level": 2,
+          "children": [
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "Search",
+              "level": 3,
+              "children": [
+                {
+                  "area": "STORIES",
+                  "hour": 0,
+                  "task": "Client: layout",
+                  "level": 4,
+                  "children": []
+                },
+                {
+                  "area": "STORIES",
+                  "hour": 0,
+                  "task": "Client: data pipeline",
+                  "level": 4,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "INFRASTRUCTURE",
+          "hour": 0,
+          "task": "[X] DATA: reimport the DB",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "INFRASTRUCTURE",
+          "hour": 0,
+          "task": "[X] Deploy: create a full import script",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "LEARN",
+          "hour": 0,
+          "task": "ApolloClient, apollo-react, graphql",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "DAY RETROSPECTIVE",
+          "hour": 0,
+          "task": "-",
+          "level": 2,
+          "children": []
+        }
+      ],
+      "Day 7": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "The app will be consistent and with a nice look and feel: theme, data layout",
+          "level": 2,
+          "children": [
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "[X] Handle server offline",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "[X] Handle page transition",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "[X] Improve nav bar",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "[X] Title and breadcrumbs",
+              "level": 3,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "BUGS, FIXES AND WORK AROUNDS",
+          "hour": 0,
+          "task": "[X] Data: fix dashboard data",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "BUGS, FIXES AND WORK AROUNDS",
+          "hour": 0,
+          "task": "[X] Data: minor fixes to import process",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "LEARN",
+          "hour": 0,
+          "task": "ApolloClient, apollo-react, graphql",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "DAY RETROSPECTIVE",
+          "hour": 0,
+          "task": "The minimun components for a good navigation",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "DAY RETROSPECTIVE",
+          "hour": 0,
+          "task": "The minimun details that makes a website a professional look",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "DAY RETROSPECTIVE",
+          "hour": 0,
+          "task": "A webapp or a webpage? the loading splash or SSR?",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "SPRINT RETROSPECTIVE",
+          "hour": 0,
+          "task": "Feeling of low progress, where the work goes?",
+          "level": 2,
+          "children": [
+            {
+              "area": "SPRINT RETROSPECTIVE",
+              "hour": 0,
+              "task": "will finish each story detailing all the infrastructure tasks involved",
+              "level": 3,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    "Sprint 4: towards the Beta": {
+      "Day 1": [
+        {
+          "area": "INFRASTRUCTURE",
+          "hour": 0,
+          "task": "Daily release",
+          "level": 2,
+          "children": [
+            {
+              "area": "INFRASTRUCTURE",
+              "hour": 0,
+              "task": "Make the project ready for a release daily",
+              "level": 3,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "BUGS, FIXES AND WORK AROUNDS",
+          "hour": 0,
+          "task": "the last 45 minutes will be for fixes and improvements",
+          "level": 2,
+          "children": [
+            {
+              "area": "BUGS, FIXES AND WORK AROUNDS",
+              "hour": 0,
+              "task": "fixes to the log -> doc script",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "BUGS, FIXES AND WORK AROUNDS",
+              "hour": 0,
+              "task": "the links from the breadcrumbs force a full app loading",
+              "level": 3,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "BEAUTIFY",
+          "hour": 0,
+          "task": "1 hour for layout and display",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "INFRASTRUCTURE",
+          "hour": 0,
+          "task": "Make the project ready for a release daily",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "INFRASTRUCTURE",
+          "hour": 0,
+          "task": "Deploy: Jenkins",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "DAY RETROSPECTIVE",
+          "hour": 0,
+          "task": "Sprint Plan",
+          "level": 0,
+          "children": [
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Release a Beta, with the current information",
+              "level": 1,
+              "children": [
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "Home will be a list of stories",
+                  "level": 2,
+                  "children": [
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "awards winners",
+                      "level": 3,
+                      "children": []
+                    },
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "movies from a country",
+                      "level": 3,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "The app will be consistent and with a nice look and feel: theme, data layout",
+                  "level": 2,
+                  "children": [
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "The info displayed will have a good layout and a nice look",
+                      "level": 3,
+                      "children": [
+                        {
+                          "area": "DAY RETROSPECTIVE",
+                          "hour": 0,
+                          "task": "improve layout of page movie",
+                          "level": 4,
+                          "children": []
+                        },
+                        {
+                          "area": "DAY RETROSPECTIVE",
+                          "hour": 0,
+                          "task": "improve layout of page person",
+                          "level": 4,
+                          "children": [
+                            {
+                              "area": "DAY RETROSPECTIVE",
+                              "hour": 0,
+                              "task": "improve layout of page podcast",
+                              "level": 6,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "The search functionality must work well and fast",
+                  "level": 2,
+                  "children": [
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "improve layout of page search",
+                      "level": 3,
+                      "children": []
+                    },
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "fix the data searching",
+                      "level": 3,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "Story: The \"how was made\"",
+                  "level": 2,
+                  "children": [
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "about the data fetched",
+                      "level": 3,
+                      "children": []
+                    },
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "about the evolution of the project through screenshots",
+                      "level": 3,
+                      "children": []
+                    },
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "the dev log",
+                      "level": 3,
+                      "children": []
+                    },
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "the roadmap",
+                      "level": 3,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Perspectives",
+              "level": 1,
+              "children": [
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "for the CTOs",
+                  "level": 2,
+                  "children": []
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "for the devs",
+                  "level": 2,
+                  "children": []
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "for the data lovers",
+                  "level": 2,
+                  "children": []
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "for the movie fans",
+                  "level": 2,
+                  "children": []
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "professionality level",
+                  "level": 2,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Strategies",
+              "level": 1,
+              "children": [
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "for the stories",
+                  "level": 2,
+                  "children": [
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "each story will have it's page and its banner",
+                      "level": 3,
+                      "children": []
+                    },
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "develop at least 1 history per day - min 5 histories for the home page",
+                      "level": 3,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "the last 45 minutes will be for fixes and improvements",
+                  "level": 2,
+                  "children": [
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "the loading page",
+                      "level": 3,
+                      "children": []
+                    },
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "IMDB link of person comes with null id",
+                      "level": 3,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "1 hour for layout and display",
+                  "level": 2,
+                  "children": []
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "project evolution",
+                  "level": 2,
+                  "children": [
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "the screenshots timeline",
+                      "level": 3,
+                      "children": []
+                    },
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "the data import process",
+                      "level": 3,
+                      "children": []
+                    }
+                  ]
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "daily release",
+                  "level": 2,
+                  "children": [
+                    {
+                      "area": "DAY RETROSPECTIVE",
+                      "hour": 0,
+                      "task": "!!!!!!!!!!!!!!!!!!!!!Make the project ready for a release daily",
+                      "level": 3,
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "area": "DAY RETROSPECTIVE",
+              "hour": 0,
+              "task": "Questions",
+              "level": 1,
+              "children": [
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "Do i have enough information to do it?",
+                  "level": 2,
+                  "children": []
+                },
+                {
+                  "area": "DAY RETROSPECTIVE",
+                  "hour": 0,
+                  "task": "Spiral or serial?",
+                  "level": 2,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   },
-  "todo": [],
+  "todo": [
+    {
+      "area": "STORIES",
+      "hour": 0,
+      "task": "How to navigate in 11M records?",
+      "level": 1,
+      "children": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Add search capabilities, for movies, people and podcasts",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Add stories as an entry point for the main areas",
+          "level": 2,
+          "children": [
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "Stories: Awards",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "Stories: Oscar's awards",
+              "level": 3,
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "STORIES",
+      "hour": 0,
+      "task": "What is the best form to see a lot of info?",
+      "level": 1,
+      "children": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Dashboards and charts can help see it at a glance, a numeric perspective",
+          "level": 2,
+          "children": []
+        }
+      ]
+    },
+    {
+      "area": "STORIES",
+      "hour": 0,
+      "task": "Search and import more data",
+      "level": 1,
+      "children": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "import more sources",
+          "level": 2,
+          "children": [
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "imdb",
+              "level": 3,
+              "children": [
+                {
+                  "area": "STORIES",
+                  "hour": 0,
+                  "task": "import principals",
+                  "level": 4,
+                  "children": []
+                },
+                {
+                  "area": "STORIES",
+                  "hour": 0,
+                  "task": "import crew",
+                  "level": 4,
+                  "children": []
+                },
+                {
+                  "area": "STORIES",
+                  "hour": 0,
+                  "task": "import akas",
+                  "level": 4,
+                  "children": []
+                },
+                {
+                  "area": "STORIES",
+                  "hour": 0,
+                  "task": "import episode",
+                  "level": 4,
+                  "children": []
+                },
+                {
+                  "area": "STORIES",
+                  "hour": 0,
+                  "task": "clean database",
+                  "level": 4,
+                  "children": []
+                }
+              ]
+            },
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "podcasts",
+              "level": 3,
+              "children": [
+                {
+                  "area": "STORIES",
+                  "hour": 0,
+                  "task": "https://github.com/odenizgiz/Podcasts-Data",
+                  "level": 4,
+                  "children": []
+                },
+                {
+                  "area": "STORIES",
+                  "hour": 0,
+                  "task": "https://www.kaggle.com/thoughtvector/podcastreviews",
+                  "level": 4,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "import related data",
+          "level": 2,
+          "children": [
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "wikipedia",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "imdb",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "photos",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "STORIES",
+              "hour": 0,
+              "task": "movie festivals and awards",
+              "level": 3,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "find more sources of other streaming companies",
+          "level": 2,
+          "children": []
+        }
+      ]
+    },
+    {
+      "area": "STORIES",
+      "hour": 0,
+      "task": "Get insights from the fetch process",
+      "level": 1,
+      "children": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "add fetching progress",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "create a sources log",
+          "level": 2,
+          "children": []
+        }
+      ]
+    },
+    {
+      "area": "STORIES",
+      "hour": 0,
+      "task": "Get insights from data",
+      "level": 1,
+      "children": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Detailed info of the movie and the people",
+          "level": 4,
+          "children": []
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Visualize relations among info",
+          "level": 2,
+          "children": []
+        }
+      ]
+    },
+    {
+      "area": "STORIES",
+      "hour": 0,
+      "task": "Must have a mobile version",
+      "level": 1,
+      "children": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Client: test other mobile technologies and implement it in the most convenient",
+          "level": 2,
+          "children": []
+        }
+      ]
+    },
+    {
+      "area": "Deploy",
+      "hour": 0,
+      "task": "[ ] update the database export script",
+      "level": 2,
+      "children": []
+    },
+    {
+      "area": "Deploy",
+      "hour": 0,
+      "task": "Screenshots",
+      "level": 2,
+      "children": [
+        {
+          "area": "Deploy",
+          "hour": 0,
+          "task": "Get all version screenshot",
+          "level": 3,
+          "children": []
+        }
+      ]
+    },
+    {
+      "area": "Deploy",
+      "hour": 0,
+      "task": "[X] create a full import script",
+      "level": 2,
+      "children": []
+    },
+    {
+      "area": "Deploy",
+      "hour": 0,
+      "task": "relocate client-web-angular",
+      "level": 2,
+      "children": []
+    },
+    {
+      "area": "Deploy",
+      "hour": 0,
+      "task": "DevOps: Jenkins, Docker",
+      "level": 2,
+      "children": []
+    },
+    {
+      "area": "Deploy",
+      "hour": 0,
+      "task": "Client",
+      "level": 1,
+      "children": [
+        {
+          "area": "Deploy",
+          "hour": 0,
+          "task": "add stories as an entry point to the movies and people areas",
+          "level": 2,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "Awards",
+              "level": 3,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "Deploy",
+          "hour": 0,
+          "task": "add search capabilities, for movies and people",
+          "level": 2,
+          "children": [
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "add search",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "Deploy",
+              "hour": 0,
+              "task": "implement movies and people pages",
+              "level": 3,
+              "children": [
+                {
+                  "area": "Deploy",
+                  "hour": 0,
+                  "task": "people network",
+                  "level": 4,
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "area": "Deploy",
+      "hour": 0,
+      "task": "Dev:",
+      "level": 1,
+      "children": [
+        {
+          "area": "Deploy",
+          "hour": 0,
+          "task": "Server: audit requests with firebase",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "Deploy",
+          "hour": 0,
+          "task": "report time elapsed in scripts",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "Deploy",
+          "hour": 0,
+          "task": "refactor: separate dashboard in classes",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "Deploy",
+          "hour": 0,
+          "task": "square component -> indicator",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "Deploy",
+          "hour": 0,
+          "task": "sub projects",
+          "level": 2,
+          "children": []
+        }
+      ]
+    },
+    {
+      "area": "BUGS, FIXES AND WORK AROUNDS",
+      "hour": 0,
+      "task": "Client: Textbox on enter doesn't work if a suggestion it's not selected",
+      "level": 1,
+      "children": []
+    },
+    {
+      "area": "BUGS, FIXES AND WORK AROUNDS",
+      "hour": 0,
+      "task": "Server: Fix search and suggestions",
+      "level": 1,
+      "children": []
+    },
+    {
+      "area": "BUGS, FIXES AND WORK AROUNDS",
+      "hour": 0,
+      "task": "DATA: podcasts import",
+      "level": 1,
+      "children": []
+    },
+    {
+      "area": "BUGS, FIXES AND WORK AROUNDS",
+      "hour": 0,
+      "task": "DATA: review dashboard inconsistencies",
+      "level": 1,
+      "children": []
+    },
+    {
+      "area": "BEAUTIFY",
+      "hour": 0,
+      "task": "[X] Handle server offline",
+      "level": 1,
+      "children": []
+    },
+    {
+      "area": "BEAUTIFY",
+      "hour": 0,
+      "task": "[X] Handle page transition",
+      "level": 1,
+      "children": []
+    },
+    {
+      "area": "BEAUTIFY",
+      "hour": 0,
+      "task": "[X] Improve nav bar",
+      "level": 1,
+      "children": []
+    },
+    {
+      "area": "BEAUTIFY",
+      "hour": 0,
+      "task": "[X] Add page title and breadcrumbs",
+      "level": 1,
+      "children": []
+    },
+    {
+      "area": "BEAUTIFY",
+      "hour": 0,
+      "task": "Refactor to handle themes correctly",
+      "level": 1,
+      "children": [
+        {
+          "area": "BEAUTIFY",
+          "hour": 0,
+          "task": "Change version color in footer",
+          "level": 2,
+          "children": []
+        }
+      ]
+    },
+    {
+      "area": "BEAUTIFY",
+      "hour": 0,
+      "task": "Display data in their correct format",
+      "level": 1,
+      "children": []
+    },
+    {
+      "area": "BEAUTIFY",
+      "hour": 0,
+      "task": "Beautify layout of pages:",
+      "level": 1,
+      "children": [
+        {
+          "area": "BEAUTIFY",
+          "hour": 0,
+          "task": "Search",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "BEAUTIFY",
+          "hour": 0,
+          "task": "Person",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "BEAUTIFY",
+          "hour": 0,
+          "task": "Podcast",
+          "level": 2,
+          "children": []
+        },
+        {
+          "area": "BEAUTIFY",
+          "hour": 0,
+          "task": "Movie",
+          "level": 2,
+          "children": []
+        }
+      ]
+    },
+    {
+      "area": "BEAUTIFY",
+      "hour": 0,
+      "task": "Beautify charts",
+      "level": 1,
+      "children": []
+    },
+    {
+      "area": "REFACTOR",
+      "hour": 0,
+      "task": "DOCUMENTATION",
+      "level": 0,
+      "children": [
+        {
+          "area": "REFACTOR",
+          "hour": 0,
+          "task": "Server: add docs to /",
+          "level": 1,
+          "children": []
+        },
+        {
+          "area": "REFACTOR",
+          "hour": 0,
+          "task": "roadmap perspectives",
+          "level": 1,
+          "children": []
+        },
+        {
+          "area": "REFACTOR",
+          "hour": 0,
+          "task": "get each version's screenshot",
+          "level": 1,
+          "children": []
+        }
+      ]
+    },
+    {
+      "area": "LEARN",
+      "hour": 0,
+      "task": "Tech Test",
+      "level": 1,
+      "children": [
+        {
+          "area": "LEARN",
+          "hour": 0,
+          "task": "Client: Web AspNet",
+          "level": 2,
+          "children": [
+            {
+              "area": "LEARN",
+              "hour": 0,
+              "task": "implement",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "LEARN",
+              "hour": 0,
+              "task": "design",
+              "level": 3,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "LEARN",
+          "hour": 0,
+          "task": "Mobile: Flutter",
+          "level": 2,
+          "children": [
+            {
+              "area": "LEARN",
+              "hour": 0,
+              "task": "implement",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "LEARN",
+              "hour": 0,
+              "task": "design",
+              "level": 3,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "LEARN",
+          "hour": 0,
+          "task": "Mobile: Kotlin",
+          "level": 2,
+          "children": [
+            {
+              "area": "LEARN",
+              "hour": 0,
+              "task": "implement",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "LEARN",
+              "hour": 0,
+              "task": "design",
+              "level": 3,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "LEARN",
+          "hour": 0,
+          "task": "Mobile: Xamarin",
+          "level": 2,
+          "children": [
+            {
+              "area": "LEARN",
+              "hour": 0,
+              "task": "implement",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "LEARN",
+              "hour": 0,
+              "task": "design",
+              "level": 3,
+              "children": []
+            }
+          ]
+        },
+        {
+          "area": "LEARN",
+          "hour": 0,
+          "task": "Mobile: MAUI",
+          "level": 2,
+          "children": [
+            {
+              "area": "LEARN",
+              "hour": 0,
+              "task": "implement",
+              "level": 3,
+              "children": []
+            },
+            {
+              "area": "LEARN",
+              "hour": 0,
+              "task": "design",
+              "level": 3,
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "unknown": []
 }

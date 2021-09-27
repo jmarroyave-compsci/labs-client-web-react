@@ -5,19 +5,24 @@ import Layout from 'components/pages/people';
 import { gql, useQuery } from "@apollo/client";
 
 export const QRY_DASHBOARD = gql`
-  query getDashboard{ 
-    dashboard {
-      actors
-      directors
-      people
-    }
-  }`;
+  query getDashboard 
+{
+  dashboardPeople {
+    alive
+    profession
+    total
+    yearBirth
+  }
+}
+  `;
 
 export default function Page( props ){
-  const { loading, error, data } = useQuery(QRY_DASHBOARD);
+  var { loading, error, data } = useQuery(QRY_DASHBOARD);
+  data = (data) ? data.dashboardPeople : { }; 
 	const params = { loading, error, data };
+  params.breadcrumbs = [{name: 'people'}]
 	return (
-		<App>
+		<App {...params}>
 			<Layout {...params}/>	
 		</App>
 	)

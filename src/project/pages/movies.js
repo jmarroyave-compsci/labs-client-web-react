@@ -5,22 +5,29 @@ import Layout from 'components/pages/movies';
 import { gql, useQuery } from "@apollo/client";
 
 export const QRY_DASHBOARD = gql`
-  query getDashboard{ 
-    dashboard {
-      countries
-      genres
-      movies
-      types
-      yearsAdded
-      yearsReleased
-    }
-  }`;
+  query getDashboard 
+{
+  dashboardMovies {
+    awards
+    classification
+    country
+    genre
+    rating
+    streamBy
+    total
+    type
+    yearReleased
+  }
+}
+`;
 
 export default function Page( props ){
-  const { loading, error, data } = useQuery(QRY_DASHBOARD);
+  var { loading, error, data } = useQuery(QRY_DASHBOARD);
+  data = (data) ? data.dashboardMovies : { }; 
 	const params = { loading, error, data };
+  params.breadcrumbs = [{name: 'movies'}]
 	return (
-		<App>
+		<App {...params}>
 			<Layout {...params}/>	
 		</App>
 	)

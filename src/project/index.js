@@ -8,6 +8,8 @@ import Constants from 'config/constants';
 import SERVER from 'config/values/server';
 import { AppProvider } from 'state/contexts/app';
 
+import theme from 'core/ui/theme';
+
 import "./index.scss";
 import 'core/ui/assets/css/app.scss';
 import 'shared/globals/footer/footer.scss';

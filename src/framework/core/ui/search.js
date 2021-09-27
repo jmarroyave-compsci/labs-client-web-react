@@ -44,7 +44,7 @@ var loading = false;
 var lastQuery = '';
 var lastResponse = [];
 
-async function getSuggestions({value}) {
+async function getSuggestions({value}, owner) {
   const inputValue = value.toString().trim().toLowerCase();
   const inputLength = inputValue.length;
   let count = 0;
@@ -58,17 +58,19 @@ async function getSuggestions({value}) {
   lastQuery = inputValue;
   if(loading) return lastResponse;
   
-  lastResponse = await fetchSuggestions(inputValue);
+  lastResponse = await fetchSuggestions(inputValue, owner);
   return lastResponse;
 }
 
-function fetchSuggestions(value){
+async function fetchSuggestions(value, owner){
+  const self = owner;
   loading = true;
   return new Promise((resolve, reject)=>{
     setTimeout(async ()=>{
-      const data = await window.__api.search(lastQuery);
+      if(!self.props.onSearchSuggestions) return;
+      const data = await self.props.onSearchSuggestions(lastQuery);
       loading = false;
-      resolve(data);
+      resolve((data) ? data : []);
     }, 750);
   });
 }
@@ -174,7 +176,7 @@ class Search extends React.Component {
   }
 
   async handleSuggestionsFetchRequested( value ){
-    this.setState({last : value, suggestions : await getSuggestions(value)});
+    this.setState({last : value, suggestions : await getSuggestions(value, this)});
   }
 
   handleSuggestionsClearRequested(){
@@ -182,6 +184,7 @@ class Search extends React.Component {
   }
 
   handleChange( event, { newValue, method }) {
+    //console.log("--", method, newValue)
     switch(method){
       case "enter":
         //console.log(newValue, this.state.single);
@@ -199,12 +202,12 @@ class Search extends React.Component {
   }
 
   handleResultSelected(query){
-    console.log(query);
     if(!this.props.onSearchQuery) return;
     this.props.onSearchQuery(query);
   }
 
   render() {
+    const self = this;
     const { classes } = this.props;
 
     const autosuggestProps = {
@@ -236,7 +239,7 @@ class Search extends React.Component {
               root: classes.inputRoot,
               input: classes.inputInput,
             },
-            placeholder: 'Buscar',
+            placeholder: 'Search',
             value: this.state.single,
             onChange: this.handleChange,
           }}

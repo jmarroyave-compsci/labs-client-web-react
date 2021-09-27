@@ -1,7 +1,8 @@
 import React from 'react';
+import Typography from '@material-ui/core/Typography';
 
 export default function Version({version}){
 	return (
-		<div className="version">v.{version}</div>
+		<Typography color="textPrimary" variant="caption">v.{version}</Typography>
 	)	
 }

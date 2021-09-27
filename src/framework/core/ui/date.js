@@ -40,6 +40,7 @@ class CoreDate extends React.Component {
     var  { lang, value, className } = this.props;
     lang = (lang) ? lang : "en";
     const formatString = (this.props.format) ? this.props.format : "ago";
+
     const date = this.getDate(value);
     const str = this._format(lang, date, formatString);
     return (

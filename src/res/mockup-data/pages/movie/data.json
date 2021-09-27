@@ -1,0 +1,24 @@
+{
+  "references": {
+    "imdb": "https://www.imdb.com/title/tt0541007/"
+  },
+  "id": "tt0541007",
+  "title": "Rocky",
+  "originalTitle": "Rocky",
+  "country": [],
+  "type": "tvEpisode",
+  "genre": [
+    "family",
+    "fantasy"
+  ],
+  "duration": null,
+  "rating": [],
+  "releasedDate": "1999-01-01T05:00:00.000Z",
+  "endedDate": null,
+  "streamBy": [],
+  "directors": [],
+  "cast": [],
+  "writers": [],
+  "created": 1632280002302,
+  "awards": []
+}

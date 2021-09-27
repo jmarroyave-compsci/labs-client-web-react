@@ -2,14 +2,17 @@ import Layout from './layout'
 import mockupData from 'res/mockup-data/pages/movies/data.json'
 
 export default {
-  title: 'Project/Pages/Movies',
+  title: 'Project/Pages/Movies/Page',
 };
 
 const Template = args => <Layout {...args} />;
 
 export const Controls = Template.bind({});
-
 Controls.args = {
-  loading: false,
   data: mockupData,
+};
+
+export const Loading = Template.bind({});
+Loading.args = {
+  loading: true,
 };

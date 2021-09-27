@@ -9,6 +9,8 @@ import Toolbar from './toolbar';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
+import AppOffline from 'core/components/app_offline';
+import Breadcrumbs from './breadcrumbs';
 
 import { customTheme } from 'core/ui/theme'
 import { makeStyles } from "@material-ui/core/styles";
@@ -37,7 +39,10 @@ function App( props ) {
     setOpen(!open);
   };
   const classes = useStyles();
-  var { onSearchQuery, nav, children, title, notifications, search, loading, footer } = props;
+  var { pageTitle, breadcrumbs, error, onSearchQuery, onSearchSuggestions, nav, children, title, notifications, search, loading, footer } = props;
+
+
+  const offline = (error) ? true : false;
 
 
   document.getElementById('root').style.display = 'inline-block';
@@ -46,12 +51,14 @@ function App( props ) {
   document.body.style.overflow = 'unset';
   document.title = title;
 
+  if(offline) return <AppOffline error={error}/>
+
 
   return (
     <MuiThemeProvider theme={customTheme}>
       <Box sx={{ display: 'flex' }} style={{padding: 0, margin: 0}}>
         <CssBaseline />
-        <Toolbar toggleDrawer={toggleDrawer} open={open} />
+        <Toolbar pageTitle={pageTitle} toggleDrawer={toggleDrawer} open={open} onSearchQuery={onSearchQuery} onSearchSuggestions={onSearchSuggestions} search={search}/>
         <Drawer toggleDrawer={toggleDrawer} open={open} nav={nav} />
         <Box
           component="main"
@@ -66,11 +73,16 @@ function App( props ) {
           style={{padding: 0, margin: 0}}
         >
           <Toolbar />
+          <div className={classes.appBarSpacer}/>
           <Container style={{padding: 0, paddingLeft: "0.5rem", margin: 0}}>
             <Grid container spacing={0}>
+              
+              <Breadcrumbs data={breadcrumbs}/>
               <div className={classes.content}  style={{padding: "0.75rem"}}>
-                <div className={classes.appBarSpacer}/>
+                
+
                 <ErrorBoundry from="/core/ui/app/children">
+
                     {children}
                 </ErrorBoundry>
               </div>

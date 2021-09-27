@@ -3,6 +3,7 @@ import { Router, Route, Switch } from 'react-router-dom';
 import ErrorBoundry from './error';
 import { createBrowserHistory } from "history";
 import LoadableComponent from 'core/components/loadable_component';
+import PageLoading from 'core/components/page_loading';
 
 class Hub extends React.Component {
 	render() {	
@@ -24,7 +25,7 @@ class Hub extends React.Component {
 						{routes.map((r, idx) => 
 							r.component && 
 							<Route key={idx} exact={(r.exact === true) ? true : false} path={r.route}>
-								<LoadableComponent uri={r.component} />
+								<LoadableComponent uri={r.component} loadingComponent={<PageLoading/>}/>
 							</Route>
 						)}  
 						{page404 && 

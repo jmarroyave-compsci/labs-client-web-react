@@ -7,16 +7,11 @@ import PanelCard from 'core/ui/cards/panel';
 import HorizontalBarsChart from "./charts/horizontal-bars-chart";
 import Table from './table';
 import TreeMap from "./charts/tree-map";
-
+import Loading from 'core/ui/loading'; 
 
 export default function Dataset( params ){
-  const { loading, error, data, title, ranges, height } = params;
+  const { loading, data, title, ranges, height } = params;
   const [ format , setFormat] = useState("chart");
-
-  if (loading === true) return <p>Loading...</p>;
-  if (error) return <p>Error { error.toString() }</p>;
-
-  if (!data || data.length === 0) return "NO DATA";
 
   const button = (ico, f) => <Button outlined={true} color='primary' icon={ico} render="icon" disabled={f === format} onClick={()=> setFormat(f)}>{f}</Button>
   
@@ -31,11 +26,18 @@ export default function Dataset( params ){
             </div>}
         color="primary"
       >
-        <div>
+        {(loading === true || !data) &&
+          <div>
+            <Loading/>
+          </div>
+        }
+        {!loading === true && data &&
+          <div>
           {(format === "table") && renderText( data, ranges, height )}
           {(format === "chart") && renderGraph( title, data, ranges, height )}
           {(format === "tree") && renderTreeMap( title, data, ranges, height )}
         </div>
+        }
       </PanelCard>
     </div>
     )

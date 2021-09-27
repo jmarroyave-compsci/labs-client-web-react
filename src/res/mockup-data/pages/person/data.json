@@ -1,0 +1,26 @@
+{
+  "references": {
+    "imdb": "https://www.imdb.com/name/nm0000210/"
+  },
+  "id": "nm0000210",
+  "name": "Julia Roberts",
+  "birthDate": "1967-01-01T05:00:00.000Z",
+  "profession": [
+    "actress",
+    "producer",
+    "soundtrack"
+  ],
+  "directed": [],
+  "acted": [],
+  "created": 1632275362108,
+  "__v": 2,
+  "awards": [
+    {
+      "name": "oscar",
+      "year": 1989,
+      "category": "ACTRESS IN A SUPPORTING ROLE",
+      "won": false,
+      "_id": "614d1d0efb0b06f98f2fc91c"
+    }
+  ]
+}

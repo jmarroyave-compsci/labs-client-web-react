@@ -9,7 +9,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
 import Link from './text-link';
-import Search from './search';
+import Search from 'core/ui/search';
 
 const styles = theme => ({
 	title: {
