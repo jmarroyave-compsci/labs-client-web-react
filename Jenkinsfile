@@ -16,7 +16,6 @@ pipeline {
                 bat 'npm run build-storybook'
             }
         }
-
         stage('upload to gitpages') {
             steps {
                 bat 'git add .'
