@@ -23,7 +23,7 @@ pipeline {
                 bat 'git add .'
                 bat 'git commit -am "updating demo and docs"'
                 bat 'git push origin main'
-            } 
+            }
         }
     }
 }
