@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                bat 'yarn build'
+                bat 'npm run build'
             }
         }
         stage('docs') {
             steps {
-                bat 'yarn build-storybook'
+                bat 'npm run build-storybook'
             }
         }
 
