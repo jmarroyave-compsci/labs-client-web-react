@@ -7000,7 +7000,7 @@
   dependencies:
     "dotenv-defaults" "^1.0.2"
 
-"dotenv-webpack@^7.0.0":
+"dotenv-webpack@^7.0.0", "dotenv-webpack@^7.0.3":
   "integrity" "sha512-O0O9pOEwrk+n1zzR3T2uuXRlw64QxHSPeNN1GaiNBloQFNaCUL9V8jxSVz4jlXXFP/CIqK8YecWf8BAvsSgMjw=="
   "resolved" "https://registry.npmjs.org/dotenv-webpack/-/dotenv-webpack-7.0.3.tgz"
   "version" "7.0.3"

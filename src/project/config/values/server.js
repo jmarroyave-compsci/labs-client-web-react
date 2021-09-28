@@ -1,9 +1,8 @@
 class Server {
 }
+
 Server.DATA = "http://localhost/data";
-//Server.BASE_PATH = "/";
-Server.BASE_PATH = "/tv-movies-client-web-react/app/";
-//Server.DATA_GRAPHQL = "http://localhost:8080/2.0/graphql";
-Server.DATA_GRAPHQL = "https://jmarroyave-data-server-01.herokuapp.com/2.0/graphql";
+Server.BASE_PATH = process.env.__BASE_PATH;
+Server.DATA_GRAPHQL = process.env.__DATA_GRAPHQL;
 
 export default Server;

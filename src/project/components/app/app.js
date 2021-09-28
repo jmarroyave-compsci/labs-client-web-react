@@ -59,7 +59,7 @@ function App( props ){
         onSearchQuery={onSearchQuery}
         onSearchSuggestions={onSearchSuggestions}
         {...props}
-        search={false}
+        search={process.env.__FEATURE_SEARCH}
         >
           <Header noCheck app={app} data={data}/>
           <div className={"content"}>

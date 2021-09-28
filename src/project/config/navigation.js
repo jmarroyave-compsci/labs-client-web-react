@@ -81,28 +81,15 @@ class Navigation {
       },
       {
         showInMenu: false, 
-        showInDrawer: true, 
-        name: 'Awards', 
-        nameOpen: 'Dashboard',         
-        icon: 'emoji_events', 
-        route: '/awards', 
+        showInDrawer: false, 
+        name: 'MovieAwards', 
+        route: '/movies/stories/awards', 
         exact: true,
-        component: 'pages/awards'
-      },
-      {
-        showInMenu: false, 
-        showInDrawer: true, 
-        onMini: false,
-        icon: 'emoji_events', 
-        name: 'Oscar', 
-        route: '/awards/oscar', 
-        exact: true,
-        component: 'pages/stories/awards-oscar'
+        component: 'pages/stories/movie-awards'
       },
       {
         showInMenu: false, 
         showInDrawer: false, 
-        icon: 'emoji_events', 
         name: 'PodcastMusic', 
         route: '/podcasts/stories/music', 
         exact: true,

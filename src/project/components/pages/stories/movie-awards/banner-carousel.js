@@ -1,6 +1,6 @@
 import React from 'react'
 import Carousel from 'components/ui/carousel'
-import LinkPodcast from 'components/entities/podcast/link'
+import LinkMovie from 'components/entities/movie/link'
 import Card from 'core/ui/cards/img-text'
 
 export default function BannerCarousel( props ){
@@ -19,16 +19,16 @@ export default function BannerCarousel( props ){
 function renderItem(item){
   const { id, description, title, image, link} = item;
   return (
-    <LinkPodcast id={id} entity={title}>
+    <LinkMovie id={id} entity={title}>
       <div style={{padding: '0.5rem'}} >
       <Card
         image={image}
-        imageHeight={100}
-        text={description}
+        imageWidth={100}
+        text={item.awards[0].category}
         title={title}
       />
       </div>
-    </LinkPodcast>
+    </LinkMovie>
   )
   
 }

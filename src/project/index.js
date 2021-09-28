@@ -42,6 +42,9 @@ class Index extends React.Component{
 	}
 
 	render(){
+
+		console.log(process.env.__DATA_GRAPHQL)
+
 		return (
 		  <ApolloProvider client={client}>
 				<Provider store={Store()}>

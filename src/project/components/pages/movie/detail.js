@@ -9,6 +9,7 @@ import Awards from "components/entities/pieces/awards";
 import Date from "core/ui/date";
 import Pill from 'core/ui/pill'
 import Media from 'components/entities/pieces/media';
+import Value from 'core/ui/value';
 
 function Dashboard( props ){
   var { data, loading } = props;
@@ -30,12 +31,12 @@ function Dashboard( props ){
       </GridItem>
       <GridItem xs={12} sm={12} md={12}>
         <h4>General information</h4>
-          {data && data.country && data.country.length > 0 &&  <span>Country: {data.country.map( _item => `${ _item } ` )}</span>}
-          {data && data.type && data.type.length > 0 &&  <span>Type: {data.type}</span>}
-          {data && data.genre && data.genre.length > 0 &&  <span>Genre: {data.genre.map( _item => <Pill text={_item}/> )}</span>}
-          {data && data.duration  &&  <span>Duration: {data.duration}</span>}
-          {data && data.releasedDate > 0 &&  <span>Released date: <Date value={data.releasedDate}/></span>}
-          {data && data.endedDate > 0 &&  <span>Ended date: <Date value={data.endedDate}/></span>}
+          {data && data.country && data.country.length > 0 &&  <Value label="Country" value={data.country.reduce( (_item, tot), tot + `${ _item } `, "")}/>}
+          {data && data.type && data.type.length > 0 &&  <Value label='Type' value={data.type}/>}
+          {data && data.genre && data.genre.length > 0 &&  <Value label="Genre" value={data.genre.map( _item => <Pill text={_item}/> )}/>}
+          {data && data.duration  &&  <Value label="Duration" value={data.duration}/>}
+          {data && data.releasedDate > 0 &&  <Value label="Released date" value={<Date value={data.releasedDate}/>}/>}
+          {data && data.endedDate > 0 &&  <Value label="Ended date" value={<Date value={data.endedDate}/>}/>}
       </GridItem>
       <GridItem xs={12} sm={12} md={12}>
         <StreamBy data={ (data) ? data.streamBy : null }/>

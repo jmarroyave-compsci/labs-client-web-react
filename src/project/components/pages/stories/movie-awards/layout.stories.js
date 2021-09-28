@@ -2,7 +2,7 @@ import Layout from './layout'
 import mockupData from 'res/mockup-data/pages/stories/awards-oscar/data.json'
 
 export default {
-  title: 'Project/Pages/Awards-Oscar/Page',
+  title: 'Project/Stories/Podcast-Music/Page',
 };
 
 const Template = args => <Layout {...args} />;

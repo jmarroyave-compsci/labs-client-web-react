@@ -3,6 +3,7 @@ const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   mode: 'development',
@@ -44,6 +45,9 @@ module.exports = {
     ]
   },
   plugins: [
+    new Dotenv({
+      path: './.env.development'
+    }),
     new MiniCssExtractPlugin({
       linkType: "text/css",
       filename: 'res/css/[name].[hash].css',
