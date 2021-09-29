@@ -47,7 +47,7 @@
     "start": "webpack serve",
     "build": "npm run compile",
     "clean": "rm -rf ./build/index.bundle.js",
-    "compile": "webpack --config ./webpack.config.production.js --progress",
+    "compile": "webpack --config ./webpack.config.production.js --progress -o docs/app/",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs/storybook/"
   },

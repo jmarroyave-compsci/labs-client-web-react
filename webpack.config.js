@@ -1,9 +1,14 @@
+const fs = require('fs')
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const Dotenv = require('dotenv-webpack');
+const DotenvWebpack = require('dotenv-webpack');
+const dotenv = require('dotenv')
+
+const configFile = './.env.development';
+const config = dotenv.parse(fs.readFileSync(configFile))
 
 module.exports = {
   mode: 'development',
@@ -24,7 +29,7 @@ module.exports = {
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'build'),
-    publicPath: '/',
+    publicPath: config.__BASE_PATH,
   },  
   module: {
     rules: [
@@ -45,8 +50,8 @@ module.exports = {
     ]
   },
   plugins: [
-    new Dotenv({
-      path: './.env.development'
+    new DotenvWebpack({
+      path: configFile
     }),
     new MiniCssExtractPlugin({
       linkType: "text/css",
@@ -58,7 +63,7 @@ module.exports = {
       hash: true,
       template: './static/index.tpl.html',
       filename: 'index.html',
-      baseUrl: '/',
+      base: config.__BASE_PATH,
     }),
   ],
 }

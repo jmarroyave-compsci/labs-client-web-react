@@ -1,6 +1,6 @@
 class Version {
 }
 
-Version.VERSION = "2021.09.3";
+Version.VERSION = process.env.__VERSION;
 
 export default Version;

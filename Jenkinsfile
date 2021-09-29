@@ -8,7 +8,7 @@ pipeline {
         }
         stage('build') {
             steps {
-                bat 'npm run build'
+                bat 'npm run build'       
             }
         }
         stage('docs') {
