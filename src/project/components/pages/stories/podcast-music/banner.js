@@ -23,7 +23,7 @@ const Banner = function( props ){
               <BannerCarousel data={data}/>
           </GridItem>
           <GridItem xs={12} sm={12} md={12}>
-              <TextLink href="/podcasts/stories/music"> See all</TextLink>
+              <TextLink border href="/podcasts/stories/music"> See all</TextLink>
           </GridItem>
         </GridContainer>
       </div>

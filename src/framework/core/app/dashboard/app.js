@@ -39,29 +39,25 @@ function App( props ) {
     setOpen(!open);
   };
   const classes = useStyles();
-  var { pageTitle, breadcrumbs, error, onSearchQuery, onSearchSuggestions, nav, children, title, notifications, search, loading, footer } = props;
-
+  var { pageTitle, title, breadcrumbs, error, onSearchQuery, onSearchSuggestions, nav, children, title, notifications, search, loading, footer } = props;
 
   const offline = (error) ? true : false;
-
 
   document.getElementById('root').style.display = 'inline-block';
   if(document.getElementById('root_splash'))
     document.getElementById('root_splash').style.display = 'none';
   document.body.style.overflow = 'unset';
-  document.title = title;
+  document.title = pageTitle;
 
   if(offline) return <AppOffline error={error}/>
-
 
   return (
     <MuiThemeProvider theme={customTheme}>
       <Box sx={{ display: 'flex' }} style={{padding: 0, margin: 0}}>
         <CssBaseline />
-        <Toolbar pageTitle={pageTitle} toggleDrawer={toggleDrawer} open={open} onSearchQuery={onSearchQuery} onSearchSuggestions={onSearchSuggestions} search={search}/>
+        <Toolbar title={title} toggleDrawer={toggleDrawer} open={open} onSearchQuery={onSearchQuery} onSearchSuggestions={onSearchSuggestions} search={search}/>
         <Drawer toggleDrawer={toggleDrawer} open={open} nav={nav} />
         <Box
-          component="main"
           sx={{
             backgroundColor: (theme) =>
               theme.palette.mode === 'light'
@@ -72,22 +68,13 @@ function App( props ) {
           }}
           style={{padding: 0, margin: 0}}
         >
-          <Toolbar />
           <div className={classes.appBarSpacer}/>
-          <Container style={{padding: 0, paddingLeft: "0.5rem", margin: 0}}>
-            <Grid container spacing={0}>
-              
-              <Breadcrumbs data={breadcrumbs}/>
-              <div className={classes.content}  style={{padding: "0.75rem"}}>
-                
-
-                <ErrorBoundry from="/core/ui/app/children">
-
-                    {children}
-                </ErrorBoundry>
-              </div>
-            </Grid>
-          </Container>
+          <Breadcrumbs data={breadcrumbs} style={{padding: 0, marginBottom: "1.25rem"}}/>
+          <div style={{padding: 0, margin: 0}}>
+            <ErrorBoundry from="/core/ui/app/children">
+              {children}
+            </ErrorBoundry>
+          </div>
         </Box>
       </Box>
       <Box component="footer" style={{margin: 0, padding: 0}} >

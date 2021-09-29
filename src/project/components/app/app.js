@@ -5,6 +5,8 @@ import uris from 'shared/trends/uris';
 import Footer from 'components/app/footer'
 import Header from 'components/app/header'
 import { gql, useQuery, useApolloClient } from "@apollo/client";
+import features from 'config/values/features';
+import config from 'config/values/default';
 
 export const QRY_SUGGESTIONS = gql`
 query getSuggestions($qry:String) {
@@ -45,26 +47,23 @@ function App( props ){
     return data.searchSuggestions.suggestions;
   }
 
-  var { app, data, children } = props;    
-  const page_title = `TV | Movies | Podcasts`;
-  const title = `JMArroyave`;
+  var { app, data, children, title, pageTitle } = props;    
+  pageTitle = (pageTitle) ? pageTitle : config.PAGE_TITLE;
+  title = (title) ? title : config.TITLE;;
 
   return(
       <CoreApp        
         notifications={false} 
         title={title}
-        pageTitle={page_title} 
+        pageTitle={pageTitle} 
         nav={window.__nav} 
         footer={<Footer/>}
         onSearchQuery={onSearchQuery}
         onSearchSuggestions={onSearchSuggestions}
+        search={features.search}
         {...props}
-        search={process.env.__FEATURE_SEARCH}
         >
-          <Header noCheck app={app} data={data}/>
-          <div className={"content"}>
-            {children}
-          </div>          
+          {children}
       </CoreApp>
   )
 

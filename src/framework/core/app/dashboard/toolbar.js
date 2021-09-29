@@ -13,6 +13,7 @@ import Link from 'core/ui/text-link';
 import Search from 'core/ui/search';
 import Box from '@material-ui/core/Box';
 
+
 const drawerWidth = 240;
 
 const AppBar = styled(MuiAppBar, {
@@ -35,12 +36,13 @@ const AppBar = styled(MuiAppBar, {
 
 
 function Toolbar( props ){
-  	var { pageTitle, onSearchQuery, onSearchSuggestions, classes, nav, title, drawerOpen, notifications, drawer, search, loading , toggleDrawer, open} = props;  	
+  	var { onSearchQuery, onSearchSuggestions, classes, nav, title, drawerOpen, notifications, drawer, search, loading , toggleDrawer, open} = props;  	
   	const navToolbar = (nav && nav.routes) ? nav.routes.filter(item => (item.showInMenu) ? item : null) : [];
 
   	const navMenu = (nav) ? nav.filter(item => (item.showInMenu) ? item : null) : [];
   	search = (search === true) ? true : false;
-    pageTitle = (pageTitle) ? pageTitle : "PAGE TITLE";
+    
+    title = (title) ? title : "PAGE TITLE";
 
   	if(!toggleDrawer) return <div/>;
 
@@ -69,7 +71,7 @@ function Toolbar( props ){
               color="inherit"
               noWrap
             >
-              {pageTitle}
+            <Link href="/">{title}</Link>
             </Typography>
 
             <Box sx={{ flexGrow: 1 }} />

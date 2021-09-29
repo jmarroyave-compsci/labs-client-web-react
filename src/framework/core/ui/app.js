@@ -57,7 +57,6 @@ class App extends React.Component {
     document.title = this.props.page_title;
   }
 
-
   render() {
     var { onSearchQuery, classes, nav, children, title, notifications, search, loading } = this.props;
 

@@ -23,6 +23,15 @@ class Navigation {
       {
         showInMenu: true, 
         showInDrawer: true, 
+        name: 'TV', 
+        icon: 'tv', 
+        route: '/tv', 
+        exact: true,
+        component: 'pages/tv'
+      },
+      {
+        showInMenu: true, 
+        showInDrawer: true, 
         name: 'Movies', 
         icon: 'movie', 
         route: '/movies', 
@@ -37,24 +46,6 @@ class Navigation {
           route: '/movie/:id/:name', 
           exact: false,
           component: 'pages/movie'
-        },
-      {
-        showInMenu: true, 
-        showInDrawer: true, 
-        name: 'People', 
-        icon: 'people', 
-        route: '/people', 
-        exact: true,
-        component: 'pages/people'
-      },
-        {
-          showInMenu: false, 
-          showInDrawer: false, 
-          name: 'Person', 
-          icon: 'person', 
-          route: '/person/:id/:name', 
-          exact: false,
-          component: 'pages/person'
         },
       {
         showInMenu: true, 
@@ -77,15 +68,41 @@ class Navigation {
       {
         showInMenu: true, 
         showInDrawer: true, 
-        group: "Awards",
+        separator: true,
+      },
+      {
+        showInMenu: true, 
+        showInDrawer: true, 
+        name: 'People', 
+        icon: 'people', 
+        route: '/people', 
+        exact: true,
+        component: 'pages/people'
+      },
+        {
+          showInMenu: false, 
+          showInDrawer: false, 
+          name: 'Person', 
+          icon: 'person', 
+          route: '/person/:id/:name', 
+          exact: false,
+          component: 'pages/person'
+        },
+      {
+        showInMenu: false, 
+        showInDrawer: false, 
+        name: 'Awards', 
+        route: '/movies/stories/awards', 
+        exact: true,
+        component: 'pages/stories/awards'
       },
       {
         showInMenu: false, 
         showInDrawer: false, 
-        name: 'MovieAwards', 
-        route: '/movies/stories/awards', 
+        name: 'Stories', 
+        route: '/stories', 
         exact: true,
-        component: 'pages/stories/movie-awards'
+        component: 'pages/stories/_'
       },
       {
         showInMenu: false, 
