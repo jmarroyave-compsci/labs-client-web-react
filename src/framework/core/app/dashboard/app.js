@@ -39,7 +39,7 @@ function App( props ) {
     setOpen(!open);
   };
   const classes = useStyles();
-  var { pageTitle, title, breadcrumbs, error, onSearchQuery, onSearchSuggestions, nav, children, title, notifications, search, loading, footer } = props;
+  var { pageTitle, title, breadcrumbs, error, onSearchQuery, onSearchSuggestions, nav, children, notifications, search, loading, footer } = props;
 
   const offline = (error) ? true : false;
 
