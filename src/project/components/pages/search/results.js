@@ -2,7 +2,7 @@ import React from 'react'
 import { styled } from '@mui/material/styles';
 import { useHistory } from 'react-router-dom'
 import Stack from '@mui/material/Stack';
-import Divider from '@mui/material/divider';
+import Divider from '@mui/material/Divider';
 
 import LinkPerson from 'components/entities/person/link';
 import LinkMovie from 'components/entities/movie/link';
