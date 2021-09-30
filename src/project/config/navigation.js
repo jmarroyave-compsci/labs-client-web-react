@@ -131,7 +131,7 @@ class Navigation {
         showInDrawer: false, 
         name: 'Search', 
         icon: 'search', 
-        route: '/search/:qry', 
+        route: '/search/:qry/:page?', 
         exact: false,
         component: 'pages/search'
       },

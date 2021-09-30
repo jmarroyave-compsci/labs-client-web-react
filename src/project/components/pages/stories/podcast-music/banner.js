@@ -10,9 +10,6 @@ import withData from './data/with-data-stories-podcast-music'
 
 const Banner = function( props ){
     const { data, loading } = props;
-
-    console.log(props)
-
     return (
       <div style={{width: '100%'}}>
         <GridContainer justifyContent='center' fill style={{width: '100%'}}>

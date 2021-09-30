@@ -36,11 +36,13 @@ function App( props ){
   }
 
   const onSearchQuery = (qry) => {
+    qry = qry.toLowerCase()
     //console.log("onSearchQuery", qry)
     history.push(`/search/${encodeURIComponent(qry)}`);
   }
 
   const onSearchSuggestions = async (qry) => {
+    qry = qry.toLowerCase()
     //console.log("onSearchSuggestions", qry)
     //return ["The hobbit", "Marlon Brando", "La prueba erronea"]
     var { loading, error, data } = await apolloClient.query({query: QRY_SUGGESTIONS, fetchPolicy: "cache-first", variables: { qry: qry } } );

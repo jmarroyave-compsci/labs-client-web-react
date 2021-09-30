@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { styled } from '@material-ui/core/styles';
-import MuiAppBar from '@material-ui/core/AppBar';
+import AppBar from '@material-ui/core/AppBar';
 import MuiToolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
@@ -10,29 +10,8 @@ import Typography from '@material-ui/core/Typography';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Link from 'core/ui/text-link';
-import Search from 'core/ui/search';
+import Search from './search';
 import Box from '@material-ui/core/Box';
-
-
-const drawerWidth = 240;
-
-const AppBar = styled(MuiAppBar, {
-  shouldForwardProp: (prop) => prop !== 'open', 
-})(({ theme, open }) => ({
-  zIndex: theme.zIndex.drawer + 1,
-  transition: theme.transitions.create(['width', 'margin'], {
-    easing: theme.transitions.easing.sharp,
-    duration: theme.transitions.duration.leavingScreen,
-  }),
-  ...(open && {
-    marginLeft: drawerWidth,
-    width: `calc(100% - ${drawerWidth}px)`,
-    transition: theme.transitions.create(['width', 'margin'], {
-      easing: theme.transitions.easing.sharp,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-  }),
-}));
 
 
 function Toolbar( props ){
@@ -65,19 +44,14 @@ function Toolbar( props ){
             >
               <MenuIcon />
             </IconButton>
-            <Typography
-              component="h1"
-              variant="h6"
-              color="inherit"
-              noWrap
-            >
-            <Link href="/">{title}</Link>
-            </Typography>
 
-            <Box sx={{ flexGrow: 1 }} />
-            {search && <Search onSearchQuery={onSearchQuery} onSearchSuggestions={onSearchSuggestions} />}
-
+            {search && 
+              <Box sx={{ flexGrow: 1, padding: "0.5rem 0.75rem 0.5rem 1rem" }}>
+                <Search onSearchQuery={onSearchQuery} onSearchSuggestions={onSearchSuggestions} />
+              </Box>
+            }
           </MuiToolbar>
+
         </AppBar>
     );
 }

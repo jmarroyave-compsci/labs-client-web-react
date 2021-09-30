@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import * as format from 'core/lib/format' 
 
 export default TableComponent => (
   class TableMapAdapter extends Component {
@@ -7,7 +8,7 @@ export default TableComponent => (
       var resp = [];
       Object.keys(data).forEach( c => {
         var value = data[c].toString();
-        var label = c.startsWith("_") ? c.substring(1) : c;
+        var label = format.stringToText(c.startsWith("_") ? c.substring(1) : c);
 
         resp.push( [label, value] );
       })

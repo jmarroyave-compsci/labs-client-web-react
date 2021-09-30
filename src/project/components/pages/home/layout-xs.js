@@ -17,7 +17,7 @@ function PageComponent( props ){
 		<GridContainer className="page-module" fill>
 			<GridItem fill>
 				<Section className="section-1">
-					<StoryTV/>
+					<StoryMovies/>
 				</Section>
 			</GridItem>
 			<GridItem fill>
@@ -42,7 +42,7 @@ function PageComponent( props ){
 			</GridItem>
 			<GridItem fill>
 				<Section className="section-1">
-					<StoryMovies/>
+					<StoryTV/>
 				</Section>
 			</GridItem>
 			<GridItem fill>

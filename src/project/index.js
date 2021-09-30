@@ -17,7 +17,6 @@ import 'shared/globals/footer/footer.scss';
 import "res/assets/css/material-icon.css";
 import "res/assets/css/roboto.css";
 
-
 import {
   ApolloClient,
   InMemoryCache,

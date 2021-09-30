@@ -11,6 +11,7 @@ import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import AppOffline from 'core/components/app_offline';
 import Breadcrumbs from './breadcrumbs';
+import Typography from '@material-ui/core/Typography';
 
 import { customTheme } from 'core/ui/theme'
 import { makeStyles } from "@material-ui/core/styles";
@@ -69,7 +70,9 @@ function App( props ) {
           style={{padding: 0, margin: 0}}
         >
           <div className={classes.appBarSpacer}/>
-          <Breadcrumbs data={breadcrumbs} style={{padding: 0, marginBottom: "1.25rem"}}/>
+          <div style={{paddingTop: "1rem"}}/>
+
+          <Breadcrumbs data={breadcrumbs} style={{padding: 0, marginBottom: "0.5rem", marginLeft: "1rem"}}/>
           <div style={{padding: 0, margin: 0}}>
             <ErrorBoundry from="/core/ui/app/children">
               {children}

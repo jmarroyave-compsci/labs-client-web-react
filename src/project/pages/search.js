@@ -8,8 +8,8 @@ import mData from 'res/mockup-data/pages/search/results';
 import { gql, useQuery } from "@apollo/client";
 
 export const QRY_RESULTS = gql`
-query getResults($qry:String) {
-  searchResults(qry: $qry){
+query getResults($qry:String, $page: Int) {
+  searchResults(qry: $qry, page: $page){
     entity
     entityId
     type
@@ -19,9 +19,9 @@ query getResults($qry:String) {
 
 export default function Page( props ){
   const route = useParams();
-  const { qry } = route;
-  const { loading, error, data } = useQuery(QRY_RESULTS, { variables: { qry: qry } });
-	const params = { loading, error, data, route };
+  const { qry, page } = route;
+  const { loading, error, data } = useQuery(QRY_RESULTS, { variables: { qry: qry, page: (page) ? parseInt(page) : 1 } });
+	const params = { loading, error, data, route,  };
   params.data = (params.data) ? params.data.searchResults : null;
   params.breadcrumbs = [{name: 'search'}]
 	return (

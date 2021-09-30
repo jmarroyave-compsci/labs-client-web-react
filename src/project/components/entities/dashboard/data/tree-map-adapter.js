@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import * as format from 'core/lib/format' 
 
 export default ChartComponent => (
   class TreeMapAdapter extends Component {
@@ -11,11 +12,11 @@ export default ChartComponent => (
       var others = {};
       Object.keys(data).forEach( c => {
         var value = data[c];
-        var obj = { name: (c.startsWith("_") ? c.substring(1) : c ) , value: value };
+        var obj = { name: format.stringToText(c.startsWith("_") ? c.substring(1) : c ) , value: value };
         for( var i = 0; i < ranges.length; i++){
           var range = ranges[i];
           if( value > range ) continue;
-          if( !others[range] ) others[range] = { name: `${(i === 0) ? 1 : ranges[i - 1] + 1}-${range}`, value: 0, children: [] };
+          if( !others[range] ) others[range] = { name: `< ${format.number(range)}`, value: 0, children: [] };
           others[range].children.push( obj );
           return;
         }

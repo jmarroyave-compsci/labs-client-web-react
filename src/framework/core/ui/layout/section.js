@@ -12,8 +12,8 @@ class LayoutSection extends React.Component{
 		rounded = (rounded === true) ?  true : false;
 		return (
 			<CoreProxy 
-				xs={this.renderSection(children, className, height, '1.5rem 0.25rem 2rem 0.25rem', rounded)}
-				sm={this.renderSection(children, className, height, '2rem 1rem 2.5rem 1rem', rounded)}
+				xs={this.renderSection(children, className, height, '1.5rem 1.5rem 3rem 1.5rem', rounded)}
+				sm={this.renderSection(children, className, height, '2rem 3rem 4rem 3rem', rounded)}
 				md={this.renderSection(children, className, height, '3rem 2.5rem 3.5rem 2.5rem', rounded)}
 			/>				
 		);
