@@ -27,7 +27,7 @@ class Navigation {
         icon: 'tv', 
         route: '/tv', 
         exact: true,
-        component: 'pages/tv'
+        component: 'pages/stories/tv'
       },
       {
         showInMenu: true, 
@@ -36,7 +36,7 @@ class Navigation {
         icon: 'movie', 
         route: '/movies', 
         exact: true,
-        component: 'pages/movies'
+        component: 'pages/stories/movies'
       },
         {
           showInMenu: false, 
@@ -54,7 +54,7 @@ class Navigation {
         icon: 'podcasts', 
         route: '/podcasts', 
         exact: true,
-        component: 'pages/podcasts'
+        component: 'pages/stories/podcasts'
       },
         {
           showInMenu: false, 
@@ -77,7 +77,7 @@ class Navigation {
         icon: 'people', 
         route: '/people', 
         exact: true,
-        component: 'pages/people'
+        component: 'pages/stories/people'
       },
         {
           showInMenu: false, 
