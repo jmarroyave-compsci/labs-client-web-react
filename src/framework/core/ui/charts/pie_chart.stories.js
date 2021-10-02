@@ -3,7 +3,7 @@ import PieChart from './pie_chart'
 import mockupData from 'res/mockup-data/charts/pie.json'
 
 export default {
-  title: 'Components/Charts/Pie',
+  title: 'Core/Charts/Pie',
   component: PieChart,
   argTypes: {
   },

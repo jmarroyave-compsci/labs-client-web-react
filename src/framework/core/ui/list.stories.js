@@ -6,7 +6,7 @@ import data from 'res/mockup-data/list.json'
 
 
 export default {
-  title: 'Components/List',
+  title: 'Core/List',
   component: List,
   argTypes: {
   },

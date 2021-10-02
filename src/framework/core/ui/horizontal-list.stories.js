@@ -2,7 +2,7 @@ import React from 'react';
 import List from './horizontal-list'
 
 export default {
-  title: 'Components/List Horizontal',
+  title: 'Core/List Horizontal',
   component: List,
   argTypes: {
   },

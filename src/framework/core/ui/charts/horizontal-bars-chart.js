@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Element } from 'react-faux-dom';
 import * as d3 from 'd3';
 import ResponsiveWrapper from 'core/ui/components/responsiveness';
+import * as format from 'core/lib/format';
 
 import {
   whiteColor,
@@ -49,7 +50,8 @@ class HorizontalBarsChart extends Component {
           .attr("transform", "translate(0," + height + ")")
           .call(
             d3.axisBottom(x)
-            .ticks(4)
+            .ticks(3)
+            .tickFormat( (d,i) => format.number(d, "0a") )
             );
 
         svg.append("g")
@@ -64,14 +66,16 @@ class HorizontalBarsChart extends Component {
             .call(d3.axisBottom()
                 .scale(x)
                 .tickSize(-height, 0, 0)
-                .tickFormat(''))
+                .tickFormat('')
+            )
 
         svg.append('g')
             .attr('class', classes.grid)
             .call(d3.axisLeft()
                 .scale(y)
                 .tickSize(-width, 0, 0)
-                .tickFormat(''))
+                .tickFormat('')
+            )
 
     }
 

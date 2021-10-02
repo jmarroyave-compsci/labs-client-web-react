@@ -5,7 +5,7 @@ import Warning from "@material-ui/icons/Warning";
 import Danger from "core/ui/boxes/danger";
 
 export default {
-  title: 'Components/Cards/Dashboard',
+  title: 'Core/Cards/Dashboard',
   component: CardDashboard,
   argTypes: {
   },

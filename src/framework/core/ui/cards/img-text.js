@@ -17,7 +17,7 @@ const styles = theme => ({
 
 class List extends React.Component {
   render() {
-  	var { classes, title, text, image, className, style, actions, imageHeight } = this.props;
+  	var { classes, title, text, image, className, style, actions, imageHeight, noImage } = this.props;
     var key = 0;
 
     style = (style) ? style : {};
@@ -30,7 +30,9 @@ class List extends React.Component {
             title={<Typography noWrap variant="h6" component="h4">{title}</Typography>}
             style={{ display: "block", overflow: "hidden"}}
           />
-          <MDCardMedia className={classes.media} height={(imageHeight) ? imageHeight : null} image={image} />
+          {!noImage && 
+            <MDCardMedia className={classes.media} height={(imageHeight) ? imageHeight : null} image={image} />
+          }
           {(text && text.trim !== "") && <MDCardContent style={{flex: 1}}>
             {text}
           </MDCardContent>

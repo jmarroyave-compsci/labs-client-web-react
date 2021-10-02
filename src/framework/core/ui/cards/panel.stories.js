@@ -3,7 +3,7 @@ import CardPanel from './panel';
 
 
 export default {
-  title: 'Components/Cards/Panel',
+  title: 'Core/Cards/Panel',
   component: CardPanel,
   argTypes: {
   },

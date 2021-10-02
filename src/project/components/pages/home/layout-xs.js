@@ -6,10 +6,10 @@ import GridItem from 'core/ui/layout/grid_item';
 import StoryPodcastMusic from 'components/pages/stories/podcast-music/banner'
 import StoryAwards from 'components/pages/stories/awards/banner'
 import StoryAbout from 'components/pages/about/banner'
-import StoryMovies from 'components/pages/movies/banner'
-import StoryPeople from 'components/pages/people/banner'
-import StoryPodcasts from 'components/pages/podcasts/banner'
-import StoryTV from 'components/pages/tv/banner'
+import StoryMovies from 'components/pages/stories/movies/banner'
+import StoryPeople from 'components/pages/stories/people/banner'
+import StoryPodcasts from 'components/pages/stories/podcasts/banner'
+import StoryTV from 'components/pages/stories/tv/banner'
 
 function PageComponent( props ){
 	const { data } = props;
@@ -18,11 +18,6 @@ function PageComponent( props ){
 			<GridItem fill>
 				<Section className="section-1">
 					<StoryMovies/>
-				</Section>
-			</GridItem>
-			<GridItem fill>
-				<Section className="section-0">
-					<StoryAbout/>
 				</Section>
 			</GridItem>
 			<GridItem fill>
@@ -38,11 +33,6 @@ function PageComponent( props ){
 			<GridItem fill>
 				<Section className="section-0">
 					<StoryPeople/>
-				</Section>
-			</GridItem>
-			<GridItem fill>
-				<Section className="section-1">
-					<StoryTV/>
 				</Section>
 			</GridItem>
 			<GridItem fill>

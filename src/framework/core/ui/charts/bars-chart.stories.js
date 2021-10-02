@@ -5,7 +5,7 @@ import data from 'res/mockup-data/charts/bars.json';
 
 
 export default {
-  title: 'Components/Charts/Bars',
+  title: 'Core/Charts/Bars',
   component: Chart,
   argTypes: {
   },

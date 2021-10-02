@@ -5,15 +5,12 @@ import Card from 'core/ui/cards/img-text'
 
 export default function BannerCarousel( props ){
     const { data, loading } = props;
-    const {  } = data || {};
-
     return (
         <Carousel 
           data={data}
           renderItem={renderItem}
         />
     )
-
 }
 
 function renderItem(item){

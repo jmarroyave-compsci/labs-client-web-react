@@ -1,11 +1,9 @@
 import React from 'react'
-import { useParams } from "react-router-dom";
 import { gql, useQuery } from "@apollo/client";
 
 export const QRY = gql`
-  query getStory
-{
-  storiesMovieAwards {
+query get($entity:String, $year: Int, $page: Int) {
+  storiesAwards(entity: $entity, year: $year, page: $page){
     id
     title
     image
@@ -22,9 +20,16 @@ export const QRY = gql`
 
 export default DataComponent => (
   function WithDataStoriesMovieAwards( props ) {
-    var qry = useQuery(QRY);
-    qry.data = (qry.data) ? qry.data.storiesMovieAwards : {};
+    var { route } = props;
+    route = (route) ? route : {};
 
-    return <DataComponent {...props} {...qry} />
+    var entity = (route.entity) ? route.entity : "movies";
+    var year = (route.year) ? route.year : new Date().getFullYear();
+    var page = (route.page) ? route.page : 1;
+
+    var qry = ( props.data )  ? {} : useQuery(QRY, { variables: { entity: entity, year: parseInt(year), page: parseInt(page) } });
+    var data = (props.data) ? props.data : (( qry.data ) ? qry.data.storiesAwards : null);
+
+    return <DataComponent {...props} {...qry} data={data} />
   }
 )

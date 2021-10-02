@@ -92,7 +92,7 @@ class Navigation {
         showInMenu: false, 
         showInDrawer: false, 
         name: 'Awards', 
-        route: '/movies/stories/awards', 
+        route: '/stories/awards/:entity?/:year?/:page?', 
         exact: true,
         component: 'pages/stories/awards'
       },

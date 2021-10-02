@@ -3,7 +3,7 @@ import TreeMap from './tree-map'
 import mockupData from 'res/mockup-data/charts/tree-map.json' 
 
 export default {
-  title: 'Components/Charts/TreeMap',
+  title: 'Core/Charts/TreeMap',
   component: TreeMap,
   argTypes: {
   },

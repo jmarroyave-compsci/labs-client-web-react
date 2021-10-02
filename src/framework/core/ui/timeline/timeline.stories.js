@@ -3,7 +3,7 @@ import Timeline from './timeline';
 import data from 'core/res/mockup-data/timeline/data.json';
 
 export default {
-  title: 'Components/Timeline',
+  title: 'Core/Timeline',
   component: Timeline,
   argTypes: {
   },

@@ -1,21 +1,15 @@
 import React from 'react';
-
-import Section from 'core/ui/layout/section';
-import GridContainer from 'core/ui/layout/grid_container';
-import GridItem from 'core/ui/layout/grid_item';
+import Body from 'core/ui/layout/body';
 import Dashboard from './dashboard';
+import RelatedStories from 'components/ui/related_stories'
 
-function PageComponent( props ){
-	const { data, loading } = props
-	return (
-		<GridContainer className="page-module" fill>
-			<GridItem fill>
-				<Section className="section-0">
-			 		<Dashboard {...props} data={(data) ? data : []}/>
-				</Section>
-			</GridItem>
-		</GridContainer>
-	)
+function LayoutXS( props ){
+  return (
+    <Body>
+      <Dashboard {...props} />
+      <RelatedStories {...props} filter={"awards"} />
+    </Body>
+  )
 }
 
-export default PageComponent;
+export default LayoutXS;

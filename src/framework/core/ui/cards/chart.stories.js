@@ -4,7 +4,7 @@ import BarChart from "core/ui/charts/horizontal-bars-chart"
 import data from 'res/mockup-data/charts/horizontal-bars.json';
 
 export default {
-  title: 'Components/Cards/Chart',
+  title: 'Core/Cards/Chart',
   component: ChartPanel,
   argTypes: {
   },

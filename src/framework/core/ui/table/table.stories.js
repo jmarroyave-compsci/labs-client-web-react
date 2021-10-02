@@ -3,7 +3,7 @@ import Table from './table';
 import data from 'res/mockup-data/tables/tables.json';
 
 export default {
-  title: 'Components/Table',
+  title: 'Core/Table',
   component: Table,
   argTypes: {
   },

@@ -2,7 +2,7 @@ import React from 'react';
 import Placeholder from './placeholder'
 
 export default {
-  title: 'Components/Placeholder',
+  title: 'Core/Placeholder',
   component: Placeholder,
   argTypes: {
   },

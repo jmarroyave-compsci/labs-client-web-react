@@ -16,9 +16,8 @@ export const QRY = gql`
 
 export default DataComponent => (
   function WithDataStoriesMovieAwards( props ) {
-    var qry = useQuery(QRY);
-    qry.data = (qry.data) ? qry.data.storiesPodcastMusic : {};
-
-    return <DataComponent {...props} {...qry} />
+    var qry = ( props.data )  ? {} : useQuery(QRY);
+    var data = (props.data) ? props.data : (( qry.data ) ? qry.data.storiesPodcastMusic : null);
+    return <DataComponent {...props} {...qry} data={data} />
   }
 )

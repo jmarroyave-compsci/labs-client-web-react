@@ -15,7 +15,7 @@ NumberComponent.propTypes = {
     PropTypes.string,
     PropTypes.number
   ]),
-  format: PropTypes.oneOf(['0a', '0,0']),
+  format: PropTypes.oneOf(['0a', "0.0a", '0,0']),
 };
 
 NumberComponent.defaultProps = {

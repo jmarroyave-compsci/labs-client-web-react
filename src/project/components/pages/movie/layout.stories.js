@@ -1,5 +1,5 @@
 import Layout from './layout'
-import mockupData from 'res/mockup-data/pages/movies/data.json'
+import mockupData from 'res/mockup-data/pages/movie/data.json'
 
 export default {
   title: 'Project/Pages/Movie/Page',

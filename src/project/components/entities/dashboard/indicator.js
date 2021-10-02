@@ -21,7 +21,7 @@ class Indicator extends React.Component {
 
     switch(type){
       case "number":
-        return <Number value={data} format={"0,0"}/>
+        return <Number value={data} format={"0.0a"}/>
       case "string":
         return data;
       case "date":
