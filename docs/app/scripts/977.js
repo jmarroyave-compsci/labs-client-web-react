@@ -1,11 +1,11 @@
-"use strict";(globalThis.webpackChunkreact=globalThis.webpackChunkreact||[]).push([[977],{30977:(t,a,r)=>{r.r(a),r.d(a,{QRY:()=>i,default:()=>o});var e=r(67294),n=r(54397),s=r(70846);function c(){return c=Object.assign||function(t){for(var a=1;a<arguments.length;a++){var r=arguments[a];for(var e in r)Object.prototype.hasOwnProperty.call(r,e)&&(t[e]=r[e])}return t},c.apply(this,arguments)}const i=n.Ps`
-  query getStory
+"use strict";(globalThis.webpackChunkreact=globalThis.webpackChunkreact||[]).push([[977],{30977:(a,t,e)=>{e.r(t),e.d(t,{QRY:()=>c,default:()=>o});var r=e(67294),n=e(54397),s=e(70846);function i(){return i=Object.assign||function(a){for(var t=1;t<arguments.length;t++){var e=arguments[t];for(var r in e)Object.prototype.hasOwnProperty.call(e,r)&&(a[r]=e[r])}return a},i.apply(this,arguments)}const c=n.Ps`
+  query getStory($page: Int)
 {
-  storiesPodcastMusic {
+  storiesPodcastMusic(page: $page) {
     id
     title
     link
     image
   }
 }
-`,o=t=>function(a){var r=a.data?{}:(0,s.a)(i),n=a.data?a.data:r.data?r.data.storiesPodcastMusic:null;return e.createElement(t,c({},a,r,{data:n}))}}}]);
+`,o=a=>function(t){var{route:e}=t,n=(e=e||{}).page?e.page:1,o=t.data?{}:(0,s.a)(c,{variables:{page:parseInt(n)}}),u=t.data?t.data:o.data?o.data.storiesPodcastMusic:null;return r.createElement(a,i({},t,o,{data:u}))}}}]);

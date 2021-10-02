@@ -1,0 +1,1 @@
+(globalThis.webpackChunkreact=globalThis.webpackChunkreact||[]).push([[4277],{84277:(n,e)=>{e["Testing home 1"]='\n<div\n  style={\n    Object {\n      "width": "100%",\n    }\n  }\n/>\n'}}]);
