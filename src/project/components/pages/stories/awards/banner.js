@@ -30,7 +30,7 @@ const Banner = function( props ){
               <Title>Awards</Title>
           </GridItem>
           <GridItem xs={12} sm={12} md={12}>
-            <Description>a dashboard with information from over 8M movies, how they are segmented, awards and ratings</Description>
+            <Description>search and visualize the award's information from the Oscars, Golden Globes and Emmys</Description>
           </GridItem>
           <GridItem xs={12} sm={12} md={12}>
             <BannerCarousel data={data}/>

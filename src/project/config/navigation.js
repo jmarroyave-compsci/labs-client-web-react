@@ -108,7 +108,7 @@ class Navigation {
         showInMenu: false, 
         showInDrawer: false, 
         name: 'PodcastMusic', 
-        route: '/podcasts/stories/music', 
+        route: '/podcasts/stories/music/:page?', 
         exact: true,
         component: 'pages/stories/podcast-music'
       },

@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import { useHistory } from 'react-router-dom'
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
+import Paging from 'components/ui/paging';
 
 import LinkPerson from 'components/entities/person/link';
 import LinkMovie from 'components/entities/movie/link';
@@ -29,54 +30,36 @@ const ResultsData = styled('div')({
 const Result = styled('div')({
 });
 
-const ResultText = styled('h3')({
-  marginTop: 0,
-});
-
 const ResultType = styled('div')({
   fontSize: '0.65rem',
   lineHeight: '1rem',
   textTransform: "uppercase",
 });
 
+const ResultText = styled('h3')({
+  marginTop: 0,
+});
 
 function _Results(props){
   const history = useHistory();
   const { data, loading, qry, route } = props;
-  const page = (route.page) ? parseInt(route.page) : 1;
-
-  const goToPage = ( toPage ) => {
-    history.push(`/search/${encodeURIComponent(qry)}/${toPage}`)
-    window.scrollTo(0,0);
-  }
-  const nextPage = () => goToPage(page + 1)
-  const nextButton = ( data && data.length < 10 )
-  const previousPage = () => goToPage(page - 1)
-  const previousButton = (page == 1)
 
   return (
     <Results>
       <ResultsHeader>
         <div>search results for: <Query>{qry}</Query></div>    
       </ResultsHeader>
-
       <ResultsData>
-      { (data && data.length > 0) ? 
-        <Stack
+        <Paging {...props} url={`/search/${encodeURIComponent(qry)}`}>
+          <Stack
             divider={<Divider flexItem />}
             spacing={2}
-        >
-          {data && data.map( (r, idx) => 
-            <SearchResults key={idx} r={r}/>    
-          )}
-          <Stack direction='row' spacing={2} justifyContent='center'>
-            <Button variant="outlined" disabled={previousButton} onClick={ previousPage }>Back</Button>
-            <Button variant="outlined" disabled={nextButton} onClick={ nextPage }>Next</Button>
+          >
+            {data && data.map( (r, idx) => 
+              <SearchResults key={idx} r={r}/>    
+            )}
           </Stack>
-        </Stack>
-      :
-        <ResultText>No results</ResultText>
-      }
+        </Paging>
       </ResultsData>
     </Results>
   )

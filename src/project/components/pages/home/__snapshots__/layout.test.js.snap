@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing home 1`] = `
+<div
+  style={
+    Object {
+      "width": "100%",
+    }
+  }
+/>
+`;
