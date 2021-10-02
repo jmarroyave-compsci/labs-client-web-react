@@ -1,0 +1,37 @@
+[
+        {
+            "category": "BEST DRAMATIC PROGRAM",
+            "name": "emmy",
+            "won": false,
+            "year": 1954,
+            "__typename": "Award"
+        },
+        {
+            "category": "BEST DRAMATIC PROGRAM",
+            "name": "emmy",
+            "won": true,
+            "year": 1953,
+            "__typename": "Award"
+        },
+        {
+            "category": "BEST DRAMATIC PROGRAM 2",
+            "name": "emmy",
+            "won": true,
+            "year": 1953,
+            "__typename": "Award"
+        },
+        {
+            "category": "BEST DRAMATIC PROGRAM 3",
+            "name": "oscar",
+            "won": true,
+            "year": 1953,
+            "__typename": "Award"
+        },
+        {
+            "category": "BEST DRAMATIC SHOW",
+            "name": "emmy",
+            "won": false,
+            "year": 1952,
+            "__typename": "Award"
+        }
+    ]
