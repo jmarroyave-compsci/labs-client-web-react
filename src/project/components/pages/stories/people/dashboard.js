@@ -11,7 +11,7 @@ function Dashboard( props={} ){
   const { total, profession, yearBirth } = data || {};
 
   const tileIndicator = (title, data, icon) =>               
-            <GridItem xs={12} sm={6} md={4} lg={3} style={{paddingRight: '1rem'}}>
+            <GridItem xs={12} sm={6} md={6} lg={3} style={{paddingRight: '1rem'}}>
               <Indicator loading={loading} title={title} data={(data) ? data.toString() : data} icon={icon}/>
             </GridItem>
   const tileChart = (title, data, ranges) =>               

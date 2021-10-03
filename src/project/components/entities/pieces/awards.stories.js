@@ -13,7 +13,13 @@ Loading.args = {
   loading : true,
 };
 
-export const Numbers = Template.bind({});
-Numbers.args = {
+export const Large = Template.bind({});
+Large.args = {
   data : mockupData,
+};
+
+export const Mini = Template.bind({});
+Mini.args = {
+  data : mockupData,
+  mini: true,
 };

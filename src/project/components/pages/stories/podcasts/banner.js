@@ -34,7 +34,7 @@ const Banner = function( props ){
           </GridItem>
           <GridItem xs={12} sm={12} md={12}>
             <Footer>
-              <TextLink border href="/people"> See more</TextLink>
+              <TextLink border href="/podcasts"> See more</TextLink>
             </Footer>
           </GridItem>
         </GridContainer>

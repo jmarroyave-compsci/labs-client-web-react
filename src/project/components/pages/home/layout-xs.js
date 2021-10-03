@@ -37,7 +37,7 @@ function PageComponent( props ){
 			</GridItem>
 			<GridItem fill>
 				<Section className="section-2">
-					<StoryAwards/>
+					<StoryAwards year={2018 - (Math.floor(Math.random() * 10))}/>
 				</Section>
 			</GridItem>
 		</GridContainer>

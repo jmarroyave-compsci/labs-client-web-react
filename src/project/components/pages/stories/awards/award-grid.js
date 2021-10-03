@@ -17,25 +17,25 @@ const ItemFrame = styled('div')({
 
 
 export default function AwardGrid( props ){
-    var { data, loading } = props;
+    var { data, loading, year, all } = props;
     loading = (loading || !data || data.length == 0 )
     data = (data && data.length > 0) ? data : [1,2,3,4,5];
 
     return (
       <Frame>
-        <GridContainer justifyContent='center' fill style={{width: '100%'}}>
-          {data.map( (item, idx) => 
-            <GridItem key={idx} xs={12} sm={6} md={6} lg={4}>
-              <ItemFrame>
-                {(loading) ?
-                  <Placeholder/>
-                  : 
-                  <Item data={item}/>
-                }          
-              </ItemFrame>  
-            </GridItem>
-          )}
-        </GridContainer>
+          <GridContainer justifyContent='center' fill style={{width: '100%'}}>
+            {data.map( (item, idx) => 
+              <GridItem key={idx} xs={12} sm={6} md={6} lg={4}>
+                <ItemFrame>
+                  {(loading) ?
+                    <Placeholder/>
+                    : 
+                    <Item data={item} year={year} all={all}/>
+                  }          
+                </ItemFrame>  
+              </GridItem>
+            )}
+          </GridContainer>
       </Frame>
     )
 }
@@ -51,6 +51,6 @@ function Placeholder(){
   )    
 }
 
-function Item( { data } ){
-  return <AwardItem full {...data}/>
+function Item( props ){
+  return <AwardItem {...props}/>
 }

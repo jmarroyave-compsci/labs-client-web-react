@@ -8,8 +8,6 @@ export default function Parameters( props ){
     const { year, entity, onChange } = props;
     const fromData = () => [
       {label: "Movies", id: "movies"},
-      {label: "People", id: "people"},
-      {label: "TV", id: "tv"},
     ]
     const yearData = () => {
       const now = new Date() 
@@ -28,7 +26,7 @@ export default function Parameters( props ){
     }
 
     return (
-      <Stack>
+      <Stack spacing={2}>
         <Autocomplete
           options={fData}
           value={entity}

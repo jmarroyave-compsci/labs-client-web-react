@@ -6,13 +6,11 @@ import GridItem from 'core/ui/layout/grid_item';
 import Dashboard from './dashboard';
 
 function PageComponent( props ){
-	const { data } = props
+	const { data, loading } = props
 	return (
-		<GridContainer className="page-module" fill>
+		<GridContainer fill>
 			<GridItem fill>
-				<Section className="section-0">
-			 		<Dashboard data={(data) ? data.dashboard : null} {...props} />
-				</Section>
+		 		<Dashboard data={(data) ? data.dashboard : null} {...props} />
 			</GridItem>
 		</GridContainer>
 	)

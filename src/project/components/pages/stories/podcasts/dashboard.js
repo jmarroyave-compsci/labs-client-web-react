@@ -7,10 +7,10 @@ import Stack from '@mui/material/Stack';
 
 function Dashboard( props ){
   const { data, loading, route } = props;
-  const { total, category, language, yearCreated } = data || {};
+  const { total, category, language, yearCreated, country } = data || {};
 
   const tileIndicator = (title, data, icon) =>               
-            <GridItem xs={12} sm={6} md={4} lg={3} style={{paddingRight: '1rem'}}>
+            <GridItem xs={12} sm={6} md={6} lg={3} style={{paddingRight: '1rem'}}>
               <Indicator loading={loading} title={title} data={(data) ? data.toString() : data} icon={icon}/>
             </GridItem>
   const tileChart = (title, data, ranges) =>               
@@ -29,6 +29,7 @@ function Dashboard( props ){
           <GridContainer justifyContent='center' fill>
               {tileChart("category", category, [10, 100, 250])}
               {tileChart("language", language, [10, 100])}
+              {tileChart("country", country, [10, 100])}
               {tileChart("created", yearCreated, [])}
           </GridContainer>
       </Stack>

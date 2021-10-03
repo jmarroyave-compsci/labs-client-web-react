@@ -4,6 +4,7 @@ import { useHistory } from 'react-router-dom'
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import Paging from 'components/ui/paging';
+import Skeleton from './skeleton';
 
 import LinkPerson from 'components/entities/person/link';
 import LinkMovie from 'components/entities/movie/link';
@@ -50,7 +51,7 @@ function _Results(props){
         <div>search results for: <Query>{qry}</Query></div>    
       </ResultsHeader>
       <ResultsData>
-        <Paging {...props} url={`/search/${encodeURIComponent(qry)}`}>
+        <Paging {...props} url={`/search/${encodeURIComponent(qry)}`} skeleton={<Skeleton/>}>
           <Stack
             divider={<Divider flexItem />}
             spacing={2}
@@ -67,6 +68,7 @@ function _Results(props){
 
 function SearchResults( props ){
   const { r } = props; 
+  console.log(r)
   switch(r.type){
     case "movie":
       return (

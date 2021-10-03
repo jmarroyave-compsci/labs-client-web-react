@@ -1,23 +1,30 @@
 import React from 'react'
-import GridContainer from 'core/ui/layout/grid_container';
-import GridItem from 'core/ui/layout/grid_item';
+import { styled } from '@mui/material/styles';
+import Stack from '@mui/material/Stack';
 import Pill from 'core/ui/pill'
 
-function References( props ){
-  const { data, loading, route } = props;
+const Frame = styled('div')({
+  marginTop: '1rem',
+  marginBottom: '1rem',
+});
+
+const SubTitle = styled('h4')({
+  margin: 0,
+});
+
+export default function References( props ){
+  const { data } = props;
+
+  if(!data) return <div/>;
 
   return (
-    <GridContainer>
-      <GridItem xs={12} sm={12} md={12}>        
-        <h4>More information</h4>
-      </GridItem>
-      <GridItem xs={12} sm={12} md={12}>        
-        {data && data.imdb && <a href={data.imdb}><Pill text="IMDB"/></a>}
-        {data && data.imdb && <a href={data.imdb}><Pill text="IMDB"/></a>}
-        {data && data.imdb && <a href={data.imdb}><Pill text="IMDB"/></a>}
-      </GridItem>
-    </GridContainer>
+    <Frame>
+      <Stack>
+          <SubTitle>More information</SubTitle>
+          <div>
+            {data && data.imdb && <a href={data.imdb}><Pill text="IMDB"/></a>}
+          </div>
+      </Stack>
+    </Frame>
   )
 }
-
-export default References;

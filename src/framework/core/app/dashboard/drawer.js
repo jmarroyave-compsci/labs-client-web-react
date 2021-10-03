@@ -15,29 +15,39 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListSubheader from '@material-ui/core/ListSubheader';
+import Box from '@mui/material/Box';
 
 function Drawer_( props ) {
 	var { nav, footer, header, toggleDrawer, open } = props;  	
 	const options = getOptions(nav, open);
+  const anchor = "left";
+  const drawerWidth = 260;
 
   return (
     <MuiDrawer 
-      anchor={"left"}
+      anchor={anchor}
       open={open}
+      onClose={toggleDrawer}      
     >
-      <MuiToolbar
-        sx={{
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'flex-end',
-          px: [1],
-        }}
+      <Box
+        sx={{ width: `${drawerWidth}px` }}
+        role="presentation"
       >
-        <IconButton onClick={toggleDrawer}>
-          <ChevronLeftIcon />
-        </IconButton>
-      </MuiToolbar>
-      {options}
+        <MuiToolbar
+          sx={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            px: [1],
+          }}
+        >
+
+              <IconButton onClick={toggleDrawer}>
+            <ChevronLeftIcon />
+          </IconButton>
+        </MuiToolbar>
+        {options}
+      </Box>
     </MuiDrawer>
 	);
 }

@@ -7,7 +7,7 @@ export default function BannerCarousel( props ){
     return (
         <Carousel 
           data={data}
-          renderItem={ (item) => <AwardItem {...item}/>}
+          renderItem={ (item) => <AwardItem data={item}/>}
         />
     )
 }

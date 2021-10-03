@@ -1,38 +1,58 @@
 import React from 'react'
+import { styled } from '@mui/material/styles';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Date from "core/ui/date";
 import Pill from 'core/ui/pill'
 import Media from 'components/entities/pieces/media';
 import Icon from '@material-ui/core/Icon';
+import Title from "components/entities/pieces/title";
+import Stack from '@mui/material/Stack';
+import Categories from "components/entities/pieces/categories";
 
-function Dashboard( props ){
+const SubTitle = styled('h4')({
+  marginTop: '1rem',
+  marginBottom: '0rem',
+});
+
+const Summary = styled('div')({
+  fontSize: '1rem',
+  lineHeight: "1.25rem",
+});
+
+const Author = styled('div')({
+  fontSize: '0.8rem',
+  lineHeight: "0.9rem",
+});
+
+const Frame = styled('div')({
+  margin: "0rem 2rem 2rem 2rem"
+});
+
+
+export default function Dashboard( props ){
   var { data, loading } = props;
   data = (data) ? data : {};
 
   return (
-  <GridContainer justifyContent='center' fill style={{width: '100%'}}>
-      <GridItem xs={12} sm={12} md={12}>
-        <h1>{data.title}</h1>
+    <Stack>
+      <Media src={data.image}/>
+
+      <Frame>
+        <Categories data={data.category}/>
+        <Title text={<div>{data.title} <a href={data.link}> <Icon>link</Icon></a></div>}/>
         {data && data.subtitle && <h3>{data.subtitle}</h3>}
-        {data && data.feedUrl  && <a href={data.feedUrl}> <Icon>link</Icon></a>}
-      </GridItem>
-      <GridItem xs={12} sm={12} md={12}>
-        <Media data={data}/>
-      </GridItem>
-      <GridItem xs={12} sm={12} md={12}>
-        <h4>General information</h4>
-        {data && data.author &&  <div>Author: {data.author}</div>}
-        {data && data.createdDate && <div>Created date: <Date value={data.createdDate}/></div>}
+        {data && data.author &&  <Author>by {data.author}</Author>}
+
+        <br/>
         {data && data.description && <div>Description: {data.description}</div>}
-        {data && data.summary && <div>Summary: {data.summary}</div>}
-        {data && data.link && <div>Link: {data.link}</div>}
+        {data && data.summary && <Summary>{data.summary}</Summary>}
+
+        <SubTitle>General information</SubTitle>
+        {data && data.createdDate && <div>Created: <Date value={data.createdDate}/></div>}
         {data && data.language && <div>Language: {data.language}</div>}
-        {data && data.category && <div>Category: {data.category}</div>}
-        {data && data.subcategory && <div>Subcategory: {data.subcategory}</div>}
-      </GridItem>
-    </GridContainer>
+        {data && data.country && <div>Country: {data.country}</div>}
+      </Frame>
+    </Stack>
   )
 }
-
-export default Dashboard;

@@ -10,6 +10,7 @@ export const QRY_DASHBOARD = gql`
   dashboardPodcasts {
     category
     language
+    country
     total
     yearCreated
   }

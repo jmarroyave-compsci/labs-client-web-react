@@ -7,7 +7,7 @@ function LayoutXS( props ){
   return (
     <Body>
       <Dashboard {...props} />
-      <RelatedStories {...props} filter={"movies"} />
+      <RelatedStories {...props} filter={"podcast_music"} />
     </Body>
   )
 }

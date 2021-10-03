@@ -24,7 +24,7 @@ export default DataComponent => (
     route = (route) ? route : {};
 
     var entity = (route.entity) ? route.entity : "movies";
-    var year = (route.year) ? route.year : new Date().getFullYear();
+    var year = (route.year) ? route.year : ((props.year) ? props.year : new Date().getFullYear());
     var page = (route.page) ? route.page : 1;
 
     var qry = ( props.data )  ? {} : useQuery(QRY, { variables: { entity: entity, year: parseInt(year), page: parseInt(page) } });

@@ -10,12 +10,11 @@ const ResultText = styled('h3')({
 
 export default function Paging(props){
   const history = useHistory();
-  const { children, route, loading, data, url } = props;
+  const { children, route, loading, data, url, skeleton } = props;
   const page = (route && route.page) ? parseInt(route.page) : 1;
 
   const goToPage = ( toPage ) => {
     var urlTo = `${url}/${toPage}`;
-    console.log(urlTo);
     history.push(urlTo)
     window.scrollTo(0,0);
   }
@@ -37,7 +36,7 @@ export default function Paging(props){
           </Stack>
         </Stack>
       :
-        <ResultText>{(loading) ? "loading" : "No results"}</ResultText>
+        <ResultText>{(loading) ? ((skeleton) ? skeleton : "loading") : "No results"}</ResultText>
       }
     </>
   )

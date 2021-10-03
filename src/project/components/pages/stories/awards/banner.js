@@ -45,6 +45,6 @@ const Banner = function( props ){
     )
 }
 
-export default Banner;
+export default withData(Banner);
 
 

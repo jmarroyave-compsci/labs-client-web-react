@@ -13,7 +13,7 @@ function LayoutMD( props ){
 	        <Dashboard {...props} />
         </GridItem>
         <GridItem xs={12} sm={12} md={3} lg={2} style={{paddingRight: '1rem'}}>
-        	<RelatedStories {...props} filter={"movies"} />
+        	<RelatedStories {...props} filter={"podcast_music"} />
         </GridItem>
       </GridContainer>
     </Body>

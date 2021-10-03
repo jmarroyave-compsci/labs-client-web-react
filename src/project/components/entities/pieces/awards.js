@@ -12,7 +12,7 @@ const Item = styled('div')({
 });
 
 const FrameMini = styled('div')({
-  marginTop: "-1.5rem",
+  marginTop: "0rem",
   minHeight: "3rem",
 });
 
@@ -21,6 +21,9 @@ const ItemMini = styled('div')({
   overflow: 'hidden',
   whiteSpace: 'nowrap',
   textOverflow: 'ellipsis',
+  fontSize: "0.8rem",
+  lineHeight: "1rem",
+
 });
 
 
@@ -33,59 +36,62 @@ const More = styled('span')({
 });
 
 
-const Year = styled('h3')({
-  margin: '0 0 0.5rem 0',
+const SubTitle = styled('h4')({
+  margin: 0,
+});
+
+const Year = styled('h5')({
+  margin: '1rem 0 1rem 0',
   padding: '0',
 });
 
-const Prize = styled('h4')({
+const Prize = styled('h6')({
   textTransform: "uppercase",
-  margin: '0 0 0.5rem 0',
+  margin: '1rem 0 0 0',
   padding: '0',
+  fontSize: '1rem',
+  fontWeight: 400,
 });
 
 const Category = styled('div')( {
+  fontSize: "0.85rem",
 });
 
-
 const Nominee = styled('div')({
-  fontSize: '0.75rem',
-  lineHeight: '0.85rem',
+  fontSize: '0.5rem',
+  lineHeight: '0.6rem',
   textTransform: 'uppercase',
+  paddingTop: "0.5rem",
 });
 
 export default function Awards( props ){
   var { data } = props;
-  if(!data) return null;
-
-  /*
-  var dato = data.sort( (a, b) => {
-    if( a.year !== b.year )
-      return (a.year > b.year) ? -1 : 1 
-
-    if( a.name !== b.name )
-      return (a.name > b.name) ? 1 : -1 
-
-    return (a.category > b.category) ? 1 : -1 
-  });
-  */
+  if(!data || data.length == 0) return null;
 
   return (props.mini === true) ? AwardsMini(props, data) : AwardsFull(props, data); 
 }
 
 
 function AwardsMini( props, data ){
-  var MAX = 1;
+  var { year, all } = props;
+  var MAX = (all) ? data.length : 2;
+
+  year = parseInt(year)
+
+  const showThis = ( item ) => {
+    if (!year) return true;
+    return (item.year == year)
+  } 
+
   return (
     <FrameMini>
       {data && data.length > 0 && data.slice(0,MAX).map( (item, idx) => 
-        <div key={idx} >
-          <ItemMini>            
-            <ItemMini>{item.year} - {item.name.toUpperCase()} - {((item.won === false) ? "[NOM]" : "")} {item.category}</ItemMini>
-          </ItemMini>
-        </div>
+        showThis(item) && 
+          <div key={idx} >
+            <ItemMini>{item.year} - {item.name.toUpperCase()} - {((item.won === "false" || item.won === false) ? "[N]" : "[W]")} {item.category}</ItemMini>
+          </div>        
       )}
-      { data && data.length > MAX && 
+      { !all && data && data.length > MAX && 
         <ItemMini>            
           <ItemMini><More>and {data.length - MAX} more</More></ItemMini>
         </ItemMini>
@@ -96,20 +102,7 @@ function AwardsMini( props, data ){
 
 function AwardsFull( props, data ){
   var currentYear = null, currentPrize = null;
-
-  /*
-  data = data.sort( (a, b) => {
-    if( a.year !== b.year )
-      return (a.year > b.year) ? -1 : 1 
-
-    if( a.name !== b.name )
-      return (a.name > b.name) ? 1 : -1 
-
-    return (a.category > b.category) ? 1 : -1 
-  });
-  */
-
-
+  const { year } = props;
 
   const RenderYear = (item) => {
     if (!currentYear || currentYear != item.year){
@@ -128,19 +121,18 @@ function AwardsFull( props, data ){
     return null;
   }
 
-
   return (
     <Frame>
-      <h2>Awards</h2>
+      <SubTitle>Awards</SubTitle>
       {data && data.length > 0 && data.map( (item, idx) => 
-        <div key={idx} >
-          {RenderYear(item)}
-          {RenderPrize(item)}
-          <Item>
-            {((item.won === false) ? <Nominee>nominee</Nominee> : "")}
-            <Category won={item.won}>{item.category}</Category>
-          </Item>
-        </div>
+          <div key={idx} >
+            {RenderYear(item)}
+            {RenderPrize(item)}          
+            <Item>
+              <Nominee>{((item.won === "false" || item.won === false) ? "nominee" : "winner")}</Nominee>
+              <Category>{item.category}</Category>
+            </Item>
+          </div>
       )}
     </Frame>     
   )

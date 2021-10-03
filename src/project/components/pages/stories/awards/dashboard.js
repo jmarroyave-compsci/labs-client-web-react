@@ -6,6 +6,7 @@ import Stack from '@mui/material/Stack';
 import Parameters from './parameters';
 import AwardGrid from './award-grid';
 import withData from './data/with-data-stories-movie-awards'
+import Paging from 'components/ui/paging';
 
 function Dashboard(props){
     var { data, loading, route } = props;
@@ -25,7 +26,9 @@ function Dashboard(props){
     return (
       <Stack>
         <Parameters year={year.toString()} entity={entity} onChange={parametersChanged}/>
-        <AwardGrid data={data}/>
+        <Paging {...props} url={`/stories/awards/${entity}/${year}`}>
+          <AwardGrid data={data} year={year} all/>
+        </Paging>
       </Stack>
     )
 

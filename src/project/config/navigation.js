@@ -23,15 +23,6 @@ class Navigation {
       {
         showInMenu: true, 
         showInDrawer: true, 
-        name: 'TV', 
-        icon: 'tv', 
-        route: '/tv', 
-        exact: true,
-        component: 'pages/stories/tv'
-      },
-      {
-        showInMenu: true, 
-        showInDrawer: true, 
         name: 'Movies', 
         icon: 'movie', 
         route: '/movies', 

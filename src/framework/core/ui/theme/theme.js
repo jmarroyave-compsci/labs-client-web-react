@@ -4,7 +4,7 @@ import { createTheme } from '@material-ui/core/styles';
 import { blue, green, red } from '@material-ui/core/colors';
 
 const primary = green;
-const secondary = red;
+const secondary = blue;
 
 const primaryColor = [primary[900], primary[700], primary[500], primary[300]];
 const secondaryColor = [secondary[900], secondary[700], secondary[500], secondary[300]];
