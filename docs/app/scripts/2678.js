@@ -13,4 +13,4 @@ query get($entity:String, $year: Int, $page: Int) {
     }
   }
 }
-`,l=a=>function(e){var{route:t}=e,n=(t=t||{}).entity?t.entity:"movies",l=t.year?t.year:(new Date).getFullYear(),o=t.page?t.page:1,p=e.data?{}:(0,i.a)(y,{variables:{entity:n,year:parseInt(l),page:parseInt(o)}}),g=e.data?e.data:p.data?p.data.storiesAwards:null;return r.createElement(a,s({},e,p,{data:g}))}}}]);
+`,l=a=>function(e){var{route:t}=e,n=(t=t||{}).entity?t.entity:"movies",l=t.year?t.year:e.year?e.year:(new Date).getFullYear(),o=t.page?t.page:1,p=e.data?{}:(0,i.a)(y,{variables:{entity:n,year:parseInt(l),page:parseInt(o)}}),g=e.data?e.data:p.data?p.data.storiesAwards:null;return r.createElement(a,s({},e,p,{data:g}))}}}]);
