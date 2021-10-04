@@ -1,21 +1,11 @@
 import React from 'react';
-
-import Section from 'core/ui/layout/section';
-import GridContainer from 'core/ui/layout/grid_container';
-import GridItem from 'core/ui/layout/grid_item';
+import Body from 'core/ui/layout/body';
 import Dashboard from './dashboard';
 
-function PageComponent( props ){
-	const { data, loading } = props
+export default function PageComponent( props ){
 	return (
-		<GridContainer className="page-module" fill>
-			<GridItem fill>
-				<Section className="section-0">
-			 		<Dashboard data={(data) ? data.dashboard : null} loading={loading} />
-				</Section>
-			</GridItem>
-		</GridContainer>
+		<Body>
+	 		<Dashboard {...props} />
+		</Body>
 	)
 }
-
-export default PageComponent;

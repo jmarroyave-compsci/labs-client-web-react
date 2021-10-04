@@ -1,5 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
+import Body from 'core/ui/layout/body';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import References from "components/entities/pieces/references";
@@ -11,14 +12,21 @@ import Stack from '@mui/material/Stack';
 import Professions from "components/entities/pieces/professions";
 import Title from "components/entities/pieces/title";
 
-const Frame = styled('div')({
-  margin: "0rem 2rem 2rem 2rem"
+
+const Section = styled('h4')({
+  margin: '1rem 0 0.5rem 0',
+  padding: 0,
 });
 
+const Summary = styled('div')({
+  fontSize: '0.9rem',
+  lineHeight: "1.5rem",
+});
 
-const SubTitle = styled('h4')({
-  marginTop: '1rem',
-  marginBottom: '0rem',
+const Field = styled('div')({
+  fontSize: '0.9rem',
+  lineHeight: "1rem",
+  marginBottom: '0.5rem',
 });
 
 
@@ -29,15 +37,15 @@ function Dashboard( props ){
   return (
     <Stack>
       <Media src={data.image}/>
-      <Frame>
+      <Body>
         <Professions data={data.profession}/>
         <Title text={data.name}/>
 
-        <SubTitle>General information</SubTitle>
-        {data && data.birthDate &&  <span>Age: <Date value={data.birthDate}/></span>}
+        <Section>General information</Section>
+        {data && data.birthDate &&  <Field>Age: <Date value={data.birthDate}/></Field>}
 
         <Awards data={ (data) ? data.awards : null }/>
-      </Frame>
+      </Body>
     </Stack>
   )
 }

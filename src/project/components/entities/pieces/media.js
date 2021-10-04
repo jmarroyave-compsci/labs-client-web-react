@@ -10,11 +10,9 @@ function Media( props ){
   const height = 300;
 
   return (
-    <GridContainer fill style={{height: height, width: '100%', backgroundColor: '#333', marginBottom: '1rem'}}>
-      <GridItem xs={12} sm={12} md={12}>
-          <MainImage src={src} height={height} width={250}/>
-      </GridItem>
-    </GridContainer>
+    <div style={{height: height, width: '100%', backgroundColor: '#333', margin: 0, marginBottom: '1rem'}}>
+      <MainImage src={src} height={height} width={250}/>
+    </div>
   )
 }
 

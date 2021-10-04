@@ -1,5 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
+import Body from 'core/ui/layout/body';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Date from "core/ui/date";
@@ -10,25 +11,21 @@ import Title from "components/entities/pieces/title";
 import Stack from '@mui/material/Stack';
 import Categories from "components/entities/pieces/categories";
 
-const SubTitle = styled('h4')({
-  marginTop: '1rem',
-  marginBottom: '0rem',
+const Section = styled('h4')({
+  margin: '1rem 0 0.5rem 0',
+  padding: 0,
 });
 
 const Summary = styled('div')({
-  fontSize: '1rem',
-  lineHeight: "1.25rem",
+  fontSize: '0.9rem',
+  lineHeight: "1.5rem",
 });
 
-const Author = styled('div')({
-  fontSize: '0.8rem',
-  lineHeight: "0.9rem",
+const Field = styled('div')({
+  fontSize: '0.9rem',
+  lineHeight: "1rem",
+  marginBottom: '0.5rem',
 });
-
-const Frame = styled('div')({
-  margin: "0rem 2rem 2rem 2rem"
-});
-
 
 export default function Dashboard( props ){
   var { data, loading } = props;
@@ -38,21 +35,17 @@ export default function Dashboard( props ){
     <Stack>
       <Media src={data.image}/>
 
-      <Frame>
+      <Body>
         <Categories data={data.category}/>
-        <Title text={<div>{data.title} <a href={data.link}> <Icon>link</Icon></a></div>}/>
-        {data && data.subtitle && <h3>{data.subtitle}</h3>}
-        {data && data.author &&  <Author>by {data.author}</Author>}
+        <Title text={data.title} subText1={data.subtitle} subText2={data.author} link={data.link}/>
 
-        <br/>
-        {data && data.description && <div>Description: {data.description}</div>}
         {data && data.summary && <Summary>{data.summary}</Summary>}
 
-        <SubTitle>General information</SubTitle>
-        {data && data.createdDate && <div>Created: <Date value={data.createdDate}/></div>}
-        {data && data.language && <div>Language: {data.language}</div>}
-        {data && data.country && <div>Country: {data.country}</div>}
-      </Frame>
+        <Section>General information</Section>
+        {data && data.createdDate && <Field>Created: <Date value={data.createdDate}/></Field>}
+        {data && data.language && <Field>Language: {data.language}</Field>}	
+        {data && data.country && <Field>Country: {data.country}</Field>}	
+      </Body>
     </Stack>
   )
 }

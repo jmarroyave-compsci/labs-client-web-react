@@ -8,3 +8,4 @@ export const number = function(value=0, format="0a"){
 export const stringToText = function(value=""){
 	return jsConvert.toSentenceCase(value)
 }
+

@@ -22,7 +22,7 @@ class Dashboard extends React.Component {
         <GridContainer justifyContent='center' fill style={{width: '100%'}}>
           <GridItem xs={12} sm={12} md={12}>
             <GridContainer justifyContent='center' fill>
-              <h2>Roadmap</h2>
+              <h4>Roadmap</h4>
               <Timeline data={buildData()} />
             </GridContainer>
           </GridItem>

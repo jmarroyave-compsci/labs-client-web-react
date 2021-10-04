@@ -1,5 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
+import Body from 'core/ui/layout/body';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import References from "components/entities/pieces/references";
@@ -16,9 +17,6 @@ import Value from 'core/ui/value';
 import Stack from '@mui/material/Stack';
 
 
-const Frame = styled('div')({
-  margin: "0rem 2rem 2rem 2rem"
-});
 
 export default function Dashboard( props ){
   var { data, loading } = props;
@@ -27,7 +25,7 @@ export default function Dashboard( props ){
   return (
     <Stack>
       <Media src={data.image}/>
-      <Frame> 
+      <Body> 
         <Genres data={data.genre}/>
         <Title text={data.title}/>
 
@@ -42,7 +40,7 @@ export default function Dashboard( props ){
         <People type="cast" data={ (data) ? data.cast : null }/>
 
         <Awards data={ (data) ? data.awards : null }/>
-      </Frame>
+      </Body>
     </Stack>
   )
 }

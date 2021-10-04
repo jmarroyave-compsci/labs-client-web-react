@@ -6,6 +6,7 @@ import GridItem from 'core/ui/layout/grid_item';
 import Value from 'core/ui/value';
 
 const Frame = styled('div')({
+  marginTop: '1rem',
 });
 
 const Item = styled('div')({
@@ -40,21 +41,25 @@ const SubTitle = styled('h4')({
   margin: 0,
 });
 
-const Year = styled('h5')({
-  margin: '1rem 0 1rem 0',
-  padding: '0',
-});
-
-const Prize = styled('h6')({
-  textTransform: "uppercase",
+const Year = styled('div')({
   margin: '1rem 0 0 0',
   padding: '0',
   fontSize: '1rem',
+  lineHeight: '1rem',
+});
+
+const Prize = styled('div')({
+  textTransform: "uppercase",
+  margin: '1rem 0 0 0',
+  padding: '0',
+  fontSize: '0.9rem',
+  lineHeight: '1rem',
   fontWeight: 400,
 });
 
 const Category = styled('div')( {
   fontSize: "0.85rem",
+  lineHeight: "0.95rem",
 });
 
 const Nominee = styled('div')({
