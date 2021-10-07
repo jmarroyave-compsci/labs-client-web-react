@@ -1,5 +1,5 @@
 module.exports = {
-  basePath: '/docs',
+  basePath: '/tv-movies-client-web-react/app',
   async redirects() {
     return [
       {
