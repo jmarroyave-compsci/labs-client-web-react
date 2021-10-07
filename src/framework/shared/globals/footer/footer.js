@@ -1,5 +1,4 @@
 import React from 'react';
-import styled, { css } from 'styled-components'
 import FooterLinks from 'shared/globals/footer_links';
 import SocialNetworks from 'shared/globals/social_networks';
 import Version from 'shared/globals/version'
@@ -13,7 +12,7 @@ const Footer = ( {socialNetworksLinks, footerLinks, version} ) => {
 	const renderSection = (socialNetworksLinks, footerLinks, version, padding) => {
 		return (
 			<div >
-				<GridContainer spacing={0} fill className="footer" style={{backgroundColor: theme.palette.primary.main, color: theme.palette.primary.constrastText, padding: '1rem'}}>
+				<GridContainer spacing={0} fill className="footer" style={{backgroundColor: `${theme.palette.primary.main}`, color: `${theme.palette.primary.contrastText}`, padding: '1rem'}}>
 					<GridItem fill>
 						<FooterLinks links={footerLinks}/>
 					</GridItem>					

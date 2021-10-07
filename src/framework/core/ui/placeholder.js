@@ -1,7 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types';
-import ContentLoader from 'react-content-loader'
 
 class Placeholder extends React.Component {
   render() {
@@ -28,14 +26,14 @@ class Placeholder extends React.Component {
   	data = this.renderPlaceholders(data);
   	const style = (grow) ? {} : {width: data.width, height: data.height};
     return (
-		<ContentLoader style={style}
+		<div style={style}
 			height={data.height}
 			width={data.width}
 			speed={2}
 			primaryColor="#f3f3f3"
 			secondaryColor="#bcbcbc">
 			{data.phs.map(item => item)}
-		</ContentLoader>			
+		</div>			
     );
   }
 

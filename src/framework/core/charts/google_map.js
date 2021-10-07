@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components'
+import { styled } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
@@ -63,29 +63,27 @@ TopicMap.defaultProps = {
 
 export default TopicMap;
 
-const Container = styled.div`
-  width: 100%;
-  height: 400px;
-  overflow: hidden;
-  text-align: left;
-  position: relative;
-`;
+const Container = styled('div')({`
+  width: '100%',
+  height: '400px'
+  overflow: 'hidden',
+  textAlign: 'left',
+  position: 'relative',
+`});
 
-const ContainerMap = styled.div`
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  position: absolute;
-`;
+const ContainerMap = styled('div')({`
+  width: '100%',
+  height: '100%',
+  left: '0',
+  top: '0',
+  position: 'absolute',
+`});
 
-const Marker = styled.div`
-  height: 0.5rem;
-  line-height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 0.5rem;
-  display: block;
-  border: 1px solid black;
-`;
-
-
+const Marker = styled('div')({`
+  height: '0.5rem',
+  lineHeight: '0.5rem',
+  width: '0.5rem',
+  borderRadius: '0.5rem',
+  display: 'block',
+  border: '1px solid black',
+`});

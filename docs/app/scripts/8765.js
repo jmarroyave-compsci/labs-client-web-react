@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkreact=globalThis.webpackChunkreact||[]).push([[8765],{98765:(e,c,s)=>{s.r(c),s(67294),s(65267),describe("App component",(()=>{test("Render",(()=>{}))}))}}]);

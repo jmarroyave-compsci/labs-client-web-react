@@ -13,7 +13,6 @@ import Link from 'core/ui/text-link';
 import Search from './search';
 import Box from '@material-ui/core/Box';
 
-
 function Toolbar( props ){
   	var { onSearchQuery, onSearchSuggestions, classes, nav, title, drawerOpen, notifications, drawer, search, loading , toggleDrawer, open} = props;  	
   	const navToolbar = (nav && nav.routes) ? nav.routes.filter(item => (item.showInMenu) ? item : null) : [];

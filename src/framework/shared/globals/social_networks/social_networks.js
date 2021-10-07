@@ -1,5 +1,4 @@
 import React from 'react'
-import './social_networks.scss';
 
 export default function SocialNetworks({size, links}) {
 	switch(size){

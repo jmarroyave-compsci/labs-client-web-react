@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components'
+import { styled } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 import { Hook, Console, Decode } from 'console-feed';
 
@@ -43,21 +43,21 @@ Log.defaultProps = {
 
 export default Log;
 
-const Container = styled.div`
-	background-color: #242424;
-	overflow-y: scroll;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
-`;
+const Container = styled('div')({`
+	backgroundColor: '#242424',
+	overflowY: 'scroll',
+	position: 'fixed',
+	bottom: '0',
+	width: '100%',
+`});
 
-const ButtonToggle = styled.div`
-	z-index: 100;
-	background-color: white;
-	position: absolute;
-	top: 0;
-	right: 0.1rem;
-	font-size: 0.5rem;
-	line-height: 0.75rem;
-	padding: 0.2rem;
-`;
+const ButtonToggle = styled('div')({`
+	zIndex: '100',
+	backgroundColor: 'white',
+	position: 'absolute',
+	top: '0',
+	right: '0.1rem',
+	fontSize: '0.5rem',
+	lineHeight: '0.75rem',
+	padding: '0.2rem'
+`});

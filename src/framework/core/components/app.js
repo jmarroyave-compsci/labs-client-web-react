@@ -13,7 +13,7 @@ import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import classNames from 'classnames';
 import ErrorBoundry from 'core/components/error';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { Link } from 'react-router-dom'
+import { Link } from 'next/router'
 
 const drawerWidth = 240;
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import { styled } from '@mui/material/styles';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Placeholder from 'core/ui/placeholder';
@@ -9,74 +9,73 @@ import List from 'core/ui/list';
 import Link from 'core/ui/link';
 import StarRatings from 'react-star-ratings';
 
+const Container = styled('div')({`
+  width: '100%',
+  maxWidth: '400px',
+  display: 'inline-block',
+  textAlign: 'left',
+`})
 
-const Container = styled.div`
-  width: 100%;
-  max-width: 400px;
-  display: inline-block;
-  text-align: left;
-`;
+const PlaceholderContainer = styled('div')({`
+  width: '100%',
+  padding: '0.5rem',
+`})
 
-const PlaceholderContainer = styled.div`
-  width: 100%;
-  padding: 0.5rem;
-`;
+const PlaceholderPieceContainer = styled('div')({`
+  paddingBottom: '0.3rem',
+`})
 
-const PlaceholderPieceContainer = styled.div`
-  padding-bottom: 0.3rem;
-`;
+const CourseContainer = styled('div')({`
+    backgroundColor: 'white',
+    padding: '1.5rem 1rem', 
+    color: '#333!important',  
+    width: '100%',
+`})
 
-const CourseContainer = styled.div`
-    background-color: white;
-    padding: 1.5rem 1rem; 
-    color: #333!important;  
-    width: 100%;
-`;
+const CourseHeadContainer = styled('div')({`
+    color: '#888',
+    height: '1rem',
+    display: 'block',
+    width: '100%',     
+    overflow: 'hidden', 
+`})
 
-const CourseHeadContainer = styled.div`
-    color: #888;
-    height: 1rem;
-    display: block;
-    width: 100%;     
-    overflow: hidden; 
-`;
+const CoursePlatformContainer = styled('div')({`
+  display: 'block',
+  float: 'left',
+  fontSize: '0.6em',   
+  lineHeight: '1rem',
+  textTransform: 'uppercase',
+`})
 
-const CoursePlatformContainer = styled.div`
-  display: block;
-  float: left;
-  font-size: 0.6em;   
-  line-height: 1rem;
-  text-transform: uppercase;
-`;
+const CourseRatingContainer = styled('div')({`
+  float: 'right',
+  display: 'block',
+  marginTop: '-0.75rem',
+`})
 
-const CourseRatingContainer = styled.div`
-  float: right;
-  display: block;
-  margin-top: -0.75rem;
-`;
+const CourseNameContainer  = styled('div')({`
+  fontSize: '1.1em',
+  lineHeight: '1.5rem',
+  padding: '0.25rem 0', 
+`})
 
-const CourseNameContainer = styled.div`
-  font-size: 1.1em;
-  line-height: 1.5rem;
-  padding: 0.25rem 0; 
-`;
+const CourseFromContainer  = styled('div')({`
+  fontSize: '0.75em', 
+  lineHeight: '1rem',
+  textTransform: 'uppercase',
+  textAlign: 'justify',
+  color: '#666',
+`})
 
-const CourseFromContainer = styled.div`
-  font-size: 0.75em; 
-  line-height: 1rem;
-  text-transform: uppercase;
-  text-align: justify;
-  color: #666;
-`;
-
-const CourseCommentsContainer = styled.div`
-  font-size: 0.8rem;
-  line-height: 1.1rem;
-  padding: 0.5rem 0.5rem;
-  font-style: italic;
-  text-align: center;
-  color: #666;
-`;
+const CourseCommentsContainer  = styled('div')({`
+  fontSize: '0.8rem',
+  lineHeight: '1.1rem',
+  padding: '0.5rem 0.5rem',
+  fontStyle: 'italic',
+  textAlign: 'center',
+  color: '#666',
+`})
 
 
 function Course({data}) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components'
+import { styled } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 import Button from 'core/ui/button';
 
@@ -22,12 +22,12 @@ class Spinner extends React.Component {
 
 export default Spinner;
 
-const ContainerTrendH1 = styled.h1`
-  font-size: 1rem;
-  line-height: 2.5rem;
-  font-weight: bold;
-  margin: 0;
-  padding: 0.25rem;
-  text-transform: uppercase;
-`;
+const ContainerTrendH1 = styled('h1')({`
+  fontSize: '1rem',
+  lineHeight: '2.5rem',
+  fontWeight: 'bold',
+  margin: '0',
+  padding: '0.25rem',
+  textTransform: 'uppercase',
+`});
 

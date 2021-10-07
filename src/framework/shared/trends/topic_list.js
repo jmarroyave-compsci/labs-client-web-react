@@ -1,16 +1,16 @@
 import React from 'react';
-import styled, { css } from 'styled-components'
+import { styled } from '@mui/material/styles';
 import List from 'core/ui/list';
 import Icon from './topic_icon';
 import uris from './uris';
 
 import './topic_list.scss';
 
-const ActionsContainer = styled.div`
-    padding: 1.5rem 1rem;
-    color: white;
-    background-color: #333;
-`;
+const ActionsContainer = styled('div')({
+    padding: '1.5rem 1rem',
+    color: 'white',
+    backgroundColor: '#333',
+`});
 
 
 function TopicList({id, numbered, border, colored, data, trend, links, title, subtitle, actions, groupByLambda, defaultIcon, displayItems, minItems, useDefaultIcon}) {	

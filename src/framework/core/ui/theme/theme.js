@@ -1,17 +1,21 @@
 import React from 'react';
 import { createTheme } from '@material-ui/core/styles';
 
-import { blue, green, red } from '@material-ui/core/colors';
+import theme from 'config/theme/main';
 
-const primary = green;
-const secondary = blue;
-
-const primaryColor = [primary[900], primary[700], primary[500], primary[300]];
-const secondaryColor = [secondary[900], secondary[700], secondary[500], secondary[300]];
-const warningColor = ["#ff9800", "#ffa726", "#fb8c00", "#ffa21a"];
-const dangerColor = ["#f44336", "#ef5350", "#e53935", "#f55a4e"];
-const successColor = ["#4caf50", "#66bb6a", "#43a047", "#5cb860"];
-const infoColor = ["#00acc1", "#26c6da", "#00acc1", "#00d3ee"];
+var color;
+color = theme.palette.primary;
+const primaryColor = [color.main, color.light, color.dark, color.contrastText];
+color = theme.palette.secondary;
+const secondaryColor = [color.main, color.light, color.dark, color.contrastText];
+color = theme.palette.warning;
+const warningColor = [color.main, color.light, color.dark, color.contrastText];
+color = theme.palette.success;
+const successColor = [color.main, color.light, color.dark, color.contrastText];
+color = theme.palette.error;
+const dangerColor = [color.main, color.light, color.dark, color.contrastText];
+color = theme.palette.info;
+const infoColor = [color.main, color.light, color.dark, color.contrastText];
 const roseColor = ["#e91e63", "#ec407a", "#d81b60", "#eb3573"];
 const grayColor = [
   "#999",
@@ -58,7 +62,7 @@ const customTheme = createTheme({
 
  */
 
-import "./theme.css";
+//import "./theme.css";
 
 // ##############################
 // // // Function that converts from hex color to rgb color

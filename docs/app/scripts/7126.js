@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkreact=globalThis.webpackChunkreact||[]).push([[7126],{97126:(e,a,t)=>{t.r(a),t.d(a,{default:()=>c});var r=t(67294);function c({}){return r.createElement("div",{className:"drawer-title"},"App")}}}]);

@@ -1,10 +1,9 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { default as _Link } from 'next/link';
 import constants from './_';
 
-class _Link extends React.Component {
-  render() {
-    var { children, className, to, href, style, external } = this.props;
+const Link =  ( props ) => {
+    var { children, className, to, href, style, external } = props;
 
     to = (to) ? to : href;
     to = (to) ? to : "http://localhost";
@@ -21,11 +20,10 @@ class _Link extends React.Component {
     const target = (!internal) ? "_blank" : '_self'
     return (
         (jump == false && internal == true && constants.links_disabled == false) ? 
-            <NavLink className={className} to={to} style={style}>{children}</NavLink>
+            <_Link className={className} href={to} style={style}>{children}</_Link>
         :
             <a className={className} href={to} style={style} target={target}>{children}</a>
     );
-  }
 }
 
-export default _Link;
+export default Link;

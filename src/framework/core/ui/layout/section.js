@@ -3,7 +3,7 @@ import CoreProxy from './proxy';
 import withModule from '../../components/with-module';
 import ErrorBoundry from '../../components/error';
 
-import './section.scss';
+//import './section.scss';
 
 class LayoutSection extends React.Component{
 	render(){

@@ -1,7 +1,6 @@
 import React, { Suspense, lazy } from 'react';
-import styled, { css } from 'styled-components'
+import { styled } from '@mui/material/styles';
 import PropTypes from 'prop-types';
-
 import Link from './link';
 import Placeholder from './placeholder';
 import MDAvatar from '@material-ui/core/Avatar';
@@ -16,7 +15,7 @@ import Loading from 'core/components/loading';
 const FixedSizeList = lazy(() => import(/* webpackChunkName: "react-window" */ './external/fixed-size-list'));
 
 
-import './list.scss';
+//import './list.scss';
 
 class List extends React.Component {
   constructor(){
@@ -233,20 +232,20 @@ List.defaultProps = {
 
 export default List;
 
-const Container = styled.div`
-  position: relative;
-  width: 100%;
-  text-align: left;
-`;
+const Container = styled('div')({`
+  position: 'relative',
+  width: '100%',
+  textAlign: 'left',
+`});
 
-const Overlay = styled.div`
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0,0,0,0.1);
-    z-index: 2;
-    text-align: center;
-    color: white;
-`;
+const Overlay = styled('div')({`
+    position: 'absolute',
+    top: '0',
+    bottom: '0',
+    left: '0',
+    right: '0',
+    backgroundColor: 'rgba(0,0,0,0.1)',
+    zIndex: '2',
+    textAlign: 'center',
+    color: 'white',
+`});

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css } from 'styled-components'
+import { styled } from '@mui/material/styles';
 
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
@@ -13,25 +13,30 @@ import List from './topic_list';
 import sections from './sections';
 import uris from './uris';
 
-const Container = styled.div`
-  width: 100%;
-  background-color: transparent;
-  max-width: 400px;
-  text-align: left;
-  display: inline-block;
-`;
 
-const TrendContainer = styled.div`
-  padding: 0.5rem;
-`;
+const Frame = styled('div')({
+  padding: "0.5rem",
+});
 
-const DateFooter = styled.div`
-  font-size: 0.8rem;
-  line-height: 1rem;
-  margin-top: 1.75rem;
-  text-align: center;
-  color: #666;
-`;
+const Container = styled('div')({`
+  width: '100%',
+  backgroundColor: 'transparent',
+  maxWidth: '400px',
+  textAlign: 'left',
+  display: 'inline-block',
+`});
+
+const TrendContainer = styled('div')({`
+  padding: '0.5rem',
+`});
+
+const DateFooter = styled('div')({`
+  fontSize: '0.8rem',
+  lineHeight: '1rem',
+  marginTop: '1.75rem',
+  textAlign: 'center',
+  color: '#666',
+`});
 
 class SoftwareTrendComponent extends React.Component {
   render() {

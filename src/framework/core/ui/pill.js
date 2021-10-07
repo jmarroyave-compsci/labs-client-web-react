@@ -1,12 +1,12 @@
 import React from 'react';
-import styled, { css } from 'styled-components'
+import { styled } from '@mui/material/styles';
 import MDChip from '@material-ui/core/Chip';
 
-export default function Pill({text, onClick}) {
+export default function Pill({text, color, variant, onClick}) {
 	
     return (
     	<Container>
-        	<MDChip variant={'outlined'} size={'small'} label={text} onClick={onClick}/>
+        	<MDChip variant={variant} color={color} size={'small'} label={text} onClick={onClick}/>
     	</Container>
     );
 }
@@ -14,13 +14,15 @@ export default function Pill({text, onClick}) {
 Pill.defaultProps = {
   onClick : null,
   text: "",
+  color: 'primary',
+  variant: 'default'
 };
 
 
-const Container = styled.div`
-	display: inline-block;
-	margin: 0;
-	margin-right: 0.25rem;
-	margin-bottom: 0.25rem;
-`;
+const Container = styled('div')({
+	display: 'inline-block',
+	margin: '0',
+	marginRight: '0.25rem',
+	marginBottom: '0.25rem',
+});
 

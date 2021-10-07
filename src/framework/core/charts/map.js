@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components'
+import { styled } from '@mui/material/styles';
 import PropTypes from 'prop-types';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
@@ -74,9 +74,9 @@ Map.defaultProps = {
 
 export default Map;
 
-const Container = styled.div`
-  overflow: hidden;
-  text-align: left;
-  position: relative;
-`;
+const Container = styled('div')({`
+  overflow: 'hidden',
+  textAlign: 'left',
+  position: 'relative',
+`});
 

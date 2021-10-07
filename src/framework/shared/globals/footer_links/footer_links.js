@@ -3,7 +3,7 @@ import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Link from 'core/ui/link';
 
-import './footer_links.scss';
+//import './footer_links.scss';
 
 export default function FooterLinks({links}) {
   	var idx = 0;
