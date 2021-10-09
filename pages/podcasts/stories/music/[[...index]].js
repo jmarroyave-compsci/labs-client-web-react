@@ -6,10 +6,10 @@ import { useRouter } from 'next/router';
 
 const Page = ( props ) => {
   var router = useRouter(); 
-  var [ page ] = (router && router.query && router.query.page) ? router.query.page : []; 
+  var [ page ] = (router && router.query && router.query.index) ? router.query.index : []; 
   page = (page) ? parseInt(page) : 1;
-
-  const params = { ...props, page };
+  const route = { page }
+  const params = { ...props, route };
   params.breadcrumbs = [{name: "podcasts", url: '/podcasts'}, {name: "stories", url: '/podcasts/stories'}, {name: "music"}]
 
   return (

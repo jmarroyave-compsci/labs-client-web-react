@@ -4,20 +4,21 @@ import { gql, useQuery } from "@apollo/client";
 const QRY = gql`
   query getStory($page: Int)
 {
-  storiesPodcastMusic(page: $page) {
+  storiesRemakes(page: $page) {
     id
     title
-    link
-    image
+    image{
+      poster
+    }
   }
 }
 `;
 
 export default DataComponent => (
-  function WithDataStoriesPodcastsMusic( props ) {
+  function fetch( props ) {
     const { route } = props
     var qry = ( props.data )  ? {} : useQuery(QRY, { variables: { page: (route && route.page) ? parseInt(route.page) : 1 } });
-    var data = (props.data) ? props.data : (( qry.data ) ? qry.data.storiesPodcastMusic : null);
+    var data = (props.data) ? props.data : (( qry.data ) ? qry.data.storiesRemakes : null);
     return <DataComponent {...props} {...qry} data={data} />
   }
 )

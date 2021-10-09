@@ -4,7 +4,8 @@ import Layout from 'components/pages/soon';
 
 const Page = ( props ) => {
   const params = { ...props };
-  params.breadcrumbs = [{name: 'home'}]
+  params.breadcrumbs = [{name: "stories"}]
+
   return (
     <App {...params}>
       <Layout {...params}/> 

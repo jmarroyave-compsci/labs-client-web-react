@@ -8,7 +8,7 @@
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook -o docs/storybook/",
-    "test": "jest --verbose false "    
+    "test": "jest --verbose false "
   },
   "dependencies": {
     "@apollo/client": "^3.4.15",
@@ -22,6 +22,7 @@
     "d3": "^7.1.1",
     "date-fns": "^2.25.0",
     "graphql": "^15.6.0",
+    "gray-matter": "^4.0.3",
     "js-convert-case": "^4.1.2",
     "next": "^11.0.0",
     "numeral": "^2.0.6",
@@ -29,7 +30,9 @@
     "react-d3-treemap": "^1.0.29",
     "react-dom": "17.0.2",
     "react-faux-dom": "^4.5.0",
+    "react-markdown": "^7.0.1",
     "react-multi-carousel": "^2.6.5",
+    "react-syntax-highlighter": "^15.4.4",
     "react-vertical-timeline-component": "^3.3.3"
   }
 }

@@ -6,7 +6,6 @@ query get($entity:String, $year: Int, $page: Int) {
   storiesAwards(entity: $entity, year: $year, page: $page){
     id
     title
-    link
     awards {
       category
       name

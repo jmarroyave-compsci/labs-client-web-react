@@ -6,7 +6,7 @@ import { gql, useQuery } from "@apollo/client";
 
 export const QRY = gql`
 query getMovie($id:String!) {
-  movie(id: $id){
+  tv(id: $id){
     id
     title
     country
@@ -53,13 +53,13 @@ query getMovie($id:String!) {
 
 const Page = ( props ) => {
   var router = useRouter(); 
-  var [ id, name ] = (router && router.query && router.query.movie) ? router.query.movie : []; 
+  var [ id, name ] = (router && router.query && router.query.page) ? router.query.page : []; 
   name = decodeURIComponent(name).toLowerCase();
 
   const { loading, error, data } = useQuery(QRY, { variables : { id : id}});
   const params = { ...props, loading, error, data };
-  params.data = (params.data) ? params.data.movie : null; 
-  params.breadcrumbs = [{name: "movies", url: '/movies'}, {name: name}]
+  params.data = (params.data) ? params.data.tv : null; 
+  params.breadcrumbs = [{name: "tv-shows", url: '/tv-shows'}, {name: name}]
 
   return (
     <App {...params}>

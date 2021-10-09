@@ -14,6 +14,20 @@ class Navigation {
         route: '/', 
       },
       {
+        showInMenu: false, 
+        showInDrawer: true, 
+        icon: 'insights', 
+        name: 'Stories', 
+        route: '/stories', 
+      },
+      {
+        showInMenu: false, 
+        showInDrawer: true, 
+        icon: 'rss_feed', 
+        name: 'Log', 
+        route: '/about/log', 
+      },
+      {
         showInMenu: true, 
         showInDrawer: true, 
         separator: true,
@@ -25,13 +39,20 @@ class Navigation {
         icon: 'movie', 
         route: '/movies', 
       },
-        {
-          showInMenu: false, 
-          showInDrawer: false, 
-          name: 'Movie', 
-          icon: 'movie', 
-          route: '/movie/:id/:name', 
-        },
+      {
+        showInMenu: true, 
+        showInDrawer: true, 
+        name: 'TV Show', 
+        icon: 'tv', 
+        route: '/tv-show', 
+      },
+      {
+        showInMenu: true, 
+        showInDrawer: true, 
+        name: 'Games', 
+        icon: 'sports_esports', 
+        route: '/games', 
+      },
       {
         showInMenu: true, 
         showInDrawer: true, 
@@ -39,13 +60,6 @@ class Navigation {
         icon: 'podcasts', 
         route: '/podcasts', 
       },
-        {
-          showInMenu: false, 
-          showInDrawer: false, 
-          name: 'Podcast', 
-          icon: 'podcast', 
-          route: '/podcast/:id/:name', 
-        },
       {
         showInMenu: true, 
         showInDrawer: true, 
@@ -58,31 +72,6 @@ class Navigation {
         icon: 'people', 
         route: '/people', 
       },
-        {
-          showInMenu: false, 
-          showInDrawer: false, 
-          name: 'Person', 
-          icon: 'person', 
-          route: '/person/:id/:name', 
-        },
-      {
-        showInMenu: false, 
-        showInDrawer: false, 
-        name: 'Awards', 
-        route: '/stories/awards/:entity?/:year?/:page?', 
-      },
-      {
-        showInMenu: false, 
-        showInDrawer: false, 
-        name: 'Stories', 
-        route: '/stories', 
-      },
-      {
-        showInMenu: false, 
-        showInDrawer: false, 
-        name: 'PodcastMusic', 
-        route: '/podcasts/stories/music/:page?', 
-      },
       {
         showInMenu: true, 
         showInDrawer: true, 
@@ -94,13 +83,6 @@ class Navigation {
         name: 'About', 
         icon: 'info', 
         route: '/about', 
-      },
-      {
-        showInMenu: false, 
-        showInDrawer: false, 
-        name: 'Search', 
-        icon: 'search', 
-        route: '/search/:qry/:page?', 
       },
     ];
   }
