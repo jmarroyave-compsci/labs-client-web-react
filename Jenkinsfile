@@ -13,7 +13,6 @@ pipeline {
         }
         stage('docs') {
             steps {
-                bat 'npm run build-storybook'
             }
         }
         stage('upload to gitpages') {
