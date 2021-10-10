@@ -4,7 +4,7 @@ import GridItem from 'core/ui/layout/grid_item';
 import Indicator from 'components/entities/dashboard/indicator';
 import Dataset from "components/entities/dashboard/dataset";
 import Stack from '@mui/material/Stack';
-import Banner from './banner'
+import { Title } from 'components/styles/typo'
 
 class Dashboard extends React.Component {
   render(){
@@ -23,13 +23,12 @@ class Dashboard extends React.Component {
 
     return (
       <Stack spacing={2}>
-        <Banner hero/>
-        <h2>general</h2>
+        <Title>general</Title>
         <GridContainer justifyContent='center' fill>
           {tileIndicator("movies", total, "local_movies")}
         </GridContainer>
 
-        <h2>segments</h2>
+        <Title>segments</Title>
         <GridContainer justifyContent='center' fill>
           {tileChart("by type", type, [25000, 50000])}
           {tileChart("by genre", genre, [1000, 25000, 50000, 75000, 10000, 250000])}
@@ -40,17 +39,17 @@ class Dashboard extends React.Component {
           {tileChart("released", yearReleased, [10000, 25000, 50000, 100000])}
         </GridContainer>
 
-        <h2>awards</h2>
+        <Title>awards</Title>
         <GridContainer justifyContent='center' fill>
           {tileChart("nominees", awards, [])}
         </GridContainer>
 
-        <h2>ratings</h2>
+        <Title>ratings</Title>
         <GridContainer justifyContent='center' fill>
           {tileIndicator("imdb", (rating) ? rating['imdb'] : null, "local_movies")}
         </GridContainer>
 
-        <h2>stream</h2>
+        <Title>stream</Title>
         <GridContainer justifyContent='center' fill>
           {tileIndicator("netflix", (streamBy) ? streamBy['netflix'] : null, "local_movies")}
         </GridContainer>

@@ -1,11 +1,11 @@
 import React from 'react';
-import Body from 'core/ui/layout/body';
-import Dashboard from './dashboard';
+import Layout from "components/layout/cols-2-layout";
+import Content from './content';
 
 export default function PageComponent( props ){
-	return (
-		<Body noPadding>
-	 		<Dashboard {...props} />
-		</Body>
-	)
+  return (
+    <Layout 
+      mainCol={<Content {...props} />}
+    />
+  )
 }

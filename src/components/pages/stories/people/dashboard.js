@@ -4,7 +4,7 @@ import GridItem from 'core/ui/layout/grid_item';
 import Indicator from 'components/entities/dashboard/indicator';
 import Dataset from "components/entities/dashboard/dataset";
 import Stack from '@mui/material/Stack';
-import Banner from './banner'
+import { Title } from 'components/styles/typo'
 
 function Dashboard( props={} ){
   const { data, loading, route } = props;
@@ -21,13 +21,12 @@ function Dashboard( props={} ){
 
   return (
       <Stack spacing={2}>
-        <Banner hero/>
-        <h2>general</h2>
+        <Title>general</Title>
           <GridContainer justifyContent='center' fill>
             {tileIndicator("people", total, "people")}
           </GridContainer>
 
-        <h2>segments</h2>
+        <Title>segments</Title>
           <GridContainer justifyContent='center' fill>
               {tileChart("profession", profession, [ 1000, 50000, 100000])}
               {tileChart("birth year", yearBirth, [ 50, 100, 1000, 2500, 5000, 6000, 7000 ])}

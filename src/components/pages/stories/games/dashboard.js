@@ -4,7 +4,7 @@ import GridItem from 'core/ui/layout/grid_item';
 import Indicator from 'components/entities/dashboard/indicator';
 import Dataset from "components/entities/dashboard/dataset";
 import Stack from '@mui/material/Stack';
-import Banner from './banner'
+import { Title } from 'components/styles/typo'
 
 class Dashboard extends React.Component {
   render(){
@@ -23,25 +23,18 @@ class Dashboard extends React.Component {
 
     return (
       <Stack spacing={2}>
-        <Banner hero/>
-        <h2>general</h2>
+        <Title>general</Title>
         <GridContainer justifyContent='center' fill>
-          {tileIndicator("movies", total, "local_movies")}
+          {tileIndicator("games", total, "sports_esports")}
         </GridContainer>
 
-        <h2>segments</h2>
+        <Title>segments</Title>
         <GridContainer justifyContent='center' fill>
           {tileChart("by type", type, [])}
           {tileChart("by genre", genre, [])}
           {tileChart("from", country, [])}
           {tileChart("rated by", rating, [])}
           {tileChart("released", yearReleased, [])}
-        </GridContainer>
-
-
-        <h2>ratings</h2>
-        <GridContainer justifyContent='center' fill>
-          {tileIndicator("imdb", (rating) ? rating['imdb'] : null, "local_movies")}
         </GridContainer>
 
       </Stack>

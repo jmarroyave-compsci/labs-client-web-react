@@ -1,11 +1,6 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 
-export const getTotalPages = function(size=10){
-    var posts = getAllPosts();
-    return Math.ceil(posts.length / size);
-}
-
 export const getAllPosts = function(){
     const files = fs.readdirSync("src/blog");
     let articles = files.map( (file) => {
@@ -18,8 +13,17 @@ export const getAllPosts = function(){
             slug: slug,
         };
     });
+
+    articles = articles.filter( i => (i.published === true));
+    articles = articles.sort( (a, b) => (a.date > b.date) ? -1 : 1);
     return articles
 }
+
+export const getTotalPages = function(size=10){
+    var posts = getAllPosts();
+    return Math.ceil(posts.length / size);
+}
+
 
 export const getPosts = function(page, size=10){
     const skip = ( page - 1 ) * size;

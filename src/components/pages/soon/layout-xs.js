@@ -1,12 +1,10 @@
 import React from 'react';
-import Body from 'core/ui/layout/body';
+import Layout from "components/layout/cols-2-layout";
 
-function LayoutXS( props ){
+export default function PageComponent( props ){
   return (
-    <Body>
-      <h1>soon</h1>
-    </Body>
+    <Layout 
+      mainCol={<div />}
+    />
   )
 }
-
-export default LayoutXS;

@@ -8,7 +8,7 @@ import StreamBy from "components/entities/pieces/stream_by";
 import Rating from "components/entities/pieces/ratings";
 import People from "components/entities/pieces/people";
 import Awards from "components/entities/pieces/awards";
-import Title from "components/entities/pieces/title";
+import _Title from "components/entities/pieces/title";
 import Genres from "components/entities/pieces/genres";
 import Date from "core/ui/date";
 import Pill from 'core/ui/pill'
@@ -16,18 +16,8 @@ import Media from 'components/entities/pieces/media';
 import Value from 'core/ui/value';
 import Stack from '@mui/material/Stack';
 import Text from 'components/entities/pieces/text';
+import { Title } from 'components/styles/typo'
 
-
-const Section = styled('h4')({
-  margin: '1rem 0 0.5rem 0',
-  padding: 0,
-});
-
-const Field = styled('div')({
-  fontSize: '0.9rem',
-  lineHeight: "1rem",
-  marginBottom: '0.5rem',
-});
 
 
 export default function Dashboard( props ){
@@ -42,14 +32,14 @@ export default function Dashboard( props ){
           <Pill color='primary' text={data.type}/>
           <Genres data={data.genre}/>
         </Stack>
-        <Title text={data.title}/>
+        <_Title text={data.title}/>
 
         <Text title='plot' text={data.plot}/>
 
-        <Section>general information</Section>
-        {data && data.createdDate && <Field>Created: <Date value={data.createdDate}/></Field>}
-        {data && data.language && <Field>Language: {data.language}</Field>} 
-        {data && data.country && <Field>Country: {data.country}</Field>}  
+        <Title>general information</Title>
+        <Field title="created" data={data.createdDate} format="date"/>
+        <Field title="language" data={data.language}/>
+        <Field title="country" data={data.country}/>
 
         <Rating data={ (data) ? data.rating : null }/>
 

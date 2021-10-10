@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from 'core/ui/cards/img-text';
-import Link from 'next/link'
+import Link from 'core/ui/text-link'
 import Awards from 'components/entities/pieces/awards'
 import Typography from '@material-ui/core/Typography';
 

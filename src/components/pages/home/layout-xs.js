@@ -1,8 +1,7 @@
 import React from 'react';
-
+import Stack from '@mui/material/Stack';
 import Section from 'core/ui/layout/section';
-import GridContainer from 'core/ui/layout/grid_container';
-import GridItem from 'core/ui/layout/grid_item';
+
 import StoryAwards from 'components/pages/stories/awards/banner'
 import StoryAbout from 'components/pages/about/banner'
 import StoryMovies from 'components/pages/stories/movies/banner'
@@ -14,57 +13,20 @@ import StoryRemakes from 'components/pages/stories/remakes/banner'
 import StoryPodcastMusic from 'components/pages/stories/podcast-music/banner'
 import StoryLog from 'components/pages/blog/index/banner'
 
-function PageComponent( props ){
+export default function PageComponent( props ){
 	const { data, blog } = props;
+
 	return (
-		<GridContainer className="page-module" fill>
-			<GridItem fill>
-				<Section className="section-1">
-					<StoryMovies/>
-				</Section>
-			</GridItem>
-			<GridItem fill>
-				<Section className="section-3" rounded={false}>
-					<StoryPodcastMusic/>
-				</Section>
-			</GridItem>
-			<GridItem fill>
-				<Section className="section-1">
-					<StoryLog data={blog}/>
-				</Section>
-			</GridItem>
-			<GridItem fill>
-				<Section className="section-1">
-					<StoryPodcasts/>
-				</Section>
-			</GridItem>
-			<GridItem fill>
-				<Section className="section-1">
-					<StoryGames/>
-				</Section>
-			</GridItem>
-			<GridItem fill>
-				<Section className="setvction-0">
-					<StoryPeople/>
-				</Section>
-			</GridItem>
-			<GridItem fill>
-				<Section className="section-2">
-					<StoryAwards year={2018 - (Math.floor(Math.random() * 10))}/>
-				</Section>
-			</GridItem>
-			<GridItem fill>
-				<Section className="section-1">
-					<StoryTV/>
-				</Section>
-			</GridItem>		
-			<GridItem fill>
-				<Section className="section-1">
-					<StoryRemakes/>
-				</Section>
-			</GridItem>				
-		</GridContainer>
+		<Stack>
+			<Section className="section-2"><StoryMovies {...props}/></Section>
+			<Section className="section-0"><StoryPodcastMusic {...props}/></Section>
+			<Section className="section-1"><StoryPodcasts {...props}/></Section>
+			<Section className="section-3"><StoryGames {...props}/></Section>
+			<Section className="section-0"><StoryRemakes {...props}/></Section>
+			<Section className="section-1"><StoryPeople {...props}/></Section>
+			<Section className="section-0"><StoryAwards year={2018 - (Math.floor(Math.random() * 10))}/></Section>
+			<Section className="section-2"><StoryTV {...props}/></Section>
+			<Section className="section-3"><StoryLog data={blog}/></Section>
+		</Stack>
 	)
 }
-
-export default PageComponent;

@@ -9,8 +9,7 @@ import Awards from 'components/entities/pieces/awards'
 import Typography from '@material-ui/core/Typography';
 
 export default function AwardItem( props ){
-  const { full, year, all } = props;
-  const { id, title, awards, image} = props.data;
+  const { full, year, all, id, title, awards, image } = props;
 
   return (
     
