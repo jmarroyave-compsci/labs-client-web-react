@@ -10,6 +10,10 @@ import createEmotionCache from 'config/theme/emotion-cache';
 import client from "config/apollo/client";
 import links from 'config/footer-links';
 import socialNetworksLinks from 'config/social-networks'
+import App from 'app';
+
+import { Provider as StateProvider } from 'react-redux'
+import { store } from 'app/state/store'
 
 import Constants from 'config/constants'
 
@@ -29,25 +33,30 @@ export default function MyApp(props) {
         <title>{Constants.PAGE_TITLE}</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
-      <ThemeProvider theme={theme}>
-        {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-        <CssBaseline />
-        <ApolloProvider client={client}>
-            <Component {...pageProps} 
-              params={{
-                page: {
-                  title: Constants.TITLE,
-                  pageTitle: Constants.PAGE_TITLE,
-                },
-                footer: {
-                  version: Constants.VERSION,
-                  links: links,
-                  socialNetworks: socialNetworksLinks,
-                },
-              }}             
-            />
-        </ApolloProvider>
-      </ThemeProvider>
+      <ApolloProvider client={client}>
+          <StateProvider store={store}>
+            <ThemeProvider theme={theme}>
+              <CssBaseline />
+                <App
+                  params={{
+                    page: {
+                      title: Constants.TITLE,
+                      pageTitle: Constants.PAGE_TITLE,
+                    },
+                    footer: {
+                      version: Constants.VERSION,
+                      links: links,
+                      socialNetworks: socialNetworksLinks,
+                    },
+                  }}                             
+                >                
+                  <Component 
+                    {...pageProps}
+                  />
+                </App>
+            </ThemeProvider>
+          </StateProvider>
+      </ApolloProvider>
     </CacheProvider>
   );
 }

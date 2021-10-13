@@ -19,7 +19,7 @@ const Banner = function( props ){
             />            
           }
           footer={
-            <TextLink border href={`/stories/remakes`}> See more</TextLink>
+            <TextLink border href={`/stories/${(props && props.route && props.route.entity) ? props.route.entity : props.entity}/remakes`}> See more</TextLink>
           }
       />
     )

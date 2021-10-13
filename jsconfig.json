@@ -2,8 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
+      "app": ["src/app/components/app"],
+      "app/*": ["src/app/*"],
+      "config/*": ["src/app/config/*"],
       "components/*": ["src/components/*"],
-      "config/*": ["src/config/*"],
       "core/*": ["src/framework/core/*"],
       "shared/*": ["src/framework/shared/*"],
       "res/*": ["src/res/*"],

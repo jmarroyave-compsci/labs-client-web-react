@@ -1,6 +1,7 @@
-import React from 'react';
-import App from 'components/app'
+import React, { useEffect } from 'react';
 import Layout from 'components/pages/stories/movies';
+import { useSelector, useDispatch } from 'react-redux'
+import { setPage } from 'app/state' 
 
 import { gql, useQuery } from "@apollo/client";
 
@@ -22,14 +23,22 @@ export const QRY_DASHBOARD = gql`
 `;
 
 const Page = ( props ) => {
+  const dispatcher = useDispatch();
+
+  useEffect( () => {
+
+    dispatcher(setPage({
+      breadcrumbs: [{name: 'movies'}],
+    }));    
+
+  }, [])
+
+
   var { loading, error, data } = useQuery(QRY_DASHBOARD);
   data = (data) ? data.dashboardMovies : { }; 
   const params = { ...props, loading, error, data };
-  params.breadcrumbs = [{name: 'movies'}]
   return (
-    <App {...params}>
-      <Layout {...params}/> 
-    </App>
+    <Layout {...params}/> 
   )
 }
 

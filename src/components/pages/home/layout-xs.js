@@ -12,19 +12,21 @@ import StoryGames from 'components/pages/stories/games/banner'
 import StoryRemakes from 'components/pages/stories/remakes/banner'
 import StoryPodcastMusic from 'components/pages/stories/podcast-music/banner'
 import StoryLog from 'components/pages/blog/index/banner'
+import StoryMovieFestivals from 'components/pages/stories/movies-festivals/banner'
 
 export default function PageComponent( props ){
 	const { data, blog } = props;
 
 	return (
 		<Stack>
+			<Section className="section-0"><StoryMovieFestivals {...props}/></Section>
 			<Section className="section-2"><StoryMovies {...props}/></Section>
 			<Section className="section-0"><StoryPodcastMusic {...props}/></Section>
 			<Section className="section-1"><StoryPodcasts {...props}/></Section>
 			<Section className="section-3"><StoryGames {...props}/></Section>
-			<Section className="section-0"><StoryRemakes {...props}/></Section>
+			<Section className="section-0"><StoryRemakes {...props} entity="movies" /></Section>
 			<Section className="section-1"><StoryPeople {...props}/></Section>
-			<Section className="section-0"><StoryAwards year={2018 - (Math.floor(Math.random() * 10))}/></Section>
+			<Section className="section-0"><StoryAwards year={2018 - (Math.floor(Math.random() * 10))}  entity="movies"/></Section>
 			<Section className="section-2"><StoryTV {...props}/></Section>
 			<Section className="section-3"><StoryLog data={blog}/></Section>
 		</Stack>

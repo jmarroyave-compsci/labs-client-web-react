@@ -10,8 +10,8 @@ const ResultText = styled('h3')({
 
 export default function Paging(props){
   const router = useRouter();
-  const { children, route, loading, data, url, skeleton } = props;
-  var { page } = route;
+  const { children, route, loading, data, url, skeleton } = props || {};
+  var { page } = route || {}; 
   page = (page) ? parseInt(page) : 1;
 
 

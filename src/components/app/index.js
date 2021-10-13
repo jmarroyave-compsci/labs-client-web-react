@@ -1,2 +1,2 @@
-import App from './app'
+import App from 'app/components/app-temp'
 export default App;

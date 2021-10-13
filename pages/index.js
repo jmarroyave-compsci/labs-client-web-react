@@ -1,15 +1,23 @@
-import React from 'react';
-import App from 'components/app'
+import React, { useEffect } from 'react';
 import Layout from 'components/pages/home';
+import { useDispatch } from 'react-redux'
+import { setPage } from 'app/state' 
 import { getPosts } from 'components/pages/blog/data/posts' 
 
 const Page = ( props ) => {
+  const dispatcher = useDispatch();
+ 
+  useEffect( () => {
+    console.log("INDEX")
+    dispatcher(setPage({
+      breadcrumbs: [],
+    }));    
+
+  }, [])
+
   const params = { ...props };
-  params.breadcrumbs = []
   return (
-    <App {...params}>
       <Layout {...params}/> 
-    </App>
   )
 }
 
