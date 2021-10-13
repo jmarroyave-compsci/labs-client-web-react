@@ -3,11 +3,11 @@ import _Banner from 'components/ui/banner';
 import TextLink from "core/ui/text-link"
 import Carousel from 'components/ui/carousel'
 import Item from './item';
-import withData from './data/fetch'
+import { useSelector } from 'react-redux'
 
 const Banner = function( props ){
+    const page = useSelector(( state ) => state.stories_remakes )
     const { data, loading, hero } = props;
-
     return (
       <_Banner
           {...props}      
@@ -19,10 +19,10 @@ const Banner = function( props ){
             />            
           }
           footer={
-            <TextLink border href={`/stories/${(props && props.route && props.route.entity) ? props.route.entity : props.entity}/remakes`}> See more</TextLink>
+            <TextLink border href={`/${(page.props) ? page.props.entity : ""}/stories/remakes`}> See more</TextLink>
           }
       />
     )
 }
 
-export default withData(Banner);
+export default Banner;

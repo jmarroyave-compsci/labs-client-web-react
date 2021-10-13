@@ -8,7 +8,6 @@ const Page = ( props ) => {
   const dispatcher = useDispatch();
  
   useEffect( () => {
-    console.log("INDEX")
     dispatcher(setPage({
       breadcrumbs: [],
     }));    

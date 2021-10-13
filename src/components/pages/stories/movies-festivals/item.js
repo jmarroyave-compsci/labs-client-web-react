@@ -6,7 +6,7 @@ export default function Item(item){
   const { id, title, awards, full, image, description} = item;
   return (
     <Card
-      image={image}
+      image={image.poster}
       imageHeight={100}
       text={description}
       title={title}

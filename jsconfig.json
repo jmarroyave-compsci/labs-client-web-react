@@ -4,6 +4,7 @@
     "paths": {
       "app": ["src/app/components/app"],
       "app/*": ["src/app/*"],
+      "lib/*": ["src/lib/*"],
       "config/*": ["src/app/config/*"],
       "components/*": ["src/components/*"],
       "core/*": ["src/framework/core/*"],
