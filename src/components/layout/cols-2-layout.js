@@ -20,7 +20,7 @@ export default function Cols2Layout( props ){
       <Body>
         <GridContainer className="page-module" fill>
           <GridItem xs={12} sm={12} md={9} lg={10} style={{paddingRight: '1rem'}}>
-              {mainCol}
+            {mainCol}
           </GridItem>
           <GridItem xs={12} sm={12} md={3} lg={2} style={{paddingRight: '1rem'}}>
             <RelatedStories {...props} filter={id} />

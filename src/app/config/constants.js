@@ -12,8 +12,6 @@ Constants.PAGE_TITLE = Conf.PAGE_TITLE;
 Constants.VERSION = Version.VERSION;
 Constants.SERVER_PATH = Server.DATA;
 
-Constants.CONF_ROUTING_BASEPATH = Server.BASE_PATH;
-
 Constants.MENU_BAR_FG_COLOR = "#FFF";
 Constants.MENU_BAR_BG_COLOR = "#333";
 

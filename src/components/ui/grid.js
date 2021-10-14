@@ -8,14 +8,14 @@ import Paging from 'components/ui/paging';
 import { Frame, ItemFrame } from 'components/styles/boxes'
 
 export default function Grid( props ){
-    var { data, loading, url, skeleton, item } = props;
+    var { data, loading, url, skeleton, item, onPageChange, page } = props;
 
     loading = (loading || !data || data.length == 0 )
     data = (data && data.length > 0) ? data : [1,2,3,4,5];
 
     return (
       <Frame>
-        <Paging {...props} url={url}>
+        <Paging data={ data } url={url} onPageChange={onPageChange} page={page} loading={loading}>
           <GridContainer justifyContent='center' fill style={{width: '100%'}}>
             {data.map( (_item, idx) => 
               <GridItem key={idx} xs={12} sm={6} md={6} lg={4}>

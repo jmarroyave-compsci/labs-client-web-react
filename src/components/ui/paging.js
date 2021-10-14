@@ -10,15 +10,21 @@ const ResultText = styled('h3')({
 
 export default function Paging(props){
   const router = useRouter();
-  const { children, route, loading, data, url, skeleton } = props || {};
-  var { page } = route || {}; 
+  var { children, route, loading, data, url, skeleton, onPageChange, page } = props || {};
+
+  page = (page) ? page : ((route && route.page) ? route.page : null); 
   page = (page) ? parseInt(page) : 1;
 
-
   const goToPage = ( toPage ) => {
+    window.scrollTo(0,0);
+
+    if(onPageChange) {
+      onPageChange(toPage)
+      return;
+    }
+
     var urlTo = `${url}/${toPage}`;
     router.push(urlTo)
-    window.scrollTo(0,0);
   }
   const nextPage = () => goToPage(page + 1)
   const nextButton = ( data && data.length < 10 )
