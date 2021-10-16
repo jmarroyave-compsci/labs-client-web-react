@@ -2,7 +2,7 @@ import React from 'react'
 import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 import Table from 'core/ui/table'
-import { Title } from 'components/styles/typo'
+import { Title } from 'components/styles/infography'
 
 export default function Sources( props ){
   const { data, loading } = props;
