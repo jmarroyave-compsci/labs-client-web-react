@@ -5,7 +5,7 @@ function PodcastLinkComponent( params ) {
 	const { id, entity, children } = params;
 
 	return (
-		<Link border={true} to={`/podcasts/${id}/${encodeURIComponent(entity)}`}>{children}</Link>
+		<Link border={true} to={`/podcasts/${id}`}>{children}</Link>
 	);
 }
 

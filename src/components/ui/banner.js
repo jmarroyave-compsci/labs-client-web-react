@@ -5,14 +5,13 @@ import { Title, Description, Footer } from 'components/styles/banner'
 import Carousel from 'components/ui/carousel'
 
 const Banner = function( props ){
-    const { title, description, carousel, footer, hero, actions, data, item } = props;
-
+    const { title, description, carousel, footer, hero, actions, data, item, showData } = props;
     return (
       <Stack>
         <Title>{title}</Title>
         {description && description.trim() !== "" && <Description>{description}</Description>}
         {!hero && carousel }
-        {!hero && !carousel && data && Data( "carousel", data, item ) }
+        {!hero && showData === true && !carousel && Data( "carousel", data, item ) }
         {!hero &&
           <Footer>
             {actions && actions.map( (item, idx) => 

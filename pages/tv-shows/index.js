@@ -1,36 +1,30 @@
-import React from 'react';
-import App from 'components/app'
-import Layout from 'components/pages/stories/tv-shows';
-
-import { gql, useQuery } from "@apollo/client";
-
-export const QRY_DASHBOARD = gql`
-  query getDashboard 
-{
-  dashboardTV {
-    awards
-    classification
-    country
-    genre
-    rating
-    streamBy
-    total
-    type
-    yearReleased
-  }
-}
-`;
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux'
+import { setPage } from 'app/state' 
+import { useRouter } from 'next/router';
+import Layout from 'components/stories/tv-shows';
+import { fetchData } from 'components/stories/tv-shows/automata'
 
 const Page = ( props ) => {
-  var { loading, error, data } = useQuery(QRY_DASHBOARD);
-  data = (data) ? data.dashboardTV : { }; 
-  const params = { ...props, loading, error, data };
-  params.breadcrumbs = [{name: 'tv-shows'}]
+  const dispatch = useDispatch();
+  const router = useRouter(); 
+
+  useEffect( () => {
+    dispatch(setPage({
+      breadcrumbs: [{name: "tv-shows"}],
+    }));    
+
+    dispatch( fetchData( {
+      renderer: "grid",
+    } ) )
+
+  }, [])
+
   return (
-    <App {...params}>
-      <Layout {...params}/> 
-    </App>
+      <Layout/> 
   )
 }
 
 export default Page;
+
+

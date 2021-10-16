@@ -1,11 +1,11 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import { router } from 'next/router'
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
 import Paging from 'components/ui/paging';
 import Skeleton from './skeleton';
 
+import LinkVideoGame from 'components/entities/video-game/link';
 import LinkPerson from 'components/entities/person/link';
 import LinkMovie from 'components/entities/movie/link';
 import LinkPodcast from 'components/entities/podcast/link';
@@ -42,14 +42,14 @@ const ResultText = styled('h3')({
 });
 
 function _Results(props){
-  const { data, loading, qry, route } = props;
+  const { data, loading, qry, onPageChanged } = props;
   return (
     <Results>
       <ResultsHeader>
-        <div>search results for: <Query>{route.qry}</Query></div>    
+        <div>search results for: <Query>{qry}</Query></div>    
       </ResultsHeader>
       <ResultsData>
-        <Paging {...props} url={`/search/${encodeURIComponent(qry)}`} skeleton={<Skeleton/>}>
+        <Paging {...props} onPageChanged skeleton={<Skeleton/>}>
           <Stack
             divider={<Divider flexItem />}
             spacing={2}
@@ -89,6 +89,13 @@ function SearchResults( props ){
         <Result>
           <ResultType>Podcast</ResultType>
           <ResultText><LinkPodcast id={r.entityId} entity={r.entity}>{r.entity}</LinkPodcast></ResultText>
+        </Result>
+      )
+    case "video_game":
+      return (
+        <Result>
+          <ResultType>Video Game</ResultType>
+          <ResultText><LinkVideoGame id={r.entityId} entity={r.entity}>{r.entity}</LinkVideoGame></ResultText>
         </Result>
       )
   }

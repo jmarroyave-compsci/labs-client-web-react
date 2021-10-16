@@ -24,7 +24,11 @@ import 'core/app/dashboard/app.css';
 import 'core/ui/theme/theme.css';
 import 'shared/globals/social_networks/social_networks.css';
 
+import { useRouter } from 'next/router';
+
+
 export default function MyApp(props) {
+  const router = useRouter(); 
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
   return (
@@ -49,10 +53,12 @@ export default function MyApp(props) {
                       socialNetworks: socialNetworksLinks,
                     },
                   }}                             
-                >                
-                  <Component 
-                    {...pageProps}
-                  />
+                >       
+                  { router.isReady && 
+                    <Component 
+                      {...pageProps}
+                    />
+                  }
                 </App>
             </ThemeProvider>
           </StateProvider>

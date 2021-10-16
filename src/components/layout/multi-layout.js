@@ -8,6 +8,7 @@ import TextLink from "core/ui/text-link"
 export default function Proxy( props ){
   const BANNER = (
     <Banner 
+      showData={props.showDataInBanner}
       loading={ props.loading }
       title={props.title}
       description={props.description}
@@ -26,7 +27,7 @@ export default function Proxy( props ){
       {props.type === "grid" && 
         <Cols2Layout 
           banner={BANNER} 
-          mainCol={
+          mainCol={(props.mainCol) ? props.mainCol( props ) : 
             <Grid
               loading={ props.loading }
               page={ props.params.page }

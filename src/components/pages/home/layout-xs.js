@@ -2,35 +2,33 @@ import React from 'react';
 import Stack from '@mui/material/Stack';
 import Section from 'core/ui/layout/section';
 
-import StoryAwards from 'components/pages/stories/awards/banner'
+import StoryAwards from 'components/stories/awards'
 import StoryAbout from 'components/pages/about/banner'
-import StoryMovies from 'components/pages/stories/movies/banner'
-import StoryPeople from 'components/pages/stories/people/banner'
-import StoryPodcasts from 'components/pages/stories/podcasts/banner'
-import StoryTV from 'components/pages/stories/tv-shows/banner'
-import StoryGames from 'components/pages/stories/games/banner'
-import StoryRemakes from 'components/pages/stories/remakes'
-import StoryPodcastMusic from 'components/pages/stories/podcast-music/banner'
+import StoryMovies from 'components/stories/movies'
+import StoryPeople from 'components/stories/people'
+import StoryPodcasts from 'components/stories/podcasts'
+import StoryTV from 'components/stories/tv-shows'
+import StoryGames from 'components/stories/video-games'
+import StoryRemakes from 'components/stories/remakes'
+import StoryPodcastMusic from 'components/stories/podcast-music'
 import StoryLog from 'components/pages/blog/index/banner'
-import StoryMovieFestivals from 'components/pages/stories/movies-festivals'
-import StoryMoviesHistory from 'components/pages/stories/movies-history'
+import StoryMovieFestivals from 'components/stories/movies-festivals'
 
 export default function PageComponent( props ){
 	const { data, blog } = props;
 
 	return (
 		<Stack>
-			<Section className="section-3"><StoryMoviesHistory/></Section>
 			<Section className="section-0"><StoryMovieFestivals {...props}/></Section>
 			<Section className="section-2"><StoryMovies {...props}/></Section>
 			<Section className="section-0"><StoryPodcastMusic {...props}/></Section>
 			<Section className="section-1"><StoryPodcasts {...props}/></Section>
-			<Section className="section-3"><StoryGames {...props}/></Section>
+			<Section className="section-3"><StoryLog data={blog}/></Section>
+			<Section className="section-2"><StoryGames {...props}/></Section>
 			<Section className="section-0"><StoryRemakes/></Section>
 			<Section className="section-1"><StoryPeople {...props}/></Section>
-			<Section className="section-0"><StoryAwards year={2018 - (Math.floor(Math.random() * 10))}  entity="movies"/></Section>
+			<Section className="section-0"><StoryAwards/></Section>
 			<Section className="section-2"><StoryTV {...props}/></Section>
-			<Section className="section-3"><StoryLog data={blog}/></Section>
 		</Stack>
 	)
 }

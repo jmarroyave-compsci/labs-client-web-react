@@ -11,45 +11,29 @@ import Title from "components/entities/pieces/title";
 import Stack from '@mui/material/Stack';
 import Categories from "components/entities/pieces/categories";
 import Text from 'components/entities/pieces/text';
-
-
-const Section = styled('h4')({
-  margin: '1rem 0 0.5rem 0',
-  padding: 0,
-});
-
-const Summary = styled('div')({
-  fontSize: '0.9rem',
-  lineHeight: "1.5rem",
-});
-
-const Field = styled('div')({
-  fontSize: '0.9rem',
-  lineHeight: "1rem",
-  marginBottom: '0.5rem',
-});
+import { Frame } from 'components/styles/boxes'
+import { SubTitle } from 'components/styles/detail'
+import Field from 'components/entities/pieces/field';
 
 export default function Dashboard( props ){
   var { data, loading } = props;
   data = (data) ? data : {};
 
-    console.log(data)
-
   return (
     <Stack>
       <Media src={data.image}/>
 
-      <Body>
-        <Categories data={data.category}/>
-        <Title text={data.title} subText1={data.subtitle} subText2={data.author} link={data.link}/>
+      <Categories data={data.category}/>
+      <Title text={data.title} subText1={data.subtitle} subText2={data.author} link={data.link}/>
 
-        <Text text={data.summary}/>
+      <Text text={data.summary}/>
 
-        <Section>general information</Section>
-        {data && data.createdDate && <Field>Created: <Date value={data.createdDate}/></Field>}
-        {data && data.language && <Field>Language: {data.language}</Field>} 
-        {data && data.country && <Field>Country: {data.country}</Field>}  
-      </Body>
+      <Frame>
+        <SubTitle>general information</SubTitle>
+        <Field title="Created" data={data.createdDate} format="date"/>
+        <Field title="Language" data={data.language}/>
+        <Field title="Country" data={data.country}/>
+      </Frame>
     </Stack>
   )
 }

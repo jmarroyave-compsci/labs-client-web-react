@@ -1,19 +1,22 @@
 import React from 'react'
-import GridContainer from 'core/ui/layout/grid_container';
-import GridItem from 'core/ui/layout/grid_item';
+import { Frame } from 'components/styles/boxes'
 
 function StreamBy( props ){
   const { data, loading, route } = props;
 
+  if( !data || data === null || data.length == 0) return <div/>
+
+  if( "name" in data ) return <div/>
+
   return (
-    <GridContainer justifyContent='center' fill style={{width: '100%'}}>
-      {data && data.length > 0 && data.map( item => 
-        <GridItem xs={12} sm={12} md={12}>
+    <Frame>
+      {data.map( (item, key) => 
+        <div key={key}>
             {item.name && <div>Name: {item.name}</div>}
             {item.yearAdded && <div>Year added: {item.yearAdded}</div>}
-        </GridItem>
+        </div>
       )}
-    </GridContainer>
+    </Frame>
   )
 }
 

@@ -1,32 +1,30 @@
-import React from 'react';
-import App from 'components/app'
-import Layout from 'components/pages/stories/podcasts';
-
-import { gql, useQuery } from "@apollo/client";
-
-export const QRY_DASHBOARD = gql`
-  query getDashboard
-{
-  dashboardPodcasts {
-    category
-    language
-    country
-    total
-    yearCreated
-  }
-}
-  `;
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux'
+import { setPage } from 'app/state' 
+import { useRouter } from 'next/router';
+import Layout from 'components/stories/podcasts';
+import { fetchData } from 'components/stories/podcasts/automata'
 
 const Page = ( props ) => {
-  var { loading, error, data } = useQuery(QRY_DASHBOARD);
-  data = (data) ? data.dashboardPodcasts : { }; 
-  const params = { ...props, loading, error, data };
-  params.breadcrumbs = [{name: 'podcasts'}]
+  const dispatch = useDispatch();
+  const router = useRouter(); 
+
+  useEffect( () => {
+    dispatch(setPage({
+      breadcrumbs: [{name: "podcasts"}],
+    }));    
+
+    dispatch( fetchData( {
+      renderer: "grid",
+    } ) )
+
+  }, [])
+
   return (
-    <App {...params}>
-      <Layout {...params}/> 
-    </App>
+      <Layout/> 
   )
 }
 
 export default Page;
+
+

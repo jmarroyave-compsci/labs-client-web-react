@@ -1,6 +1,7 @@
 import React from 'react';
 import { default as _Link } from 'next/link';
 import constants from './_';
+import Button from '@mui/material/Button';
 
 const Link =  ( props ) => {
     var { children, className, to, href, style, external } = props;
@@ -8,7 +9,6 @@ const Link =  ( props ) => {
     to = (to) ? to : href;
     to = (to) ? to : "http://localhost";
     children = (to) ? children : "NO LINK DEFINED";
-    style = (style) ? style : {};
     external = (external === true);
 
     if(to && typeof to !== "string") return "INVALID URL";
@@ -20,9 +20,11 @@ const Link =  ( props ) => {
     const target = (!internal) ? "_blank" : '_self'
     return (
         (jump == false && internal == true && constants.links_disabled == false) ? 
-            <_Link className={className} href={to} style={style}>{children}</_Link>
+            <_Link className={className} href={to} style={style}>
+                    <Button size="large">{children}</Button>
+            </_Link>
         :
-            <a className={className} href={to} style={style} target={target}>{children}</a>
+            <a className={className} href={to} target={target}>{children}</a>
     );
 }
 

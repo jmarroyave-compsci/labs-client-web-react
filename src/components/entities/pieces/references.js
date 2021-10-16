@@ -1,20 +1,12 @@
 import React from 'react'
-import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 import Pill from 'core/ui/pill'
+import { Frame } from 'components/styles/boxes'
+import { SubTitle } from 'components/styles/detail'
 
-const Frame = styled('div')({
-  marginTop: '1rem',
-  marginBottom: '1rem',
-});
-
-const SubTitle = styled('h4')({
-  margin: 0,
-});
 
 export default function References( props ){
   const { data } = props;
-
   if(!data) return <div/>;
 
   return (
@@ -22,7 +14,10 @@ export default function References( props ){
       <Stack>
           <SubTitle>More information</SubTitle>
           <div>
-            {data && data.imdb && <a href={data.imdb}><Pill text="IMDB"/></a>}
+            {data.imdb && <a href={data.imdb}><Pill text="IMDB"/></a>}
+          </div>
+          <div>
+            {data.wikiTopic && <a href={`https://wikipedia.com/wiki/${data.wikiTopic.replace(/ /g, "_")}`}><Pill text="wikipedia"/></a>}
           </div>
       </Stack>
     </Frame>

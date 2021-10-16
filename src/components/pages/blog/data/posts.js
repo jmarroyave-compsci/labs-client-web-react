@@ -5,17 +5,24 @@ export const getAllPosts = function(){
     const files = fs.readdirSync("src/blog");
     let articles = files.map( (file) => {
         const slug = file.split(".")[0]
-        const data = fs
+        var data = fs
             .readFileSync(`src/blog/${file}`)
             .toString();
-        return {
+
+        data = {
             ...matter(data).data,
             slug: slug,
         };
+        return data;
     });
 
     articles = articles.filter( i => (i.published === true));
-    articles = articles.sort( (a, b) => (a.date > b.date) ? -1 : 1);
+    articles = articles.sort( (a,b) => {
+        if( a.sprint != b.sprint ) return (a.sprint > b.sprint) ? -1 : 1;
+        if( a.day != b.day ) return (a.day > b.day) ? -1 : 1;
+        return (a.title > b.title) ? 1 : -1;
+    })
+
     return articles
 }
 

@@ -1,33 +1,17 @@
 import React from 'react'
-import { styled } from '@mui/material/styles';
-
-
-const Frame = styled('div')({
-    margin: 0,
-    marginBottom: '1rem',
-});
-
-const _Text = styled('p')({
-    margin: 0,
-    marginBottom: '1rem',
-});
-
-const SubTitle = styled('h4')({
-  margin: 0,
-});
+import { Frame } from 'components/styles/boxes'
+import { SubTitle, Paragraph } from 'components/styles/detail'
 
 
 export default function Text( props ){
   var { title, text } = props;
 
-  if(!text) return null;
+  if(!text) return <div/>;
   
   return (
     <Frame>
-        {title &&
-          <SubTitle>{title}</SubTitle>
-        }
-        <_Text>{text}</_Text>        
+        {title && <SubTitle>{title}</SubTitle>}
+        <Paragraph>{text}</Paragraph>        
     </Frame>
   )
 }

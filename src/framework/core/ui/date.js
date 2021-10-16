@@ -1,19 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { format, formatDistance } from 'date-fns'
+import { format as formatter, formatDistance } from 'date-fns'
 
 class CoreDate extends React.Component { 
   getDate(value){
     var date;
+
+    if(!value || value == null || value === '' || value.length == 0) return null;
+    if(value instanceof Date) return value;
+
     try{
-      if(!value || value == null || value === '' || value.length == 0){
-        return new Date();
-      }
-
-      if(value instanceof Date){
-        return new Date(value);
-      } 
-
       const num = Number(value);
       if(Number.isInteger(num)){
         return new Date(num);
@@ -21,28 +17,33 @@ class CoreDate extends React.Component {
         return new Date(value);
       }
     } catch (ex){
-      return new Date();
+      return null;
     }
   }
 
-  _format(lang, date, formatString){
-    switch(formatString){
+  toString(lang, date, format){
+    switch(format){
       case "ago":
         return formatDistance(date, new Date())
       case "DD/MM/YYYY":
-        return format(date, 'dd/MM/yy');
+        return formatter(date, 'dd/MM/yyyy');
+      case "YYYY":
+        return date.getFullYear()
       default:
-        return format(date, formatString);
+        return formatter(date, format);
     }
   }
 
   render() {
-    var  { lang, value, className } = this.props;
+    var  { lang, value, className, format } = this.props;
     lang = (lang) ? lang : "en";
-    const formatString = (this.props.format) ? this.props.format : "ago";
+    format = (format) ? format : "ago";
 
     const date = this.getDate(value);
-    const str = this._format(lang, date, formatString);
+    if(date == null) return <span/>
+
+    const str = this.toString(lang, date, format);
+
     return (
       <span className={className}>{str}</span>
     );

@@ -3,6 +3,7 @@ import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Image from 'core/ui/image';
 import Icon from '@material-ui/core/Icon';
+import { Frame } from 'components/styles/boxes'
 
 function Media( props ){
   const { src, loading } = props;
@@ -10,9 +11,11 @@ function Media( props ){
   const height = 300;
 
   return (
-    <div style={{height: height, width: '100%', backgroundColor: '#333', margin: 0, marginBottom: '1rem'}}>
-      <MainImage src={src} height={height} width={250}/>
-    </div>
+    <Frame>
+      <div style={{height: height, width: '100%', backgroundColor: '#333'}}>
+        <MainImage src={src} height={height} width={250}/>
+      </div>
+    </Frame>
   )
 }
 

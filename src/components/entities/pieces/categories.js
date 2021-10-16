@@ -10,7 +10,7 @@ const Title = styled('h1')({
 export default function Categories( props ){
   const { data } = props;
 
-  if(!data) return <span/>;
+  if(!data) return <div/>;
 
   return (
     <Stack direction={'row'}>

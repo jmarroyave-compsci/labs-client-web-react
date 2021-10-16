@@ -1,17 +1,12 @@
 import React from 'react'
+import { Frame } from 'components/styles/boxes'
 import { styled } from '@mui/material/styles';
 
-
-const Frame = styled('div')({
-    margin: 0,
-    marginBottom: '1rem',
-});
-
-const Title = styled('div')({
-  margin: 0,
-  padding: 0,
-  fontSize: '2.5rem',
-  lineHeight: '2.5rem',
+export const Title = styled('h2')({
+  fontSize: "2.5rem",
+  lineHeight: "2.5rem",
+  padding: '0',
+  margin: '0',
 });
 
 const SubTitle1 = styled('div')({
@@ -24,8 +19,8 @@ const SubTitle1 = styled('div')({
 const SubTitle2 = styled('div')({
   margin: 0,
   padding: 0,
-  fontSize: '0.6rem',
-  lineHeight: '1rem',
+  fontSize: '0.8rem',
+  lineHeight: '1.2rem',
   fontWeight: 500,
 });
 
@@ -48,3 +43,4 @@ export default function _Title( props ){
     </Frame>
   )
 }
+

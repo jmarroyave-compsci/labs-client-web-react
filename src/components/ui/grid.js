@@ -13,6 +13,8 @@ export default function Grid( props ){
     loading = (loading || !data || data.length == 0 )
     data = (data && data.length > 0) ? data : [1,2,3,4,5];
 
+    console.log(data)
+
     return (
       <Frame>
         <Paging data={ data } url={url} onPageChange={onPageChange} page={page} loading={loading}>

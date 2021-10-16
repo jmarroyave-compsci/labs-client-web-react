@@ -19,7 +19,7 @@ const Banner = function( props ){
             />            
           }
           footer={
-            <TextLink border href={`/about/log`}> See more</TextLink>
+            <TextLink border href={`/about/log`}> See all</TextLink>
           }
       />
     )

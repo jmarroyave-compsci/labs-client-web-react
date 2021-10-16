@@ -9,6 +9,7 @@ import features from 'config/values/features';
 import config from 'config/values/default';
 import nav from 'config/navigation';
 import { useSelector, useDispatch } from 'react-redux'
+import { fetchData } from 'components/pages/search/automata'
 
 export const QRY_SUGGESTIONS = gql`
 query getSuggestions($qry:String) {
@@ -18,16 +19,9 @@ query getSuggestions($qry:String) {
 }
 `;
 
-export const QRY_SERVER = gql`
-query getSuggestions($qry:String) {
-  searchSuggestions(qry: $qry){
-    suggestions
-  }
-}
-`;
-
 const App = ( props ) =>{
   const APP = useSelector(( state ) => state.app )
+  const dispatch = useDispatch();
 
   const apolloClient = useApolloClient()
   const router = useRouter();
@@ -40,8 +34,7 @@ const App = ( props ) =>{
 
   const onSearchQuery = (qry) => {
     qry = qry.toLowerCase()
-    //console.log("onSearchQuery", qry)
-    router.push(`/search/${encodeURIComponent(qry)}`);
+    dispatch( fetchData( { qry : qry, page: 1 } ) )
   }
 
   const onSearchSuggestions = async (qry) => {

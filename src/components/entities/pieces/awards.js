@@ -1,16 +1,13 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
+import { Frame, Item } from 'components/styles/boxes'
+import { SubTitle } from 'components/styles/detail'
+
 import Typography from '@material-ui/core/Typography';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Value from 'core/ui/value';
-
-const Frame = styled('div')({
-  marginTop: '1rem',
-});
-
-const Item = styled('div')({
-});
+import Link from 'core/ui/link';
 
 const FrameMini = styled('div')({
   marginTop: "0rem",
@@ -36,10 +33,6 @@ const More = styled('span')({
   float: 'right',
 });
 
-
-const SubTitle = styled('h4')({
-  margin: 0,
-});
 
 const Year = styled('div')({
   margin: '1rem 0 0 0',
@@ -71,7 +64,8 @@ const Nominee = styled('div')({
 
 export default function Awards( props ){
   var { data } = props;
-  if(!data || data.length == 0) return null;
+
+  if(!data || data.length == 0 ) return <div/>;
 
   return (props.mini === true) ? AwardsMini(props, data) : AwardsFull(props, data); 
 }
@@ -93,7 +87,7 @@ function AwardsMini( props, data ){
       {data && data.length > 0 && data.slice(0,MAX).map( (item, idx) => 
         showThis(item) && 
           <div key={idx} >
-            <ItemMini>{item.year} - {item.name.toUpperCase()} - {((item.won === "false" || item.won === false) ? "[N]" : "[W]")} {item.category}</ItemMini>
+            <ItemMini><Link href={`/movies/stories/awards?year=${item.year}`}>{item.year}</Link> - {item.name.toUpperCase()} - {((item.won === "false" || item.won === false) ? "[N]" : "[W]")} {item.category}</ItemMini>
           </div>        
       )}
       { !all && data && data.length > MAX && 
