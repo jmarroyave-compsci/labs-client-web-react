@@ -24,8 +24,6 @@ export default function Dashboard( props ){
   var { data, loading } = props;
   data = (data) ? data : {};
 
-  console.log(data)
-
   return (
     <Stack>
       <Media src={(data.image) ? data.image.poster : null}/>
@@ -38,13 +36,15 @@ export default function Dashboard( props ){
 
       <Frame>
         <SubTitle>general information</SubTitle>
-        <Field title="Released" data={data.releasedDate} format="date"/>
+        <Field title="Released" data={data.releasedDate} format="year"/>
         <Field title="Duration" data={data.duration} sufix="mins"/>
         <Field title="Classification" data={data.classification}/>
         <Field title="Language" data={data.language}/>
         <Field title="Country" data={data.country}/>
         <Field title="Production" data={data.production}/>
       </Frame>
+
+      <References data={data}/>
 
       <Rating data={data.rating}/>
 

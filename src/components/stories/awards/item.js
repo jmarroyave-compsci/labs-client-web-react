@@ -11,9 +11,6 @@ import Typography from '@material-ui/core/Typography';
 export default function AwardItem( props ){
   const { full, year, all, id, title, awards, image } = props;
 
-  console.log(props);
-
-  return <div>hola</div>
   return (
       
       <Card

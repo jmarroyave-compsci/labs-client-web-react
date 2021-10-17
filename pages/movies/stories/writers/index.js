@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux'
 import { setPage } from 'app/state' 
 import { useRouter } from 'next/router';
-import Layout from 'components/stories/directors';
-import { fetchData } from 'components/stories/directors/automata'
+import Layout from 'components/stories/writers';
+import { fetchData } from 'components/stories/writers/automata'
 
 const ENTITY = "movies"
 
@@ -18,7 +18,7 @@ const Page = ( props ) => {
     page = (page) ? parseInt(page) : 1;
 
     dispatch(setPage({
-      breadcrumbs: [{name: "movies", url: '/movies'}, {name: "stories", url: '/movies/stories'}, {name: "directors"}]
+      breadcrumbs: [{name: "movies", url: '/movies'}, {name: "stories", url: '/movies/stories'}, {name: "writers"}]
     }));    
 
     dispatch( fetchData( {

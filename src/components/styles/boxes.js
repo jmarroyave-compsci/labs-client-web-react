@@ -6,12 +6,9 @@ export const Frame = styled('div')({
 });
 
 export const Item = styled('div')({
-  padding: "0 0 0.5rem 0",
+  padding: "0.5rem",
 });
 
-export const ItemFrame = styled('div')({
-  padding: "0 0 0.5rem 0",
-});
 
 export const FrameSkeleton = styled('div')({
   padding: "1rem 1rem 4rem 1rem",

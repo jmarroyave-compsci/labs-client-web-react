@@ -35,9 +35,12 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 
 var CustomTable = function(props) {
   const classes = useStyles();
-  const { tableHead, tableData, tableHeaderColor, showHeader, tableDataExclude } = props;
+  var { tableHead,tableHeader, tableData, tableHeaderColor, showHeader, tableDataExclude } = props;
+  tableHead = (tableHead) ? tableHead : tableHeader;
 
-  if((showHeader && !tableHead) || !tableData) return "No Data";
+  console.log(props)
+  if((showHeader === true && !tableHead) || !tableData) return "No Data";
+
 
   return (
     <div className={classes.tableResponsive}>

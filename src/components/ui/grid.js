@@ -5,7 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import Stack from '@mui/material/Stack';
 import Skeleton from '@mui/material/Skeleton';
 import Paging from 'components/ui/paging';
-import { Frame, ItemFrame } from 'components/styles/boxes'
+import { Frame, Item } from 'components/styles/boxes'
 
 export default function Grid( props ){
     var { data, loading, url, skeleton, item, onPageChange, page } = props;
@@ -13,21 +13,19 @@ export default function Grid( props ){
     loading = (loading || !data || data.length == 0 )
     data = (data && data.length > 0) ? data : [1,2,3,4,5];
 
-    console.log(data)
-
     return (
       <Frame>
         <Paging data={ data } url={url} onPageChange={onPageChange} page={page} loading={loading}>
           <GridContainer justifyContent='center' fill style={{width: '100%'}}>
             {data.map( (_item, idx) => 
               <GridItem key={idx} xs={12} sm={6} md={6} lg={4}>
-                <ItemFrame>
+                <Item>
                   {(loading) ?
                     (skeleton) ? skeleton : <Placeholder/>
                     : 
                     (item) ? item(_item) : null
                   }          
-                </ItemFrame>  
+                </Item>  
               </GridItem>
             )}
           </GridContainer>

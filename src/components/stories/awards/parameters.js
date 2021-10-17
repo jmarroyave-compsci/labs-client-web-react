@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
+import { Frame } from 'components/styles/boxes'
 
 export default function Parameters( props ){
     const { onChange } = props;
@@ -30,25 +31,26 @@ export default function Parameters( props ){
     }
 
     return (
-      <Stack spacing={2}>
-        <Autocomplete          
-          disableClearable
-          options={fData}
-          value={entity}
-          onChange={(e, value) => {handleOnChange(year, value); setEntity(value)} }
-          sx={{ width: 300 }}
-          renderInput={(params) => <TextField {...params} label="From" />}
-        />      
-        <Autocomplete
-          disableClearable
-          options={yData}
-          value={year}
-          onChange={(e, value) => {handleOnChange(value, entity); setYear(value)} }
-          sx={{ width: 300 }}
-          renderInput={(params) => <TextField {...params} label="Year" />}
-        />      
-      </Stack>
-
+      <Frame>
+        <Stack spacing={2}>
+          <Autocomplete          
+            disableClearable
+            options={fData}
+            value={entity}
+            onChange={(e, value) => {handleOnChange(year, value); setEntity(value)} }
+            sx={{ width: 300 }}
+            renderInput={(params) => <TextField {...params} label="From" />}
+          />      
+          <Autocomplete
+            disableClearable
+            options={yData}
+            value={year}
+            onChange={(e, value) => {handleOnChange(value, entity); setYear(value)} }
+            sx={{ width: 300 }}
+            renderInput={(params) => <TextField {...params} label="Year" />}
+          />      
+        </Stack>
+      </Frame>
     )
 }
 

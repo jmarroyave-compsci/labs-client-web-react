@@ -12,11 +12,12 @@ function Field( props ){
     switch( format ){
         case "date":
           value = <Date value={data} format="DD/MM/YYYY"/>
+          break;
+        case "year":
+          value = <Date value={data} format="YYYY"/>
+          break;
 
     }
-
-    console.log(data)
-
 
     return (
       <div>

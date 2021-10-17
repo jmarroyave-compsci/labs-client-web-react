@@ -1,8 +1,8 @@
 export default {
 	automata: {
-		name: "page_movie_festival"
+		name: "page_video_game"
 	},
 	page: {
-		url: ( id ) => `/movies/festivals/${id}`,
+		url: ( id ) => `/video-games/${id}`,
 	},
 }

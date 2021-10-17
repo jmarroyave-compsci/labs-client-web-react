@@ -5,6 +5,7 @@ import Divider from '@mui/material/Divider';
 import Paging from 'components/ui/paging';
 import Skeleton from './skeleton';
 
+import LinkTVShow from 'components/entities/tv-show/link';
 import LinkVideoGame from 'components/entities/video-game/link';
 import LinkPerson from 'components/entities/person/link';
 import LinkMovie from 'components/entities/movie/link';
@@ -96,6 +97,13 @@ function SearchResults( props ){
         <Result>
           <ResultType>Video Game</ResultType>
           <ResultText><LinkVideoGame id={r.entityId} entity={r.entity}>{r.entity}</LinkVideoGame></ResultText>
+        </Result>
+      )
+    case "tv_show":
+      return (
+        <Result>
+          <ResultType>TV Show</ResultType>
+          <ResultText><LinkTVShow id={r.entityId} entity={r.entity}>{r.entity}</LinkTVShow></ResultText>
         </Result>
       )
   }

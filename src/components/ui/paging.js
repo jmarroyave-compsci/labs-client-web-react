@@ -3,10 +3,9 @@ import { styled } from '@mui/material/styles';
 import { useRouter } from 'next/router'
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
+import { Frame } from 'components/styles/boxes'
+import { Title } from 'components/styles/detail'
 
-const ResultText = styled('h3')({
-  marginTop: 0,
-});
 
 export default function Paging(props){
   const router = useRouter();
@@ -32,7 +31,7 @@ export default function Paging(props){
   const previousButton = (page == 1)
 
   return (
-    <>
+    <Frame>
       { (data && data.length > 0) ? 
         <Stack
             spacing={2}
@@ -44,9 +43,9 @@ export default function Paging(props){
           </Stack>
         </Stack>
       :
-        <ResultText>{(loading) ? ((skeleton) ? skeleton : "loading") : "No results"}</ResultText>
+        <Title>{(loading) ? ((skeleton) ? skeleton : "loading") : "No results"}</Title>
       }
-    </>
+    </Frame>
   )
 }
 

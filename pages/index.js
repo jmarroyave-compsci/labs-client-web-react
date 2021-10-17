@@ -50,7 +50,7 @@ const Page = ( props ) => {
     dispatch( fetchMoviesAwards( {
       renderer: "banner",
       entity: "movies",
-      year: 2018 - (Math.floor(Math.random() * 10)),
+      year: 2018 - (Math.floor(Math.random() * 50)),
       page: 1
     } ) )
 

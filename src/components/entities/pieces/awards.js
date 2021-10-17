@@ -24,7 +24,6 @@ const ItemMini = styled('div')({
 
 });
 
-
 const More = styled('span')({
   fontSize: "0.75rem",
   lineHeight: "0.85rem",
@@ -62,6 +61,11 @@ const Nominee = styled('div')({
   paddingTop: "0.5rem",
 });
 
+
+const LinkToPage = ( { year, children} ) => {
+  return <Link href={`/movies/stories/awards?year=${year}`}>{children}</Link>
+}
+
 export default function Awards( props ){
   var { data } = props;
 
@@ -87,7 +91,9 @@ function AwardsMini( props, data ){
       {data && data.length > 0 && data.slice(0,MAX).map( (item, idx) => 
         showThis(item) && 
           <div key={idx} >
-            <ItemMini><Link href={`/movies/stories/awards?year=${item.year}`}>{item.year}</Link> - {item.name.toUpperCase()} - {((item.won === "false" || item.won === false) ? "[N]" : "[W]")} {item.category}</ItemMini>
+            <LinkToPage year={item.year}>
+              <ItemMini>{item.year} - {item.name.toUpperCase()} - {((item.won === "false" || item.won === false) ? "[N]" : "[W]")} {item.category}</ItemMini>
+            </LinkToPage>
           </div>        
       )}
       { !all && data && data.length > MAX && 
@@ -98,6 +104,8 @@ function AwardsMini( props, data ){
     </FrameMini>     
   )
 }
+
+
 
 function AwardsFull( props, data ){
   var currentYear = null, currentPrize = null;
@@ -126,11 +134,13 @@ function AwardsFull( props, data ){
       {data && data.length > 0 && data.map( (item, idx) => 
           <div key={idx} >
             {RenderYear(item)}
-            {RenderPrize(item)}          
-            <Item>
-              <Nominee>{((item.won === "false" || item.won === false) ? "nominee" : "winner")}</Nominee>
-              <Category>{item.category}</Category>
-            </Item>
+            {RenderPrize(item)}
+            <LinkToPage year={item.year}>
+              <Item>
+                <Nominee>{((item.won === "false" || item.won === false) ? "nominee" : "winner")}</Nominee>
+                <Category>{item.category}</Category>
+              </Item>
+            </LinkToPage>
           </div>
       )}
     </Frame>     

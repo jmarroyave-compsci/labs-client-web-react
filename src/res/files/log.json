@@ -595,7 +595,7 @@
           "area": "STORIES",
           "hour": 0,
           "task": "Sprint 6 - V.1.0",
-          "level": 1,
+          "level": 3,
           "children": null
         }
       ],
@@ -608,15 +608,228 @@
           "children": null
         }
       ],
-      "Day 4": [],
-      "Day 5": [],
-      "Day 6": [],
+      "Day 4": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Film festivals",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Movies history",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The directors",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The writers",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The episodes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: People's network",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Remakes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Awards",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: blog -> the microblog",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 5": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Film festivals",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: video games",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: tv show",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The actors",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The directors",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The writers",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The episodes",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 6": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Movie/TVShow page",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The directors",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The writers",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Person page",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: People dashboard",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Awards",
+          "level": 3,
+          "children": null
+        }
+      ],
       "Day 7": [
         {
-          "area": null,
+          "area": "STORIES",
           "hour": 0,
-          "task": "MILESTONE: V.1.0",
-          "level": 0,
+          "task": "Story: The actors",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The directors",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The writers",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The project about",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Person page",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: People's network",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Remakes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Awards",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: blog -> the microblog",
+          "level": 3,
           "children": null
         }
       ]

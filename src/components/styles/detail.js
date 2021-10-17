@@ -36,3 +36,9 @@ export const Paragraph = styled('p')({
     margin: 0,
     marginBottom: '1rem',
 });
+
+export const Small = styled('span')({
+  fontSize: "0.7rem",
+  lineHeight: "0.75rem",    
+  margin: 0,
+});

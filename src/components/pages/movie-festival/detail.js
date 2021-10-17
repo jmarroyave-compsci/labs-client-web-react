@@ -10,16 +10,21 @@ import Field from 'components/entities/pieces/field';
 export default function Dashboard( props ){
   var { data } = props;
 
+    console.log(data)
+
+
   return (
     <Frame>    
       <Stack>
           <Media src={(data.image) ? data.image.poster : null}/>
           <_Title text={data.name}/>
 
-          <SubTitle>general information</SubTitle>
-          <Field title="established" data={data.established}/>
-          <Field title="country" data={data.country}/>
-          <Field title="continent" data={data.continent}/>
+          <Frame>
+            <SubTitle>general information</SubTitle>
+            <Field title="established" data={data.established}/>
+            <Field title="country" data={data.country}/>
+            <Field title="continent" data={data.continent}/>
+          </Frame>
 
           <References data={data}/>
       </Stack>

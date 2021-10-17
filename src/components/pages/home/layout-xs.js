@@ -19,15 +19,14 @@ export default function PageComponent( props ){
 
 	return (
 		<Stack>
-			<Section className="section-0"><StoryMovieFestivals {...props}/></Section>
+			<Section className="section-0"><StoryAwards/></Section>
 			<Section className="section-2"><StoryMovies {...props}/></Section>
 			<Section className="section-0"><StoryPodcastMusic {...props}/></Section>
 			<Section className="section-1"><StoryPodcasts {...props}/></Section>
 			<Section className="section-3"><StoryLog data={blog}/></Section>
 			<Section className="section-2"><StoryGames {...props}/></Section>
-			<Section className="section-0"><StoryRemakes/></Section>
 			<Section className="section-1"><StoryPeople {...props}/></Section>
-			<Section className="section-0"><StoryAwards/></Section>
+			<Section className="section-0"><StoryMovieFestivals {...props}/></Section>
 			<Section className="section-2"><StoryTV {...props}/></Section>
 		</Stack>
 	)

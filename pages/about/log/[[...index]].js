@@ -23,8 +23,10 @@ const Page = ( props ) => {
 const pageSize = 10
 
 export async function getStaticProps( props ){
-  var [ page ] = ( props.index ) ? props.index : [];
+  var [ page ] = ( props.params.index ) ? props.params.index : [];
   page = (page) ? parseInt(page) : 1;
+
+  console.log(page)
 
   return {
       props: {
@@ -36,6 +38,7 @@ export async function getStaticProps( props ){
 export async function getStaticPaths() {
   const paths = [{ params : { index : [] }}]
   const pages = getTotalPages(pageSize);
+
   for( var i = 1; i <= pages; i++){
     paths.push({ params : { 
       index : [i.toString()],

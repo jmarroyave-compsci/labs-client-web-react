@@ -1,12 +1,12 @@
 import { gql } from "@apollo/client";
 import { fetch }  from 'lib/graphql'; 
 
-export const fetchData = ( id ) => fetch( GET_DATA, { id: id } , (resp) => { return { ...resp, data: resp.data.movieFestival } } )
+export const fetchData = ( id ) => fetch( GET_DATA, { id: id } , (resp) => { return { ...resp, data: resp.data.tVShow } } )
 
 const GET_DATA = gql`
   query GetData($id: String!)
   {
-    tvShow(id: $id) {
+    tVShow(id: $id) {
     id
     title
     country

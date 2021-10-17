@@ -5,7 +5,7 @@ thumbnail:
 sprint: 1
 day:	5
 category: log
-published: false
+published: true
 ---
 
 - Don't repeat yourself, scaffoldings

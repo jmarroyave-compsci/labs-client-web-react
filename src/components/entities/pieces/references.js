@@ -11,14 +11,11 @@ export default function References( props ){
 
   return (
     <Frame>
-      <Stack>
-          <SubTitle>More information</SubTitle>
-          <div>
-            {data.imdb && <a href={data.imdb}><Pill text="IMDB"/></a>}
-          </div>
-          <div>
-            {data.wikiTopic && <a href={`https://wikipedia.com/wiki/${data.wikiTopic.replace(/ /g, "_")}`}><Pill text="wikipedia"/></a>}
-          </div>
+      <SubTitle>More information</SubTitle>
+      <Stack direction='row'>
+          {data.id.startsWith("tt") && <a href={`https://www.imdb.com/title/${data.id}/`}><Pill text="IMDB"/></a>}
+          {data.id.startsWith("nm") && <a href={`https://www.imdb.com/name/${data.id}/`}><Pill text="IMDB"/></a>}
+          {data.wikiTopic && <a href={`https://wikipedia.com/wiki/${data.wikiTopic.replace(/ /g, "_")}`}><Pill text="wikipedia"/></a>}
       </Stack>
     </Frame>
   )

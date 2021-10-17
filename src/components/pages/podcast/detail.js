@@ -34,6 +34,9 @@ export default function Dashboard( props ){
         <Field title="Language" data={data.language}/>
         <Field title="Country" data={data.country}/>
       </Frame>
+
+      <References data={data}/>
+
     </Stack>
   )
 }

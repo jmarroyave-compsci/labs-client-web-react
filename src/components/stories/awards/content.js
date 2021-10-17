@@ -22,6 +22,7 @@ function Content(props){
       <Stack>
         <Parameters year={year} entity={entity} onChange={parametersChanged}/>
         <Grid {...props} 
+            page={props.params.page}
             onPageChange={ ( page ) => onPageChange( { year: year, entity: entity, page: page} ) } 
         />
       </Stack>

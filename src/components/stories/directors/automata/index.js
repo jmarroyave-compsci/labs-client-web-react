@@ -30,8 +30,8 @@ const slice = createSlice({
   reducers: {
     setParams : (state, action) => {
       state.params = action.payload
-      if(state.params.renderer !== "banner" && state.params.page > 1){
-        Router.push(`${state.params.page}`, null, { shallow: true })  
+      if(state.params.renderer !== "banner"){
+        Router.push(`${config.page.url(state.params.entity)}?page=${state.params.page}`, null, { shallow: true })  
       }      
     }
   },

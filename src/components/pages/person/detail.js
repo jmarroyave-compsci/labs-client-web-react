@@ -29,9 +29,11 @@ console.log(data)
 
       <Frame>
         <SubTitle>General information</SubTitle>
-        <Field title="Birth" data={data.birthDate} format="date"/>
-        <Field title="Death" data={data.deathDate} format="date"/>
+        <Field title="Birth" data={data.birthDate} format="year"/>
+        <Field title="Death" data={data.deathDate} format="year"/>
       </Frame>
+
+      <References data={data}/>
 
       <Awards data={ (data) ? data.awards : null }/>
 
