@@ -1,7 +1,5 @@
 ---
 title: Application development time
-description: 
-thumbnail: /img/log/log.jpg
 sprint: 3
 day:	2
 category: log

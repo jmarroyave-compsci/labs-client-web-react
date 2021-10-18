@@ -1,7 +1,5 @@
 ---
 title: The daily release mindset
-description: 
-thumbnail: /img/log/log.jpg
 sprint: 5
 day:	4
 category: log

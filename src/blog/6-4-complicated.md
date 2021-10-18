@@ -1,7 +1,5 @@
 ---
 title: Complicated
-description: 
-thumbnail: /img/log/log.jpg
 sprint: 6
 day:	4
 category: log

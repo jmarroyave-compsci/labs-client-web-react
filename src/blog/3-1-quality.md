@@ -1,7 +1,5 @@
 ---
 title: Quality
-description: 
-thumbnail: /img/log/log.jpg
 sprint: 3
 day:	1
 category: log

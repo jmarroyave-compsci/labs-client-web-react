@@ -1,7 +1,5 @@
 ---
-title: Redux: the automata
-description: 
-thumbnail: /img/log/log.jpg
+title: "Redux: the automata"
 sprint: 6
 day:	3
 category: log

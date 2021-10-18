@@ -1,7 +1,5 @@
 ---
 title: Uncompleted tasks
-description: 
-thumbnail: /img/log/log.jpg
 sprint: 3
 day:	4
 category: log

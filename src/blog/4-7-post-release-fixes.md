@@ -1,7 +1,5 @@
 ---
 title: Post release fixes
-description: 
-thumbnail: /img/log/log.jpg
 sprint: 4
 day:	7
 category: log

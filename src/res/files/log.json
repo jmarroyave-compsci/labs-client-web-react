@@ -559,7 +559,7 @@
         }
       ]
     },
-    "Sprint 6: V.1.0": {
+    "Sprint 6: BETA 1 - V.1.0": {
       "Day 1": [
         {
           "area": "STORIES",
@@ -801,34 +801,6 @@
           "area": "STORIES",
           "hour": 0,
           "task": "Story: Person page",
-          "level": 3,
-          "children": null
-        },
-        {
-          "area": "STORIES",
-          "hour": 0,
-          "task": "Story: People's network",
-          "level": 3,
-          "children": null
-        },
-        {
-          "area": "STORIES",
-          "hour": 0,
-          "task": "Story: Remakes",
-          "level": 3,
-          "children": null
-        },
-        {
-          "area": "STORIES",
-          "hour": 0,
-          "task": "Story: Awards",
-          "level": 3,
-          "children": null
-        },
-        {
-          "area": "STORIES",
-          "hour": 0,
-          "task": "Story: blog -> the microblog",
           "level": 3,
           "children": null
         }

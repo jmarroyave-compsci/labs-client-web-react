@@ -1,7 +1,5 @@
 ---
 title: React, the whole picture
-description: 
-thumbnail: /img/log/log.jpg
 sprint: 4
 day:	3
 category: log

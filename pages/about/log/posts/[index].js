@@ -17,7 +17,7 @@ const Page = ( props ) => {
 
 
 export async function getStaticProps({ ...ctx }) {
-    const [ slug ]  = ctx.params.index;
+    const slug  = ctx.params.index;
 
     return {
         props: {
@@ -29,7 +29,7 @@ export async function getStaticProps({ ...ctx }) {
 export async function getStaticPaths() {
     const paths = getAllPosts().map(file => ({
         params: {
-            index: [file.slug],
+            index: file.slug,
             slug: file.slug,
         }
     }))

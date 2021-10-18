@@ -1,7 +1,5 @@
 ---
 title: Slow performance
-description: 
-thumbnail: 
 sprint: 1
 day:	4
 category: log

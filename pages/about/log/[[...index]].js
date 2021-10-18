@@ -26,8 +26,6 @@ export async function getStaticProps( props ){
   var [ page ] = ( props.params.index ) ? props.params.index : [];
   page = (page) ? parseInt(page) : 1;
 
-  console.log(page)
-
   return {
       props: {
           data: getPosts(page, pageSize)

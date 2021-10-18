@@ -1,7 +1,5 @@
 ---
 title: Perfection takes time
-description: 
-thumbnail:
 sprint: 1
 day:	5
 category: log
