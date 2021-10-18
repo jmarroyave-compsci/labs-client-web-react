@@ -354,7 +354,7 @@
         }
       ]
     },
-    "Sprint 4: towards the Beta": {
+    "Sprint 4": {
       "Day 1": [
         {
           "area": "STORIES",
@@ -458,10 +458,17 @@
           "task": "Home will be a list of stories",
           "level": 3,
           "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "PRIORITIES:",
+          "level": 1,
+          "children": null
         }
       ]
     },
-    "Sprint 5: The dev process": {
+    "Sprint 5": {
       "Day 1": [
         {
           "area": "STORIES",
@@ -559,7 +566,7 @@
         }
       ]
     },
-    "Sprint 6: BETA 1 - V.1.0": {
+    "Sprint 6": {
       "Day 1": [
         {
           "area": "STORIES",
@@ -802,6 +809,59 @@
           "hour": 0,
           "task": "Story: Person page",
           "level": 3,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "PRIORITIES:",
+          "level": 1,
+          "children": null
+        }
+      ]
+    },
+    "Sprint 7": {
+      "Day 1": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "the sched deploy",
+          "level": 2,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "the TD process",
+          "level": 2,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "server cache",
+          "level": 2,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "server stats and messages",
+          "level": 2,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "sitemap",
+          "level": 2,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "boilerplate code",
+          "level": 2,
           "children": null
         }
       ]
