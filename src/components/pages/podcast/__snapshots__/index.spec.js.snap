@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Podcast Page compare against snapshot 1`] = `
+<div>
+  <div
+    class="css-nen11g-MuiStack-root"
+  >
+    <div
+      class="css-1exnf3f-MuiStack-root"
+    >
+      <div
+        class="MuiGrid-root page-module MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+          style="padding-right: 1rem;"
+        >
+          <div
+            class="css-nen11g-MuiStack-root"
+          >
+            <div
+              class="css-nen11g-MuiStack-root"
+            >
+              <div
+                class="css-t7ovy2"
+              >
+                <div
+                  style="height: 300px; width: 100%; background-color: rgb(51, 51, 51);"
+                >
+                  <img
+                    height="300"
+                    src="http://az592690.vo.msecnd.net/media/channels/gillespetersonww/images/original/gillespeterson_logo-square-thumb-e1352205457791.jpg"
+                  />
+                </div>
+              </div>
+              <div
+                class="css-m69qwo-MuiStack-root"
+              >
+                <div
+                  class="css-xomirm"
+                >
+                  <div
+                    class="MuiChip-root MuiChip-colorPrimary MuiChip-sizeSmall"
+                  >
+                    <span
+                      class="MuiChip-label MuiChip-labelSmall"
+                    >
+                      music
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-t7ovy2"
+              >
+                <h2
+                  class="css-1am01q4"
+                >
+                  Gilles Peterson
+                </h2>
+                <div
+                  class="css-1d47030"
+                >
+                  Searching for the Perfect Beat
+                </div>
+                <div
+                  class="css-1m85y0n"
+                >
+                  by 
+                  Gilles Peterson
+                </div>
+              </div>
+              <div
+                class="css-t7ovy2"
+              >
+                <p
+                  class="css-1avqrsh"
+                >
+                  Searching for the Perfect Beat
+                </p>
+              </div>
+              <div
+                class="css-t7ovy2"
+              >
+                <h3
+                  class="css-1wsh0w7"
+                >
+                  general information
+                </h3>
+                <div>
+                  <div
+                    class="css-1r75mpf"
+                  >
+                    Created
+                  </div>
+                  <div
+                    class="css-bczp0b"
+                  >
+                    <span>
+                      25/11/2016
+                    </span>
+                     
+                  </div>
+                </div>
+                <div>
+                  <div
+                    class="css-1r75mpf"
+                  >
+                    Language
+                  </div>
+                  <div
+                    class="css-bczp0b"
+                  >
+                    English
+                     
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-t7ovy2"
+              >
+                <h3
+                  class="css-1wsh0w7"
+                >
+                  More information
+                </h3>
+                <div
+                  class="css-m69qwo-MuiStack-root"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+          style="padding-right: 1rem;"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+          >
+            <div
+              class="css-vcmx0t"
+            >
+              <div
+                class="css-365mzx"
+              >
+                Stories
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

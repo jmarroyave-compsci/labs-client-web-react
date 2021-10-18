@@ -9,19 +9,16 @@ import Skeleton from './skeleton';
 
 export default function Layout( props ){
   	const state = useSelector(( state ) => state[config.automata.name] )
-  	
+ 	
   	if(!state) return <div/>;
 
 	return (
-		<CoreProxy 
-			xs={
-			<DetailLayout
-				data={state.data}
-				loading={state.loading}
-				detail={(data) => <Detail data={data}/>}
-				skeleton={<Skeleton/>}
-				params={{...state.params}}
-			/>}
+		<DetailLayout
+			data={state.data}
+			loading={state.loading}
+			detail={(data) => <Detail data={data}/>}
+			skeleton={<Skeleton/>}
+			params={{...state.params}}
 		/>
 	)
 }

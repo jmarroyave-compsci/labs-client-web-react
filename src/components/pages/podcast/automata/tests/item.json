@@ -1,0 +1,9 @@
+{
+  "params": {
+    "id": "test-id"
+  },
+  "data": {"id":"002f4ad4-f714-353a-b4e1-dff07ecfa456","title":"Gilles Peterson","subtitle":"Searching for the Perfect Beat","feedUrl":null,"description":null,"summary":"Searching for the Perfect Beat","author":"Gilles Peterson","link":null,"language":"English","image":"http://az592690.vo.msecnd.net/media/channels/gillespetersonww/images/original/gillespeterson_logo-square-thumb-e1352205457791.jpg","category":"music","subcategory":null,"createdDate":"2016-11-25T08:03:58.000Z","__typename":"Podcast"},
+  "loading": false,
+  "error": ""
+}
+

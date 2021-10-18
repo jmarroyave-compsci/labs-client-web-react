@@ -11,6 +11,11 @@ pipeline {
                 bat 'npm run build'       
             }
         }
+        stage('test') {
+            steps {
+                bat 'npm test'       
+            }
+        }
         stage('upload to gitpages') {
             steps {
                 bat 'git config user.email "jmarroyave.compsci@gmail.com"'

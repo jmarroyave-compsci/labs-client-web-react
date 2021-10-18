@@ -14,6 +14,7 @@ import Text from 'components/entities/pieces/text';
 import { Frame } from 'components/styles/boxes'
 import { SubTitle } from 'components/styles/detail'
 import Field from 'components/entities/pieces/field';
+import References from 'components/entities/pieces/references';
 
 export default function Dashboard( props ){
   var { data, loading } = props;

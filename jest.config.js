@@ -4,9 +4,10 @@ module.exports = {
     "<rootDir>",
   ],
   "modulePaths": [
-    "<rootDir>/src/framework/",
-    "<rootDir>/src/project/",
-    "<rootDir>/src/",
+    "<rootDir>/src/app",
+    "<rootDir>/src/app/components",
+    "<rootDir>/src/framework",
+    "<rootDir>/src",
   ],
   "moduleDirectories": [
     "node_modules",

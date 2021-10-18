@@ -1,8 +1,8 @@
 export default {
 	automata: {
-		name: "page_movie"
+		name: "page_podcast"
 	},
 	page: {
-		url: ( id ) => `/movies/${id}`,
+		url: ( id ) => `/podcasts/${id}`,
 	},
 }
