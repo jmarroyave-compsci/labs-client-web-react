@@ -8,7 +8,8 @@
     "start": "cross-env BABEL_ENV=dev next start",
     "storybook": "cross-env start-storybook -p 6006",
     "build-storybook": "cross-env build-storybook -o docs/storybook/",
-    "test": "cross-env BABEL_ENV=test jest --verbose false "
+    "test": "cross-env BABEL_ENV=test jest --verbose false ",
+    "sitemap": "next-sitemap --config next.sitemap.config.js --sourceDir ./.next"
   },
   "dependencies": {
     "@apollo/client": "^3.4.15",
@@ -41,11 +42,12 @@
     "react-vertical-timeline-component": "^3.3.3"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
     "@babel/preset-env": "^7.15.8",
     "@babel/preset-react": "^7.14.5",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^12.1.2",
+    "cross-env": "^7.0.3",
+    "next-sitemap": "^1.6.184",
     "react-test-renderer": "^17.0.2",
     "redux-mock-store": "^1.5.4"
   }
