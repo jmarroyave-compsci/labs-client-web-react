@@ -1,0 +1,9 @@
+{
+    "params": {
+        "renderer": "grid",
+        "entity": "movies",
+        "page": 1
+    },
+    "data": [],
+    "loading": false
+}

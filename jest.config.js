@@ -20,4 +20,5 @@ module.exports = {
     "node_modules/(?!d3|(?!deck.gl)|ng-dynamic)"
   ],
   "testEnvironment": 'jest-environment-jsdom',
+  "setupFilesAfterEnv": ['<rootDir>/src/tests/setup.js'],
 }

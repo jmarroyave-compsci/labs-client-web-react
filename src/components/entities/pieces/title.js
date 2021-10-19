@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles';
 
 export const Title = styled('h2')({
   fontSize: "2.5rem",
-  lineHeight: "2.5rem",
+  lineHeight: "2.75rem",
   padding: '0',
   margin: '0',
 });
@@ -13,7 +13,7 @@ const SubTitle1 = styled('div')({
   margin: 0,
   padding: 0,
   fontSize: '0.9rem',
-  lineHeight: '1.1rem',
+  lineHeight: '1.3rem',
 });
 
 const SubTitle2 = styled('div')({

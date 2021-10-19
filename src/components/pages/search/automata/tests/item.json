@@ -1,0 +1,95 @@
+{
+    "params": {
+        "qry": "transformers",
+        "page": 1,
+        "entities": [
+            "person",
+            "movie",
+            "tv_show",
+            "video_game",
+            "podcast",
+            "festival"
+        ]
+    },
+    "results": {
+        "data": [
+            {
+                "__typename": "SearchResultsListItem",
+                "entity": "transformers",
+                "entityId": "tt0410801",
+                "type": "video_game",
+                "desc": "released: 2004-01-01T05:00:00.000Z"
+            },
+            {
+                "__typename": "SearchResultsListItem",
+                "entity": "transformers",
+                "entityId": "tt0834963",
+                "type": "movie",
+                "desc": null
+            },
+            {
+                "__typename": "SearchResultsListItem",
+                "entity": "transformers",
+                "entityId": "tt0376266",
+                "type": "video_game",
+                "desc": "released: 2003-01-01T05:00:00.000Z"
+            },
+            {
+                "__typename": "SearchResultsListItem",
+                "entity": "transformers",
+                "entityId": "tt0418279",
+                "type": "movie",
+                "desc": null
+            },
+            {
+                "__typename": "SearchResultsListItem",
+                "entity": "transformers animated: the game",
+                "entityId": "tt1254976",
+                "type": "video_game",
+                "desc": "released: 2008-01-01T05:00:00.000Z"
+            },
+            {
+                "__typename": "SearchResultsListItem",
+                "entity": "transformers ascension",
+                "entityId": "tt8300516",
+                "type": "tv_show",
+                "desc": "released: 2016-01-01T05:00:00.000Z"
+            },
+            {
+                "__typename": "SearchResultsListItem",
+                "entity": "transformers australia: grandpa unboxing",
+                "entityId": "tt6651382",
+                "type": "tv_show",
+                "desc": "released: 2016-01-01T05:00:00.000Z"
+            },
+            {
+                "__typename": "SearchResultsListItem",
+                "entity": "transformers cataclysm",
+                "entityId": "tt6782562",
+                "type": "movie",
+                "desc": null
+            },
+            {
+                "__typename": "SearchResultsListItem",
+                "entity": "transformers contention",
+                "entityId": "tt8679872",
+                "type": "tv_show",
+                "desc": "released: 2018-01-01T05:00:00.000Z"
+            },
+            {
+                "__typename": "SearchResultsListItem",
+                "entity": "transformers crusade",
+                "entityId": "tt10403882",
+                "type": "movie",
+                "desc": null
+            }
+        ],
+        "loading": false,
+        "networkStatus": 7
+    },
+    "suggestions": {
+        "data": null,
+        "loading": true,
+        "error": null
+    }
+}

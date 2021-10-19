@@ -31,7 +31,7 @@ class MediaCard extends React.Component {
           }
           {text  && 
             <CardContent>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" color="text.secondary" component="div">
                 {text}
               </Typography>
             </CardContent>

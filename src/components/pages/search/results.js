@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 import Divider from '@mui/material/Divider';
@@ -10,9 +10,13 @@ import LinkVideoGame from 'components/entities/video-game/link';
 import LinkPerson from 'components/entities/person/link';
 import LinkMovie from 'components/entities/movie/link';
 import LinkPodcast from 'components/entities/podcast/link';
+import LinkFestival from 'components/entities/movie-festival/link';
 import Pill from 'core/ui/pill';
 import Button from '@mui/material/Button';
+import Filters from './filters';
 
+import { useDispatch } from 'react-redux'
+import { fetchData } from './automata'
 
 const Results = styled('div')({
   marginBottom: '4rem',
@@ -20,6 +24,10 @@ const Results = styled('div')({
 
 const ResultsHeader = styled('div')({
   paddingBottom: '3rem',
+});
+
+const FiltersBox = styled('div')({
+  paddingBottom: '2rem',
 });
 
 const Query = styled('span')({
@@ -42,13 +50,39 @@ const ResultText = styled('h3')({
   marginTop: 0,
 });
 
+const ResultExtra = styled('div')({
+  marginTop: 0,
+  fontSize: '0.85rem',
+  lineHeight: '1rem',
+});
+
 function _Results(props){
-  const { data, loading, qry, onPageChanged } = props;
+  const dispatch = useDispatch()
+  const { data, loading, qry, onPageChanged, entities } = props;
+
+  const onFiltersChange = ( e ) => {
+    var nItem = e.target.name
+    var ents = [];
+    var idx = entities.indexOf(nItem)
+    if(idx < 0){
+      ents = entities.concat([nItem])
+    } else {
+      ents = entities.filter( a => a != nItem)
+    }
+    dispatch( fetchData ( { ...props.params, entities: ents} ) )
+  }
+
   return (
     <Results>
       <ResultsHeader>
         <div>search results for: <Query>{qry}</Query></div>    
       </ResultsHeader>
+      <FiltersBox>
+        <Filters
+          data={entities}
+          onChange={onFiltersChange}
+        />
+      </FiltersBox>
       <ResultsData>
         <Paging {...props} onPageChanged skeleton={<Skeleton/>}>
           <Stack
@@ -74,6 +108,7 @@ function SearchResults( props ){
         <Result>
           <ResultType>Movie</ResultType>
           <ResultText><LinkMovie id={r.entityId} entity={r.entity}>{r.entity}</LinkMovie></ResultText>
+          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
         </Result>
       )
     case "people":
@@ -82,6 +117,7 @@ function SearchResults( props ){
         <Result>
           <ResultType>Person</ResultType>
           <ResultText><LinkPerson id={r.entityId} entity={r.entity}>{r.entity}</LinkPerson></ResultText>
+          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
         </Result>
       )
     case "podcast":
@@ -90,6 +126,7 @@ function SearchResults( props ){
         <Result>
           <ResultType>Podcast</ResultType>
           <ResultText><LinkPodcast id={r.entityId} entity={r.entity}>{r.entity}</LinkPodcast></ResultText>
+          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
         </Result>
       )
     case "video_game":
@@ -97,6 +134,7 @@ function SearchResults( props ){
         <Result>
           <ResultType>Video Game</ResultType>
           <ResultText><LinkVideoGame id={r.entityId} entity={r.entity}>{r.entity}</LinkVideoGame></ResultText>
+          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
         </Result>
       )
     case "tv_show":
@@ -104,6 +142,15 @@ function SearchResults( props ){
         <Result>
           <ResultType>TV Show</ResultType>
           <ResultText><LinkTVShow id={r.entityId} entity={r.entity}>{r.entity}</LinkTVShow></ResultText>
+          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
+        </Result>
+      )
+    case "festival":
+      return (
+        <Result>
+          <ResultType>Festival</ResultType>
+          <ResultText><LinkFestival id={r.entityId} entity={r.entity}>{r.entity}</LinkFestival></ResultText>
+          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
         </Result>
       )
   }

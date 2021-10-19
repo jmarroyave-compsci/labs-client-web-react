@@ -1,0 +1,85 @@
+{
+    "__typename": "Person",
+    "id": "nm0000881",
+    "name": "Michael Bay",
+    "birthDate": "1965-01-01T05:00:00.000Z",
+    "deathDate": null,
+    "profession": [
+        "producer",
+        "director",
+        "actor"
+    ],
+    "awards": [],
+    "references": null,
+    "directed": [
+        {
+            "__typename": "Movie",
+            "id": "tt0112442",
+            "title": "Bad Boys",
+            "releasedDate": "1995-01-01T05:00:00.000Z"
+        },
+        {
+            "__typename": "Movie",
+            "id": "tt0117500",
+            "title": "The Rock",
+            "releasedDate": "1996-01-01T05:00:00.000Z"
+        },
+        {
+            "__typename": "Movie",
+            "id": "tt0120591",
+            "title": "Armageddon",
+            "releasedDate": "1998-01-01T05:00:00.000Z"
+        },
+        {
+            "__typename": "Movie",
+            "id": "tt0172156",
+            "title": "Bad Boys II",
+            "releasedDate": "2003-01-01T05:00:00.000Z"
+        },
+        {
+            "__typename": "Movie",
+            "id": "tt0213149",
+            "title": "Pearl Harbor",
+            "releasedDate": "2001-01-01T05:00:00.000Z"
+        },
+        {
+            "__typename": "Movie",
+            "id": "tt0399201",
+            "title": "The Island",
+            "releasedDate": "2005-01-01T05:00:00.000Z"
+        },
+        {
+            "__typename": "Movie",
+            "id": "tt0418279",
+            "title": "Transformers",
+            "releasedDate": "2007-01-01T05:00:00.000Z"
+        },
+        {
+            "__typename": "Movie",
+            "id": "tt1055369",
+            "title": "Transformers: Revenge of the Fallen",
+            "releasedDate": "2009-01-01T05:00:00.000Z"
+        },
+        {
+            "__typename": "Movie",
+            "id": "tt10883414",
+            "title": "Black 5",
+            "releasedDate": "2001-01-01T05:00:00.000Z"
+        },
+        {
+            "__typename": "Movie",
+            "id": "tt1399103",
+            "title": "Transformers: Dark of the Moon",
+            "releasedDate": "2011-01-01T05:00:00.000Z"
+        }
+    ],
+    "wrote": [
+        {
+            "__typename": "Movie",
+            "id": "tt10883414",
+            "title": "Black 5",
+            "releasedDate": "2001-01-01T05:00:00.000Z"
+        }
+    ],
+    "acted": []
+}

@@ -9,6 +9,7 @@
       "components/*": ["src/components/*"],
       "core/*": ["src/framework/core/*"],
       "shared/*": ["src/framework/shared/*"],
+      "data/*": ["src/data/*"],
       "res/*": ["src/res/*"],
     }
   }

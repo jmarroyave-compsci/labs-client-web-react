@@ -9,7 +9,7 @@ const Banner = function( props ){
     return (
       <Stack>
         <Title>{title}</Title>
-        {description && description.trim() !== "" && <Description>{description}</Description>}
+        {description &&  <Description>{description}</Description>}
         {!hero && carousel }
         {!hero && showData === true && !carousel && Data( "carousel", data, item ) }
         {!hero &&

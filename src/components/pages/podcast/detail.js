@@ -36,7 +36,7 @@ export default function Dashboard( props ){
         <Field title="Country" data={data.country}/>
       </Frame>
 
-      <References data={data}/>
+      <References website={data.link} data={data}/>
 
     </Stack>
   )

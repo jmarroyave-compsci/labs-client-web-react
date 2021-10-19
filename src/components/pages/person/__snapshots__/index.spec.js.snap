@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Person Page compare against snapshot 1`] = `
+<div>
+  <div
+    class="css-nen11g-MuiStack-root"
+  >
+    <div
+      class="css-1exnf3f-MuiStack-root"
+    >
+      <div
+        class="MuiGrid-root page-module MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+          style="padding-right: 1rem;"
+        >
+          <div
+            class="css-nen11g-MuiStack-root"
+          >
+            <div
+              class="css-arinnf"
+            >
+              <div
+                class="css-1okj3ks-MuiStack-root"
+              >
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse css-58ftfq-MuiSkeleton-root"
+                  style="height: 300px;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+                  style="height: 3rem; margin-bottom: 1rem;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+                  style="width: 40%;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+                  style="width: 25%;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+                  style="width: 25%;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse css-1n7gpw1-MuiSkeleton-root"
+                  style="width: 25%;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+          style="padding-right: 1rem;"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+          >
+            <div
+              class="css-vcmx0t"
+            >
+              <div
+                class="css-365mzx"
+              >
+                Stories
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

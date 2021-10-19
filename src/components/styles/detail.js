@@ -32,7 +32,7 @@ export const FieldValue = styled('div')({
   margin: '0 0 0.5rem 0',
 });
 
-export const Paragraph = styled('p')({
+export const Paragraph = styled('div')({
     margin: 0,
     marginBottom: '1rem',
 });

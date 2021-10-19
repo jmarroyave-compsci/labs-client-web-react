@@ -10,6 +10,7 @@ import config from 'config/values/default';
 import nav from 'config/navigation';
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchData } from 'components/pages/search/automata'
+import { getEntitiesArrayState } from 'components/entities'
 
 export const QRY_SUGGESTIONS = gql`
 query getSuggestions($qry:String) {
@@ -34,7 +35,7 @@ const App = ( props ) =>{
 
   const onSearchQuery = (qry) => {
     qry = qry.toLowerCase()
-    dispatch( fetchData( { qry : qry, page: 1 } ) )
+    dispatch( fetchData( { qry : qry, page: 1, entities: getEntitiesArrayState(true) } ) )
   }
 
   const onSearchSuggestions = async (qry) => {

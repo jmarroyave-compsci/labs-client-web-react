@@ -1,0 +1,92 @@
+{
+    "params": {
+        "id": "tt1399103"
+    },
+    "data": {
+        "__typename": "Movie",
+        "id": "tt1399103",
+        "title": "Transformers: Dark of the Moon",
+        "country": [],
+        "type": "movie",
+        "genre": [
+            "action",
+            "adventure",
+            "sciFi"
+        ],
+        "duration": "154",
+        "rating": [
+            {
+                "__typename": "RatingListItem",
+                "averageRating": "6.2/10",
+                "name": "Internet Movie Database"
+            },
+            {
+                "__typename": "RatingListItem",
+                "averageRating": "35%",
+                "name": "Rotten Tomatoes"
+            },
+            {
+                "__typename": "RatingListItem",
+                "averageRating": "42/100",
+                "name": "Metacritic"
+            },
+            {
+                "__typename": "RatingListItem",
+                "averageRating": "6.2",
+                "name": "imdb"
+            }
+        ],
+        "releasedDate": "2011-01-01T05:00:00.000Z",
+        "classification": "?",
+        "streamBy": [],
+        "directors": [
+            {
+                "__typename": "Person",
+                "id": "nm0000881",
+                "name": "Michael Bay"
+            }
+        ],
+        "cast": [],
+        "writers": [
+            {
+                "__typename": "Person",
+                "id": "nm0472567",
+                "name": "Ehren Kruger"
+            }
+        ],
+        "crew": [],
+        "awards": [
+            {
+                "__typename": "Award",
+                "category": "SOUND EDITING",
+                "name": "oscar",
+                "won": false,
+                "year": 2011
+            },
+            {
+                "__typename": "Award",
+                "category": "SOUND MIXING",
+                "name": "oscar",
+                "won": false,
+                "year": 2011
+            },
+            {
+                "__typename": "Award",
+                "category": "VISUAL EFFECTS",
+                "name": "oscar",
+                "won": false,
+                "year": 2011
+            }
+        ],
+        "references": null,
+        "image": {
+            "__typename": "Image",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTkwOTY0MTc1NV5BMl5BanBnXkFtZTcwMDQwNjA2NQ@@._V1_SX300.jpg"
+        },
+        "boxOffice": null,
+        "production": "Don Murphy/Tom DeSanto, Ian Bryce, Di Bonaventura Pictures",
+        "language": "English",
+        "plot": "Autobots Bumblebee, Ratchet, Ironhide, Mirage (aka Dino), Wheeljack (aka Que) and Sideswipe led by Optimus Prime, are back in action taking on the evil Decepticons, who are eager to avenge their recent defeat. The Autobots and Decepticons become involved in a perilous space race between the United States and Russia to reach a hidden Cybertronian spacecraft on the moon and learn its secrets, and once again Sam Witwicky has to go to the aid of his robot friends. The new villain Shockwave is on the scene while the Autobots and Decepticons continue to battle it out on Earth."
+    },
+    "loading": false
+}

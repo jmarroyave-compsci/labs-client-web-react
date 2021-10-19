@@ -12,6 +12,7 @@ import { fetchData as fetchPodcasts } from 'components/stories/podcasts/automata
 import { fetchData as fetchPodcastsMusic } from 'components/stories/podcast-music/automata'
 import { fetchData as fetchMoviesFestivals } from 'components/stories/movies-festivals/automata'
 import { fetchData as fetchMoviesAwards } from 'components/stories/awards/automata'
+import { fetchData as fetchProfessions } from 'components/stories/professions/automata'
 
 const Page = ( props ) => {
   const dispatch = useDispatch();
@@ -38,6 +39,10 @@ const Page = ( props ) => {
     } ) )
 
     dispatch( fetchVideoGames( {
+      renderer: "banner",
+    } ) )
+
+    dispatch( fetchProfessions( {
       renderer: "banner",
     } ) )
 

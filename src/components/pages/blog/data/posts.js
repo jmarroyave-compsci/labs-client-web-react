@@ -1,12 +1,14 @@
 import fs from 'fs'
 import matter from 'gray-matter'
 
+const BLOG_SRC = "src/data/blog"
+
 export const getAllPosts = function(){
-    const files = fs.readdirSync("src/blog");
+    const files = fs.readdirSync(BLOG_SRC);
     let articles = files.map( (file) => {
         const slug = file.split(".")[0]
         var data = fs
-            .readFileSync(`src/blog/${file}`)
+            .readFileSync(`${BLOG_SRC}/${file}`)
             .toString();
 
         data = {
@@ -39,7 +41,7 @@ export const getPosts = function(page, size=10){
 
 export const getPost = function(slug){
     const content = fs
-        .readFileSync(`src/blog/${slug}.md`)
+        .readFileSync(`${BLOG_SRC}${slug}.md`)
         .toString();
     const info = matter(content);
     const article = {

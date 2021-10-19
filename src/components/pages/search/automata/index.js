@@ -3,13 +3,15 @@ import { store } from 'app/state/store'
 import Router from 'next/router'
 import * as data from '../data'; 
 import config from "../.config.js";
+import { getEntitiesArrayState } from 'components/entities'
 
 const MODEL_NAME = config.automata.name;
 
 const initialState = {
   params: {
     qry: null,
-    page: null
+    page: null,
+    entities: null,
   },
   results : {
     data: null,
@@ -28,9 +30,12 @@ export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     params.qry = decodeURIComponent(params.qry)
     params.page = (params.page) ? parseInt(params.page) : 1;
-
+    params.entities = (params.entities) ? params.entities : getEntitiesArrayState(true);
     thunkAPI.dispatch(setParams( params ))
-    return await data.fetchResults( params.qry, params.page );
+    if( params.entities.length > 0)
+      return await data.fetchResults( params.qry, params.page, params.entities );
+    else
+      return {data: [], loading: false, error: ""}
   }
 )
 
@@ -47,6 +52,7 @@ const slice = createSlice({
   reducers: {
     setParams : (state, action) => {
       state.params = action.payload
+      state.results = { loading: true, data: []};
       Router.push(`${config.page.url()}?q=${state.params.qry}&page=${state.params.page}`, null, { shallow: true })
     },      
   },

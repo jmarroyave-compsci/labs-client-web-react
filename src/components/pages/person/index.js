@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CoreProxy from 'core/ui/layout/proxy';
 import DetailLayout from "components/layout/detail-layout";
 import { useSelector } from 'react-redux';
 import config from "./.config.js";
@@ -13,15 +12,12 @@ export default function Layout( props ){
   	if(!state) return <div/>;
 
 	return (
-		<CoreProxy 
-			xs={
-			<DetailLayout
-				data={state.data}
-				loading={state.loading}
-				detail={(data) => <Detail data={data}/>}
-				skeleton={<Skeleton/>}
-				params={{...state.params}}
-			/>}
+		<DetailLayout
+			data={state.data}
+			loading={state.loading}
+			detail={(data) => <Detail data={data}/>}
+			skeleton={<Skeleton/>}
+			params={{...state.params}}
 		/>
 	)
 }
