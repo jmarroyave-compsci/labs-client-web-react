@@ -41,7 +41,7 @@ export const getPosts = function(page, size=10){
 
 export const getPost = function(slug){
     const content = fs
-        .readFileSync(`${BLOG_SRC}${slug}.md`)
+        .readFileSync(`${BLOG_SRC}/${slug}.md`)
         .toString();
     const info = matter(content);
     const article = {

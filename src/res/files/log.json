@@ -821,47 +821,20 @@
       ]
     },
     "Sprint 7": {
-      "Day 1": [
+      "Day 1": [],
+      "Day 2": [
         {
-          "area": null,
+          "area": "STORIES",
           "hour": 0,
-          "task": "the sched deploy",
-          "level": 2,
+          "task": "Story: by profession",
+          "level": 3,
           "children": null
         },
         {
-          "area": null,
+          "area": "STORIES",
           "hour": 0,
-          "task": "the TD process",
-          "level": 2,
-          "children": null
-        },
-        {
-          "area": null,
-          "hour": 0,
-          "task": "server cache",
-          "level": 2,
-          "children": null
-        },
-        {
-          "area": null,
-          "hour": 0,
-          "task": "server stats and messages",
-          "level": 2,
-          "children": null
-        },
-        {
-          "area": null,
-          "hour": 0,
-          "task": "sitemap",
-          "level": 2,
-          "children": null
-        },
-        {
-          "area": null,
-          "hour": 0,
-          "task": "boilerplate code",
-          "level": 2,
+          "task": "Story: Search",
+          "level": 3,
           "children": null
         }
       ]
