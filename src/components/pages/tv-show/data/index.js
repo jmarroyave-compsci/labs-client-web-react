@@ -32,7 +32,9 @@ const GET_DATA = gql`
     }
     awards {
       category
-      name
+      festival{
+        name
+      }
       won
       year
     }

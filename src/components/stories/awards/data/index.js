@@ -5,17 +5,16 @@ export const fetchData = ( entity, year, page ) => fetch( GET_DATA, { entity: en
 
 const GET_DATA = gql`
 query get($entity:String, $year: Int, $page: Int) {
-  storiesMoviesAwards(entity: $entity, year: $year, page: $page){
-    id
-    title
-    awards {
-      category
+  storiesMoviesAwards(entity: $entity, year: $year, page: $page) {
+    festival {
       name
-      won
-      year
     }
-    image {
-      poster
+    year
+    awarded{
+      category
+      entity
+      won
+      id
     }
   }
 }

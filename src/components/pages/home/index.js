@@ -20,6 +20,7 @@ export default function PageComponent( props ){
 
 	return (
 		<Stack>
+			<Section className="section-3"><StoryRemakes/></Section>
 			<Section className="section-1"><StoryProfessions/></Section>
 			<Section className="section-0"><StoryAwards/></Section>
 			<Section className="section-2"><StoryMovies {...props}/></Section>

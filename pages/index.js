@@ -8,7 +8,7 @@ import { fetchData as fetchPeople } from 'components/stories/people/automata'
 import { fetchData as fetchTVShows } from 'components/stories/tv-shows/automata'
 import { fetchData as fetchVideoGames } from 'components/stories/video-games/automata'
 import { fetchData as fetchPodcasts } from 'components/stories/podcasts/automata'
-//import { fetchData as fetchRemakes } from 'components/stories/remakes/automata'
+import { fetchData as fetchRemakes } from 'components/stories/remakes/automata'
 import { fetchData as fetchPodcastsMusic } from 'components/stories/podcast-music/automata'
 import { fetchData as fetchMoviesFestivals } from 'components/stories/movies-festivals/automata'
 import { fetchData as fetchMoviesAwards } from 'components/stories/awards/automata'
@@ -46,13 +46,11 @@ const Page = ( props ) => {
       renderer: "banner",
     } ) )
 
-    /*
     dispatch( fetchRemakes( {
       entity: "movies",
       renderer: "banner",
       page: 1
     } ) )
-    */
 
     dispatch( fetchMoviesAwards( {
       renderer: "banner",

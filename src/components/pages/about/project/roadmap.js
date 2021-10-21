@@ -1,6 +1,6 @@
 import React from 'react'
 import { Timeline, TimelineItem } from 'core/ui/timeline';
-import log from 'res/files/log.json';
+import { getRoadmap } from 'data/roadmap';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import { Title } from 'components/styles/infography'
@@ -36,6 +36,8 @@ class Dashboard extends React.Component {
 
 function buildData(){
   var resp = [];
+
+  var log = getRoadmap();
 
   Object.keys(log.log).reverse().forEach( sprint => {
     //if( sprint != "Sprint 3") return;

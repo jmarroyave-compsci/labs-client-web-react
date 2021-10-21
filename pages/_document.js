@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 // Modules
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 // MUI Core
@@ -9,6 +9,7 @@ import createEmotionCache from 'config/theme/emotion-cache';
 
 export default class MyDocument extends Document {
   render() {
+
     return (
       <Html lang="en">
         <Head>

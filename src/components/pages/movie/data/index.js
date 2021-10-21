@@ -40,7 +40,9 @@ query getMovie($id:String!) {
     }    
     awards {
       category
-      name
+      festival{
+        name
+      }
       won
       year
     }

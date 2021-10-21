@@ -6,20 +6,25 @@ import MDCardContent from '@material-ui/core/CardContent';
 import MDCardHeader from '@material-ui/core/CardHeader';
 import LinkMovie from 'components/entities/movie/link'
 import Awards from 'components/entities/pieces/awards'
-import Typography from '@material-ui/core/Typography';
+import Field from 'components/entities/pieces/field'
 
 export default function AwardItem( props ){
-  const { full, year, all, id, title, awards, image } = props;
+  const { full, year, all, festival, awards, image, awarded } = props;
 
   return (
       
       <Card
         image={(image) ? image.poster : image}
         imageHeight={100}
-        text={<Awards mini={true} data={awards} year={year} all={all}/>}
-        title={title}
+        text={ <div>
+                  {awarded.filter( a => a.won ).slice(0,5).map( (a, key) => 
+                    <Field key={key} title={a.category} value={a.entity}/>
+                  )}
+                </div> 
+            }
+        title={festival.name}
+        subtitle={year}
         actions={[
-          <LinkMovie id={id} entity={title}>Go</LinkMovie>,
         ]}
       />
     

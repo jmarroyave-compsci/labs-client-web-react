@@ -1,0 +1,1266 @@
+{
+    "params": {
+        "renderer": "grid",
+        "year": 2017,
+        "entity": "movies",
+        "page": 1
+    },
+    "data": [
+        {
+            "__typename": "StoryMovieAward",
+            "festival": {
+                "__typename": "MovieFestival",
+                "name": "Academy Awards"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTOR IN A LEADING ROLE",
+                    "entity": "Timothée Chalamet",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3e9d"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTOR IN A LEADING ROLE",
+                    "entity": "Daniel Day-Lewis",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3e9e"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTOR IN A LEADING ROLE",
+                    "entity": "Daniel Kaluuya",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3e9f"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTOR IN A LEADING ROLE",
+                    "entity": "Gary Oldman",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ea0"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTOR IN A LEADING ROLE",
+                    "entity": "Denzel Washington",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ea1"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTOR IN A SUPPORTING ROLE",
+                    "entity": "Willem Dafoe",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ea2"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTOR IN A SUPPORTING ROLE",
+                    "entity": "Woody Harrelson",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ea3"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTOR IN A SUPPORTING ROLE",
+                    "entity": "Richard Jenkins",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ea4"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTOR IN A SUPPORTING ROLE",
+                    "entity": "Christopher Plummer",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ea5"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTOR IN A SUPPORTING ROLE",
+                    "entity": "Sam Rockwell",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ea6"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTRESS IN A LEADING ROLE",
+                    "entity": "Sally Hawkins",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ea7"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTRESS IN A LEADING ROLE",
+                    "entity": "Frances McDormand",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ea8"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTRESS IN A LEADING ROLE",
+                    "entity": "Margot Robbie",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ea9"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTRESS IN A LEADING ROLE",
+                    "entity": "Saoirse Ronan",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eaa"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTRESS IN A LEADING ROLE",
+                    "entity": "Meryl Streep",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eab"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTRESS IN A SUPPORTING ROLE",
+                    "entity": "Mary J. Blige",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eac"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTRESS IN A SUPPORTING ROLE",
+                    "entity": "Allison Janney",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ead"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTRESS IN A SUPPORTING ROLE",
+                    "entity": "Lesley Manville",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eae"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTRESS IN A SUPPORTING ROLE",
+                    "entity": "Laurie Metcalf",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eaf"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ACTRESS IN A SUPPORTING ROLE",
+                    "entity": "Octavia Spencer",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eb0"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ANIMATED FEATURE FILM",
+                    "entity": "The Boss Baby",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eb1"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ANIMATED FEATURE FILM",
+                    "entity": "The Breadwinner",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eb2"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ANIMATED FEATURE FILM",
+                    "entity": "Coco",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3eb3"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ANIMATED FEATURE FILM",
+                    "entity": "Ferdinand",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eb4"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "ANIMATED FEATURE FILM",
+                    "entity": "Loving Vincent",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eb5"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "CINEMATOGRAPHY",
+                    "entity": "Blade Runner 2049",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3eb6"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "CINEMATOGRAPHY",
+                    "entity": "Darkest Hour",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eb7"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "CINEMATOGRAPHY",
+                    "entity": "Dunkirk",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eb8"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "CINEMATOGRAPHY",
+                    "entity": "Mudbound",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eb9"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "CINEMATOGRAPHY",
+                    "entity": "The Shape of Water",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eba"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "COSTUME DESIGN",
+                    "entity": "Beauty and the Beast",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ebb"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "COSTUME DESIGN",
+                    "entity": "Darkest Hour",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ebc"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "COSTUME DESIGN",
+                    "entity": "Phantom Thread",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ebd"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "COSTUME DESIGN",
+                    "entity": "The Shape of Water",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ebe"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "COSTUME DESIGN",
+                    "entity": "Victoria & Abdul",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ebf"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DIRECTING",
+                    "entity": "Dunkirk",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ec0"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DIRECTING",
+                    "entity": "Get Out",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ec1"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DIRECTING",
+                    "entity": "Lady Bird",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ec2"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DIRECTING",
+                    "entity": "Phantom Thread",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ec3"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DIRECTING",
+                    "entity": "The Shape of Water",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ec4"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DOCUMENTARY (Feature)",
+                    "entity": "Abacus: Small Enough to Jail",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ec5"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DOCUMENTARY (Feature)",
+                    "entity": "Faces Places",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ec6"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DOCUMENTARY (Feature)",
+                    "entity": "Icarus",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ec7"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DOCUMENTARY (Feature)",
+                    "entity": "Last Men in Aleppo",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ec8"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DOCUMENTARY (Feature)",
+                    "entity": "Strong Island",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ec9"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DOCUMENTARY (Short Subject)",
+                    "entity": "Edith+Eddie",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eca"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DOCUMENTARY (Short Subject)",
+                    "entity": "Heaven Is a Traffic Jam on the 405",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ecb"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DOCUMENTARY (Short Subject)",
+                    "entity": "Heroin(e)",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ecc"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DOCUMENTARY (Short Subject)",
+                    "entity": "Knife Skills",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ecd"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "DOCUMENTARY (Short Subject)",
+                    "entity": "Traffic Stop",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ece"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "FILM EDITING",
+                    "entity": "Baby Driver",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ecf"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "FILM EDITING",
+                    "entity": "Dunkirk",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ed0"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "FILM EDITING",
+                    "entity": "I, Tonya",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ed1"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "FILM EDITING",
+                    "entity": "The Shape of Water",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ed2"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "FILM EDITING",
+                    "entity": "Three Billboards Outside Ebbing, Missouri",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ed3"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "FOREIGN LANGUAGE FILM",
+                    "entity": "A Fantastic Woman",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ed4"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "FOREIGN LANGUAGE FILM",
+                    "entity": "The Insult",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ed5"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "FOREIGN LANGUAGE FILM",
+                    "entity": "Loveless",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ed6"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "FOREIGN LANGUAGE FILM",
+                    "entity": "On Body and Soul",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ed7"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "FOREIGN LANGUAGE FILM",
+                    "entity": "The Square",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ed8"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MAKEUP AND HAIRSTYLING",
+                    "entity": "Darkest Hour",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ed9"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MAKEUP AND HAIRSTYLING",
+                    "entity": "Victoria & Abdul",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eda"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MAKEUP AND HAIRSTYLING",
+                    "entity": "Wonder",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3edb"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MUSIC (Original Score)",
+                    "entity": "Dunkirk",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3edc"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MUSIC (Original Score)",
+                    "entity": "Phantom Thread",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3edd"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MUSIC (Original Score)",
+                    "entity": "The Shape of Water",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ede"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MUSIC (Original Score)",
+                    "entity": "Star Wars: The Last Jedi",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3edf"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MUSIC (Original Score)",
+                    "entity": "Three Billboards Outside Ebbing, Missouri",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ee0"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MUSIC (Original Song)",
+                    "entity": "Mudbound",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ee1"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MUSIC (Original Song)",
+                    "entity": "Call Me by Your Name",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ee2"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MUSIC (Original Song)",
+                    "entity": "Coco",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ee3"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MUSIC (Original Song)",
+                    "entity": "Marshall",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ee4"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "MUSIC (Original Song)",
+                    "entity": "The Greatest Showman",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ee5"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "BEST PICTURE",
+                    "entity": "Call Me by Your Name",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ee6"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "BEST PICTURE",
+                    "entity": "Darkest Hour",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ee7"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "BEST PICTURE",
+                    "entity": "Dunkirk",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ee8"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "BEST PICTURE",
+                    "entity": "Get Out",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ee9"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "BEST PICTURE",
+                    "entity": "Lady Bird",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eea"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "BEST PICTURE",
+                    "entity": "Phantom Thread",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eeb"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "BEST PICTURE",
+                    "entity": "The Post",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eec"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "BEST PICTURE",
+                    "entity": "The Shape of Water",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3eed"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "BEST PICTURE",
+                    "entity": "Three Billboards Outside Ebbing, Missouri",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eee"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "PRODUCTION DESIGN",
+                    "entity": "Beauty and the Beast",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eef"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "PRODUCTION DESIGN",
+                    "entity": "Blade Runner 2049",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ef0"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "PRODUCTION DESIGN",
+                    "entity": "Darkest Hour",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ef1"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "PRODUCTION DESIGN",
+                    "entity": "Dunkirk",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ef2"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "PRODUCTION DESIGN",
+                    "entity": "The Shape of Water",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ef3"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SHORT FILM (Animated)",
+                    "entity": "Dear Basketball",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3ef4"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SHORT FILM (Animated)",
+                    "entity": "Garden Party",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ef5"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SHORT FILM (Animated)",
+                    "entity": "Lou",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ef6"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SHORT FILM (Animated)",
+                    "entity": "Negative Space",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ef7"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SHORT FILM (Animated)",
+                    "entity": "Revolting Rhymes",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ef8"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SHORT FILM (Live Action)",
+                    "entity": "DeKalb Elementary",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3ef9"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SHORT FILM (Live Action)",
+                    "entity": "The Eleven O'Clock",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3efa"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SHORT FILM (Live Action)",
+                    "entity": "My Nephew Emmett",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3efb"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SHORT FILM (Live Action)",
+                    "entity": "The Silent Child",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3efc"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SHORT FILM (Live Action)",
+                    "entity": "Watu Wote/All of Us",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3efd"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SOUND EDITING",
+                    "entity": "Baby Driver",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3efe"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SOUND EDITING",
+                    "entity": "Blade Runner 2049",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3eff"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SOUND EDITING",
+                    "entity": "Dunkirk",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f00"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SOUND EDITING",
+                    "entity": "The Shape of Water",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f01"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SOUND EDITING",
+                    "entity": "Star Wars: The Last Jedi",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f02"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SOUND MIXING",
+                    "entity": "Baby Driver",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f03"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SOUND MIXING",
+                    "entity": "Blade Runner 2049",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f04"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SOUND MIXING",
+                    "entity": "Dunkirk",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f05"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SOUND MIXING",
+                    "entity": "The Shape of Water",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f06"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SOUND MIXING",
+                    "entity": "Star Wars: The Last Jedi",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f07"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "VISUAL EFFECTS",
+                    "entity": "Blade Runner 2049",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f08"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "VISUAL EFFECTS",
+                    "entity": "Guardians of the Galaxy Vol. 2",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f09"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "VISUAL EFFECTS",
+                    "entity": "Kong: Skull Island",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f0a"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "VISUAL EFFECTS",
+                    "entity": "Star Wars: The Last Jedi",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f0b"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "VISUAL EFFECTS",
+                    "entity": "War for the Planet of the Apes",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f0c"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "WRITING (Adapted Screenplay)",
+                    "entity": "Call Me by Your Name",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f0d"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "WRITING (Adapted Screenplay)",
+                    "entity": "The Disaster Artist",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f0e"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "WRITING (Adapted Screenplay)",
+                    "entity": "Logan",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f0f"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "WRITING (Adapted Screenplay)",
+                    "entity": "Molly's Game",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f10"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "WRITING (Adapted Screenplay)",
+                    "entity": "Mudbound",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f11"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "WRITING (Original Screenplay)",
+                    "entity": "The Big Sick",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f12"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "WRITING (Original Screenplay)",
+                    "entity": "Get Out",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f13"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "WRITING (Original Screenplay)",
+                    "entity": "Lady Bird",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f14"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "WRITING (Original Screenplay)",
+                    "entity": "The Shape of Water",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f15"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "WRITING (Original Screenplay)",
+                    "entity": "Three Billboards Outside Ebbing, Missouri",
+                    "won": false,
+                    "id": "6171b6f6d9c17111464e3f16"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SPECIAL AWARD",
+                    "entity": "To Alejandro G. Iñárritu's CARNE y ARENA virtual reality installation, in recognition of a visionary and powerful experience in storytelling.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f17"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "HONORARY AWARD",
+                    "entity": "To Charles Burnett, a resolutely independent and influential film pioneer who has chronicled the lives of black Americans with eloquence and insight.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f18"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "HONORARY AWARD",
+                    "entity": "To Owen Roizman, whose expansive visual style and technical innovation have advanced the art of cinematography.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f19"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "HONORARY AWARD",
+                    "entity": "To Donald Sutherland for a lifetime of indelible characters, rendered with unwavering truthfulness.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f1a"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "HONORARY AWARD",
+                    "entity": "To Agnès Varda, whose compassion and curiosity inform a uniquely personal cinema.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f1b"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "GORDON E. SAWYER AWARD",
+                    "entity": "Jonathan Erland",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f1c"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SCIENTIFIC AND TECHNICAL AWARD (Academy Award of Merit)",
+                    "entity": "To MARK ELENDT and SIDE EFFECTS SOFTWARE for the creation and development of the Houdini visual effects and animation system.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f1d"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
+                    "entity": "To JOHN COYLE, BRAD HURNDELL, VIKAS SATHAYE and SHANE BUCKHAM for the concept, design, engineering and implementation of the Shotover K1 Camera System.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f1e"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
+                    "entity": "To JEFF LAIT, MARK TUCKER, CRISTIN BARGHIEL and JOHN LYNCH for their contributions to the design and architecture of the Houdini visual effects and animation system.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f1f"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
+                    "entity": "To BILL SPITZAK and JONATHAN EGSTAD for the visionary design, development and stewardship of the Nuke compositing system.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f20"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
+                    "entity": "To ABIGAIL BRADY, JON WADELTON and JERRY HUXTABLE for their significant contributions to the architecture and extensibility of the Nuke compositing system.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f21"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
+                    "entity": "To LEONARD CHAPMAN for the overall concept, design and development, to STANISLAV GORBATOV for the electronic system design, and to DAVID GASPARIAN and SOUHAIL ISSA for the mechanical design and integration of the Hydrascope telescoping camera crane systems.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f22"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
+                    "entity": "To JASON SMITH and JEFF WHITE for the original design, and to RACHEL MARIE ROSE and MICHAEL JUSTIN LEE JUTAN for the architecture and engineering, of the BlockParty procedural rigging system at Industrial Light & Magic.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f23"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
+                    "entity": "To JOE MANCEWICZ, MATT DERKSEN and HANS RIJPKEMA for the design, architecture and implementation of the Rhythm & Hues Construction Kit rigging system.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f24"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
+                    "entity": "To ALEX POWELL for his contribution to the design and engineering, to JASON REISIG for his contribution to the interaction design, and to MARTIN WATT and ALEX WELLS for their contributions to the high-performance execution engine of the Premo character animation system at DreamWorks Animation.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f25"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
+                    "entity": "To ROB JENSEN for the foundational design and continued development, to THOMAS HAHN for the animation toolset, and to GEORGE ELKOURA, ADAM WOODBURY and DIRK VAN GELDER for the high-performance execution engine of the Presto Animation System at Pixar Animation Studios.",
+                    "won": true,
+                    "id": "6171b6f6d9c17111464e3f26"
+                }
+            ]
+        },
+        {
+            "__typename": "StoryMovieAward",
+            "festival": {
+                "__typename": "MovieFestival",
+                "name": "Silwerskerm Film Festival"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "silwerskerm award for best feature film",
+                    "entity": "Vaselinetjie",
+                    "won": true,
+                    "id": "6171b6f7d9c17111464e424d"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "silwerskerm award for best short film",
+                    "entity": "Soldaat",
+                    "won": true,
+                    "id": "6171b6f7d9c17111464e424e"
+                }
+            ]
+        },
+        {
+            "__typename": "StoryMovieAward",
+            "festival": {
+                "__typename": "MovieFestival",
+                "name": "Asia Pacific Film Festival"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best film winners",
+                    "entity": "The Unnamed",
+                    "won": true,
+                    "id": "6171b6f7d9c17111464e4338"
+                }
+            ]
+        },
+        {
+            "__typename": "StoryMovieAward",
+            "festival": {
+                "__typename": "MovieFestival",
+                "name": "International Film Festival of Kerala"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "golden crow pheasant for best film - winners",
+                    "entity": "Wajib",
+                    "won": true,
+                    "id": "6171b6f9d9c17111464e459a"
+                }
+            ]
+        },
+        {
+            "__typename": "StoryMovieAward",
+            "festival": {
+                "__typename": "MovieFestival",
+                "name": "Flanders International Film Festival Ghent"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "grand prix for best film",
+                    "entity": "Zagros",
+                    "won": true,
+                    "id": "6171b6f9d9c17111464e4764"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "georges delerue award for best soundtrack/sound design",
+                    "entity": "A Ciambra (Dan Romer)",
+                    "won": true,
+                    "id": "6171b6f9d9c17111464e4765"
+                }
+            ]
+        },
+        {
+            "__typename": "StoryMovieAward",
+            "festival": {
+                "__typename": "MovieFestival",
+                "name": "Göteborg International Film Festival"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "dragon award for best nordic film",
+                    "entity": "Sameblod",
+                    "won": true,
+                    "id": "6171b6f9d9c17111464e4818"
+                }
+            ]
+        },
+        {
+            "__typename": "StoryMovieAward",
+            "festival": {
+                "__typename": "MovieFestival",
+                "name": "Jewish Motifs International Film Festival"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "warsaw phoenix for the best feature film",
+                    "entity": "שבוע ויום",
+                    "won": true,
+                    "id": "6171b6f9d9c17111464e4845"
+                }
+            ]
+        },
+        {
+            "__typename": "StoryMovieAward",
+            "festival": {
+                "__typename": "MovieFestival",
+                "name": "Küstendorf"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "golden egg for best short film",
+                    "entity": "Thorn",
+                    "won": true,
+                    "id": "6171b6f9d9c17111464e488e"
+                }
+            ]
+        },
+        {
+            "__typename": "StoryMovieAward",
+            "festival": {
+                "__typename": "MovieFestival",
+                "name": "Norway Tamil Film Festival Awards"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best film",
+                    "entity": "Joker",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b7a"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best social awareness award",
+                    "entity": "Ammani",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b7b"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best actor",
+                    "entity": "Dharma Durai",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b7c"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best actress",
+                    "entity": "Tharai Thappattai",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b7d"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best comedian",
+                    "entity": "Aandavan Kattalai",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b7e"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best villain",
+                    "entity": "Tharai Thappattai",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b7f"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best supporting actor",
+                    "entity": "Appa & Visaranai",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b80"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best supporting actress",
+                    "entity": "Kuttrame Thandanai",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b81"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best director",
+                    "entity": "Visaranai",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b82"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best producer",
+                    "entity": "Uriyadi",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b83"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best cinematographer",
+                    "entity": "Kidaari",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b84"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best editor",
+                    "entity": "Dhuruvangal Pathinaaru",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b85"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best screenplay",
+                    "entity": "Dhuruvangal Pathinaaru",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b86"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best music director",
+                    "entity": "Joker",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b87"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best male playback singer",
+                    "entity": "Kabali",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b88"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best female playback singer",
+                    "entity": "Rekka",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b89"
+                },
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best lyricist",
+                    "entity": "Kabali",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4b8a"
+                }
+            ]
+        },
+        {
+            "__typename": "StoryMovieAward",
+            "festival": {
+                "__typename": "MovieFestival",
+                "name": "Paris Lesbian and Feminist Film Festival"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "__typename": "AwardedListItem",
+                    "category": "best feature film awards",
+                    "entity": "Signature Move",
+                    "won": true,
+                    "id": "6171b6fbd9c17111464e4d33"
+                }
+            ]
+        }
+    ],
+    "loading": false
+}

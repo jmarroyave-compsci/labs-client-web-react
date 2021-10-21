@@ -1,4 +1,4 @@
-import quotes from './quotes.json'
+import quotes from './data.json'
 
 export const getQuote = function( tag ){
 	 var qs = quotes.filter( a => a.tags.includes(tag))

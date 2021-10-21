@@ -26,10 +26,18 @@ import 'shared/globals/social_networks/social_networks.css';
 
 import { useRouter } from 'next/router';
 
+import ReactGA from 'react-ga';
+
 
 export default function MyApp(props) {
   const router = useRouter(); 
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+
+  React.useEffect( ()=>{
+    ReactGA.initialize(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS);
+    ReactGA.pageview(window.location.pathname + window.location.search);
+
+  }, [])
 
   return (
     <CacheProvider value={emotionCache}>
