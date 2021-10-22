@@ -29,7 +29,7 @@ import { useRouter } from 'next/router';
 import ReactGA from 'react-ga';
 
 
-export default function MyApp(props) {
+export default function BaseApp(props) {
   const router = useRouter(); 
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
@@ -75,7 +75,7 @@ export default function MyApp(props) {
   );
 }
 
-MyApp.propTypes = {
+BaseApp.propTypes = {
   Component: PropTypes.elementType.isRequired,
   emotionCache: PropTypes.object,
   pageProps: PropTypes.object.isRequired,

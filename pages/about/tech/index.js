@@ -8,7 +8,7 @@ const Page = ( props ) => {
 
   useEffect( () => {
     dispatch(setPage({
-      breadcrumbs: [{name: "about"}],
+      breadcrumbs: [{name: "movies"}],
     }));    
 
   }, [])

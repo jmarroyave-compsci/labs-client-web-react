@@ -15,7 +15,7 @@ import StoryLog from 'components/pages/blog/index/banner'
 import StoryMovieFestivals from 'components/stories/movies-festivals'
 import StoryProfessions from 'components/stories/professions'
 
-export default function PageComponent( props ){
+export default function Content( props ){
 	const { data, blog } = props;
 
 	return (

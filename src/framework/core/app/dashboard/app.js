@@ -10,7 +10,7 @@ import AppOffline from 'core/components/app_offline';
 import Breadcrumbs from './breadcrumbs';
 import Typography from '@material-ui/core/Typography';
 
-function App( props ) {
+function DashboardApp( props ) {
   const [open, setOpen] = React.useState(false);
   const toggleDrawer = () => {
     setOpen(!open);
@@ -23,7 +23,7 @@ function App( props ) {
   if(offline) return <AppOffline error={error}/>
 
   return (
-    <div>
+    <>
       <Box sx={{ display: 'flex' }} style={{padding: 0, margin: 0}}>
         <Toolbar title={title} toggleDrawer={toggleDrawer} open={open} onSearchQuery={onSearchQuery} onSearchSuggestions={onSearchSuggestions} search={search}/>
         <Drawer toggleDrawer={toggleDrawer} open={open} nav={nav} />
@@ -34,7 +34,7 @@ function App( props ) {
           }}
           style={{padding: 0, margin: 0}}
         >
-          <div style={{paddingTop: "5rem"}}/>
+          <div style={{paddingTop: "5rem"}}></div>
 
           <Breadcrumbs data={breadcrumbs} style={{padding: 0, marginBottom: "0.5rem", marginLeft: "1rem"}}/>
           <div style={{padding: 0, margin: 0}}>
@@ -47,8 +47,8 @@ function App( props ) {
       <Box component="footer" style={{margin: 0, padding: 0}} >
         {footer}
       </Box>
-    </div>
+    </>
   );
 }
 
-export default App;
+export default DashboardApp;

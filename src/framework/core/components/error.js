@@ -25,7 +25,6 @@ const Detail = styled('div')({
   backgroundColor: 'white',
   padding: '0.5rem',
   color: 'black',
-
 })
 
 class ErrorBoundary extends React.Component {
@@ -55,7 +54,7 @@ class ErrorBoundary extends React.Component {
             <hr/>
             <Detail>
             {errors.map((e, key) => 
-              <div key={key++} style={{fontSize:'0.8em'}}>{e.toString()}</div>
+              <div key={key} style={{fontSize:'0.8em'}}>{e.toString()}</div>
             )}
             </Detail>          
         </Frame>

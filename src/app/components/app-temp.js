@@ -13,13 +13,7 @@ const AppTemp = ( props ) =>{
 
   }, [])
 
-
-  return(
-    <>
-      {props.children}
-    </>
-  )
-
+  return props.children
 }
 
 export default AppTemp;

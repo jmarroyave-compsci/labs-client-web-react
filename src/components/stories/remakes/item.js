@@ -15,12 +15,11 @@ export default function MovieItem( props ){
         image={(image) ? image.poster : image}
         imageHeight={100}
         text={ <div>
-                  {recs.map( r => 
-                    <div>
-                      <LinkMovie id={r.id}>
-                        <Field title={date(r.releasedDate, "YYYY")} value={(r.directors[0]) ? r.directors[0].name : "?"}/>
-                      </LinkMovie>
-                    </div>
+                  {recs.map( (r, key) =>                     
+                    <Field 
+                      title={date(r.releasedDate, "YYYY")} 
+                      value={<Linkit id={r.id} key={key}>{(r.directors[0]) ? r.directors[0].name : "?"}</Linkit>}
+                    />                    
                   )}
                 </div>
               }
@@ -32,4 +31,9 @@ export default function MovieItem( props ){
     
   )
   
+}
+
+function Linkit( {id, children} ){
+  if( id ) return <LinkMovie id={id}><div>{children}</div></LinkMovie>
+  return children;
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import CoreProxy from './proxy';
-import withModule from '../../components/with-module';
 import ErrorBoundry from '../../components/error';
 import theme from 'config/theme/main';
 
@@ -32,10 +31,8 @@ class LayoutSection extends React.Component{
 
 		return (
 			<ErrorBoundry from="/core/ui/section">
-				<div className={`com-layout-section`}>
-					<div className={`${className}`} style={style}>
-						{children}
-					</div>
+				<div className={`com-layout-section ${className}`} style={style}>
+					{children}
 				</div>
 			</ErrorBoundry>
 		)		
@@ -87,4 +84,4 @@ class LayoutSection extends React.Component{
 	}	
 } 
 
-export default withModule(LayoutSection);
+export default LayoutSection;

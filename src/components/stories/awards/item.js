@@ -31,3 +31,8 @@ export default function AwardItem( props ){
   )
   
 }
+
+function Linkit( {id, children} ){
+  if( id ) return <LinkMovie id={id}><div>{children}</div></LinkMovie>
+  return children;
+}
