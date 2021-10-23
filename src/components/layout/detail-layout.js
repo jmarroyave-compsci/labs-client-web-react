@@ -1,6 +1,6 @@
 import React from 'react';
-import Cols2Layout from "components/layout/cols-2-layout";
-import Stack from '@mui/material/Stack';
+import Cols2Layout from "layout/cols-2-layout";
+import Stack from 'com/ui/stack';
 
 export default function Layout( props ){
   return (

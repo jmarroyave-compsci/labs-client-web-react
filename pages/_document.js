@@ -4,8 +4,8 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 // MUI Core
 import { ServerStyleSheets } from '@material-ui/core/styles';
 // Config
-import theme from 'config/theme/main';
-import createEmotionCache from 'config/theme/emotion-cache';
+import theme from 'app/config/theme/main';
+import createEmotionCache from 'app/config/theme/emotion-cache';
 
 export default class MyDocument extends Document {
   render() {

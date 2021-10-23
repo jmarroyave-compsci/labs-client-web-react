@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux'
 import { setPage } from 'app/state' 
 import { useRouter } from 'next/router';
-import Layout from 'components/stories/video-games';
-import { fetchData } from 'components/stories/video-games/automata'
+import Layout from 'com/pages/video-games';
+import { fetchData } from 'com/pages/video-games/automata'
 
 const Page = ( props ) => {
   const dispatch = useDispatch();

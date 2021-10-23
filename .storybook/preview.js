@@ -3,9 +3,8 @@ import { MockedProvider } from '@apollo/client/testing';
 import { addDecorator } from "@storybook/react";
 import { MemoryRouter } from "react-router";
 
-import NAV from 'config/navigation';
-import Constants from 'config/constants';
-import SERVER from 'config/values/server';
+import NAV from 'app/config/navigation';
+import Constants from 'app/config/constants';
     
 import "res/assets/css/material-icon.css";
 import "res/assets/css/roboto.css";

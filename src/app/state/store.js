@@ -2,7 +2,7 @@ import { createStore, combineReducers, applyMiddleware, compose  } from 'redux'
 import { setupListeners } from '@reduxjs/toolkit/query'
 import * as rtk  from '@reduxjs/toolkit'
 
-import AppReducer from './app-slice'
+import AppReducer from './app-model'
 import { api as APILocal } from 'app/services/api-local'
 
 const staticReducers = {
@@ -74,17 +74,6 @@ function configureStore(initialState) {
   const reducerManager = createReducerManager(staticReducers)
 
   // Create a store with the root reducer function being the one exposed by the manager.
-  /*
-  const composedEnhancer = compose(APILocal.middleware())
-  console.log(composedEnhancer)
-  const store = createStore(
-    reducerManager.reduce, 
-    initialState, 
-    composedEnhancer
-  )
-  */
-
-  //console.log(reducerManager)
 
   const store = rtk.configureStore({
     reducer: reducerManager.reduce, //reducerManager.getReducerMap(), 

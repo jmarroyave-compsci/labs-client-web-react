@@ -1,18 +1,19 @@
 import React, { useEffect } from 'react';
-import Layout from 'components/pages/home';
+import Layout from 'com/pages/home';
 import { useDispatch } from 'react-redux'
 import { setPage } from 'app/state' 
-import { getPosts } from 'components/pages/blog/data/posts' 
-import { fetchData as fetchMovies } from 'components/stories/movies/automata'
-import { fetchData as fetchPeople } from 'components/stories/people/automata'
-import { fetchData as fetchTVShows } from 'components/stories/tv-shows/automata'
-import { fetchData as fetchVideoGames } from 'components/stories/video-games/automata'
-import { fetchData as fetchPodcasts } from 'components/stories/podcasts/automata'
-import { fetchData as fetchRemakes } from 'components/stories/remakes/automata'
-import { fetchData as fetchPodcastsMusic } from 'components/stories/podcast-music/automata'
-import { fetchData as fetchMoviesFestivals } from 'components/stories/movies-festivals/automata'
-import { fetchData as fetchMoviesAwards } from 'components/stories/awards/automata'
-import { fetchData as fetchProfessions } from 'components/stories/professions/automata'
+import { getPosts } from 'data/blog' 
+import Constants from 'app/config/constants'
+import { fetchData as fetchMovies } from 'com/pages/movies/automata'
+import { fetchData as fetchPeople } from 'com/pages/people/automata'
+import { fetchData as fetchTVShows } from 'com/pages/tv-shows/automata'
+import { fetchData as fetchVideoGames } from 'com/pages/video-games/automata'
+import { fetchData as fetchPodcasts } from 'com/pages/podcasts/automata'
+import { fetchData as fetchRemakes } from 'com/pages/remakes/automata'
+import { fetchData as fetchPodcastsMusic } from 'com/pages/podcast-music/automata'
+import { fetchData as fetchMoviesFestivals } from 'com/pages/movies-festivals/automata'
+import { fetchData as fetchMoviesAwards } from 'com/pages/awards/automata'
+import { fetchData as fetchProfessions } from 'com/pages/professions/automata'
 
 const Page = ( props ) => {
   const dispatch = useDispatch();
@@ -55,7 +56,7 @@ const Page = ( props ) => {
     dispatch( fetchMoviesAwards( {
       renderer: "banner",
       entity: "movies",
-      year: (process.env.NEXT_PUBLIC_LOCAL) ? 2005 : 2018 - (Math.floor(Math.random() * 50)),
+      year: (Constants.LOCAL) ? 2005 : 2018 - (Math.floor(Math.random() * 50)),
       page: 1
     } ) )
 

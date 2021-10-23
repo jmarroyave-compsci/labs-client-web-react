@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux'
 import { setPage } from 'app/state' 
 import { useRouter } from 'next/router';
-import Layout from 'components/stories/directors';
-import { fetchData } from 'components/stories/directors/automata'
+import Layout from 'com/pages/directors';
+import { fetchData } from 'com/pages/directors/automata'
 
 const ENTITY = "movies"
 

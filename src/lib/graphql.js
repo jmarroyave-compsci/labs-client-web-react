@@ -1,8 +1,9 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client"
+import Constants from 'app/config/constants'
 
 export const fetch = async function( query, vars, transformResponse ){
   const apolloClient = new ApolloClient({
-    uri: process.env.NEXT_PUBLIC__DATA_GRAPHQL,
+    uri: Constants.SERVERS.GRAPHQL,
     cache: new InMemoryCache(),
   });
 

@@ -2,15 +2,15 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "app": ["src/app/components/app"],
       "app/*": ["src/app/*"],
       "lib/*": ["src/lib/*"],
-      "config/*": ["src/app/config/*"],
-      "components/*": ["src/components/*"],
-      "core/*": ["src/framework/core/*"],
-      "shared/*": ["src/framework/shared/*"],
       "data/*": ["src/data/*"],
       "res/*": ["src/res/*"],
+      "com/*": ["src/components/com/*"],
+      "core/*": ["src/components/core/*"],
+      "shared/*": ["src/components/shared/*"],
+      "layout/*": ["src/components/layout/*"],
+      "style/*": ["src/components/style/*"],
     }
   }
 }

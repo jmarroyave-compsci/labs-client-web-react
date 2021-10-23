@@ -1,0 +1,1296 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`STORIES_REMAKES compare against snapshot 1`] = `
+<div>
+  <div
+    class="css-nen11g-MuiStack-root"
+  >
+    <div
+      style="margin-bottom: 1rem;"
+    />
+    <div
+      class="css-1exnf3f-MuiStack-root"
+    >
+      <div
+        class="MuiGrid-root page-module MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+        >
+          <div
+            class="css-1n2z1i"
+          >
+            <div
+              class="css-t7ovy2"
+            >
+              <div
+                class="css-t7ovy2"
+              >
+                <div
+                  class="css-1p5q5e5-MuiStack-root"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-container"
+                    style="width: 100%;"
+                  >
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                    >
+                      <div
+                        class="css-olyig7"
+                      >
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+                        >
+                          <div
+                            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                          >
+                            <div
+                              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                            >
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+                              >
+                                Home
+                              </p>
+                              <span
+                                class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardMedia-root css-16cvb1l-MuiCardMedia-root"
+                            height="100"
+                            role="image"
+                            style="height: 0px; padding-top: 56.25%; background-color: rgb(239, 239, 239);"
+                          />
+                          <div
+                            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                          >
+                            <div
+                              class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                            >
+                              <div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1915
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Maurice Elvey
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1919
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Lois Weber
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1916
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Raymond B. West
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1911
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Oscar Apfel
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1984
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Rory Kelly
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                    >
+                      <div
+                        class="css-olyig7"
+                      >
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+                        >
+                          <div
+                            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                          >
+                            <div
+                              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                            >
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+                              >
+                                Alone
+                              </p>
+                              <span
+                                class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardMedia-root css-16cvb1l-MuiCardMedia-root"
+                            height="100"
+                            role="image"
+                            style="height: 0px; padding-top: 56.25%; background-color: rgb(239, 239, 239);"
+                          />
+                          <div
+                            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                          >
+                            <div
+                              class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                            >
+                              <div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1931
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Grigoriy Kozintsev
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1931
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Henri Diamant-Berger
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1959
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Vladimir Pogacic
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1986
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        John Putch
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1976
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Raúl de la Torre
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                    >
+                      <div
+                        class="css-olyig7"
+                      >
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+                        >
+                          <div
+                            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                          >
+                            <div
+                              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                            >
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+                              >
+                                Broken
+                              </p>
+                              <span
+                                class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardMedia-root css-16cvb1l-MuiCardMedia-root"
+                            height="100"
+                            role="image"
+                            style="height: 0px; padding-top: 56.25%; background-color: rgb(239, 239, 239);"
+                          />
+                          <div
+                            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                          >
+                            <div
+                              class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                            >
+                              <div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    2000
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Elle Travis
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                    >
+                      <div
+                        class="css-olyig7"
+                      >
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+                        >
+                          <div
+                            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                          >
+                            <div
+                              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                            >
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+                              >
+                                Trapped
+                              </p>
+                              <span
+                                class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardMedia-root css-16cvb1l-MuiCardMedia-root"
+                            height="100"
+                            role="image"
+                            style="height: 0px; padding-top: 56.25%; background-color: rgb(239, 239, 239);"
+                          />
+                          <div
+                            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                          >
+                            <div
+                              class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                            >
+                              <div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1937
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Leon Barsha
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1949
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Richard Fleischer
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1999
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Robert Mann
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1923
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Dave Fleischer
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1931
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Kurt Neumann
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                    >
+                      <div
+                        class="css-olyig7"
+                      >
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+                        >
+                          <div
+                            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                          >
+                            <div
+                              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                            >
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+                              >
+                                The Gift
+                              </p>
+                              <span
+                                class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardMedia-root css-16cvb1l-MuiCardMedia-root"
+                            height="100"
+                            role="image"
+                            style="height: 0px; padding-top: 56.25%; background-color: rgb(239, 239, 239);"
+                          />
+                          <div
+                            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                          >
+                            <div
+                              class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                            >
+                              <div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1999
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Gary Farmer
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    2000
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Sam Raimi
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1997
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        ?
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                    >
+                      <div
+                        class="css-olyig7"
+                      >
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+                        >
+                          <div
+                            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                          >
+                            <div
+                              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                            >
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+                              >
+                                The Interview
+                              </p>
+                              <span
+                                class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardMedia-root css-16cvb1l-MuiCardMedia-root"
+                            height="100"
+                            role="image"
+                            style="height: 0px; padding-top: 56.25%; background-color: rgb(239, 239, 239);"
+                          />
+                          <div
+                            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                          >
+                            <div
+                              class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                            >
+                              <div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1995
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Monique Gardenberg
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1998
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Craig Monahan
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                    >
+                      <div
+                        class="css-olyig7"
+                      >
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+                        >
+                          <div
+                            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                          >
+                            <div
+                              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                            >
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+                              >
+                                The Box
+                              </p>
+                              <span
+                                class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardMedia-root css-16cvb1l-MuiCardMedia-root"
+                            height="100"
+                            role="image"
+                            style="height: 0px; padding-top: 56.25%; background-color: rgb(239, 239, 239);"
+                          />
+                          <div
+                            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                          >
+                            <div
+                              class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                            >
+                              <div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1975
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Paul Eddey
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1967
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Fred Wolf
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1996
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Jonathan C. Aguirre
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                    >
+                      <div
+                        class="css-olyig7"
+                      >
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+                        >
+                          <div
+                            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                          >
+                            <div
+                              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                            >
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+                              >
+                                Silence
+                              </p>
+                              <span
+                                class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardMedia-root css-16cvb1l-MuiCardMedia-root"
+                            height="100"
+                            role="image"
+                            style="height: 0px; padding-top: 56.25%; background-color: rgb(239, 239, 239);"
+                          />
+                          <div
+                            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                          >
+                            <div
+                              class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                            >
+                              <div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1926
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Rupert Julian
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1931
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Louis J. Gasnier
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1971
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Masahiro Shinoda
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1974
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        John Korty
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1997
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Jack Darcus
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                    >
+                      <div
+                        class="css-olyig7"
+                      >
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+                        >
+                          <div
+                            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                          >
+                            <div
+                              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                            >
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+                              >
+                                Hope
+                              </p>
+                              <span
+                                class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardMedia-root css-16cvb1l-MuiCardMedia-root"
+                            height="100"
+                            role="image"
+                            style="height: 0px; padding-top: 56.25%; background-color: rgb(239, 239, 239);"
+                          />
+                          <div
+                            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                          >
+                            <div
+                              class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                            >
+                              <div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1919
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Rex Wilson
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1970
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Yilmaz Güney
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1996
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Oren Tirosh
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1999
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Pete Anderson
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1922
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Legaren à Hiller
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                    >
+                      <div
+                        class="css-olyig7"
+                      >
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-bhp9pd-MuiPaper-root-MuiCard-root"
+                        >
+                          <div
+                            class="MuiCardHeader-root css-185gdzj-MuiCardHeader-root"
+                          >
+                            <div
+                              class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
+                            >
+                              <p
+                                class="MuiTypography-root MuiTypography-body1 MuiTypography-noWrap css-fvtpii-MuiTypography-root"
+                              >
+                                Escape
+                              </p>
+                              <span
+                                class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader css-nrdprl-MuiTypography-root"
+                              />
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardMedia-root css-16cvb1l-MuiCardMedia-root"
+                            height="100"
+                            role="image"
+                            style="height: 0px; padding-top: 56.25%; background-color: rgb(239, 239, 239);"
+                          />
+                          <div
+                            class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
+                          >
+                            <div
+                              class="MuiTypography-root MuiTypography-body2 css-r40f8v-MuiTypography-root"
+                            >
+                              <div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1940
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Mervyn LeRoy
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1948
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Joseph L. Mankiewicz
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1991
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Atef El-Tayeb
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1990
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Richard Styles
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                                <div>
+                                  <div
+                                    class="css-1r75mpf"
+                                  >
+                                    1937
+                                  </div>
+                                  <div
+                                    class="css-bczp0b"
+                                  >
+                                    <div
+                                      class="css-1mtsvt9"
+                                    >
+                                      <div>
+                                        Mary Ellen Bute
+                                      </div>
+                                    </div>
+                                     
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="css-1clyo4s-MuiStack-root"
+                  >
+                    <button
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+                      disabled=""
+                      tabindex="-1"
+                      type="button"
+                    >
+                      Back
+                    </button>
+                    <button
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      Next
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+        >
+          <div
+            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+          >
+            <div
+              class="css-vcmx0t"
+            >
+              <div
+                class="css-365mzx"
+              >
+                Stories
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,6 +1,6 @@
 import React from 'react';
-import App from 'components/app'
-import Layout from 'components/pages/soon';
+import App from 'com/app'
+import Layout from 'com/pages/soon';
 
 const Page = ( props ) => {
   const params = { ...props };

@@ -1,17 +1,11 @@
 import React from 'react';
-import App from 'components/app'
-import Layout from 'components/pages/blog/page';
-import { getAllPosts, getPost } from 'components/pages/blog/data/posts' 
+import Layout from 'com/pages/about-project-blog-post/page';
+import { getAllPosts, getPost } from 'data/blog' 
 import { useRouter } from 'next/router';
 
 const Page = ( props ) => {
-  const params = { ...props };
-  params.breadcrumbs = [{name: "about", url: '/about'}, {name: "log", url: '/about/log'}, {name: props.article.meta.title}]
-
   return (
-    <App {...params}>
-      <Layout {...params}/> 
-    </App>
+      <Layout {...props} breadcrumbs={`/about/project/log/${props.article.meta.slug}`}/> 
   )
 }
 

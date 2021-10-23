@@ -1,3 +1,3 @@
-import { appSlice } from './app-slice'
+import { AppModel } from './app-model'
 
-export const { setPage } = appSlice.actions
+export const { setPage } = AppModel.actions

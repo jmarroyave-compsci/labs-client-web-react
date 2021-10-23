@@ -1,7 +1,6 @@
 import React from 'react';
-import App from 'components/app'
-import Layout from 'components/pages/blog/index';
-import { getPosts, getTotalPages } from 'components/pages/blog/data/posts' 
+import Layout from 'com/pages/about-project-blog/page';
+import { getPosts, getTotalPages } from 'data/blog' 
 import { useRouter } from 'next/router';
 
 const Page = ( props ) => {
@@ -11,12 +10,9 @@ const Page = ( props ) => {
   const route = { page }
 
   const params = { ...props, route };
-  params.breadcrumbs = [{name: "about", url: '/about'}, {name: "log"}]
 
   return (
-    <App {...params}>
-      <Layout {...params}/> 
-    </App>
+      <Layout {...params} breadcrumbs={`/about/project/log`}/> 
   )
 }
 

@@ -1,20 +1,9 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux'
-import { setPage } from 'app/state' 
-import Layout from 'components/pages/about/data';
+import React from 'react'
+import Layout from 'com/pages/about-data/page';
 
 const Page = ( props ) => {
-  const dispatch = useDispatch();
-
-  useEffect( () => {
-    dispatch(setPage({
-      breadcrumbs: [{name: "movies"}],
-    }));    
-
-  }, [])
-
   return (
-      <Layout/> 
+      <Layout breadcrumbs={`/about/data`}/> 
   )
 }
 

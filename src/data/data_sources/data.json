@@ -1,8 +1,0 @@
-[
-	{ "_id" : "615b3193243c3886a019fa34", "added" : "2021-09-06", "name" : "Kaggle: netflix show", "url" : "https://www.kaggle.com/shivamb/netflix-shows" },
-	{ "_id" : "615b3194243c3886a019fa35", "added" : "2021-09-20", "name" : "IMDB", "url" : "https://www.imdb.com/interfaces/" },
-	{ "_id" : "615b3194243c3886a019fa36", "added" : "2021-09-20", "name" : "Oscar awards", "url" : "https://datahub.io/rufuspollock/oscars-nominees-and-winners" },
-	{ "_id" : "615b3194243c3886a019fa37", "added" : "2021-09-21", "name" : "Golden Globes awards", "url" : "https://www.kaggle.com/unanimad/golden-globe-awards" },
-	{ "_id" : "615b3194243c3886a019fa38", "added" : "2021-09-21", "name" : "Emmy awards", "url" : "https://www.kaggle.com/unanimad/emmy-awards" },
-	{ "_id" : "615b3194243c3886a019fa39", "added" : "2021-09-21", "name" : "Podcasts", "url" : "https://data.world/brandon-telle/podcasts-dataset" }		
-]

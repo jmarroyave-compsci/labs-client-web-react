@@ -1,13 +1,15 @@
 import React from 'react';
-import Stack from '@mui/material/Stack';
+import Stack from 'com/ui/stack';
 import Body from 'core/ui/layout/body';
 import Section from 'core/ui/layout/section';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
-import RelatedStories from 'components/ui/related_stories'
+import RelatedStories from "com/related_stories"
+import { FrameSkeleton } from 'style/boxes';
 
 export default function Cols2Layout( props ){
   const { banner, mainCol, rightCol, id } = props 
+  const noPadding = (props.noPadding) ? props.noPadding : false;
   return (
     <Stack>
       {banner &&
@@ -17,12 +19,14 @@ export default function Cols2Layout( props ){
           </Section>
         </div>
       }
-      <Body>
+      <Body noPadding={noPadding}>
         <GridContainer className="page-module" fill>
-          <GridItem xs={12} sm={12} md={9} lg={10} style={{paddingRight: '1rem'}}>
-            {mainCol}
+          <GridItem xs={12} sm={12} md={9} lg={10}>
+            <FrameSkeleton>
+              {mainCol}
+            </FrameSkeleton>
           </GridItem>
-          <GridItem xs={12} sm={12} md={3} lg={2} style={{paddingRight: '1rem'}}>
+          <GridItem xs={12} sm={12} md={3} lg={2}>
             <RelatedStories {...props} filter={id} />
             {rightCol}
           </GridItem>
