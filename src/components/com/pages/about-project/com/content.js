@@ -8,9 +8,9 @@ import BannerLog from 'com/pages/about-project-blog/banner'
 const Content = ( props ) => {
   return (
     <Stack>
-      <Section className="section-1"><BannerLog data={props.blog}/></Section>
-      <Section className="section-3"><BannerRoadmap/></Section>
-      <Section className="section-0"><BannerSitemap/></Section>
+      <Section><BannerLog data={props.blog}/></Section>
+      <Section><BannerRoadmap/></Section>
+      <Section><BannerSitemap/></Section>
    </Stack>
   )
 }

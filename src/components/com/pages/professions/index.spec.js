@@ -4,7 +4,7 @@ import configureStore from 'redux-mock-store';
 import {render, fireEvent, waitFor, screen} from '@testing-library/react'
 import '@testing-library/jest-dom'
 
-import { itMustHaveNoErrors } from "lib/tests/shared"
+import { itMustHaveNoErrors } from "tests/jest/shared"
 
 import Page from '.';
 import config from './.config';

@@ -13,7 +13,8 @@ pipeline {
         }
         stage('test') {
             steps {
-                bat 'npm test'       
+                bat 'npm test'
+                bat 'npm test-cypress'         
             }
         }
         stage('upload to gitpages') {

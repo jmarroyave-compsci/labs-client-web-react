@@ -2,7 +2,8 @@ import React from 'react'
 import { getLoC } from 'data/loc';
 import Stack from 'com/ui/stack';
 import Table from 'core/ui/table'
-import { Title } from 'style/infography'
+import { Title } from 'style/banner'
+import { Frame } from 'style/boxes'
 import { number as format } from 'core/lib/format'
 
 export default function Sources( props ){
@@ -10,22 +11,23 @@ export default function Sources( props ){
   data = getTable(data);
 
   return (
-    <Stack>
-      <Title>Lines of Code</Title>
-
-      <Table
-        tableHeader={data.header}
-        tableData={data.rows}
-        showHeader={true}
-      />
-    </Stack>
+    <Frame>
+      <Stack>
+        <Title>Lines of Code (LoC)</Title>
+        <Table
+          tableHeader={data.header}
+          tableData={data.rows}
+          showHeader={true}
+        />
+      </Stack>
+    </Frame>
   )
 
 }
 
 function getTable( locData ){
   var resp = [];
-  var header = ["area", "files", "loc", "node_modules", "loc", "project", "loc"]  
+  var header = ["area", "total files", "LoC", "node_modules", "LoC", "files", "LoC"]  
   Object.keys(locData).forEach( key => {
     var obj = locData[key]
     var dates = Object.keys(obj)

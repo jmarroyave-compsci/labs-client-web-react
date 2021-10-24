@@ -1,0 +1,11 @@
+{
+	"baseUrl": "http://localhost:3000",
+	"downloadsFolder": "src/tests/cypress/downloads",
+	"fixturesFolder": "src/tests/cypress/fixtures",
+	"integrationFolder": "src/tests/cypress/integration",
+	"pluginsFile": "src/tests/cypress/plugins/index.js",
+	"screenshotsFolder": "src/tests/cypress/screenshots",
+	"supportFile": "src/tests/cypress/support",
+	"videosFolder": "src/tests/cypress/videos",
+	"testFiles": "**/*.*"
+}

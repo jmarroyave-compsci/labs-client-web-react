@@ -75,10 +75,9 @@ class LayoutSection extends React.Component{
 				    color: '#333',   
 				}
 			default: 
-				if(style != "") console.log(style);
 				return {
-					background: '#f0f0f0',
-				    color: 'black',   
+					background: 'inherit',
+				    color: 'inherit',   
 				}
 		}
 	}	

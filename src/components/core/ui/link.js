@@ -4,12 +4,14 @@ import { default as _Link } from 'next/link';
 import constants from './_';
 import Button from '@mui/material/Button';
 
-const LinkBox = styled('div')({
+const LinkBox = styled('span')({
     cursor: 'pointer',
     textDecoration: 'underline',
     textDecorationStyle: 'dotted',
     textDecorationColor: 'rgba(0,0,0,0.15)',
     textDecorationThickness: '1px',
+    display: 'flex',
+    flexGrow: 1,
 });
 
 const Link =  ( props ) => {
@@ -27,15 +29,11 @@ const Link =  ( props ) => {
     const raised = true;
     const target = (!internal) ? "_blank" : '_self'
     return (
-        <LinkBox>
-            {(jump == false && internal == true && constants.links_disabled == false) ?
-                <_Link className={className} href={to}>
-                    {children}
-                </_Link>
-            :
-                <a className={className} href={to} target={target}>{children}</a>
-            }
-        </LinkBox>
+        <_Link className={className} href={to}>
+            <LinkBox>
+                {children}
+            </LinkBox>
+        </_Link>
     );
 }
 

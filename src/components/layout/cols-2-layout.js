@@ -13,7 +13,7 @@ export default function Cols2Layout( props ){
   return (
     <Stack>
       {banner &&
-        <div style={{marginBottom: '1rem'}}>
+        <div style={{marginBottom: '2rem'}}>
           <Section compact className="section-0">
             {banner}
           </Section>
@@ -27,8 +27,10 @@ export default function Cols2Layout( props ){
             </FrameSkeleton>
           </GridItem>
           <GridItem xs={12} sm={12} md={3} lg={2}>
-            <RelatedStories {...props} filter={id} />
-            {rightCol}
+            <div style={{paddingLeft: '1rem', paddingRight: '0.5rem'}}>
+              <RelatedStories {...props} filter={id} />
+              {rightCol}
+            </div>
           </GridItem>
         </GridContainer>
       </Body>

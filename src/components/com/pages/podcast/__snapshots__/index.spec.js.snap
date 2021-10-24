@@ -15,7 +15,7 @@ exports[`PAGE_PODCAST compare against snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
         >
           <div
-            class="css-1n2z1i"
+            class="css-1tltgwc"
           >
             <div
               class="css-nen11g-MuiStack-root"
@@ -24,15 +24,22 @@ exports[`PAGE_PODCAST compare against snapshot 1`] = `
                 class="css-nen11g-MuiStack-root"
               >
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <div
                     style="height: 300px; width: 100%; background-color: rgb(51, 51, 51);"
                   >
-                    <img
-                      height="300"
-                      src="http://az592690.vo.msecnd.net/media/channels/gillespetersonww/images/original/gillespeterson_logo-square-thumb-e1352205457791.jpg"
-                    />
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
                   </div>
                 </div>
                 <div
@@ -53,7 +60,7 @@ exports[`PAGE_PODCAST compare against snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <h2
                     class="css-5975dz"
@@ -73,7 +80,7 @@ exports[`PAGE_PODCAST compare against snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <div
                     class="css-1avqrsh"
@@ -82,7 +89,7 @@ exports[`PAGE_PODCAST compare against snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <h3
                     class="css-1wsh0w7"
@@ -127,15 +134,19 @@ exports[`PAGE_PODCAST compare against snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+            style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="css-vcmx0t"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
             >
               <div
-                class="css-365mzx"
+                class="css-vcmx0t"
               >
-                Stories
+                <div
+                  class="css-365mzx"
+                >
+                  Stories
+                </div>
               </div>
             </div>
           </div>

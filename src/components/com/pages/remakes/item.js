@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from 'core/ui/cards/img-text';
+import Card from 'core/ui/cards/media';
 import LinkMovie from 'com/entities/movie/link'
 import Awards from 'com/awards'
 import Typography from '@material-ui/core/Typography';
@@ -23,9 +23,6 @@ export default function RemakeItem( props ){
                 </div>
               }
         title={name}
-        actions={[
-          
-        ]}
       />
     
   )

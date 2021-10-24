@@ -9,19 +9,20 @@ import Loading from 'core/ui/loading';
 
 class Indicator extends React.Component {
   render() {
-  	var { title, data, smaller, type, icon, loading } = this.props;
-
+  	var { title, data, value, smaller, type, icon, loading, format, width } = this.props;
+    data = ( data ) ? data : value;
+    
     return (
-      <DashboardCard icon={icon} title={title} subtitle={this.renderType( loading, type, data )}/>
+      <DashboardCard width={width} icon={icon} title={title} subtitle={this.renderType( loading, type, data, format )}/>
     );
   }
 
-  renderType( loading, type, data ){
+  renderType( loading, type, data, format ){
     if(loading === true) return <Loading/>
 
     switch(type){
       case "number":
-        return <Number value={data} format={"0.0a"}/>
+        return <Number value={data} format={format}/>
       case "string":
         return data;
       case "date":
@@ -36,6 +37,8 @@ Indicator.propTypes = {
   title: PropTypes.string,
   type: PropTypes.oneOf(['number', 'string', 'date']),
   smaller: PropTypes.bool,
+  format: PropTypes.string,
+  width: PropTypes.number,
 };
 
 Indicator.defaultProps = {
@@ -43,6 +46,7 @@ Indicator.defaultProps = {
   data: null,
   type: "number",
   smaller: false,
+  format: "0.0a",
 };
 
 

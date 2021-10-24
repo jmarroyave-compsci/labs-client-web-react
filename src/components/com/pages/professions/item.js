@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from 'core/ui/cards/img-text';
+import Card from 'core/ui/cards/media';
 import Link from 'core/ui/link'
 
 export default function MovieItem( props ){
@@ -7,13 +7,12 @@ export default function MovieItem( props ){
 
   return (
     
+    <Link href={url}>
       <Card
         title={name}
         image={img}
-        actions={[
-          <Link href={url}>Go</Link>,
-        ]}
       />
+    </Link>    
     
   )
   

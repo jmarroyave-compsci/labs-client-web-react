@@ -4,7 +4,7 @@ export default {
 	},
 	page: {
 		title: "Roadmap?",
-		description: "where this project goes?",
+		description: "where this project comes from?",
 		url: `/about/project/roadmap`,
 	},
 	banner: {

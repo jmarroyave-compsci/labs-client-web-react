@@ -6,8 +6,8 @@ import DataRepos from './repos';
 const Content = ( props ) => {
   return (
     <Stack>
-      <DataSources/>
-      <DataRepos/>
+      <Section><DataSources/></Section>
+      <Section><DataRepos/></Section>
    </Stack>
   )
 }

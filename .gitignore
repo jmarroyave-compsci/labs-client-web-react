@@ -33,3 +33,7 @@ yarn-error.log*
 
 # loc
 src/data/loc/reports
+
+
+# cypress
+src/tests/cypress/videos

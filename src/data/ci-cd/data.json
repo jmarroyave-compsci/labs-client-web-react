@@ -1,0 +1,12 @@
+{
+  "2021-10-24": [
+    {
+      "name": "client",
+      "commits": 152
+    },
+    {
+      "name": "server",
+      "commits": 67
+    }
+  ]
+}

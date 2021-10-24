@@ -42,16 +42,16 @@ class Navigation {
       {
         showInMenu: true, 
         showInDrawer: true, 
-        name: 'TV Show', 
+        name: 'TV Shows', 
         icon: 'tv', 
-        route: '/tv-show', 
+        route: '/tv-shows', 
       },
       {
         showInMenu: true, 
         showInDrawer: true, 
-        name: 'Games', 
+        name: 'Video Games', 
         icon: 'sports_esports', 
-        route: '/games', 
+        route: '/video-games', 
       },
       {
         showInMenu: true, 
@@ -59,6 +59,13 @@ class Navigation {
         name: 'Podcasts', 
         icon: 'podcasts', 
         route: '/podcasts', 
+      },
+      {
+        showInMenu: true, 
+        showInDrawer: true, 
+        name: 'Movie Festivals', 
+        icon: 'festival', 
+        route: '/movies/festivals', 
       },
       {
         showInMenu: true, 
@@ -76,6 +83,13 @@ class Navigation {
         showInMenu: true, 
         showInDrawer: true, 
         separator: true,
+      },
+      {
+        showInMenu: true, 
+        showInDrawer: true, 
+        name: 'Sitemap', 
+        icon: 'account_tree', 
+        route: '/about/project/sitemap', 
       },
       {
         showInMenu: true, 

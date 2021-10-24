@@ -3,6 +3,7 @@ import Stack from 'com/ui/stack';
 import TextLink from "core/ui/text-link"
 import { Title, Description, Footer } from 'style/banner'
 import Carousel from 'com/ui/carousel'
+import LinkButton from 'com/ui/link-button';
 
 const Banner = function( props ){
     const { title, description, carousel, footer, hero, actions, data, item, showData } = props;
@@ -15,7 +16,8 @@ const Banner = function( props ){
         {!hero &&
           <Footer>
             {actions && actions.map( (item, idx) => 
-              <TextLink key={idx} border href={item.url}>{item.title}</TextLink>
+
+              <LinkButton key={idx} border href={item.url}>{item.title}</LinkButton>
             )}
             {footer}
             

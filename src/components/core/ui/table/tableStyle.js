@@ -55,7 +55,7 @@ const tableStyle = (theme) => ({
   },
   tableResponsive: {
     width: "100%",
-    marginTop: theme.spacing(3),
+    marginBottom: theme.spacing(2),
     overflowX: "auto",
   },
   tableHeadRow: {

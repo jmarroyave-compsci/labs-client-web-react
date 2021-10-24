@@ -15,7 +15,7 @@ exports[`SEARCH compare against snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
         >
           <div
-            class="css-1n2z1i"
+            class="css-1tltgwc"
           >
             <div
               class="css-fxtdit"
@@ -281,7 +281,7 @@ exports[`SEARCH compare against snapshot 1`] = `
                 class="css-0"
               >
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <div
                     class="css-1p5q5e5-MuiStack-root"
@@ -300,15 +300,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="css-8kn4zf"
                         >
-                          <div
-                            class="css-1mtsvt9"
+                          <span
+                            class="css-pt399b"
                           >
-                            <a
-                              href="/video-games/tt0410801"
-                            >
-                              transformers
-                            </a>
-                          </div>
+                            transformers
+                          </span>
                         </h3>
                         <div
                           class="css-1gqgroh"
@@ -330,15 +326,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="css-8kn4zf"
                         >
-                          <div
-                            class="css-1mtsvt9"
+                          <span
+                            class="css-pt399b"
                           >
-                            <a
-                              href="/movies/tt0834963"
-                            >
-                              transformers
-                            </a>
-                          </div>
+                            transformers
+                          </span>
                         </h3>
                       </div>
                       <hr
@@ -355,15 +347,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="css-8kn4zf"
                         >
-                          <div
-                            class="css-1mtsvt9"
+                          <span
+                            class="css-pt399b"
                           >
-                            <a
-                              href="/video-games/tt0376266"
-                            >
-                              transformers
-                            </a>
-                          </div>
+                            transformers
+                          </span>
                         </h3>
                         <div
                           class="css-1gqgroh"
@@ -385,15 +373,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="css-8kn4zf"
                         >
-                          <div
-                            class="css-1mtsvt9"
+                          <span
+                            class="css-pt399b"
                           >
-                            <a
-                              href="/movies/tt0418279"
-                            >
-                              transformers
-                            </a>
-                          </div>
+                            transformers
+                          </span>
                         </h3>
                       </div>
                       <hr
@@ -410,15 +394,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="css-8kn4zf"
                         >
-                          <div
-                            class="css-1mtsvt9"
+                          <span
+                            class="css-pt399b"
                           >
-                            <a
-                              href="/video-games/tt1254976"
-                            >
-                              transformers animated: the game
-                            </a>
-                          </div>
+                            transformers animated: the game
+                          </span>
                         </h3>
                         <div
                           class="css-1gqgroh"
@@ -440,15 +420,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="css-8kn4zf"
                         >
-                          <div
-                            class="css-1mtsvt9"
+                          <span
+                            class="css-pt399b"
                           >
-                            <a
-                              href="/tv-shows/tt8300516"
-                            >
-                              transformers ascension
-                            </a>
-                          </div>
+                            transformers ascension
+                          </span>
                         </h3>
                         <div
                           class="css-1gqgroh"
@@ -470,15 +446,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="css-8kn4zf"
                         >
-                          <div
-                            class="css-1mtsvt9"
+                          <span
+                            class="css-pt399b"
                           >
-                            <a
-                              href="/tv-shows/tt6651382"
-                            >
-                              transformers australia: grandpa unboxing
-                            </a>
-                          </div>
+                            transformers australia: grandpa unboxing
+                          </span>
                         </h3>
                         <div
                           class="css-1gqgroh"
@@ -500,15 +472,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="css-8kn4zf"
                         >
-                          <div
-                            class="css-1mtsvt9"
+                          <span
+                            class="css-pt399b"
                           >
-                            <a
-                              href="/movies/tt6782562"
-                            >
-                              transformers cataclysm
-                            </a>
-                          </div>
+                            transformers cataclysm
+                          </span>
                         </h3>
                       </div>
                       <hr
@@ -525,15 +493,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="css-8kn4zf"
                         >
-                          <div
-                            class="css-1mtsvt9"
+                          <span
+                            class="css-pt399b"
                           >
-                            <a
-                              href="/tv-shows/tt8679872"
-                            >
-                              transformers contention
-                            </a>
-                          </div>
+                            transformers contention
+                          </span>
                         </h3>
                         <div
                           class="css-1gqgroh"
@@ -555,15 +519,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="css-8kn4zf"
                         >
-                          <div
-                            class="css-1mtsvt9"
+                          <span
+                            class="css-pt399b"
                           >
-                            <a
-                              href="/movies/tt10403882"
-                            >
-                              transformers crusade
-                            </a>
-                          </div>
+                            transformers crusade
+                          </span>
                         </h3>
                       </div>
                     </div>
@@ -599,15 +559,19 @@ exports[`SEARCH compare against snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+            style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="css-vcmx0t"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
             >
               <div
-                class="css-365mzx"
+                class="css-vcmx0t"
               >
-                Stories
+                <div
+                  class="css-365mzx"
+                >
+                  Stories
+                </div>
               </div>
             </div>
           </div>

@@ -3,7 +3,7 @@ export default {
 		name: "stories_movies_festivals"
 	},
 	page: {
-		title: "Festivals",
+		title: "Movie Festivals",
 		description: "",
 		url: () => `/movies/festivals`,
 	},

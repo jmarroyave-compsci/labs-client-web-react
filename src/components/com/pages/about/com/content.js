@@ -9,10 +9,10 @@ import BannerTimeline from 'com/pages/about-timeline/banner'
 const Content = ( props ) => {
   return (
     <Stack>
-      <Section className="section-1"><BannerProject/></Section>
-      <Section className="section-3"><BannerData/></Section>
-      <Section className="section-0"><BannerTech/></Section>
-      <Section className="section-2"><BannerTimeline/></Section>
+      <Section><BannerProject/></Section>
+      <Section><BannerData/></Section>
+      <Section><BannerTech/></Section>
+      <Section><BannerTimeline/></Section>
    </Stack>
   )
 }

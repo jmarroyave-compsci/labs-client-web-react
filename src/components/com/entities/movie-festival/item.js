@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from 'core/ui/cards/img-text';
+import Card from 'core/ui/cards/media';
 import Link from 'com/entities/movie-festival/link'
 
 export default function MovieItem( props ){
@@ -7,12 +7,11 @@ export default function MovieItem( props ){
 
   return (
     
+    <Link id={id} entity={name}>
       <Card
         title={name}
-        actions={[
-          <Link id={id} entity={name}>Go</Link>,
-        ]}
       />
+    </Link>    
     
   )
   

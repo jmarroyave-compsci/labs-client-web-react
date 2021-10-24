@@ -15,13 +15,13 @@ exports[`PAGE_PERSON compare against snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
         >
           <div
-            class="css-1n2z1i"
+            class="css-1tltgwc"
           >
             <div
               class="css-nen11g-MuiStack-root"
             >
               <div
-                class="css-1n2z1i"
+                class="css-1tltgwc"
               >
                 <div
                   class="css-1okj3ks-MuiStack-root"
@@ -59,15 +59,19 @@ exports[`PAGE_PERSON compare against snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+            style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="css-vcmx0t"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
             >
               <div
-                class="css-365mzx"
+                class="css-vcmx0t"
               >
-                Stories
+                <div
+                  class="css-365mzx"
+                >
+                  Stories
+                </div>
               </div>
             </div>
           </div>

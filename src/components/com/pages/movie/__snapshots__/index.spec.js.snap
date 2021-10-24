@@ -15,7 +15,7 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
         >
           <div
-            class="css-1n2z1i"
+            class="css-1tltgwc"
           >
             <div
               class="css-nen11g-MuiStack-root"
@@ -24,15 +24,22 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                 class="css-nen11g-MuiStack-root"
               >
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <div
                     style="height: 300px; width: 100%; background-color: rgb(51, 51, 51);"
                   >
-                    <img
-                      height="300"
-                      src="https://m.media-amazon.com/images/M/MV5BMTkwOTY0MTc1NV5BMl5BanBnXkFtZTcwMDQwNjA2NQ@@._V1_SX300.jpg"
-                    />
+                    <div
+                      style="display: block; overflow: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; margin: 0px;"
+                    >
+                      <img
+                        data-nimg="fill"
+                        decoding="async"
+                        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                        style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                      />
+                      <noscript />
+                    </div>
                   </div>
                 </div>
                 <div
@@ -96,7 +103,7 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <h2
                     class="css-5975dz"
@@ -105,7 +112,7 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                   </h2>
                 </div>
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <h3
                     class="css-1wsh0w7"
@@ -182,7 +189,7 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <h3
                     class="css-1wsh0w7"
@@ -212,7 +219,7 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <h3
                     class="css-1wsh0w7"
@@ -294,7 +301,7 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                 </div>
                 <div />
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <h3
                     class="css-1wsh0w7"
@@ -312,68 +319,92 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                     >
                       oscar
                     </div>
-                    <div
-                      class="css-1mtsvt9"
+                    <span
+                      class="css-pt399b"
                     >
                       <div
-                        class="css-olyig7"
+                        class="css-1f350ks"
                       >
                         <div
-                          class="css-1cn7rqt"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1trak1w-MuiPaper-root"
                         >
-                          nominee
-                        </div>
-                        <div
-                          class="css-1xplqlt"
-                        >
-                          SOUND EDITING
+                          <div
+                            class="css-1ilyui9"
+                          >
+                            <div
+                              class="css-1cn7rqt"
+                            >
+                              nominee
+                            </div>
+                            <div
+                              class="css-1xplqlt"
+                            >
+                              SOUND EDITING
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </span>
                   </div>
                   <div>
-                    <div
-                      class="css-1mtsvt9"
+                    <span
+                      class="css-pt399b"
                     >
                       <div
-                        class="css-olyig7"
+                        class="css-1f350ks"
                       >
                         <div
-                          class="css-1cn7rqt"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1trak1w-MuiPaper-root"
                         >
-                          nominee
-                        </div>
-                        <div
-                          class="css-1xplqlt"
-                        >
-                          SOUND MIXING
+                          <div
+                            class="css-1ilyui9"
+                          >
+                            <div
+                              class="css-1cn7rqt"
+                            >
+                              nominee
+                            </div>
+                            <div
+                              class="css-1xplqlt"
+                            >
+                              SOUND MIXING
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </span>
                   </div>
                   <div>
-                    <div
-                      class="css-1mtsvt9"
+                    <span
+                      class="css-pt399b"
                     >
                       <div
-                        class="css-olyig7"
+                        class="css-1f350ks"
                       >
                         <div
-                          class="css-1cn7rqt"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1trak1w-MuiPaper-root"
                         >
-                          nominee
-                        </div>
-                        <div
-                          class="css-1xplqlt"
-                        >
-                          VISUAL EFFECTS
+                          <div
+                            class="css-1ilyui9"
+                          >
+                            <div
+                              class="css-1cn7rqt"
+                            >
+                              nominee
+                            </div>
+                            <div
+                              class="css-1xplqlt"
+                            >
+                              VISUAL EFFECTS
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    </span>
                   </div>
                 </div>
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
                   <h3
                     class="css-1wsh0w7"
@@ -387,10 +418,10 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                   </div>
                 </div>
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
-                  <div
-                    class="css-1mtsvt9"
+                  <span
+                    class="css-pt399b"
                   >
                     <h3
                       class="css-1wsh0w7"
@@ -404,7 +435,7 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                         ]
                       </span>
                     </h3>
-                  </div>
+                  </span>
                   <div
                     class="MuiGrid-root MuiGrid-container"
                   >
@@ -412,24 +443,20 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
                     >
                       <div>
-                        <div
-                          class="css-1mtsvt9"
+                        <span
+                          class="css-pt399b"
                         >
-                          <a
-                            href="/people/nm0000881"
-                          >
-                            Michael Bay
-                          </a>
-                        </div>
+                          Michael Bay
+                        </span>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div
-                  class="css-t7ovy2"
+                  class="css-7ry9k1"
                 >
-                  <div
-                    class="css-1mtsvt9"
+                  <span
+                    class="css-pt399b"
                   >
                     <h3
                       class="css-1wsh0w7"
@@ -443,7 +470,7 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                         ]
                       </span>
                     </h3>
-                  </div>
+                  </span>
                   <div
                     class="MuiGrid-root MuiGrid-container"
                   >
@@ -451,15 +478,11 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
                       class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
                     >
                       <div>
-                        <div
-                          class="css-1mtsvt9"
+                        <span
+                          class="css-pt399b"
                         >
-                          <a
-                            href="/people/nm0472567"
-                          >
-                            Ehren Kruger
-                          </a>
-                        </div>
+                          Ehren Kruger
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -474,15 +497,19 @@ exports[`PAGE_MOVIE compare against snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
         >
           <div
-            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+            style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="css-vcmx0t"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
             >
               <div
-                class="css-365mzx"
+                class="css-vcmx0t"
               >
-                Stories
+                <div
+                  class="css-365mzx"
+                >
+                  Stories
+                </div>
               </div>
             </div>
           </div>

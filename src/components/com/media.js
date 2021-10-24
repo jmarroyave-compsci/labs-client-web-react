@@ -24,7 +24,7 @@ function MainImage( props ){
   if ( !src) return <Placeholder {...props}/>
 
   return (
-    <Image src={src} height={height}/>
+    <Image layout={"fill"} src={src} height={height}/>
     )  
 }
 

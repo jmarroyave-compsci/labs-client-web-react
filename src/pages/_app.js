@@ -20,9 +20,8 @@ import Constants from 'app/config/constants'
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
-import 'core/app/dashboard/app.css';
 import 'core/ui/theme/theme.css';
-import 'shared/globals/social_networks/social_networks.css';
+import 'core/ui/theme/components.css';
 
 import { useRouter } from 'next/router';
 

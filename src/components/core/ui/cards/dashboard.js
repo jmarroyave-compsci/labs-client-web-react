@@ -15,14 +15,16 @@ import styles from "./dashboardStyle.js";
 const useStyles = makeStyles(styles);
 
 export default function CardDashboard(props) {
-  const {icon, title, subtitle, footer, color } = props;
+  const {icon, title, subtitle, footer, color, width } = props;
   const classes = useStyles();
   return (
-      <Card className={classes.cardHeader}>
+      <Card className={classes.cardHeader} style={{width: width}}>
         <CardHeader color={color} stats icon>
-          <CardIcon color={color}>
-            <Icon>{icon}</Icon>
-          </CardIcon>
+          {icon &&
+            <CardIcon color={color}>
+              <Icon>{icon}</Icon>
+            </CardIcon>
+          }
           <p className={classes.cardCategory}>{title}</p>
           <h3 className={classes.cardTitle}>
             {subtitle}
@@ -50,7 +52,6 @@ CardDashboard.propTypes = {
 
 CardDashboard.defaultProps = {
   title: "Title",
-  icon: "content_copy",
   footer: null,
   color: "primary",
 }

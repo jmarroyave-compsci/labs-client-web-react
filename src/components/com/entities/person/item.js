@@ -1,6 +1,6 @@
 import React from 'react'
-import Card from 'core/ui/cards/img-text';
-import LinkPerson from 'com/entities/person/link'
+import Card from 'core/ui/cards/media';
+import Link from 'com/entities/person/link'
 import Typography from '@material-ui/core/Typography';
 
 export default function MovieItem( props ){
@@ -8,13 +8,12 @@ export default function MovieItem( props ){
 
   return (
     
+    <Link id={id} entity={name}>
       <Card
         title={name}
         text={text}
-        actions={[
-          <LinkPerson id={id}>Go</LinkPerson>,
-        ]}
       />
+    </Link>    
     
   )
   

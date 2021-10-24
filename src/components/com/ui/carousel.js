@@ -1,18 +1,10 @@
 import React from 'react'
-import { styled } from '@mui/material/styles';
 import Carousel from 'react-multi-carousel'
 import 'react-multi-carousel/lib/styles.css';
 import Skeleton from '@mui/material/Skeleton';
 import Stack from 'com/ui/stack';
 import Paper from '@mui/material/Paper';
-
-const Frame = styled('div')({
-  padding: '1rem 0',
-});
-
-const Item = styled('div')({
-  padding: '0.5rem',
-});
+import { Frame, Item } from 'style/boxes'
 
 export default function _Carousel( props ){
     var { data, loading } = props;
@@ -22,7 +14,7 @@ export default function _Carousel( props ){
     return (
       <Frame>
         <Carousel
-          additionalTransfrom={0}
+          additionalTransfrom={0}  
           arrows
           autoPlaySpeed={3000}
           centerMode={false}
@@ -32,7 +24,7 @@ export default function _Carousel( props ){
           draggable
           focusOnSelect={false}
           infinite
-          itemClass=""
+          itemClass="ui-carousel-item"
           keyBoardControl
           minimumTouchDrag={80}
           renderButtonGroupOutside={false}
@@ -67,15 +59,16 @@ export default function _Carousel( props ){
           sliderClass=""
           slidesToSlide={1}
           swipeable
+          style={{display: 'flex'}}
         >
           {data.map( (item, idx) => 
-            <Item key={idx}>
+          <Item key={idx}>
               {(loading) ? 
                 <Placeholder/>
               :
                 (props.renderItem) ? props.renderItem(item) : renderItem(item)
               }
-            </Item>
+          </Item>
           )}
         </Carousel>
       </Frame>
@@ -85,13 +78,11 @@ export default function _Carousel( props ){
 
 function Placeholder(){
   return (
-    <Paper style={{padding: '0.5rem'}}>
       <Stack spacing={1}>
         <Skeleton variant="text" width={"80%"}/>
         <Skeleton variant="rectangular" height={118} />
         <Skeleton variant="text" />
       </Stack>  
-    </Paper>
   )    
 }
 

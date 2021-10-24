@@ -1,6 +1,11 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
 
+export const Padding = styled('div')({
+  padding: '1rem',
+});
+
+
 export const Title = styled('h2')({
   fontSize: "2.5rem",
   lineHeight: "2.5rem",
