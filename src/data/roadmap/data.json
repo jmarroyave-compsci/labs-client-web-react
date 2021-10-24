@@ -837,7 +837,54 @@
           "level": 3,
           "children": null
         }
-      ]
+      ],
+      "Day 3": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The project's about",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Remakes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Awards",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: is it viewed? people liked it?",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 4": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Remakes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Awards",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 5": []
     }
   }
 }
