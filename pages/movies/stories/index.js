@@ -1,5 +1,4 @@
 import React from 'react';
-import App from 'com/app'
 import Layout from 'com/pages/soon';
 
 const Page = ( props ) => {
@@ -7,9 +6,7 @@ const Page = ( props ) => {
   params.breadcrumbs = [{name: "stories"}]
 
   return (
-    <App {...params}>
       <Layout {...params}/> 
-    </App>
   )
 }
 
