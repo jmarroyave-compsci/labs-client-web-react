@@ -70,10 +70,104 @@ exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
                     <h3
                       class="vertical-timeline-element-title"
                     >
-                      Day 5
+                      Day 7
                     </h3>
                     <p>
                       <ul />
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 7-Day 7
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 6
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: The project's about
+                        </li>
+                        <li>
+                          DATA
+                        </li>
+                        <li>
+                          DEV PROCESS
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 7-Day 6
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 5
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: The project's about
+                        </li>
+                        <li>
+                          Story: the small details
+                        </li>
+                        <li>
+                          Refactor
+                        </li>
+                      </ul>
                     </p>
                     <span
                       class="vertical-timeline-element-date"
