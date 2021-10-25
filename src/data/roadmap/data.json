@@ -884,7 +884,53 @@
           "children": null
         }
       ],
-      "Day 5": []
+      "Day 5": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The project's about",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: the small details",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Refactor",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 6": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The project's about",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "DATA",
+          "level": 2,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "DEV PROCESS",
+          "level": 2,
+          "children": null
+        }
+      ],
+      "Day 7": []
     }
   }
 }
