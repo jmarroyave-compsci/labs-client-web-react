@@ -1,3 +1,2456 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ABOUT-PROJECT-ROADMAP compare against snapshot 1`] = `<div />`;
+exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
+<div>
+  <div
+    class="css-nen11g-MuiStack-root"
+  >
+    <div
+      style="margin-bottom: 2rem;"
+    >
+      <div
+        class="com-layout-section section-0 MuiBox-root css-acq1iu"
+      >
+        <div
+          class="css-nen11g-MuiStack-root"
+        >
+          <h2
+            class="css-1brxzin"
+          >
+            Roadmap?
+          </h2>
+          <div
+            class="css-cpn9zx"
+          >
+            where this project comes from?
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-1exnf3f-MuiStack-root"
+    >
+      <div
+        class="MuiGrid-root page-module MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+        >
+          <div
+            class="css-1djxhuv"
+          >
+            <div
+              class="css-nen11g-MuiStack-root"
+            >
+              <div
+                class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns"
+              >
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 5
+                    </h3>
+                    <p>
+                      <ul />
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 7-Day 5
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 4
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: Remakes
+                        </li>
+                        <li>
+                          Story: Awards
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 7-Day 4
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 3
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: The project's about
+                        </li>
+                        <li>
+                          Story: Remakes
+                        </li>
+                        <li>
+                          Story: Awards
+                        </li>
+                        <li>
+                          Story: is it viewed? people liked it?
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 7-Day 3
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 2
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: by profession
+                        </li>
+                        <li>
+                          Story: Search
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 7-Day 2
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 1
+                    </h3>
+                    <p>
+                      <ul />
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 7-Day 1
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      star
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Sprint 7
+                    </h3>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 7
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 7
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: The actors
+                        </li>
+                        <li>
+                          Story: The directors
+                        </li>
+                        <li>
+                          Story: The writers
+                        </li>
+                        <li>
+                          Story: The project about
+                        </li>
+                        <li>
+                          Story: Person page
+                        </li>
+                        <li>
+                          PRIORITIES:
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 6-Day 7
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 6
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: Movie/TVShow page
+                        </li>
+                        <li>
+                          Story: The directors
+                        </li>
+                        <li>
+                          Story: The writers
+                        </li>
+                        <li>
+                          Story: Person page
+                        </li>
+                        <li>
+                          Story: People dashboard
+                        </li>
+                        <li>
+                          Story: Awards
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 6-Day 6
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 5
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: Film festivals
+                        </li>
+                        <li>
+                          Story: video games
+                        </li>
+                        <li>
+                          Story: tv show
+                        </li>
+                        <li>
+                          Story: The actors
+                        </li>
+                        <li>
+                          Story: The directors
+                        </li>
+                        <li>
+                          Story: The writers
+                        </li>
+                        <li>
+                          Story: The episodes
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 6-Day 5
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 4
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: Film festivals
+                        </li>
+                        <li>
+                          Story: Movies history
+                        </li>
+                        <li>
+                          Story: The directors
+                        </li>
+                        <li>
+                          Story: The writers
+                        </li>
+                        <li>
+                          Story: The episodes
+                        </li>
+                        <li>
+                          Story: People's network
+                        </li>
+                        <li>
+                          Story: Remakes
+                        </li>
+                        <li>
+                          Story: Awards
+                        </li>
+                        <li>
+                          Story: blog -&gt; the microblog
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 6-Day 4
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 3
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: Remakes
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 6-Day 3
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 2
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Sprint 6 - V.1.0
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 6-Day 2
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 1
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: Film festivals
+                        </li>
+                        <li>
+                          Story: Movies history
+                        </li>
+                        <li>
+                          Story: The episodes
+                        </li>
+                        <li>
+                          Story: Awards
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 6-Day 1
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      star
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Sprint 6
+                    </h3>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 6
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 7
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Improve the dev process
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 5-Day 7
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 6
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: The project about
+                        </li>
+                        <li>
+                          Story: TV
+                        </li>
+                        <li>
+                          Story: People's network
+                        </li>
+                        <li>
+                          Story: Remakes
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 5-Day 6
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 5
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: The project about
+                        </li>
+                        <li>
+                          Story: TV
+                        </li>
+                        <li>
+                          Story: video games
+                        </li>
+                        <li>
+                          Story: People dashboard
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 5-Day 5
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 4
+                    </h3>
+                    <p>
+                      <ul />
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 5-Day 4
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 3
+                    </h3>
+                    <p>
+                      <ul />
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 5-Day 3
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 2
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: People's network
+                        </li>
+                        <li>
+                          Story: Remakes
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 5-Day 2
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 1
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: The project about
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 5-Day 1
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      star
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Sprint 5
+                    </h3>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 5
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 7
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Home will be a list of stories
+                        </li>
+                        <li>
+                          PRIORITIES:
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 4-Day 7
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 6
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Home will be a list of stories
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 4-Day 6
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 5
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Home will be a list of stories
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 4-Day 5
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 4
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          The search functionality must work well and fast
+                        </li>
+                        <li>
+                          Home will be a list of stories
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 4-Day 4
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 3
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Home will be a list of stories
+                        </li>
+                        <li>
+                          Consistency in the look and feel
+                        </li>
+                        <li>
+                          The search functionality must work well and fast
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 4-Day 3
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 2
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: Music podcasts
+                        </li>
+                        <li>
+                          Story: Movie Awards winners
+                        </li>
+                        <li>
+                          Consistency in the look and feel
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 4-Day 2
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 1
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Story: Music podcasts
+                        </li>
+                        <li>
+                          Consistency in the look and feel
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 4-Day 1
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      star
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Sprint 4
+                    </h3>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 4
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 7
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Consistency in the look and feel
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 3-Day 7
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 6
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Get insights from data
+                        </li>
+                        <li>
+                          How to navigate in 11M records?
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 3-Day 6
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 5
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Research and import more data
+                        </li>
+                        <li>
+                          How to navigate in 11M records?
+                        </li>
+                        <li>
+                          Get insights from imported data
+                        </li>
+                        <li>
+                          Get insights the fetch process
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 3-Day 5
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 4
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Import more data from other sources
+                        </li>
+                        <li>
+                          View stories about data
+                        </li>
+                        <li>
+                          View detailed info about each movie
+                        </li>
+                        <li>
+                          View detailed info about each person
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 3-Day 4
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 3
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Docs: roadmap
+                        </li>
+                        <li>
+                          Web Client: about
+                        </li>
+                        <li>
+                          Data Server versioning
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 3-Day 3
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 2
+                    </h3>
+                    <p>
+                      <ul />
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 3-Day 2
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 1
+                    </h3>
+                    <p>
+                      <ul />
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 3-Day 1
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      star
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Sprint 3
+                    </h3>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 3
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 7
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Tests: improve layout
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 2-Day 7
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 6
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Web Client: Fixes
+                        </li>
+                        <li>
+                          Web Client: Dataset component with multiple data rendering
+                        </li>
+                        <li>
+                          Web Client: Release
+                        </li>
+                        <li>
+                          Building Starter [Mobile]
+                        </li>
+                        <li>
+                          Tests: improve layout
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 2-Day 6
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 5
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Tests: Web .NET
+                        </li>
+                        <li>
+                          Web Client: Dashboard design
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 2-Day 5
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 4
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Tests: Web Vue, Web .NET
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 2-Day 4
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 3
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Data: People's network
+                        </li>
+                        <li>
+                          Data: Searching more datasets
+                        </li>
+                        <li>
+                          Building Starter [Mobile]
+                        </li>
+                        <li>
+                          Tests: Web Angular
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 2-Day 3
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 2
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Building Starter [Mobile]
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 2-Day 2
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 1
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Building Starter [Mobile]
+                        </li>
+                        <li>
+                          Web Client: Fixes
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 2-Day 1
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      star
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Sprint 2
+                    </h3>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 2
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 7
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Building Starter [Web]
+                        </li>
+                        <li>
+                          Building Starter [Mobile]
+                        </li>
+                        <li>
+                          Release - Starter [Web] -&gt; Web Client
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 1-Day 7
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 6
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Building Starter [Web]
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 1-Day 6
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 5
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Building Starter [Web]
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 1-Day 5
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 4
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Building Starter [Web]
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 1-Day 4
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 3
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Building Starter [Web]
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 1-Day 3
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 2
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Building Starter [Web]
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 1-Day 2
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(33, 150, 243); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      circle
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Day 1
+                    </h3>
+                    <p>
+                      <ul>
+                        <li>
+                          Building Starter
+                        </li>
+                      </ul>
+                    </p>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 1-Day 1
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="vertical-timeline-element--education vertical-timeline-element"
+                  id=""
+                >
+                  <span
+                    class="vertical-timeline-element-icon is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <span
+                      aria-hidden="true"
+                      class="material-icons MuiIcon-root"
+                      style="width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;"
+                    >
+                      star
+                    </span>
+                  </span>
+                  <div
+                    class="vertical-timeline-element-content is-hidden"
+                    style="background: rgb(63, 81, 181); color: rgb(255, 255, 255);"
+                  >
+                    <div
+                      class="vertical-timeline-element-content-arrow"
+                    />
+                    <h3
+                      class="vertical-timeline-element-title"
+                    >
+                      Sprint 1
+                    </h3>
+                    <span
+                      class="vertical-timeline-element-date"
+                    >
+                      Sprint 1
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+        >
+          <div
+            style="padding-left: 1rem; padding-right: 0.5rem;"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+            >
+              <div
+                class="css-vcmx0t"
+              >
+                <div
+                  class="css-365mzx"
+                >
+                  Stories
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ABOUT-PROJECT-ROADMAP compare against snapshot 1`] = `
+<div>
+  <div
+    class="css-nen11g-MuiStack-root"
+  >
+    <h2
+      class="css-1brxzin"
+    >
+      Roadmap?
+    </h2>
+    <div
+      class="css-cpn9zx"
+    >
+      where this project comes from?
+    </div>
+    <div
+      class="css-1n1c6cf"
+    >
+      <button
+        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButtonBase-root css-9y1egq-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        See all
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

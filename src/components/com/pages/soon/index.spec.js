@@ -4,7 +4,7 @@ import configureStore from 'redux-mock-store';
 import {render, fireEvent, waitFor, screen} from '@testing-library/react'
 import '@testing-library/jest-dom'
 
-import { itMustHaveNoErrors } from "tests/jest/shared"
+import { itMustHaveNoErrors, StateProvider } from "tests/jest/shared"
 
 import Page from '.';
 import config from './.config';
@@ -27,8 +27,8 @@ describe('Search Page', () => {
  
  
   it('compare against snapshot', () => {
-    const { container } = render(component)
-    itMustHaveNoErrors(container)
-    expect(container).toMatchSnapshot();
+    const renderer = render(component)
+    itMustHaveNoErrors(renderer)
+    expect(renderer.container).toMatchSnapshot();
   });
 });

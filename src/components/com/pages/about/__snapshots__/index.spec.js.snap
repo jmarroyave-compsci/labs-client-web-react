@@ -1,3 +1,234 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ABOUT compare against snapshot 1`] = `<div />`;
+exports[`ABOUT compare Page against snapshot 1`] = `
+<div>
+  <div
+    class="css-nen11g-MuiStack-root"
+  >
+    <div
+      style="margin-bottom: 2rem;"
+    >
+      <div
+        class="com-layout-section section-0 MuiBox-root css-acq1iu"
+      >
+        <div
+          class="css-nen11g-MuiStack-root"
+        >
+          <h2
+            class="css-1brxzin"
+          >
+            How was made?
+          </h2>
+          <div
+            class="css-cpn9zx"
+          >
+            some details about how this project was made
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-5af945-MuiStack-root"
+    >
+      <div
+        class="MuiGrid-root page-module MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+        >
+          <div
+            class="css-1djxhuv"
+          >
+            <div
+              class="css-nen11g-MuiStack-root"
+            >
+              <div
+                class="com-layout-section undefined MuiBox-root css-d28mze"
+              >
+                <div
+                  class="css-nen11g-MuiStack-root"
+                >
+                  <h2
+                    class="css-1brxzin"
+                  >
+                    Project
+                  </h2>
+                  <div
+                    class="css-cpn9zx"
+                  >
+                    The story of this project
+                  </div>
+                  <div
+                    class="css-1n1c6cf"
+                  >
+                    <button
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButtonBase-root css-9y1egq-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      See all
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="com-layout-section undefined MuiBox-root css-d28mze"
+              >
+                <div
+                  class="css-nen11g-MuiStack-root"
+                >
+                  <h2
+                    class="css-1brxzin"
+                  >
+                    Data?
+                  </h2>
+                  <div
+                    class="css-cpn9zx"
+                  >
+                    source of the data used in this project
+                  </div>
+                  <div
+                    class="css-1n1c6cf"
+                  >
+                    <button
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButtonBase-root css-9y1egq-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      See all
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="com-layout-section undefined MuiBox-root css-d28mze"
+              >
+                <div
+                  class="css-nen11g-MuiStack-root"
+                >
+                  <h2
+                    class="css-1brxzin"
+                  >
+                    What about the code?
+                  </h2>
+                  <div
+                    class="css-cpn9zx"
+                  >
+                    some details about the code, commits, LoC
+                  </div>
+                  <div
+                    class="css-1n1c6cf"
+                  >
+                    <button
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButtonBase-root css-9y1egq-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      See all
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="com-layout-section undefined MuiBox-root css-d28mze"
+              >
+                <div
+                  class="css-nen11g-MuiStack-root"
+                >
+                  <h2
+                    class="css-1brxzin"
+                  >
+                    How the project has evolved?
+                  </h2>
+                  <div
+                    class="css-cpn9zx"
+                  >
+                    a timeline since the project creation
+                  </div>
+                  <div
+                    class="css-1n1c6cf"
+                  >
+                    <button
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButtonBase-root css-9y1egq-MuiButtonBase-root-MuiButton-root"
+                      tabindex="0"
+                      type="button"
+                    >
+                      See all
+                      <span
+                        class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+        >
+          <div
+            style="padding-left: 1rem; padding-right: 0.5rem;"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+            >
+              <div
+                class="css-vcmx0t"
+              >
+                <div
+                  class="css-365mzx"
+                >
+                  Stories
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ABOUT compare against snapshot 1`] = `
+<div>
+  <div
+    class="css-nen11g-MuiStack-root"
+  >
+    <h2
+      class="css-1brxzin"
+    >
+      How was made?
+    </h2>
+    <div
+      class="css-cpn9zx"
+    >
+      some details about how this project was made
+    </div>
+    <div
+      class="css-1n1c6cf"
+    >
+      <button
+        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButtonBase-root css-9y1egq-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        See all
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

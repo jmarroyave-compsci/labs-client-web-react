@@ -4,7 +4,8 @@ const links = {
   home : { url : constants.APP.BASE_PATH},
   footer: {
     site : [
-      { name: "blog", url : `${constants.APP.BASE_PATH}/about/project/log`}
+      { name: "log", url : `${constants.APP.BASE_PATH}/about/project/log`},
+      { name: "sitemap", url : `${constants.APP.BASE_PATH}/about/project/sitemap`}
     ],
     "other projects": [
       { "name": "stackoverflow", "url" : `https://jmarroyave-apps-stackoverflow.herokuapp.com` },

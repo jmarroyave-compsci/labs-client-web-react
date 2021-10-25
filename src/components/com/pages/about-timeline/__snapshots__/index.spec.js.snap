@@ -1,3 +1,463 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ABOUT-TIMELINE compare against snapshot 1`] = `<div />`;
+exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
+<div>
+  <div
+    class="css-nen11g-MuiStack-root"
+  >
+    <div
+      style="margin-bottom: 2rem;"
+    >
+      <div
+        class="com-layout-section section-0 MuiBox-root css-acq1iu"
+      >
+        <div
+          class="css-nen11g-MuiStack-root"
+        >
+          <h2
+            class="css-1brxzin"
+          >
+            How the project has evolved?
+          </h2>
+          <div
+            class="css-cpn9zx"
+          >
+            a timeline since the project creation
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-1exnf3f-MuiStack-root"
+    >
+      <div
+        class="MuiGrid-root page-module MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+        >
+          <div
+            class="css-1djxhuv"
+          >
+            <div
+              class="css-nen11g-MuiStack-root"
+            >
+              <div
+                class="css-nen11g-MuiStack-root"
+              >
+                <h2
+                  class="css-s1nipk"
+                >
+                  Lines of Code
+                </h2>
+                <div
+                  id="chart"
+                >
+                  <svg
+                    height="350px"
+                    width="550px"
+                  >
+                    <g
+                      transform="translate(50, 50)"
+                    >
+                      <g
+                        style="fill: none"
+                      >
+                        <g
+                          class="line-group"
+                        >
+                          <path
+                            class="line"
+                            d="M375,220.60722662941782L450,219.51348074743694"
+                            style="stroke: #1f77b4; stroke-width: 5px; opacity: 0.25;"
+                          />
+                        </g>
+                        <g
+                          class="line-group"
+                        >
+                          <path
+                            class="line"
+                            d="M0,31.376011385499307L375,1.6472076535856417L450,0"
+                            style="stroke: #ff7f0e; stroke-width: 5px; opacity: 0.25;"
+                          />
+                        </g>
+                        <g
+                          class="line-group"
+                        >
+                          <path
+                            class="line"
+                            d="M375,224.17837282239148L450,224.17178399177715"
+                            style="stroke: #2ca02c; stroke-width: 5px; opacity: 0.25;"
+                          />
+                        </g>
+                        <g
+                          style="fill: #1f77b4;"
+                        >
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="375"
+                              cy="220.60722662941782"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="450"
+                              cy="219.51348074743694"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                        </g>
+                        <g
+                          style="fill: #ff7f0e;"
+                        >
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="0"
+                              cy="31.376011385499307"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="375"
+                              cy="1.6472076535856417"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="450"
+                              cy="0"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                        </g>
+                        <g
+                          style="fill: #2ca02c;"
+                        >
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="375"
+                              cy="224.17837282239148"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="450"
+                              cy="224.17178399177715"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                        </g>
+                      </g>
+                      <g
+                        class="x axis"
+                        fill="none"
+                        font-family="sans-serif"
+                        font-size="10"
+                        text-anchor="middle"
+                        transform="translate(0, 250)"
+                      >
+                        <path
+                          class="domain"
+                          d="M0.5,6V0.5H450.5V6"
+                          stroke="currentColor"
+                        />
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(13,0)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            y2="6"
+                          />
+                          <text
+                            dy="0.71em"
+                            fill="currentColor"
+                            y="9"
+                          >
+                            Mon 11
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(88,0)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            y2="6"
+                          />
+                          <text
+                            dy="0.71em"
+                            fill="currentColor"
+                            y="9"
+                          >
+                            Tue 12
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(163,0)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            y2="6"
+                          />
+                          <text
+                            dy="0.71em"
+                            fill="currentColor"
+                            y="9"
+                          >
+                            Wed 13
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(238,0)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            y2="6"
+                          />
+                          <text
+                            dy="0.71em"
+                            fill="currentColor"
+                            y="9"
+                          >
+                            Thu 14
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(313,0)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            y2="6"
+                          />
+                          <text
+                            dy="0.71em"
+                            fill="currentColor"
+                            y="9"
+                          >
+                            Fri 15
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(388,0)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            y2="6"
+                          />
+                          <text
+                            dy="0.71em"
+                            fill="currentColor"
+                            y="9"
+                          >
+                            Sat 16
+                          </text>
+                        </g>
+                      </g>
+                      <g
+                        class="y axis"
+                        fill="none"
+                        font-family="sans-serif"
+                        font-size="10"
+                        text-anchor="end"
+                      >
+                        <path
+                          class="domain"
+                          d="M-6,250.5H0.5V0.5H-6"
+                          stroke="currentColor"
+                        />
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(0,250.5)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            x2="-6"
+                          />
+                          <text
+                            dy="0.32em"
+                            fill="currentColor"
+                            x="-9"
+                          >
+                            0
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(0,184.61169385657433)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            x2="-6"
+                          />
+                          <text
+                            dy="0.32em"
+                            fill="currentColor"
+                            x="-9"
+                          >
+                            10,000
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(0,118.72338771314867)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            x2="-6"
+                          />
+                          <text
+                            dy="0.32em"
+                            fill="currentColor"
+                            x="-9"
+                          >
+                            20,000
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(0,52.835081569722995)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            x2="-6"
+                          />
+                          <text
+                            dy="0.32em"
+                            fill="currentColor"
+                            x="-9"
+                          >
+                            30,000
+                          </text>
+                        </g>
+                        <text
+                          fill="#000"
+                          transform="rotate(-90)"
+                          y="15"
+                        >
+                          Total values
+                        </text>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="css-nen11g-MuiStack-root"
+              >
+                <h2
+                  class="css-s1nipk"
+                >
+                  Screenshots
+                </h2>
+              </div>
+              <div
+                class="css-nen11g-MuiStack-root"
+              >
+                <h2
+                  class="css-s1nipk"
+                >
+                  Sitemap
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+        >
+          <div
+            style="padding-left: 1rem; padding-right: 0.5rem;"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+            >
+              <div
+                class="css-vcmx0t"
+              >
+                <div
+                  class="css-365mzx"
+                >
+                  Stories
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ABOUT-TIMELINE compare against snapshot 1`] = `
+<div>
+  <div
+    class="css-nen11g-MuiStack-root"
+  >
+    <h2
+      class="css-1brxzin"
+    >
+      How the project has evolved?
+    </h2>
+    <div
+      class="css-cpn9zx"
+    >
+      a timeline since the project creation
+    </div>
+    <div
+      class="css-1n1c6cf"
+    >
+      <button
+        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButtonBase-root css-9y1egq-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        See all
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

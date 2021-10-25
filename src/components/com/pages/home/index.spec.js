@@ -4,7 +4,7 @@ import configureStore from 'redux-mock-store';
 import {render, fireEvent, waitFor, screen} from '@testing-library/react'
 import '@testing-library/jest-dom'
 
-import { itMustHaveNoErrors } from "tests/jest/shared"
+import { itMustHaveNoErrors, StateProvider } from "tests/jest/shared"
 
 import itemState from './automata/tests/item.json'
 import Page from '.';
@@ -29,7 +29,7 @@ describe(`${config.automata.name.toUpperCase()}`, () => {
  
  
   it('compare against snapshot', () => {
-    const { container } = render(component)
-    itMustHaveNoErrors(container)
+    const renderer = render(component)
+    itMustHaveNoErrors(renderer)
   });
 });

@@ -7,7 +7,7 @@ export default function Layout( props ){
     <>
       <Cols2Layout 
         mainCol={
-          <Stack>
+          <Stack spacing={1} sx={{ display: 'flex', flexGrow: 1}}>
             {(props.loading || !props.data || props.data === null )  ? 
               (props.skeleton) ? props.skeleton : <div>loading</div>
             :

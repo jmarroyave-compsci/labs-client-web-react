@@ -1,41 +1,34 @@
 import React from 'react';
-import CoreProxy from './proxy';
 import ErrorBoundry from '../../components/error';
 import theme from 'app/config/theme/main';
+import Box from '@mui/material/Box';
 
 class LayoutSection extends React.Component{
 	render(){
 		var {className, cover, padding, children, hero, rounded, compact} = this.props;
 		var height = (cover === true) ? "100vh" : "inherit"; 
 		rounded = (rounded === true) ?  true : false;
-		return (
-			<CoreProxy 
-				xs={this.renderSection('xs', children, className, height, rounded)}
-				sm={this.renderSection('sm', children, className, height, rounded)}
-				md={this.renderSection('md', children, className, height, rounded)}
-			/>				
-		);
-	}
-
-	renderSection(target, children, className, height, rounded){
 		const colors = this.getStyle(className)
-		const style = {
-			boxSizing: 'border-box', 
-			width: '100%', 
-			height: height, 
-			padding: this.getPadding(target), 
-			borderRadius: (rounded) ? "0.5rem 0.5rem 0 0" : 0,
-			background: colors.background,
-			color: colors.color,
-		}		
-
 		return (
 			<ErrorBoundry from="/core/ui/section">
-				<div className={`com-layout-section ${className}`} style={style}>
+				<Box className={`com-layout-section ${className}`} sx={{ 
+					padding: {
+						xs: this.getPadding("xs"),
+						sm: this.getPadding("sm"),
+						md: this.getPadding("md"),
+						},
+					boxSizing: 'border-box', 
+					width: '100%', 
+					height: height, 
+					borderRadius: (rounded) ? "0.5rem 0.5rem 0 0" : 0,
+					background: colors.background,
+					color: colors.color,
+				}}
+				>
 					{children}
-				</div>
+				</Box>				
 			</ErrorBoundry>
-		)		
+		);
 	}
 
 	getPadding(target){

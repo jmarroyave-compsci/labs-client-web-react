@@ -78,7 +78,7 @@ export default function _Carousel( props ){
 
 function Placeholder(){
   return (
-      <Stack spacing={1}>
+      <Stack spacing={1} sx={{ padding: '1rem', display: 'flex', flexGrow: 1}}>
         <Skeleton variant="text" width={"80%"}/>
         <Skeleton variant="rectangular" height={118} />
         <Skeleton variant="text" />

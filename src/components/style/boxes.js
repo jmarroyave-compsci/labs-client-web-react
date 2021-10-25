@@ -43,6 +43,8 @@ export const Item = ( props ) =>{
 
 export const FrameSkeleton = styled('div')({
   padding: "0rem 0rem 4rem 0rem",
+  display: 'flex', 
+  flexGrow: 1,
 });
 
 

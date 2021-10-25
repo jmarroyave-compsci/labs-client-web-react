@@ -1,3 +1,364 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ABOUT-TECH compare against snapshot 1`] = `<div />`;
+exports[`ABOUT-TECH compare Page against snapshot 1`] = `
+<div>
+  <div
+    class="css-nen11g-MuiStack-root"
+  >
+    <div
+      style="margin-bottom: 2rem;"
+    >
+      <div
+        class="com-layout-section section-0 MuiBox-root css-acq1iu"
+      >
+        <div
+          class="css-nen11g-MuiStack-root"
+        >
+          <h2
+            class="css-1brxzin"
+          >
+            What about the code?
+          </h2>
+          <div
+            class="css-cpn9zx"
+          >
+            some details about the code, commits, LoC
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="css-1exnf3f-MuiStack-root"
+    >
+      <div
+        class="MuiGrid-root page-module MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+        >
+          <div
+            class="css-1djxhuv"
+          >
+            <div
+              class="css-nen11g-MuiStack-root"
+            >
+              <div
+                class="css-7ry9k1"
+              >
+                <div
+                  class="css-nen11g-MuiStack-root"
+                >
+                  <h2
+                    class="css-1brxzin"
+                  >
+                    Lines of Code (LoC)
+                  </h2>
+                  <div
+                    class="makeStyles-tableResponsive-11"
+                  >
+                    <table
+                      class="MuiTable-root makeStyles-table-8 css-rqglhn-MuiTable-root"
+                    >
+                      <thead
+                        class="MuiTableHead-root makeStyles-grayTableHeader-7 css-15wwp11-MuiTableHead-root"
+                      >
+                        <tr
+                          class="MuiTableRow-root MuiTableRow-head makeStyles-tableHeadRow-12 css-1enotpu-MuiTableRow-root"
+                        >
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 css-1rn0a57-MuiTableCell-root"
+                            scope="col"
+                          >
+                            area
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 css-1rn0a57-MuiTableCell-root"
+                            scope="col"
+                          >
+                            total files
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 css-1rn0a57-MuiTableCell-root"
+                            scope="col"
+                          >
+                            LoC
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 css-1rn0a57-MuiTableCell-root"
+                            scope="col"
+                          >
+                            node_modules
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 css-1rn0a57-MuiTableCell-root"
+                            scope="col"
+                          >
+                            LoC
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 css-1rn0a57-MuiTableCell-root"
+                            scope="col"
+                          >
+                            files
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 css-1rn0a57-MuiTableCell-root"
+                            scope="col"
+                          >
+                            LoC
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody
+                        class="MuiTableBody-root css-apqrd9-MuiTableBody-root"
+                      >
+                        <tr
+                          class="MuiTableRow-root makeStyles-tableBodyRow-13 css-1enotpu-MuiTableRow-root"
+                        >
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            scripts
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            9,100
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            4,194,538
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            9,006
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            4,189,911
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            94
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            4,627
+                          </td>
+                        </tr>
+                        <tr
+                          class="MuiTableRow-root makeStyles-tableBodyRow-13 css-1enotpu-MuiTableRow-root"
+                        >
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            client
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            42,410
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            2,183,175
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            41,835
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            2,145,232
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            575
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            37,943
+                          </td>
+                        </tr>
+                        <tr
+                          class="MuiTableRow-root makeStyles-tableBodyRow-13 css-1enotpu-MuiTableRow-root"
+                        >
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            server
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            10,437
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            1,793,356
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            10,362
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            1,789,436
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            75
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 css-1ghg108-MuiTableCell-root"
+                          >
+                            3,920
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="css-nen11g-MuiStack-root"
+              >
+                <h2
+                  class="css-1brxzin"
+                >
+                  CI/CD
+                </h2>
+                <div
+                  class="css-cpn9zx"
+                >
+                  <div>
+                    number of commits
+                  </div>
+                  <div
+                    class="css-e53awj-MuiStack-root"
+                  >
+                    <span>
+                      <div
+                        class="makeStyles-card-22 makeStyles-cardHeader-17"
+                        style="width: 130px;"
+                      >
+                        <div
+                          class="makeStyles-cardHeader-26 makeStyles-primaryCardHeader-34 makeStyles-cardHeaderStats-28 makeStyles-cardHeaderIcon-29"
+                        >
+                          <p
+                            class="makeStyles-cardCategory-18"
+                          >
+                            client
+                          </p>
+                          <h3
+                            class="makeStyles-cardTitle-20"
+                          >
+                            <span>
+                              152
+                            </span>
+                          </h3>
+                        </div>
+                      </div>
+                    </span>
+                    <span>
+                      <div
+                        class="makeStyles-card-22 makeStyles-cardHeader-17"
+                        style="width: 130px;"
+                      >
+                        <div
+                          class="makeStyles-cardHeader-26 makeStyles-primaryCardHeader-34 makeStyles-cardHeaderStats-28 makeStyles-cardHeaderIcon-29"
+                        >
+                          <p
+                            class="makeStyles-cardCategory-18"
+                          >
+                            server
+                          </p>
+                          <h3
+                            class="makeStyles-cardTitle-20"
+                          >
+                            <span>
+                              67
+                            </span>
+                          </h3>
+                        </div>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+        >
+          <div
+            style="padding-left: 1rem; padding-right: 0.5rem;"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+            >
+              <div
+                class="css-vcmx0t"
+              >
+                <div
+                  class="css-365mzx"
+                >
+                  Stories
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ABOUT-TECH compare against snapshot 1`] = `
+<div>
+  <div
+    class="css-nen11g-MuiStack-root"
+  >
+    <h2
+      class="css-1brxzin"
+    >
+      What about the code?
+    </h2>
+    <div
+      class="css-cpn9zx"
+    >
+      some details about the code, commits, LoC
+    </div>
+    <div
+      class="css-1n1c6cf"
+    >
+      <button
+        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButtonBase-root css-9y1egq-MuiButtonBase-root-MuiButton-root"
+        tabindex="0"
+        type="button"
+      >
+        See all
+        <span
+          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

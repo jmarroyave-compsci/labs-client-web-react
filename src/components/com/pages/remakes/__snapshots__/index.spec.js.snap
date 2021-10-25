@@ -7,7 +7,22 @@ exports[`STORIES_REMAKES compare against snapshot 1`] = `
   >
     <div
       style="margin-bottom: 2rem;"
-    />
+    >
+      <div
+        class="com-layout-section section-0 MuiBox-root css-acq1iu"
+      >
+        <div
+          class="css-nen11g-MuiStack-root"
+        >
+          <h2
+            class="css-1brxzin"
+          >
+            Remakes
+          </h2>
+          
+        </div>
+      </div>
+    </div>
     <div
       class="css-1exnf3f-MuiStack-root"
     >
@@ -18,7 +33,7 @@ exports[`STORIES_REMAKES compare against snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
         >
           <div
-            class="css-1tltgwc"
+            class="css-1djxhuv"
           >
             <div
               class="css-7ry9k1"

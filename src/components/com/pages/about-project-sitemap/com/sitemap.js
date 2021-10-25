@@ -36,7 +36,7 @@ function getTree( nodes, label, url, children ){
       label={<Link href={url}>{label}</Link>}
     >
       {Object.keys(children).map( c => {
-        if(c.startsWidth("____")) return; 
+        if(c.startsWith("____")) return; 
         return getTree( nodes, c, `${url}${c}/`, children[c] )
         }
       )}

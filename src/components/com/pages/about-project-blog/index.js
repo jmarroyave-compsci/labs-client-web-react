@@ -7,6 +7,7 @@ import Item from './com/item'
 
 export default function Layout( props ){
 	const router = useRouter();
+
 	return (
 		<MultiLayout
 			config={config}
@@ -14,7 +15,7 @@ export default function Layout( props ){
 			data={props.data}
 			item={(data) => <Item {...data}/>}
 			breadcrumbs={props.breadcrumbs}
-			params={props.route}
+			params={(props.route) ? props.route : { page : 1}}
 			onPageChange={( page ) => router.push(`${config.page.url}/${page}`)  }
 		/>
 	)
