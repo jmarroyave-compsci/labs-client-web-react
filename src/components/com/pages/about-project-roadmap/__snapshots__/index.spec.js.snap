@@ -1,26 +1,137 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  box-sizing: border-box;
+  width: 100%;
+  height: inherit;
+  border-radius: 0;
+  background: linear-gradient(60deg, rgb(59, 75, 149) 0%, #000 150%);
+  color: #fff;
+}
+
+@media (min-width:0px) {
+  .emotion-1 {
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-1 {
+    padding: 2rem 3rem 2rem 3rem;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-1 {
+    padding: 3rem 2.5rem 3rem 2.5rem;
+  }
+}
+
+.emotion-3 {
+  padding: 0 0 1rem 0;
+  margin: 0;
+}
+
+.emotion-4 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.emotion-5 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+@media (min-width:0px) {
+  .emotion-5 {
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-5 {
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-5 {
+    padding: 0rem 4rem 3rem 4rem;
+  }
+}
+
+.emotion-6 {
+  padding: 0rem 0rem 4rem 0rem;
+}
+
+.emotion-8 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.emotion-9 {
+  padding: 0.85rem;
+}
+
+.emotion-10 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.emotion-11 {
+  font-size: 0.9rem;
+}
+
+.emotion-12 {
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #556cd6;
+  text-decoration-thickness: 1px;
+}
+
 <div>
   <div
-    class="css-nen11g-MuiStack-root"
+    class="emotion-0"
   >
     <div
       style="margin-bottom: 2rem;"
     >
       <div
-        class="com-layout-section section-0 MuiBox-root css-acq1iu"
+        class="com-layout-section section-0 MuiBox-root emotion-1"
       >
         <div
-          class="css-nen11g-MuiStack-root"
+          class="emotion-0"
         >
           <h2
-            class="css-1brxzin"
+            class="emotion-3"
           >
             Roadmap?
           </h2>
           <div
-            class="css-cpn9zx"
+            class="emotion-4"
           >
             where this project comes from?
           </div>
@@ -28,7 +139,7 @@ exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
       </div>
     </div>
     <div
-      class="css-1exnf3f-MuiStack-root"
+      class="emotion-5"
     >
       <div
         class="MuiGrid-root page-module MuiGrid-container"
@@ -37,10 +148,10 @@ exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
         >
           <div
-            class="css-1djxhuv"
+            class="emotion-6"
           >
             <div
-              class="css-nen11g-MuiStack-root"
+              class="emotion-0"
             >
               <div
                 class="vertical-timeline vertical-timeline--animate vertical-timeline--two-columns"
@@ -2496,15 +2607,60 @@ exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-8"
             >
               <div
-                class="css-vcmx0t"
+                class="emotion-9"
               >
                 <div
-                  class="css-365mzx"
+                  class="emotion-10"
                 >
-                  Stories
+                  See also
+                </div>
+                <div
+                  class="emotion-11"
+                >
+                  <span
+                    class="emotion-12"
+                  >
+                    Movie Awards
+                  </span>
+                </div>
+                <div
+                  class="emotion-11"
+                >
+                  <span
+                    class="emotion-12"
+                  >
+                    Movies
+                  </span>
+                </div>
+                <div
+                  class="emotion-11"
+                >
+                  <span
+                    class="emotion-12"
+                  >
+                    People
+                  </span>
+                </div>
+                <div
+                  class="emotion-11"
+                >
+                  <span
+                    class="emotion-12"
+                  >
+                    Podcasts
+                  </span>
+                </div>
+                <div
+                  class="emotion-11"
+                >
+                  <span
+                    class="emotion-12"
+                  >
+                    Music Podcasts
+                  </span>
                 </div>
               </div>
             </div>
@@ -2517,31 +2673,149 @@ exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
 `;
 
 exports[`ABOUT-PROJECT-ROADMAP compare against snapshot 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  padding: 0 0 1rem 0;
+  margin: 0;
+}
+
+.emotion-2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.emotion-3 {
+  padding-top: 2rem;
+}
+
+.emotion-4 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 7px 21px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border: 1px solid rgba(25, 118, 210, 0.5);
+  color: #1976d2;
+}
+
+.emotion-4::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-4.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-4 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-4:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(25, 118, 210, 0.04);
+  border: 1px solid #1976d2;
+}
+
+@media (hover: none) {
+  .emotion-4:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-4.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.emotion-5 {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
 <div>
   <div
-    class="css-nen11g-MuiStack-root"
+    class="emotion-0"
   >
     <h2
-      class="css-1brxzin"
+      class="emotion-1"
     >
       Roadmap?
     </h2>
     <div
-      class="css-cpn9zx"
+      class="emotion-2"
     >
       where this project comes from?
     </div>
     <div
-      class="css-1n1c6cf"
+      class="emotion-3"
     >
       <button
-        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButtonBase-root css-9y1egq-MuiButtonBase-root-MuiButton-root"
+        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButtonBase-root emotion-4"
         tabindex="0"
         type="button"
       >
         See all
         <span
-          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          class="MuiTouchRipple-root emotion-5"
         />
       </button>
     </div>

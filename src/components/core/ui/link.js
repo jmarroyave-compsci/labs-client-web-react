@@ -4,18 +4,24 @@ import { default as _Link } from 'next/link';
 import constants from './_';
 import Button from '@mui/material/Button';
 
-const LinkBox = styled('span')({
+import theme from 'app/config/theme/main';
+
+const LinkBox = styled('div')({
     cursor: 'pointer',
-    textDecoration: 'underline',
-    textDecorationStyle: 'dotted',
-    textDecorationColor: 'rgba(0,0,0,0.15)',
-    textDecorationThickness: '1px',
     display: 'flex',
     flexGrow: 1,
 });
 
+const LinkText = styled('span')({
+    cursor: 'pointer',
+    textDecoration: 'underline',
+    textDecorationStyle: 'dotted',
+    textDecorationColor: theme.palette.primary.main,
+    textDecorationThickness: '1px',
+});
+
 const Link =  ( props ) => {
-    var { children, className, to, href, external } = props;
+    var { box, children, className, to, href, external } = props;
 
     to = (to) ? to : href;
     to = (to) ? to : "http://localhost";
@@ -28,11 +34,11 @@ const Link =  ( props ) => {
     const jump = (to.indexOf("#") === 0) ? true : false;
     const raised = true;
     const target = (!internal) ? "_blank" : '_self'
+
+    const LINK = ( box === true ) ? <LinkBox>{children}</LinkBox> : <LinkText>{children}</LinkText>;
     return (
         <_Link className={className} href={to}>
-            <LinkBox>
-                {children}
-            </LinkBox>
+            {LINK}
         </_Link>
     );
 }

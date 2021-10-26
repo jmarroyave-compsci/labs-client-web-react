@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import { Frame, Item } from 'style/boxes'
 import { SubTitle } from 'style/detail'
 
+import Field from 'com/field';
 import Typography from '@material-ui/core/Typography';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
@@ -63,7 +64,7 @@ const Nominee = styled('div')({
 
 
 const LinkToPage = ( { year, children} ) => {
-  return <Link href={`/movies/stories/awards?year=${year}`}>{children}</Link>
+  return <Link box href={`/movies/stories/awards?year=${year}`}>{children}</Link>
 }
 
 export default function Awards( props ){
@@ -136,10 +137,7 @@ function AwardsFull( props, data ){
             {RenderYear(item)}
             {RenderPrize(item)}
             <LinkToPage year={item.year}>
-              <Item>
-                <Nominee>{((item.won === "false" || item.won === false) ? "nominee" : "winner")}</Nominee>
-                <Category>{item.category}</Category>
-              </Item>
+              <Field title={ (item.won === false) ? "nominee" : "winner"} value={item.category}/>
             </LinkToPage>
           </div>
       )}

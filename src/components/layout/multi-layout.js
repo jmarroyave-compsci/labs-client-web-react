@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import CoreProxy from 'core/ui/layout/proxy';
 import Cols2Layout from "layout/cols-2-layout";
 import Grid from 'com/ui/grid';
@@ -7,9 +8,8 @@ import TextLink from "core/ui/text-link"
 import { useDispatch } from 'react-redux'
 import { setPage } from 'app/state' 
 
-export default function Proxy( props ){
+export default function MultiLayout( props ){
   const dispatch = useDispatch();
-
   const { config, loading, data, item, type } = props
   const showDataInBanner = config?.banner?.showData ?? false; 
   const title = config?.page?.title ?? "NO TITLE";
@@ -22,7 +22,6 @@ export default function Proxy( props ){
         breadcrumbs: props.breadcrumbs,
       }));    
   }, [])
-
 
   const BANNER = (
     <Banner 
@@ -42,21 +41,52 @@ export default function Proxy( props ){
   return (
     <>
       {type === "banner" && BANNER }
-      {(type === "grid" || type === "page") && 
-        <Cols2Layout 
+      {type === "list" && 
+        <Cols2Layout
           {...props}
+          id={config.automata.name}
+          breadcrumbs={props.breadcrumbs}
           banner={BANNER} 
-          mainCol={(props.mainCol) ? props.mainCol( props ) : 
-            <Grid
-              loading={ loading }
-              page={ props.params.page }
-              data={ data }
-              onPageChange={ props.onPageChange }
-              item={ item }
-            />     
+          mainCol={(props.mainCol) ? props.mainCol( props ) : getList( loading, data, props.onPageChange, props.params.page, item)
+          }
+        />
+      }
+      {type === "page" && 
+        <Cols2Layout
+          {...props}
+          id={config.automata.name}
+          breadcrumbs={props.breadcrumbs}
+          banner={BANNER} 
+          mainCol={(props.mainCol) ? props.mainCol( props ) : ( (props.dashboard) ? props.dashboard : <div>MAIN COMPONENT MISSING</div>)
+          }
+        />
+      }
+      {type === "detail" && 
+        <Cols2Layout
+          {...props}
+          id={config.automata.name}
+          breadcrumbs={props.breadcrumbs}
+          mainCol={(props.mainCol) ? props.mainCol( props ) : <div>MAIN COMPONENT MISSING</div>
           }
         />
       }
     </>
   )
 } 
+
+function getList(loading, data, onPageChange, page, item){
+  return (
+    <Grid
+      loading={ loading }
+      page={ page }
+      data={ data }
+      onPageChange={ onPageChange }
+      item={ item }
+    />     
+  )
+
+}
+
+MultiLayout.propTypes = {
+  render: PropTypes.oneOf(["banner", "page", "list", "detail"]),
+};

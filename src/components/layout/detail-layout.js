@@ -6,6 +6,7 @@ export default function Layout( props ){
   return (
     <>
       <Cols2Layout 
+        {...props}
         mainCol={
           <Stack spacing={1} sx={{ display: 'flex', flexGrow: 1}}>
             {(props.loading || !props.data || props.data === null )  ? 

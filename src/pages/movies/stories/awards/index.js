@@ -1,39 +1,24 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux'
-import { setPage } from 'app/state' 
+import React from 'react'
 import { useRouter } from 'next/router';
-import Layout from 'com/pages/awards';
-import { fetchData } from 'com/pages/awards/automata'
+import Layout from 'com/pages/awards/page';
 
 const ENTITY = "movies"
 
 const Page = ( props ) => {
-  const dispatch = useDispatch();
   const router = useRouter(); 
-
-  useEffect( () => {
-    if(!router.isReady) return;
-
-    var { year, page } = (router.query) ? router.query : {}; 
-    page = (page) ? parseInt(page) : 1;
-    year = (year) ? year : 2017;
-
-    dispatch(setPage({
-      breadcrumbs: [{name: "movies", url: '/movies'}, {name: "stories", url: '/movies/stories'}, {name: "awards"}]
-    }));    
-
-    dispatch( fetchData( {
-      renderer: "grid",
-      year: year,
-      entity: ENTITY,
-      page: page,
-    } ) )
-
-  }, [])
+  var { year, page } = (router.query) ? router.query : {}; 
+  page = (page) ? parseInt(page) : 1;
+  year = (year) ? year : 2017;
 
   return (
-      <Layout/> 
+      <Layout 
+        breadcrumbs={`/movies/stories/awards`} 
+        year={year} 
+        entity={ENTITY}
+        page={page}
+      /> 
   )
 }
 
 export default Page;
+

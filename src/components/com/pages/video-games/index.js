@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import CoreProxy from 'core/ui/layout/proxy';
-import MultiLayout from "layout/dashboard-layout";
+import MultiLayout from "layout/multi-layout";
 import { useSelector, useDispatch } from 'react-redux';
 import config from "./.config.js";
 import { fetchData } from './automata';
@@ -24,6 +24,7 @@ export default function Layout( props ){
 				dashboard={<Dashboard data={state.data} loading={state.loading}/>}
 				loading={state.loading}
 				params={{...state.params}}
+				breadcrumbs={props.breadcrumbs}
 			/>}
 		/>
 	)

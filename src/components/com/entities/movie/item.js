@@ -5,11 +5,11 @@ import Awards from 'com/awards'
 import Typography from '@material-ui/core/Typography';
 
 export default function MovieItem( props ){
-  const { full, year, all, id, title, awards, image } = props;
+  const { full, year, all, id, title, awards, image, box } = props;
 
   return (
     
-    <Link id={id} entity={name}>
+    <Link box id={id} entity={name}>
       <Card
         image={(image) ? image.poster : image}
         imageHeight={100}

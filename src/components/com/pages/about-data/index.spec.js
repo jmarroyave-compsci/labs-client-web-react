@@ -18,8 +18,6 @@ describe(`${config.automata.name.toUpperCase()}`, () => {
       </StateProvider>
     )
 
-    
-
     itMustHaveNoErrors(renderer)
     expect(renderer.container).toMatchSnapshot();
   });
@@ -29,9 +27,7 @@ describe(`${config.automata.name.toUpperCase()}`, () => {
       <StateProvider state={{}}>
         <TestComponent render="banner"/>
       </StateProvider>
-    )
-
-    
+    )  
 
     itMustHaveNoErrors(renderer)
     expect(renderer.container).toMatchSnapshot();

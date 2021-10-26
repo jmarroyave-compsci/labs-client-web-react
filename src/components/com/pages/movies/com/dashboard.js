@@ -21,6 +21,8 @@ class Dashboard extends React.Component {
               </GridItem>
 
 
+    console.log(data)
+
     return (
       <Stack spacing={2}>
         <Title>general</Title>
@@ -30,28 +32,12 @@ class Dashboard extends React.Component {
 
         <Title>segments</Title>
         <GridContainer justifyContent='center' fill>
-          {tileChart("by type", type, [25000, 50000])}
-          {tileChart("by genre", genre, [1000, 25000, 50000, 75000, 10000, 250000])}
-          {/*tileChart("classification", classification, [])*/}
-          {tileChart("from", country, [1, 5, 10, 50, 100])}
-          {/* tileChart("stream by", streamBy, []) */}
-          {/*tileChart("rated by", rating, [])*/}
-          {tileChart("released", yearReleased, [10000, 25000, 50000, 100000])}
-        </GridContainer>
-
-        <Title>awards</Title>
-        <GridContainer justifyContent='center' fill>
-          {tileChart("nominees", awards, [])}
-        </GridContainer>
-
-        <Title>ratings</Title>
-        <GridContainer justifyContent='center' fill>
-          {tileIndicator("imdb", (rating) ? rating['imdb'] : null, "local_movies")}
-        </GridContainer>
-
-        <Title>stream</Title>
-        <GridContainer justifyContent='center' fill>
-          {tileIndicator("netflix", (streamBy) ? streamBy['netflix'] : null, "local_movies")}
+          {tileChart("by type", type, [])}
+          {tileChart("by genre", genre, [25000])}
+          {tileChart("rated by", rating, [])}
+          {tileChart("released", yearReleased, [5000, 10000])}
+          {tileChart("classification", classification, [])}
+          {tileChart("from", country, [])}
         </GridContainer>
       </Stack>
     )

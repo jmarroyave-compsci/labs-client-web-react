@@ -4,7 +4,7 @@ export default {
 	},
 	page: {
 		title: "Movies",
-		description: "a dashboard with information from over 8M movies, how they are segmented, awards and ratings",
+		description: "a dashboard with information from over ??? movies, how they are segmented, ratings and other interesting data",
 		url: () => `/movies`,
 	},
 	banner: {

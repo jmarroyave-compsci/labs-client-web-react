@@ -1,30 +1,10 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux'
-import { setPage } from 'app/state' 
-import { useRouter } from 'next/router';
-import Layout from 'com/pages/movies';
-import { fetchData } from 'com/pages/movies/automata'
+import React from 'react'
+import Layout from 'com/pages/movies/page';
 
 const Page = ( props ) => {
-  const dispatch = useDispatch();
-  const router = useRouter(); 
-
-  useEffect( () => {
-    dispatch(setPage({
-      breadcrumbs: [{name: "movies"}],
-    }));    
-
-    dispatch( fetchData( {
-      renderer: "grid",
-    } ) )
-
-  }, [])
-
   return (
-      <Layout/> 
+      <Layout breadcrumbs={`/movies`}/> 
   )
 }
 
 export default Page;
-
-

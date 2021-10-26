@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Paper from 'com/ui/paper';
 
 export const Frame = styled('div')({
+  margin: "0 0 2rem 0",
   padding: 0,
   width: '100%',
 });
@@ -22,7 +23,7 @@ const _Item = styled('div')({
 });
 
 export const Item = ( props ) =>{
-  var paper = (props.paper) ? props.paper : true;  
+  var paper = ( props.paper ) ? props.paper : false;
   var item = <_Item {...props}/>
 
   if(paper){
@@ -43,8 +44,6 @@ export const Item = ( props ) =>{
 
 export const FrameSkeleton = styled('div')({
   padding: "0rem 0rem 4rem 0rem",
-  display: 'flex', 
-  flexGrow: 1,
 });
 
 

@@ -1,0 +1,78 @@
+{
+    "params": {
+        "renderer": "banner"
+    },
+    "data": [
+        {
+            "__typename": "Podcast",
+            "id": "0005ab14-ea88-3038-b82c-86366713e96a",
+            "title": "Steven Redant's Podcast",
+            "link": null,
+            "image": "https://assets.podomatic.net/ts/b8/34/09/stevenredant/pro/1400x1400_9971074.jpg"
+        },
+        {
+            "__typename": "Podcast",
+            "id": "002f4ad4-f714-353a-b4e1-dff07ecfa456",
+            "title": "Gilles Peterson",
+            "link": null,
+            "image": "http://az592690.vo.msecnd.net/media/channels/gillespetersonww/images/original/gillespeterson_logo-square-thumb-e1352205457791.jpg"
+        },
+        {
+            "__typename": "Podcast",
+            "id": "00348695-e40c-3af6-b964-f896d2f02b11",
+            "title": "No Entries",
+            "link": null,
+            "image": "http://static.castfire.com/media/aol/podcasts/music_theinterface_podcast.jpg"
+        },
+        {
+            "__typename": "Podcast",
+            "id": "00355961-473b-3b24-8baa-7fa4fbcfca53",
+            "title": "Tommy Trash - Trashed Podcast",
+            "link": "http://trashedradiopodcast.libsyn.com/",
+            "image": "http://static.libsyn.com/p/assets/5/9/9/1/599127c24189eabe/trashe_podcast_01.jpg"
+        },
+        {
+            "__typename": "Podcast",
+            "id": "0035f757-3204-3723-8567-ba701a5903e8",
+            "title": "The Brutal Backhand",
+            "link": null,
+            "image": "http://brutalbackhand.com/files/BB-Miguel_100_white.jpg"
+        },
+        {
+            "__typename": "Podcast",
+            "id": "005ab174-06ec-3595-a740-6df586de137f",
+            "title": "Stoneface and Terminal Reflected Broadcast",
+            "link": "http://www.stoneface-terminal.de",
+            "image": "http://www.stoneface-terminal.de/podcast/Itunes-Profil-BeDifferent-ES.jpg"
+        },
+        {
+            "__typename": "Podcast",
+            "id": "0068f776-9b73-3af8-a2c1-de6f03679820",
+            "title": "Music Mondays with Chris Millz (Outside The Boom Box)",
+            "link": null,
+            "image": "http://s13.postimage.org/p4sup5a0n/Music_Mondays_Logo.png"
+        },
+        {
+            "__typename": "Podcast",
+            "id": "00773642-ee69-34f6-9dc5-0bb3590e9c82",
+            "title": "Soundcheck from WNYC",
+            "link": null,
+            "image": "https://media2.wnyc.org/i/1400/1400/l/80/1/wn16_wnycstudios_Soundcheck.jpg"
+        },
+        {
+            "__typename": "Podcast",
+            "id": "00a0b9af-dead-31b4-b9a9-fcf47959d45e",
+            "title": "Violin Geek Podcast",
+            "link": "http://www.laurelthomsen.com",
+            "image": "http://www.laurelthomsen.com/Podcast/violin%20geek%20podcast%20image%202.jpg"
+        },
+        {
+            "__typename": "Podcast",
+            "id": "00cd03e4-977b-3953-a94e-4848a143fa17",
+            "title": "ROOM84 PODCAST",
+            "link": "http://www.room84.ch",
+            "image": "http://www.room84.ch/ITUNES_LOGO_2.png"
+        }
+    ],
+    "loading": false
+}

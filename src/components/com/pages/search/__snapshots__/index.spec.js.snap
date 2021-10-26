@@ -1,12 +1,440 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SEARCH compare against snapshot 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+@media (min-width:0px) {
+  .emotion-1 {
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-1 {
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-1 {
+    padding: 0rem 4rem 3rem 4rem;
+  }
+}
+
+.emotion-2 {
+  padding: 0rem 0rem 4rem 0rem;
+}
+
+.emotion-3 {
+  margin-bottom: 4rem;
+}
+
+.emotion-4 {
+  padding-bottom: 3rem;
+}
+
+.emotion-5 {
+  font-weight: bold;
+}
+
+.emotion-6 {
+  padding-bottom: 2rem;
+}
+
+.emotion-7 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-transform: lowercase;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.emotion-8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.emotion-9 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: 16px;
+  margin-right: 16px;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+
+.emotion-9.Mui-disabled {
+  cursor: default;
+}
+
+.emotion-9 .MuiFormControlLabel-label.Mui-disabled {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.emotion-10 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  padding: 9px;
+  border-radius: 50%;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.emotion-10::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-10.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-10 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-10:hover {
+  background-color: rgba(25, 118, 210, 0.04);
+}
+
+@media (hover: none) {
+  .emotion-10:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-10.Mui-checked,
+.emotion-10.MuiCheckbox-indeterminate {
+  color: #1976d2;
+}
+
+.emotion-10.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.emotion-11 {
+  cursor: inherit;
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.emotion-12 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentColor;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: 1.5rem;
+}
+
+.emotion-13 {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+.emotion-14 {
+  margin: 0;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+}
+
+.emotion-46 {
+  margin: 0 0 2rem 0;
+  padding: 0;
+  width: 100%;
+}
+
+.emotion-47 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-47>:not(style)+:not(style) {
+  margin: 0;
+  margin-top: 16px;
+}
+
+.emotion-50 {
+  font-size: 0.65rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.emotion-51 {
+  margin-top: 0;
+}
+
+.emotion-52 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.emotion-53 {
+  margin-top: 0;
+  font-size: 0.85rem;
+  line-height: 1rem;
+}
+
+.emotion-54 {
+  margin: 0;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-width: 0;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.12);
+  border-bottom-width: thin;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  height: auto;
+}
+
+.emotion-104 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-104>:not(style)+:not(style) {
+  margin: 0;
+  margin-left: 16px;
+}
+
+.emotion-105 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 5px 15px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border: 1px solid rgba(25, 118, 210, 0.5);
+  color: #1976d2;
+}
+
+.emotion-105::-moz-focus-inner {
+  border-style: none;
+}
+
+.emotion-105.Mui-disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+@media print {
+  .emotion-105 {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+  }
+}
+
+.emotion-105:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  background-color: rgba(25, 118, 210, 0.04);
+  border: 1px solid #1976d2;
+}
+
+@media (hover: none) {
+  .emotion-105:hover {
+    background-color: transparent;
+  }
+}
+
+.emotion-105.Mui-disabled {
+  color: rgba(0, 0, 0, 0.26);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.emotion-108 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.emotion-109 {
+  padding: 0.85rem;
+}
+
+.emotion-110 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.emotion-111 {
+  font-size: 0.9rem;
+}
+
+.emotion-112 {
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #556cd6;
+  text-decoration-thickness: 1px;
+}
+
 <div>
   <div
-    class="css-nen11g-MuiStack-root"
+    class="emotion-0"
   >
     <div
-      class="css-1exnf3f-MuiStack-root"
+      class="emotion-1"
     >
       <div
         class="MuiGrid-root page-module MuiGrid-container"
@@ -15,33 +443,33 @@ exports[`SEARCH compare against snapshot 1`] = `
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
         >
           <div
-            class="css-1djxhuv"
+            class="emotion-2"
           >
             <div
-              class="css-fxtdit"
+              class="emotion-3"
             >
               <div
-                class="css-3gbbd7"
+                class="emotion-4"
               >
                 <div>
                   search results for: 
                   <span
-                    class="css-in3yi3"
+                    class="emotion-5"
                   >
                     transformers
                   </span>
                 </div>
               </div>
               <div
-                class="css-1i68010"
+                class="emotion-6"
               >
                 <h3
-                  class="css-1wsh0w7"
+                  class="emotion-7"
                 >
                   Filters
                 </h3>
                 <div
-                  class="MuiFormGroup-root css-dmmspl-MuiFormGroup-root"
+                  class="MuiFormGroup-root emotion-8"
                 >
                   <div
                     class="MuiGrid-root MuiGrid-container"
@@ -50,21 +478,21 @@ exports[`SEARCH compare against snapshot 1`] = `
                       class="MuiGrid-root MuiGrid-item"
                     >
                       <label
-                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop css-1hpqosy-MuiFormControlLabel-root"
+                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop emotion-9"
                       >
                         <span
-                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked emotion-10"
                         >
                           <input
                             checked=""
-                            class="PrivateSwitchBase-input css-1m9pwf3"
+                            class="PrivateSwitchBase-input emotion-11"
                             data-indeterminate="false"
                             name="person"
                             type="checkbox"
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-12"
                             data-testid="CheckBoxIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -74,11 +502,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                             />
                           </svg>
                           <span
-                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                            class="MuiTouchRipple-root emotion-13"
                           />
                         </span>
                         <span
-                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-14"
                         >
                           people
                         </span>
@@ -88,21 +516,21 @@ exports[`SEARCH compare against snapshot 1`] = `
                       class="MuiGrid-root MuiGrid-item"
                     >
                       <label
-                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop css-1hpqosy-MuiFormControlLabel-root"
+                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop emotion-9"
                       >
                         <span
-                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked emotion-10"
                         >
                           <input
                             checked=""
-                            class="PrivateSwitchBase-input css-1m9pwf3"
+                            class="PrivateSwitchBase-input emotion-11"
                             data-indeterminate="false"
                             name="movie"
                             type="checkbox"
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-12"
                             data-testid="CheckBoxIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -112,11 +540,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                             />
                           </svg>
                           <span
-                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                            class="MuiTouchRipple-root emotion-13"
                           />
                         </span>
                         <span
-                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-14"
                         >
                           movies
                         </span>
@@ -126,21 +554,21 @@ exports[`SEARCH compare against snapshot 1`] = `
                       class="MuiGrid-root MuiGrid-item"
                     >
                       <label
-                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop css-1hpqosy-MuiFormControlLabel-root"
+                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop emotion-9"
                       >
                         <span
-                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked emotion-10"
                         >
                           <input
                             checked=""
-                            class="PrivateSwitchBase-input css-1m9pwf3"
+                            class="PrivateSwitchBase-input emotion-11"
                             data-indeterminate="false"
                             name="tv_show"
                             type="checkbox"
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-12"
                             data-testid="CheckBoxIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -150,11 +578,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                             />
                           </svg>
                           <span
-                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                            class="MuiTouchRipple-root emotion-13"
                           />
                         </span>
                         <span
-                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-14"
                         >
                           tv shows
                         </span>
@@ -164,21 +592,21 @@ exports[`SEARCH compare against snapshot 1`] = `
                       class="MuiGrid-root MuiGrid-item"
                     >
                       <label
-                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop css-1hpqosy-MuiFormControlLabel-root"
+                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop emotion-9"
                       >
                         <span
-                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked emotion-10"
                         >
                           <input
                             checked=""
-                            class="PrivateSwitchBase-input css-1m9pwf3"
+                            class="PrivateSwitchBase-input emotion-11"
                             data-indeterminate="false"
                             name="video_game"
                             type="checkbox"
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-12"
                             data-testid="CheckBoxIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -188,11 +616,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                             />
                           </svg>
                           <span
-                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                            class="MuiTouchRipple-root emotion-13"
                           />
                         </span>
                         <span
-                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-14"
                         >
                           video games
                         </span>
@@ -202,21 +630,21 @@ exports[`SEARCH compare against snapshot 1`] = `
                       class="MuiGrid-root MuiGrid-item"
                     >
                       <label
-                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop css-1hpqosy-MuiFormControlLabel-root"
+                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop emotion-9"
                       >
                         <span
-                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked emotion-10"
                         >
                           <input
                             checked=""
-                            class="PrivateSwitchBase-input css-1m9pwf3"
+                            class="PrivateSwitchBase-input emotion-11"
                             data-indeterminate="false"
                             name="podcast"
                             type="checkbox"
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-12"
                             data-testid="CheckBoxIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -226,11 +654,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                             />
                           </svg>
                           <span
-                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                            class="MuiTouchRipple-root emotion-13"
                           />
                         </span>
                         <span
-                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-14"
                         >
                           podcasts
                         </span>
@@ -240,21 +668,21 @@ exports[`SEARCH compare against snapshot 1`] = `
                       class="MuiGrid-root MuiGrid-item"
                     >
                       <label
-                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop css-1hpqosy-MuiFormControlLabel-root"
+                        class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementTop emotion-9"
                       >
                         <span
-                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root"
+                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root Mui-checked emotion-10"
                         >
                           <input
                             checked=""
-                            class="PrivateSwitchBase-input css-1m9pwf3"
+                            class="PrivateSwitchBase-input emotion-11"
                             data-indeterminate="false"
                             name="festival"
                             type="checkbox"
                           />
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-12"
                             data-testid="CheckBoxIcon"
                             focusable="false"
                             viewBox="0 0 24 24"
@@ -264,11 +692,11 @@ exports[`SEARCH compare against snapshot 1`] = `
                             />
                           </svg>
                           <span
-                            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                            class="MuiTouchRipple-root emotion-13"
                           />
                         </span>
                         <span
-                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label css-ahj2mt-MuiTypography-root"
+                          class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-14"
                         >
                           movie festivals
                         </span>
@@ -278,260 +706,260 @@ exports[`SEARCH compare against snapshot 1`] = `
                 </div>
               </div>
               <div
-                class="css-0"
+                class="emotion-45"
               >
                 <div
-                  class="css-7ry9k1"
+                  class="emotion-46"
                 >
                   <div
-                    class="css-1p5q5e5-MuiStack-root"
+                    class="emotion-47"
                   >
                     <div
-                      class="css-1p5q5e5-MuiStack-root"
+                      class="emotion-47"
                     >
                       <div
-                        class="css-0"
+                        class="emotion-45"
                       >
                         <div
-                          class="css-1fe9i7b"
+                          class="emotion-50"
                         >
                           Video Game
                         </div>
                         <h3
-                          class="css-8kn4zf"
+                          class="emotion-51"
                         >
-                          <span
-                            class="css-pt399b"
+                          <div
+                            class="emotion-52"
                           >
                             transformers
-                          </span>
+                          </div>
                         </h3>
                         <div
-                          class="css-1gqgroh"
+                          class="emotion-53"
                         >
                           released: 2004-01-01T05:00:00.000Z
                         </div>
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-yk10cl-MuiDivider-root"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
                       />
                       <div
-                        class="css-0"
+                        class="emotion-45"
                       >
                         <div
-                          class="css-1fe9i7b"
+                          class="emotion-50"
                         >
                           Movie
                         </div>
                         <h3
-                          class="css-8kn4zf"
+                          class="emotion-51"
                         >
-                          <span
-                            class="css-pt399b"
+                          <div
+                            class="emotion-52"
                           >
                             transformers
-                          </span>
+                          </div>
                         </h3>
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-yk10cl-MuiDivider-root"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
                       />
                       <div
-                        class="css-0"
+                        class="emotion-45"
                       >
                         <div
-                          class="css-1fe9i7b"
+                          class="emotion-50"
                         >
                           Video Game
                         </div>
                         <h3
-                          class="css-8kn4zf"
+                          class="emotion-51"
                         >
-                          <span
-                            class="css-pt399b"
+                          <div
+                            class="emotion-52"
                           >
                             transformers
-                          </span>
+                          </div>
                         </h3>
                         <div
-                          class="css-1gqgroh"
+                          class="emotion-53"
                         >
                           released: 2003-01-01T05:00:00.000Z
                         </div>
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-yk10cl-MuiDivider-root"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
                       />
                       <div
-                        class="css-0"
+                        class="emotion-45"
                       >
                         <div
-                          class="css-1fe9i7b"
+                          class="emotion-50"
                         >
                           Movie
                         </div>
                         <h3
-                          class="css-8kn4zf"
+                          class="emotion-51"
                         >
-                          <span
-                            class="css-pt399b"
+                          <div
+                            class="emotion-52"
                           >
                             transformers
-                          </span>
+                          </div>
                         </h3>
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-yk10cl-MuiDivider-root"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
                       />
                       <div
-                        class="css-0"
+                        class="emotion-45"
                       >
                         <div
-                          class="css-1fe9i7b"
+                          class="emotion-50"
                         >
                           Video Game
                         </div>
                         <h3
-                          class="css-8kn4zf"
+                          class="emotion-51"
                         >
-                          <span
-                            class="css-pt399b"
+                          <div
+                            class="emotion-52"
                           >
                             transformers animated: the game
-                          </span>
+                          </div>
                         </h3>
                         <div
-                          class="css-1gqgroh"
+                          class="emotion-53"
                         >
                           released: 2008-01-01T05:00:00.000Z
                         </div>
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-yk10cl-MuiDivider-root"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
                       />
                       <div
-                        class="css-0"
+                        class="emotion-45"
                       >
                         <div
-                          class="css-1fe9i7b"
+                          class="emotion-50"
                         >
                           TV Show
                         </div>
                         <h3
-                          class="css-8kn4zf"
+                          class="emotion-51"
                         >
-                          <span
-                            class="css-pt399b"
+                          <div
+                            class="emotion-52"
                           >
                             transformers ascension
-                          </span>
+                          </div>
                         </h3>
                         <div
-                          class="css-1gqgroh"
+                          class="emotion-53"
                         >
                           released: 2016-01-01T05:00:00.000Z
                         </div>
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-yk10cl-MuiDivider-root"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
                       />
                       <div
-                        class="css-0"
+                        class="emotion-45"
                       >
                         <div
-                          class="css-1fe9i7b"
+                          class="emotion-50"
                         >
                           TV Show
                         </div>
                         <h3
-                          class="css-8kn4zf"
+                          class="emotion-51"
                         >
-                          <span
-                            class="css-pt399b"
+                          <div
+                            class="emotion-52"
                           >
                             transformers australia: grandpa unboxing
-                          </span>
+                          </div>
                         </h3>
                         <div
-                          class="css-1gqgroh"
+                          class="emotion-53"
                         >
                           released: 2016-01-01T05:00:00.000Z
                         </div>
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-yk10cl-MuiDivider-root"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
                       />
                       <div
-                        class="css-0"
+                        class="emotion-45"
                       >
                         <div
-                          class="css-1fe9i7b"
+                          class="emotion-50"
                         >
                           Movie
                         </div>
                         <h3
-                          class="css-8kn4zf"
+                          class="emotion-51"
                         >
-                          <span
-                            class="css-pt399b"
+                          <div
+                            class="emotion-52"
                           >
                             transformers cataclysm
-                          </span>
+                          </div>
                         </h3>
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-yk10cl-MuiDivider-root"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
                       />
                       <div
-                        class="css-0"
+                        class="emotion-45"
                       >
                         <div
-                          class="css-1fe9i7b"
+                          class="emotion-50"
                         >
                           TV Show
                         </div>
                         <h3
-                          class="css-8kn4zf"
+                          class="emotion-51"
                         >
-                          <span
-                            class="css-pt399b"
+                          <div
+                            class="emotion-52"
                           >
                             transformers contention
-                          </span>
+                          </div>
                         </h3>
                         <div
-                          class="css-1gqgroh"
+                          class="emotion-53"
                         >
                           released: 2018-01-01T05:00:00.000Z
                         </div>
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem css-yk10cl-MuiDivider-root"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
                       />
                       <div
-                        class="css-0"
+                        class="emotion-45"
                       >
                         <div
-                          class="css-1fe9i7b"
+                          class="emotion-50"
                         >
                           Movie
                         </div>
                         <h3
-                          class="css-8kn4zf"
+                          class="emotion-51"
                         >
-                          <span
-                            class="css-pt399b"
+                          <div
+                            class="emotion-52"
                           >
                             transformers crusade
-                          </span>
+                          </div>
                         </h3>
                       </div>
                     </div>
                     <div
-                      class="css-1clyo4s-MuiStack-root"
+                      class="emotion-104"
                     >
                       <button
-                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-105"
                         disabled=""
                         tabindex="-1"
                         type="button"
@@ -539,13 +967,13 @@ exports[`SEARCH compare against snapshot 1`] = `
                         Back
                       </button>
                       <button
-                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root css-1rwt2y5-MuiButtonBase-root-MuiButton-root"
+                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-105"
                         tabindex="0"
                         type="button"
                       >
                         Next
                         <span
-                          class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                          class="MuiTouchRipple-root emotion-13"
                         />
                       </button>
                     </div>
@@ -562,15 +990,60 @@ exports[`SEARCH compare against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 css-1ps6pg7-MuiPaper-root"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-108"
             >
               <div
-                class="css-vcmx0t"
+                class="emotion-109"
               >
                 <div
-                  class="css-365mzx"
+                  class="emotion-110"
                 >
-                  Stories
+                  See also
+                </div>
+                <div
+                  class="emotion-111"
+                >
+                  <span
+                    class="emotion-112"
+                  >
+                    Movie Awards
+                  </span>
+                </div>
+                <div
+                  class="emotion-111"
+                >
+                  <span
+                    class="emotion-112"
+                  >
+                    Movies
+                  </span>
+                </div>
+                <div
+                  class="emotion-111"
+                >
+                  <span
+                    class="emotion-112"
+                  >
+                    People
+                  </span>
+                </div>
+                <div
+                  class="emotion-111"
+                >
+                  <span
+                    class="emotion-112"
+                  >
+                    Podcasts
+                  </span>
+                </div>
+                <div
+                  class="emotion-111"
+                >
+                  <span
+                    class="emotion-112"
+                  >
+                    Music Podcasts
+                  </span>
                 </div>
               </div>
             </div>

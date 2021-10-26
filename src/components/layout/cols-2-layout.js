@@ -28,7 +28,7 @@ export default function Cols2Layout( props ){
           </GridItem>
           <GridItem xs={12} sm={12} md={3} lg={2}>
             <div style={{paddingLeft: '1rem', paddingRight: '0.5rem'}}>
-              <RelatedStories {...props} filter={id} />
+              <RelatedStories {...props} filter={id} breadcrumbs={props.breadcrumbs}/>
               {rightCol}
             </div>
           </GridItem>

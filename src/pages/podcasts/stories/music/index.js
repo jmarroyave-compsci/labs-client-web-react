@@ -1,34 +1,18 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux'
-import { setPage } from 'app/state' 
+import React from 'react'
 import { useRouter } from 'next/router';
-import Layout from 'com/pages/podcast-music';
-import { fetchData } from 'com/pages/podcast-music/automata'
+import Layout from 'com/pages/podcast-music/page';
 
 const Page = ( props ) => {
-  const dispatch = useDispatch();
   const router = useRouter(); 
-
-  useEffect( () => {
-    var { page }  = (router.query) ? router.query : {}; 
-    page = (page) ? parseInt(page) : 1;
-
-    dispatch(setPage({
-      breadcrumbs: [{name: "podcasts", url: '/podcasts'}, {name: "stories", url: '/podcasts/stories'}, {name: "music"}],
-    }));    
-
-    dispatch( fetchData( {
-      renderer: "grid",
-      page: page
-    } ) )
-
-  }, [])
+  var { year, page } = (router && router.query) ? router.query : []; 
+  page = (page) ? parseInt(page) : 1;
 
   return (
-      <Layout/> 
+      <Layout 
+        breadcrumbs={`/podcasts/stories/music`} 
+        page={page}
+      /> 
   )
 }
 
 export default Page;
-
-

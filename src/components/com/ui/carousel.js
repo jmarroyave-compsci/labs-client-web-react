@@ -62,7 +62,7 @@ export default function _Carousel( props ){
           style={{display: 'flex'}}
         >
           {data.map( (item, idx) => 
-          <Item key={idx}>
+          <Item paper key={idx}>
               {(loading) ? 
                 <Placeholder/>
               :

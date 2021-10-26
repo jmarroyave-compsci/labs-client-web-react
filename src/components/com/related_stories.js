@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import StoriesData from 'app/data/stories';
+import { getBy } from 'data/stories';
 import Stack from 'com/ui/stack';
 import Paper from '@mui/material/Paper';
 import Link from 'core/ui/text-link';
@@ -19,12 +19,12 @@ const Story = styled('div')({
 });
 
 const RelatedStories = function( props ){
-    const { filter } = props;
-    const stories = StoriesData.getBy( filter );
+    const { filter, breadcrumbs } = props;
+    const stories = getBy( filter, breadcrumbs );
     return (
         <Paper>
             <RightPanel>
-                <Stories>Stories</Stories>
+                <Stories>See also</Stories>
                     {stories.map( (story, idx) => 
                         <Story key={idx}><Link href={story.url}>{story.title}</Link></Story>
                     )}

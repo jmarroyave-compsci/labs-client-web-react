@@ -23,6 +23,7 @@ module.exports = {
   ],
   testPathIgnorePatterns: [
     "<rootDir>/src/tests/cypress"
-  ]
+  ],
+  snapshotSerializers: ["@emotion/jest/serializer"],
 };
 
