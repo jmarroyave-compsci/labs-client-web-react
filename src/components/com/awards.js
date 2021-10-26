@@ -93,7 +93,7 @@ function AwardsMini( props, data ){
         showThis(item) && 
           <div key={idx} >
             <LinkToPage year={item.year}>
-              <ItemMini>{item.year} - {item.name.toUpperCase()} - {((item.won === "false" || item.won === false) ? "[N]" : "[W]")} {item.category}</ItemMini>
+              <ItemMini>{item.year} - {item.festival.name.toUpperCase()} - {((item.won === "false" || item.won === false) ? "[N]" : "[W]")} {item.category}</ItemMini>
             </LinkToPage>
           </div>        
       )}
@@ -122,9 +122,10 @@ function AwardsFull( props, data ){
   }
 
   const RenderPrize = (item) => {
-    if (!currentPrize || currentPrize != item.name){
-      currentPrize = item.name;
-      return <Prize>{item.name}</Prize>
+    console.log(item)
+    if (!currentPrize || currentPrize != item.festival.name){
+      currentPrize = item.festival.name;
+      return <Prize>{item.festival.name}</Prize>
     }
     return null;
   }

@@ -13,7 +13,10 @@ query getPerson($id:String!) {
     profession
     awards {
       category
-      name
+      festival{
+        id
+        name
+      }
       won
       year
     }

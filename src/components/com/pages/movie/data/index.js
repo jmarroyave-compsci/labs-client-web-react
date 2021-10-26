@@ -41,6 +41,7 @@ query getMovie($id:String!) {
     awards {
       category
       festival{
+        id
         name
       }
       won
