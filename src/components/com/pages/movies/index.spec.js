@@ -1,29 +1,37 @@
 import React from 'react';
-import {render, fireEvent, waitFor, screen} from '@testing-library/react'
+import {render, fireEvent, waitFor, screen, prettyDOM} from '@testing-library/react'
 import '@testing-library/jest-dom'
 
 import { itMustHaveNoErrors, TestProvider } from "tests/jest/shared"
 
 import itemState from './automata/tests/item.json'
-import Page from '.';
+import TestComponent from '.';
 import config from './.config';
- 
+
 describe(`${config.automata.name.toUpperCase()}`, () => {
-  let store;
-  let component;
- 
   beforeEach(() => { 
-    component = (
+  }); 
+ 
+  it('compare Page against snapshot', () => {
+    const renderer = render(
       <TestProvider state={itemState}>
-        <Page />
+        <TestComponent render="page"/>
       </TestProvider>
-    );    
+    )
+
+    itMustHaveNoErrors(renderer)
+    //expect(renderer.container).toMatchSnapshot();
   });
- 
- 
+
   it('compare against snapshot', () => {
-    const renderer = render(component)
+    const renderer = render(
+      <TestProvider state={itemState}>
+        <TestComponent render="banner"/>
+      </TestProvider>
+    )
+
     itMustHaveNoErrors(renderer)
     expect(renderer.container).toMatchSnapshot();
   });
 });
+

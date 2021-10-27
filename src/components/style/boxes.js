@@ -23,7 +23,7 @@ const _Item = styled('div')({
 });
 
 export const Item = ( props ) =>{
-  const { paper } = props
+  const paper = (props.paper) ? props.paper : true;
   var item = <_Item {...props}/>
 
   if(paper){

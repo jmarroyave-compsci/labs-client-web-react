@@ -24,13 +24,13 @@ class Dashboard extends React.Component {
       <Stack spacing={2}>
         <Title>general</Title>
         <GridContainer justifyContent='center' fill>
-          {tileIndicator("movies", total, "local_movies")}
+          {tileIndicator("video games", total, "sports_esports")}
         </GridContainer>
 
         <Title>segments</Title>
         <GridContainer justifyContent='center' fill>
           {tileChart("by genre", genre, [])}
-          {tileChart("released", yearReleased, [10, 100, 250, 500])}
+          {tileChart("released", yearReleased, [250, 500])}
         </GridContainer>
 
       </Stack>

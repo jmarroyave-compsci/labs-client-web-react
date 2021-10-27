@@ -1,747 +1,208 @@
 {
     "params": {
-        "renderer": "banner"
+        "renderer": "page"
     },
-    "data": [
-        {
-            "__typename": "StoryMovieRemakes",
-            "name": "Home",
-            "count": 353,
-            "recs": [
-                {
-                    "__typename": "Movie",
-                    "id": "tt0005504",
-                    "releasedDate": "1915-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama",
-                        "romance"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0002061",
-                            "name": "Maurice Elvey"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0010261",
-                    "releasedDate": "1919-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0916665",
-                            "name": "Lois Weber"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0205131",
-                    "releasedDate": "1916-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "comedy",
-                        "drama"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0922304",
-                            "name": "Raymond B. West"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0001682",
-                    "releasedDate": "1911-01-01T05:00:00.000Z",
-                    "type": "short",
-                    "genre": [
-                        "drama",
-                        "short"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0002177",
-                            "name": "Oscar Apfel"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0087420",
-                    "releasedDate": "1984-01-01T05:00:00.000Z",
-                    "type": "short",
-                    "genre": [
-                        "short"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0446837",
-                            "name": "Rory Kelly"
-                        }
-                    ]
-                }
-            ]
+    "data": {
+        "__typename": "DashboardMovies",
+        "awards": null,
+        "classification": {
+            "_": 1420202
         },
-        {
-            "__typename": "StoryMovieRemakes",
-            "name": "Alone",
-            "count": 299,
-            "recs": [
-                {
-                    "__typename": "Movie",
-                    "id": "tt0022215",
-                    "releasedDate": "1931-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0468882",
-                            "name": "Grigoriy Kozintsev"
-                        },
-                        {
-                            "__typename": "Person",
-                            "id": "nm0871185",
-                            "name": "Leonid Trauberg"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0022408",
-                    "releasedDate": "1931-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0224543",
-                            "name": "Henri Diamant-Berger"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0053239",
-                    "releasedDate": "1959-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama",
-                        "war"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0688191",
-                            "name": "Vladimir Pogacic"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0090614",
-                    "releasedDate": "1986-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0003289",
-                            "name": "John Putch"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0186559",
-                    "releasedDate": "1976-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0868402",
-                            "name": "Raúl de la Torre"
-                        }
-                    ]
-                }
-            ]
+        "country": {},
+        "genre": {
+            "action": 75183,
+            "adult": 9759,
+            "adventure": 40759,
+            "animation": 59789,
+            "biography": 27708,
+            "comedy": 268856,
+            "crime": 52767,
+            "documentary": 235418,
+            "drama": 454828,
+            "family": 41340,
+            "fantasy": 40709,
+            "filmNoir": 762,
+            "gameShow": 40,
+            "history": 21757,
+            "horror": 76590,
+            "music": 33379,
+            "musical": 16836,
+            "mystery": 35091,
+            "news": 7181,
+            "realityTv": 1929,
+            "romance": 73092,
+            "sciFi": 36335,
+            "short": 778495,
+            "sport": 11701,
+            "talkShow": 537,
+            "thriller": 68710,
+            "war": 12388,
+            "western": 13396
         },
-        {
-            "__typename": "StoryMovieRemakes",
-            "name": "Broken",
-            "count": 226,
-            "recs": [
-                {
-                    "__typename": "Movie",
-                    "id": "tt0225223",
-                    "releasedDate": "2000-01-01T05:00:00.000Z",
-                    "type": "short",
-                    "genre": [
-                        "drama",
-                        "short",
-                        "thriller"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0871387",
-                            "name": "Elle Travis"
-                        }
-                    ]
-                }
-            ]
+        "rating": {
+            "internetMovieDatabase": 3278,
+            "metacritic": 981,
+            "rottenTomatoes": 1585,
+            "imdb": 404428,
+            "test": 1
         },
-        {
-            "__typename": "StoryMovieRemakes",
-            "name": "Trapped",
-            "count": 192,
-            "recs": [
-                {
-                    "__typename": "Movie",
-                    "id": "tt0029689",
-                    "releasedDate": "1937-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "action",
-                        "crime",
-                        "mystery"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0058270",
-                            "name": "Leon Barsha"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0041983",
-                    "releasedDate": "1949-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "crime",
-                        "drama",
-                        "filmNoir"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0281507",
-                            "name": "Richard Fleischer"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0138885",
-                    "releasedDate": "1999-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama",
-                        "thriller"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0542943",
-                            "name": "Robert Mann"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0014560",
-                    "releasedDate": "1923-01-01T05:00:00.000Z",
-                    "type": "short",
-                    "genre": [
-                        "animation",
-                        "comedy",
-                        "short"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0281487",
-                            "name": "Dave Fleischer"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0134160",
-                    "releasedDate": "1931-01-01T05:00:00.000Z",
-                    "type": "short",
-                    "genre": [
-                        "crime",
-                        "drama",
-                        "mystery"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0627087",
-                            "name": "Kurt Neumann"
-                        }
-                    ]
-                }
-            ]
+        "streamBy": {},
+        "total": 1420202,
+        "type": {
+            "movie": 588456,
+            "short": 831746
         },
-        {
-            "__typename": "StoryMovieRemakes",
-            "name": "The Gift",
-            "count": 180,
-            "recs": [
-                {
-                    "__typename": "Movie",
-                    "id": "tt0193192",
-                    "releasedDate": "1999-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0001200",
-                            "name": "Gary Farmer"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0219699",
-                    "releasedDate": "2000-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama",
-                        "fantasy",
-                        "horror"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0000600",
-                            "name": "Sam Raimi"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0199560",
-                    "releasedDate": "1997-01-01T05:00:00.000Z",
-                    "type": "short",
-                    "genre": [
-                        "short"
-                    ],
-                    "directors": []
-                }
-            ]
-        },
-        {
-            "__typename": "StoryMovieRemakes",
-            "name": "The Interview",
-            "count": 179,
-            "recs": [
-                {
-                    "__typename": "Movie",
-                    "id": "tt0113466",
-                    "releasedDate": "1995-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0306677",
-                            "name": "Monique Gardenberg"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0120714",
-                    "releasedDate": "1998-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "crime",
-                        "drama",
-                        "thriller"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0597516",
-                            "name": "Craig Monahan"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "__typename": "StoryMovieRemakes",
-            "name": "The Box",
-            "count": 173,
-            "recs": [
-                {
-                    "__typename": "Movie",
-                    "id": "tt0072727",
-                    "releasedDate": "1975-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "comedy"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0248906",
-                            "name": "Paul Eddey"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0061421",
-                    "releasedDate": "1967-01-01T05:00:00.000Z",
-                    "type": "short",
-                    "genre": [
-                        "animation",
-                        "mystery",
-                        "short"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0937747",
-                            "name": "Fred Wolf"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0157423",
-                    "releasedDate": "1996-01-01T05:00:00.000Z",
-                    "type": "short",
-                    "genre": [
-                        "short"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0013712",
-                            "name": "Jonathan C. Aguirre"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "__typename": "StoryMovieRemakes",
-            "name": "Silence",
-            "count": 168,
-            "recs": [
-                {
-                    "__typename": "Movie",
-                    "id": "tt0017385",
-                    "releasedDate": "1926-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "crime",
-                        "drama",
-                        "romance"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0432216",
-                            "name": "Rupert Julian"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0022384",
-                    "releasedDate": "1931-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "crime",
-                        "drama"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0309163",
-                            "name": "Louis J. Gasnier"
-                        },
-                        {
-                            "__typename": "Person",
-                            "id": "nm0545730",
-                            "name": "Max Marcin"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0067755",
-                    "releasedDate": "1971-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama",
-                        "history"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0793983",
-                            "name": "Masahiro Shinoda"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0072161",
-                    "releasedDate": "1974-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama",
-                        "family"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0466793",
-                            "name": "John Korty"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0122713",
-                    "releasedDate": "1997-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0201035",
-                            "name": "Jack Darcus"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "__typename": "StoryMovieRemakes",
-            "name": "Hope",
-            "count": 165,
-            "recs": [
-                {
-                    "__typename": "Movie",
-                    "id": "tt0010268",
-                    "releasedDate": "1919-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama",
-                        "romance"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0934010",
-                            "name": "Rex Wilson"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0066500",
-                    "releasedDate": "1970-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0351566",
-                            "name": "Yilmaz Güney"
-                        },
-                        {
-                            "__typename": "Person",
-                            "id": "nm0351410",
-                            "name": "Serif Gören"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0159027",
-                    "releasedDate": "1996-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "documentary"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0864269",
-                            "name": "Oren Tirosh"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0190464",
-                    "releasedDate": "1999-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0027285",
-                            "name": "Pete Anderson"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0013250",
-                    "releasedDate": "1922-01-01T05:00:00.000Z",
-                    "type": "short",
-                    "genre": [
-                        "drama",
-                        "short"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0007276",
-                            "name": "Legaren à Hiller"
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "__typename": "StoryMovieRemakes",
-            "name": "Escape",
-            "count": 162,
-            "recs": [
-                {
-                    "__typename": "Movie",
-                    "id": "tt0032447",
-                    "releasedDate": "1940-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "drama"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0503777",
-                            "name": "Mervyn LeRoy"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0040325",
-                    "releasedDate": "1948-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "thriller"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0000581",
-                            "name": "Joseph L. Mankiewicz"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0095111",
-                    "releasedDate": "1991-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "action",
-                        "crime",
-                        "drama"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0246986",
-                            "name": "Atef El-Tayeb"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0099517",
-                    "releasedDate": "1990-01-01T05:00:00.000Z",
-                    "type": "movie",
-                    "genre": [
-                        "adventure"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0836575",
-                            "name": "Richard Styles"
-                        }
-                    ]
-                },
-                {
-                    "__typename": "Movie",
-                    "id": "tt0028835",
-                    "releasedDate": "1937-01-01T05:00:00.000Z",
-                    "type": "short",
-                    "genre": [
-                        "animation",
-                        "music",
-                        "short"
-                    ],
-                    "directors": [
-                        {
-                            "__typename": "Person",
-                            "id": "nm0124722",
-                            "name": "Mary Ellen Bute"
-                        },
-                        {
-                            "__typename": "Person",
-                            "id": "nm0625915",
-                            "name": "Bill Nemeth"
-                        },
-                        {
-                            "__typename": "Person",
-                            "id": "nm0625934",
-                            "name": "Ted Nemeth"
-                        }
-                    ]
-                }
-            ]
+        "yearReleased": {
+            "_1874": 1,
+            "_1877": 1,
+            "_1878": 2,
+            "_1881": 2,
+            "_1882": 1,
+            "_1883": 1,
+            "_1885": 1,
+            "_1887": 45,
+            "_1888": 5,
+            "_1889": 2,
+            "_1890": 6,
+            "_1891": 10,
+            "_1892": 9,
+            "_1893": 3,
+            "_1894": 99,
+            "_1895": 115,
+            "_1896": 851,
+            "_1897": 1363,
+            "_1898": 1796,
+            "_1899": 1818,
+            "_1900": 1860,
+            "_1901": 1767,
+            "_1902": 1808,
+            "_1903": 2676,
+            "_1904": 1837,
+            "_1905": 1704,
+            "_1906": 1859,
+            "_1907": 2488,
+            "_1908": 4282,
+            "_1909": 5434,
+            "_1910": 6411,
+            "_1911": 7709,
+            "_1912": 8722,
+            "_1913": 9772,
+            "_1914": 9346,
+            "_1915": 8572,
+            "_1916": 7055,
+            "_1917": 5621,
+            "_1918": 4739,
+            "_1919": 4147,
+            "_1920": 4536,
+            "_1921": 4227,
+            "_1922": 3597,
+            "_1923": 3038,
+            "_1924": 3090,
+            "_1925": 3384,
+            "_1926": 3396,
+            "_1927": 3514,
+            "_1928": 3496,
+            "_1929": 3646,
+            "_1930": 3156,
+            "_1931": 3244,
+            "_1932": 3035,
+            "_1933": 2874,
+            "_1934": 2919,
+            "_1935": 2865,
+            "_1936": 3232,
+            "_1937": 3191,
+            "_1938": 3001,
+            "_1939": 2769,
+            "_1940": 2556,
+            "_1941": 2454,
+            "_1942": 2387,
+            "_1943": 2154,
+            "_1944": 1981,
+            "_1945": 1954,
+            "_1946": 2183,
+            "_1947": 2330,
+            "_1948": 2516,
+            "_1949": 2742,
+            "_1950": 2887,
+            "_1951": 2899,
+            "_1952": 3074,
+            "_1953": 3184,
+            "_1954": 3169,
+            "_1955": 3332,
+            "_1956": 3468,
+            "_1957": 3672,
+            "_1958": 3648,
+            "_1959": 3609,
+            "_1960": 3841,
+            "_1961": 4003,
+            "_1962": 3975,
+            "_1963": 4004,
+            "_1964": 4356,
+            "_1965": 4693,
+            "_1966": 4737,
+            "_1967": 4901,
+            "_1968": 5293,
+            "_1969": 5464,
+            "_1970": 5716,
+            "_1971": 5707,
+            "_1972": 5443,
+            "_1973": 5385,
+            "_1974": 5275,
+            "_1975": 5604,
+            "_1976": 5480,
+            "_1977": 5217,
+            "_1978": 5491,
+            "_1979": 5618,
+            "_1980": 5617,
+            "_1981": 5379,
+            "_1982": 5272,
+            "_1983": 5482,
+            "_1984": 5754,
+            "_1985": 5934,
+            "_1986": 5696,
+            "_1987": 5765,
+            "_1988": 5969,
+            "_1989": 6046,
+            "_1990": 6444,
+            "_1991": 6034,
+            "_1992": 6123,
+            "_1993": 6082,
+            "_1994": 6272,
+            "_1995": 6822,
+            "_1996": 7149,
+            "_1997": 7714,
+            "_1998": 8426,
+            "_1999": 9060,
+            "_2000": 9760,
+            "_2001": 107660,
+            "_2002": 11993,
+            "_2003": 13369,
+            "_2004": 15963,
+            "_2005": 19124,
+            "_2006": 20285,
+            "_2007": 22804,
+            "_2008": 27807,
+            "_2009": 34309,
+            "_2010": 40228,
+            "_2011": 46015,
+            "_2012": 52150,
+            "_2013": 57308,
+            "_2014": 62808,
+            "_2015": 62447,
+            "_2016": 67306,
+            "_2017": 68956,
+            "_2018": 67267,
+            "_2019": 61592,
+            "_2020": 54046,
+            "_2021": 38180,
+            "_2022": 4735,
+            "_2023": 406,
+            "_2024": 64,
+            "_2025": 14,
+            "_2026": 5,
+            "_2027": 7,
+            "_2028": 2
         }
-    ],
+    },
     "loading": false
 }

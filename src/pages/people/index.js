@@ -15,7 +15,7 @@ const Page = ( props ) => {
     }));    
 
     dispatch( fetchData( {
-      renderer: "grid",
+      renderer: "page",
     } ) )
 
   }, [])

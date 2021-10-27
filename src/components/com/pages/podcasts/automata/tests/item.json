@@ -1,0 +1,13 @@
+{
+    "params": {
+        "renderer": "page"
+    },
+    "data": {
+        "__typename": "DashboardPeople",
+        "alive": 0,
+        "profession": null,
+        "total": 0,
+        "yearBirth": null
+    },
+    "loading": false
+}

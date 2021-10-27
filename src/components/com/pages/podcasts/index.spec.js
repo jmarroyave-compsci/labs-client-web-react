@@ -1,34 +1,37 @@
 import React from 'react';
-import { Provider } from 'react-redux';
-import configureStore from 'redux-mock-store';
-import {render, fireEvent, waitFor, screen} from '@testing-library/react'
+import {render, fireEvent, waitFor, screen, prettyDOM} from '@testing-library/react'
 import '@testing-library/jest-dom'
 
-import { itMustHaveNoErrors, StateProvider } from "tests/jest/shared"
+import { itMustHaveNoErrors, TestProvider } from "tests/jest/shared"
 
-import Page from '.';
+import itemState from './automata/tests/item.json'
+import TestComponent from '.';
 import config from './.config';
 
-const mockStore = configureStore([]);
- 
-describe('Directors story', () => {
-  let store;
-  let component;
- 
+describe(`${config.automata.name.toUpperCase()}`, () => {
   beforeEach(() => { 
-    var state = {}
-    store = mockStore(state);
-    component = (
-      <Provider store={store}>
-        <Page />
-      </Provider>
-    );    
-	});
+  }); 
  
- 
+  it('compare Page against snapshot', () => {
+    const renderer = render(
+      <TestProvider state={itemState}>
+        <TestComponent render="page"/>
+      </TestProvider>
+    )
+
+    itMustHaveNoErrors(renderer)
+    //expect(renderer.container).toMatchSnapshot();
+  });
+
   it('compare against snapshot', () => {
-    const renderer = render(component)
+    const renderer = render(
+      <TestProvider state={itemState}>
+        <TestComponent render="banner"/>
+      </TestProvider>
+    )
+
     itMustHaveNoErrors(renderer)
     expect(renderer.container).toMatchSnapshot();
   });
 });
+

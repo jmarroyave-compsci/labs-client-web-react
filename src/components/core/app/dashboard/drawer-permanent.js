@@ -97,7 +97,7 @@ function getOptions(nav, open){
     var name = (open) ? ((item.nameOpen) ? item.nameOpen : item.name) : item.name; 
 
 		var opt = 
-		<Link key={key++} to={(item.link) ? item.link : item.route}>
+		<Link box key={key++} to={(item.link) ? item.link : item.route}>
 		    <ListItem button>
           {item.icon && <ListItemIcon>
             <Icon alt={name}>{item.icon}</Icon>

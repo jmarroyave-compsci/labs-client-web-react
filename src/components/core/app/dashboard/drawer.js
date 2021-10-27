@@ -77,7 +77,7 @@ function getOptions(nav, open, toggleDrawer){
     var name = (open) ? ((item.nameOpen) ? item.nameOpen : item.name) : item.name; 
 
 		var opt = 
-		<Link key={key++} to={(item.link) ? item.link : item.route} onClick={() => console.log("click")}>
+		<Link box key={key++} to={(item.link) ? item.link : item.route} onClick={() => console.log("click")}>
 		    <ListItem button onClick={() => toggleDrawer()}>
           {item.icon && <ListItemIcon>
             <Icon alt={name}>{item.icon}</Icon>
