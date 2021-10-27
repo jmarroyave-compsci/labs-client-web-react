@@ -6,19 +6,19 @@ import LinkTVShow from 'com/entities/tv-show/link';
 import LinkVideoGame from 'com/entities/video-game/link';
 
 function EntityLink( params ) {
-	const { id, type, children } = params;
+	const { id, type, children, box } = params;
 
 	switch( type ){
 		case "movie":
-			return <LinkMovie id={id}>{children}</LinkMovie>
+			return <LinkMovie box={box} id={id}>{children}</LinkMovie>
 		case "person":
-			return <LinkPerson id={id}>{children}</LinkPerson>
+			return <LinkPerson box={box} id={id}>{children}</LinkPerson>
 		case "podcast":
-			return <LinkPodcast id={id}>{children}</LinkPodcast>
+			return <LinkPodcast box={box} id={id}>{children}</LinkPodcast>
 		case "tv-show":
-			return <LinkTVShow id={id}>{children}</LinkTVShow>
+			return <LinkTVShow box={box} id={id}>{children}</LinkTVShow>
 		case "video-game":
-			return <LinkVideoGame id={id}>{children}</LinkVideoGame>
+			return <LinkVideoGame box={box} id={id}>{children}</LinkVideoGame>
 	}
 
 	return <div>ENTITY {type} NOT FOUND</div>

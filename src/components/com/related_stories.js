@@ -3,7 +3,7 @@ import { styled } from '@mui/material/styles';
 import { getBy } from 'data/stories';
 import Stack from 'com/ui/stack';
 import Paper from '@mui/material/Paper';
-import Link from 'core/ui/text-link';
+import Link from 'core/ui/link';
 
 const RightPanel = styled('div')({
   padding: '0.85rem'

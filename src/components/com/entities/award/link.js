@@ -4,7 +4,7 @@ import Link from 'core/ui/link';
 function AwardLink( params ) {
 	const { box, id, year, entity, children } = params;
 	return (
-		<Link box to={`${entity}/stories/awards/${id}/${year}`}>{children}</Link>
+		<Link box={box} to={`${entity}/stories/awards/${id}/${year}`}>{children}</Link>
 	);
 }
 

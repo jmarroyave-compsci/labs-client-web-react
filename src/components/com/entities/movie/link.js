@@ -4,7 +4,7 @@ import Link from 'core/ui/link';
 function MovieLinkComponent( params ) {
 	const { id, entity, children, box } = params;
 	return (
-		<Link box border={false} to={`/movies/${id}`}>{children}</Link>
+		<Link box={box}  border={false} to={`/movies/${id}`}>{children}</Link>
 	);
 }
 

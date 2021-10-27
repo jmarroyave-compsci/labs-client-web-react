@@ -9,7 +9,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Typography from '@material-ui/core/Typography';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import LinearProgress from '@material-ui/core/LinearProgress';
-import Link from 'core/ui/text-link';
+import Link from 'core/ui/link';
 import Search from './search';
 import Box from '@material-ui/core/Box';
 

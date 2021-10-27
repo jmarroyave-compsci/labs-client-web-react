@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia'
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
-
+import { isString } from 'core/lib/data'
 
 class MediaCard extends React.Component {
   render() {
@@ -18,7 +18,7 @@ class MediaCard extends React.Component {
     return (
         <Card style={{flexGrow: 1}}>
           <CardHeader 
-            title={<Typography noWrap={false}>{title}</Typography>}
+            title={ (isString(title)) ? <Typography noWrap={false}>{title}</Typography> : title}
             subheader={subtitle}
           />
           {!noImage && 
@@ -30,9 +30,13 @@ class MediaCard extends React.Component {
           }
           {text  && 
             <CardContent>
-              <Typography variant="body2" color="text.secondary" component="div">
-                {text}
-              </Typography>
+              { isString(text) ?
+                  <Typography variant="body2" color="text.secondary" component="div">
+                    {text}
+                  </Typography>
+                :
+                  text
+              }
             </CardContent>
           }
           { actions && actions.length > 0 && 

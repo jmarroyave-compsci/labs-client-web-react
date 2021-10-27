@@ -19,7 +19,7 @@ import Box from '@mui/material/Box';
 
 function Drawer_( props ) {
 	var { nav, footer, header, toggleDrawer, open } = props;  	
-	const options = getOptions(nav, open);
+	const options = getOptions(nav, open, toggleDrawer);
   const anchor = "left";
   const drawerWidth = 260;
 
@@ -52,7 +52,7 @@ function Drawer_( props ) {
 	);
 }
 
-function getOptions(nav, open){
+function getOptions(nav, open, toggleDrawer){
   nav = nav.options;
 	nav = (nav) ? nav.filter(item => (item.showInDrawer) ? item : null) : [];
 	var key = 0;
@@ -77,8 +77,8 @@ function getOptions(nav, open){
     var name = (open) ? ((item.nameOpen) ? item.nameOpen : item.name) : item.name; 
 
 		var opt = 
-		<Link key={key++} to={(item.link) ? item.link : item.route}>
-		    <ListItem button>
+		<Link key={key++} to={(item.link) ? item.link : item.route} onClick={() => console.log("click")}>
+		    <ListItem button onClick={() => toggleDrawer()}>
           {item.icon && <ListItemIcon>
             <Icon alt={name}>{item.icon}</Icon>
           </ListItemIcon>

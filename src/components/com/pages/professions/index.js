@@ -4,14 +4,10 @@ import MultiLayout from "layout/multi-layout";
 import { useSelector, useDispatch } from 'react-redux';
 import config from "./.config.js";
 import Banner from 'com/ui/banner'
-import Item from './item';
+import Item from './com/item';
 import { getQuote } from 'data/quotes';
 
 export default function Layout( props ){
-  	const state = useSelector(( state ) => state[config.automata.name] )
-  	
-  	if(!state) return <div/>
-
   	const quote = getQuote("director");
 
 	return (
@@ -20,7 +16,7 @@ export default function Layout( props ){
 	      title={config.page.title}
 	      description={`"${quote.text}" ${quote.from}`}
 	      data={getData()}
-	      item={(data) => <Item {...data} />}
+	      item={(data) => <Item full {...data} />}
 	    />
 	)
 }	

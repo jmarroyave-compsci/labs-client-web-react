@@ -8,7 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import LinearProgress from '@material-ui/core/LinearProgress';
 
-import Link from 'core/ui/text-link';
+import Link from 'core/ui/link';
 import Search from 'core/ui/search';
 
 const styles = theme => ({

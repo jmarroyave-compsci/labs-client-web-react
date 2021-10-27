@@ -1,6 +1,6 @@
 import React from 'react'
 import Stack from 'com/ui/stack';
-import TextLink from "core/ui/text-link"
+import TextLink from "core/ui/link"
 import { Title, Description, Footer } from 'style/banner'
 import Carousel from 'com/ui/carousel'
 import LinkButton from 'com/ui/link-button';

@@ -5,7 +5,7 @@ import MultiLayout from "layout/multi-layout";
 import { useSelector, useDispatch } from 'react-redux';
 import config from "./.config.js";
 import { fetchData } from './automata';
-import Item from './item';
+import Item from './com/item';
 
 export default function Layout( props ){
 	const dispatch = useDispatch();
@@ -14,18 +14,15 @@ export default function Layout( props ){
   	if(!state) return <div/>;
 
 	return (
-		<CoreProxy 
-			xs={
-			<MultiLayout
-				config={config}
-				type={state.params.renderer}
-                url={config.page.url(state.params.entity)}
-				data={state.data}
-				loading={state.loading}				
-				onPageChange={(page) => dispatch( fetchData({ ...state.params, page: page }) ) }
-				item={(data) => <Item full {...data}/>}
-				params={{...state.params}}
-			/>}
+		<MultiLayout
+			config={config}
+			type={state.params.renderer}
+            url={config.page.url(state.params.entity)}
+			data={state.data}
+			loading={state.loading}				
+			onPageChange={(page) => dispatch( fetchData({ ...state.params, page: page }) ) }
+			item={(data) => <Item full {...data}/>}
+			params={{...state.params}}
 		/>
 	)
 }	

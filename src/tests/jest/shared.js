@@ -6,12 +6,10 @@ import configureStore from 'redux-mock-store';
 import intersectionObserverMock from './lib/__mocks__/intersectionObserverMock';
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
+import { ERROR_HEADER_TEXT } from 'core/ui/error'
 
 export const itMustHaveNoErrors = ( container ) => {
-  var errors = container.queryByText('Error in components');
-  expect(errors).toBeNull()
-
-  var errors = container.queryByText('MAIN COMPONENT MISSING');
+  var errors = container.queryByText(ERROR_HEADER_TEXT);
   expect(errors).toBeNull()
 }
 

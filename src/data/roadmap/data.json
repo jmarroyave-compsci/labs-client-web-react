@@ -930,7 +930,55 @@
           "children": null
         }
       ],
-      "Day 7": []
+      "Day 7": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "PRIORITIES",
+          "level": 1,
+          "children": null
+        }
+      ]
+    },
+    "Sprint 8": {
+      "Day 1": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Is it viewed? people liked it?",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The project's timeline, the LoC",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Awards, the award page",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Cleaning incomplete functionality",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "DEV",
+          "level": 2,
+          "children": null
+        }
+      ],
+      "Day 2": []
     }
   }
 }

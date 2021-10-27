@@ -20,7 +20,7 @@ const Page = ( props ) => {
     }));    
 
     dispatch( fetchData( {
-      renderer: "grid",
+      renderer: "list",
       page: page
     } ) )
 

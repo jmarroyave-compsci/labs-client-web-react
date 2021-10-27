@@ -21,8 +21,6 @@ class Dashboard extends React.Component {
               </GridItem>
 
 
-    console.log(data)
-
     return (
       <Stack spacing={2}>
         <Title>general</Title>

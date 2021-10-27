@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 import Paper from 'com/ui/paper';
 
@@ -7,7 +8,6 @@ export const Frame = styled('div')({
   padding: 0,
   width: '100%',
 });
-
 
 const _ItemFrame = styled('div')({
   padding: "0",
@@ -23,7 +23,7 @@ const _Item = styled('div')({
 });
 
 export const Item = ( props ) =>{
-  var paper = ( props.paper ) ? props.paper : false;
+  const { paper } = props
   var item = <_Item {...props}/>
 
   if(paper){
@@ -39,6 +39,10 @@ export const Item = ( props ) =>{
       {item}
     </_ItemFrame>
     )
+}
+
+Item.propTypes = {
+  paper: PropTypes.bool,
 }
 
 

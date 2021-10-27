@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CoreProxy from 'core/ui/layout/proxy';
-import DetailLayout from "layout/detail-layout";
+import DetailLayout from "layout/multi-layout";
 import { useSelector } from 'react-redux';
 import config from "./.config.js";
 import Detail from './detail';
@@ -14,8 +13,11 @@ export default function Layout( props ){
 
 	return (
 		<DetailLayout
+			config={config}
+		    type={props.render}
 			data={state.data}
 			loading={state.loading}
+			error={state.error}
 			detail={(data) => <Detail data={data}/>}
 			skeleton={<Skeleton/>}
 			params={{...state.params}}

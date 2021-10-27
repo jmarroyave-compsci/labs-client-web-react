@@ -10,8 +10,6 @@ export default function Sources( props ){
   var data = getLoC();
   data = getTable(data);
 
-  console.log(data)
-
   return (
     <Stack>
       <Title>Lines of Code</Title>
@@ -29,7 +27,6 @@ function getTable( locData ){
     var area = locData[key]
     Object.keys(area).forEach( date => {
       var obj = area[date];
-      console.log(date)
       rec.values.push( { date: new Date(date), price: obj.own.lines} )
     })
   })

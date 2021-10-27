@@ -10,7 +10,7 @@ import MDListItemAvatar from '@material-ui/core/ListItemAvatar';
 import MDListItemText from '@material-ui/core/ListItemText';
 import MDListSubheader from '@material-ui/core/ListSubheader';
 import MDDivider from '@material-ui/core/Divider';
-import Loading from 'core/components/loading';
+import Loading from 'core/ui/loading';
 
 const FixedSizeList = lazy(() => import(/* webpackChunkName: "react-window" */ './external/fixed-size-list'));
 

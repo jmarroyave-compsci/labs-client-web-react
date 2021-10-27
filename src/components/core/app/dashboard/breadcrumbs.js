@@ -1,6 +1,6 @@
 import React from 'react';
 import _Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Link from 'core/ui/text-link';
+import Link from 'core/ui/link';
 import Typography from '@material-ui/core/Typography';
 import { isArray } from 'core/lib/data'
 

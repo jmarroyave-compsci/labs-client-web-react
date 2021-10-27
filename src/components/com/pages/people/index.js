@@ -21,7 +21,7 @@ export default function Layout( props ){
 				type={state.params.renderer}
                 url={config.page.url(state.params.entity)}
 				data={state.data}
-				dashboard={<Dashboard data={state.data} loading={state.loading}/>}
+				dashboard={(props) => <Dashboard data={state.data} loading={state.loading}/>}
 				loading={state.loading}
 				params={{...state.params}}
 			/>}

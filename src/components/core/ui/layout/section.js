@@ -1,5 +1,5 @@
 import React from 'react';
-import ErrorBoundry from '../../components/error';
+import ErrorBoundry from 'core/ui/error-boundry';
 import theme from 'app/config/theme/main';
 import Box from '@mui/material/Box';
 

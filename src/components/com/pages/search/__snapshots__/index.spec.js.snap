@@ -266,23 +266,14 @@ exports[`SEARCH compare against snapshot 1`] = `
 
 .emotion-52 {
   cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #556cd6;
+  text-decoration-thickness: 1px;
 }
 
 .emotion-53 {
-  margin-top: 0;
-  font-size: 0.85rem;
-  line-height: 1rem;
-}
-
-.emotion-54 {
   margin: 0;
   -webkit-flex-shrink: 0;
   -ms-flex-negative: 0;
@@ -297,7 +288,7 @@ exports[`SEARCH compare against snapshot 1`] = `
   height: auto;
 }
 
-.emotion-104 {
+.emotion-98 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -311,12 +302,12 @@ exports[`SEARCH compare against snapshot 1`] = `
   justify-content: center;
 }
 
-.emotion-104>:not(style)+:not(style) {
+.emotion-98>:not(style)+:not(style) {
   margin: 0;
   margin-left: 16px;
 }
 
-.emotion-105 {
+.emotion-99 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -364,23 +355,23 @@ exports[`SEARCH compare against snapshot 1`] = `
   color: #1976d2;
 }
 
-.emotion-105::-moz-focus-inner {
+.emotion-99::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-105.Mui-disabled {
+.emotion-99.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-105 {
+  .emotion-99 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-105:hover {
+.emotion-99:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: rgba(25, 118, 210, 0.04);
@@ -388,17 +379,17 @@ exports[`SEARCH compare against snapshot 1`] = `
 }
 
 @media (hover: none) {
-  .emotion-105:hover {
+  .emotion-99:hover {
     background-color: transparent;
   }
 }
 
-.emotion-105.Mui-disabled {
+.emotion-99.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.emotion-108 {
+.emotion-102 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -407,26 +398,17 @@ exports[`SEARCH compare against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-109 {
+.emotion-103 {
   padding: 0.85rem;
 }
 
-.emotion-110 {
+.emotion-104 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
-.emotion-111 {
+.emotion-105 {
   font-size: 0.9rem;
-}
-
-.emotion-112 {
-  cursor: pointer;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: #556cd6;
-  text-decoration-thickness: 1px;
 }
 
 <div>
@@ -456,7 +438,7 @@ exports[`SEARCH compare against snapshot 1`] = `
                   <span
                     class="emotion-5"
                   >
-                    transformers
+                    test
                   </span>
                 </div>
               </div>
@@ -723,25 +705,21 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <div
                           class="emotion-50"
                         >
-                          Video Game
+                          Movie
                         </div>
                         <h3
                           class="emotion-51"
                         >
-                          <div
+                          <span
                             class="emotion-52"
                           >
-                            transformers
-                          </div>
+                            test
+                          </span>
                         </h3>
-                        <div
-                          class="emotion-53"
-                        >
-                          released: 2004-01-01T05:00:00.000Z
-                        </div>
+                        
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-53"
                       />
                       <div
                         class="emotion-45"
@@ -754,41 +732,16 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="emotion-51"
                         >
-                          <div
+                          <span
                             class="emotion-52"
                           >
-                            transformers
-                          </div>
+                            test
+                          </span>
                         </h3>
+                        
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
-                      />
-                      <div
-                        class="emotion-45"
-                      >
-                        <div
-                          class="emotion-50"
-                        >
-                          Video Game
-                        </div>
-                        <h3
-                          class="emotion-51"
-                        >
-                          <div
-                            class="emotion-52"
-                          >
-                            transformers
-                          </div>
-                        </h3>
-                        <div
-                          class="emotion-53"
-                        >
-                          released: 2003-01-01T05:00:00.000Z
-                        </div>
-                      </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-53"
                       />
                       <div
                         class="emotion-45"
@@ -801,93 +754,16 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="emotion-51"
                         >
-                          <div
+                          <span
                             class="emotion-52"
                           >
-                            transformers
-                          </div>
+                            test
+                          </span>
                         </h3>
+                        
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
-                      />
-                      <div
-                        class="emotion-45"
-                      >
-                        <div
-                          class="emotion-50"
-                        >
-                          Video Game
-                        </div>
-                        <h3
-                          class="emotion-51"
-                        >
-                          <div
-                            class="emotion-52"
-                          >
-                            transformers animated: the game
-                          </div>
-                        </h3>
-                        <div
-                          class="emotion-53"
-                        >
-                          released: 2008-01-01T05:00:00.000Z
-                        </div>
-                      </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
-                      />
-                      <div
-                        class="emotion-45"
-                      >
-                        <div
-                          class="emotion-50"
-                        >
-                          TV Show
-                        </div>
-                        <h3
-                          class="emotion-51"
-                        >
-                          <div
-                            class="emotion-52"
-                          >
-                            transformers ascension
-                          </div>
-                        </h3>
-                        <div
-                          class="emotion-53"
-                        >
-                          released: 2016-01-01T05:00:00.000Z
-                        </div>
-                      </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
-                      />
-                      <div
-                        class="emotion-45"
-                      >
-                        <div
-                          class="emotion-50"
-                        >
-                          TV Show
-                        </div>
-                        <h3
-                          class="emotion-51"
-                        >
-                          <div
-                            class="emotion-52"
-                          >
-                            transformers australia: grandpa unboxing
-                          </div>
-                        </h3>
-                        <div
-                          class="emotion-53"
-                        >
-                          released: 2016-01-01T05:00:00.000Z
-                        </div>
-                      </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-53"
                       />
                       <div
                         class="emotion-45"
@@ -900,41 +776,16 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="emotion-51"
                         >
-                          <div
+                          <span
                             class="emotion-52"
                           >
-                            transformers cataclysm
-                          </div>
+                            test
+                          </span>
                         </h3>
+                        
                       </div>
                       <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
-                      />
-                      <div
-                        class="emotion-45"
-                      >
-                        <div
-                          class="emotion-50"
-                        >
-                          TV Show
-                        </div>
-                        <h3
-                          class="emotion-51"
-                        >
-                          <div
-                            class="emotion-52"
-                          >
-                            transformers contention
-                          </div>
-                        </h3>
-                        <div
-                          class="emotion-53"
-                        >
-                          released: 2018-01-01T05:00:00.000Z
-                        </div>
-                      </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-54"
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-53"
                       />
                       <div
                         class="emotion-45"
@@ -947,19 +798,130 @@ exports[`SEARCH compare against snapshot 1`] = `
                         <h3
                           class="emotion-51"
                         >
-                          <div
+                          <span
                             class="emotion-52"
                           >
-                            transformers crusade
-                          </div>
+                            test
+                          </span>
                         </h3>
+                        
+                      </div>
+                      <hr
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-53"
+                      />
+                      <div
+                        class="emotion-45"
+                      >
+                        <div
+                          class="emotion-50"
+                        >
+                          Movie
+                        </div>
+                        <h3
+                          class="emotion-51"
+                        >
+                          <span
+                            class="emotion-52"
+                          >
+                            test
+                          </span>
+                        </h3>
+                        
+                      </div>
+                      <hr
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-53"
+                      />
+                      <div
+                        class="emotion-45"
+                      >
+                        <div
+                          class="emotion-50"
+                        >
+                          Movie
+                        </div>
+                        <h3
+                          class="emotion-51"
+                        >
+                          <span
+                            class="emotion-52"
+                          >
+                            test
+                          </span>
+                        </h3>
+                        
+                      </div>
+                      <hr
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-53"
+                      />
+                      <div
+                        class="emotion-45"
+                      >
+                        <div
+                          class="emotion-50"
+                        >
+                          Movie
+                        </div>
+                        <h3
+                          class="emotion-51"
+                        >
+                          <span
+                            class="emotion-52"
+                          >
+                            test
+                          </span>
+                        </h3>
+                        
+                      </div>
+                      <hr
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-53"
+                      />
+                      <div
+                        class="emotion-45"
+                      >
+                        <div
+                          class="emotion-50"
+                        >
+                          Movie
+                        </div>
+                        <h3
+                          class="emotion-51"
+                        >
+                          <span
+                            class="emotion-52"
+                          >
+                            test
+                          </span>
+                        </h3>
+                        
+                      </div>
+                      <hr
+                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-53"
+                      />
+                      <div
+                        class="emotion-45"
+                      >
+                        <div
+                          class="emotion-50"
+                        >
+                          Movie
+                        </div>
+                        <h3
+                          class="emotion-51"
+                        >
+                          <span
+                            class="emotion-52"
+                          >
+                            test
+                          </span>
+                        </h3>
+                        
                       </div>
                     </div>
                     <div
-                      class="emotion-104"
+                      class="emotion-98"
                     >
                       <button
-                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-105"
+                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-99"
                         disabled=""
                         tabindex="-1"
                         type="button"
@@ -967,7 +929,7 @@ exports[`SEARCH compare against snapshot 1`] = `
                         Back
                       </button>
                       <button
-                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-105"
+                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-99"
                         tabindex="0"
                         type="button"
                       >
@@ -990,57 +952,57 @@ exports[`SEARCH compare against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-108"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-102"
             >
               <div
-                class="emotion-109"
+                class="emotion-103"
               >
                 <div
-                  class="emotion-110"
+                  class="emotion-104"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-111"
+                  class="emotion-105"
                 >
                   <span
-                    class="emotion-112"
+                    class="emotion-52"
                   >
                     Movie Awards
                   </span>
                 </div>
                 <div
-                  class="emotion-111"
+                  class="emotion-105"
                 >
                   <span
-                    class="emotion-112"
+                    class="emotion-52"
                   >
                     Movies
                   </span>
                 </div>
                 <div
-                  class="emotion-111"
+                  class="emotion-105"
                 >
                   <span
-                    class="emotion-112"
+                    class="emotion-52"
                   >
                     People
                   </span>
                 </div>
                 <div
-                  class="emotion-111"
+                  class="emotion-105"
                 >
                   <span
-                    class="emotion-112"
+                    class="emotion-52"
                   >
                     Podcasts
                   </span>
                 </div>
                 <div
-                  class="emotion-111"
+                  class="emotion-105"
                 >
                   <span
-                    class="emotion-112"
+                    class="emotion-52"
                   >
                     Music Podcasts
                   </span>

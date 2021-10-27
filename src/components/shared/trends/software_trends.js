@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Paper from 'core/ui/paper';
-import Link from 'core/ui/text-link';
+import Link from 'core/ui/link';
 import Slider from "core/ui/slider";
 import Date from "core/ui/date";
 import Card from 'core/ui/cards/img-text';

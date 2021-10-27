@@ -47,6 +47,12 @@ const slice = createSlice({
       state.loading = loading;
       state.error = error;
     },
+    [fetchData.rejected]: (state, action) => {
+      const { error } = action;
+      state.data = [];
+      state.loading = false;
+      state.error = error;
+    },
   },
 })
 

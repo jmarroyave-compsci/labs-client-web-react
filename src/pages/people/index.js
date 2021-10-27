@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux'
 import { setPage } from 'app/state' 
 import { useRouter } from 'next/router';
-import Layout from 'com/pages/people';
+import Layout from 'com/pages/people/page';
 import { fetchData } from 'com/pages/people/automata'
 
 const Page = ( props ) => {

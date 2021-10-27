@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Person Page compare against snapshot 1`] = `
+exports[`PAGE_VIDEO_GAME compare Page against snapshot 1`] = `
 <div>
   <div />
 </div>

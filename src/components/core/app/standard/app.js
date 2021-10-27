@@ -3,7 +3,7 @@ import { withStyles } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import AppBar from '@material-ui/core/AppBar';
 import { MuiThemeProvider } from '@material-ui/core/styles';
-import ErrorBoundry from 'core/components/error';
+import ErrorBoundry from 'core/ui/error-boundry';
 import Drawer from './drawer';
 import Toolbar from './toolbar';
 

@@ -32,6 +32,7 @@ export default function Layout( props ){
             url={config.page.url(state.params)}
 			data={state.data}
 			loading={state.loading}
+			error={state.error}
 			onPageChange={( params ) => dispatch( fetchData({ ...state.params, ...params }) ) }
 			item={(data) => <Item entity={state.params.entity} full {...data}/>}
 			params={{...state.params}}

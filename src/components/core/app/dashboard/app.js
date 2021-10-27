@@ -1,12 +1,12 @@
 import React from 'react';
 import AppBar from '@material-ui/core/AppBar';
-import ErrorBoundry from 'core/components/error';
+import ErrorBoundry from 'core/ui/error-boundry';
 import Drawer from './drawer';
 import Toolbar from './toolbar';
 import Box from '@material-ui/core/Box';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import AppOffline from 'core/components/app_offline';
+import AppOffline from 'core/ui/app_offline';
 import Breadcrumbs from './breadcrumbs';
 import Typography from '@material-ui/core/Typography';
 

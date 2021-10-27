@@ -3,18 +3,22 @@ import PropTypes from 'prop-types';
 import CoreProxy from 'core/ui/layout/proxy';
 import Cols2Layout from "layout/cols-2-layout";
 import Grid from 'com/ui/grid';
+import Stack from 'com/ui/stack';
 import Banner from 'com/ui/banner';
-import TextLink from "core/ui/text-link"
 import { useDispatch } from 'react-redux'
 import { setPage } from 'app/state' 
+import Error from 'core/ui/error'
 
 export default function MultiLayout( props ){
   const dispatch = useDispatch();
-  const { config, loading, data, item, type } = props
+  const { config, loading, error, data, item, type } = props
   const showDataInBanner = config?.banner?.showData ?? false; 
   const title = config?.page?.title ?? "NO TITLE";
   const description = config?.page?.description ?? "NO DESCRIPTION";
   const url = ( props.url ) ? props.url : config.page.url;
+  var mainCol = (props.mainCol) ? props.mainCol : null;
+  mainCol = (props.dashboard) ? props.dashboard : mainCol;
+  mainCol = (props.detail) ? props.detail : mainCol;
 
   useEffect( () => {
     if( props.breadcrumbs )
@@ -38,8 +42,15 @@ export default function MultiLayout( props ){
     />
   )
 
+  //console.log(props)
+
+  if(!type || type == "grid"){
+    return <Error from={title} data="render property wasn't set"/>
+  }
+
   return (
     <>
+      {error && <Error from={title} data={error.message}/>}
       {type === "banner" && BANNER }
       {type === "list" && 
         <Cols2Layout
@@ -47,7 +58,7 @@ export default function MultiLayout( props ){
           id={config.automata.name}
           breadcrumbs={props.breadcrumbs}
           banner={BANNER} 
-          mainCol={(props.mainCol) ? props.mainCol( props ) : getList( loading, data, props.onPageChange, props.params.page, item)
+          mainCol={(mainCol) ? mainCol( props ) : getList( loading, data, props.onPageChange, props.params.page, item)
           }
         />
       }
@@ -57,8 +68,7 @@ export default function MultiLayout( props ){
           id={config.automata.name}
           breadcrumbs={props.breadcrumbs}
           banner={BANNER} 
-          mainCol={(props.mainCol) ? props.mainCol( props ) : ( (props.dashboard) ? props.dashboard : <div>MAIN COMPONENT MISSING</div>)
-          }
+          mainCol={(mainCol) ? mainCol( props ) : <Error from={title} data="main component missing"/>}
         />
       }
       {type === "detail" && 
@@ -66,7 +76,16 @@ export default function MultiLayout( props ){
           {...props}
           id={config.automata.name}
           breadcrumbs={props.breadcrumbs}
-          mainCol={(props.mainCol) ? props.mainCol( props ) : <div>MAIN COMPONENT MISSING</div>
+          mainCol={(mainCol) ? 
+            <Stack spacing={1} sx={{ display: 'flex', flexGrow: 1}}>
+              {(props.loading || !props.data || props.data === null )  ? 
+                (props.skeleton) ? props.skeleton : <div>loading</div>
+              :
+                mainCol(props.data)
+              }
+            </Stack>                      
+            : 
+            <Error from={title} data="main component missing, not found in mainCol or detail prop"/>
           }
         />
       }

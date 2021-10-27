@@ -1,0 +1,35 @@
+{
+    "params": {
+        "id": "tt0852703"
+    },
+    "data": {
+        "__typename": "VideoGame",
+        "id": "tt0852703",
+        "title": "Test Drive",
+        "country": [],
+        "type": "videoGame",
+        "genre": [
+            "sport"
+        ],
+        "duration": "?",
+        "rating": {
+            "__typename": "Rating2",
+            "averageRating": null,
+            "name": null,
+            "votes": null
+        },
+        "releasedDate": "1987-01-01T05:00:00.000Z",
+        "classification": "?",
+        "director": null,
+        "cast": [],
+        "references": null,
+        "image": {
+            "__typename": "Image",
+            "poster": null
+        },
+        "boxOffice": null,
+        "production": null,
+        "language": null
+    },
+    "loading": false
+}

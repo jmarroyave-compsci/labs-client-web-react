@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Dialog from '@material-ui/core/Dialog';
-import UIAppBar from 'core/components/appbar.js';
-import UIToolBar from 'core/components/toolbar.js';
-import UIButton from 'core/components/button.js';
+import UIAppBar from 'core/ui/appbar.js';
+import UIToolBar from 'core/ui/toolbar.js';
+import UIButton from 'core/ui/button.js';
 
 const styles = {
   root: {

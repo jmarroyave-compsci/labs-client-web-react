@@ -1,5 +1,5 @@
 import React from 'react';
-import ErrorBoundry from 'core/components/error';
+import ErrorBoundry from 'core/ui/error-boundry';
 import Loading from 'core/ui/loading';
 
 const component = ModuleComponent =>

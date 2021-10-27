@@ -356,32 +356,32 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            9,100
+                            9,444
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            4,194,538
+                            4,229,699
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            9,006
+                            9,338
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            4,189,911
+                            4,224,316
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            94
+                            106
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            4,627
+                            5,383
                           </td>
                         </tr>
                         <tr
@@ -395,32 +395,32 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            42,410
+                            155,265
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            2,183,175
+                            5,855,071
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            41,835
+                            154,555
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            2,145,232
+                            5,799,136
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            575
+                            710
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            37,943
+                            55,935
                           </td>
                         </tr>
                         <tr
@@ -434,32 +434,32 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            10,437
+                            10,883
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            1,793,356
+                            1,852,750
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            10,362
+                            10,729
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            1,789,436
+                            1,841,724
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            75
+                            154
                           </td>
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
                           >
-                            3,920
+                            11,026
                           </td>
                         </tr>
                       </tbody>
@@ -501,7 +501,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                             class="makeStyles-cardTitle-20"
                           >
                             <span>
-                              152
+                              163
                             </span>
                           </h3>
                         </div>
@@ -524,7 +524,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                             class="makeStyles-cardTitle-20"
                           >
                             <span>
-                              67
+                              68
                             </span>
                           </h3>
                         </div>
