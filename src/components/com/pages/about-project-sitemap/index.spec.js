@@ -19,7 +19,7 @@ describe(`${config.automata.name.toUpperCase()}`, () => {
     )
 
     itMustHaveNoErrors(renderer)
-    expect(renderer.container).toMatchSnapshot();
+    //expect(renderer.container).toMatchSnapshot();
   });
 
   it('compare against snapshot', () => {
