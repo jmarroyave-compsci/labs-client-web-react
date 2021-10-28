@@ -1,0 +1,844 @@
+{
+    "params": {
+        "id": "mf00001",
+        "year": "1987"
+    },
+    "data": {
+        "__typename": "StoryMovieAward",
+        "festival": {
+            "__typename": "MovieFestival",
+            "id": "mf00001",
+            "name": "Academy Awards"
+        },
+        "year": 1987,
+        "awarded": [
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "William Hurt",
+                "won": false,
+                "id": "nm0000458"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Marcello Mastroianni",
+                "won": false,
+                "id": "nm0000052"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A SUPPORTING ROLE",
+                "entity": "Sean Connery",
+                "won": true,
+                "id": "nm0000125"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A SUPPORTING ROLE",
+                "entity": "Vincent Gardenia",
+                "won": false,
+                "id": "nm0306696"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A SUPPORTING ROLE",
+                "entity": "Denzel Washington",
+                "won": false,
+                "id": "nm0000243"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTRESS IN A LEADING ROLE",
+                "entity": "Glenn Close",
+                "won": false,
+                "id": "nm0000335"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTRESS IN A LEADING ROLE",
+                "entity": "Meryl Streep",
+                "won": false,
+                "id": "nm0000658"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTRESS IN A SUPPORTING ROLE",
+                "entity": "Norma Aleandro",
+                "won": false,
+                "id": "nm0001903"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTRESS IN A SUPPORTING ROLE",
+                "entity": "Anne Archer",
+                "won": false,
+                "id": "nm0000271"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTRESS IN A SUPPORTING ROLE",
+                "entity": "Olympia Dukakis",
+                "won": true,
+                "id": "nm0001156"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTRESS IN A SUPPORTING ROLE",
+                "entity": "Anne Ramsey",
+                "won": false,
+                "id": "nm0001649"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTRESS IN A SUPPORTING ROLE",
+                "entity": "Ann Sothern",
+                "won": false,
+                "id": "nm0815433"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ART DIRECTION",
+                "entity": "Empire of the Sun",
+                "won": false,
+                "id": "nm5815499"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "CINEMATOGRAPHY",
+                "entity": "Broadcast News",
+                "won": false,
+                "id": "tt0092699"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ART DIRECTION",
+                "entity": "Empire of the Sun",
+                "won": false,
+                "id": "nm5815499"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "CINEMATOGRAPHY",
+                "entity": "Matewan",
+                "won": false,
+                "id": "tt0093509"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "COSTUME DESIGN",
+                "entity": "The Dead",
+                "won": false,
+                "id": "nm2031698"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ART DIRECTION",
+                "entity": "Empire of the Sun",
+                "won": false,
+                "id": "nm5815499"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "DIRECTING",
+                "entity": "Fatal Attraction",
+                "won": false,
+                "id": "nm2101643"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "DOCUMENTARY (Feature)",
+                "entity": "Hellfire: A Journey from Hiroshima",
+                "won": false,
+                "id": "tt0093173"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "DOCUMENTARY (Feature)",
+                "entity": "A Stitch for Time",
+                "won": false,
+                "id": "tt0094042"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "DOCUMENTARY (Short Subject)",
+                "entity": "Frances Steloff: Memoirs of a Bookseller",
+                "won": false,
+                "id": "tt0093047"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "DOCUMENTARY (Short Subject)",
+                "entity": "In the Wee Wee Hours...",
+                "won": false,
+                "id": "tt0093254"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "DOCUMENTARY (Short Subject)",
+                "entity": "Language Says It All",
+                "won": false,
+                "id": "tt0093388"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "CINEMATOGRAPHY",
+                "entity": "Broadcast News",
+                "won": false,
+                "id": "tt0092699"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ART DIRECTION",
+                "entity": "Empire of the Sun",
+                "won": false,
+                "id": "nm5815499"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "DIRECTING",
+                "entity": "Fatal Attraction",
+                "won": false,
+                "id": "nm2101643"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "FILM EDITING",
+                "entity": "RoboCop",
+                "won": false,
+                "id": "nm8778829"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "FOREIGN LANGUAGE FILM",
+                "entity": "Babette's Feast",
+                "won": true,
+                "id": "tt0092603"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "FOREIGN LANGUAGE FILM",
+                "entity": "Course Completed",
+                "won": false,
+                "id": "tt0092584"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ART DIRECTION",
+                "entity": "Empire of the Sun",
+                "won": false,
+                "id": "nm5815499"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "MUSIC (Original Song)",
+                "entity": "Beverly Hills Cop II",
+                "won": false,
+                "id": "tt0092644"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "CINEMATOGRAPHY",
+                "entity": "Broadcast News",
+                "won": false,
+                "id": "tt0092699"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "DIRECTING",
+                "entity": "Fatal Attraction",
+                "won": false,
+                "id": "nm2101643"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "SHORT FILM (Animated)",
+                "entity": "George and Rosemary",
+                "won": false,
+                "id": "tt0093084"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "SHORT FILM (Animated)",
+                "entity": "The Man Who Planted Trees",
+                "won": true,
+                "id": "tt0093488"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "SHORT FILM (Live Action)",
+                "entity": "Ray's Male Heterosexual Dance Hall",
+                "won": true,
+                "id": "tt0093826"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ART DIRECTION",
+                "entity": "Empire of the Sun",
+                "won": false,
+                "id": "nm5815499"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "FILM EDITING",
+                "entity": "RoboCop",
+                "won": false,
+                "id": "nm8778829"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "VISUAL EFFECTS",
+                "entity": "Predator",
+                "won": false,
+                "id": "nm0695740"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "COSTUME DESIGN",
+                "entity": "The Dead",
+                "won": false,
+                "id": "nm2031698"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "DIRECTING",
+                "entity": "Fatal Attraction",
+                "won": false,
+                "id": "nm2101643"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "WRITING (Screenplay Based on Material from Another Medium)",
+                "entity": "Full Metal Jacket",
+                "won": false,
+                "id": "nm10224474"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "CINEMATOGRAPHY",
+                "entity": "Broadcast News",
+                "won": false,
+                "id": "tt0092699"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "FILM EDITING",
+                "entity": "RoboCop",
+                "won": false,
+                "id": "nm8778829"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "GORDON E. SAWYER AWARD",
+                "entity": "Fred Hynes",
+                "won": true,
+                "id": "nm0405261"
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            },
+            {
+                "__typename": "AwardedListItem",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Michael Douglas",
+                "won": true,
+                "id": null
+            }
+        ]
+    },
+    "loading": false
+}

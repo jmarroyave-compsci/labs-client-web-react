@@ -4,7 +4,7 @@ const Constants = {
 	DEBUG : process.env.NEXT_PUBLIC__DEBUG,
 	LOCAL : process.env.NEXT_PUBLIC__LOCAL,
 	APP : {
-		BASE_PATH: process.env.NEXT_PUBLIC__SITE_URL,
+		BASE_PATH: process.env.NEXT_PUBLIC__BASE_PATH,
 		SITE_URL: process.env.NEXT_PUBLIC__SITE_URL,
 		VERSION : _package_.version,
 		TITLE: process.env.NEXT_PUBLIC__TITLE,

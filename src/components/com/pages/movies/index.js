@@ -21,8 +21,8 @@ export default function Layout( props ){
   	if(!state) return <div/>;
 
   	if(state.data){
-  		var total = state?.data?.total ?? 0;
-  		config.page.description = config.page.description.replace("???", number(total, "0.0a").toUpperCase())
+  		var total = (state.data.total) ? number(state.data.total, "0.0a").toUpperCase() : "?";
+  		config.page.description = config.page.description.replace("???", total )
   	}
 
 	return (

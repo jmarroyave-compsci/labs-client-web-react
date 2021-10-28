@@ -12,6 +12,8 @@ const initialState = {
     qry: null,
     page: null,
     entities: null,
+    year: null,
+    timeFrame: null, 
   },
   results : {
     data: null,
@@ -20,7 +22,6 @@ const initialState = {
   },
   suggestions : {
     data: null,
-
     loading: true,
     error: null,    
   }
@@ -31,11 +32,15 @@ export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
     params.qry = decodeURIComponent(params.qry)
     params.page = (params.page) ? parseInt(params.page) : 1;
     params.entities = (params.entities) ? params.entities : getEntitiesArrayState(true);
+    params.timeFrame = 1;
+    params.year = new Date().getFullYear()
     thunkAPI.dispatch(setParams( params ))
-    if( params.entities.length > 0)
-      return await data.fetchResults( params.qry, params.page, params.entities );
-    else
+    if( params.entities.length > 0){
+      return await data.fetchResults( params.qry, params.page, params.entities );      
+    }
+    else{
       return {data: [], loading: false, error: ""}
+    }
   }
 )
 
@@ -52,7 +57,7 @@ const slice = createSlice({
   reducers: {
     setParams : (state, action) => {
       state.params = action.payload
-      state.results = { loading: true, data: []};
+      state.results = { loading: true, data: []};      
       Router.push(`${config.page.url()}?q=${state.params.qry}&page=${state.params.page}`, null, { shallow: true })
     },      
   },

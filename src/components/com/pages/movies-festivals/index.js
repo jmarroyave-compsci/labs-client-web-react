@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useEffect } from 'react';
 import CoreProxy from 'core/ui/layout/proxy';
 import MultiLayout from "layout/multi-layout";
 import { useSelector, useDispatch } from 'react-redux';
@@ -10,10 +9,15 @@ import Item from 'com/entities/movie-festival/item';
 export default function Layout( props ){
 	const dispatch = useDispatch();
   	const state = useSelector(( state ) => state[config.automata.name] )
+
+	useEffect( () => {
+		dispatch( fetchData( {
+		  renderer: props.render,
+		  page: props.page
+		} ) )
+	}, [])
   	
   	if(!state) return <div/>;
-
-  	console.log(state)
 
 	return (
 		<CoreProxy 
@@ -28,12 +32,8 @@ export default function Layout( props ){
 				onPageChange={(page) => dispatch( fetchData({ ...state.params, page: page }) ) }
 				item={(data) => <Item full {...data}/>}
 				params={{...state.params}}
+				breadcrumbs={props.breadcrumbs}
 			/>}
 		/>
 	)
 }	
-	
-
-Layout.propTypes = {
-	type: PropTypes.oneOf(["banner", "grid"]),
-};

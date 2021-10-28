@@ -978,7 +978,37 @@
           "children": null
         }
       ],
-      "Day 2": []
+      "Day 2": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Awards, the award page",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: The related stories component",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Cleaning incomplete functionality",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "DEV",
+          "level": 2,
+          "children": null
+        }
+      ],
+      "Day 3": []
     }
   }
 }

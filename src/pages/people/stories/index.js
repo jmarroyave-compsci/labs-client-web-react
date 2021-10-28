@@ -1,12 +1,9 @@
 import React from 'react';
-import Layout from 'com/pages/soon';
+import Layout from 'com/pages/soon/page';
 
 const Page = ( props ) => {
-  const params = { ...props };
-  params.breadcrumbs = [{name: "stories"}]
-
   return (
-      <Layout {...params}/> 
+      <Layout breadcrumbs="/people/stories"/> 
   )
 }
 

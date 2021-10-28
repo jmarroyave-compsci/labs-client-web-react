@@ -34,7 +34,7 @@ export default function Layout( props ){
 			loading={state.loading}
 			error={state.error}
 			onPageChange={( params ) => dispatch( fetchData({ ...state.params, ...params }) ) }
-			item={(data) => <Item entity={state.params.entity} full {...data}/>}
+			item={(data) => <Item entity={state.params.entity} {...data}/>}
 			params={{...state.params}}
 	     	breadcrumbs={props.breadcrumbs}
 		/>

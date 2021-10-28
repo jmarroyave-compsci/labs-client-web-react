@@ -8,6 +8,7 @@ import Banner from 'com/ui/banner';
 import { useDispatch } from 'react-redux'
 import { setPage } from 'app/state' 
 import Error from 'core/ui/error'
+import Skeleton from 'com/default/skeleton'
 
 export default function MultiLayout( props ){
   const dispatch = useDispatch();
@@ -25,7 +26,10 @@ export default function MultiLayout( props ){
       dispatch(setPage({
         breadcrumbs: props.breadcrumbs,
       }));    
-  }, [])
+  }, [props.breadcrumbs])
+
+  if( (type === "detail" && !props.data) ) return (props.skeleton) ? props.skeleton : <Skeleton/>;
+
 
   const BANNER = (
     <Banner 

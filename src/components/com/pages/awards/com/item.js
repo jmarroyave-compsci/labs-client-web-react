@@ -9,31 +9,22 @@ import LinkFestival from 'com/entities/movie-festival/link'
 import LinkAward from 'com/entities/award/link'
 import Awards from 'com/awards'
 import Field from 'com/field'
+import Awarded from 'com/awarded';
 
 export default function AwardItem( props ){
   const { entity, year, festival, image, awarded } = props;
 
-    //<LinkAward box id={festival.id} year={year} entity={entity}>
-    //</LinkAward> 
   return (      
+    <LinkAward box id={festival.id} year={year} entity={entity}>  
       <Card
         image={(image) ? image.poster : image}
         imageHeight={100}
-        text={ 
-          <div>
-            {awarded.slice(0,5).map( (a, key) => 
-              <Field key={key} title={a.category} value={ (!a.entity_id && !a.id) ? 
-                a.entity 
-                : 
-                <LinkEntity type={(a.entity_type) ? a.entity_type : ((a.id.startsWith("nm") ? "person" : "movie") )} id={(a.entity_id) ? a.entity_id : a.id}>{a.entity}</LinkEntity>}/>
-            )}
-          </div> 
-        }
+        text={<Awarded data={awarded} mini/>}
         title={
           <LinkFestival id={festival.id}>{festival.name}</LinkFestival>
         }
         subtitle={year}
       />
-    
+    </LinkAward>     
   ) 
 }

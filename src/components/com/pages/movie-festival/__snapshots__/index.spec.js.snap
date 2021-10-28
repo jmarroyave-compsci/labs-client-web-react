@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Movie Page compare against snapshot 1`] = `
+exports[`PAGE_MOVIE_FESTIVAL compare Page against snapshot 1`] = `
 <div>
   <div />
 </div>

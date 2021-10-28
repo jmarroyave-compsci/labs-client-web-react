@@ -15,7 +15,7 @@ export default function Content( props ){
 	const dispatch = useDispatch();
 	const { data, blog } = props;
 
-	const random = ( max ) => Math.floor(Math.random() * max)
+	const random = ( max ) => Math.floor(Math.random() * max) + 1
 
 	useEffect( () => {
 		dispatch(setPage({

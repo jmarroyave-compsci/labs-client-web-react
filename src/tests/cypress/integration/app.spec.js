@@ -1,4 +1,5 @@
 import sitemap from '../../../data/sitemap/data.json'
+import { ERROR_HEADER_TEXT } from 'core/ui/error'
 
 describe('Check for broken links', () => {
 
@@ -10,7 +11,10 @@ describe('Check for broken links', () => {
           .should((response) => {
             expect(response.status).to.eq(200)
           })        
+          .its('body')
+          .to.not.should('include', ERROR_HEADER_TEXT)
       })
+
 
       if(!children) return;
 

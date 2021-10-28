@@ -15,9 +15,6 @@ import Pill from 'core/ui/pill';
 import Button from '@mui/material/Button';
 import Filters from './filters';
 
-import { useDispatch } from 'react-redux'
-import { fetchData } from './automata'
-
 const Results = styled('div')({
   marginBottom: '4rem',
 });
@@ -57,19 +54,51 @@ const ResultExtra = styled('div')({
 });
 
 function _Results(props){
-  const dispatch = useDispatch()
-  const { data, loading, qry, onPageChanged, entities } = props;
+  const [ params, setParams ]  = useState(  {
+    entities: props.params.entities.slice(),
+    year: props.params.year,
+    timeFrame: props.params.timeFrame, 
+    timeFrameNotes: "", 
+  })
 
-  const onFiltersChange = ( e ) => {
+
+  const { data, loading, qry, onPageChanged } = props;
+
+  const getTimeframeNotes = () => ( parseInt(params.year) < 1900 || isNaN(parseInt(params.year)) || isNaN(parseInt(params.timeFrame))) ? " ? " : `from ${parseInt(params.year) - parseInt(params.timeFrame)} to ${parseInt(params.year) + parseInt(params.timeFrame)}`;
+
+  params.timeFrameNotes = getTimeframeNotes()
+
+  const onTimeFrameFilterChange = ( e ) => {
+    var year = (e.target.name == "year") ? e.target.value : params.year;
+    var timeFrame = (e.target.name == "timeFrame") ? e.target.value : params.timeFrame
+
+    setParams({ 
+      ...params, 
+      timeFrame: timeFrame,
+      year: year,      
+      timeFrameNotes: getTimeframeNotes(),
+    })
+  }
+
+  const onEntitiesFilterChange = ( e ) => {
     var nItem = e.target.name
     var ents = [];
-    var idx = entities.indexOf(nItem)
+    var idx = params.entities.indexOf(nItem)
     if(idx < 0){
-      ents = entities.concat([nItem])
+      ents = params.entities.concat([nItem])
     } else {
-      ents = entities.filter( a => a != nItem)
+      ents = params.entities.filter( a => a != nItem)
     }
-    dispatch( fetchData ( { ...props.params, entities: ents} ) )
+    setParams({
+      ...params,
+      entities: ents
+    })
+  }
+
+  const onFiltersChanged = () => {
+    var tmp = {...props.params, ...params};
+    console.log(tmp)
+    props.onFiltersChanged( tmp )    
   }
 
   return (
@@ -79,8 +108,10 @@ function _Results(props){
       </ResultsHeader>
       <FiltersBox>
         <Filters
-          data={entities}
-          onChange={onFiltersChange}
+          params={params}
+          onEntitiesChange={onEntitiesFilterChange}
+          onTimeFrameChange={onTimeFrameFilterChange}
+          onFiltersChanged={ onFiltersChanged }
         />
       </FiltersBox>
       <ResultsData>

@@ -1,32 +1,18 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux'
-import { setPage } from 'app/state' 
+import React from 'react'
 import { useRouter } from 'next/router';
-import Layout from 'com/pages/podcast/page';
-import { fetchData } from 'com/pages/podcast/automata'
+import Layout from 'com/pages/podcast/detail';
 
 const Page = ( props ) => {
-  const dispatch = useDispatch();
   const router = useRouter(); 
-
-  useEffect( () => {
-
-    var id = (router.query.podcast) ? router.query.podcast : ""; 
-    var name = id;
-
-    dispatch(setPage({
-      breadcrumbs: [{name: "podcasts", url: '/podcasts'}, {name: name}],
-    }));    
-
-    dispatch( fetchData( {
-      id: id
-    } ) )
-
-  }, [router.isReady])
+  var id = router.query?['podcast'] ?? ""; 
 
   return (
-      <Layout/> 
+      <Layout 
+        breadcrumbs={`/podcasts`} 
+        id={id} 
+      /> 
   )
 }
 
 export default Page;
+

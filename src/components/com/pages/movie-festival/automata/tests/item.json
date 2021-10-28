@@ -1,0 +1,15 @@
+{
+    "params": {
+        "id": "mf00175"
+    },
+    "data": {
+        "__typename": "MovieFestival",
+        "id": "mf00175",
+        "name": "Flanders International Film Festival Ghent",
+        "wikiTopic": "Flanders International Film Festival Ghent",
+        "established": "1974",
+        "country": "Belgium",
+        "continent": "Europe"
+    },
+    "loading": false
+}

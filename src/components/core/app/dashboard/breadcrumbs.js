@@ -17,6 +17,9 @@ export default function Breadcrumbs( props ) {
   }
 
   data = (data) ? data : [];
+
+  data = data.map(d => { return {url: d.url, name: d.name.toLowerCase()}})
+
   data = [{url : '/', name: 'home'}].concat(data);
   delete data[ data.length - 1 ].url;
   return (

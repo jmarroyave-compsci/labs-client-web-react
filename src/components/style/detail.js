@@ -47,3 +47,17 @@ export const Small = styled('span')({
   lineHeight: "0.75rem",    
   margin: 0,
 });
+
+export const Notes = styled('span')({
+  fontSize: "0.6rem",
+  lineHeight: "0.75rem",    
+  fontStyle: 'italic',
+  margin: 0,
+});
+
+
+export const Medium = styled('div')({
+  fontSize: "1rem",
+  lineHeight: "1.25rem",    
+  margin: 0,
+});

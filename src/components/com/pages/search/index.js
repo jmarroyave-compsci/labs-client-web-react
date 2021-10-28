@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import config from "./.config.js";
 import { fetchData } from './automata';
 import Layout from "layout/cols-2-layout";
-import Results from './results';
+import Results from './com/results';
 
 export default function Proxy( props ){
 	const dispatch = useDispatch();
@@ -15,11 +15,12 @@ export default function Proxy( props ){
 	    <Layout 
 			mainCol={
 				<Results
+					params={state.params}
 					{...props}
 					{...state} 
-					{...state.params} 
 					{...state.results}
 					onPageChange={(page) => dispatch( fetchData({ ...state.params, page: page }) ) }
+					onFiltersChanged={( params ) => dispatch( fetchData({ ...params }) ) }
 				/>
 			}
 		/>

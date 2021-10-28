@@ -11,7 +11,7 @@ export default function Grid( props ){
     var { data, loading, url, skeleton, item, onPageChange, page } = props;
 
     loading = (loading || !data || data.length == 0 )
-    data = (data && data.length > 0) ? data : [1,2,3,4,5];
+    data = (data && data.length > 0) ? data : [1,2,3,4,5,6];
 
     return (
       <Frame>
@@ -36,7 +36,7 @@ export default function Grid( props ){
 
 function Placeholder(){
   return (
-    <Paper style={{padding: '0.5rem'}}>
+    <Paper style={{flexGrow: 1, padding: '0.5rem'}}>
       <Stack spacing={1}>
         <Skeleton variant="text" width={"80%"}/>
         <Skeleton variant="rectangular" height={240} />

@@ -1,16 +1,56 @@
 import React from 'react';
-//import Image from 'next/image';
+import LazyLoad from 'react-lazyload';
+import { styled } from '@mui/material/styles';
+import config from 'app/config/constants'
 
-class Img extends React.Component{
-	render(){
-		var {src, width, height, style, notFound, layout} = this.props;
-		var imgProps = {};
-		if(notFound){
-			imgProps.ref = (img => this.img = img);
-			imgProps.onError = (()=> (notFound && this.img.src != notFound) ? this.img.src = notFound : null);
-		}
-  		return <img layout={layout} {...imgProps} style={style} width={width} height={height} src={src}/>
-  	}
+const ImgPanel = styled('div')({
+	position: 'relative',
+	overflow: 'hidden',
+	backgroundColor: '#efefef', 
+	backgroundImage: `url('${config.APP.BASE_PATH}/img/ph.svg')`, 
+	backgroundRepeat: 'no-repeat', 
+	backgroundPosition: 'center center',
+	width: 'auto',
+	height: 'auto',
+});
+
+const Image = ( props ) => {
+	var {src, lazy, preload, width, height, style, notFound, layout} = props;
+
+	src = (src?.startsWith("/")) ? `${config.APP.BASE_PATH}${src}` : src;
+
+    if(height == '' && width == ''){
+      width = '100%';
+    }
+
+	var imgProps = {};
+	if(notFound){
+		imgProps.ref = (img => this.img = img);
+		imgProps.onError = (()=> (notFound && this.img.src != notFound) ? this.img.src = notFound : null);
+	}
+
+    var img = <img 
+		{...imgProps} 
+		src={src}  
+		layout={layout} 
+		width={width} 
+		height={height} 
+		style={{...style, position: 'absolute', top: 0, left: 0, margin: '0px', padding: '0px', border: '0px'}}
+		/>
+
+    if(lazy){
+      img = <LazyLoad only>{img}</LazyLoad>;
+    }
+
+
+	return (
+        <ImgPanel>
+            <img src={preload} width={width} height={height} style={{opacity: '1', margin: '0px', padding: '0px', border: '0px'}}/>
+            {img}
+        </ImgPanel>    
+    )
+
+
 }
 
-export default Img;
+export default Image;

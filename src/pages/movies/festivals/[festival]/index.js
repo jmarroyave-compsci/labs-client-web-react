@@ -1,34 +1,17 @@
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux'
-import { setPage } from 'app/state' 
+import React from 'react'
 import { useRouter } from 'next/router';
-import Layout from 'com/pages/movie-festival/page';
-import { fetchData } from 'com/pages/movie-festival/automata'
+import Layout from 'com/pages/movie-festival/detail';
 
 const Page = ( props ) => {
-  const dispatch = useDispatch();
   const router = useRouter(); 
-
-  useEffect( () => {
-
-    var id = (router.query && router.query.festival) ? router.query.festival : ""; 
-    var name = id;
-
-    dispatch(setPage({
-      breadcrumbs: [{name: "movies", url: '/movies'}, {name: "festivals", url: '/movies/festivals'}, {name: name}],
-    }));    
-
-    dispatch( fetchData( {
-      id: id
-    } ) )
-
-  }, [])
+  var id = (router.query && router.query.festival) ? router.query.festival : ""; 
 
   return (
-      <Layout/> 
+      <Layout 
+        breadcrumbs={`/movies/festivals`} 
+        id={id} 
+      /> 
   )
 }
 
 export default Page;
-
-
