@@ -1008,7 +1008,80 @@
           "children": null
         }
       ],
-      "Day 3": []
+      "Day 3": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Story: Awards, the award page",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Story: Add data error handling",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Story: Get more enter points from home's banners",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "Story: minor fixes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "DEV",
+          "level": 2,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "DEVOPS",
+          "level": 2,
+          "children": null
+        }
+      ],
+      "Day 4": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Search, more filters and good UI",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: minor fixes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Awards, the award page",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "DEV",
+          "level": 2,
+          "children": null
+        }
+      ]
     }
   }
 }

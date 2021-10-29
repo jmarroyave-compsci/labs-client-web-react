@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router';
-import Layout from 'com/pages/people/detail';
+import Layout from 'com/pages/person/detail';
 
 const Page = ( props ) => {
   const router = useRouter(); 

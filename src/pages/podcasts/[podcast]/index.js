@@ -4,7 +4,7 @@ import Layout from 'com/pages/podcast/detail';
 
 const Page = ( props ) => {
   const router = useRouter(); 
-  var id = router.query?['podcast'] ?? ""; 
+  var id = router.query?.podcast ?? ""; 
 
   return (
       <Layout 
