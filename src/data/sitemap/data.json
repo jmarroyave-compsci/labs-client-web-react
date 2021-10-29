@@ -1,22 +1,46 @@
 {
 	"home": {
-		"about" : {
-			"data" : {},
-			"project" : {},
-			"tech" : {},
-			"timeline" : {}
-		},
+		"stories" : {},
 		"movies" : {
-			"____tt0022215"  : {}
+			"____[movie]?movie=tt0454876"  : {},
+			"festivals" : {
+				"____[festival]?festival=mf00001"  : {}
+			},
+			"stories" : {
+				"actors" : {},
+				"awards" : {
+					"____[award]?award=mf00001&&year=2015"  : {}		
+				},
+				"directors" : {},
+				"remakes" : {},
+				"writers" : {}
+			}				
 		},
 		"tv-shows" : {
-			"____tt0022215"  : {}
-		},
-		"podcasts" : {
-			"____tt0022215"  : {}
+			"____[tv-show]?tv-show=tt0454876"  : {}
 		},
 		"video-games" : {
-			"____tt0022215"  : {}
+			"____[video-game]?video-game=tt0022215"  : {}
+		},
+		"podcasts" : {
+			"____[podcast]?podcast=0002da5f-49a2-31ba-b44c-cdeabdf113cb"  : {}
+		},
+		"people" : {
+			"____[person]?person=nm0000199"  : {}
+		},
+		"search" : {
+		},
+		"about" : {
+			"data" : {},
+			"project" : {
+				"log" : {
+					"____posts/7-7-v-1-1": {}
+				},
+				"roadmap" : {},
+				"sitemap" : {}
+			},
+			"tech" : {},
+			"timeline" : {}
 		}
 	}
 }

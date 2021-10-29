@@ -16,6 +16,7 @@ const Constants = {
 	},
 	DEFAULTS : {
 		PAGING_PAGE_SIZE: 10,
+		IMAGE_PLACEHOLDER: "/img/ph.jpg",
 	},
 	PLUGINS : {
 		GOOGLE: {

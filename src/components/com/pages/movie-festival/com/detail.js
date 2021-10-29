@@ -9,6 +9,7 @@ import Field from 'com/field';
 
 export default function Dashboard( props ){
   var { data } = props;
+
   return (
     <Frame>    
       <Stack>

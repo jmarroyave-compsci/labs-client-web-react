@@ -27,10 +27,10 @@ export default function Layout( props ){
 			data={state.data}
 			loading={state.loading}
 			error={state.error}
-			detail={(data) => <Detail data={data}/>}
+			detail={(props) => <Detail data={props.data}/>}
 			skeleton={<Skeleton/>}
 			params={{...state.params}}
-			breadcrumbs={`${props.breadcrumbs}/${state?.data?.title ?? "loading"}}`}
+			breadcrumbs={`${props.breadcrumbs}/${state?.data?.title ?? "loading"}`}
 		/>
 	)
 }

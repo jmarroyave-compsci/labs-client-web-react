@@ -6,7 +6,7 @@ import { FrameSkeleton } from 'style/boxes'
 export default function _Skeleton( props ){
  return (
     <FrameSkeleton>
-      <Stack spacing={1} sx={{ padding: '1rem', display: 'flex', flexGrow: 1}}>
+      <Stack spacing={1} sx={{ display: 'flex', flexGrow: 1}}>
         <Skeleton variant="rectangular" height={300} />
         <Skeleton variant="text" height={"3rem"} style={{marginBottom: '1rem'}}/>
         <Skeleton variant="text" style={{width: "40%"}}/>

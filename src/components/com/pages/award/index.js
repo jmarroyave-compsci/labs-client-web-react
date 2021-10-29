@@ -19,7 +19,7 @@ export default function Layout( props ){
 	    } ) )
 	}, [])
 
-  	if(!state || !state.data) return <Skeleton/>;
+	if( !state ) return null;
 
 	return (
 		<DetailLayout
@@ -28,10 +28,10 @@ export default function Layout( props ){
 			data={state.data}
 			loading={state.loading}
 			error={state.error}
-			detail={(data) => <Detail data={data}/>}
+			detail={(props) => <Detail data={props.data}/>}
 			skeleton={<Skeleton/>}
 			params={{...state.params}}
-			breadcrumbs={`${props.breadcrumbs}/${state.data?.festival?.name ?? "loading"}`}
+			breadcrumbs={`${props.breadcrumbs}/${state?.data?.festival?.name ?? "loading"}`}
 		/>
 	)
 }

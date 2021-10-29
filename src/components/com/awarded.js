@@ -30,7 +30,7 @@ function setAwarded(data, mini){
   for( var i = 0; i < data.length; i++){
     var a = data[i]
     if(cat !== a.category){
-      if(groups.length > 0) rendered.push(<Group>{(mini) ? groups.slice(0,2) : groups }</Group>)
+      if(groups.length > 0) rendered.push(<Group key={key++}>{(mini) ? groups.slice(0,2) : groups }</Group>)
       groups = []
       cat = a.category
       groups.push(<Small key={key++}>{cat.toUpperCase()}</Small>)
@@ -41,7 +41,7 @@ function setAwarded(data, mini){
     }</Medium>)
   }
 
-  if(groups.length > 0) rendered.push(<Group>{groups}</Group>)
+  if(groups.length > 0) rendered.push(<Group key={key++}>{groups}</Group>)
 
   return (mini) ? rendered.slice(0,3) : rendered;    
 }

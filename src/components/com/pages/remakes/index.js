@@ -5,7 +5,7 @@ import MultiLayout from "layout/multi-layout";
 import { useSelector, useDispatch } from 'react-redux';
 import config from "./.config.js";
 import { fetchData } from './automata';
-import Item from './item';
+import Item from './com/item';
 
 export default function Layout( props ){
 	const dispatch = useDispatch();

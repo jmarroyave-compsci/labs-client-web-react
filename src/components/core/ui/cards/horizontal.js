@@ -6,11 +6,12 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
+import config from 'app/config/constants'
 
 export default function MediaControlCard(props) {
   var { classes, title, text, image, className, style, actions, imageHeight, imageWidth } = props;
   const theme = useTheme();
-  image = (image) ? image : 'https://dummyimage.com/${(imageHeight) ? imageHeight : 300}';
+  image = (image) ? image : config.DEFAULTS.IMAGE_PLACEHOLDER;
   imageWidth = (imageWidth) ? imageWidth : 100;
   return (
     <Card sx={{ display: 'flex' }}>

@@ -6,6 +6,7 @@ import CardMedia from '@mui/material/CardMedia'
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import { isString } from 'core/lib/data'
+import config from 'app/config/constants'
 
 class MediaCard extends React.Component {
   render() {
@@ -13,7 +14,7 @@ class MediaCard extends React.Component {
     var key = 0;
     var subtitle = (subtitle) ? subtitle : "";
     noImage = (noImage) ? true : false;
-    image = (image) ? image : 'https://dummyimage.com/${(imageHeight) ? imageHeight : 300}';
+    image = (image) ? image : config.DEFAULTS.IMAGE_PLACEHOLDER;
 
     return (
         <Card style={{flexGrow: 1}}>

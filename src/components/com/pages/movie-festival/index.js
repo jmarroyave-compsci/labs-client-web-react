@@ -6,9 +6,8 @@ import DetailLayout from "layout/multi-layout";
 import { useSelector } from 'react-redux';
 import config from "./.config.js";
 import Detail from './com/detail';
-import Skeleton from './com/skeleton';
+import Skeleton from 'com/default/skeleton';
 import { fetchData } from './automata'
-
 
 export default function Layout( props ){
 	const dispatch = useDispatch();
@@ -30,7 +29,7 @@ export default function Layout( props ){
 			data={state.data}
 			loading={state.loading}
 			error={state.error}
-			detail={(data) => <Detail data={data}/>}
+			detail={(props) => <Detail data={props.data}/>}
 			skeleton={<Skeleton/>}
 			params={{...state.params}}
 			breadcrumbs={`${props.breadcrumbs}/${state?.data?.name ?? "loading"}`}

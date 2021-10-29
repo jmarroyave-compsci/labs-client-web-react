@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import ErrorBoundry from 'core/ui/error-boundry';
 import Drawer from './drawer';
@@ -16,6 +16,11 @@ function DashboardApp( props ) {
     setOpen(!open);
   };
   var { pageTitle, title, breadcrumbs, error, onSearchQuery, onSearchSuggestions, nav, children, notifications, search, loading, footer } = props;
+
+  useEffect( () => {
+    if( pageTitle != "")
+      document.title = pageTitle
+  }, [ pageTitle ])
 
   const offline = (error) ? true : false;
   nav = (nav) ? nav : {};

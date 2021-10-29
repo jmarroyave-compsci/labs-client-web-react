@@ -7,6 +7,7 @@ import Content from './com/content'
 export default function Layout( props ){
 	return (
 		<MultiLayout
+			noData
 			config={config}
 			type={props.render}
 			mainCol={(props) => <Content {...props} />}

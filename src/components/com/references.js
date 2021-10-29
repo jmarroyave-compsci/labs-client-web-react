@@ -6,7 +6,10 @@ import { SubTitle } from 'style/detail'
 
 export default function References( props ){
   const { data, website } = props;
-  if(!data || !( website || data.id.startsWith("tt") || data.id.startsWith("nm") || data.wikiTopic ) ) return <div/>;
+  if(!data || !( website || 
+    data.id?.startsWith("tt") || 
+    data.id?.startsWith("nm") || 
+    data.wikiTopic ) ) return <div/>;
 
   return (
     <Frame>

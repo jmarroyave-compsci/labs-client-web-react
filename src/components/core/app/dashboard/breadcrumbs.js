@@ -7,6 +7,10 @@ import { isArray } from 'core/lib/data'
 export default function Breadcrumbs( props ) {
   var { data, style } = props;
 
+  if( data && data == "/" ){
+    data = []
+  }
+
   if( data && !isArray(data) ){
     data = (data.startsWith("/")) ? data.substring(1) : data;
     data = data.split("/");

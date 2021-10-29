@@ -40,7 +40,7 @@ export default function BaseApp(props) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>{Constants.PAGE_TITLE}</title>
+        <title>{Constants.APP.PAGE_TITLE}</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ApolloProvider client={client}>

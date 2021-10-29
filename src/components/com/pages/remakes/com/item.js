@@ -14,7 +14,7 @@ export default function RemakeItem( props ){
         image={(image) ? image.poster : image}
         imageHeight={100}
         text={ <div>
-                  {recs.map( (r, key) =>                     
+                  {recs.slice(0,3).map( (r, key) =>                     
                     <Field key={key}
                       title={date(r.releasedDate, "YYYY")} 
                       value={<Linkit id={r.id} key={key}>{(r.directors[0]) ? r.directors[0].name : "?"}</Linkit>}

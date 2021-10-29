@@ -10,9 +10,8 @@ import Media from 'com/media';
 import Stack from 'com/ui/stack';
 import LinkEntity from 'com/entities/entity/link'
 
-export default function Dashboard( props ){
+export default function Content( props ){
   var { data, loading } = props;
-  data = (data) ? data : {};
 
   return (
     <Stack>

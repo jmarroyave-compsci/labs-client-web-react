@@ -55,7 +55,7 @@ class App extends React.Component {
     if(document.getElementById('root_splash'))
       document.getElementById('root_splash').style.display = 'none';
     document.body.style.overflow = 'unset';
-    document.title = this.props.page_title;
+    //document.title = this.props.page_title;
   }
 
 

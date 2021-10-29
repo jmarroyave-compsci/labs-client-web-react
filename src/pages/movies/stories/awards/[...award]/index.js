@@ -9,7 +9,7 @@ const Page = ( props ) => {
 
   return (
       <Layout 
-        breadcrumbs={`/movies/awards`} 
+        breadcrumbs={`/movies/stories/awards`} 
         id={id}
         year={year} 
       /> 

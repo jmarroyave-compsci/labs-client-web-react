@@ -49,7 +49,7 @@ const App = ( props ) =>{
       <CoreApp        
         notifications={false} 
         title={APP.title}
-        pageTitle={APP.pageTitle} 
+        pageTitle={config.APP.PAGE_TITLE} 
         footer={<Footer params={params.footer}/>}
         onSearchQuery={onSearchQuery}
         onSearchSuggestions={onSearchSuggestions}

@@ -10,7 +10,7 @@ import Item from './com/item';
 
 export default function Layout( props ){
 	const dispatch = useDispatch();
-  	const state = useSelector(( state ) => state[config.automata.name] )
+  	const state = useSelector(( state ) => state[config.automata.name])
   	
 	useEffect( () => {
 	    dispatch( fetchData( {
@@ -22,19 +22,19 @@ export default function Layout( props ){
 
 	}, [])
 
-  	if(!state || !state.params.entity) return <div/>;
+	if( !state ) return null;
 
 	return (
 		<MultiLayout
 			config={config}			
 			mainCol={( props ) => <Content {...props} />}
-			type={state.params.renderer}
+			type={props.render}
             url={config.page.url(state.params)}
 			data={state.data}
 			loading={state.loading}
 			error={state.error}
 			onPageChange={( params ) => dispatch( fetchData({ ...state.params, ...params }) ) }
-			item={(data) => <Item entity={state.params.entity} {...data}/>}
+			item={(data) => <Item entity={props.entity} {...data}/>}
 			params={{...state.params}}
 	     	breadcrumbs={props.breadcrumbs}
 		/>
