@@ -5,16 +5,15 @@ import { useSelector, useDispatch } from 'react-redux';
 import config from "./.config.js";
 import Banner from 'com/ui/banner'
 import Item from './com/item';
-import { getQuote } from 'data/quotes';
+import Quote from 'com/quote';
 
 export default function Layout( props ){
-  	const quote = getQuote("director");
 
 	return (
 	    <Banner 
 	      showData={true}
 	      title={config.page.title}
-	      description={`"${quote.text}" ${quote.from}`}
+	      description={<Quote tag="director,actor,writer"/>}
 	      data={getData()}
 	      item={(data) => <Item full {...data} />}
 	    />

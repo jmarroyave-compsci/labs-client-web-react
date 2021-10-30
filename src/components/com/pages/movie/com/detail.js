@@ -19,6 +19,7 @@ import Text from 'com/text';
 import { Frame } from 'style/boxes'
 import { SubTitle } from 'style/detail'
 import Field from 'com/field';
+import Movies from 'com/movies';
 
 export default function Dashboard( props ){
   var { data, loading } = props;
@@ -54,11 +55,14 @@ export default function Dashboard( props ){
 
       <Text title='plot' text={ (data.plot) ? data.plot : data.description }/>
 
+      <Movies type="remakes" data={data.remakes}/>
+
       <People type="directors" data={data.directors} story="/movies/stories/directors"/>
 
       <People type="writers" data={data.writers} story="/movies/stories/writers"/>
 
       <People type="crew" data={data.cast}/>
+
 
       <StreamBy data={data.streamBy}/>
 

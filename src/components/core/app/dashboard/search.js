@@ -84,6 +84,7 @@ export default function SearchBox( props ) {
       }}
       renderInput={(params) => (
         <TextField
+          margin="dense"
           {...params}
           label="Search"
           InputProps={{

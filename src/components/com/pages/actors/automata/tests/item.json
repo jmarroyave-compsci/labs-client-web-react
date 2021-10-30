@@ -1,6 +1,6 @@
 {
     "params": {
-        "renderer": "grid",
+        "renderer": "list",
         "entity": "movies",
         "page": 1
     },

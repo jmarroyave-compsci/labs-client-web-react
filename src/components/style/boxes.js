@@ -10,16 +10,18 @@ export const Frame = styled('div')({
 });
 
 const _ItemFrame = styled('div')({
-  padding: "0",
-  margin: "0 1rem 1rem 0",
+  margin: "0",
+  padding: "0 1rem 1rem 0",
   display: 'flex', 
   flexGrow: 1,
   overflow: 'hidden',
+  width: '100%',
 });
 
 const _Item = styled('div')({
   display: 'flex', 
   flexGrow: 1,
+  width: '100%',
 });
 
 export const Item = ( props ) =>{
@@ -28,7 +30,7 @@ export const Item = ( props ) =>{
 
   if(paper){
     item = (
-      <Paper sx={{ display: 'flex', flexGrow: 1, margin: "0.1rem"}}>
+      <Paper sx={{ display: 'flex', flexGrow: 1, margin: "0.1rem",  width: '100%'}}>
         {item}          
       </Paper>
     ) 

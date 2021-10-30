@@ -12,7 +12,7 @@ function Media( props ){
 
   return (
     <Frame>
-      <div style={{height: height, width: '100%', backgroundColor: '#333'}}>
+      <div style={{height: height, width: '100%', backgroundColor: '#333', overflow: 'hidden'}}>
         <MainImage src={src} height={height} width={250}/>
       </div>
     </Frame>
@@ -21,10 +21,9 @@ function Media( props ){
 
 function MainImage( props ){
   const { src, height, width } = props
-  if ( !src) return <Placeholder {...props}/>
 
   return (
-    <Image layout={"fill"} src={src} height={height}/>
+    <Image src={src} width={width} height={height}/>
     )  
 }
 

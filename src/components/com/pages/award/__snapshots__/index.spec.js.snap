@@ -1,3 +1,1587 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`STORIES_MOVIES_AWARD compare Page against snapshot 1`] = `<div />`;
+exports[`STORIES_MOVIES_AWARD compare Page against snapshot 1`] = `
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+@media (min-width:0px) {
+  .emotion-1 {
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-1 {
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-1 {
+    padding: 0rem 4rem 3rem 4rem;
+  }
+}
+
+.emotion-2 {
+  padding: 0rem 0rem 4rem 0rem;
+}
+
+.emotion-4 {
+  margin: 0 0 2rem 0;
+  padding: 0;
+  width: 100%;
+}
+
+.emotion-5 {
+  position: relative;
+  overflow: hidden;
+  background-color: #efefef;
+  background-image: url('undefined/img/ph.jpg');
+  background-repeat: no-repeat;
+  -webkit-background-position: center center;
+  background-position: center center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.emotion-7 {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  padding: 0;
+  margin: 0;
+}
+
+.emotion-9 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-transform: lowercase;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.emotion-11 {
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+}
+
+.emotion-12 {
+  font-size: 0.7rem;
+  line-height: 0.75rem;
+  margin: 0;
+}
+
+.emotion-13 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 0;
+}
+
+.emotion-15 {
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #556cd6;
+  text-decoration-thickness: 1px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+.emotion-295 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.emotion-296 {
+  padding: 0.85rem;
+}
+
+.emotion-297 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.emotion-298 {
+  font-size: 0.9rem;
+}
+
+<div>
+  <div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="MuiGrid-root page-module MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+        >
+          <div
+            class="emotion-2"
+          >
+            <div
+              class="emotion-0"
+            >
+              <div
+                class="emotion-4"
+              >
+                <div
+                  style="height: 300px; width: 100%; background-color: rgb(51, 51, 51); overflow: hidden;"
+                >
+                  <div
+                    class="emotion-5"
+                  >
+                    <img
+                      height="300"
+                      style="opacity: 1; margin: 0px; padding: 0px; border: 0px;"
+                      width="250"
+                    />
+                    <img
+                      height="300"
+                      style="position: absolute; top: 0px; left: 0px; margin: 0px; padding: 0px; border: 0px;"
+                      width="250"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="emotion-4"
+              >
+                <h2
+                  class="emotion-7"
+                >
+                  Academy Awards [1987]
+                </h2>
+              </div>
+              <div
+                class="emotion-4"
+              >
+                <h3
+                  class="emotion-9"
+                >
+                  awarded
+                </h3>
+                <div
+                  class="emotion-4"
+                >
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        William Hurt
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Marcello Mastroianni
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A SUPPORTING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Sean Connery
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A SUPPORTING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Vincent Gardenia
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Denzel Washington
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTRESS IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Glenn Close
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTRESS IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Meryl Streep
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTRESS IN A SUPPORTING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Norma Aleandro
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Anne Archer
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Olympia Dukakis
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Anne Ramsey
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Ann Sothern
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ART DIRECTION
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Empire of the Sun
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      CINEMATOGRAPHY
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Broadcast News
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ART DIRECTION
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Empire of the Sun
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      CINEMATOGRAPHY
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Matewan
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      COSTUME DESIGN
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        The Dead
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ART DIRECTION
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Empire of the Sun
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      DIRECTING
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Fatal Attraction
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      DOCUMENTARY (FEATURE)
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Hellfire: A Journey from Hiroshima
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      DOCUMENTARY (FEATURE)
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        A Stitch for Time
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      DOCUMENTARY (SHORT SUBJECT)
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Frances Steloff: Memoirs of a Bookseller
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        In the Wee Wee Hours...
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Language Says It All
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      CINEMATOGRAPHY
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Broadcast News
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ART DIRECTION
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Empire of the Sun
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      DIRECTING
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Fatal Attraction
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      FILM EDITING
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        RoboCop
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      FOREIGN LANGUAGE FILM
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Babette's Feast
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Course Completed
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ART DIRECTION
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Empire of the Sun
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      MUSIC (ORIGINAL SONG)
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Beverly Hills Cop II
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      CINEMATOGRAPHY
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Broadcast News
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      DIRECTING
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Fatal Attraction
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      SHORT FILM (ANIMATED)
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        George and Rosemary
+                      </span>
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        The Man Who Planted Trees
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      SHORT FILM (LIVE ACTION)
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Ray's Male Heterosexual Dance Hall
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ART DIRECTION
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Empire of the Sun
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      FILM EDITING
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        RoboCop
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      VISUAL EFFECTS
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Predator
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      COSTUME DESIGN
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        The Dead
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      DIRECTING
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Fatal Attraction
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      WRITING (SCREENPLAY BASED ON MATERIAL FROM ANOTHER MEDIUM)
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Full Metal Jacket
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      CINEMATOGRAPHY
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Broadcast News
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      FILM EDITING
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        RoboCop
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      GORDON E. SAWYER AWARD
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      <span
+                        class="emotion-15"
+                      >
+                        Fred Hynes
+                      </span>
+                    </div>
+                  </div>
+                  <div
+                    class="emotion-11"
+                  >
+                    <span
+                      class="emotion-12"
+                    >
+                      ACTOR IN A LEADING ROLE
+                    </span>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                    <div
+                      class="emotion-13"
+                    >
+                      Michael Douglas
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+        >
+          <div
+            style="padding-left: 1rem; padding-right: 0.5rem;"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-295"
+            >
+              <div
+                class="emotion-296"
+              >
+                <div
+                  class="emotion-297"
+                >
+                  See also
+                </div>
+                <div
+                  class="emotion-298"
+                >
+                  <span
+                    class="emotion-15"
+                  >
+                    Movie Awards
+                  </span>
+                </div>
+                <div
+                  class="emotion-298"
+                >
+                  <span
+                    class="emotion-15"
+                  >
+                    Movies
+                  </span>
+                </div>
+                <div
+                  class="emotion-298"
+                >
+                  <span
+                    class="emotion-15"
+                  >
+                    People
+                  </span>
+                </div>
+                <div
+                  class="emotion-298"
+                >
+                  <span
+                    class="emotion-15"
+                  >
+                    Podcasts
+                  </span>
+                </div>
+                <div
+                  class="emotion-298"
+                >
+                  <span
+                    class="emotion-15"
+                  >
+                    Music Podcasts
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

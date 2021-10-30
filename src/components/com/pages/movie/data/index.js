@@ -57,6 +57,16 @@ query getMovie($id:String!) {
     production
     language
     plot
+    remakes{
+      id
+      title
+      releasedDate
+      directors{
+        id
+        name
+      }
+    }
+
   }
 }
 `

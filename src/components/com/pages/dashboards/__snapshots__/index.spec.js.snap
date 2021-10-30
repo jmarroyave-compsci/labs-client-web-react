@@ -22,12 +22,24 @@ exports[`STORIES_DASHBOARDS compare against snapshot 1`] = `
 }
 
 .emotion-3 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 0;
+}
+
+.emotion-4 {
+  font-size: 0.7rem;
+  line-height: 0.75rem;
+  margin: 0;
+}
+
+.emotion-5 {
   margin: 0 0 2rem 0;
   padding: 0;
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-6 {
   padding-top: 2rem;
 }
 
@@ -43,10 +55,19 @@ exports[`STORIES_DASHBOARDS compare against snapshot 1`] = `
     <div
       class="emotion-2"
     >
-      "THERE ARE NO QUOTES FOR THIS TAG" The programmer
+      <div
+        class="emotion-3"
+      >
+        Some of the best theorizing comes after collecting data because then you become aware of another reality. - 
+      </div>
+      <span
+        class="emotion-4"
+      >
+        Robert J. Shiller
+      </span>
     </div>
     <div
-      class="emotion-3"
+      class="emotion-5"
     >
       <div
         class="react-multi-carousel-list container-with-dots "
@@ -58,7 +79,7 @@ exports[`STORIES_DASHBOARDS compare against snapshot 1`] = `
       </div>
     </div>
     <div
-      class="emotion-4"
+      class="emotion-6"
     />
   </div>
 </div>

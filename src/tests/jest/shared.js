@@ -25,6 +25,7 @@ export const TestProvider = ( { children, state={} } ) => {
 export const StateProvider = ( { children, state={} } ) => { 
     const middlewares = [thunk]
     const mockStore = configureMockStore(middlewares)
+    console.log("Mocked Store", state)
     const store = mockStore(state);
     return (
       <Provider store={store}>

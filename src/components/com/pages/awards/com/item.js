@@ -18,7 +18,6 @@ export default function AwardItem( props ){
     <LinkAward box id={festival.id} year={year} entity={entity}>  
       <Card
         image={(image) ? image.poster : image}
-        imageHeight={100}
         text={<Awarded data={awarded} mini/>}
         title={
           <LinkFestival id={festival.id}>{festival.name}</LinkFestival>

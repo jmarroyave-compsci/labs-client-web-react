@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import config from "./.config.js";
 import { fetchData } from './automata';
 import Item from './com/item';
+import Quote from 'com/quote';
 
 export default function Layout( props ){
 	const dispatch = useDispatch();
@@ -24,6 +25,7 @@ export default function Layout( props ){
 	return (
 		<MultiLayout
 			config={config}
+			description={<Quote tag="director"/>}			
 			type={state.params.renderer}
             url={config.page.url(state.params.entity)}
 			data={state.data}
@@ -31,6 +33,7 @@ export default function Layout( props ){
 			onPageChange={(page) => dispatch( fetchData({ ...state.params, page: page }) ) }
 			item={(data) => <Item full {...data}/>}
 			params={{...state.params}}
+			breadcrumbs={props.breadcrumbs}
 		/>
 	)
 }	

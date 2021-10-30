@@ -14,7 +14,7 @@ describe(`${config.automata.name.toUpperCase()}`, () => {
  
   beforeEach(() => { 
     component = (
-      <TestProvider state={itemState}>
+      <TestProvider state={{[config.automata.name]: itemState}}>
         <Page />
       </TestProvider>
     );    

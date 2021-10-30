@@ -890,6 +890,11 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
   text-decoration-style: dotted;
   text-decoration-color: #556cd6;
   text-decoration-thickness: 1px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
 }
 
 .emotion-94 {

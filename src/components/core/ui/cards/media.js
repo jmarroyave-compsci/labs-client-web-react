@@ -7,30 +7,53 @@ import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import { isString } from 'core/lib/data'
 import config from 'app/config/constants'
+import Tooltip from "@material-ui/core/Tooltip";
+import { makeStyles } from '@material-ui/styles';
 
-class MediaCard extends React.Component {
-  render() {
-    var { title, subtitle, text, image, imageHeight, noImage, actions } = this.props;
+const useStyles = makeStyles(theme => ({
+  headerContent: {
+    width: '100%',
+  },
+  headerRoot: {
+    width: '100%',
+  },
+}))
+
+
+const IMAGE_PLACEHOLDER = `${config.APP.BASE_PATH}${config.DEFAULTS.IMAGE_PLACEHOLDER}`;
+const onMediaFallback = event => event.target.src = IMAGE_PLACEHOLDER;
+
+const MediaCard = (props) => {
+    const classes = useStyles();
+    var { title, subtitle, text, image, imageHeight=180, noImage, actions } = props;
     var key = 0;
     var subtitle = (subtitle) ? subtitle : "";
     noImage = (noImage) ? true : false;
     image = (image) ? image : config.DEFAULTS.IMAGE_PLACEHOLDER;
 
     return (
-        <Card style={{flexGrow: 1}}>
-          <CardHeader 
-            title={ (isString(title)) ? <Typography noWrap={false}>{title}</Typography> : title}
+        <Card style={{flexGrow: 1, width: "100%"}}>
+          <CardHeader sx={{width: "100%"}}
+            classes={{ content: classes.headerContent, root: classes.headerRoot }}
+            title={               
+                  <Tooltip title={title} placement="bottom-start">
+                    <div style={{display: 'inline-block', width: '100%'}}>
+                      <Typography noWrap={true} variant='subtitle' style={{display: 'inline-block', width: '100%'}}>{title}</Typography>
+                    </div>    
+                  </Tooltip>
+            }
             subheader={subtitle}
           />
           {!noImage && 
             <CardMedia 
-              style={{ height: 0, paddingTop: "56.25%", backgroundColor: '#efefef',}}
               height={(imageHeight) ? imageHeight : null} 
-              image={image} 
+              image={(image?.startsWith("/"))  ? `${config.APP.BASE_PATH}${image}` : image} 
+              component="img"
+              onError={onMediaFallback}
             />
           }
           {text  && 
-            <CardContent>
+            <CardContent>            
               { isString(text) ?
                   <Typography variant="body2" color="text.secondary" component="div">
                     {text}
@@ -49,7 +72,6 @@ class MediaCard extends React.Component {
           }
         </Card>
     );
-  }
 
 }
 

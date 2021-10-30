@@ -7,22 +7,25 @@ import GridItem from 'core/ui/layout/grid_item';
 import Date from "core/ui/date";
 
 function Movies( props ){
-  const { data, loading, type } = props;
+  const { data, loading, type, tiny } = props;
 
   if(!data || data.length == 0) return <div/>;
+
+  var movies = ( tiny ) ? data.slice(0,5) : data;
 
   var subtitle = <SubTitle>{type}<Small> [{data.length}]</Small></SubTitle>
 
   return (
     <Frame>
-      {data && data.length > 0 && subtitle}
+      {!tiny && subtitle}
       <GridContainer>
-      {data && data.length > 0 && data.map( (item, key) => 
+      {movies.map( (item, key) => 
         <GridItem key={key} xs={12} sm={12} md={6} lg={4}>
           <div><Link id={item.id}><div>{item.title} <Small>(<Date value={item.releasedDate} format="YYYY"/>)</Small></div></Link></div>
         </GridItem>
       )}
       </GridContainer>
+      {tiny && data.length > movies.length && <Small>and {data.length - movies.length} more</Small>}
     </Frame>
   )
 }

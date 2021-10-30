@@ -1,7 +1,274 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PAGE_PERSON compare Page against snapshot 1`] = `
+@keyframes animation-0 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.emotion-0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-size: 1rem;
+}
+
+@media (min-width:0px) {
+  .emotion-1 {
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
+
+@media (min-width:600px) {
+  .emotion-1 {
+    padding: 0rem 2rem 3rem 2rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .emotion-1 {
+    padding: 0rem 4rem 3rem 4rem;
+  }
+}
+
+.emotion-2 {
+  padding: 0rem 0rem 4rem 0rem;
+}
+
+.emotion-4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-4>:not(style)+:not(style) {
+  margin: 0;
+  margin-top: 8px;
+}
+
+.emotion-5 {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.11);
+  height: 1.2em;
+  -webkit-animation: animation-0 1.5s ease-in-out 0.5s infinite;
+  animation: animation-0 1.5s ease-in-out 0.5s infinite;
+}
+
+.emotion-6 {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.11);
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  transform-origin: 0 55%;
+  -webkit-transform: scale(1, 0.60);
+  -moz-transform: scale(1, 0.60);
+  -ms-transform: scale(1, 0.60);
+  transform: scale(1, 0.60);
+  border-radius: 4px/6.7px;
+  -webkit-animation: animation-0 1.5s ease-in-out 0.5s infinite;
+  animation: animation-0 1.5s ease-in-out 0.5s infinite;
+}
+
+.emotion-6:empty:before {
+  content: "\\00a0";
+}
+
+.emotion-11 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.emotion-12 {
+  padding: 0.85rem;
+}
+
+.emotion-13 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.emotion-14 {
+  font-size: 0.9rem;
+}
+
+.emotion-15 {
+  cursor: pointer;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #556cd6;
+  text-decoration-thickness: 1px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
 <div>
-  <div />
+  <div
+    class="emotion-0"
+  >
+    <div
+      class="emotion-1"
+    >
+      <div
+        class="MuiGrid-root page-module MuiGrid-container"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+        >
+          <div
+            class="emotion-2"
+          >
+            <div
+              class="emotion-2"
+            >
+              <div
+                class="emotion-4"
+              >
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-5"
+                  style="height: 300px;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-6"
+                  style="height: 3rem; margin-bottom: 1rem;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-6"
+                  style="width: 40%;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-6"
+                  style="width: 25%;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-6"
+                  style="width: 25%;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-6"
+                  style="width: 25%;"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+        >
+          <div
+            style="padding-left: 1rem; padding-right: 0.5rem;"
+          >
+            <div
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-11"
+            >
+              <div
+                class="emotion-12"
+              >
+                <div
+                  class="emotion-13"
+                >
+                  See also
+                </div>
+                <div
+                  class="emotion-14"
+                >
+                  <span
+                    class="emotion-15"
+                  >
+                    Movie Awards
+                  </span>
+                </div>
+                <div
+                  class="emotion-14"
+                >
+                  <span
+                    class="emotion-15"
+                  >
+                    Movies
+                  </span>
+                </div>
+                <div
+                  class="emotion-14"
+                >
+                  <span
+                    class="emotion-15"
+                  >
+                    People
+                  </span>
+                </div>
+                <div
+                  class="emotion-14"
+                >
+                  <span
+                    class="emotion-15"
+                  >
+                    Podcasts
+                  </span>
+                </div>
+                <div
+                  class="emotion-14"
+                >
+                  <span
+                    class="emotion-15"
+                  >
+                    Music Podcasts
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 `;

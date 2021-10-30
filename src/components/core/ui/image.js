@@ -4,6 +4,8 @@ import { styled } from '@mui/material/styles';
 import config from 'app/config/constants'
 
 const IMAGE_PLACEHOLDER = `${config.APP.BASE_PATH}${config.DEFAULTS.IMAGE_PLACEHOLDER}`;
+const onMediaFallback = event => event.target.src = IMAGE_PLACEHOLDER;
+
 const ImgPanel = styled('div')({
 	position: 'relative',
 	overflow: 'hidden',
@@ -11,8 +13,8 @@ const ImgPanel = styled('div')({
 	backgroundImage: `url('${IMAGE_PLACEHOLDER}')`, 
 	backgroundRepeat: 'no-repeat', 
 	backgroundPosition: 'center center',
-	width: 'auto',
-	height: 'auto',
+	width: 'fit-content',
+	height: 'fit-content',
 });
 
 const Image = ( props ) => {
@@ -24,17 +26,13 @@ const Image = ( props ) => {
 	  width = '100%';
 	}
 
-	var imgProps = {};
-	imgProps.ref = (img => this.img = img);
-	imgProps.onError = (()=> (this.img.src != IMAGE_PLACEHOLDER) ? this.img.src = IMAGE_PLACEHOLDER : null);
-
 	var img = <img 
-		{...imgProps} 
 		src={src}  
 		layout={layout} 
 		width={width} 
 		height={height} 
 		style={{...style, position: 'absolute', top: 0, left: 0, margin: '0px', padding: '0px', border: '0px'}}
+		onError={onMediaFallback}
 	/>
 
 	if(lazy){

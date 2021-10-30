@@ -12,7 +12,6 @@ export default function RemakeItem( props ){
   return (   
       <Card
         image={(image) ? image.poster : image}
-        imageHeight={100}
         text={ <div>
                   {recs.slice(0,3).map( (r, key) =>                     
                     <Field key={key}

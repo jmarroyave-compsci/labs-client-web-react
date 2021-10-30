@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router';
-import Layout from 'com/pages/movies-festivals/page';
+import Layout from 'com/pages/movies-festivals/list';
 
 const Page = ( props ) => {
   const router = useRouter(); 

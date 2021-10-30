@@ -12,7 +12,6 @@ export default function MovieItem( props ){
     <Link box id={id} entity={name}>
       <Card
         image={(image) ? image.poster : image}
-        imageHeight={100}
         text={<Awards mini={!full} data={awards} year={year} all={all}/>}
         title={title}
       />

@@ -110,6 +110,11 @@ exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
   text-decoration-style: dotted;
   text-decoration-color: #556cd6;
   text-decoration-thickness: 1px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
 }
 
 <div>

@@ -1,6 +1,6 @@
 export default {
 	automata: {
-		name: "stories_movies_festivals"
+		name: "page_movies_festivals"
 	},
 	page: {
 		title: "Movie Festivals",

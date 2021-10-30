@@ -14,19 +14,16 @@ export default function Layout( props ){
   	if(!state) return <div/>;
 
 	return (
-		<CoreProxy 
-			xs={
-			<MultiLayout
-				config={config}
-				type={state.params.renderer}
-                url={config.page.url(state.params.entity)}
-				data={state.data}
-				loading={state.loading}
-				error={state.error}
-				onPageChange={(page) => dispatch( fetchData({ ...state.params, page: page }) ) }
-				item={(data) => <Item full {...data}/>}
-				params={{...state.params}}
-			/>}
+		<MultiLayout
+			config={config}
+			type={state.params.renderer}
+            url={config.page.url(state.params.entity)}
+			data={state.data}
+			loading={state.loading}
+			error={state.error}
+			onPageChange={(page) => dispatch( fetchData({ ...state.params, page: page }) ) }
+			item={(data) => <Item full {...data}/>}
+			params={{...state.params}}
 		/>
 	)
 }	

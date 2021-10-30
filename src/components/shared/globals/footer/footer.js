@@ -27,13 +27,7 @@ const Footer = ( {socialNetworksLinks, footerLinks, version} ) => {
 		)
 	}
 
-	return (
-		<CoreProxy 
-			xs={renderSection(socialNetworksLinks, footerLinks, version, '1.5rem')}
-			sm={renderSection(socialNetworksLinks, footerLinks, version, '2rem')}
-			md={renderSection(socialNetworksLinks, footerLinks, version, '3rem')}
-		/>
-	)
+	return renderSection(socialNetworksLinks, footerLinks, version, '1.5rem')
 
 }
 

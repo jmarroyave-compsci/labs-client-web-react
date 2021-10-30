@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import config from "./.config.js";
 import { fetchData } from './automata';
 import Item from './com/item';
+import Quote from 'com/quote';
 
 export default function Layout( props ){
 	const dispatch = useDispatch();
@@ -21,19 +22,20 @@ export default function Layout( props ){
   	
   	if(!state) return <div/>;
 
+  	console.log(state)
+
 	return (
-		<CoreProxy 
-			xs={
-			<MultiLayout
-				config={config}
-                url={config.page.url(state.params.entity)}
-				params={{...state.params}}
-				type={state.params.renderer}
-				data={state.data}
-				loading={state.loading}				
-				onPageChange={(page) => dispatch( fetchData({ ...state.params, page: page }) ) }
-				item={(data) => <Item full {...data}/>}
-			/>}
+		<MultiLayout
+			config={config}
+			description={<Quote tag="actor"/>}			
+            url={config.page.url(state.params.entity)}
+			params={{...state.params}}
+			type={state.params.renderer}
+			data={state.data}
+			loading={state.loading}				
+			onPageChange={(page) => dispatch( fetchData({ ...state.params, page: page }) ) }
+			item={(data) => <Item full {...data}/>}
+			breadcrumbs={props.breadcrumbs}
 		/>
 	)
 }	

@@ -9,7 +9,7 @@ export default function DirectorItem( props ){
       <PersonItem
         id={id}
         name={name}
-        text={<Movies data={acted}/>}
+        text={<Movies tiny data={acted}/>}
       />
   )
 }

@@ -5,24 +5,20 @@ import '@testing-library/jest-dom'
 import { itMustHaveNoErrors, TestProvider } from "tests/jest/shared"
 
 import itemState from './automata/tests/item.json'
-import Page from '.';
+import TestComponent from './page';
 import config from './.config';
- 
+
 describe(`${config.automata.name.toUpperCase()}`, () => {
-  let store;
-  let component;
- 
   beforeEach(() => { 
-    component = (
-      <TestProvider state={itemState}>
-        <Page />
+  }); 
+ 
+  it('compare Page against snapshot', () => {
+    const renderer = render(
+      <TestProvider state={{[config.automata.name]: itemState}}>
+        <TestComponent/>
       </TestProvider>
-    );    
-  });
- 
- 
-  it('compare against snapshot', () => {
-    const renderer = render(component)
+    )
+
     itMustHaveNoErrors(renderer)
     expect(renderer.container).toMatchSnapshot();
   });

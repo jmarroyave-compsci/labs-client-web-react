@@ -9,6 +9,7 @@ const LinkBox = styled('div')({
     cursor: 'pointer',
     display: 'flex',
     flexGrow: 1,
+    width: '100%',
 });
 
 const LinkText = styled('span')({
@@ -17,6 +18,11 @@ const LinkText = styled('span')({
     textDecorationStyle: 'dotted',
     textDecorationColor: theme.palette.primary.main,
     textDecorationThickness: '1px',
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+    overflow: 'hidden',
+    display: 'inline-block',
+    width: '100%',
 });
 
 const Link =  ( props ) => {

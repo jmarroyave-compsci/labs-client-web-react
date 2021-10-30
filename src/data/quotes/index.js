@@ -7,9 +7,13 @@ const noQoute = 	{
 
 
 export const getQuote = function( tag ){
-	 var qs = quotes.filter( a => a.tags.includes(tag))
-	 var i = Math.floor(Math.random() * qs.length)
+	var tags = (tag.includes(",")) ? tag.split(",") : [tag];
+	var t = tags[ Math.floor(Math.random() * tags.length) ]
 
 
-	 return (qs.length > 0) ? qs[i] : noQoute;
+	var qs = quotes.filter( a => a.tags.includes(t))
+	var i = Math.floor(Math.random() * qs.length)
+
+
+	return (qs.length > 0) ? qs[i] : noQoute;
 }

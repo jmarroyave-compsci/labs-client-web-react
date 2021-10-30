@@ -33,14 +33,6 @@ export default function Parameters( props ){
     return (
       <Frame>
         <Stack spacing={2}>
-          <Autocomplete          
-            disableClearable
-            options={fData}
-            value={entity}
-            onChange={(e, value) => {handleOnChange(year, value); setEntity(value)} }
-            sx={{ width: 300 }}
-            renderInput={(params) => <TextField {...params} label="From" />}
-          />      
           <Autocomplete
             disableClearable
             options={yData}

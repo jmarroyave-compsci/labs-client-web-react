@@ -39,7 +39,7 @@ function DashboardApp( props ) {
           }}
           style={{padding: 0, margin: 0}}
         >
-          <div style={{paddingTop: "5rem"}}></div>
+          <div style={{paddingTop: "5.8rem"}}></div>
 
           <Breadcrumbs data={breadcrumbs} style={{padding: 0, marginBottom: "0.5rem", marginLeft: "1rem"}}/>
           <div style={{padding: 0, margin: 0}}>

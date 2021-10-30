@@ -22,12 +22,24 @@ exports[`STORIES_PROFESSIONS compare against snapshot 1`] = `
 }
 
 .emotion-3 {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  margin: 0;
+}
+
+.emotion-4 {
+  font-size: 0.7rem;
+  line-height: 0.75rem;
+  margin: 0;
+}
+
+.emotion-5 {
   margin: 0 0 2rem 0;
   padding: 0;
   width: 100%;
 }
 
-.emotion-4 {
+.emotion-6 {
   padding-top: 2rem;
 }
 
@@ -43,10 +55,19 @@ exports[`STORIES_PROFESSIONS compare against snapshot 1`] = `
     <div
       class="emotion-2"
     >
-      "Your own barometer is all you have to go by, and often what makes a good director is knowing when not to say something. On occasions you can find yourself on a film set where the person who is wearing the director's hat is only trying to justify his position." Gary Oldman
+      <div
+        class="emotion-3"
+      >
+        I understand acting and I understand actors. I don't really understand the world of celebrity. That's just bizarre. Those sorts of elements I'm at sea with. - 
+      </div>
+      <span
+        class="emotion-4"
+      >
+        Sam Neill
+      </span>
     </div>
     <div
-      class="emotion-3"
+      class="emotion-5"
     >
       <div
         class="react-multi-carousel-list container-with-dots "
@@ -58,7 +79,7 @@ exports[`STORIES_PROFESSIONS compare against snapshot 1`] = `
       </div>
     </div>
     <div
-      class="emotion-4"
+      class="emotion-6"
     />
   </div>
 </div>
