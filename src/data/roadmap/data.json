@@ -1081,6 +1081,22 @@
           "level": 2,
           "children": null
         }
+      ],
+      "Day 5": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: minor fixes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: Search, more filters and good UI",
+          "level": 3,
+          "children": null
+        }
       ]
     }
   }
