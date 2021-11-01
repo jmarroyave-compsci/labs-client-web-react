@@ -1,7 +1,7 @@
 ---
 title: The complicated
-sprint: 6
-day:	4
+sprint: 8
+day:	3
 category: log
 published: true
 ---
@@ -18,3 +18,6 @@ published: true
 7-5
 - what the meaning of simplicity?
 
+8-3
+- the complexity of a project vrs the complexity of the implementation
+- the buggy project, it's complexity and chaotic state 

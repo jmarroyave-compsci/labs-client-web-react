@@ -22,7 +22,7 @@ export const getAllPosts = function(){
     articles = articles.sort( (a,b) => {
         if( a.sprint != b.sprint ) return (a.sprint > b.sprint) ? -1 : 1;
         if( a.day != b.day ) return (a.day > b.day) ? -1 : 1;
-        return (a.title > b.title) ? 1 : -1;
+        return (a.title > b.title) ? -1 : 1;
     })
 
     return articles

@@ -6,5 +6,6 @@ category: log
 published: true
 ---
 
+2-3
 - start early
 - the procrastination
