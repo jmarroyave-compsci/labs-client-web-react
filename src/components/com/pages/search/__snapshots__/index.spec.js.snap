@@ -1262,6 +1262,8 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
                             <label
                               class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-disabled MuiFormLabel-filled emotion-71"
                               data-shrink="true"
+                              for="year"
+                              id="year-label"
                             >
                               year
                             </label>
@@ -1272,6 +1274,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
                                 aria-invalid="false"
                                 class="MuiOutlinedInput-input MuiInputBase-input Mui-disabled MuiInputBase-inputSizeSmall emotion-73"
                                 disabled=""
+                                id="year"
                                 inputmode="numeric"
                                 name="year"
                                 pattern="[0-9]*"
@@ -1300,6 +1303,8 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
                             <label
                               class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-disabled MuiFormLabel-filled emotion-71"
                               data-shrink="true"
+                              for="time-frame"
+                              id="time-frame-label"
                             >
                               window
                             </label>
@@ -1310,6 +1315,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
                                 aria-invalid="false"
                                 class="MuiOutlinedInput-input MuiInputBase-input Mui-disabled MuiInputBase-inputSizeSmall emotion-73"
                                 disabled=""
+                                id="time-frame"
                                 inputmode="numeric"
                                 name="timeFrame"
                                 pattern="[0-9]*"

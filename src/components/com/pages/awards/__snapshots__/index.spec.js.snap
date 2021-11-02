@@ -938,8 +938,8 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                       <label
                         class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled emotion-12"
                         data-shrink="true"
-                        for="mui-830781066"
-                        id="mui-830781066-label"
+                        for="year"
+                        id="year-label"
                       >
                         Year
                       </label>
@@ -952,7 +952,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                           autocapitalize="none"
                           autocomplete="off"
                           class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused MuiAutocomplete-input MuiAutocomplete-inputFocused emotion-14"
-                          id="mui-830781066"
+                          id="year"
                           spellcheck="false"
                           type="text"
                           value="1992"

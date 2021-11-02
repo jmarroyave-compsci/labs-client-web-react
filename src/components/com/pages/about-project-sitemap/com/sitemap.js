@@ -14,6 +14,7 @@ export default function Sitemap( props ){
   return (
     <Stack>
       <TreeView
+        id='sitemap'
         aria-label="file system navigator"
         defaultCollapseIcon={<ExpandMoreIcon />}
         defaultExpandIcon={<ChevronRightIcon />}

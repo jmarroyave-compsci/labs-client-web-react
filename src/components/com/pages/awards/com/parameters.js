@@ -34,6 +34,7 @@ export default function Parameters( props ){
       <Frame>
         <Stack spacing={2}>
           <Autocomplete
+            id="year"
             disableClearable
             options={yData}
             value={year}

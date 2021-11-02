@@ -110,7 +110,7 @@ export default function Filters( props ){
               </Small>
               <Stack direction='row' spacing={2} style={{width: '100%', overflowX: 'auto'}}>
                 <div>
-                  <TextField margin="normal" disabled={!state.filterByTimeFrame} label="year" name="year" value={state.year} 
+                  <TextField id="year" margin="normal" disabled={!state.filterByTimeFrame} label="year" name="year" value={state.year} 
                     onChange={ (e) => { 
                       dispatch( { type : "FIELD_CHANGED", payload: e.target } ); 
                       dispatch( { type : "UPDATE_TIMEFRAME_NOTES" } ) 
@@ -119,7 +119,7 @@ export default function Filters( props ){
                   />
                 </div>
                 <div>
-                  <TextField margin="normal" disabled={!state.filterByTimeFrame} label="window" name="timeFrame" value={state.timeFrame} 
+                  <TextField id="time-frame" margin="normal" disabled={!state.filterByTimeFrame} label="window" name="timeFrame" value={state.timeFrame} 
                     onChange={ (e) => { 
                       dispatch( { type : "FIELD_CHANGED", payload: e.target } ); 
                       dispatch( { type : "UPDATE_TIMEFRAME_NOTES" } )  
