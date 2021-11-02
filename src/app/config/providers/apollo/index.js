@@ -1,8 +1,8 @@
 import { ApolloClient, InMemoryCache } from "@apollo/client";
-import constants from 'app/config/constants';
+import config from 'app/config';
 
 const client = new ApolloClient({
-    uri: constants.SERVERS.GRAPHQL,
+    uri: config.SERVERS.GRAPHQL,
     cache: new InMemoryCache(),
 });
 

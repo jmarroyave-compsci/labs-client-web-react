@@ -1,4 +1,7 @@
 import 'regenerator-runtime/runtime'
+import dotenv from 'dotenv';
 
-console.log(`============ testSetupFile Loaded ===========`);
+var vars = dotenv.config({ path: `${__dirname}/../../../../.env.test` })
+
+console.log(`============ SetupFile Loaded ===========`);
 

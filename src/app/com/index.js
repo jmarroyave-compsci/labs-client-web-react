@@ -5,7 +5,7 @@ import uris from 'shared/trends/uris';
 import Footer from './footer'
 import Header from './header'
 import { gql, useQuery, useApolloClient } from "@apollo/client";
-import config from 'app/config/constants';
+import config from 'app/config';
 import nav from 'app/data/navigation-drawer';
 import { useSelector, useDispatch } from 'react-redux'
 import { fetchData } from 'com/pages/search/automata'

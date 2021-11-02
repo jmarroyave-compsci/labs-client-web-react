@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import Config from 'app/config/constants';
 import ChartCard from 'core/ui/cards/chart';
 import Button from "core/ui/button"
 import PanelCard from 'core/ui/cards/panel';

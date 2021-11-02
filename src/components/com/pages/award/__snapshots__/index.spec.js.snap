@@ -54,7 +54,7 @@ exports[`STORIES_MOVIES_AWARD compare Page against snapshot 1`] = `
   position: relative;
   overflow: hidden;
   background-color: #efefef;
-  background-image: url('undefined/img/ph.jpg');
+  background-image: url('/labs-client-web-react/app/img/ph.jpg');
   background-repeat: no-repeat;
   -webkit-background-position: center center;
   background-position: center center;

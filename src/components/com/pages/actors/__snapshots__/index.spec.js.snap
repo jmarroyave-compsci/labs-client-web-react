@@ -392,12 +392,12 @@ exports[`STORIES_ACTORS compare Page against snapshot 1`] = `
             <div
               class="emotion-5"
             >
-              I have some friends who are actors. I've watched them work. And I would say that of all the arts, acting is the most grueling, thankless. Never apologize for your work. - 
+              THIS IS THE TEST QUOTE
             </div>
             <span
               class="emotion-6"
             >
-              Kristen Stewart
+              The programmer
             </span>
           </div>
         </div>

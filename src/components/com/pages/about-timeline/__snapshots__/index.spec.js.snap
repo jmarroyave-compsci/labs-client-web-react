@@ -191,7 +191,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         >
                           <path
                             class="line"
-                            d="M375,230.12209250512433L450,229.38240798502807LNaN,226.01372426699936LNaN,225.99144461277962LNaN,225.99144461277962"
+                            d="M112.5,237.19354653499457L135,236.71700063156686L337.5,234.54670724005283L360,234.5323534477809L382.5,234.5323534477809L427.5,234.6730206120457L450,234.98306252511912"
                             style="stroke: #1f77b4; stroke-width: 5px; opacity: 0.25;"
                           />
                         </g>
@@ -200,7 +200,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         >
                           <path
                             class="line"
-                            d="M0,102.14775866678549L375,82.04259869886818L450,80.92861598787987LNaN,16.20622047945816LNaN,16.264147580429544LNaN,0.7575082434720659LNaN,0.9535692006060192LNaN,0"
+                            d="M0,154.74536372509618L112.5,141.79250157891715L135,141.07481196532123L270,99.37704541539874L292.5,99.41436527530573L337.5,89.42412585405063L360,89.55043922604352L382.5,88.93609691680543L427.5,88.64040879600391L450,0"
                             style="stroke: #ff7f0e; stroke-width: 5px; opacity: 0.25;"
                           />
                         </g>
@@ -209,7 +209,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         >
                           <path
                             class="line"
-                            d="M375,232.53720702254702L450,232.53275109170306LNaN,200.8689065145709LNaN,200.87336244541484LNaN,200.8198912752874"
+                            d="M112.5,238.7494976172705L135,238.7466268588161L337.5,218.3470172819659L360,218.34988804042027L382.5,218.31543893896767L427.5,218.19773784233794L450,218.19773784233794"
                             style="stroke: #2ca02c; stroke-width: 5px; opacity: 0.25;"
                           />
                         </g>
@@ -220,8 +220,58 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                             class="circle"
                           >
                             <circle
-                              cx="375"
-                              cy="230.12209250512433"
+                              cx="112.5"
+                              cy="237.19354653499457"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="135"
+                              cy="236.71700063156686"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="337.5"
+                              cy="234.54670724005283"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="360"
+                              cy="234.5323534477809"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="382.5"
+                              cy="234.5323534477809"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="427.5"
+                              cy="234.6730206120457"
                               r="8"
                               style="opacity: 0.85;"
                             />
@@ -231,34 +281,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                           >
                             <circle
                               cx="450"
-                              cy="229.38240798502807"
-                              r="8"
-                              style="opacity: 0.85;"
-                            />
-                          </g>
-                          <g
-                            class="circle"
-                          >
-                            <circle
-                              cy="226.01372426699936"
-                              r="8"
-                              style="opacity: 0.85;"
-                            />
-                          </g>
-                          <g
-                            class="circle"
-                          >
-                            <circle
-                              cy="225.99144461277962"
-                              r="8"
-                              style="opacity: 0.85;"
-                            />
-                          </g>
-                          <g
-                            class="circle"
-                          >
-                            <circle
-                              cy="225.99144461277962"
+                              cy="234.98306252511912"
                               r="8"
                               style="opacity: 0.85;"
                             />
@@ -272,7 +295,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                           >
                             <circle
                               cx="0"
-                              cy="102.14775866678549"
+                              cy="154.74536372509618"
                               r="8"
                               style="opacity: 0.85;"
                             />
@@ -281,8 +304,78 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                             class="circle"
                           >
                             <circle
-                              cx="375"
-                              cy="82.04259869886818"
+                              cx="112.5"
+                              cy="141.79250157891715"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="135"
+                              cy="141.07481196532123"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="270"
+                              cy="99.37704541539874"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="292.5"
+                              cy="99.41436527530573"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="337.5"
+                              cy="89.42412585405063"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="360"
+                              cy="89.55043922604352"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="382.5"
+                              cy="88.93609691680543"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="427.5"
+                              cy="88.64040879600391"
                               r="8"
                               style="opacity: 0.85;"
                             />
@@ -292,51 +385,6 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                           >
                             <circle
                               cx="450"
-                              cy="80.92861598787987"
-                              r="8"
-                              style="opacity: 0.85;"
-                            />
-                          </g>
-                          <g
-                            class="circle"
-                          >
-                            <circle
-                              cy="16.20622047945816"
-                              r="8"
-                              style="opacity: 0.85;"
-                            />
-                          </g>
-                          <g
-                            class="circle"
-                          >
-                            <circle
-                              cy="16.264147580429544"
-                              r="8"
-                              style="opacity: 0.85;"
-                            />
-                          </g>
-                          <g
-                            class="circle"
-                          >
-                            <circle
-                              cy="0.7575082434720659"
-                              r="8"
-                              style="opacity: 0.85;"
-                            />
-                          </g>
-                          <g
-                            class="circle"
-                          >
-                            <circle
-                              cy="0.9535692006060192"
-                              r="8"
-                              style="opacity: 0.85;"
-                            />
-                          </g>
-                          <g
-                            class="circle"
-                          >
-                            <circle
                               cy="0"
                               r="8"
                               style="opacity: 0.85;"
@@ -350,8 +398,58 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                             class="circle"
                           >
                             <circle
-                              cx="375"
-                              cy="232.53720702254702"
+                              cx="112.5"
+                              cy="238.7494976172705"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="135"
+                              cy="238.7466268588161"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="337.5"
+                              cy="218.3470172819659"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="360"
+                              cy="218.34988804042027"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="382.5"
+                              cy="218.31543893896767"
+                              r="8"
+                              style="opacity: 0.85;"
+                            />
+                          </g>
+                          <g
+                            class="circle"
+                          >
+                            <circle
+                              cx="427.5"
+                              cy="218.19773784233794"
                               r="8"
                               style="opacity: 0.85;"
                             />
@@ -361,34 +459,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                           >
                             <circle
                               cx="450"
-                              cy="232.53275109170306"
-                              r="8"
-                              style="opacity: 0.85;"
-                            />
-                          </g>
-                          <g
-                            class="circle"
-                          >
-                            <circle
-                              cy="200.8689065145709"
-                              r="8"
-                              style="opacity: 0.85;"
-                            />
-                          </g>
-                          <g
-                            class="circle"
-                          >
-                            <circle
-                              cy="200.87336244541484"
-                              r="8"
-                              style="opacity: 0.85;"
-                            />
-                          </g>
-                          <g
-                            class="circle"
-                          >
-                            <circle
-                              cy="200.8198912752874"
+                              cy="218.19773784233794"
                               r="8"
                               style="opacity: 0.85;"
                             />
@@ -411,7 +482,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         <g
                           class="tick"
                           opacity="1"
-                          transform="translate(13,0)"
+                          transform="translate(139.25,0)"
                         >
                           <line
                             stroke="currentColor"
@@ -422,13 +493,13 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                             fill="currentColor"
                             y="9"
                           >
-                            Mon 11
+                            Oct 17
                           </text>
                         </g>
                         <g
                           class="tick"
                           opacity="1"
-                          transform="translate(88,0)"
+                          transform="translate(296.75,0)"
                         >
                           <line
                             stroke="currentColor"
@@ -439,75 +510,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                             fill="currentColor"
                             y="9"
                           >
-                            Tue 12
-                          </text>
-                        </g>
-                        <g
-                          class="tick"
-                          opacity="1"
-                          transform="translate(163,0)"
-                        >
-                          <line
-                            stroke="currentColor"
-                            y2="6"
-                          />
-                          <text
-                            dy="0.71em"
-                            fill="currentColor"
-                            y="9"
-                          >
-                            Wed 13
-                          </text>
-                        </g>
-                        <g
-                          class="tick"
-                          opacity="1"
-                          transform="translate(238,0)"
-                        >
-                          <line
-                            stroke="currentColor"
-                            y2="6"
-                          />
-                          <text
-                            dy="0.71em"
-                            fill="currentColor"
-                            y="9"
-                          >
-                            Thu 14
-                          </text>
-                        </g>
-                        <g
-                          class="tick"
-                          opacity="1"
-                          transform="translate(313,0)"
-                        >
-                          <line
-                            stroke="currentColor"
-                            y2="6"
-                          />
-                          <text
-                            dy="0.71em"
-                            fill="currentColor"
-                            y="9"
-                          >
-                            Fri 15
-                          </text>
-                        </g>
-                        <g
-                          class="tick"
-                          opacity="1"
-                          transform="translate(388,0)"
-                        >
-                          <line
-                            stroke="currentColor"
-                            y2="6"
-                          />
-                          <text
-                            dy="0.71em"
-                            fill="currentColor"
-                            y="9"
-                          >
-                            Sat 16
+                            Oct 24
                           </text>
                         </g>
                       </g>
@@ -543,24 +546,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         <g
                           class="tick"
                           opacity="1"
-                          transform="translate(0,205.94069156046697)"
-                        >
-                          <line
-                            stroke="currentColor"
-                            x2="-6"
-                          />
-                          <text
-                            dy="0.32em"
-                            fill="currentColor"
-                            x="-9"
-                          >
-                            10,000
-                          </text>
-                        </g>
-                        <g
-                          class="tick"
-                          opacity="1"
-                          transform="translate(0,161.38138312093398)"
+                          transform="translate(0,193.08483091232702)"
                         >
                           <line
                             stroke="currentColor"
@@ -577,24 +563,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         <g
                           class="tick"
                           opacity="1"
-                          transform="translate(0,116.82207468140093)"
-                        >
-                          <line
-                            stroke="currentColor"
-                            x2="-6"
-                          />
-                          <text
-                            dy="0.32em"
-                            fill="currentColor"
-                            x="-9"
-                          >
-                            30,000
-                          </text>
-                        </g>
-                        <g
-                          class="tick"
-                          opacity="1"
-                          transform="translate(0,72.26276624186792)"
+                          transform="translate(0,135.66966182465407)"
                         >
                           <line
                             stroke="currentColor"
@@ -611,7 +580,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         <g
                           class="tick"
                           opacity="1"
-                          transform="translate(0,27.703457802334906)"
+                          transform="translate(0,78.25449273698112)"
                         >
                           <line
                             stroke="currentColor"
@@ -622,7 +591,24 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                             fill="currentColor"
                             x="-9"
                           >
-                            50,000
+                            60,000
+                          </text>
+                        </g>
+                        <g
+                          class="tick"
+                          opacity="1"
+                          transform="translate(0,20.839323649308156)"
+                        >
+                          <line
+                            stroke="currentColor"
+                            x2="-6"
+                          />
+                          <text
+                            dy="0.32em"
+                            fill="currentColor"
+                            x="-9"
+                          >
+                            80,000
                           </text>
                         </g>
                         <text

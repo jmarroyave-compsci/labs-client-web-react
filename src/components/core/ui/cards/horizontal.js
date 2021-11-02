@@ -6,7 +6,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import config from 'app/config/constants'
+import config from 'app/config'
 
 export default function MediaControlCard(props) {
   var { classes, title, text, image, className, style, actions, imageHeight, imageWidth } = props;

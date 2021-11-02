@@ -1,6 +1,7 @@
 import _package_ from 'package.json';
 
 const Constants = {
+	TEST: (process.env.TESTING === "true") ? true : false,
 	DEBUG : process.env.NEXT_PUBLIC__DEBUG,
 	LOCAL : process.env.NEXT_PUBLIC__LOCAL,
 	APP : {

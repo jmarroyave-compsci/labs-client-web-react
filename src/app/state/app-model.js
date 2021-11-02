@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit'
-import config from 'app/config/constants'
+import config from 'app/config'
 
 const initialState = {
   pageTitle: config.APP.PAGE_TITLE,

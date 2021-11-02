@@ -422,12 +422,12 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
             <div
               class="emotion-5"
             >
-              Actors are all about entrances, but writers are all about exits. - 
+              THIS IS THE TEST QUOTE
             </div>
             <span
               class="emotion-6"
             >
-              Vincent H. O'Neil
+              The programmer
             </span>
           </div>
         </div>
@@ -507,7 +507,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -698,7 +698,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -889,7 +889,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -981,7 +981,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -1172,7 +1172,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -1363,7 +1363,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -1554,7 +1554,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -1669,7 +1669,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -1860,7 +1860,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -2051,7 +2051,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"

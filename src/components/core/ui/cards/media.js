@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia'
 import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import { isString } from 'core/lib/data'
-import config from 'app/config/constants'
+import config from 'app/config'
 import Tooltip from "@material-ui/core/Tooltip";
 import { makeStyles } from '@material-ui/styles';
 

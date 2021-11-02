@@ -5,7 +5,7 @@ import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Placeholder from 'core/ui/placeholder';
 import GoogleMapReact from 'google-map-react';
-import Constants from 'app/config/constants'
+import config from 'app/config'
 
 const TrendMarker = ({ text, key, found }) => <Marker key={key} style={{backgroundColor: (found) ? 'green' : 'red'}}>&nbsp;</Marker>;
 
@@ -29,7 +29,7 @@ class TopicMap extends React.Component {
       <Container>
         <ContainerMap>
           <GoogleMapReact
-            bootstrapURLKeys={{ key: Constants.PLUGINS.GOOGLE.MAPS }}
+            bootstrapURLKeys={{ key: config.PLUGINS.GOOGLE.MAPS }}
             defaultCenter={this.props.center}
             defaultZoom={this.props.zoom}       
             style={{width: '100%', height: '100%'}}>

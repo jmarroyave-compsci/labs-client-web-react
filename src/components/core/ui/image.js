@@ -1,7 +1,7 @@
 import React from 'react';
 import LazyLoad from 'react-lazyload';
 import { styled } from '@mui/material/styles';
-import config from 'app/config/constants'
+import config from 'app/config'
 
 const IMAGE_PLACEHOLDER = `${config.APP.BASE_PATH}${config.DEFAULTS.IMAGE_PLACEHOLDER}`;
 const onMediaFallback = event => event.target.src = IMAGE_PLACEHOLDER;

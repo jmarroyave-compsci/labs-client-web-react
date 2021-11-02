@@ -1,5 +1,4 @@
 import React from 'react';
-import Constants from 'app/config/constants'
 import Footer from 'shared/globals/footer';
 
 const FooterComponent = ( { params } ) => {	

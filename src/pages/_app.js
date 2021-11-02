@@ -15,7 +15,7 @@ import App from 'app/com';
 import { Provider as StateProvider } from 'react-redux'
 import { store } from 'app/state/store'
 
-import Constants from 'app/config/constants'
+import config from 'app/config'
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -32,7 +32,7 @@ export default function BaseApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
   React.useEffect( ()=>{
-    ReactGA.initialize(Constants.PLUGINS.GOOGLE.ANALYTICS);
+    ReactGA.initialize(config.PLUGINS.GOOGLE.ANALYTICS);
     ReactGA.pageview(window.location.pathname + window.location.search);
 
   }, [])
@@ -40,7 +40,7 @@ export default function BaseApp(props) {
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <title>{Constants.APP.PAGE_TITLE}</title>
+        <title>{config.APP.PAGE_TITLE}</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       <ApolloProvider client={client}>
@@ -50,11 +50,11 @@ export default function BaseApp(props) {
                 <App
                   params={{
                     page: {
-                      title: Constants.APP.TITLE,
-                      pageTitle: Constants.APP.PAGE_TITLE,
+                      title: config.APP.TITLE,
+                      pageTitle: config.APP.PAGE_TITLE,
                     },
                     footer: {
-                      version: Constants.APP.VERSION,
+                      version: config.APP.VERSION,
                       links: links,
                       socialNetworks: socialNetworksLinks,
                     },

@@ -1,3 +1,4 @@
+import config from 'app/config'
 import quotes from './data.json'
 
 const noQoute = 	{ 
@@ -5,8 +6,14 @@ const noQoute = 	{
 		"text":"THERE ARE NO QUOTES FOR THIS TAG"
 	}
 
+const testQuote = 	{ 
+		"tags": [], "from": "The programmer", 
+		"text":"THIS IS THE TEST QUOTE"
+	}
 
 export const getQuote = function( tag ){
+	if(config.TEST) return testQuote;
+
 	var tags = (tag.includes(",")) ? tag.split(",") : [tag];
 	var t = tags[ Math.floor(Math.random() * tags.length) ]
 

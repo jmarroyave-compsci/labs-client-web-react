@@ -22,7 +22,8 @@ export default function Layout( props ){
 
 	}, [])
 
-	if( !state ) return null;
+	if( !state ) return <div/>;
+	
 
 	return (
 		<MultiLayout

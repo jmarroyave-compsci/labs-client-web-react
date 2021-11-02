@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setPage } from 'app/state';
-import Constants from 'app/config/constants'
 import Stack from 'com/ui/stack';
 import Section from 'core/ui/layout/section';
 import StoryAwards from 'com/pages/awards/banner'

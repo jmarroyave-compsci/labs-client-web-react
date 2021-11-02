@@ -1,11 +1,11 @@
 import React from 'react';
-import Constants from 'app/config/constants'
+import config from 'app/config'
 import Version from 'shared/globals/version';
 
 export default function Footer({}) {
 	return (
 		<div style={{textAlign: 'center'}}>
-		  <Version version={Constants.VERSION}/>
+		  <Version version={config.VERSION}/>
 		</div>
 	)
 }

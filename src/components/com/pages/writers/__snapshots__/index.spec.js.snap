@@ -422,12 +422,12 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
             <div
               class="emotion-5"
             >
-              Winter collapsed on us that year. It knelt, exhausted, and stayed. - 
+              THIS IS THE TEST QUOTE
             </div>
             <span
               class="emotion-6"
             >
-              Emily Fridlund
+              The programmer
             </span>
           </div>
         </div>
@@ -507,7 +507,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -569,7 +569,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -631,7 +631,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -693,7 +693,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -755,7 +755,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -817,7 +817,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -879,7 +879,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -941,7 +941,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -1003,7 +1003,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
@@ -1065,7 +1065,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                                 <img
                                   class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-22"
                                   height="180"
-                                  src="undefined/img/ph.jpg"
+                                  src="/labs-client-web-react/app/img/ph.jpg"
                                 />
                                 <div
                                   class="MuiCardContent-root emotion-23"
