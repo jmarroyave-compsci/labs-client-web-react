@@ -1,1 +1,0 @@
-{"pageProps":{"article":{"meta":{"title":"Testing","sprint":4,"day":6,"category":"log","published":true,"slug":"4-6-testing"},"content":"\r\n- do not return to a state that was already done\r\n\r\n7-3\r\n- the boilerplate code?\r\n- when it is not necesary? ( the trap )\r\n\r\n7-7\r\n- document every error to enforce happening only once\r\n"}},"__N_SSG":true}
