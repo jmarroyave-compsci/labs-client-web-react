@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { styled } from '@mui/material/styles';
 import { Frame, Item } from 'style/boxes'
 import { SubTitle } from 'style/detail'
@@ -35,31 +35,23 @@ const More = styled('span')({
 
 
 const Year = styled('div')({
-  margin: '1rem 0 0 0',
+  margin: '1rem 0 1rem 0',
   padding: '0',
-  fontSize: '1rem',
-  lineHeight: '1rem',
+  fontSize: '1.30rem',
+  lineHeight: '1.4rem',
+  marginBottom: "0.75rem",
 });
 
 const Prize = styled('div')({
   textTransform: "uppercase",
-  margin: '1rem 0 0 0',
+  margin: '0.5rem 0 0.5rem 0',
   padding: '0',
   fontSize: '0.9rem',
   lineHeight: '1rem',
-  fontWeight: 400,
 });
 
 const Category = styled('div')( {
-  fontSize: "0.85rem",
-  lineHeight: "0.95rem",
-});
-
-const Nominee = styled('div')({
-  fontSize: '0.5rem',
-  lineHeight: '0.6rem',
-  textTransform: 'uppercase',
-  paddingTop: "0.5rem",
+  paddingLeft: "1rem",
 });
 
 
@@ -69,10 +61,21 @@ const LinkToPage = ( { year, children} ) => {
 
 export default function Awards( props ){
   var { data } = props;
+  var sortedData = [];
 
   if(!data || data.length == 0 ) return <div/>;
 
-  return (props.mini === true) ? AwardsMini(props, data) : AwardsFull(props, data); 
+  useMemo( () => {
+    sortedData = data.slice(0);
+    sortedData = sortedData.sort( (a,b) => {
+      if(a.year != b.year) return ( a.year < b.year ) ? 1 : -1;
+      if(a.festival && b.festival && a.festival.name != b.festival.name) return ( a.festival.name < b.festival.name ) ? -1 : 1;
+      return ( a.category < b.category ) ? -1 : 1;
+    })
+  }, [data])
+
+
+  return (props.mini === true) ? AwardsMini(props, sortedData) : AwardsFull(props, sortedData); 
 }
 
 
@@ -124,7 +127,12 @@ function AwardsFull( props, data ){
   const RenderPrize = (item) => {
     if (!currentPrize || currentPrize != item.festival?.name){
       currentPrize = item.festival?.name ?? "festival name";
-      return <Prize>{currentPrize}</Prize>
+      return (
+          <LinkToPage year={item.year}>
+            <Prize>{currentPrize}</Prize>
+          </LinkToPage>
+      )
+      
     }
     return null;
   }
@@ -136,9 +144,9 @@ function AwardsFull( props, data ){
           <div key={idx} >
             {RenderYear(item)}
             {RenderPrize(item)}
-            <LinkToPage year={item.year}>
+            <Category>
               <Field title={ (item.won === false) ? "nominee" : "winner"} value={item.category}/>
-            </LinkToPage>
+            </Category>
           </div>
       )}
     </Frame>     

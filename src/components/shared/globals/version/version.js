@@ -1,8 +1,13 @@
 import React from 'react';
-import Typography from '@material-ui/core/Typography';
+import { styled } from '@mui/material/styles';
+
+export const Text = styled('span')({
+	fontSize: '0.75rem',
+});
+
 
 export default function Version({version}){
 	return (
-		<span>v.{version}</span>
+		<Text>v.{version}</Text>
 	)	
 }

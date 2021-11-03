@@ -18,16 +18,18 @@ export const SubTitle = styled('h3')({
   lineHeight: "2rem",
   textTransform: 'lowercase',
   padding: '0',
+  paddingBottom: "0.25rem",
   margin: '0 0 0.5rem 0',
+  borderBottom: "2px solid #888",
 });
 
 
 export const FieldLabel = styled('div')({
   fontSize: "0.7rem",
-  lineHeight: "0.75rem",
+  lineHeight: "0.7rem",
   textTransform: 'uppercase',  
   fontWeight: '400',
-  margin: '0 0 0.15rem 0',
+  margin: '0 0 0 0',
   padding: '0',
 });
 

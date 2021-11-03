@@ -8,8 +8,8 @@ import { ApolloProvider } from "@apollo/client";
 import theme from 'app/config/theme/main';
 import createEmotionCache from 'app/config/theme/emotion-cache';
 import client from "app/config/providers/apollo";
-import links from 'app/data/links';
-import socialNetworksLinks from 'app/data/social-networks'
+import { links } from 'data/app/links';
+import socialNetworksLinks from 'data/app/social-networks'
 import App from 'app/com';
 
 import { Provider as StateProvider } from 'react-redux'

@@ -6,3 +6,8 @@ export const getBy = ( ID, breadcrumbs ) =>{
 	console.log("stories:", entity, ID, breadcrumbs)
 	return data;
 }
+
+
+export const getLast = ( n ) => {
+	return data.slice(0, n)
+}
