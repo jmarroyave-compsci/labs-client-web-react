@@ -4,7 +4,7 @@ import Layout from 'com/pages/movie/detail';
 
 const Page = ( props ) => {
   const router = useRouter(); 
-  var id = (router.query && router.query.movie) ? router.query.movie : ""; 
+  var id = router?.query?.movie ?? ""; 
 
   return (
       <Layout 
@@ -12,6 +12,21 @@ const Page = ( props ) => {
         id={id} 
       /> 
   )
+}
+
+export async function getStaticPaths(){
+  const paths = [
+    { params : { movie : "tt0454876" }},
+  ]
+  
+  return {
+      paths : paths,
+      fallback: false,
+  }
+}
+
+export async function getStaticProps( props ){
+  return { props : {} }
 }
 
 export default Page;

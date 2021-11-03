@@ -1,6 +1,6 @@
 {
   "name": "learn-starter",
-  "version": "1.3.2",
+  "version": "1.3.3",
   "private": true,
   "scripts": {
     "dev": "cross-env BABEL_ENV=dev next dev",
