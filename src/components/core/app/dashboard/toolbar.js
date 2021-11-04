@@ -15,6 +15,7 @@ import Link from 'core/ui/link';
 import Search from './search';
 import Box from '@material-ui/core/Box';
 import { ThemeContext }  from 'app/config/theme/main';
+import User from './user'
 
 function Toolbar( props ){
     const { toggleMode, theme } = useContext( ThemeContext );
@@ -69,7 +70,7 @@ function Toolbar( props ){
                 <DarkModeIcon/>
               } 
             </IconButton>
-
+            <User/>
           </MuiToolbar>
 
         </AppBar>

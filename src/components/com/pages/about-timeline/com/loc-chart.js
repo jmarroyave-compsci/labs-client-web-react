@@ -13,7 +13,6 @@ class Chart extends React.Component {
   }
   renderMultiChart() {
     var data = this.props.data;
-    console.log(data)
 
     var width = 500;
     var height = 300;

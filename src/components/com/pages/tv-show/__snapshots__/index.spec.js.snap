@@ -55,7 +55,6 @@ exports[`PAGE_TV_SHOW compare Page against snapshot 1`] = `
   overflow: hidden;
   background-color: #efefef;
   background-image: url('/labs-client-web-react/app/img/ph.jpg');
-  background-repeat: no-repeat;
   -webkit-background-position: center center;
   background-position: center center;
   width: -webkit-fit-content;
@@ -64,6 +63,8 @@ exports[`PAGE_TV_SHOW compare Page against snapshot 1`] = `
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding: 0;
+  margin: 0;
 }
 
 .emotion-6 {
@@ -181,12 +182,6 @@ exports[`PAGE_TV_SHOW compare Page against snapshot 1`] = `
                   >
                     <img
                       height="300"
-                      style="opacity: 1; margin: 0px; padding: 0px; border: 0px;"
-                      width="250"
-                    />
-                    <img
-                      height="300"
-                      style="position: absolute; top: 0px; left: 0px; margin: 0px; padding: 0px; border: 0px;"
                       width="250"
                     />
                   </div>

@@ -9,7 +9,6 @@ const Content = ( props ) => {
     <Stack>
       <LoC/>
       <Screenshots/>
-      <Sitemap/>
    </Stack>
   )
 }

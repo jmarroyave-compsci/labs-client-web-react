@@ -11,10 +11,11 @@ const ImgPanel = styled('div')({
 	overflow: 'hidden',
 	backgroundColor: '#efefef', 
 	backgroundImage: `url('${IMAGE_PLACEHOLDER}')`, 
-	backgroundRepeat: 'no-repeat', 
 	backgroundPosition: 'center center',
 	width: 'fit-content',
 	height: 'fit-content',
+	padding: 0,
+	margin: 0,
 });
 
 const Image = ( props ) => {
@@ -22,16 +23,14 @@ const Image = ( props ) => {
 
 	src = (src?.startsWith("/")) ? `${config.APP.BASE_PATH}${src}` : src;
 
-	if(height == '' && width == ''){
-	  width = '100%';
-	}
+	width = ( width ) ? width : "100%";
+	height = ( height ) ? height : null
 
 	var img = <img 
 		src={src}  
 		layout={layout} 
 		width={width} 
 		height={height} 
-		style={{...style, position: 'absolute', top: 0, left: 0, margin: '0px', padding: '0px', border: '0px'}}
 		onError={onMediaFallback}
 	/>
 
@@ -41,7 +40,6 @@ const Image = ( props ) => {
 
 	return (
 	    <ImgPanel>
-	        <img src={preload} width={width} height={height} style={{opacity: '1', margin: '0px', padding: '0px', border: '0px'}}/>
 	        {img}
 	    </ImgPanel>    
 	)
