@@ -1,7 +1,7 @@
 import React from 'react';
 import { createTheme } from '@material-ui/core/styles';
 
-import theme from 'app/config/theme/main';
+import { theme } from 'app/config/theme/main';
 
 var color;
 color = theme.palette.primary;

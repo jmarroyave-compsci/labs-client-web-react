@@ -69,7 +69,8 @@ export default function Awards( props ){
     sortedData = data.slice(0);
     sortedData = sortedData.sort( (a,b) => {
       if(a.year != b.year) return ( a.year < b.year ) ? 1 : -1;
-      if(a.festival && b.festival && a.festival.name != b.festival.name) return ( a.festival.name < b.festival.name ) ? -1 : 1;
+
+      if(a?.festival?.name != b?.festival?.name) return ( a?.festival?.name < b?.festival?.name ) ? -1 : 1;
       return ( a.category < b.category ) ? -1 : 1;
     })
   }, [data])

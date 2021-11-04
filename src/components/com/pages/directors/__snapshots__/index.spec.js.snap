@@ -254,7 +254,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-decoration-style: dotted;
-  text-decoration-color: #556cd6;
+  text-decoration-color: #1976d2;
   text-decoration-thickness: 1px;
   text-overflow: ellipsis;
   white-space: nowrap;

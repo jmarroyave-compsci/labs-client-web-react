@@ -78,7 +78,9 @@ exports[`STORIES_MOVIES_AWARD compare Page against snapshot 1`] = `
   line-height: 2rem;
   text-transform: lowercase;
   padding: 0;
+  padding-bottom: 0.25rem;
   margin: 0 0 0.5rem 0;
+  border-bottom: 2px solid #888;
 }
 
 .emotion-11 {
@@ -103,7 +105,7 @@ exports[`STORIES_MOVIES_AWARD compare Page against snapshot 1`] = `
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-decoration-style: dotted;
-  text-decoration-color: #556cd6;
+  text-decoration-color: #1976d2;
   text-decoration-thickness: 1px;
   text-overflow: ellipsis;
   white-space: nowrap;

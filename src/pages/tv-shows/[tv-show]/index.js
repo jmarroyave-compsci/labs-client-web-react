@@ -14,5 +14,21 @@ const Page = ( props ) => {
   )
 }
 
-export default Page;
+/*
+export async function getStaticPaths(){
+  const paths = [
+    { params : { "tv-show" : "tt0454876" }},
+  ]
+  
+  return {
+      paths : paths,
+      fallback: "blocking",
+  }
+}
 
+export async function getStaticProps( props ){
+  return { props : {} }
+}
+*/
+
+export default Page;

@@ -4,12 +4,12 @@
 		"movies" : {
 			"____tt0454876"  : {},
 			"festivals" : {
-				"____[festival]?festival=mf00001"  : {}
+				"____mf00001"  : {}
 			},
 			"stories" : {
 				"actors" : {},
 				"awards" : {
-					"____[award]?award=mf00001&&year=2015"  : {}		
+					"____?award=mf00001&&year=2015"  : {}		
 				},
 				"directors" : {},
 				"remakes" : {},
@@ -17,16 +17,16 @@
 			}				
 		},
 		"tv-shows" : {
-			"____[tv-show]?tv-show=tt0454876"  : {}
+			"____tt0454876"  : {}
 		},
 		"video-games" : {
-			"____[video-game]?video-game=tt0022215"  : {}
+			"____tt0022215"  : {}
 		},
 		"podcasts" : {
-			"____[podcast]?podcast=0002da5f-49a2-31ba-b44c-cdeabdf113cb"  : {}
+			"____0002da5f-49a2-31ba-b44c-cdeabdf113cb"  : {}
 		},
 		"people" : {
-			"____[person]?person=nm0000199"  : {}
+			"____nm0000158"  : {}
 		},
 		"search" : {
 		},

@@ -78,15 +78,17 @@ exports[`PAGE_MOVIE_FESTIVAL compare Page against snapshot 1`] = `
   line-height: 2rem;
   text-transform: lowercase;
   padding: 0;
+  padding-bottom: 0.25rem;
   margin: 0 0 0.5rem 0;
+  border-bottom: 2px solid #888;
 }
 
 .emotion-11 {
   font-size: 0.7rem;
-  line-height: 0.75rem;
+  line-height: 0.7rem;
   text-transform: uppercase;
   font-weight: 400;
-  margin: 0 0 0.15rem 0;
+  margin: 0 0 0 0;
   padding: 0;
 }
 
@@ -140,7 +142,7 @@ exports[`PAGE_MOVIE_FESTIVAL compare Page against snapshot 1`] = `
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-decoration-style: dotted;
-  text-decoration-color: #556cd6;
+  text-decoration-color: #1976d2;
   text-decoration-thickness: 1px;
   text-overflow: ellipsis;
   white-space: nowrap;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import classNames from 'classnames';
 import { styled } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
@@ -6,14 +6,18 @@ import MuiToolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
 import MenuIcon from '@material-ui/icons/Menu';
+import LightModeIcon from '@mui/icons-material/LightMode';
+import DarkModeIcon from '@mui/icons-material/DarkMode';
 import Typography from '@material-ui/core/Typography';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import LinearProgress from '@material-ui/core/LinearProgress';
 import Link from 'core/ui/link';
 import Search from './search';
 import Box from '@material-ui/core/Box';
+import { ThemeContext }  from 'app/config/theme/main';
 
 function Toolbar( props ){
+    const { toggleMode, theme } = useContext( ThemeContext );
   	var { onSearchQuery, onSearchSuggestions, classes, nav, title, drawerOpen, notifications, drawer, search, loading , toggleDrawer, open} = props;  	
   	const navToolbar = (nav && nav.routes) ? nav.routes.filter(item => (item.showInMenu) ? item : null) : [];
 
@@ -49,6 +53,23 @@ function Toolbar( props ){
                 <Search onSearchQuery={onSearchQuery} onSearchSuggestions={onSearchSuggestions} />
               </Box>
             }
+
+            <IconButton
+              edge="start"
+              color="inherit"
+              aria-label="open drawer"
+              onClick={toggleMode}
+              sx={{
+                marginLeft: '36px',
+              }}
+            >
+              { theme.palette.mode === "dark" ?
+                <LightModeIcon/>
+                :
+                <DarkModeIcon/>
+              } 
+            </IconButton>
+
           </MuiToolbar>
 
         </AppBar>

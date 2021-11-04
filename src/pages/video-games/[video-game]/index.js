@@ -14,5 +14,23 @@ const Page = ( props ) => {
   )
 }
 
-export default Page;
+/*
 
+export async function getStaticPaths(){
+  const paths = [
+    { params : { "video-game" : "tt0022215" }},
+  ]
+  
+  return {
+      paths : paths,
+      fallback: "blocking",
+  }
+}
+
+export async function getStaticProps( props ){
+  return { props : {} }
+}
+
+*/
+
+export default Page;

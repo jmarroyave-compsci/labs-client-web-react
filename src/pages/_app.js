@@ -1,11 +1,11 @@
-import * as React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { CacheProvider } from '@emotion/react';
 import { ApolloProvider } from "@apollo/client";
-import theme from 'app/config/theme/main';
+import { ThemeContext, theme, toggleMode } from 'app/config/theme/main';
 import createEmotionCache from 'app/config/theme/emotion-cache';
 import client from "app/config/providers/apollo";
 import { links } from 'data/app/links';
@@ -27,14 +27,14 @@ import { useRouter } from 'next/router';
 
 import ReactGA from 'react-ga';
 
-export default function BaseApp(props) {
+export default function BaseApp(props) {  
   const router = useRouter(); 
+  const [ appTheme, setAppTheme ] = useState(theme);
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
 
-  React.useEffect( ()=>{
+  useEffect( ()=>{
     ReactGA.initialize(config.PLUGINS.GOOGLE.ANALYTICS);
     ReactGA.pageview(window.location.pathname + window.location.search);
-
   }, [])
 
   return (
@@ -45,28 +45,34 @@ export default function BaseApp(props) {
       </Head>
       <ApolloProvider client={client}>
           <StateProvider store={store}>
-            <ThemeProvider theme={theme}>
-              <CssBaseline />
-                <App
-                  params={{
-                    page: {
-                      title: config.APP.TITLE,
-                      pageTitle: config.APP.PAGE_TITLE,
-                    },
-                    footer: {
-                      version: config.APP.VERSION,
-                      links: links,
-                      socialNetworks: socialNetworksLinks,
-                    },
-                  }}                             
-                >       
-                  { router.isReady && 
-                    <Component 
-                      {...pageProps}
-                    />
-                  }
-                </App>
-            </ThemeProvider>
+            <ThemeContext.Provider value={{ theme: appTheme, toggleMode: () => toggleMode(appTheme, setAppTheme) }}>
+              <ThemeContext.Consumer>
+              { ( { theme } ) => (
+                <ThemeProvider theme={theme}>
+                  <CssBaseline />
+                    <App
+                      params={{
+                        page: {
+                          title: config.APP.TITLE,
+                          pageTitle: config.APP.PAGE_TITLE,
+                        },
+                        footer: {
+                          version: config.APP.VERSION,
+                          links: links,
+                          socialNetworks: socialNetworksLinks,
+                        },
+                      }}                             
+                    >       
+                      { router.isReady && 
+                        <Component 
+                          {...pageProps}
+                        />
+                      }
+                    </App>
+                </ThemeProvider>
+              )} 
+              </ThemeContext.Consumer>
+            </ThemeContext.Provider>
           </StateProvider>
       </ApolloProvider>
     </CacheProvider>

@@ -4,7 +4,8 @@ import Layout from 'com/pages/award/detail';
 
 const Page = ( props ) => {
   const router = useRouter(); 
-  var [ id, year ] = router.query.award ?? []; 
+  console.log( router?.query?.award)
+  var [ id, year ] = router?.query?.award ?? []; 
   year = year ?? new Date().getFullYear();
 
   return (
@@ -15,5 +16,23 @@ const Page = ( props ) => {
       /> 
   )
 }
+/*
+
+export async function getStaticPaths(){
+  const paths = [
+    { params : { award : [ "mf00001", '2015' ] } },
+  ]
+  
+  return {
+      paths : paths,
+      fallback: "blocking",
+  }
+}
+
+export async function getStaticProps( props ){
+  return { props : {} }
+}
+*/
+
 
 export default Page;

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { styled } from '@mui/material/styles';
 import { default as _Link } from 'next/link';
 import Button from '@mui/material/Button';
 
-import theme from 'app/config/theme/main';
+import { ThemeContext }  from 'app/config/theme/main';
 
 const LinkBox = styled('div')({
     cursor: 'pointer',
@@ -12,7 +12,7 @@ const LinkBox = styled('div')({
     width: '100%',
 });
 
-const LinkText = styled('span')({
+const LinkText = styled('span')( ( { theme } ) => ({
     cursor: 'pointer',
     textDecoration: 'underline',
     textDecorationStyle: 'dotted',
@@ -23,7 +23,7 @@ const LinkText = styled('span')({
     overflow: 'hidden',
     display: 'inline-block',
     width: '100%',
-});
+}));
 
 const Link =  ( props ) => {
     var { box, children, className, to, href, external } = props;
