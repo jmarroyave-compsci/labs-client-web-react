@@ -9,14 +9,15 @@ export const Frame = styled('div')({
   width: '100%',
 });
 
-const _ItemFrame = styled('div')({
+const _ItemFrame = styled('div')( ( {theme} )=> ({
   margin: "0",
   padding: "0 1rem 1rem 0",
   display: 'flex', 
   flexGrow: 1,
   overflow: 'hidden',
   width: '100%',
-});
+  backgroundColor: theme.palette.background.d,
+}));
 
 const _Item = styled('div')({
   display: 'flex', 

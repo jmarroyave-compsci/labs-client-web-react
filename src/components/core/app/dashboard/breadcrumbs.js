@@ -30,11 +30,11 @@ export default function Breadcrumbs( props ) {
     <_Breadcrumbs maxItems={4} aria-label="breadcrumb" style={style}>
       { data.map( (item, idx) => 
         item.url ? 
-        <Link box key={idx} underline="hover" color="inherit" href={item.url} style={{padding: "0.5rem 0.25rem"}}>
+        <Link box key={idx} underline="hover" color="primary" href={item.url} style={{padding: "0.5rem 0.25rem"}}>
           {item.name}
         </Link>
         : 
-        <Typography key={idx} color="primary" aria-current="page" style={{padding: "0.5rem 0.25rem"}}>{item.name}</Typography>
+        <Typography key={idx} color="secondary" aria-current="page" style={{padding: "0.5rem 0.25rem"}}>{item.name}</Typography>
       )}       
     </_Breadcrumbs>
   );

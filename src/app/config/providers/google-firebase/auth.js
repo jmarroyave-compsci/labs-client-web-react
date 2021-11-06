@@ -16,7 +16,7 @@ export const firebaseAuth = ( provider ) => {
         const errorMessage = error.message;
         const email = error.email;
         const credential = GoogleAuthProvider.credentialFromError(error);        
-        return error;
+        return { error: error };
       })
 }
 

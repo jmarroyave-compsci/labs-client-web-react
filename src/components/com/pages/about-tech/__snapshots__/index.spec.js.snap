@@ -16,8 +16,8 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   width: 100%;
   height: inherit;
   border-radius: 0;
-  background: linear-gradient(60deg, rgb(59, 75, 149) 0%, #000 150%);
-  color: #fff;
+  background: linear-gradient(60deg, #556cd6 0%, #000 150%);
+  color: rgba(0, 0, 0, 0.87);
 }
 
 @media (min-width:0px) {
@@ -227,10 +227,12 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
 
 .emotion-54 {
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-decoration-style: dotted;
-  text-decoration-color: #1976d2;
+  text-decoration-color: rgba(0, 0, 0, 0.87);
   text-decoration-thickness: 1px;
   text-overflow: ellipsis;
   white-space: nowrap;

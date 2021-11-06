@@ -14,9 +14,11 @@ const LinkBox = styled('div')({
 
 const LinkText = styled('span')( ( { theme } ) => ({
     cursor: 'pointer',
+    color: theme.palette.text.primary,
+    backgroundColor: theme.palette.background.paper,
     textDecoration: 'underline',
     textDecorationStyle: 'dotted',
-    textDecorationColor: theme.palette.primary.main,
+    textDecorationColor: theme.palette.text.primary,
     textDecorationThickness: '1px',
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",

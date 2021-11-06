@@ -51,13 +51,13 @@ const getStyle = ( style, theme ) => {
 	switch( style ){
 		case "section-0":
 			return {
-				background: `linear-gradient(60deg, ${theme.palette.primary.dark} 0%, #000 150%)`,
-			    color: theme.palette.primary.contrastText,   
+				background: `linear-gradient(60deg, ${theme.palette.primary.main} 0%, #000 150%)`,
+			    color: theme.palette.text.primary,   
 			}
 		case "section-1":
 			return {
-				background: 'linear-gradient(60deg, ${theme.palette.primary.light} 0%, rgba(85,85,85,1) 100%)',
-			    color: 'black',   
+				background: 'linear-gradient(60deg, ${theme.palette.primary.main} 0%, rgba(85,85,85,1) 100%)',
+			    color: theme.palette.text.primary,   
 			}
 		case "section-2":
 			return {

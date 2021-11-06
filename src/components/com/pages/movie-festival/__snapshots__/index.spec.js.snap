@@ -140,10 +140,12 @@ exports[`PAGE_MOVIE_FESTIVAL compare Page against snapshot 1`] = `
 
 .emotion-25 {
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-decoration-style: dotted;
-  text-decoration-color: #1976d2;
+  text-decoration-color: rgba(0, 0, 0, 0.87);
   text-decoration-thickness: 1px;
   text-overflow: ellipsis;
   white-space: nowrap;

@@ -16,6 +16,7 @@ import { Provider as StateProvider } from 'react-redux'
 import { store } from 'app/state/store'
 
 import config from 'app/config'
+import { useWebSockets } from 'app/config/providers/web-sockets';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -28,6 +29,7 @@ import { useRouter } from 'next/router';
 import ReactGA from 'react-ga';
 
 export default function BaseApp(props) {  
+  const [ webSocket ] = useWebSockets() 
   const router = useRouter(); 
   const [ appTheme, setAppTheme ] = useState(theme);
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
