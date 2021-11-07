@@ -75,9 +75,14 @@ function configureStore(initialState) {
 
   // Create a store with the root reducer function being the one exposed by the manager.
 
+  const customizedMiddleware = (getDefaultMiddleware) => getDefaultMiddleware({
+    serializableCheck: false
+  })
+
+
   const store = rtk.configureStore({
     reducer: reducerManager.reduce, //reducerManager.getReducerMap(), 
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(APILocal.middleware),
+    middleware: (getDefaultMiddleware) => customizedMiddleware(getDefaultMiddleware).concat(APILocal.middleware),
     preloadedState: initialState,
     devTools: true,
   })

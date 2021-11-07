@@ -19,16 +19,3 @@ export const getTheme = ( mode ) => {
     },
   });
 }
-
-export const theme = getTheme( "light" );
-
-export const toggleMode = (theme, setTheme) => {
-  const mode = ( theme.palette.mode === "light" ) ? "dark" : "light";
-  //console.log("toggling the theme from ", theme.palette.mode, " -> " , mode)
-  setTheme( getTheme( mode ) );
-}
-
-export const ThemeContext = React.createContext( {
-    theme: theme,
-})
-

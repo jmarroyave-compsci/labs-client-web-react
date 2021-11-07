@@ -3,5 +3,3 @@ import dotenv from 'dotenv';
 
 var vars = dotenv.config({ path: `${__dirname}/../../../../.env.test` })
 
-console.log(`============ SetupFile Loaded ===========`);
-

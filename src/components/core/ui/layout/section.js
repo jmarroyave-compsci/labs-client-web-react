@@ -1,10 +1,10 @@
 import React, { useContext, useEffect } from 'react';
 import ErrorBoundry from 'core/ui/error-boundry';
-import { ThemeContext } from 'app/config/theme/main';
 import Box from '@mui/material/Box';
+import { useSelector } from 'react-redux'
 
 const LayoutSection = ( props ) => {
-	const { theme } = useContext( ThemeContext );
+  	const { theme } = useSelector(( state ) => state.app ) || {}
 
 	var {className, cover, padding, children, hero, rounded, compact} = props;
 	var height = (cover === true) ? "100vh" : "inherit"; 
@@ -51,13 +51,13 @@ const getStyle = ( style, theme ) => {
 	switch( style ){
 		case "section-0":
 			return {
-				background: `linear-gradient(60deg, ${theme.palette.primary.main} 0%, #000 150%)`,
-			    color: theme.palette.text.primary,   
+				background: `linear-gradient(60deg, ${theme?.palette.primary.main ?? "black"} 0%, #000 150%)`,
+			    color: theme?.palette.text.primary ?? "black",   
 			}
 		case "section-1":
 			return {
-				background: 'linear-gradient(60deg, ${theme.palette.primary.main} 0%, rgba(85,85,85,1) 100%)',
-			    color: theme.palette.text.primary,   
+				background: `linear-gradient(60deg, ${theme?.palette.primary.main  ?? "black"} 0%, rgba(85,85,85,1) 100%)`,
+			    color: theme?.palette.text.primary ?? "black",   
 			}
 		case "section-2":
 			return {

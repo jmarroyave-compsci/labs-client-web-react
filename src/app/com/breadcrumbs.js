@@ -1,11 +1,15 @@
 import React from 'react';
+import { useSelector } from 'react-redux'
 import _Breadcrumbs from '@material-ui/core/Breadcrumbs';
 import Link from 'core/ui/link';
 import Typography from '@material-ui/core/Typography';
 import { isArray } from 'core/lib/data'
 
 export default function Breadcrumbs( props ) {
-  var { data, style } = props;
+  const appState = useSelector(( state ) => state.app )
+  const { style } = props;
+
+  var data = appState.breadcrumbs;
 
   if( data && data == "/" ){
     data = []

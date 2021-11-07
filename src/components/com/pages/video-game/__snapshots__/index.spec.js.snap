@@ -141,7 +141,7 @@ exports[`PAGE_VIDEO_GAME compare Page against snapshot 1`] = `
 .emotion-28 {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #fff;
+  background-color: transparent;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-decoration-style: dotted;

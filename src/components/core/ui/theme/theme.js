@@ -1,7 +1,10 @@
 import React from 'react';
 import { createTheme } from '@material-ui/core/styles';
 
-import { theme } from 'app/config/theme/main';
+import { getTheme } from 'app/config/theme';
+
+
+var theme = getTheme("light")
 
 var color;
 color = theme.palette.primary;

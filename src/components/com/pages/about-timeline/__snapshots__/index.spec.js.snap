@@ -16,8 +16,8 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
   width: 100%;
   height: inherit;
   border-radius: 0;
-  background: linear-gradient(60deg, #556cd6 0%, #000 150%);
-  color: rgba(0, 0, 0, 0.87);
+  background: linear-gradient(60deg, black 0%, #000 150%);
+  color: black;
 }
 
 @media (min-width:0px) {
@@ -156,7 +156,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
 .emotion-120 {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #fff;
+  background-color: transparent;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-decoration-style: dotted;

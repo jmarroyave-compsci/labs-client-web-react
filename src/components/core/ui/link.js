@@ -3,8 +3,6 @@ import { styled } from '@mui/material/styles';
 import { default as _Link } from 'next/link';
 import Button from '@mui/material/Button';
 
-import { ThemeContext }  from 'app/config/theme/main';
-
 const LinkBox = styled('div')({
     cursor: 'pointer',
     display: 'flex',
@@ -15,7 +13,7 @@ const LinkBox = styled('div')({
 const LinkText = styled('span')( ( { theme } ) => ({
     cursor: 'pointer',
     color: theme.palette.text.primary,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: 'transparent',
     textDecoration: 'underline',
     textDecorationStyle: 'dotted',
     textDecorationColor: theme.palette.text.primary,

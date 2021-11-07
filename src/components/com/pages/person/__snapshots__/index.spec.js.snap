@@ -140,7 +140,7 @@ exports[`PAGE_PERSON compare Page against snapshot 1`] = `
 .emotion-15 {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #fff;
+  background-color: transparent;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-decoration-style: dotted;

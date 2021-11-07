@@ -1,11 +1,5 @@
-
-class Navigation {
-  constructor(){
-    this.drawer = {
-      show: false,
-    };
-
-    this.options = [
+export default {
+  options: [
       {
         showInMenu: true, 
         showInDrawer: true, 
@@ -98,11 +92,5 @@ class Navigation {
         icon: 'info', 
         route: '/about', 
       },
-    ];
-  }
+    ]
 }
-
-
-
-const nav = new Navigation();
-export default nav;

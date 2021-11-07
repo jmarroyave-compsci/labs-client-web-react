@@ -24,7 +24,6 @@ export default function Layout( props ){
 
 	if( !state ) return <div/>;
 	
-
 	return (
 		<MultiLayout
 			config={config}			

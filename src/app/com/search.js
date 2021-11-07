@@ -1,12 +1,12 @@
 import * as React from 'react';
+import { useSelector, useDispatch } from 'react-redux'
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import Box from '@mui/material/Box';
 import CircularProgress from '@mui/material/CircularProgress';
-import theme from 'app/config/theme/main';
+import { search as searchFetch, fetchSuggestions as searchFetchSuggestions } from 'com/pages/search/automata'
 
 const MIN_QUERY = 3
-
 
 async function fetchSuggestions(qry, handler) {
   if(!qry || qry.length < MIN_QUERY) return [];
@@ -26,8 +26,21 @@ function onChange(qry, handler) {
 
 
 export default function SearchBox( props ) {
+  const appState = useSelector(( state ) => state.app )
+  const dispatch = useDispatch();
+
+  const onSearchQuery = (qry) => {
+    qry = qry.toLowerCase()
+    dispatch( searchFetch( { qry : qry } ) )
+  }
+
+  const onSearchSuggestions = async (qry) => {
+    qry = qry.toLowerCase()
+    var { loading, error, data } = await searchFetchSuggestions( { qry : qry } )
+    return data.suggestions;
+  }
+
   const [ loaded, setLoaded ] = React.useState(false);
-  const { onSearchQuery, onSearchSuggestions } = props;
   const [open, setOpen] = React.useState(false);
   const [options, setOptions] = React.useState([]);
   const [inputValue, setInputValue] = React.useState('');
@@ -39,12 +52,15 @@ export default function SearchBox( props ) {
     let active = true;
 
 
-    (async () => {
-      var dataSuggestions = await fetchSuggestions(inputValue, onSearchSuggestions);
 
-      if (active) {
-        setOptions([...dataSuggestions]);
-      }
+    (async () => {
+      await setTimeout( async() => {
+        var dataSuggestions = await fetchSuggestions(inputValue, onSearchSuggestions);
+
+        if (active) {
+          setOptions([...dataSuggestions]);
+        }
+      }, 1000 * 1)
     })();
 
     setLoaded(true);
@@ -52,7 +68,7 @@ export default function SearchBox( props ) {
     return () => {
       active = false;
     };
-  }, [loading, open, inputValue, onSearchSuggestions. loaded]);
+  }, [loading, open, inputValue, onSearchSuggestions.loaded]);
 
 
   return (

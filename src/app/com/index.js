@@ -1,67 +1,81 @@
-import React, { useContext } from 'react';
-import { useRouter } from 'next/router'
-import CoreApp from 'core/app/dashboard';
-import uris from 'shared/trends/uris';
+import React, { useEffect, useMemo } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { useTheme } from '@material-ui/core/styles';
+
+import { ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
+
+import { initializeApp } from 'app' 
+import config from 'app/config'
+
+import AppBar from '@material-ui/core/AppBar';
+import ErrorBoundry from 'core/ui/error-boundry';
+import Drawer from './drawer';
+import Toolbar from './toolbar';
+import Box from '@material-ui/core/Box';
+import Container from '@material-ui/core/Container';
+import Grid from '@material-ui/core/Grid';
+import Breadcrumbs from './breadcrumbs';
+import Typography from '@material-ui/core/Typography';
 import Footer from './footer'
-import Header from './header'
-import { gql, useQuery, useApolloClient } from "@apollo/client";
-import config from 'app/config';
-import nav from 'data/app/navigation-drawer';
-import { useSelector, useDispatch } from 'react-redux'
-import { fetchData } from 'com/pages/search/automata'
-import { getEntitiesArrayState } from 'com/entities'
+import Head from 'next/head';
 
-export const QRY_SUGGESTIONS = gql`
-query getSuggestions($qry:String) {
-  searchSuggestions(qry: $qry){
-    suggestions
-  }
-}
-`;
+import ReactGA from 'react-ga';
 
-const App = ( props ) =>{
-  const APP = useSelector(( state ) => state.app )
+import { getTheme } from 'app/config/theme'
+
+function App( props ) {
   const dispatch = useDispatch();
+  const appState = useSelector(( state ) => state['app'] )
 
-  const apolloClient = useApolloClient()
-  const router = useRouter();
+  const theme = useMemo( () => {
+    return getTheme( appState.theme.mode )
+  }, [appState.theme.mode])
 
-  const isServerOnline = async (qry) => {
-    const serverResponse = await apolloClient.query({query: QRY_SERVER, fetchPolicy: "cache-first", variables: { qry: qry } } );
-    console.log("serverResponse", serverResponse.error);
-    return true;
-  }
+  useEffect( ()=>{
+    ReactGA.initialize(config.PLUGINS.GOOGLE.ANALYTICS);
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
-  const onSearchQuery = (qry) => {
-    qry = qry.toLowerCase()
-    dispatch( fetchData( { qry : qry, page: 1, entities: getEntitiesArrayState(true) } ) )
-  }
+    dispatch( initializeApp( { dispatch : dispatch } ) ) 
+  }, [])
 
-  const onSearchSuggestions = async (qry) => {
-    qry = qry.toLowerCase()
-    var { loading, error, data } = await apolloClient.query({query: QRY_SUGGESTIONS, fetchPolicy: "cache-first", variables: { qry: qry } } );
-    return data.searchSuggestions.suggestions;
-  }
+  return (
+    <>
+      <Head>
+        <title>{appState.pageTitle}</title>
+        <meta name="theme-color" content={theme.palette.primary.main} />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+      </Head>
+      <ThemeProvider theme={ theme }>
+        <CssBaseline />
 
-  var { params, children } = props;    
+        <Box sx={{ display: 'flex' }} style={{padding: 0, margin: 0}}>
+          <Toolbar/>
+          <Drawer/>
+          <Box
+            sx={{
+              flexGrow: 1,
+              overflow: 'auto',
+            }}
+            style={{padding: 0, margin: 0}}
+          >
+            <div style={{paddingTop: "5.8rem"}}></div>
 
-  return(
-      <CoreApp        
-        notifications={false} 
-        title={APP.title}
-        pageTitle={config.APP.PAGE_TITLE} 
-        footer={<Footer params={params.footer}/>}
-        onSearchQuery={onSearchQuery}
-        onSearchSuggestions={onSearchSuggestions}
-        search={true}
-        nav={nav}
-        {...props}
-        breadcrumbs={(props.breadcrumbs) ? props.breadcrumbs : APP.breadcrumbs}
-        >
-          {children}
-      </CoreApp>
-  )
+            <Breadcrumbs style={{padding: 0, marginBottom: "0.5rem", marginLeft: "1rem"}}/>
+            <div style={{padding: 0, margin: 0}}>
+              <ErrorBoundry from="/core/ui/app/children">
+                {props.children}
+              </ErrorBoundry>
+            </div>
+          </Box>
+        </Box>
+        <Box component="footer" style={{margin: 0, padding: 0}} >
+          <Footer/>
+        </Box>
 
+      </ThemeProvider>
+    </>
+  );
 }
 
 export default App;

@@ -27,6 +27,15 @@ const initialState = {
   }
 }
 
+export const search = createAsyncThunk(`${MODEL_NAME}/search`,
+  async ( params, thunkAPI ) => {
+    params.qry = decodeURIComponent(params.qry)
+    params.page = 1;
+    params.entities = getEntitiesArrayState(true);
+    thunkAPI.dispatch(fetchData( params ))
+  }
+)
+
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     params.qry = decodeURIComponent(params.qry)
@@ -42,12 +51,9 @@ export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   }
 )
 
-export const fetchSuggestions = createAsyncThunk(`${MODEL_NAME}/fetchSuggestions`,
-  async ( params, thunkAPI ) => {
-    thunkAPI.dispatch(setParams( params ))
-    return await data.fetchSuggestions( params.qry );
-  }
-)
+export const fetchSuggestions = async( params ) => {
+  return await data.fetchSuggestions( params.qry );
+}
 
 const slice = createSlice({
   name: MODEL_NAME,

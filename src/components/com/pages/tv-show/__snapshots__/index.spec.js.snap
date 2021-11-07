@@ -141,7 +141,7 @@ exports[`PAGE_TV_SHOW compare Page against snapshot 1`] = `
 .emotion-30 {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #fff;
+  background-color: transparent;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-decoration-style: dotted;

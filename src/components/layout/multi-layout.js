@@ -6,7 +6,7 @@ import Grid from 'com/ui/grid';
 import Stack from 'com/ui/stack';
 import Banner from 'com/ui/banner';
 import { useDispatch } from 'react-redux'
-import { setPage } from 'app/state' 
+import { setPage } from 'app' 
 import Error from 'core/ui/error'
 import DefaultSkeleton from 'com/default/skeleton'
 

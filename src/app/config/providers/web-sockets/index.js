@@ -1,21 +1,13 @@
 import React, { useEffect, useState  } from 'react';
 import config from './config';
 import io from 'socket.io-client';
+import { updateUsers } from 'app';
 
-export const useWebSockets = () => {
-  const [socket, setSocket] = useState(null);
-
-  useEffect(() => {
-    const newSocket = io(config.SERVER);
-    setSocket(newSocket);
-    //console.log(newSocket)
-    newSocket.on( 'message', ( msg ) => {
-      console.log(msg)
-    })
-
-    return () => newSocket.close();
-  }, [setSocket]);	
-
-
+export const initializeWebSockets = ( dispatch ) => {
+  const socket = io(config.SERVER);
+  socket.on( 'message', ( msg ) => {
+    var data = JSON.parse(msg);
+    dispatch( updateUsers( { users : data.users } ) )
+  })
   return [ socket ]
 }
