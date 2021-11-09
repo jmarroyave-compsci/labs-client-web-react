@@ -13,7 +13,7 @@ export default function Sources( props ){
   return (
     <Stack>
       <Title>Lines of Code</Title>
-      <Chart title={"test"} data={data.rows} ranges={[]} small={true} height={100}/>
+      <Chart title={"test"} data={data.rows} ranges={[]} small={true} height={300}/>
     </Stack>
   )
 }

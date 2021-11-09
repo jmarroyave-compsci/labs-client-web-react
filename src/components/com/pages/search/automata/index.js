@@ -60,7 +60,10 @@ const slice = createSlice({
   initialState,
   reducers: {
     setParams : (state, action) => {
-      state.params = action.payload
+            state.params = {
+        ...state.params,
+        ...action.payload
+      }
       state.results = { loading: true, data: []};      
       Router.push(`${config.page.url()}?q=${state.params.qry}&page=${state.params.page}`, null, { shallow: true })
     },      

@@ -20,7 +20,6 @@ function BarChart({ width, height, data }){
 
     const draw = () => {
         if(!data || data.length == 0) return;
-        console.log("voy", data);
         
         const svg = d3.select(ref.current);
         var selection = svg.selectAll("rect").data(data);

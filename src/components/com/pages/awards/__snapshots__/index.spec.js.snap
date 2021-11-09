@@ -1,6 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`STORIES_AWARDS compare Page against snapshot 1`] = `
+@keyframes animation-0 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,8 +44,8 @@ exports[`STORIES_AWARDS compare Page against snapshot 1`] = `
   width: 100%;
   height: inherit;
   border-radius: 0;
-  background: linear-gradient(60deg, black 0%, #000 150%);
-  color: black;
+  background: linear-gradient(60deg, #1976d2 0%, #000 150%);
+  color: #fff;
 }
 
 @media (min-width:0px) {
@@ -87,7 +115,7 @@ exports[`STORIES_AWARDS compare Page against snapshot 1`] = `
   width: 100%;
 }
 
-.emotion-9 {
+.emotion-10 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -97,501 +125,12 @@ exports[`STORIES_AWARDS compare Page against snapshot 1`] = `
   flex-direction: column;
 }
 
-.emotion-9>:not(style)+:not(style) {
+.emotion-10>:not(style)+:not(style) {
   margin: 0;
   margin-top: 16px;
 }
 
-.emotion-10 {
-  width: 300px;
-}
-
-.emotion-10.Mui-focused .MuiAutocomplete-clearIndicator {
-  visibility: visible;
-}
-
-@media (pointer: fine) {
-  .emotion-10:hover .MuiAutocomplete-clearIndicator {
-    visibility: visible;
-  }
-}
-
-.emotion-10 .MuiAutocomplete-tag {
-  margin: 3px;
-  max-width: calc(100% - 6px);
-}
-
-.emotion-10 .MuiAutocomplete-inputRoot {
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.MuiAutocomplete-hasPopupIcon.emotion-10 .MuiAutocomplete-inputRoot,
-.MuiAutocomplete-hasClearIcon.emotion-10 .MuiAutocomplete-inputRoot {
-  padding-right: 30px;
-}
-
-.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.emotion-10 .MuiAutocomplete-inputRoot {
-  padding-right: 56px;
-}
-
-.emotion-10 .MuiAutocomplete-inputRoot .MuiAutocomplete-input {
-  width: 0;
-  min-width: 30px;
-}
-
-.emotion-10 .MuiInput-root {
-  padding-bottom: 1px;
-}
-
-.emotion-10 .MuiInput-root .MuiInput-input {
-  padding: 4px 4px 4px 0px;
-}
-
-.emotion-10 .MuiInput-root.MuiInputBase-sizeSmall .MuiInput-input {
-  padding: 2px 4px 3px 0;
-}
-
-.emotion-10 .MuiOutlinedInput-root {
-  padding: 9px;
-}
-
-.MuiAutocomplete-hasPopupIcon.emotion-10 .MuiOutlinedInput-root,
-.MuiAutocomplete-hasClearIcon.emotion-10 .MuiOutlinedInput-root {
-  padding-right: 39px;
-}
-
-.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.emotion-10 .MuiOutlinedInput-root {
-  padding-right: 65px;
-}
-
-.emotion-10 .MuiOutlinedInput-root .MuiAutocomplete-input {
-  padding: 7.5px 4px 7.5px 6px;
-}
-
-.emotion-10 .MuiOutlinedInput-root .MuiAutocomplete-endAdornment {
-  right: 9px;
-}
-
-.emotion-10 .MuiOutlinedInput-root.MuiInputBase-sizeSmall {
-  padding: 6px;
-}
-
-.emotion-10 .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input {
-  padding: 2.5px 4px 2.5px 6px;
-}
-
-.emotion-10 .MuiFilledInput-root {
-  padding-top: 19px;
-  padding-left: 8px;
-}
-
-.MuiAutocomplete-hasPopupIcon.emotion-10 .MuiFilledInput-root,
-.MuiAutocomplete-hasClearIcon.emotion-10 .MuiFilledInput-root {
-  padding-right: 39px;
-}
-
-.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.emotion-10 .MuiFilledInput-root {
-  padding-right: 65px;
-}
-
-.emotion-10 .MuiFilledInput-root .MuiFilledInput-input {
-  padding: 7px 4px;
-}
-
-.emotion-10 .MuiFilledInput-root .MuiAutocomplete-endAdornment {
-  right: 9px;
-}
-
-.emotion-10 .MuiFilledInput-root.MuiInputBase-sizeSmall {
-  padding-bottom: 1px;
-}
-
-.emotion-10 .MuiFilledInput-root.MuiInputBase-sizeSmall .MuiFilledInput-input {
-  padding: 2.5px 4px;
-}
-
-.emotion-10 .MuiAutocomplete-input {
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  text-overflow: ellipsis;
-  opacity: 1;
-}
-
 .emotion-11 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  vertical-align: top;
-  width: 100%;
-}
-
-.emotion-12 {
-  color: rgba(0, 0, 0, 0.6);
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.4375em;
-  letter-spacing: 0.00938em;
-  padding: 0;
-  position: relative;
-  display: block;
-  transform-origin: top left;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: calc(133% - 24px);
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-transform: translate(14px, -9px) scale(0.75);
-  -moz-transform: translate(14px, -9px) scale(0.75);
-  -ms-transform: translate(14px, -9px) scale(0.75);
-  transform: translate(14px, -9px) scale(0.75);
-  -webkit-transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,-webkit-transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,max-width 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-  transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,max-width 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.emotion-12.Mui-focused {
-  color: #1976d2;
-}
-
-.emotion-12.Mui-disabled {
-  color: rgba(0, 0, 0, 0.38);
-}
-
-.emotion-12.Mui-error {
-  color: #d32f2f;
-}
-
-.emotion-13 {
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.4375em;
-  letter-spacing: 0.00938em;
-  color: rgba(0, 0, 0, 0.87);
-  box-sizing: border-box;
-  position: relative;
-  cursor: text;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  border-radius: 4px;
-  padding-right: 14px;
-}
-
-.emotion-13.Mui-disabled {
-  color: rgba(0, 0, 0, 0.38);
-  cursor: default;
-}
-
-.emotion-13:hover .MuiOutlinedInput-notchedOutline {
-  border-color: rgba(0, 0, 0, 0.87);
-}
-
-@media (hover: none) {
-  .emotion-13:hover .MuiOutlinedInput-notchedOutline {
-    border-color: rgba(0, 0, 0, 0.23);
-  }
-}
-
-.emotion-13.Mui-focused .MuiOutlinedInput-notchedOutline {
-  border-color: #1976d2;
-  border-width: 2px;
-}
-
-.emotion-13.Mui-error .MuiOutlinedInput-notchedOutline {
-  border-color: #d32f2f;
-}
-
-.emotion-13.Mui-disabled .MuiOutlinedInput-notchedOutline {
-  border-color: rgba(0, 0, 0, 0.26);
-}
-
-.emotion-14 {
-  font: inherit;
-  letter-spacing: inherit;
-  color: currentColor;
-  padding: 4px 0 5px;
-  border: 0;
-  box-sizing: content-box;
-  background: none;
-  height: 1.4375em;
-  margin: 0;
-  -webkit-tap-highlight-color: transparent;
-  display: block;
-  min-width: 0;
-  width: 100%;
-  -webkit-animation-name: mui-auto-fill-cancel;
-  animation-name: mui-auto-fill-cancel;
-  -webkit-animation-duration: 10ms;
-  animation-duration: 10ms;
-  padding: 16.5px 14px;
-  padding-right: 0;
-}
-
-.emotion-14::-webkit-input-placeholder {
-  color: currentColor;
-  opacity: 0.42;
-  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.emotion-14::-moz-placeholder {
-  color: currentColor;
-  opacity: 0.42;
-  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.emotion-14:-ms-input-placeholder {
-  color: currentColor;
-  opacity: 0.42;
-  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.emotion-14::-ms-input-placeholder {
-  color: currentColor;
-  opacity: 0.42;
-  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.emotion-14:focus {
-  outline: 0;
-}
-
-.emotion-14:invalid {
-  box-shadow: none;
-}
-
-.emotion-14::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-14::-webkit-input-placeholder {
-  opacity: 0!important;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-14::-moz-placeholder {
-  opacity: 0!important;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:-ms-input-placeholder {
-  opacity: 0!important;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-14::-ms-input-placeholder {
-  opacity: 0!important;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-webkit-input-placeholder {
-  opacity: 0.42;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-moz-placeholder {
-  opacity: 0.42;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus:-ms-input-placeholder {
-  opacity: 0.42;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-placeholder {
-  opacity: 0.42;
-}
-
-.emotion-14.Mui-disabled {
-  opacity: 1;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0.38);
-}
-
-.emotion-14:-webkit-autofill {
-  -webkit-animation-duration: 5000s;
-  animation-duration: 5000s;
-  -webkit-animation-name: mui-auto-fill;
-  animation-name: mui-auto-fill;
-}
-
-.emotion-14:-webkit-autofill {
-  border-radius: inherit;
-}
-
-.emotion-15 {
-  position: absolute;
-  right: 0;
-  top: calc(50% - 14px);
-}
-
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  text-align: center;
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
-  flex: 0 0 auto;
-  font-size: 1.5rem;
-  padding: 8px;
-  border-radius: 50%;
-  overflow: visible;
-  color: rgba(0, 0, 0, 0.54);
-  -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  padding: 2px;
-  margin-right: -2px;
-}
-
-.emotion-16::-moz-focus-inner {
-  border-style: none;
-}
-
-.emotion-16.Mui-disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-@media print {
-  .emotion-16 {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
-.emotion-16:hover {
-  background-color: rgba(0, 0, 0, 0.04);
-}
-
-@media (hover: none) {
-  .emotion-16:hover {
-    background-color: transparent;
-  }
-}
-
-.emotion-16.Mui-disabled {
-  background-color: transparent;
-  color: rgba(0, 0, 0, 0.26);
-}
-
-.emotion-17 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  fill: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  font-size: 1.5rem;
-}
-
-.emotion-18 {
-  overflow: hidden;
-  pointer-events: none;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: inherit;
-}
-
-.emotion-19 {
-  text-align: left;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  top: -5px;
-  left: 0;
-  margin: 0;
-  padding: 0 8px;
-  pointer-events: none;
-  border-radius: inherit;
-  border-style: solid;
-  border-width: 1px;
-  overflow: hidden;
-  min-width: 0%;
-  border-color: rgba(0, 0, 0, 0.23);
-}
-
-.emotion-20 {
-  display: block;
-  width: auto;
-  padding: 0;
-  height: 11px;
-  font-size: 0.75em;
-  visibility: hidden;
-  max-width: 100%;
-  -webkit-transition: max-width 100ms cubic-bezier(0.0, 0, 0.2, 1) 50ms;
-  transition: max-width 100ms cubic-bezier(0.0, 0, 0.2, 1) 50ms;
-}
-
-.emotion-20>span {
-  padding-left: 5px;
-  padding-right: 5px;
-  display: inline-block;
-}
-
-.emotion-24 {
   margin: 0;
   padding: 0 1rem 1rem 0;
   display: -webkit-box;
@@ -606,7 +145,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
   width: 100%;
 }
 
-.emotion-25 {
+.emotion-12 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -625,7 +164,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
   width: 100%;
 }
 
-.emotion-26 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -637,129 +176,50 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
   width: 100%;
 }
 
-.emotion-27 {
-  cursor: pointer;
+.emotion-14 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.emotion-28 {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.87);
-  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
-  overflow: hidden;
-}
-
-.emotion-29 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 16px;
-  width: 100%;
-}
-
-.emotion-30 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.emotion-31 {
+.emotion-14>:not(style)+:not(style) {
   margin: 0;
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.334;
-  letter-spacing: 0em;
+  margin-top: 8px;
+}
+
+.emotion-15 {
   display: block;
+  background-color: rgba(0, 0, 0, 0.11);
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  transform-origin: 0 55%;
+  -webkit-transform: scale(1, 0.60);
+  -moz-transform: scale(1, 0.60);
+  -ms-transform: scale(1, 0.60);
+  transform: scale(1, 0.60);
+  border-radius: 4px/6.7px;
+  -webkit-animation: animation-0 1.5s ease-in-out 0.5s infinite;
+  animation: animation-0 1.5s ease-in-out 0.5s infinite;
 }
 
-.emotion-32 {
-  margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.emotion-15:empty:before {
+  content: "\\00a0";
 }
 
-.emotion-33 {
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.87);
-  background-color: transparent;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: rgba(0, 0, 0, 0.87);
-  text-decoration-thickness: 1px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-.emotion-34 {
-  margin: 0;
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-  letter-spacing: 0.00938em;
-  color: rgba(0, 0, 0, 0.6);
+.emotion-16 {
   display: block;
+  background-color: rgba(0, 0, 0, 0.11);
+  height: 1.2em;
+  -webkit-animation: animation-0 1.5s ease-in-out 0.5s infinite;
+  animation: animation-0 1.5s ease-in-out 0.5s infinite;
 }
 
-.emotion-35 {
-  display: block;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-background-position: center;
-  background-position: center;
-  width: 100%;
-  object-fit: cover;
-}
-
-.emotion-36 {
-  padding: 16px;
-}
-
-.emotion-36:last-child {
-  padding-bottom: 24px;
-}
-
-.emotion-37 {
-  padding: 0;
-  margin: 0 0 0.5rem 0;
-}
-
-.emotion-38 {
-  font-size: 0.7rem;
-  line-height: 0.75rem;
-  margin: 0;
-}
-
-.emotion-39 {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  margin: 0;
-}
-
-.emotion-198 {
+.emotion-81 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -773,12 +233,12 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
   justify-content: center;
 }
 
-.emotion-198>:not(style)+:not(style) {
+.emotion-81>:not(style)+:not(style) {
   margin: 0;
   margin-left: 16px;
 }
 
-.emotion-199 {
+.emotion-82 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -826,23 +286,23 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
   color: #1976d2;
 }
 
-.emotion-199::-moz-focus-inner {
+.emotion-82::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-199.Mui-disabled {
+.emotion-82.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-199 {
+  .emotion-82 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-199:hover {
+.emotion-82:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: rgba(25, 118, 210, 0.04);
@@ -850,17 +310,29 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
 }
 
 @media (hover: none) {
-  .emotion-199:hover {
+  .emotion-82:hover {
     background-color: transparent;
   }
 }
 
-.emotion-199.Mui-disabled {
+.emotion-82.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.emotion-202 {
+.emotion-84 {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+.emotion-85 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -869,17 +341,33 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-203 {
+.emotion-86 {
   padding: 0.85rem;
 }
 
-.emotion-204 {
+.emotion-87 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
-.emotion-205 {
+.emotion-88 {
   font-size: 0.9rem;
+}
+
+.emotion-89 {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: transparent;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: rgba(0, 0, 0, 0.87);
+  text-decoration-thickness: 1px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
 }
 
 <div>
@@ -927,89 +415,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                 class="emotion-8"
               >
                 <div
-                  class="emotion-9"
-                >
-                  <div
-                    aria-expanded="false"
-                    class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon emotion-10"
-                    role="combobox"
-                  >
-                    <div
-                      class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root emotion-11"
-                    >
-                      <label
-                        class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary MuiFormLabel-filled emotion-12"
-                        data-shrink="true"
-                        for="year"
-                        id="year-label"
-                      >
-                        Year
-                      </label>
-                      <div
-                        class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot emotion-13"
-                      >
-                        <input
-                          aria-autocomplete="list"
-                          aria-invalid="false"
-                          autocapitalize="none"
-                          autocomplete="off"
-                          class="MuiOutlinedInput-input MuiInputBase-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused MuiAutocomplete-input MuiAutocomplete-inputFocused emotion-14"
-                          id="year"
-                          spellcheck="false"
-                          type="text"
-                          value="1992"
-                        />
-                        <div
-                          class="MuiAutocomplete-endAdornment emotion-15"
-                        >
-                          <button
-                            aria-label="Open"
-                            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium MuiAutocomplete-popupIndicator emotion-16"
-                            tabindex="-1"
-                            title="Open"
-                            type="button"
-                          >
-                            <svg
-                              aria-hidden="true"
-                              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-17"
-                              data-testid="ArrowDropDownIcon"
-                              focusable="false"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                d="M7 10l5 5 5-5z"
-                              />
-                            </svg>
-                            <span
-                              class="MuiTouchRipple-root emotion-18"
-                            />
-                          </button>
-                        </div>
-                        <fieldset
-                          aria-hidden="true"
-                          class="MuiOutlinedInput-notchedOutline emotion-19"
-                        >
-                          <legend
-                            class="emotion-20"
-                          >
-                            <span>
-                              Year
-                            </span>
-                          </legend>
-                        </fieldset>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="emotion-8"
-              >
-                <div
                   class="emotion-8"
                 >
                   <div
-                    class="emotion-9"
+                    class="emotion-10"
                   >
                     <div
                       class="MuiGrid-root MuiGrid-container"
@@ -1019,108 +428,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-11"
                         >
                           <div
-                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-25"
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-12"
                           >
                             <div
-                              class="emotion-26"
+                              class="emotion-13"
                             >
                               <div
-                                class="emotion-27"
+                                class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                style="flex-grow: 1; padding: 0.5rem;"
                               >
                                 <div
-                                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-28"
-                                  style="flex-grow: 1; width: 100%;"
+                                  class="emotion-14"
                                 >
-                                  <div
-                                    class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-29"
-                                  >
-                                    <div
-                                      class="makeStyles-headerContent-1 MuiCardHeader-content emotion-30"
-                                    >
-                                      <span
-                                        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-31"
-                                      >
-                                        <div
-                                          class=""
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          <span
-                                            class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-32"
-                                            style="display: inline-block; width: 100%;"
-                                          >
-                                            <span
-                                              class="emotion-33"
-                                            >
-                                              Academy Awards
-                                            </span>
-                                          </span>
-                                        </div>
-                                      </span>
-                                      <span
-                                        class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-34"
-                                      >
-                                        1992
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <img
-                                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-35"
-                                    height="180"
-                                    src="/labs-client-web-react/app/img/ph.jpg"
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                    style="width: 80%;"
                                   />
-                                  <div
-                                    class="MuiCardContent-root emotion-36"
-                                  >
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        ACTOR IN A LEADING ROLE
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        Al Pacino
-                                      </div>
-                                    </div>
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        ACTOR IN A SUPPORTING ROLE
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        Al Pacino
-                                      </div>
-                                    </div>
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        ACTRESS IN A LEADING ROLE
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        <span
-                                          class="emotion-33"
-                                        >
-                                          Catherine Deneuve
-                                        </span>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-16"
+                                    style="height: 240px;"
+                                  />
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -1131,80 +464,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-11"
                         >
                           <div
-                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-25"
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-12"
                           >
                             <div
-                              class="emotion-26"
+                              class="emotion-13"
                             >
                               <div
-                                class="emotion-27"
+                                class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                style="flex-grow: 1; padding: 0.5rem;"
                               >
                                 <div
-                                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-28"
-                                  style="flex-grow: 1; width: 100%;"
+                                  class="emotion-14"
                                 >
-                                  <div
-                                    class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-29"
-                                  >
-                                    <div
-                                      class="makeStyles-headerContent-1 MuiCardHeader-content emotion-30"
-                                    >
-                                      <span
-                                        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-31"
-                                      >
-                                        <div
-                                          class=""
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          <span
-                                            class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-32"
-                                            style="display: inline-block; width: 100%;"
-                                          >
-                                            <span
-                                              class="emotion-33"
-                                            >
-                                              Changchun Film Festival
-                                            </span>
-                                          </span>
-                                        </div>
-                                      </span>
-                                      <span
-                                        class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-34"
-                                      >
-                                        1992
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <img
-                                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-35"
-                                    height="180"
-                                    src="/labs-client-web-react/app/img/ph.jpg"
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                    style="width: 80%;"
                                   />
-                                  <div
-                                    class="MuiCardContent-root emotion-36"
-                                  >
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        GOLDEN DEER AWARD (BEST FILM)
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        <span
-                                          class="emotion-33"
-                                        >
-                                          The Story of Qiu Ju
-                                        </span>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-16"
+                                    style="height: 240px;"
+                                  />
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -1215,94 +500,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-11"
                         >
                           <div
-                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-25"
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-12"
                           >
                             <div
-                              class="emotion-26"
+                              class="emotion-13"
                             >
                               <div
-                                class="emotion-27"
+                                class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                style="flex-grow: 1; padding: 0.5rem;"
                               >
                                 <div
-                                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-28"
-                                  style="flex-grow: 1; width: 100%;"
+                                  class="emotion-14"
                                 >
-                                  <div
-                                    class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-29"
-                                  >
-                                    <div
-                                      class="makeStyles-headerContent-1 MuiCardHeader-content emotion-30"
-                                    >
-                                      <span
-                                        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-31"
-                                      >
-                                        <div
-                                          class=""
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          <span
-                                            class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-32"
-                                            style="display: inline-block; width: 100%;"
-                                          >
-                                            <span
-                                              class="emotion-33"
-                                            >
-                                              Flanders International Film Festival Ghent
-                                            </span>
-                                          </span>
-                                        </div>
-                                      </span>
-                                      <span
-                                        class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-34"
-                                      >
-                                        1992
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <img
-                                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-35"
-                                    height="180"
-                                    src="/labs-client-web-react/app/img/ph.jpg"
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                    style="width: 80%;"
                                   />
-                                  <div
-                                    class="MuiCardContent-root emotion-36"
-                                  >
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        GEORGES DELERUE AWARD FOR BEST SOUNDTRACK/SOUND DESIGN
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        Bob Roberts (David Robbins)
-                                      </div>
-                                    </div>
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        GRAND PRIX FOR BEST FILM
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        <span
-                                          class="emotion-33"
-                                        >
-                                          A Woman's Tale
-                                        </span>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-16"
+                                    style="height: 240px;"
+                                  />
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -1313,76 +536,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-11"
                         >
                           <div
-                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-25"
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-12"
                           >
                             <div
-                              class="emotion-26"
+                              class="emotion-13"
                             >
                               <div
-                                class="emotion-27"
+                                class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                style="flex-grow: 1; padding: 0.5rem;"
                               >
                                 <div
-                                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-28"
-                                  style="flex-grow: 1; width: 100%;"
+                                  class="emotion-14"
                                 >
-                                  <div
-                                    class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-29"
-                                  >
-                                    <div
-                                      class="makeStyles-headerContent-1 MuiCardHeader-content emotion-30"
-                                    >
-                                      <span
-                                        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-31"
-                                      >
-                                        <div
-                                          class=""
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          <span
-                                            class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-32"
-                                            style="display: inline-block; width: 100%;"
-                                          >
-                                            <span
-                                              class="emotion-33"
-                                            >
-                                              Göteborg International Film Festival
-                                            </span>
-                                          </span>
-                                        </div>
-                                      </span>
-                                      <span
-                                        class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-34"
-                                      >
-                                        1992
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <img
-                                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-35"
-                                    height="180"
-                                    src="/labs-client-web-react/app/img/ph.jpg"
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                    style="width: 80%;"
                                   />
-                                  <div
-                                    class="MuiCardContent-root emotion-36"
-                                  >
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        DRAGON AWARD FOR BEST NORDIC FILM
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        Freud flyttar hemifrån
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-16"
+                                    style="height: 240px;"
+                                  />
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -1393,80 +572,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-11"
                         >
                           <div
-                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-25"
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-12"
                           >
                             <div
-                              class="emotion-26"
+                              class="emotion-13"
                             >
                               <div
-                                class="emotion-27"
+                                class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                style="flex-grow: 1; padding: 0.5rem;"
                               >
                                 <div
-                                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-28"
-                                  style="flex-grow: 1; width: 100%;"
+                                  class="emotion-14"
                                 >
-                                  <div
-                                    class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-29"
-                                  >
-                                    <div
-                                      class="makeStyles-headerContent-1 MuiCardHeader-content emotion-30"
-                                    >
-                                      <span
-                                        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-31"
-                                      >
-                                        <div
-                                          class=""
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          <span
-                                            class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-32"
-                                            style="display: inline-block; width: 100%;"
-                                          >
-                                            <span
-                                              class="emotion-33"
-                                            >
-                                              Paris Lesbian and Feminist Film Festival
-                                            </span>
-                                          </span>
-                                        </div>
-                                      </span>
-                                      <span
-                                        class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-34"
-                                      >
-                                        1992
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <img
-                                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-35"
-                                    height="180"
-                                    src="/labs-client-web-react/app/img/ph.jpg"
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                    style="width: 80%;"
                                   />
-                                  <div
-                                    class="MuiCardContent-root emotion-36"
-                                  >
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        BEST FEATURE FILM AWARDS
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        <span
-                                          class="emotion-33"
-                                        >
-                                          Anne Trister
-                                        </span>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-16"
+                                    style="height: 240px;"
+                                  />
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -1477,76 +608,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-11"
                         >
                           <div
-                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-25"
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-12"
                           >
                             <div
-                              class="emotion-26"
+                              class="emotion-13"
                             >
                               <div
-                                class="emotion-27"
+                                class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                style="flex-grow: 1; padding: 0.5rem;"
                               >
                                 <div
-                                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-28"
-                                  style="flex-grow: 1; width: 100%;"
+                                  class="emotion-14"
                                 >
-                                  <div
-                                    class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-29"
-                                  >
-                                    <div
-                                      class="makeStyles-headerContent-1 MuiCardHeader-content emotion-30"
-                                    >
-                                      <span
-                                        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-31"
-                                      >
-                                        <div
-                                          class=""
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          <span
-                                            class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-32"
-                                            style="display: inline-block; width: 100%;"
-                                          >
-                                            <span
-                                              class="emotion-33"
-                                            >
-                                              Stockholm International Film Festival
-                                            </span>
-                                          </span>
-                                        </div>
-                                      </span>
-                                      <span
-                                        class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-34"
-                                      >
-                                        1992
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <img
-                                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-35"
-                                    height="180"
-                                    src="/labs-client-web-react/app/img/ph.jpg"
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                    style="width: 80%;"
                                   />
-                                  <div
-                                    class="MuiCardContent-root emotion-36"
-                                  >
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        BRONZE HORSE: BEST FILM
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        Reservoir Dogs
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-16"
+                                    style="height: 240px;"
+                                  />
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -1557,76 +644,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-11"
                         >
                           <div
-                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-25"
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-12"
                           >
                             <div
-                              class="emotion-26"
+                              class="emotion-13"
                             >
                               <div
-                                class="emotion-27"
+                                class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                style="flex-grow: 1; padding: 0.5rem;"
                               >
                                 <div
-                                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-28"
-                                  style="flex-grow: 1; width: 100%;"
+                                  class="emotion-14"
                                 >
-                                  <div
-                                    class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-29"
-                                  >
-                                    <div
-                                      class="makeStyles-headerContent-1 MuiCardHeader-content emotion-30"
-                                    >
-                                      <span
-                                        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-31"
-                                      >
-                                        <div
-                                          class=""
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          <span
-                                            class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-32"
-                                            style="display: inline-block; width: 100%;"
-                                          >
-                                            <span
-                                              class="emotion-33"
-                                            >
-                                              Montreal World Film Festival
-                                            </span>
-                                          </span>
-                                        </div>
-                                      </span>
-                                      <span
-                                        class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-34"
-                                      >
-                                        1992
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <img
-                                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-35"
-                                    height="180"
-                                    src="/labs-client-web-react/app/img/ph.jpg"
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                    style="width: 80%;"
                                   />
-                                  <div
-                                    class="MuiCardContent-root emotion-36"
-                                  >
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        GOLDEN ZENITH WINNERS FOR THE BEST FEATURE FILM IN COMPETITION FIRST FILMS WORLD COMPETITION
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        Kleine Haie
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-16"
+                                    style="height: 240px;"
+                                  />
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -1637,76 +680,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-11"
                         >
                           <div
-                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-25"
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-12"
                           >
                             <div
-                              class="emotion-26"
+                              class="emotion-13"
                             >
                               <div
-                                class="emotion-27"
+                                class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                style="flex-grow: 1; padding: 0.5rem;"
                               >
                                 <div
-                                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-28"
-                                  style="flex-grow: 1; width: 100%;"
+                                  class="emotion-14"
                                 >
-                                  <div
-                                    class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-29"
-                                  >
-                                    <div
-                                      class="makeStyles-headerContent-1 MuiCardHeader-content emotion-30"
-                                    >
-                                      <span
-                                        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-31"
-                                      >
-                                        <div
-                                          class=""
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          <span
-                                            class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-32"
-                                            style="display: inline-block; width: 100%;"
-                                          >
-                                            <span
-                                              class="emotion-33"
-                                            >
-                                              Seattle International Film Festival
-                                            </span>
-                                          </span>
-                                        </div>
-                                      </span>
-                                      <span
-                                        class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-34"
-                                      >
-                                        1992
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <img
-                                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-35"
-                                    height="180"
-                                    src="/labs-client-web-react/app/img/ph.jpg"
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                    style="width: 80%;"
                                   />
-                                  <div
-                                    class="MuiCardContent-root emotion-36"
-                                  >
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        GOLDEN SPACE NEEDLE (BEST FILM) AND SIFF AWARDS FOR BEST SHORT AND DOCUMENTARY
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        IP 5 - L'île aux pachydermes (dir. Jean-Jacques Beineix, France)
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-16"
+                                    style="height: 240px;"
+                                  />
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -1717,80 +716,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-11"
                         >
                           <div
-                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-25"
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-12"
                           >
                             <div
-                              class="emotion-26"
+                              class="emotion-13"
                             >
                               <div
-                                class="emotion-27"
+                                class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                style="flex-grow: 1; padding: 0.5rem;"
                               >
                                 <div
-                                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-28"
-                                  style="flex-grow: 1; width: 100%;"
+                                  class="emotion-14"
                                 >
-                                  <div
-                                    class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-29"
-                                  >
-                                    <div
-                                      class="makeStyles-headerContent-1 MuiCardHeader-content emotion-30"
-                                    >
-                                      <span
-                                        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-31"
-                                      >
-                                        <div
-                                          class=""
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          <span
-                                            class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-32"
-                                            style="display: inline-block; width: 100%;"
-                                          >
-                                            <span
-                                              class="emotion-33"
-                                            >
-                                              Melbourne International Film Festival
-                                            </span>
-                                          </span>
-                                        </div>
-                                      </span>
-                                      <span
-                                        class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-34"
-                                      >
-                                        1992
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <img
-                                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-35"
-                                    height="180"
-                                    src="/labs-client-web-react/app/img/ph.jpg"
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                    style="width: 80%;"
                                   />
-                                  <div
-                                    class="MuiCardContent-root emotion-36"
-                                  >
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        WINNERS OF GRAND PRIX FOR BEST SHORT FILM
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        <span
-                                          class="emotion-33"
-                                        >
-                                          The Writing in the Sand
-                                        </span>
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-16"
+                                    style="height: 240px;"
+                                  />
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -1801,76 +752,32 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
                       >
                         <div
-                          class="emotion-24"
+                          class="emotion-11"
                         >
                           <div
-                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-25"
+                            class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-12"
                           >
                             <div
-                              class="emotion-26"
+                              class="emotion-13"
                             >
                               <div
-                                class="emotion-27"
+                                class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                                style="flex-grow: 1; padding: 0.5rem;"
                               >
                                 <div
-                                  class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-28"
-                                  style="flex-grow: 1; width: 100%;"
+                                  class="emotion-14"
                                 >
-                                  <div
-                                    class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-29"
-                                  >
-                                    <div
-                                      class="makeStyles-headerContent-1 MuiCardHeader-content emotion-30"
-                                    >
-                                      <span
-                                        class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-31"
-                                      >
-                                        <div
-                                          class=""
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          <span
-                                            class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-32"
-                                            style="display: inline-block; width: 100%;"
-                                          >
-                                            <span
-                                              class="emotion-33"
-                                            >
-                                              Cartagena Film Festival
-                                            </span>
-                                          </span>
-                                        </div>
-                                      </span>
-                                      <span
-                                        class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-34"
-                                      >
-                                        1992
-                                      </span>
-                                    </div>
-                                  </div>
-                                  <img
-                                    class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-35"
-                                    height="180"
-                                    src="/labs-client-web-react/app/img/ph.jpg"
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                    style="width: 80%;"
                                   />
-                                  <div
-                                    class="MuiCardContent-root emotion-36"
-                                  >
-                                    <div
-                                      class="emotion-37"
-                                    >
-                                      <span
-                                        class="emotion-38"
-                                      >
-                                        BEST FILM WINNERS
-                                      </span>
-                                      <div
-                                        class="emotion-39"
-                                      >
-                                        Tacones lejanos
-                                      </div>
-                                    </div>
-                                  </div>
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-16"
+                                    style="height: 240px;"
+                                  />
+                                  <span
+                                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-15"
+                                  />
                                 </div>
                               </div>
                             </div>
@@ -1879,10 +786,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                       </div>
                     </div>
                     <div
-                      class="emotion-198"
+                      class="emotion-81"
                     >
                       <button
-                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-199"
+                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-82"
                         disabled=""
                         tabindex="-1"
                         type="button"
@@ -1890,13 +797,13 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
                         Back
                       </button>
                       <button
-                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-199"
+                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-82"
                         tabindex="0"
                         type="button"
                       >
                         Next
                         <span
-                          class="MuiTouchRipple-root emotion-18"
+                          class="MuiTouchRipple-root emotion-84"
                         />
                       </button>
                     </div>
@@ -1913,57 +820,57 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-14:focus::-ms-input-
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-202"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-85"
             >
               <div
-                class="emotion-203"
+                class="emotion-86"
               >
                 <div
-                  class="emotion-204"
+                  class="emotion-87"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-205"
+                  class="emotion-88"
                 >
                   <span
-                    class="emotion-33"
+                    class="emotion-89"
                   >
                     Movie Awards
                   </span>
                 </div>
                 <div
-                  class="emotion-205"
+                  class="emotion-88"
                 >
                   <span
-                    class="emotion-33"
+                    class="emotion-89"
                   >
                     Movies
                   </span>
                 </div>
                 <div
-                  class="emotion-205"
+                  class="emotion-88"
                 >
                   <span
-                    class="emotion-33"
+                    class="emotion-89"
                   >
                     People
                   </span>
                 </div>
                 <div
-                  class="emotion-205"
+                  class="emotion-88"
                 >
                   <span
-                    class="emotion-33"
+                    class="emotion-89"
                   >
                     Podcasts
                   </span>
                 </div>
                 <div
-                  class="emotion-205"
+                  class="emotion-88"
                 >
                   <span
-                    class="emotion-33"
+                    class="emotion-89"
                   >
                     Music Podcasts
                   </span>

@@ -43,6 +43,9 @@ export default ChilcComponent => (
 
     fitParentContainer() {
       const { containerWidth, containerHeight } = this.state;
+
+      if(!this.componentContainer) return
+
       const rect = this.componentContainer.getBoundingClientRect();
       const currentContainerWidth = rect.width
       const currentContainerHeight = rect.height

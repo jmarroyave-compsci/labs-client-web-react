@@ -3,6 +3,6 @@ export default {
 		name: "page_video_game"
 	},
 	page: {
-		url: ( id ) => `/video-games/${id}`,
+		url: ( {id} ) => `/video-games/${id}`,
 	},
 }

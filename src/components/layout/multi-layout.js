@@ -1,99 +1,126 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import { useDispatch, useSelector } from 'react-redux'
 import PropTypes from 'prop-types';
-import CoreProxy from 'core/ui/layout/proxy';
+
+import { setPage } from 'app' 
+
+import Error from 'core/ui/error'
 import Cols2Layout from "layout/cols-2-layout";
 import Grid from 'com/ui/grid';
 import Stack from 'com/ui/stack';
 import Banner from 'com/ui/banner';
-import { useDispatch } from 'react-redux'
-import { setPage } from 'app' 
-import Error from 'core/ui/error'
-import DefaultSkeleton from 'com/default/skeleton'
 
-export default function MultiLayout( props ){
+export default function Layout( props ){
   const dispatch = useDispatch();
-  const { config, error, data, item, type, noData } = props
-  const showDataInBanner = config?.banner?.showData ?? false; 
-  const title = (props.title) ? props.title : config?.page?.title ?? "NO TITLE";
-  const description = (props.description) ? props.description : config?.page?.description ?? "NO DESCRIPTION";
-  const url = ( props.url ) ? props.url : config.page.url;
-  var mainCol = (props.mainCol) ? props.mainCol : null;
-  mainCol = (props.dashboard) ? props.dashboard : mainCol;
-  mainCol = (props.detail) ? props.detail : mainCol;
+  const router = useRouter();
+  const { config } = props;
+  const [ isRouterReady, setIsRouterReady ] = useState(false);
 
-  const loading = ( type != "banner" && !noData  && ( props.loading || !props.data || props.data === null || props.data.length == 0 ) ) ? true : false;
+  var state = useSelector(( state ) => state[config.automata.name] ) 
+  const render = props.params.render ?? null;
+  const params = { ...props.params, renderer: props.params.renderer ?? render }
+
+  state = ( props.data ) ? { data: props.data, params: {page: props.params.page} } : state;
+
 
   useEffect( () => {
-    if( props.breadcrumbs )
-      dispatch(setPage({
-        breadcrumbs: props.breadcrumbs,
-      }));    
-  }, [props.breadcrumbs])
+    if(!router) return;
+    setIsRouterReady(router.isReady)
+  }, [router])
 
-  const BANNER = (
-    <Banner 
-      showData={showDataInBanner}
-      loading={ loading }
-      title={title}
-      description={description}
-      data={data}
-      item={item}
-      actions={[
-        {url: url, title: "See all"}
-      ]}
-      hero={ (type !== "banner") }                    
+  useEffect( () => {
+    if( params.breadcrumbs ){
+      dispatch(setPage({
+        breadcrumbs: (typeof params.breadcrumbs === 'function') ? params.breadcrumbs(state) : params.breadcrumbs,
+      }));          
+    }
+  }, [params.breadcrumbs, state])
+
+  const fetch = ( params ) => {
+    //console.log("fetching", config.page.title, params)
+    if(!props.fetch) return;
+
+    if(props.data){
+      props.fetch( {...params} )
+    }
+    else{
+      dispatch( props.fetch( {...params} ) )
+    }
+  }
+
+  useEffect( () => {
+    if(!isRouterReady) return;
+    if( render === "banner" && !config.banner.showData ) return
+
+    //console.log(params, state)
+
+    fetch( params )
+    
+  }, [ isRouterReady ])
+
+
+  if(!render || render == "grid"){
+    return <Error from={config.page.title} data="render property wasn't set"/>
+  }
+
+  return (
+    <MultiLayout 
+      config={props.config}
+      render={render}
+      state={state}
+      loading={( !isRouterReady || !state || state.loading || (props.fetch && !state.data) )}
+      fetch={fetch}
+      item={props.item}
+      customDescription={props.customDescription}
+      customTitle={props.customTitle}
+      mainCol={ props.mainCol || props.dashboard || props.detail }
+      skeleton={ props.skeleton }
+      params={params}
     />
   )
+}
 
-  if(!type || type == "grid"){
-    return <Error from={title} data="render property wasn't set"/>
-  }
+function MultiLayout( props ){
+  const dispatch = useDispatch();
+  const { config, error, data, item, noData, loading, mainCol, state, render, params, fetch } = props
+  const title = config.page.title;
+
+  const BANNER = <BannerLayout {...props} />
 
   return (
     <>
       {error && <Error from={title} data={error.message}/>}
-      {type === "banner" && BANNER }
-      {type === "list" && 
+      {render === "banner" && BANNER }
+      {render === "list" && 
         <Cols2Layout
           {...props}
           id={config.automata.name}
-          breadcrumbs={props.breadcrumbs}
-          banner={BANNER} 
-          mainCol={(mainCol) ? mainCol( props ) : getList( loading, data, props.onPageChange, props.params.page, item)
-          }
+          banner={ BANNER } 
+          mainCol={(mainCol) ? mainCol( props ) : <ListLayout {...props} />}          
         />
       }
-      {type === "page" && 
+      {render === "page" && 
         <Cols2Layout
           {...props}
           id={config.automata.name}
-          breadcrumbs={props.breadcrumbs}
-          banner={BANNER} 
+          banner={ BANNER } 
           mainCol={(mainCol) ? 
             <>
-              {( loading && (props.dashboard == null ) )  ? 
-                (props.skeleton) ? props.skeleton : <DefaultSkeleton/>
-              :
-                mainCol(props)
-              }
+              {( loading && props.skeleton )  ? props.skeleton : mainCol( { data: state?.data ?? null, loading: props.loading, params: params, fetch: fetch, item: item } )}
             </>                      
             : 
             <Error from={title} data="main component missing, not found in mainCol or detail prop"/>
           }
         />
       }
-      {type === "detail" && 
+      {render === "detail" && 
         <Cols2Layout
           {...props}
           id={config.automata.name}
-          breadcrumbs={props.breadcrumbs}
           mainCol={(mainCol) ? 
             <>
-              {( loading )  ? 
-                (props.skeleton) ? props.skeleton : <DefaultSkeleton/>
-              :
-                mainCol(props)
-              }
+              {( loading && props.skeleton )  ? props.skeleton : mainCol( { data: state?.data ?? null, loading: props.loading } )}
             </>                      
             : 
             <Error from={title} data="main component missing, not found in mainCol or detail prop"/>
@@ -104,17 +131,48 @@ export default function MultiLayout( props ){
   )
 } 
 
-function getList(loading, data, onPageChange, page, item){
+
+function BannerLayout( props ){
+  const { config, state } = props;
+
+  const showDataInBanner = config.banner?.showData ?? false; 
+  const title = (props.customTitle) ? props.customTitle : config.page?.title ?? "NO TITLE";
+  const description = (props.customDescription) ? props.customDescription : config.page?.description ?? "NO DESCRIPTION";
+  const url = config.page?.url;
+  
+  //console.log("banner", config.page.title, state, url({}))
+
+  return (
+    <Banner 
+      showData={showDataInBanner}
+      loading={ props.loading }
+      title={title}
+      description={description}
+      data={ state?.data }
+      item={ props.item }
+      actions={[
+        {url: url(state?.params ?? {}), title: "See all"}
+      ]}
+      hero={ ( props.render !== "banner" ) }                    
+    />  
+  )
+}
+
+function ListLayout( props ){
+  const { loading, state, fetch, item } = props;
+
   return (
     <Grid
       loading={ loading }
-      page={ page }
-      data={ data }
-      onPageChange={ onPageChange }
+      page={ state?.params.page ?? null }
+      data={ state?.data ?? null }
+      onPageChange={ ( page ) => {
+          fetch( { ...state.params, page: page } ) 
+        }
+      }
       item={ item }
     />     
   )
-
 }
 
 MultiLayout.propTypes = {

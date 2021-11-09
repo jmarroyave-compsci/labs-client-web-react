@@ -5,7 +5,7 @@ export default {
 	page: {
 		title: "Data?",
 		description: "source of the data used in this project",
-		url: `/about/data`,
+		url: ()=>`/about/data`,
 	},
 	banner: {
 		showData : false,

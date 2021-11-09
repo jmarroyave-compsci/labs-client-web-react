@@ -5,7 +5,7 @@ export default {
 	page: {
 		title: "Remakes",
 		description: "",
-		url: (entity) => `/${entity}/stories/remakes`,
+		url: ({entity}) => `/${entity}/stories/remakes`,
 	},
 	banner: {
 		showData : true,

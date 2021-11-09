@@ -3,6 +3,6 @@ export default {
 		name: "page_podcast"
 	},
 	page: {
-		url: ( id ) => `/podcasts/${id}`,
+		url: ( {id} ) => `/podcasts/${id}`,
 	},
 }

@@ -3,6 +3,6 @@ export default {
 		name: "page_person"
 	},
 	page: {
-		url: ( id ) => `/people/${id}`,
+		url: ( { id } ) => `/people/${id}`,
 	},
 }

@@ -5,7 +5,7 @@ export default {
 	page: {
 		title: "Video Games",
 		description: "a dashboard with information from video games, how they are segmented, awards and ratings",
-		url: () => `/video-games`,
+		url: (params) => `/video-games`,
 	},
 	banner: {
 		showData : false,

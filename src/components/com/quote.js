@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useMemo } from 'react'
 import { styled } from '@mui/material/styles';
 import { Frame } from 'style/boxes'
 import { Medium, Small } from 'style/detail'
@@ -12,11 +12,12 @@ export const Group = styled('div')({
 
 export default function Quote( props ){
   var { tag } = props;
-  const quote = getQuote(tag);
+  const quote = useMemo(() => getQuote(tag), [tag]);
+  
   return (
     <>
-      <Medium>{quote.text}</Medium>
-      <Small>{quote.from}</Small>
+      <Medium suppressHydrationWarning>{quote.text}</Medium>
+      <Small suppressHydrationWarning>{quote.from}</Small>
     </>
   )
 }

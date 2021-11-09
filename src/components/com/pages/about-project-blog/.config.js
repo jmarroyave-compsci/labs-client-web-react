@@ -5,7 +5,7 @@ export default {
 	page: {
 		title: "the Log",
 		description: "some lessons learned while programming this project",
-		url: `/about/project/log`,
+		url: ()=>`/about/project/log`,
 	},
 	banner: {
 		showData : true,

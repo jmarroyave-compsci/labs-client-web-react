@@ -36,7 +36,7 @@ export const AppModel = createSlice({
       state.drawer.open = !state.drawer.open
     },
     toggleThemeMode: (state, action) => {
-      const mode = ( state.theme.mode === "light" ) ? "dark" : "light";
+      state.theme.mode = ( state.theme.mode === "light" ) ? "dark" : "light";
     },
     updateUsers: (state, action) => {
       state.users = action.payload.users;

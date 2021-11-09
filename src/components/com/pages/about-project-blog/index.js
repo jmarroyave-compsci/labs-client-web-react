@@ -11,12 +11,13 @@ export default function Layout( props ){
 	return (
 		<MultiLayout
 			config={config}
-			type={props.render}
 			data={props.data}
 			item={(data) => <Item {...data}/>}
-			breadcrumbs={props.breadcrumbs}
-			params={(props.route) ? props.route : { page : 1}}
-			onPageChange={( page ) => router.push(`${config.page.url}/${page}`)  }
+			params={{...props, loading: false}}
+			fetch={( params ) => {
+				if(props.render === "banner") return
+				router.push(`${config.page.url()}/${params.page}`)}
+			}
 		/>
 	)
 }	

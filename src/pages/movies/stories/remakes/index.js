@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router';
-import Layout from 'com/pages/remakes/page';
+import Layout from 'com/pages/remakes/list';
 
 const ENTITY = "movies"
 

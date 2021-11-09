@@ -16,8 +16,8 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   width: 100%;
   height: inherit;
   border-radius: 0;
-  background: linear-gradient(60deg, black 0%, #000 150%);
-  color: black;
+  background: linear-gradient(60deg, #1976d2 0%, #000 150%);
+  color: #fff;
 }
 
 @media (min-width:0px) {

@@ -3,6 +3,6 @@ export default {
 		name: "page_tv_show"
 	},
 	page: {
-		url: ( id ) => `/tv-shows/${id}`,
+		url: ( {id} ) => `/tv-shows/${id}`,
 	},
 }

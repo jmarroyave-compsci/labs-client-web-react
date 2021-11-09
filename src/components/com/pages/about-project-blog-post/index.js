@@ -9,13 +9,11 @@ export default function Layout( props ){
 
   return (
     <MultiLayout
-      noData
       config={config}
-      title={article.meta.title}
-      description={`sprint ${article.meta.sprint} - day ${article.meta.day}`}
-      type={props.render}
+      params={props}
+      customTitle={article.meta.title}
+      customDescription={`sprint ${article.meta.sprint} - day ${article.meta.day}`}
       mainCol={() => <Post {...props} />}
-      breadcrumbs={props.breadcrumbs}
     />
   )
 } 

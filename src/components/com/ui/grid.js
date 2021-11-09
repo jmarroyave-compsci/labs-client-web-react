@@ -10,9 +10,8 @@ import { Frame, Item } from 'style/boxes'
 export default function Grid( props ){
     var { data, loading, url, skeleton, item, onPageChange, page } = props;
 
-    loading = (loading || !data || data.length == 0 )
     data = (data && data.length > 0) ? data : [1,2,3,4,5,6];
-
+    
     return (
       <Frame>
         <Paging data={ data } url={url} onPageChange={onPageChange} page={page} loading={loading}>

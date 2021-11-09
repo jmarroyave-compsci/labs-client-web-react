@@ -7,12 +7,10 @@ const Page = ( props ) => {
   var router = useRouter(); 
   var [ page ] = (router && router.query && router.query.index) ? router.query.index : []; 
   page = (page) ? parseInt(page) : 1;
-  const route = { page }
 
-  const params = { ...props, route };
 
   return (
-      <Layout {...params} breadcrumbs={`/about/project/log`}/> 
+      <Layout {...props} page={page} breadcrumbs={`/about/project/log`}/> 
   )
 }
 

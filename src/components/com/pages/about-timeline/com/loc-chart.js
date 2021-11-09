@@ -1,21 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import * as d3 from "d3";
+import ResponsiveWrapper from 'core/ui/components/responsiveness';
 
 class Chart extends React.Component {
   componentDidMount() {
     this.renderMultiChart();
   }
+
   render() {
     return (
         <div id="chart" />
     );
   }
+
   renderMultiChart() {
     var data = this.props.data;
 
-    var width = 500;
-    var height = 300;
+    var width = this.props.parentWidth;
+    width = (width > 500) ? 500 : width;
+    var height = this.props.height;
     var margin = 50;
     var duration = 250;
 
@@ -29,18 +33,6 @@ class Chart extends React.Component {
     var circleOpacityOnLineHover = "0.25";
     var circleRadius = 8;
     var circleRadiusHover = 10;
-
-    /* 
-    // Format Data 
-    var parseDate = d3.timeParse("%Y");
-    data.forEach(function(d) {
-      d.values.forEach(function(d) {
-        d.date = parseDate(d.date);
-        d.price = +d.price;
-      });
-    });
-
-    */
 
     /* Scale */
     var xScale = d3
@@ -187,4 +179,4 @@ class Chart extends React.Component {
 }
 
 
-export default Chart
+export default ResponsiveWrapper(Chart)

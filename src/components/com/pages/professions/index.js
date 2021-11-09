@@ -1,7 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import MultiLayout from "layout/multi-layout";
-import { useSelector, useDispatch } from 'react-redux';
 import config from "./.config.js";
 import Banner from 'com/ui/banner'
 import Item from './com/item';

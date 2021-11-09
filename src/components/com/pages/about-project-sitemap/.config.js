@@ -5,7 +5,7 @@ export default {
 	page: {
 		title: "Sitemap",
 		description: "are you lost or looking for something?",
-		url: `/about/project/sitemap`,
+		url: ()=>`/about/project/sitemap`,
 	},
 	banner: {
 		showData : false,

@@ -4,7 +4,7 @@ export default {
 	},
 	page: {
 		title: "the Post",
-		url: `/about/project/log/posts/`,
+		url: ()=>`/about/project/log/posts/`,
 	},
 	banner: {
 		showData : false,

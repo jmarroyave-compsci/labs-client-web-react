@@ -1,6 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
+@keyframes animation-0 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -16,8 +44,8 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   width: 100%;
   height: inherit;
   border-radius: 0;
-  background: linear-gradient(60deg, black 0%, #000 150%);
-  color: black;
+  background: linear-gradient(60deg, #1976d2 0%, #000 150%);
+  color: #fff;
 }
 
 @media (min-width:0px) {
@@ -144,87 +172,49 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
 }
 
 .emotion-12 {
-  cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.emotion-12>:not(style)+:not(style) {
+  margin: 0;
+  margin-top: 8px;
 }
 
 .emotion-13 {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.87);
-  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
-  overflow: hidden;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.11);
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  transform-origin: 0 55%;
+  -webkit-transform: scale(1, 0.60);
+  -moz-transform: scale(1, 0.60);
+  -ms-transform: scale(1, 0.60);
+  transform: scale(1, 0.60);
+  border-radius: 4px/6.7px;
+  -webkit-animation: animation-0 1.5s ease-in-out 0.5s infinite;
+  animation: animation-0 1.5s ease-in-out 0.5s infinite;
+}
+
+.emotion-13:empty:before {
+  content: "\\00a0";
 }
 
 .emotion-14 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  padding: 16px;
-  width: 100%;
-}
-
-.emotion-15 {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-}
-
-.emotion-16 {
-  margin: 0;
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.334;
-  letter-spacing: 0em;
   display: block;
+  background-color: rgba(0, 0, 0, 0.11);
+  height: 1.2em;
+  -webkit-animation: animation-0 1.5s ease-in-out 0.5s infinite;
+  animation: animation-0 1.5s ease-in-out 0.5s infinite;
 }
 
-.emotion-17 {
-  margin: 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-.emotion-18 {
-  margin: 0;
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-  letter-spacing: 0.00938em;
-  color: rgba(0, 0, 0, 0.6);
-  display: block;
-}
-
-.emotion-19 {
-  display: block;
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-background-position: center;
-  background-position: center;
-  width: 100%;
-  object-fit: cover;
-}
-
-.emotion-119 {
+.emotion-79 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -238,12 +228,12 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   justify-content: center;
 }
 
-.emotion-119>:not(style)+:not(style) {
+.emotion-79>:not(style)+:not(style) {
   margin: 0;
   margin-left: 16px;
 }
 
-.emotion-120 {
+.emotion-80 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -291,23 +281,23 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   color: #1976d2;
 }
 
-.emotion-120::-moz-focus-inner {
+.emotion-80::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-120.Mui-disabled {
+.emotion-80.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-120 {
+  .emotion-80 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-120:hover {
+.emotion-80:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: rgba(25, 118, 210, 0.04);
@@ -315,17 +305,17 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
 }
 
 @media (hover: none) {
-  .emotion-120:hover {
+  .emotion-80:hover {
     background-color: transparent;
   }
 }
 
-.emotion-120.Mui-disabled {
+.emotion-80.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.emotion-122 {
+.emotion-82 {
   overflow: hidden;
   pointer-events: none;
   position: absolute;
@@ -337,7 +327,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   border-radius: inherit;
 }
 
-.emotion-123 {
+.emotion-83 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -346,20 +336,20 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-124 {
+.emotion-84 {
   padding: 0.85rem;
 }
 
-.emotion-125 {
+.emotion-85 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
-.emotion-126 {
+.emotion-86 {
   font-size: 0.9rem;
 }
 
-.emotion-127 {
+.emotion-87 {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.87);
   background-color: transparent;
@@ -435,43 +425,22 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                             class="emotion-11"
                           >
                             <div
-                              class="emotion-12"
+                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              style="flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-13"
-                                style="flex-grow: 1; width: 100%;"
+                                class="emotion-12"
                               >
-                                <div
-                                  class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-14"
-                                >
-                                  <div
-                                    class="makeStyles-headerContent-1 MuiCardHeader-content emotion-15"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-16"
-                                    >
-                                      <div
-                                        class=""
-                                        style="display: inline-block; width: 100%;"
-                                        title="Academy Awards"
-                                      >
-                                        <span
-                                          class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-17"
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          Academy Awards
-                                        </span>
-                                      </div>
-                                    </span>
-                                    <span
-                                      class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-18"
-                                    />
-                                  </div>
-                                </div>
-                                <img
-                                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-19"
-                                  height="180"
-                                  src="/labs-client-web-react/app/img/ph.jpg"
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 80%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
+                                  style="height: 240px;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
                                 />
                               </div>
                             </div>
@@ -492,43 +461,22 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                             class="emotion-11"
                           >
                             <div
-                              class="emotion-12"
+                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              style="flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-13"
-                                style="flex-grow: 1; width: 100%;"
+                                class="emotion-12"
                               >
-                                <div
-                                  class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-14"
-                                >
-                                  <div
-                                    class="makeStyles-headerContent-1 MuiCardHeader-content emotion-15"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-16"
-                                    >
-                                      <div
-                                        class=""
-                                        style="display: inline-block; width: 100%;"
-                                        title="Emmy Awards"
-                                      >
-                                        <span
-                                          class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-17"
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          Emmy Awards
-                                        </span>
-                                      </div>
-                                    </span>
-                                    <span
-                                      class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-18"
-                                    />
-                                  </div>
-                                </div>
-                                <img
-                                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-19"
-                                  height="180"
-                                  src="/labs-client-web-react/app/img/ph.jpg"
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 80%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
+                                  style="height: 240px;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
                                 />
                               </div>
                             </div>
@@ -549,43 +497,22 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                             class="emotion-11"
                           >
                             <div
-                              class="emotion-12"
+                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              style="flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-13"
-                                style="flex-grow: 1; width: 100%;"
+                                class="emotion-12"
                               >
-                                <div
-                                  class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-14"
-                                >
-                                  <div
-                                    class="makeStyles-headerContent-1 MuiCardHeader-content emotion-15"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-16"
-                                    >
-                                      <div
-                                        class=""
-                                        style="display: inline-block; width: 100%;"
-                                        title="Golden Globe Awards"
-                                      >
-                                        <span
-                                          class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-17"
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          Golden Globe Awards
-                                        </span>
-                                      </div>
-                                    </span>
-                                    <span
-                                      class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-18"
-                                    />
-                                  </div>
-                                </div>
-                                <img
-                                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-19"
-                                  height="180"
-                                  src="/labs-client-web-react/app/img/ph.jpg"
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 80%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
+                                  style="height: 240px;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
                                 />
                               </div>
                             </div>
@@ -606,43 +533,22 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                             class="emotion-11"
                           >
                             <div
-                              class="emotion-12"
+                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              style="flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-13"
-                                style="flex-grow: 1; width: 100%;"
+                                class="emotion-12"
                               >
-                                <div
-                                  class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-14"
-                                >
-                                  <div
-                                    class="makeStyles-headerContent-1 MuiCardHeader-content emotion-15"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-16"
-                                    >
-                                      <div
-                                        class=""
-                                        style="display: inline-block; width: 100%;"
-                                        title="Alexandria International Film Festival"
-                                      >
-                                        <span
-                                          class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-17"
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          Alexandria International Film Festival
-                                        </span>
-                                      </div>
-                                    </span>
-                                    <span
-                                      class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-18"
-                                    />
-                                  </div>
-                                </div>
-                                <img
-                                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-19"
-                                  height="180"
-                                  src="/labs-client-web-react/app/img/ph.jpg"
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 80%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
+                                  style="height: 240px;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
                                 />
                               </div>
                             </div>
@@ -663,43 +569,22 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                             class="emotion-11"
                           >
                             <div
-                              class="emotion-12"
+                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              style="flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-13"
-                                style="flex-grow: 1; width: 100%;"
+                                class="emotion-12"
                               >
-                                <div
-                                  class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-14"
-                                >
-                                  <div
-                                    class="makeStyles-headerContent-1 MuiCardHeader-content emotion-15"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-16"
-                                    >
-                                      <div
-                                        class=""
-                                        style="display: inline-block; width: 100%;"
-                                        title="Amakula International Film Festival"
-                                      >
-                                        <span
-                                          class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-17"
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          Amakula International Film Festival
-                                        </span>
-                                      </div>
-                                    </span>
-                                    <span
-                                      class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-18"
-                                    />
-                                  </div>
-                                </div>
-                                <img
-                                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-19"
-                                  height="180"
-                                  src="/labs-client-web-react/app/img/ph.jpg"
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 80%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
+                                  style="height: 240px;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
                                 />
                               </div>
                             </div>
@@ -720,43 +605,22 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                             class="emotion-11"
                           >
                             <div
-                              class="emotion-12"
+                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              style="flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-13"
-                                style="flex-grow: 1; width: 100%;"
+                                class="emotion-12"
                               >
-                                <div
-                                  class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-14"
-                                >
-                                  <div
-                                    class="makeStyles-headerContent-1 MuiCardHeader-content emotion-15"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-16"
-                                    >
-                                      <div
-                                        class=""
-                                        style="display: inline-block; width: 100%;"
-                                        title="Cabo Verde International Film Festival"
-                                      >
-                                        <span
-                                          class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-17"
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          Cabo Verde International Film Festival
-                                        </span>
-                                      </div>
-                                    </span>
-                                    <span
-                                      class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-18"
-                                    />
-                                  </div>
-                                </div>
-                                <img
-                                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-19"
-                                  height="180"
-                                  src="/labs-client-web-react/app/img/ph.jpg"
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 80%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
+                                  style="height: 240px;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
                                 />
                               </div>
                             </div>
@@ -777,43 +641,22 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                             class="emotion-11"
                           >
                             <div
-                              class="emotion-12"
+                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              style="flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-13"
-                                style="flex-grow: 1; width: 100%;"
+                                class="emotion-12"
                               >
-                                <div
-                                  class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-14"
-                                >
-                                  <div
-                                    class="makeStyles-headerContent-1 MuiCardHeader-content emotion-15"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-16"
-                                    >
-                                      <div
-                                        class=""
-                                        style="display: inline-block; width: 100%;"
-                                        title="Cairo International Film Festival"
-                                      >
-                                        <span
-                                          class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-17"
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          Cairo International Film Festival
-                                        </span>
-                                      </div>
-                                    </span>
-                                    <span
-                                      class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-18"
-                                    />
-                                  </div>
-                                </div>
-                                <img
-                                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-19"
-                                  height="180"
-                                  src="/labs-client-web-react/app/img/ph.jpg"
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 80%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
+                                  style="height: 240px;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
                                 />
                               </div>
                             </div>
@@ -834,43 +677,22 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                             class="emotion-11"
                           >
                             <div
-                              class="emotion-12"
+                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              style="flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-13"
-                                style="flex-grow: 1; width: 100%;"
+                                class="emotion-12"
                               >
-                                <div
-                                  class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-14"
-                                >
-                                  <div
-                                    class="makeStyles-headerContent-1 MuiCardHeader-content emotion-15"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-16"
-                                    >
-                                      <div
-                                        class=""
-                                        style="display: inline-block; width: 100%;"
-                                        title="Cairo International Women's Film Festival"
-                                      >
-                                        <span
-                                          class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-17"
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          Cairo International Women's Film Festival
-                                        </span>
-                                      </div>
-                                    </span>
-                                    <span
-                                      class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-18"
-                                    />
-                                  </div>
-                                </div>
-                                <img
-                                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-19"
-                                  height="180"
-                                  src="/labs-client-web-react/app/img/ph.jpg"
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 80%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
+                                  style="height: 240px;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
                                 />
                               </div>
                             </div>
@@ -891,43 +713,22 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                             class="emotion-11"
                           >
                             <div
-                              class="emotion-12"
+                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              style="flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-13"
-                                style="flex-grow: 1; width: 100%;"
+                                class="emotion-12"
                               >
-                                <div
-                                  class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-14"
-                                >
-                                  <div
-                                    class="makeStyles-headerContent-1 MuiCardHeader-content emotion-15"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-16"
-                                    >
-                                      <div
-                                        class=""
-                                        style="display: inline-block; width: 100%;"
-                                        title="Carthage Film Festival"
-                                      >
-                                        <span
-                                          class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-17"
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          Carthage Film Festival
-                                        </span>
-                                      </div>
-                                    </span>
-                                    <span
-                                      class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-18"
-                                    />
-                                  </div>
-                                </div>
-                                <img
-                                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-19"
-                                  height="180"
-                                  src="/labs-client-web-react/app/img/ph.jpg"
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 80%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
+                                  style="height: 240px;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
                                 />
                               </div>
                             </div>
@@ -948,43 +749,22 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                             class="emotion-11"
                           >
                             <div
-                              class="emotion-12"
+                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              style="flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root emotion-13"
-                                style="flex-grow: 1; width: 100%;"
+                                class="emotion-12"
                               >
-                                <div
-                                  class="makeStyles-headerRoot-2 MuiCardHeader-root emotion-14"
-                                >
-                                  <div
-                                    class="makeStyles-headerContent-1 MuiCardHeader-content emotion-15"
-                                  >
-                                    <span
-                                      class="MuiTypography-root MuiTypography-h5 MuiCardHeader-title emotion-16"
-                                    >
-                                      <div
-                                        class=""
-                                        style="display: inline-block; width: 100%;"
-                                        title="Cinekambiya International Film Festival"
-                                      >
-                                        <span
-                                          class="MuiTypography-root MuiTypography-subtitle MuiTypography-noWrap emotion-17"
-                                          style="display: inline-block; width: 100%;"
-                                        >
-                                          Cinekambiya International Film Festival
-                                        </span>
-                                      </div>
-                                    </span>
-                                    <span
-                                      class="MuiTypography-root MuiTypography-body1 MuiCardHeader-subheader emotion-18"
-                                    />
-                                  </div>
-                                </div>
-                                <img
-                                  class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img emotion-19"
-                                  height="180"
-                                  src="/labs-client-web-react/app/img/ph.jpg"
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 80%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
+                                  style="height: 240px;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
                                 />
                               </div>
                             </div>
@@ -994,10 +774,10 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-119"
+                    class="emotion-79"
                   >
                     <button
-                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-120"
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-80"
                       disabled=""
                       tabindex="-1"
                       type="button"
@@ -1005,13 +785,13 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                       Back
                     </button>
                     <button
-                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-120"
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-80"
                       tabindex="0"
                       type="button"
                     >
                       Next
                       <span
-                        class="MuiTouchRipple-root emotion-122"
+                        class="MuiTouchRipple-root emotion-82"
                       />
                     </button>
                   </div>
@@ -1027,57 +807,57 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-123"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-83"
             >
               <div
-                class="emotion-124"
+                class="emotion-84"
               >
                 <div
-                  class="emotion-125"
+                  class="emotion-85"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-126"
+                  class="emotion-86"
                 >
                   <span
-                    class="emotion-127"
+                    class="emotion-87"
                   >
                     Movie Awards
                   </span>
                 </div>
                 <div
-                  class="emotion-126"
+                  class="emotion-86"
                 >
                   <span
-                    class="emotion-127"
+                    class="emotion-87"
                   >
                     Movies
                   </span>
                 </div>
                 <div
-                  class="emotion-126"
+                  class="emotion-86"
                 >
                   <span
-                    class="emotion-127"
+                    class="emotion-87"
                   >
                     People
                   </span>
                 </div>
                 <div
-                  class="emotion-126"
+                  class="emotion-86"
                 >
                   <span
-                    class="emotion-127"
+                    class="emotion-87"
                   >
                     Podcasts
                   </span>
                 </div>
                 <div
-                  class="emotion-126"
+                  class="emotion-86"
                 >
                   <span
-                    class="emotion-127"
+                    class="emotion-87"
                   >
                     Music Podcasts
                   </span>

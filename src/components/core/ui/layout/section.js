@@ -1,15 +1,18 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext, useMemo } from 'react';
 import ErrorBoundry from 'core/ui/error-boundry';
 import Box from '@mui/material/Box';
-import { useSelector } from 'react-redux'
+import { useTheme } from "@mui/material/styles";
 
 const LayoutSection = ( props ) => {
-  	const { theme } = useSelector(( state ) => state.app ) || {}
-
+  	const theme = useTheme();
 	var {className, cover, padding, children, hero, rounded, compact} = props;
+  	const colors = useMemo( ()=>{
+  		return getStyle(className, theme)
+  	},[])
+
 	var height = (cover === true) ? "100vh" : "inherit"; 
 	rounded = (rounded === true) ?  true : false;
-	const colors = getStyle(className, theme)
+	
 	return (
 		<ErrorBoundry from="/core/ui/section">
 			<Box className={`com-layout-section ${className}`} sx={{ 
@@ -51,17 +54,17 @@ const getStyle = ( style, theme ) => {
 	switch( style ){
 		case "section-0":
 			return {
-				background: `linear-gradient(60deg, ${theme?.palette.primary.main ?? "black"} 0%, #000 150%)`,
-			    color: theme?.palette.text.primary ?? "black",   
+				background: `linear-gradient(60deg, ${theme.palette.primary.main ?? "black"} 0%, #000 150%)`,
+			    color: theme.palette.primary.contrastText ?? "black",   
 			}
 		case "section-1":
 			return {
-				background: `linear-gradient(60deg, ${theme?.palette.primary.main  ?? "black"} 0%, rgba(85,85,85,1) 100%)`,
-			    color: theme?.palette.text.primary ?? "black",   
+				background: `linear-gradient(60deg, ${theme.palette.primary.main  ?? "black"} 0%, rgba(85,85,85,1) 100%)`,
+			    color: theme.palette.primary.contrastText ?? "black",   
 			}
 		case "section-2":
 			return {
-				background: 'linear-gradient(180deg, rgba(215,215,215,1) 0%, rgba(255,245,245,1) 125%)',
+				background: 'linear-gradient(180deg, theme.pal 0%, rgba(255,245,245,1) 125%)',
 			    color: '#444',   
 			}
 		case "section-3":

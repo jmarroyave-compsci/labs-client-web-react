@@ -1,6 +1,34 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PAGE_MOVIE_FESTIVAL compare Page against snapshot 1`] = `
+@keyframes animation-0 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation-0 {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -44,79 +72,58 @@ exports[`PAGE_MOVIE_FESTIVAL compare Page against snapshot 1`] = `
   padding: 0rem 0rem 4rem 0rem;
 }
 
-.emotion-3 {
-  margin: 0 0 2rem 0;
-  padding: 0;
-  width: 100%;
-}
-
-.emotion-6 {
-  position: relative;
-  overflow: hidden;
-  background-color: #efefef;
-  background-image: url('/labs-client-web-react/app/img/ph.jpg');
-  -webkit-background-position: center center;
-  background-position: center center;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 0;
-  margin: 0;
-}
-
-.emotion-8 {
-  font-size: 2.5rem;
-  line-height: 2.75rem;
-  padding: 0;
-  margin: 0;
-}
-
-.emotion-10 {
-  font-size: 1.8rem;
-  line-height: 2rem;
-  text-transform: lowercase;
-  padding: 0;
-  padding-bottom: 0.25rem;
-  margin: 0 0 0.5rem 0;
-  border-bottom: 2px solid #888;
-}
-
-.emotion-11 {
-  font-size: 0.7rem;
-  line-height: 0.7rem;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin: 0 0 0 0;
-  padding: 0;
-}
-
-.emotion-12 {
-  font-size: 1rem;
-  line-height: 1.25rem;
-  margin: 0 0 0.5rem 0;
-}
-
-.emotion-19 {
+.emotion-4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
-.emotion-20 {
-  display: inline-block;
+.emotion-4>:not(style)+:not(style) {
   margin: 0;
-  margin-right: 0.25rem;
-  margin-bottom: 0.25rem;
+  margin-top: 8px;
 }
 
-.emotion-21 {
+.emotion-5 {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.11);
+  height: 1.2em;
+  -webkit-animation: animation-0 1.5s ease-in-out 0.5s infinite;
+  animation: animation-0 1.5s ease-in-out 0.5s infinite;
+}
+
+.emotion-6 {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.11);
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  transform-origin: 0 55%;
+  -webkit-transform: scale(1, 0.60);
+  -moz-transform: scale(1, 0.60);
+  -ms-transform: scale(1, 0.60);
+  transform: scale(1, 0.60);
+  border-radius: 4px/6.7px;
+  -webkit-animation: animation-0 1.5s ease-in-out 0.5s infinite;
+  animation: animation-0 1.5s ease-in-out 0.5s infinite;
+}
+
+.emotion-6:empty:before {
+  content: "\\00a0";
+}
+
+.emotion-11 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -125,20 +132,20 @@ exports[`PAGE_MOVIE_FESTIVAL compare Page against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-22 {
+.emotion-12 {
   padding: 0.85rem;
 }
 
-.emotion-23 {
+.emotion-13 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
-.emotion-24 {
+.emotion-14 {
   font-size: 0.9rem;
 }
 
-.emotion-25 {
+.emotion-15 {
   cursor: pointer;
   color: rgba(0, 0, 0, 0.87);
   background-color: transparent;
@@ -171,114 +178,35 @@ exports[`PAGE_MOVIE_FESTIVAL compare Page against snapshot 1`] = `
             class="emotion-2"
           >
             <div
-              class="emotion-3"
+              class="emotion-2"
             >
               <div
-                class="emotion-0"
+                class="emotion-4"
               >
-                <div
-                  class="emotion-3"
-                >
-                  <div
-                    style="height: 300px; width: 100%; background-color: rgb(51, 51, 51); overflow: hidden;"
-                  >
-                    <div
-                      class="emotion-6"
-                    >
-                      <img
-                        height="300"
-                        width="250"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="emotion-3"
-                >
-                  <h2
-                    class="emotion-8"
-                  >
-                    Flanders International Film Festival Ghent
-                  </h2>
-                </div>
-                <div
-                  class="emotion-3"
-                >
-                  <h3
-                    class="emotion-10"
-                  >
-                    general information
-                  </h3>
-                  <div>
-                    <div
-                      class="emotion-11"
-                    >
-                      established
-                    </div>
-                    <div
-                      class="emotion-12"
-                    >
-                      1974
-                       
-                    </div>
-                  </div>
-                  <div>
-                    <div
-                      class="emotion-11"
-                    >
-                      country
-                    </div>
-                    <div
-                      class="emotion-12"
-                    >
-                      Belgium
-                       
-                    </div>
-                  </div>
-                  <div>
-                    <div
-                      class="emotion-11"
-                    >
-                      continent
-                    </div>
-                    <div
-                      class="emotion-12"
-                    >
-                      Europe
-                       
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="emotion-3"
-                >
-                  <h3
-                    class="emotion-10"
-                  >
-                    More information
-                  </h3>
-                  <div
-                    class="emotion-19"
-                  >
-                    <a
-                      href="https://wikipedia.com/wiki/Flanders_International_Film_Festival_Ghent"
-                    >
-                      <div
-                        class="emotion-20"
-                      >
-                        <div
-                          class="MuiChip-root MuiChip-colorPrimary MuiChip-sizeSmall"
-                        >
-                          <span
-                            class="MuiChip-label MuiChip-labelSmall"
-                          >
-                            wikipedia
-                          </span>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-5"
+                  style="height: 300px;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-6"
+                  style="height: 3rem; margin-bottom: 1rem;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-6"
+                  style="width: 40%;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-6"
+                  style="width: 25%;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-6"
+                  style="width: 25%;"
+                />
+                <span
+                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-6"
+                  style="width: 25%;"
+                />
               </div>
             </div>
           </div>
@@ -290,57 +218,57 @@ exports[`PAGE_MOVIE_FESTIVAL compare Page against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-21"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-11"
             >
               <div
-                class="emotion-22"
+                class="emotion-12"
               >
                 <div
-                  class="emotion-23"
+                  class="emotion-13"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-24"
+                  class="emotion-14"
                 >
                   <span
-                    class="emotion-25"
+                    class="emotion-15"
                   >
                     Movie Awards
                   </span>
                 </div>
                 <div
-                  class="emotion-24"
+                  class="emotion-14"
                 >
                   <span
-                    class="emotion-25"
+                    class="emotion-15"
                   >
                     Movies
                   </span>
                 </div>
                 <div
-                  class="emotion-24"
+                  class="emotion-14"
                 >
                   <span
-                    class="emotion-25"
+                    class="emotion-15"
                   >
                     People
                   </span>
                 </div>
                 <div
-                  class="emotion-24"
+                  class="emotion-14"
                 >
                   <span
-                    class="emotion-25"
+                    class="emotion-15"
                   >
                     Podcasts
                   </span>
                 </div>
                 <div
-                  class="emotion-24"
+                  class="emotion-14"
                 >
                   <span
-                    class="emotion-25"
+                    class="emotion-15"
                   >
                     Music Podcasts
                   </span>

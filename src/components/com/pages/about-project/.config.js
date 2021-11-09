@@ -5,7 +5,7 @@ export default {
 	page: {
 		title: "Project",
 		description: "The story of this project",
-		url: `/about/project`,
+		url: () => `/about/project`,
 	},
 	banner: {
 		showData : false,

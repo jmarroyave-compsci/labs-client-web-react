@@ -7,9 +7,9 @@ import config from '../.config';
 export default function PostItem(item){
   const { id, title, thumbnail, description, slug, sprint, day} = item;
   return (
-      <Link box href={`${config.page.url}/posts/${slug}`}>
+      <Link box href={`${config.page.url()}/posts/${slug}`}>
         <Padding>
-          <Small>{`srpint ${sprint} - day ${day}`.toUpperCase()}</Small>
+          <Small>{`sprint ${sprint} - day ${day}`.toUpperCase()}</Small>
           <Paragraph>{title}</Paragraph>
         </Padding>
       </Link>

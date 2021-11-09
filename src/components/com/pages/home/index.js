@@ -25,9 +25,9 @@ export default function Content( props ){
 	return (
 		<Stack>
 			<Section className="section-1"><StoryAwards entity="movies" year={2018 - random(50)}/></Section>
-			<Section className="section-3"><StoryRemakes page={random(10)} /></Section>
+			<Section className="section-3"><StoryRemakes entity="movies" page={random(10)} /></Section>
 			<Section className="section-2"><StoryProfessions/></Section>
-			<Section className="section-0"><StoryPodcastMusic {...props} page={random(10)}/></Section>
+			<Section className="section-0"><StoryPodcastMusic page={random(10)}/></Section>
 			<Section className="section-2"><StoryDashboards/></Section>
 			<Section className="section-3"><StoryLog data={blog}/></Section>
 		</Stack>

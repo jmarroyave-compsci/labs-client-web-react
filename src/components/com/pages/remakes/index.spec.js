@@ -5,7 +5,7 @@ import '@testing-library/jest-dom'
 import { itMustHaveNoErrors, TestProvider } from "tests/jest/shared"
 
 import itemState from './automata/tests/item.json'
-import Page from '.';
+import TestComponent from '.';
 import config from './.config';
  
 describe(`${config.automata.name.toUpperCase()}`, () => {
@@ -13,16 +13,16 @@ describe(`${config.automata.name.toUpperCase()}`, () => {
   let component;
  
   beforeEach(() => { 
-    component = (
-      <TestProvider state={{[config.automata.name]: itemState}}>
-        <Page />
-      </TestProvider>
-    );    
   });
  
  
   it('compare against snapshot', () => {
-    const renderer = render(component)
+    const renderer = render(
+      <TestProvider state={{[config.automata.name]: itemState}}>
+        <TestComponent render="list"/>
+      </TestProvider>
+    )
+
     itMustHaveNoErrors(renderer)
     expect(renderer.container).toMatchSnapshot();
   });

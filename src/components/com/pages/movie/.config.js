@@ -3,6 +3,6 @@ export default {
 		name: "page_movie"
 	},
 	page: {
-		url: ( id ) => `/movies/${id}`,
+		url: ( { id } ) => `/movies/${id}`,
 	},
 }
