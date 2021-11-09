@@ -11,7 +11,7 @@ export default function Layout( props ){
 			params={props}
 			config={config}
 			fetch={ (params) => fetchData({ ...params }) }
-			item={(data) => <Item full {...data}/>}
+			item={(data) => <Item full {...data} entity={props.entity}/>}
 			mainCol={ (props) => <Content {...props}/> }
 		/>
 	)

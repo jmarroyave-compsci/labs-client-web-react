@@ -2,6 +2,8 @@ import React from 'react'
 import { useRouter } from 'next/router';
 import Layout from 'com/pages/award/detail';
 
+const ENTITY = "movies"
+
 const Page = ( props ) => {
   const router = useRouter(); 
   console.log( router?.query?.award)
@@ -13,26 +15,10 @@ const Page = ( props ) => {
         breadcrumbs={`/movies/stories/awards`} 
         id={id}
         year={year} 
+        entity={ENTITY}
       /> 
   )
 }
-/*
-
-export async function getStaticPaths(){
-  const paths = [
-    { params : { award : [ "mf00001", '2015' ] } },
-  ]
-  
-  return {
-      paths : paths,
-      fallback: "blocking",
-  }
-}
-
-export async function getStaticProps( props ){
-  return { props : {} }
-}
-*/
 
 
 export default Page;

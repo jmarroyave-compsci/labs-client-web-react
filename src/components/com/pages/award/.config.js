@@ -4,6 +4,6 @@ export default {
 	},
 	page: {
 		title: "Award",
-		url: ( { entity, award, year } ) => `/${entity}/stories/awards/${award}/${year}`,
+		url: ( { entity, id, year } ) => `/${entity}/stories/awards/${id}/${year}`,
 	},
 }

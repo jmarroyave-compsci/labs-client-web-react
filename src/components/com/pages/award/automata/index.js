@@ -10,6 +10,7 @@ const initialState = {
   params: {
     id: null,
     year: null,
+    entity: null,
   },
   data: null,
   loading: true,
@@ -33,7 +34,7 @@ const slice = createSlice({
         ...action.payload
       }
       if(state.params.renderer == "banner" || state.params.page == 1) return;
-      Router.push(`${config.page.url(state)}`, null, { shallow: true })        
+      Router.push(`${config.page.url(state.params)}`, null, { shallow: true })        
     }
   },
   extraReducers: {
