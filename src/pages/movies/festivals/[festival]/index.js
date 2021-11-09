@@ -4,7 +4,7 @@ import Layout from 'com/pages/movie-festival/detail';
 
 const Page = ( props ) => {
   const router = useRouter(); 
-  var id = router.query?.['festival'] ?? ""; 
+  var id = (props.id) ? props.id : router.query?.['festival'] ?? ""; 
 
   return (
       <Layout 

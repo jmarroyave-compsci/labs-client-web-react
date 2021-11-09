@@ -4,8 +4,7 @@ import Layout from 'com/pages/movie/detail';
 
 const Page = ( props ) => {
   const router = useRouter(); 
-  var id = router?.query?.movie ?? ""; 
-
+  var id = (props.id) ? props.id : router?.query?.movie ?? ""; 
   return (
       <Layout 
         breadcrumbs={`/movies`} 

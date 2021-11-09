@@ -1097,6 +1097,240 @@
           "level": 3,
           "children": null
         }
+      ],
+      "Day 6": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Story: minor fixes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "DEV",
+          "level": 2,
+          "children": null
+        }
+      ],
+      "Day 7": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "DEVOPS",
+          "level": 2,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "PRIORITIES",
+          "level": 1,
+          "children": null
+        }
+      ]
+    },
+    "Sprint 9": {
+      "Day 1": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[CI] The automatic process",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] minor fixes",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 2": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[DB] Reimport the data",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[QA] Tests: add Env. test variable",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[CI] The automatic process",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 3": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[DB] Reimport the data",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[QA] Add pre-rendered routes for testing and screenshots",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Dark theme",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] minor fixes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "LEARNING",
+          "level": 2,
+          "children": null
+        }
+      ],
+      "Day 4": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[DB] Reimport the data",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[DB] The DB size limit",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[CI] The automatic process",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Login",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] The project's LoC, LoC",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] The project's timeline, the screenshots",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 5": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[DB] Reimport the data",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Users online",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Login",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "LEARNING:",
+          "level": 2,
+          "children": null
+        }
+      ],
+      "Day 6": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Users online",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] app state",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 7": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] app state",
+          "level": 3,
+          "children": null
+        }
+      ]
+    },
+    "Sprint 10": {
+      "Day 1": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[DB] Data Import",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] How much is pre-rendered",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] The project's LoC, LoC",
+          "level": 3,
+          "children": null
+        }
       ]
     }
   }

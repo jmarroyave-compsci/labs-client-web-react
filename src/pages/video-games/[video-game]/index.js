@@ -4,7 +4,7 @@ import Layout from 'com/pages/video-game/detail';
 
 const Page = ( props ) => {
   const router = useRouter(); 
-  var id = router.query?.['video-game'] ?? ""; 
+  var id = (props.id) ? props.id : router.query?.['video-game'] ?? ""; 
 
   return (
       <Layout 
@@ -13,24 +13,5 @@ const Page = ( props ) => {
       /> 
   )
 }
-
-/*
-
-export async function getStaticPaths(){
-  const paths = [
-    { params : { "video-game" : "tt0022215" }},
-  ]
-  
-  return {
-      paths : paths,
-      fallback: "blocking",
-  }
-}
-
-export async function getStaticProps( props ){
-  return { props : {} }
-}
-
-*/
 
 export default Page;

@@ -18,7 +18,7 @@ export default function Sitemap( props ){
         aria-label="file system navigator"
         defaultCollapseIcon={<ExpandMoreIcon />}
         defaultExpandIcon={<ChevronRightIcon />}
-        sx={{ height: 240, flexGrow: 1, maxWidth: 400, overflowY: 'auto' }}
+        sx={{ flexGrow: 1 }}
         expanded={nodes.current}
       >
         {getTree(nodes.current, "home", "/", data.home)}

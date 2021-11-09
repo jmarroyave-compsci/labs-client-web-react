@@ -4,7 +4,7 @@ import Layout from 'com/pages/tv-show/detail';
 
 const Page = ( props ) => {
   const router = useRouter(); 
-  var id = router.query?.['tv-show'] ?? ""; 
+  var id = (props.id) ? props.id : router.query?.['tv-show'] ?? ""; 
 
   return (
       <Layout 
@@ -13,22 +13,5 @@ const Page = ( props ) => {
       /> 
   )
 }
-
-/*
-export async function getStaticPaths(){
-  const paths = [
-    { params : { "tv-show" : "tt0454876" }},
-  ]
-  
-  return {
-      paths : paths,
-      fallback: "blocking",
-  }
-}
-
-export async function getStaticProps( props ){
-  return { props : {} }
-}
-*/
 
 export default Page;

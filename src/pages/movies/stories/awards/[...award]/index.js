@@ -6,8 +6,7 @@ const ENTITY = "movies"
 
 const Page = ( props ) => {
   const router = useRouter(); 
-  console.log( router?.query?.award)
-  var [ id, year ] = router?.query?.award ?? []; 
+  var [ id, year ] = ( props.id ) ? [props.id, props.year] : router?.query?.award ?? []; 
   year = year ?? new Date().getFullYear();
 
   return (
