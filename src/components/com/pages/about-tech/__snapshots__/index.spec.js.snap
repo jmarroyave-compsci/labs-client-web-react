@@ -575,7 +575,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                   <span
                     class="emotion-54"
                   >
-                    Movies
+                    Movie Remakes
                   </span>
                 </div>
                 <div
@@ -584,7 +584,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                   <span
                     class="emotion-54"
                   >
-                    People
+                    Movie Directors
                   </span>
                 </div>
                 <div
@@ -593,7 +593,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                   <span
                     class="emotion-54"
                   >
-                    Podcasts
+                    Movie Producers
                   </span>
                 </div>
                 <div
@@ -602,7 +602,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                   <span
                     class="emotion-54"
                   >
-                    Music Podcasts
+                    Movie Actors
                   </span>
                 </div>
               </div>

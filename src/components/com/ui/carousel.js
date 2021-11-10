@@ -7,9 +7,11 @@ import Paper from '@mui/material/Paper';
 import { Frame, Item } from 'style/boxes'
 
 export default function _Carousel( props ){
-    var { data, loading } = props;
+    var { data, loading, xs=12, sm=6, md=3, lg=3 } = props;
     loading = (loading || !data || !data.length )
     data = (data && data.length && data.length > 0) ? data : [1,2,3,4,5];
+
+    console.log(parseInt(12 / xs), parseInt(12 / sm))
 
     return (
       <Frame>
@@ -30,28 +32,36 @@ export default function _Carousel( props ){
           renderButtonGroupOutside={false}
           renderDotsOutside={false}
           responsive={{
-            desktop: {
+            widescren: {
               breakpoint: {
                 max: 3000,
+                min: 1600
+              },
+              items: parseInt(12 / lg),
+              partialVisibilityGutter: 40
+            },
+            desktop: {
+              breakpoint: {
+                max: 1600,
                 min: 1024
               },
-              items: 3,
+              items: parseInt(12 / md),
               partialVisibilityGutter: 40
             },
             mobile: {
               breakpoint: {
-                max: 464,
+                max: 650,
                 min: 0
               },
-              items: 1,
+              items: parseInt(12 / xs),
               partialVisibilityGutter: 30
             },
             tablet: {
               breakpoint: {
                 max: 1024,
-                min: 464
+                min: 650
               },
-              items: 2,
+              items: parseInt(12 / sm),
               partialVisibilityGutter: 30
             }
           }}

@@ -25,7 +25,7 @@ const RelatedStories = function( props ){
         <Paper>
             <RightPanel>
                 <Stories>See also</Stories>
-                    {stories.map( (story, idx) => 
+                    {stories.slice(0,5).map( (story, idx) => 
                         <Story key={idx}><Link href={story.url}>{story.title}</Link></Story>
                     )}
             </RightPanel>

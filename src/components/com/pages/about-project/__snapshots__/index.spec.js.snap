@@ -434,7 +434,7 @@ exports[`ABOUT-PROJECT compare Page against snapshot 1`] = `
                   <span
                     class="emotion-34"
                   >
-                    Movies
+                    Movie Remakes
                   </span>
                 </div>
                 <div
@@ -443,7 +443,7 @@ exports[`ABOUT-PROJECT compare Page against snapshot 1`] = `
                   <span
                     class="emotion-34"
                   >
-                    People
+                    Movie Directors
                   </span>
                 </div>
                 <div
@@ -452,7 +452,7 @@ exports[`ABOUT-PROJECT compare Page against snapshot 1`] = `
                   <span
                     class="emotion-34"
                   >
-                    Podcasts
+                    Movie Producers
                   </span>
                 </div>
                 <div
@@ -461,7 +461,7 @@ exports[`ABOUT-PROJECT compare Page against snapshot 1`] = `
                   <span
                     class="emotion-34"
                   >
-                    Music Podcasts
+                    Movie Actors
                   </span>
                 </div>
               </div>

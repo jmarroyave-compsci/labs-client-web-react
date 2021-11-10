@@ -40,6 +40,30 @@ exports[`STORIES_DASHBOARDS compare against snapshot 1`] = `
 }
 
 .emotion-6 {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.emotion-7 {
+  padding: 1rem;
+}
+
+.emotion-8 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0;
+  margin: 0 0 0.75rem 0;
+}
+
+.emotion-24 {
   padding-top: 2rem;
 }
 
@@ -67,19 +91,146 @@ exports[`STORIES_DASHBOARDS compare against snapshot 1`] = `
       </span>
     </div>
     <div
-      class="emotion-5"
+      style="margin: 0px 3rem;"
     >
       <div
-        class="react-multi-carousel-list container-with-dots "
+        class="emotion-5"
       >
-        <ul
-          class="react-multi-carousel-track "
-          style="transition: none; overflow: unset; transform: translate3d(0px,0,0);"
-        />
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-center"
+          style="width: 100%;"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+          >
+            <div
+              class="emotion-6"
+            >
+              <div
+                style="width: 100%; flex: 1; background-image: url(/img/ba_pro_act.jpg); color: white; padding: 1rem; height: 150px; text-align: center; border: 1px solid transparent; margin: 0px 1px 1px 0px;"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <h2
+                    class="emotion-8"
+                  >
+                    People
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+          >
+            <div
+              class="emotion-6"
+            >
+              <div
+                style="width: 100%; flex: 1; background-image: url(/img/ba_pro_dir.jpg); color: white; padding: 1rem; height: 150px; text-align: center; border: 1px solid transparent; margin: 0px 1px 1px 0px;"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <h2
+                    class="emotion-8"
+                  >
+                    Movies
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+          >
+            <div
+              class="emotion-6"
+            >
+              <div
+                style="width: 100%; flex: 1; background-image: url(/img/ba_pro_wri.jpg); color: white; padding: 1rem; height: 150px; text-align: center; border: 1px solid transparent; margin: 0px 1px 1px 0px;"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <h2
+                    class="emotion-8"
+                  >
+                    TV Shows
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+          >
+            <div
+              class="emotion-6"
+            >
+              <div
+                style="width: 100%; flex: 1; background-image: url(/img/ba_pro_wri.jpg); color: white; padding: 1rem; height: 150px; text-align: center; border: 1px solid transparent; margin: 0px 1px 1px 0px;"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <h2
+                    class="emotion-8"
+                  >
+                    Video Games
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+          >
+            <div
+              class="emotion-6"
+            >
+              <div
+                style="width: 100%; flex: 1; background-image: url(/img/ba_pro_wri.jpg); color: white; padding: 1rem; height: 150px; text-align: center; border: 1px solid transparent; margin: 0px 1px 1px 0px;"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <h2
+                    class="emotion-8"
+                  >
+                    Podcasts
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+          >
+            <div
+              class="emotion-6"
+            >
+              <div
+                style="width: 100%; flex: 1; background-image: url(/img/ba_pro_wri.jpg); color: white; padding: 1rem; height: 150px; text-align: center; border: 1px solid transparent; margin: 0px 1px 1px 0px;"
+              >
+                <div
+                  class="emotion-7"
+                >
+                  <h2
+                    class="emotion-8"
+                  >
+                    Festivals
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div
-      class="emotion-6"
+      class="emotion-24"
     />
   </div>
 </div>

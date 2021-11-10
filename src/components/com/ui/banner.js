@@ -3,16 +3,17 @@ import Stack from 'com/ui/stack';
 import TextLink from "core/ui/link"
 import { Title, Description, Footer } from 'style/banner'
 import Carousel from 'com/ui/carousel'
+import Tiles from 'com/ui/tiles'
 import LinkButton from 'com/ui/link-button';
 
 const Banner = function( props ){
-    const { title, description, carousel, footer, hero, actions, data, item, showData } = props;
+    const { title, description, carousel, footer, hero, actions, data, item, showData, renderer="carousel", xs=12, sm=6, md=4, lg=3 } = props;
     return (
       <Stack>
         <Title>{title}</Title>
         {description &&  <Description>{description}</Description>}
         {!hero && carousel }
-        {!hero && showData === true && !carousel && Data( "carousel", data, item ) }
+        {!hero && showData === true && !carousel && Data( renderer, data, item, xs, sm, md, lg ) }
         {!hero &&
           <Footer>
             {actions && actions.map( (item, idx) => 
@@ -27,13 +28,33 @@ const Banner = function( props ){
     )
 }
 
-const Data = function( renderer, data, item ){
-  return (
-      <Carousel 
-        data={data}
-        renderItem={ item }
-      />            
-  )
+const Data = function( renderer, data, item, xs, sm, md, lg ){
+
+  switch(renderer) {
+    case "tiles":
+      return (
+        <div style={{margin: "0 3rem"}}>
+          <Tiles 
+            data={data}
+            item={ item }
+            xs={xs} sm={sm} md={md} lg={lg}
+            noPaging={true}
+            noPadding={true}
+          />
+        </div>
+      )
+    case "carousel":
+    default:
+      return (
+          <Carousel 
+            data={data}
+            xs={xs} sm={sm} md={md} lg={lg}
+            renderItem={ item }
+          />            
+      )
+  }
+
 }
+
 
 export default Banner;

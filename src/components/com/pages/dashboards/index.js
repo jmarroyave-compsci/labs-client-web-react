@@ -15,6 +15,8 @@ export default function Layout( props ){
 		  description={<Quote tag="data"/>}			
 	      data={getData()}
 	      item={(data) => <Item full {...data} />}
+	      renderer={"tiles"}
+	      xs={6} sm={6} md={4} lg={4}
 	    />
 	)
 }	
@@ -26,5 +28,6 @@ function getData(){
 		{ name: "TV Shows", url: "/tv-shows", img: "/img/ba_pro_wri.jpg"},
 		{ name: "Video Games", url: "/video-games", img: "/img/ba_pro_wri.jpg"},
 		{ name: "Podcasts", url: "/podcasts", img: "/img/ba_pro_wri.jpg"},
+		{ name: "Festivals", url: "/movies/festivals", img: "/img/ba_pro_wri.jpg"},
 	]
 }

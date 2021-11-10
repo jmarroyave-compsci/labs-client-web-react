@@ -17,15 +17,27 @@
 			}				
 		},
 		"tv-shows" : {
-			"____tt0454876"  : {}
+			"____tt0454876"  : {},
+			"stories" : {
+				"actors" : {},
+				"directors" : {},
+				"remakes" : {},
+				"writers" : {}
+			}				
 		},
 		"video-games" : {
+			"stories" : {
+			},
 			"____tt0022215"  : {}
 		},
 		"podcasts" : {
+			"stories" : {
+			},
 			"____0002da5f-49a2-31ba-b44c-cdeabdf113cb"  : {}
 		},
 		"people" : {
+			"stories" : {
+			},
 			"____nm0000158"  : {}
 		},
 		"search" : {

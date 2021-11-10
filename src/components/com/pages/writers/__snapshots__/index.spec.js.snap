@@ -439,7 +439,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                   class="emotion-11"
                 >
                   <div
-                    class="MuiGrid-root MuiGrid-container"
+                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-center"
                     style="width: 100%;"
                   >
                     <div
@@ -862,7 +862,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                   <span
                     class="emotion-90"
                   >
-                    Movies
+                    Movie Remakes
                   </span>
                 </div>
                 <div
@@ -871,7 +871,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                   <span
                     class="emotion-90"
                   >
-                    People
+                    Movie Directors
                   </span>
                 </div>
                 <div
@@ -880,7 +880,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                   <span
                     class="emotion-90"
                   >
-                    Podcasts
+                    Movie Producers
                   </span>
                 </div>
                 <div
@@ -889,7 +889,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                   <span
                     class="emotion-90"
                   >
-                    Music Podcasts
+                    Movie Actors
                   </span>
                 </div>
               </div>

@@ -409,7 +409,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                   class="emotion-8"
                 >
                   <div
-                    class="MuiGrid-root MuiGrid-container"
+                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-center"
                     style="width: 100%;"
                   >
                     <div
@@ -832,7 +832,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                   <span
                     class="emotion-87"
                   >
-                    Movies
+                    Movie Remakes
                   </span>
                 </div>
                 <div
@@ -841,7 +841,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                   <span
                     class="emotion-87"
                   >
-                    People
+                    Movie Directors
                   </span>
                 </div>
                 <div
@@ -850,7 +850,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                   <span
                     class="emotion-87"
                   >
-                    Podcasts
+                    Movie Producers
                   </span>
                 </div>
                 <div
@@ -859,7 +859,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                   <span
                     class="emotion-87"
                   >
-                    Music Podcasts
+                    Movie Actors
                   </span>
                 </div>
               </div>

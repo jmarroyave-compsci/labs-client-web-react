@@ -1,9 +1,9 @@
 import React from 'react';
-import Layout from 'com/pages/soon/page';
+import Layout from 'com/pages/stories';
 
 const Page = ( props ) => {
   return (
-      <Layout breadcrumbs="/people/stories"/> 
+      <Layout breadcrumbs="/people/stories" tag="people"  /> 
   )
 }
 

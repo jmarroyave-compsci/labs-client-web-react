@@ -8,27 +8,37 @@ import Paging from 'com/ui/paging';
 import { Frame, Item } from 'style/boxes'
 
 export default function Grid( props ){
-    var { data, loading, url, skeleton, item, onPageChange, page } = props;
+    var { data, loading, url, skeleton, item, onPageChange, page, xs=12, sm=6, md=6, lg=4, noPaging=false, noPadding } = props;
 
     data = (data && data.length > 0) ? data : [1,2,3,4,5,6];
-    
+
+    const itemWrapper = ( data ) => (noPadding) ? data : <Item>{data}</Item>
+
+    var output = (
+        <GridContainer justify='center' fill style={{width: '100%'}}>
+          {data.map( (_item, idx) => 
+            <GridItem key={idx} xs={xs} sm={sm} md={md} lg={lg}>
+                {itemWrapper((loading) ?
+                  (skeleton) ? skeleton : <Placeholder/>
+                  : 
+                  (item) ? item(_item) : null
+                )}          
+            </GridItem>
+          )}
+        </GridContainer>
+    )
+
+    if(!noPaging){
+      output = (
+        <Paging data={ data } url={url} onPageChange={onPageChange} page={page} loading={loading}>
+          {output}
+        </Paging>
+      )      
+    }
+
     return (
       <Frame>
-        <Paging data={ data } url={url} onPageChange={onPageChange} page={page} loading={loading}>
-          <GridContainer justifyContent='center' fill style={{width: '100%'}}>
-            {data.map( (_item, idx) => 
-              <GridItem key={idx} xs={12} sm={6} md={6} lg={4}>
-                <Item>
-                  {(loading) ?
-                    (skeleton) ? skeleton : <Placeholder/>
-                    : 
-                    (item) ? item(_item) : null
-                  }          
-                </Item>  
-              </GridItem>
-            )}
-          </GridContainer>
-        </Paging>
+        {output}
       </Frame>
     )
 }

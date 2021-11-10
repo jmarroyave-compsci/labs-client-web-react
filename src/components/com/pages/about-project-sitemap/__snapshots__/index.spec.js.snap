@@ -1338,7 +1338,7 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                   <span
                     class="emotion-13"
                   >
-                    Movies
+                    Movie Remakes
                   </span>
                 </div>
                 <div
@@ -1347,7 +1347,7 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                   <span
                     class="emotion-13"
                   >
-                    People
+                    Movie Directors
                   </span>
                 </div>
                 <div
@@ -1356,7 +1356,7 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                   <span
                     class="emotion-13"
                   >
-                    Podcasts
+                    Movie Producers
                   </span>
                 </div>
                 <div
@@ -1365,7 +1365,7 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                   <span
                     class="emotion-13"
                   >
-                    Music Podcasts
+                    Movie Actors
                   </span>
                 </div>
               </div>
