@@ -16,7 +16,7 @@ export default function Layout( props ){
 	      data={getData()}
 	      item={(data) => <Item full {...data} />}
 	      renderer={"tiles"}
-	      xs={6} sm={6} md={4} lg={4}
+	      xs={12} sm={6} md={4} lg={4}
 	    />
 	)
 }	
