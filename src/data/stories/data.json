@@ -1,22 +1,19 @@
-
-const data = [
-	{ title: "Movie Awards", url: "/movies/stories/awards", tags : ["movies"] },
-	{ title: "Movie Remakes", url: "/movies/stories/remakes", tags : ["movies"] },
-	{ title: "Movie Directors", url: "/movies/stories/directors", tags : ["movies"] },
-	{ title: "Movie Producers", url: "/movies/stories/producers", tags : ["movies"] },
-	{ title: "Movie Actors", url: "/movies/stories/actors", tags : ["movies"] },
-	{ title: "Movie Writers", url: "/movies/stories/writers", tags : ["movies"] },
-	{ title: "Movies Dashboard", url: "/movies", tags : ["movies"] },
-	{ title: "People Dashboard", url: "/people", tags : ["people"] },
-	{ title: "Podcasts Dashboard", url: "/podcasts", tags : ["podcasts"] },
-	{ title: "Music Podcasts", url: "/podcasts/stories/music", tags : ["podcasts", "music"] },
-	{ title: "TV Shows Dashboard", url: "/tv-shows", tags : ["tv-shows"] },
-	{ title: "TV Shows Remakes", url: "/tv-shows/stories/remakes", tags : ["tv-shows"] },
-	{ title: "TV Shows Directors", url: "/tv-shows/stories/directors", tags : ["tv-shows"] },
-	{ title: "TV Shows Writers", url: "/tv-shows/stories/writers", tags : ["tv-shows"] },
-	{ title: "TV Shows Actors", url: "/tv-shows/stories/actors", tags : ["tv-shows"] },
-	{ title: "Video Games Dashboard", url: "/video-games", tags : ["video-games"] },
-	{ title: "Festivals Dashboard", url: "/movies/festivals", tags : ["movies", "festivals"] },
+[
+	{ "title": "Movie Awards", "url": "/movies/stories/awards", "tags" : ["movies"] },
+	{ "title": "Movie Remakes", "url": "/movies/stories/remakes", "tags" : ["movies"] },
+	{ "title": "Movie Directors", "url": "/movies/stories/directors", "tags" : ["movies"] },
+	{ "title": "Movie Producers", "url": "/movies/stories/producers", "tags" : ["movies"] },
+	{ "title": "Movie Actors", "url": "/movies/stories/actors", "tags" : ["movies"] },
+	{ "title": "Movie Writers", "url": "/movies/stories/writers", "tags" : ["movies"] },
+	{ "title": "Movies Dashboard", "url": "/movies", "tags" : ["movies"] },
+	{ "title": "People Dashboard", "url": "/people", "tags" : ["people"] },
+	{ "title": "Podcasts Dashboard", "url": "/podcasts", "tags" : ["podcasts"] },
+	{ "title": "Music Podcasts", "url": "/podcasts/stories/music", "tags" : ["podcasts", "music"] },
+	{ "title": "TV Shows Dashboard", "url": "/tv-shows", "tags" : ["tv-shows"] },
+	{ "title": "TV Shows Remakes", "url": "/tv-shows/stories/remakes", "tags" : ["tv-shows"] },
+	{ "title": "TV Shows Directors", "url": "/tv-shows/stories/directors", "tags" : ["tv-shows"] },
+	{ "title": "TV Shows Writers", "url": "/tv-shows/stories/writers", "tags" : ["tv-shows"] },
+	{ "title": "TV Shows Actors", "url": "/tv-shows/stories/actors", "tags" : ["tv-shows"] },
+	{ "title": "Video Games Dashboard", "url": "/video-games", "tags" : ["video-games"] },
+	{ "title": "Festivals Dashboard", "url": "/movies/festivals", "tags" : ["movies", "festivals"] }
 ]
-
-export default data;
