@@ -50,27 +50,31 @@ const getPadding = (target, props) => {
 }
 
 const getStyle = ( style, theme ) => {
+	const currentColor = ( theme.palette.mode === "light" ) ? theme.palette.primary.light :  theme.palette.primary.dark;
+	const _currentColor = ( theme.palette.mode === "dark" ) ? theme.palette.primary.light :  theme.palette.primary.dark;
 
+
+	console.log(currentColor, _currentColor)
 	switch( style ){
 		case "section-0":
 			return {
-				background: `linear-gradient(60deg, ${theme.palette.primary.main ?? "black"} 0%, #000 150%)`,
-			    color: theme.palette.primary.contrastText ?? "black",   
+				background: `linear-gradient(60deg, ${theme.palette.primary.main} 75%, ${theme.palette.common.black} 150%)`,
+			    color: theme.palette.primary.contrastText,   
 			}
 		case "section-1":
 			return {
-				background: `linear-gradient(60deg, ${theme.palette.primary.main  ?? "black"} 0%, rgba(85,85,85,1) 100%)`,
-			    color: theme.palette.primary.contrastText ?? "black",   
+				background: `linear-gradient(60deg, ${theme.palette.primary.main} 5%, ${theme.palette.common.black} 100%)`,
+			    color: theme.palette.primary.contrastText,   
 			}
-		case "section-2":
+		case "section-dark":
 			return {
-				background: 'linear-gradient(180deg, theme.pal 0%, rgba(255,245,245,1) 125%)',
-			    color: '#444',   
+				background: `linear-gradient(180deg, ${_currentColor} 0%, ${theme.palette.background.paper} 125%)`,
+			    color: theme.palette.getContrastText(_currentColor),   
 			}
 		case "section-3":
 			return {
-				background: 'linear-gradient(180deg, #fff 0%, rgba(215,215,215,1) 100%)',
-			    color: '#333',   
+				background: `linear-gradient(180deg, ${currentColor} 50%, ${theme.palette.common.white} 190%)`,
+			    color: theme.palette.getContrastText(currentColor),   
 			}
 		default: 
 			return {

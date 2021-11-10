@@ -885,12 +885,12 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
 
 .emotion-93 {
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.87);
+  color: inherit;
   background-color: transparent;
   -webkit-text-decoration: underline;
   text-decoration: underline;
   text-decoration-style: dotted;
-  text-decoration-color: rgba(0, 0, 0, 0.87);
+  text-decoration-color: inherit;
   text-decoration-thickness: 1px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -943,16 +943,20 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
 }
 
 .emotion-144 {
-  padding: 0.85rem;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #fff;
+  padding: 1rem;
 }
 
 .emotion-145 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
+  color: inherit;
 }
 
 .emotion-146 {
   font-size: 0.9rem;
+  color: inherit;
 }
 
 <div>

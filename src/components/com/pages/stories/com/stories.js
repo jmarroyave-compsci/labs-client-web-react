@@ -28,6 +28,7 @@ export default function Stories( props ){
             <Tiles 
               data={data.filter( d => d.tags.includes(tag))}
               item={(data) => <Item {...data}/>}
+              xs={12} sm={6} md={4} lg={3}
             />
           </Frame>
         )}

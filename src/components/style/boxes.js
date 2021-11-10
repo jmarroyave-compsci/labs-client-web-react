@@ -16,14 +16,15 @@ const _ItemFrame = styled('div')( ( {theme} )=> ({
   flexGrow: 1,
   overflow: 'hidden',
   width: '100%',
-  backgroundColor: theme.palette.background.d,
+  color: theme.palette.text.primary,
+  backgroundColor: 'transparent',
 }));
 
-const _Item = styled('div')({
+const _Item = styled('div')( (theme)=>({
   display: 'flex', 
   flexGrow: 1,
   width: '100%',
-});
+}));
 
 export const Item = ( props ) =>{
   const paper = (props.paper) ? props.paper : true;

@@ -3,6 +3,7 @@ import React, { useEffect} from 'react';
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 // MUI Core
 import { ServerStyleSheets } from '@material-ui/core/styles';
+import config from 'app/config'
 
 export default class MyDocument extends Document {
   render() {
@@ -11,7 +12,7 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-          <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" /> 
+          <link rel="stylesheet" type="text/css" href={`${config.APP.BASE_PATH}/css/font-awesome.min.css`} /> 
         </Head>
         <body>
           <Main />

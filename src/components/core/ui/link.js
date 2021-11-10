@@ -12,11 +12,11 @@ const LinkBox = styled('div')({
 
 const LinkText = styled('span')( ( { theme } ) => ({
     cursor: 'pointer',
-    color: theme.palette.text.primary,
+    color: 'inherit',
     backgroundColor: 'transparent',
     textDecoration: 'underline',
     textDecorationStyle: 'dotted',
-    textDecorationColor: theme.palette.text.primary,
+    textDecorationColor: 'inherit',
     textDecorationThickness: '1px',
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",

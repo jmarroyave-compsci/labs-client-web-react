@@ -1,18 +1,33 @@
 import React from 'react'
+import { styled } from '@mui/material/styles';
 import Card from 'core/ui/cards/media';
 import Link from 'core/ui/link'
-import { Title, Padding } from 'style/detail';
+import { Title } from 'style/detail';
+import config from 'app/config'
 
-export default function MovieItem( props ){
+const Tile = styled('div')( ({theme, img}) =>({
+  width: '100%',
+  height: '150px',
+  padding: '1rem',
+  color: theme.palette.primary.contrastText, 
+  backgroundColor: theme.palette.background.paper, 
+  backgroundImage: `url('${config.APP.BASE_PATH}${img}')`, 
+  margin: '0 1px 1px 0',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  flex: 1,
+}));
+
+
+export default function TileItem( props ){
   const { id, name, url, img } = props;
 
   return (
     <Link box href={url}>
-      <div style={{width: '100%', flex: 1, backgroundImage: `url(${img})`, color: 'white', padding: '1rem', height: '150px', textAlign: 'center', border:'1px solid transparent', margin: '0 1px 1px 0'}}>
-        <Padding>
+      <Tile img={img}>
           <Title>{name}</Title>
-        </Padding>
-      </div>
+      </Tile>
     </Link>    
     
   )
