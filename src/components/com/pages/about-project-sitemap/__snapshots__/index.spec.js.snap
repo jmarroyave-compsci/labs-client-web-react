@@ -86,13 +86,10 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
   margin: 0;
   list-style: none;
   outline: 0;
-  height: 240px;
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  max-width: 400px;
-  overflow-y: auto;
 }
 
 .emotion-10 {

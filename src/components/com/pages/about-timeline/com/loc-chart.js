@@ -16,11 +16,11 @@ class Chart extends React.Component {
 
   renderMultiChart() {
     var data = this.props.data;
+    var margin = 50;
 
-    var width = this.props.parentWidth;
+    var width = this.props.parentWidth - margin;
     width = (width > 500) ? 500 : width;
     var height = this.props.height;
-    var margin = 50;
     var duration = 250;
 
     var lineOpacity = "0.25";
