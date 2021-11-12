@@ -7,13 +7,20 @@ const GET_DATA = gql`
   query GetData
   {
     dashboardGame {
-      classification
-      country
-      genre
-      rating
       total
       type
-      yearReleased
+      releaseYear
+      duration
+      genres
+      awards
+      countries
+      ratings
+      production
+      boxOffice
+      cast
+      directors
+      producers
+      writers
     }
   }
 `

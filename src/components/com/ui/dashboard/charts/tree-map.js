@@ -1,5 +1,6 @@
 import React, { useMemo } from 'react';
 import _TreeMap from "core/ui/charts/tree_map";
+import * as format from 'core/lib/format'
 
 export default function TreeMap( props ) {
     const { data, ranges, title } = props;
@@ -30,16 +31,16 @@ export default function TreeMap( props ) {
     }
 
     var _data = null;
-    if(data && data.length > 0){
+    if(data){
       _data = useMemo(() => {
-        return parseMapToData(title, data, ranges);
+        const d = parseMapToData(title, data, ranges);
+        return d;
       }, [ title, data, ranges] )
     }
 
+    if(!_data) return null;
 
     return (
-      <div>
-        <_TreeMap {...this.props} data={_data}/>
-      </div>
+      <_TreeMap {...props} data={_data}/>
     )
 }

@@ -16,3 +16,19 @@ const GET_DATA = gql`
     }
   }
 `
+
+const GET_DASHBOARD = gql`
+  query GetData
+  {
+    dashboardFestivals {
+      total
+      startYear
+      startDecade
+      countries
+      continent
+      withAwards
+      awardYear
+      awardedByYear
+    }
+  }
+`

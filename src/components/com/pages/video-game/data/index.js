@@ -21,12 +21,6 @@ const GET_DATA = gql`
     }
     releasedDate
     classification
-    director{
-      id
-    }
-    cast {
-      id
-    }
     references {
       imdb
     }

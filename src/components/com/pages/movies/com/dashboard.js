@@ -9,7 +9,7 @@ import { Title } from 'style/infography'
 class Dashboard extends React.Component {
   render(){
     const { data, loading } = this.props;
-    const { total, awards, classification, country, genre, type, rating, yearReleased, streamBy } = data || {};
+    const { total, awards, writers, actors, producers, directors, countries, duration, genres, production, ratings, releaseYear, type } = data || {};
 
     const tileIndicator = (title, data, icon) =>               
               <GridItem xs={12} sm={6} md={6} lg={4} style={{paddingRight: '1rem'}}>
@@ -20,6 +20,7 @@ class Dashboard extends React.Component {
                 <Dataset loading={loading} title={title} data={(data) ? data : {}} ranges={ranges}/>
               </GridItem>
 
+          console.log(data)
 
     return (
       <Stack spacing={2}>
@@ -30,13 +31,25 @@ class Dashboard extends React.Component {
 
         <Title>segments</Title>
         <GridContainer justifyContent='center' fill>
-          {tileChart("by type", type, [])}
-          {tileChart("by genre", genre, [25000])}
-          {tileChart("rated by", rating, [])}
-          {tileChart("released", yearReleased, [5000, 10000])}
-          {tileChart("classification", classification, [])}
-          {tileChart("from", country, [])}
+          {tileChart("type", type, [])}
+          {tileChart("genre", genres, [])}
+          {tileChart("countries", countries, [10])}
+          {tileChart("ratings", ratings, [])}
+          {tileChart("released", releaseYear, [])}
+          {tileChart("duration", duration, [10])}
+          {tileChart("production", production, [])}
         </GridContainer>
+
+
+        <Title>crew per movie</Title>
+          <GridContainer justifyContent='center' fill>
+              {tileChart("actors", actors, [10, 50, 250, 500])}
+              {tileChart("directors", directors, [10, 50, 100, 250, 500])}
+              {tileChart("producers", producers, [10, 50, 100, 250, 500])}
+              {tileChart("writers", writers, [10, 50, 100, 250, 500])}
+          </GridContainer>
+
+
       </Stack>
     )
   }

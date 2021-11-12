@@ -11,17 +11,15 @@ import Button from '@material-ui/core/Button';
 import Avatar from '@material-ui/core/Avatar';
 import GoogleIcon from '@mui/icons-material/Google';
 import CloseIcon from '@mui/icons-material/Close';
-import Snackbar from '@material-ui/core/Snackbar';
+
+import { useDispatch } from 'react-redux'
+import { showMessage } from 'app' 
 
 import { firebaseAuth, googleProvider } from 'app/config/providers/google-firebase/auth';
 
 const initialState = {
   logedIn : false,
   logingIn : false,
-  error : {
-    show: false,
-    message: "", 
-  },
 }
 
 function reducer(state, action){
@@ -43,26 +41,14 @@ function reducer(state, action){
         ...state,
         logingIn : false,
         logedIn: false,
-        error: {
-          show: true,
-          message : action.payload.errMessage,
-        },
-      };
-    case "CLEAR_ERRORS":
-      return {
-        ...state,
-        error: {
-          show: false,
-          message : "",
-        },
       };
     default:
       throw new Error(`operation ${ action.type?.toUpperCase() } not implemented`)      
   }
 }
 
-
 const User = ( props ) => {
+  const appDispatch = useDispatch();
   const [ state, dispatch ] = useReducer( reducer, initialState ) 
 
   const clickLogingIn = () => {
@@ -75,37 +61,13 @@ const User = ( props ) => {
 
   const onLoginFailure = ( error ) => {
     //console.log("error in login", error.message )
-    dispatch({ type: "LOGIN_FAILURE", payload: { errMessage : `Error while trying to login`, tech: error.message } }) 
+    dispatch({ type: "LOGIN_FAILURE", payload: {} }) 
+    const err = { errMessage : `Error while trying to login`, tech: error.message }
+    appDispatch( showMessage( { message: err.errMessage } )  )
   }
-
-
-  const handleCloseSnackbar = () => {
-    dispatch( { type: "CLEAR_ERRORS" } )
-  }
-
-  const action = (
-    <React.Fragment>
-      <IconButton
-        size="small"
-        aria-label="close"
-        color="inherit"
-        onClick={ handleCloseSnackbar }
-      >
-        <CloseIcon fontSize="small" />
-      </IconButton>
-    </React.Fragment>
-  );
-
 
   return (
     <>
-      <Snackbar
-        open={state.error.show}
-        autoHideDuration={5000}
-        onClose={ handleCloseSnackbar }
-        message={state.error.message}
-        action={action}
-      />
       {state.logedIn && 
         <Avatar alt={state.user.displayName} src={state.user.photoURL} />
       }

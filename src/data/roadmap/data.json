@@ -1331,6 +1331,138 @@
           "level": 3,
           "children": null
         }
+      ],
+      "Day 2": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[DB] Data Import",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] How much is pre-rendered",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] The project's timeline, the screenshots",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] minor fixes",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 3": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] minor fixes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] See also and stories links",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[DB] Data Import",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 4": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Local preferenes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Community ratings",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Community comments",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Quiz",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Global loading",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Grid animations",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Login",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Not found in current data",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] horizontal lists",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] minor fixes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[DB] Data Import",
+          "level": 3,
+          "children": null
+        }
       ]
     }
   }

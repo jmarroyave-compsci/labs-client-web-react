@@ -8,7 +8,7 @@ import { Title } from 'style/infography'
 
 function Dashboard( props ){
   const { data, loading, route } = props;
-  const { total, category, language, yearCreated, country } = data || {};
+  const { total, category, language, author, yearCreated, countries, languages } = data || {};
 
   const tileIndicator = (title, data, icon) =>               
             <GridItem xs={12} sm={6} md={6} lg={3} style={{paddingRight: '1rem'}}>
@@ -28,10 +28,10 @@ function Dashboard( props ){
 
         <Title>segments</Title>
           <GridContainer justifyContent='center' fill>
-              {tileChart("category", category, [10, 100, 250])}
-              {tileChart("language", language, [10, 100])}
-              {tileChart("country", country, [10, 100])}
-              {tileChart("created", yearCreated, [])}
+              {tileChart("category", category, [10, 100])}
+              {tileChart("languages", languages, [10, 50])}
+              {tileChart("countries", countries, [10, 50])}
+              {tileChart("author", author, [10, 35])}
           </GridContainer>
       </Stack>
   )

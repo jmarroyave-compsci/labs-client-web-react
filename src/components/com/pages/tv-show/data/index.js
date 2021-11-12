@@ -24,12 +24,6 @@ const GET_DATA = gql`
       name
       yearAdded
     }
-    director{
-      id
-    }
-    cast {
-      id
-    }
     awards {
       category
       festival{

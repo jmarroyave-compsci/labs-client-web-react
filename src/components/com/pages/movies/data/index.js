@@ -7,15 +7,20 @@ const GET_DATA = gql`
   query GetData
   {
     dashboardMovies {
-      awards
-      classification
-      country
-      genre
-      rating
-      streamBy
       total
       type
-      yearReleased
+      releaseYear
+      duration
+      genres
+      awards
+      countries
+      ratings
+      production
+      boxOffice
+      cast
+      directors
+      producers
+      writers
     }
   }
 `

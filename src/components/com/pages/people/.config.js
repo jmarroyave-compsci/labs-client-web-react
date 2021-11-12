@@ -4,7 +4,7 @@ export default {
 	},
 	page: {
 		title: "People",
-		description: "a dashboard with information from over ??? people, their professions and age distribution",
+		description: "a dashboard with information from people, their professions and other distributions",
 		url: () => `/people`,
 	},
 	banner: {

@@ -8,7 +8,7 @@ export const getAll = function(){
 
 export const getBy = ( ID, breadcrumbs ) =>{	
 	var entity = breadcrumbs?.split("/")?.slice(1)[0] ?? "?";
-	console.log("stories:", entity, ID, breadcrumbs)
+	//console.log("stories:", entity, ID, breadcrumbs)
 	return getAll();
 }
 

@@ -20,12 +20,13 @@ import { toggleDrawer } from 'app';
 function Toolbar( props ){
     const appState = useSelector(( state ) => state.app )
     const dispatch = useDispatch();  
-    const { classes, notifications } = props;   
+    const { classes, notifications, loading } = props;   
    
     const _toggleDrawer = () => dispatch( toggleDrawer() ) 
 
     return (
         <AppBar position="fixed" open={appState.drawer.open}>
+          {appState.loading.show && <LinearProgress />}
           <MuiToolbar
             sx={{
               pr: '24px',

@@ -9,7 +9,7 @@ const GET_DATA = gql`
     storiesPeopleActors(page: $page){
       id
       name
-      directed {
+      acted {
         id
         title
         releasedDate

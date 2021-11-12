@@ -3,7 +3,6 @@ import Grid from 'com/ui/grid';
 
 export default function Tiles( props ){
     var { data, item, xs=12, sm=6, md=6, lg=4 } = props;
-    console.log(data)
     return (
           <Grid
             data={data}

@@ -5,7 +5,7 @@ export default {
 	page: {
 		title: "Writers",
 		description: "",
-		url: (entity) => `/${entity}/stories/writers`,
+		url: ({entity}) => `/${entity}/stories/writers`,
 	},
 	banner: {
 		showData : false,

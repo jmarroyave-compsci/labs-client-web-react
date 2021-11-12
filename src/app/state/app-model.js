@@ -13,9 +13,17 @@ const initialState = {
     mode: "light",
   },
   nav: nav,
-  loading: false,
+  loading : {
+      show: false,
+      queue: [],
+  },
   drawer: { 
     open: false,
+  },
+  messages : {
+    show: false,
+    message : "",
+    duration: 5000,
   },
 }
 
@@ -41,8 +49,20 @@ export const AppModel = createSlice({
     updateUsers: (state, action) => {
       state.users = action.payload.users;
     },
+    setLoading: (state, action) => {
+      const { status, sender }  = action.payload;
+      if( status === true ) state.loading.queue.push(sender);
+      else state.loading.queue = state.loading.queue.filter( f => f !== sender )
+      state.loading.show = (state.loading.queue.length !== 0)
+
+    },
+    showMessage: (state, action) => {
+      const { message }  = action.payload;
+      state.messages.message = message;
+      state.messages.show = (message && message.trim() !== "") ? true : false;
+    },
   },
 })
 
-export const { setPage, toggleThemeMode, toggleDrawer, initializeApp, updateUsers } = AppModel.actions
+export const { setPage, toggleThemeMode, toggleDrawer, initializeApp, updateUsers, setLoading, showMessage } = AppModel.actions
 export default AppModel.reducer

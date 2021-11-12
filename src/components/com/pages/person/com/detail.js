@@ -19,6 +19,8 @@ function Dashboard( props ){
   var { data, loading } = props;
   data = (data) ? data : {};
 
+
+  console.log(data)
   return (
     <Stack>
       <Media src={data.image}/>

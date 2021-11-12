@@ -53,8 +53,6 @@ const getStyle = ( style, theme ) => {
 	const currentColor = ( theme.palette.mode === "light" ) ? theme.palette.primary.light :  theme.palette.primary.dark;
 	const _currentColor = ( theme.palette.mode === "dark" ) ? theme.palette.primary.light :  theme.palette.primary.dark;
 
-
-	console.log(currentColor, _currentColor)
 	switch( style ){
 		case "section-0":
 			return {

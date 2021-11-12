@@ -5,7 +5,7 @@ export default {
 	page: {
 		title: "Directors",
 		description: "",
-		url: (entity) => `/${entity}/stories/producers`,
+		url: ({entity}) => `/${entity}/stories/producers`,
 	},
 	banner: {
 		showData : false,

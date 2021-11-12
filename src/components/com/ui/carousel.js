@@ -11,8 +11,6 @@ export default function _Carousel( props ){
     loading = (loading || !data || !data.length )
     data = (data && data.length && data.length > 0) ? data : [1,2,3,4,5];
 
-    console.log(parseInt(12 / xs), parseInt(12 / sm))
-
     return (
       <Frame>
         <Carousel

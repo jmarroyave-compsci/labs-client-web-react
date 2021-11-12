@@ -33,7 +33,6 @@ const Data = function( renderer, data, item, xs, sm, md, lg ){
   switch(renderer) {
     case "tiles":
       return (
-        <div style={{margin: "0 3rem"}}>
           <Tiles 
             data={data}
             item={ item }
@@ -41,7 +40,6 @@ const Data = function( renderer, data, item, xs, sm, md, lg ){
             noPaging={true}
             noPadding={true}
           />
-        </div>
       )
     case "carousel":
     default:

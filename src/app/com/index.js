@@ -19,6 +19,7 @@ import Breadcrumbs from './breadcrumbs';
 import Typography from '@material-ui/core/Typography';
 import Footer from './footer'
 import Head from 'next/head';
+import Snackbar from './snackbar';
 
 import ReactGA from 'react-ga';
 
@@ -40,7 +41,7 @@ function App( props ) {
   }, [])
 
   return (
-    <>
+    <>          
       <Head>
         <title>{appState.pageTitle}</title>
         <meta name="theme-color" content={theme.palette.primary.main} />
@@ -48,8 +49,8 @@ function App( props ) {
       </Head>
       <ThemeProvider theme={ theme }>
         <CssBaseline />
-
         <Box sx={{ display: 'flex' }} style={{padding: 0, margin: 0}}>
+          <Snackbar/>
           <Toolbar/>
           <Drawer/>
           <Box

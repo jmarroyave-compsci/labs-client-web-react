@@ -31,8 +31,6 @@ const slice = createSlice({
         ...state.params,
         ...action.payload
       }
-      if(state.params.renderer == "banner" || state.params.page == 1) return;
-      Router.push(`${config.page.url()}/?page=${state.params.page}`, null, { shallow: true })        
     }
   },
   extraReducers: {

@@ -40,14 +40,14 @@ export default function Dataset( params ){
 Dataset.propTypes = {
   title: PropTypes.string,
   data: PropTypes.object,
-  format: PropTypes.oneOf(['text', 'graph', "tree"]),
+  format: PropTypes.oneOf(['table', 'chart', "tree"]),
   height: PropTypes.number,
 };
 
 Dataset.defaultProps = {
   title: "Title",
   data: {},
-  format: "text",
+  format: "table",
   ranges: [],
   height: 300,
 };

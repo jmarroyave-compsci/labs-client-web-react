@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useDispatch, useSelector } from 'react-redux'
 import PropTypes from 'prop-types';
 
-import { setPage } from 'app' 
+import { setPage, setLoading, showMessage } from 'app' 
 
 import Error from 'core/ui/error'
 import Cols2Layout from "layout/cols-2-layout";
@@ -23,6 +23,10 @@ export default function Layout( props ){
 
   state = ( props.data ) ? { data: props.data, params: {page: props.params.page} } : state;
 
+  useEffect( () => {
+    if(!state) return;
+    dispatch( setLoading( { status: state.loading, sender: config.automata.name } ) )
+  }, [state])
 
   useEffect( () => {
     if(!router) return;
@@ -38,7 +42,6 @@ export default function Layout( props ){
   }, [params.breadcrumbs, state])
 
   const fetch = ( params ) => {
-    //console.log("fetching", config.page.title, params)
     if(!props.fetch) return;
 
     if(props.data){
@@ -53,12 +56,8 @@ export default function Layout( props ){
     if(!isRouterReady) return;
     if( render === "banner" && !config.banner.showData ) return
 
-    //console.log(params, state)
-
-    fetch( params )
-    
+    fetch( params )    
   }, [ isRouterReady ])
-
 
   if(!render || render == "grid"){
     return <Error from={config.page.title} data="render property wasn't set"/>
@@ -69,7 +68,7 @@ export default function Layout( props ){
       config={props.config}
       render={render}
       state={state}
-      loading={( !isRouterReady || !state || state.loading || (props.fetch && !state.data) )}
+      loading={( !isRouterReady || !state || state.loading )}
       fetch={fetch}
       item={props.item}
       customDescription={props.customDescription}
@@ -83,14 +82,35 @@ export default function Layout( props ){
 
 function MultiLayout( props ){
   const dispatch = useDispatch();
-  const { config, error, data, item, noData, loading, mainCol, state, render, params, fetch } = props
+  const { config, item, mainCol, state, render, params, fetch } = props
+  var loading = props.loading;
   const title = config.page.title;
 
   const BANNER = <BannerLayout {...props} />
 
+  if( !loading ){
+    if( render === "detail" ){
+      if( state.data === null ){
+        dispatch( showMessage({ message: "this is a demo version, this record was filtered out to reduce the database size"}) )
+        loading = true;
+      }
+    }
+
+    if( render === "list" ){
+      if( state.data.length === 0 ){
+        dispatch( showMessage({ message: "data not found"}) )
+        loading = true;
+      }
+    }
+
+    if(state.error){
+      loading = true;
+    }
+  }
+
   return (
     <>
-      {error && <Error from={title} data={error.message}/>}
+      {state && state.error && <Error from={title} data={state.error.message}/>}
       {render === "banner" && BANNER }
       {render === "list" && 
         <Cols2Layout

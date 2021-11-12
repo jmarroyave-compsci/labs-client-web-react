@@ -7,10 +7,18 @@ const GET_DATA = gql`
   query GetData
   {
     dashboardPeople {
-      alive
-      profession
       total
-      yearBirth
+      birthYear
+      birthDecade
+      professionsPerPerson
+      professions
+      professionsByDecade
+      awards
+      directors
+      producers
+      actors
+      writers
     }
   }
 `
+

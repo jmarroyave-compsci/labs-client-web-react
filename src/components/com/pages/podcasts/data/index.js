@@ -7,11 +7,12 @@ const GET_DATA = gql`
   query GetData
   {
     dashboardPodcasts {
-      category
-      language
-      country
       total
-      yearCreated
+      author
+      countries
+      languages
+      category
+      subcategory
     }
 
   }

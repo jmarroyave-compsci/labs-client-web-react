@@ -4,7 +4,7 @@ export default {
 	},
 	page: {
 		title: "Podcasts",
-		description: "a dashboard with information from over 30K podcasts, their categories and language distribution",
+		description: "a dashboard with information from podcasts, their categories and language distribution",
 		url: () => `/podcasts`,
 	},
 	banner: {
