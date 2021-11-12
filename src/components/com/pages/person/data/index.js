@@ -26,17 +26,17 @@ query getPerson($id:String!) {
     directed {
       id
       title
-      releasedDate
+      releaseYear
     }
     wrote {
       id
       title
-      releasedDate
+      releaseYear
     }
     acted {
       id
       title
-      releasedDate
+      releaseYear
     }
   }
 }

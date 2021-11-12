@@ -37,7 +37,7 @@ export default function Dashboard( props ){
 
       <Frame>
         <SubTitle>general information</SubTitle>
-        <Field title="Released" data={data.releasedDate} format="year"/>
+        <Field title="Released" data={data.releaseYear}/>
         <Field title="Duration" data={data.duration} sufix="mins"/>
         <Field title="Classification" data={data.classification}/>
         <Field title="Language" data={data.language}/>

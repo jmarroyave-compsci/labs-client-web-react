@@ -1,10 +1,8 @@
 import React from 'react'
 import { Frame } from 'style/boxes'
 import { SubTitle, Small } from 'style/detail'
-import Link from 'com/entities/movie/link'
-import GridContainer from 'core/ui/layout/grid_container';
-import GridItem from 'core/ui/layout/grid_item';
-import Date from "core/ui/date";
+import HList from 'com/ui/hlist';
+import Item from 'com/entities/movie/item'
 
 function Movies( props ){
   const { data, loading, type, tiny } = props;
@@ -18,13 +16,10 @@ function Movies( props ){
   return (
     <Frame>
       {!tiny && subtitle}
-      <GridContainer>
-      {movies.map( (item, key) => 
-        <GridItem key={key} xs={12} sm={12} md={6} lg={4}>
-          <div><Link id={item.id}><div>{item.title} <Small>(<Date value={item.releasedDate} format="YYYY"/>)</Small></div></Link></div>
-        </GridItem>
-      )}
-      </GridContainer>
+      <HList
+        data={movies}
+        item={(item) => <Item format="mini" {...item} />}
+      />
       {tiny && data.length > movies.length && <Small>and {data.length - movies.length} more</Small>}
     </Frame>
   )

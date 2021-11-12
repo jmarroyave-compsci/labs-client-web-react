@@ -25,7 +25,34 @@ const initialState = {
     message : "",
     duration: 5000,
   },
+  credentials : {
+    loggedIn: false,
+    user: {
+      avatar : null,
+      name: null,
+    },
+  },
 }
+
+function restoreState(){
+  const restoreLocalStorage = ( key ) => (localStorage.getItem(key)) ? JSON.parse(localStorage.getItem(key)) : initialState[key]
+  const restoreSessionStorage = ( key ) => (sessionStorage.getItem(key)) ? JSON.parse(sessionStorage.getItem(key)) : initialState[key]
+  const state = {} 
+
+  state.theme = restoreLocalStorage("theme")
+  state.credentials = restoreSessionStorage("credentials")
+
+  return state;
+}
+
+function saveState( st ){
+  const saveLocalStorage = ( key ) => localStorage.setItem(key, JSON.stringify(st[key]))
+  const saveSessionStorage = ( key ) => sessionStorage.setItem(key, JSON.stringify(st[key]))
+
+  saveLocalStorage("theme")
+  saveSessionStorage("credentials")
+}
+
 
 export const AppModel = createSlice({
   name: 'app',
@@ -33,6 +60,14 @@ export const AppModel = createSlice({
   reducers: {
     initializeApp: (state, action) => {
       const [ webSocket ] = initializeWebSockets( action.payload.dispatch );
+      const savedState = restoreState();
+      state = {
+        ...state,
+        ...savedState
+      }
+
+      //console.log("initial state", state)
+      return state;
     },
     setPage: (state, action) => {
       const { title, breadcrumbs, pageTitle } = action.payload
@@ -45,6 +80,7 @@ export const AppModel = createSlice({
     },
     toggleThemeMode: (state, action) => {
       state.theme.mode = ( state.theme.mode === "light" ) ? "dark" : "light";
+      saveState(state);
     },
     updateUsers: (state, action) => {
       state.users = action.payload.users;
@@ -61,8 +97,21 @@ export const AppModel = createSlice({
       state.messages.message = message;
       state.messages.show = (message && message.trim() !== "") ? true : false;
     },
+    logIn: (state, action) => {
+      const { name, avatar }  = action.payload;
+      state.credentials.loggedIn = true;
+      state.credentials.user.name = name;
+      state.credentials.user.avatar = avatar;
+      saveState(state);
+    },
+    logOut: (state, action) => {
+      state.credentials.loggedIn = false;
+      state.credentials.user.name = null;
+      state.credentials.user.avatar = null;
+      saveState(state);
+    },
   },
 })
 
-export const { setPage, toggleThemeMode, toggleDrawer, initializeApp, updateUsers, setLoading, showMessage } = AppModel.actions
+export const { setPage, toggleThemeMode, toggleDrawer, initializeApp, updateUsers, setLoading, showMessage, logIn, logOut } = AppModel.actions
 export default AppModel.reducer

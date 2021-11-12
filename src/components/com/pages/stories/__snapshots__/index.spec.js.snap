@@ -109,16 +109,17 @@ exports[`Search Page compare against snapshot 1`] = `
 
 .emotion-12 {
   width: 100%;
-  height: 150px;
+  height: 7rem;
   padding: 1rem;
   color: #fff;
   background-color: #fff;
   background-image: url('/labs-client-web-react/app/img/ba_pro_act.jpg');
-  margin: 0 1px 1px 0;
+  margin: 0 2px 2px 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  text-align: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -130,9 +131,12 @@ exports[`Search Page compare against snapshot 1`] = `
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  text-transform: lowercase;
 }
 
-.emotion-86 {
+.emotion-67 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -141,24 +145,24 @@ exports[`Search Page compare against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-87 {
+.emotion-68 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-88 {
+.emotion-69 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-89 {
+.emotion-70 {
   font-size: 0.9rem;
   color: inherit;
 }
 
-.emotion-90 {
+.emotion-71 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -240,11 +244,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Movie Awards
-                          </h2>
+                          Movie Awards
                         </div>
                       </div>
                     </div>
@@ -258,11 +258,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Movie Remakes
-                          </h2>
+                          Movie Remakes
                         </div>
                       </div>
                     </div>
@@ -276,11 +272,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Movie Directors
-                          </h2>
+                          Movie Directors
                         </div>
                       </div>
                     </div>
@@ -294,11 +286,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Movie Producers
-                          </h2>
+                          Movie Producers
                         </div>
                       </div>
                     </div>
@@ -312,11 +300,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Movie Actors
-                          </h2>
+                          Movie Actors
                         </div>
                       </div>
                     </div>
@@ -330,11 +314,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Movie Writers
-                          </h2>
+                          Movie Writers
                         </div>
                       </div>
                     </div>
@@ -348,11 +328,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Movies Dashboard
-                          </h2>
+                          Movies Dashboard
                         </div>
                       </div>
                     </div>
@@ -366,11 +342,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Festivals Dashboard
-                          </h2>
+                          Festivals Dashboard
                         </div>
                       </div>
                     </div>
@@ -402,11 +374,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            People Dashboard
-                          </h2>
+                          People Dashboard
                         </div>
                       </div>
                     </div>
@@ -438,11 +406,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Podcasts Dashboard
-                          </h2>
+                          Podcasts Dashboard
                         </div>
                       </div>
                     </div>
@@ -456,11 +420,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Music Podcasts
-                          </h2>
+                          Music Podcasts
                         </div>
                       </div>
                     </div>
@@ -492,11 +452,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Music Podcasts
-                          </h2>
+                          Music Podcasts
                         </div>
                       </div>
                     </div>
@@ -528,11 +484,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            TV Shows Dashboard
-                          </h2>
+                          TV Shows Dashboard
                         </div>
                       </div>
                     </div>
@@ -546,11 +498,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            TV Shows Remakes
-                          </h2>
+                          TV Shows Remakes
                         </div>
                       </div>
                     </div>
@@ -564,11 +512,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            TV Shows Directors
-                          </h2>
+                          TV Shows Directors
                         </div>
                       </div>
                     </div>
@@ -582,11 +526,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            TV Shows Writers
-                          </h2>
+                          TV Shows Writers
                         </div>
                       </div>
                     </div>
@@ -600,11 +540,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            TV Shows Actors
-                          </h2>
+                          TV Shows Actors
                         </div>
                       </div>
                     </div>
@@ -636,11 +572,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Video Games Dashboard
-                          </h2>
+                          Video Games Dashboard
                         </div>
                       </div>
                     </div>
@@ -672,11 +604,7 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-12"
                           img="/img/ba_pro_act.jpg"
                         >
-                          <h2
-                            class="emotion-9"
-                          >
-                            Festivals Dashboard
-                          </h2>
+                          Festivals Dashboard
                         </div>
                       </div>
                     </div>
@@ -693,57 +621,57 @@ exports[`Search Page compare against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-86"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-67"
             >
               <div
-                class="emotion-87"
+                class="emotion-68"
               >
                 <div
-                  class="emotion-88"
+                  class="emotion-69"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-89"
+                  class="emotion-70"
                 >
                   <span
-                    class="emotion-90"
+                    class="emotion-71"
                   >
                     Movie Awards
                   </span>
                 </div>
                 <div
-                  class="emotion-89"
+                  class="emotion-70"
                 >
                   <span
-                    class="emotion-90"
+                    class="emotion-71"
                   >
                     Movie Remakes
                   </span>
                 </div>
                 <div
-                  class="emotion-89"
+                  class="emotion-70"
                 >
                   <span
-                    class="emotion-90"
+                    class="emotion-71"
                   >
                     Movie Directors
                   </span>
                 </div>
                 <div
-                  class="emotion-89"
+                  class="emotion-70"
                 >
                   <span
-                    class="emotion-90"
+                    class="emotion-71"
                   >
                     Movie Producers
                   </span>
                 </div>
                 <div
-                  class="emotion-89"
+                  class="emotion-70"
                 >
                   <span
-                    class="emotion-90"
+                    class="emotion-71"
                   >
                     Movie Actors
                   </span>

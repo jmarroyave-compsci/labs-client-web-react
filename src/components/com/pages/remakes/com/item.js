@@ -8,14 +8,13 @@ import Field from 'com/field'
 
 export default function RemakeItem( props ){
   const { image, name, count, recs } = props;
-
   return (   
       <Card
         image={(image) ? image.poster : image}
         text={ <div>
                   {recs.slice(0,3).map( (r, key) =>                     
                     <Field key={key}
-                      title={date(r.releasedDate, "YYYY")} 
+                      title={r.releaseYear} 
                       value={<Linkit id={r.id} key={key}>{(r.directors[0]) ? r.directors[0].name : "?"}</Linkit>}
                     />                    
                   )}

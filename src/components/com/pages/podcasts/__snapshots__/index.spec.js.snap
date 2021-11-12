@@ -131,7 +131,7 @@ exports[`STORIES_PODCASTS compare against snapshot 1`] = `
     <div
       class="emotion-2"
     >
-      a dashboard with information from over 30K podcasts, their categories and language distribution
+      a dashboard with information from podcasts, their categories and language distribution
     </div>
     <div
       class="emotion-3"

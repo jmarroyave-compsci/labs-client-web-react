@@ -1,3 +1,3 @@
 import * as AppModel  from './state/app-model'
 
-export const { setPage, toggleThemeMode, toggleDrawer, initializeApp, updateUsers, setLoading, showMessage } = AppModel
+export const { setPage, toggleThemeMode, toggleDrawer, initializeApp, updateUsers, setLoading, showMessage, logIn, logOut } = AppModel

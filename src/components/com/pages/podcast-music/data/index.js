@@ -10,7 +10,9 @@ const GET_DATA = gql`
     id
     title
     link
-    image
+    image{
+      poster
+    }
   }
 }
 `

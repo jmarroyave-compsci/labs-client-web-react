@@ -1,4 +1,5 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { styled } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import Badge from '@material-ui/core/Badge';
@@ -12,14 +13,13 @@ import Avatar from '@material-ui/core/Avatar';
 import GoogleIcon from '@mui/icons-material/Google';
 import CloseIcon from '@mui/icons-material/Close';
 
-import { useDispatch } from 'react-redux'
-import { showMessage } from 'app' 
+import { showMessage, logIn, logOut, setLoading } from 'app' 
 
 import { firebaseAuth, googleProvider } from 'app/config/providers/google-firebase/auth';
 
 const initialState = {
-  logedIn : false,
-  logingIn : false,
+  loggedIn : false,
+  loggingIn : false,
 }
 
 function reducer(state, action){
@@ -27,20 +27,31 @@ function reducer(state, action){
     case "LOGING_IN":
       return {
         ...state,
-        logingIn : true,
+        loggingIn : true,
       };
     case "LOGIN_SUCCESS":
       return {
         ...state,
-        logingIn : false,
-        logedIn: true,
-        user: action.payload.user,
+        loggingIn : false,
+        loggedIn: true,
       };
     case "LOGIN_FAILURE":
       return {
         ...state,
-        logingIn : false,
-        logedIn: false,
+        loggingIn : false,
+        loggedIn: false,
+      };
+    case "LOGOUT":
+      return {
+        ...state,
+        loggingIn : false,
+        loggedIn: false,
+      };
+    case "INIT":
+      return {
+        ...state,
+        loggingIn : false,
+        loggedIn: action.payload.loggedIn,
       };
     default:
       throw new Error(`operation ${ action.type?.toUpperCase() } not implemented`)      
@@ -48,37 +59,53 @@ function reducer(state, action){
 }
 
 const User = ( props ) => {
+  const appState = useSelector(( state ) => state['app'] )
   const appDispatch = useDispatch();
   const [ state, dispatch ] = useReducer( reducer, initialState ) 
 
-  const clickLogingIn = () => {
+  const clickLoggingIn = () => {
     dispatch({ type: "LOGING_IN" })
+    appDispatch( setLoading( { status: true, sender: "login" } ) )
   }
 
   const onLoginSuccess = ( user ) => {
+    appDispatch( logIn( { avatar: user.photoURL, name: user.displayName } ) )
     dispatch({ type: "LOGIN_SUCCESS", payload : { user : user } }) 
+    appDispatch( setLoading( { status: false, sender: "login" } ) )
   }
 
   const onLoginFailure = ( error ) => {
-    //console.log("error in login", error.message )
+    appDispatch( logOut( ) )
     dispatch({ type: "LOGIN_FAILURE", payload: {} }) 
     const err = { errMessage : `Error while trying to login`, tech: error.message }
     appDispatch( showMessage( { message: err.errMessage } )  )
+    appDispatch( setLoading( { status: false, sender: "login" } ) )
   }
+
+  const onLogout = () => {
+    appDispatch( logOut( ) )
+    dispatch({ type: "LOGOUT" }) 
+  }
+
+  useEffect( ()=>{
+    if(!appState.credentials) return;
+    //console.log("user", appState.credentials)
+    dispatch( { type: "INIT", payload: { loggedIn: appState.credentials.loggedIn } } )
+  }, [appState.credentials])
 
   return (
     <>
-      {state.logedIn && 
-        <Avatar alt={state.user.displayName} src={state.user.photoURL} />
+      {state.loggedIn && 
+        <Avatar alt={appState.credentials.user.name} src={appState.credentials.user.avatar} />
       }
-      {!state.logedIn &&
+      {!state.loggedIn &&
         <Button
-          onClick={ clickLogingIn }
+          onClick={ clickLoggingIn }
         >
           Log in
         </Button>
       }
-      {!state.logedIn && state.logingIn && <UserLogin onSuccess={ onLoginSuccess } onFailure={ onLoginFailure }/>}
+      {!state.loggedIn && state.loggingIn && <UserLogin onSuccess={ onLoginSuccess } onFailure={ onLoginFailure }/>}
     </>
   );
 }

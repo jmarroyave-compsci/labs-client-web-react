@@ -10,7 +10,7 @@ const GET_DATA = gql`
     count
     recs{
       id
-      releasedDate
+      releaseYear
       type
       genre
       directors{

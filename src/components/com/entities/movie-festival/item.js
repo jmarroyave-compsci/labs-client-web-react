@@ -10,6 +10,7 @@ export default function MovieItem( props ){
     <Link box id={id} entity={name}>
       <Card
         title={name}
+        image={image?.poster}        
       />
     </Link>    
     

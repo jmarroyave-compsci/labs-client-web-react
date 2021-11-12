@@ -12,7 +12,7 @@ const GET_DATA = gql`
       produced {
         id
         title
-        releasedDate
+        releaseYear
       }      
     }
   }

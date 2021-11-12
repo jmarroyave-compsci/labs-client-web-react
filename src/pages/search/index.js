@@ -8,7 +8,7 @@ const Page = ( props ) => {
   var { q, page } = (router.query) ? router.query : {};
 
   return (
-      <Layout query={q} page={page}/> 
+      <Layout query={q} page={page} breadcrumbs="/search"/> 
   )
 }
 

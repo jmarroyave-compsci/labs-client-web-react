@@ -10,6 +10,7 @@ export default function Tiles( props ){
             xs={xs} sm={sm} md={md} lg={lg}
             noPaging={true}
             noPadding={true}
+            animations={false}
           />
     )
 }

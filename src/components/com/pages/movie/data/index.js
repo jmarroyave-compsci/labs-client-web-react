@@ -16,7 +16,7 @@ query getMovie($id:String!) {
       averageRating
       name
     }
-    releasedDate
+    releaseYear
     classification
     streamBy {
       name
@@ -60,7 +60,7 @@ query getMovie($id:String!) {
     remakes{
       id
       title
-      releasedDate
+      releaseYear
       directors{
         id
         name

@@ -16,6 +16,7 @@ import { store } from 'app/state/store'
 
 export default function BaseApp(props) {  
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
+
   return (
     <StateProvider store={store}>
       <CacheProvider value={emotionCache}>

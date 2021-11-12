@@ -13,6 +13,9 @@ const GET_DATA = gql`
       established
       country
       continent
+      image{
+        poster
+      }
     }
   }
 `

@@ -9,7 +9,7 @@ export default function Item(item){
   return (
     <Link box id={id} entity={name} style={{width : '100%'}}>
       <Card
-        image={image}
+        image={image?.poster}
         text={description}
         title={title}
       />

@@ -15,7 +15,9 @@ query getPodcast($id:String!) {
     author
     link
     language
-    image
+    image{
+      poster
+    }
     category
     subcategory
     createdDate

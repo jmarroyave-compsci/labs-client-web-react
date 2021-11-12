@@ -450,7 +450,7 @@ exports[`STORIES_ACTORS compare Page against snapshot 1`] = `
                           >
                             <div
                               class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="flex-grow: 1; padding: 0.5rem;"
+                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
                                 class="emotion-15"
@@ -486,7 +486,7 @@ exports[`STORIES_ACTORS compare Page against snapshot 1`] = `
                           >
                             <div
                               class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="flex-grow: 1; padding: 0.5rem;"
+                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
                                 class="emotion-15"
@@ -522,7 +522,7 @@ exports[`STORIES_ACTORS compare Page against snapshot 1`] = `
                           >
                             <div
                               class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="flex-grow: 1; padding: 0.5rem;"
+                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
                                 class="emotion-15"
@@ -558,7 +558,7 @@ exports[`STORIES_ACTORS compare Page against snapshot 1`] = `
                           >
                             <div
                               class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="flex-grow: 1; padding: 0.5rem;"
+                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
                                 class="emotion-15"
@@ -594,7 +594,7 @@ exports[`STORIES_ACTORS compare Page against snapshot 1`] = `
                           >
                             <div
                               class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="flex-grow: 1; padding: 0.5rem;"
+                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
                                 class="emotion-15"
@@ -630,7 +630,7 @@ exports[`STORIES_ACTORS compare Page against snapshot 1`] = `
                           >
                             <div
                               class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="flex-grow: 1; padding: 0.5rem;"
+                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
                                 class="emotion-15"

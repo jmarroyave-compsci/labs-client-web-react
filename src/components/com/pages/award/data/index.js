@@ -9,13 +9,16 @@ query get($festival: String, $year: Int) {
     festival {
       id
       name
+      image{
+        poster
+      }          
     }
     year
     awarded{
       category
       entity
       won
-      id
+      entityId
     }
   }
 }

@@ -21,7 +21,6 @@ export default function Awarded( props ){
   )
 }
 
-
 function setAwarded(data, mini){
   var cat = "";
   var groups = []
@@ -36,8 +35,10 @@ function setAwarded(data, mini){
       groups.push(<Small key={key++}>{cat.toUpperCase()}</Small>)
     }
 
-    groups.push(<Medium key={key++}>{(!a.entity_id && !a.id) ? a.entity : 
-      <LinkEntity type={(a.entity_type) ? a.entity_type : ((a.id.startsWith("nm") ? "person" : "movie") )} id={(a.entity_id) ? a.entity_id : a.id}>{a.entity}</LinkEntity>
+    const type = (a.entityType) ? a.entityType : ((a.entityId?.startsWith("nm")) ? "person" : "movie")
+
+    groups.push(<Medium key={key++}>{(!a.entityId) ? a.entity : 
+      <LinkEntity type={type} id={a.entityId}>{a.entity}</LinkEntity>
     }</Medium>)
   }
 
