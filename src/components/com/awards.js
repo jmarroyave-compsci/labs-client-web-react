@@ -10,6 +10,16 @@ import GridItem from 'core/ui/layout/grid_item';
 import Value from 'core/ui/value';
 import Link from 'core/ui/link';
 
+import AwardLink from 'com/entities/award/link';
+
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+
 const FrameMini = styled('div')({
   marginTop: "0rem",
   minHeight: "3rem",
@@ -35,11 +45,8 @@ const More = styled('span')({
 
 
 const Year = styled('div')({
-  margin: '1rem 0 1rem 0',
-  padding: '0',
   fontSize: '1.30rem',
   lineHeight: '1.4rem',
-  marginBottom: "0.75rem",
 });
 
 const Prize = styled('div')({
@@ -56,12 +63,12 @@ const Category = styled('div')( {
 
 
 const LinkToPage = ( { year, children} ) => {
-  return <Link box href={`/movies/stories/awards?year=${year}`}>{children}</Link>
+  return <Link href={`/movies/stories/awards?year=${year}`}>{children}</Link>
 }
 
 export default function Awards( props ){
   var { data } = props;
-  var sortedData = [];
+  var sortedData = [], nData = {};
 
   if(!data || data.length == 0 ) return <div/>;
 
@@ -73,12 +80,17 @@ export default function Awards( props ){
       if(a?.festival?.name != b?.festival?.name) return ( a?.festival?.name < b?.festival?.name ) ? -1 : 1;
       return ( a.category < b.category ) ? -1 : 1;
     })
+
+    sortedData.forEach( rec => {
+      const festival = rec.festival?.name ?? "festival name";
+      if(!nData[rec.year]) nData[rec.year] = {};
+      if(!nData[rec.year][festival]) nData[rec.year][festival] = { id: rec.festival.id };
+      if(!nData[rec.year][festival][rec.category]) nData[rec.year][festival][rec.category] = { won: rec.won };
+    })
   }, [data])
 
-
-  return (props.mini === true) ? AwardsMini(props, sortedData) : AwardsFull(props, sortedData); 
+  return (props.mini === true) ? AwardsMini(props, sortedData) : AwardsFull(props, nData); 
 }
-
 
 function AwardsMini( props, data ){
   var { year, all } = props;
@@ -110,46 +122,40 @@ function AwardsMini( props, data ){
   )
 }
 
-
-
 function AwardsFull( props, data ){
   var currentYear = null, currentPrize = null;
-  const { year } = props;
-
-  const RenderYear = (item) => {
-    if (!currentYear || currentYear != item.year){
-      currentYear = item.year;
-      currentPrize = null;
-      return <Year>{item.year}</Year>
-    }
-    return null;
-  }
-
-  const RenderPrize = (item) => {
-    if (!currentPrize || currentPrize != item.festival?.name){
-      currentPrize = item.festival?.name ?? "festival name";
-      return (
-          <LinkToPage year={item.year}>
-            <Prize>{currentPrize}</Prize>
-          </LinkToPage>
-      )
-      
-    }
-    return null;
-  }
 
   return (
     <Frame>
       <SubTitle>awards</SubTitle>
-      {data && data.length > 0 && data.map( (item, idx) => 
-          <div key={idx} >
-            {RenderYear(item)}
-            {RenderPrize(item)}
-            <Category>
-              <Field title={ (item.won === false) ? "nominee" : "winner"} value={item.category}/>
-            </Category>
-          </div>
+
+      <Timeline>
+      {data && Object.keys(data).reverse().map( ( year , idx) => 
+          <TimelineItem key={year}>
+            <TimelineOppositeContent style={{flex: 0}} color="text.secondary">
+              <LinkToPage year={year}><Year>{year}</Year></LinkToPage>
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+              <TimelineDot />
+              { (idx + 1 < Object.keys(data).length ) && <TimelineConnector />}
+            </TimelineSeparator>            
+            <TimelineContent>
+              {Object.keys(data[year]).map( ( festival ) => 
+                <div key={data[year][festival].id}>
+                  <AwardLink entity="movies" year={year} id={data[year][festival].id} >                  
+                    <Prize>{festival}</Prize>
+                  </AwardLink>
+                  {Object.keys(data[year][festival]).filter( f => f !== "id").map( (category) => 
+                    <Category key={category}>
+                      <Field title={ (data[year][festival][category].won === false) ? "nominee" : "winner"} value={category}/>
+                    </Category>                    
+                  )}
+                </div>
+              )}
+            </TimelineContent>
+          </TimelineItem>
       )}
+      </Timeline>
     </Frame>     
   )
 }

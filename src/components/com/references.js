@@ -18,7 +18,7 @@ export default function References( props ){
           {website && <a href={website}><Pill text="website"/></a>}
           {data.id && data.id.startsWith("tt") && <a href={`https://www.imdb.com/title/${data.id}/`}><Pill text="IMDB"/></a>}
           {data.id && data.id.startsWith("nm") && <a href={`https://www.imdb.com/name/${data.id}/`}><Pill text="IMDB"/></a>}
-          {data.wikiTopic && <a href={`https://wikipedia.com/wiki/${data.wikiTopic.replace(/ /g, "_")}`}><Pill text="wikipedia"/></a>}
+          {data.wiki && <a href={`https://wikipedia.com/wiki/${data.wiki.replace(/ /g, "_")}`}><Pill text="wikipedia"/></a>}
       </Stack>
     </Frame>
   )

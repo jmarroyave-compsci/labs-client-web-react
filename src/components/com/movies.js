@@ -5,22 +5,22 @@ import HList from 'com/ui/hlist';
 import Item from 'com/entities/movie/item'
 
 function Movies( props ){
-  const { data, loading, type, tiny } = props;
+  const { data, loading, type } = props;
 
   if(!data || data.length == 0) return <div/>;
 
-  var movies = ( tiny ) ? data.slice(0,5) : data;
+  var movies = ( props.tiny ) ? data.slice(0,5) : data;
 
   var subtitle = <SubTitle>{type}<Small> [{data.length}]</Small></SubTitle>
 
   return (
     <Frame>
-      {!tiny && subtitle}
+      {!props.tiny && subtitle}
       <HList
         data={movies}
-        item={(item) => <Item format="mini" {...item} />}
+        item={(item) => <Item tiny {...item} {...item.id} />}
       />
-      {tiny && data.length > movies.length && <Small>and {data.length - movies.length} more</Small>}
+      {props.tiny && data.length > movies.length && <Small>and {data.length - movies.length} more</Small>}
     </Frame>
   )
 }

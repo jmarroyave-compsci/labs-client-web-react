@@ -8,7 +8,7 @@ import GridItem from 'core/ui/layout/grid_item';
 function Ratings( props ){
   const { data, loading, route } = props;
 
-  if(!data || "name" in data ) return <div/>;
+  if(!data || "name" in data || data.length == 0 ) return <div/>;
 
   return (
     <Frame>

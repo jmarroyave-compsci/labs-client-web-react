@@ -1,9 +1,17 @@
 import { gql } from "@apollo/client";
 import { fetch }  from 'lib/graphql'; 
 
+export const PERSON_TINY_FRAGMENT = gql`
+fragment PersonInfoTiny on Person {
+  id
+  name
+}
+`;
+
 export const fetchData = ( id ) => fetch( GET_DATA, { id: id } , (resp) => { return { ...resp, data: resp.data.movie } } )
 
 const GET_DATA = gql`
+${PERSON_TINY_FRAGMENT}
 query getMovie($id:String!) {
   movie(id: $id){
     id
@@ -22,21 +30,34 @@ query getMovie($id:String!) {
       name
       yearAdded
     }
-    directors{
-      id
-      name
+    produced{
+      id{
+        ...PersonInfoTiny
+      } 
+    }
+    directed{
+      id{
+        ...PersonInfoTiny
+      } 
     }
     cast {
-      id
-      name
+      id{
+        ...PersonInfoTiny
+      } 
+      as
     }
-    writers{
-      id
-      name
+    written{
+      id{
+        ...PersonInfoTiny
+      } 
     }
     crew{
-      id
-      name
+      id{
+        ...PersonInfoTiny
+      } 
+      as
+      cat
+      job
     }    
     awards {
       category
@@ -61,9 +82,10 @@ query getMovie($id:String!) {
       id
       title
       releaseYear
-      directors{
-        id
-        name
+      directed{
+        id{
+          ...PersonInfoTiny
+        } 
       }
     }
 

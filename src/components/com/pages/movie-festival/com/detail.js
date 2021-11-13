@@ -10,6 +10,8 @@ import Field from 'com/field';
 export default function Dashboard( props ){
   var { data } = props;
 
+  console.log(data);
+
   return (
     <Frame>    
       <Stack>
@@ -18,7 +20,7 @@ export default function Dashboard( props ){
 
           <Frame>
             <SubTitle>general information</SubTitle>
-            <Field title="established" data={data.established}/>
+            <Field title="started" data={data.startYear}/>
             <Field title="country" data={data.country}/>
             <Field title="continent" data={data.continent}/>
           </Frame>

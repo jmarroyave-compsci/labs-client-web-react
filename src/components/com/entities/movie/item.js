@@ -7,7 +7,10 @@ import { ItemFrame, ItemContent, Title, Small } from 'style/item'
 
 
 export default function MovieItem( props ){
-  const { format } = props;
+  const { tiny } = props;
+  var { format } = props;
+
+  format = (tiny) ? "mini" : format;
 
   switch( format ){
     case "mini":
@@ -19,15 +22,14 @@ export default function MovieItem( props ){
 }
 
 function ItemMini( props ){
-  const {id, title, releaseYear} = props;
-
-  console.log(props)
+  const {id, title, releaseYear, as } = props;
 
   return (
     <ItemFrame key={id} width="250px">
       <Link id={id}>
-          <Small>{releaseYear}</Small>
-          <Title>{title}</Title>
+          <Small>{releaseYear ?? "?"}</Small>
+          <Title>{title ?? "?"}</Title>
+          {as && <Small>{as.replace(/[\[\]\'\"]/g, "")}</Small>}
       </Link>
     </ItemFrame>
   )

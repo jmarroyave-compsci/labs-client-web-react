@@ -43,6 +43,7 @@ export default function Dashboard( props ){
         <Field title="Language" data={data.language}/>
         <Field title="Country" data={data.country}/>
         <Field title="Production" data={data.production}/>
+        <Field title="Box Office" data={data.boxOffice}/>
       </Frame>
 
       <References data={data}/>

@@ -1,10 +1,9 @@
 import React from 'react'
 import { Frame } from 'style/boxes'
 import { SubTitle, Small } from 'style/detail'
-import LinkPerson from 'com/entities/person/link'
+import PersonItem from 'com/entities/person/item'
 import Link from 'core/ui/link'
-import GridContainer from 'core/ui/layout/grid_container';
-import GridItem from 'core/ui/layout/grid_item';
+import HList from 'com/ui/hlist';
 
 function People( props ){
   const { data, loading, type, story } = props;
@@ -17,13 +16,10 @@ function People( props ){
   return (
     <Frame>
       {data && data.length > 0 && subtitle}
-      <GridContainer>
-      {data && data.length > 0 && data.map( (item, key) => 
-        <GridItem key={key} xs={12} sm={6} md={4} lg={3}>
-          <div><LinkPerson id={item.id} >{item.name}</LinkPerson></div>
-        </GridItem>
-      )}
-      </GridContainer>
+      <HList
+        data={data}
+        item={(item) => <PersonItem tiny {...item} {...item.id} />}
+      />
     </Frame>
   )
 }

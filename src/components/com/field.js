@@ -6,7 +6,7 @@ function Field( props ){
    var { data, value, title, format, sufix } = props
    data = (data) ? data : value;
 
-    if( !data || data == null || data.length == 0 ) return null;
+    if( !data || data == null || data.length == 0 || data == "N/A" ) return null;
 
     var value = data;
     switch( format ){

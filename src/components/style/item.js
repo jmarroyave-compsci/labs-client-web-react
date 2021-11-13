@@ -23,7 +23,6 @@ const _ItemContent = styled('div')(({theme, width}) => ({
 }))
 
 export const ItemFrame = ( props ) =>{
-  console.log(props)
   return (
     <_ItemFrame width={props.width}>
       <_ItemContent>
@@ -33,13 +32,11 @@ export const ItemFrame = ( props ) =>{
     )
 }
 
-
-
 export const Title = styled('h2')({
   fontSize: "1.5rem",
-  lineHeight: "1.5rem",
-  padding: '0',
-  margin: '0 0 0.75rem 0',
+  lineHeight: "1.8rem",
+  padding: 0,
+  margin: 0,
 });
 
 export const SubTitle = styled('h3')({

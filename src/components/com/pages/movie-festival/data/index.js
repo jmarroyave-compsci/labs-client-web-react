@@ -9,8 +9,8 @@ const GET_DATA = gql`
     movieFestival(id: $id) {
       id
       name
-      wikiTopic
-      established
+      wiki
+      startYear
       country
       continent
       image{
