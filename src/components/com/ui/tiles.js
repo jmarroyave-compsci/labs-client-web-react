@@ -1,17 +1,17 @@
 import React from 'react'
-import Grid from 'com/ui/grid';
+import GridContainer from 'core/ui/layout/grid_container';
+import GridItem from 'core/ui/layout/grid_item';
 
 export default function Tiles( props ){
     var { data, item, xs=12, sm=6, md=6, lg=4 } = props;
     return (
-          <Grid
-            data={data}
-            item={ item }
-            xs={xs} sm={sm} md={md} lg={lg}
-            noPaging={true}
-            noPadding={true}
-            animations={false}
-          />
+      <GridContainer>
+        {data.map( _item => 
+          <GridItem xs={xs} sm={sm} md={md} lg={lg}>
+            {item(_item)}
+          </GridItem>
+        )}
+      </GridContainer>
     )
 }
 

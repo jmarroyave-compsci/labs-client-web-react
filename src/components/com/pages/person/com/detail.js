@@ -27,8 +27,8 @@ function Dashboard( props ){
 
       <Frame>
         <SubTitle>General information</SubTitle>
-        <Field title="Birth" data={data.birthDate} format="year"/>
-        <Field title="Death" data={data.deathDate} format="year"/>
+        <Field title="Birth" data={data.birthYear}/>
+        <Field title="Death" data={data.deathYear}/>
       </Frame>
 
       <References data={data}/>
@@ -37,6 +37,7 @@ function Dashboard( props ){
 
       <Movies type="acted" data={data.acted}/>
       <Movies type="directed" data={data.directed}/>
+      <Movies type="produced" data={data.produced}/>
       <Movies type="wrote" data={data.wrote}/>
     </Stack>
   )

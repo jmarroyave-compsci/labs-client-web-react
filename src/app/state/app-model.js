@@ -95,7 +95,7 @@ export const AppModel = createSlice({
     showMessage: (state, action) => {
       const { message }  = action.payload;
       state.messages.message = message;
-      state.messages.show = (message && message.trim() !== "") ? true : false;
+      state.messages.show = (message && message !== "") ? true : false;
     },
     logIn: (state, action) => {
       const { name, avatar }  = action.payload;

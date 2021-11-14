@@ -3,7 +3,7 @@ export default {
 		name: "stories_producers"
 	},
 	page: {
-		title: "Directors",
+		title: "Producers",
 		description: "",
 		url: ({entity}) => `/${entity}/stories/producers`,
 	},

@@ -56,7 +56,7 @@ export default function Dashboard( props ){
 
       <Text title='plot' text={ (data.plot) ? data.plot : data.description }/>
 
-      <Movies type="remakes" data={data.remakes}/>
+      <Movies type="remakes" data={data.remakes} filter={(r) => r.id !== data.id}/>
 
       <People type="directors" data={data.directors} story="/movies/stories/directors"/>
 

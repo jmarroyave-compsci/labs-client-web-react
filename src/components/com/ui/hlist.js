@@ -14,7 +14,9 @@ export default function Tiles( props ){
         <Frame>
           <Stack direction="row" style={{overflowX: 'auto'}}>
             {data.map( (it, idx) =>
-              item(it)
+              <div key={idx}>
+                {item(it)}
+              </div>
             )}
           </Stack>
         </Frame>

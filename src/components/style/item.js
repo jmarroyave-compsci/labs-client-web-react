@@ -2,29 +2,34 @@ import React from 'react'
 import { styled } from '@mui/material/styles';
 import Paper from 'core/ui/paper';
 
-const _ItemFrame = styled('div')(({theme, width}) => ({
-  margin: "0",
-  padding: "0 1rem 1rem 0",
-  display: 'block', 
+const _ItemFrame = styled('div')(({theme, width, height}) => ({
+  backgroundColor: theme.palette.action.selected,
+  margin: "0 1rem 1rem 0",
+  padding: 0,
+  display: 'flex', 
   color: theme.palette.text.primary,
-  backgroundColor: 'transparent',
+  alignItems: 'center',
   minWidth: width,
   maxWidth: width,
+  minHeight: height,
+  maxHeight: height,
+  borderRadius: '5px',
 }));
 
 const _ItemContent = styled('div')(({theme, width}) => ({
-  backgroundColor: theme.palette.action.selected,
+  backgroundColor: 'transparent',
   color: theme.palette.text.primary,
   padding: '1rem',
-  display: 'flex', 
+  display: 'block', 
   flexGrow: 1, 
   margin: "0.1rem",  
   width: "100%"
 }))
 
 export const ItemFrame = ( props ) =>{
+  const { width="300px", height="300px" } = props;
   return (
-    <_ItemFrame width={props.width}>
+    <_ItemFrame width={width} height={height}>
       <_ItemContent>
         {props.children}
       </_ItemContent>  

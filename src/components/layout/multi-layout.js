@@ -15,7 +15,7 @@ export default function Layout( props ){
   const dispatch = useDispatch();
   const router = useRouter();
   const { config } = props;
-  const [ isRouterReady, setIsRouterReady ] = useState(false);
+  const [ errorMessage, setErrorMessage ] = useState("")
 
   var state = useSelector(( state ) => state[config.automata.name] ) 
   const render = props.params.render ?? null;
@@ -23,15 +23,12 @@ export default function Layout( props ){
 
   state = ( props.data ) ? { data: props.data, params: {page: props.params.page} } : state;
 
+  var forceLoading = false;
+
   useEffect( () => {
     if(!state) return;
     dispatch( setLoading( { status: state.loading, sender: config.automata.name } ) )
   }, [state])
-
-  useEffect( () => {
-    if(!router) return;
-    setIsRouterReady(router.isReady)
-  }, [router])
 
   useEffect( () => {
     if( params.breadcrumbs ){
@@ -46,29 +43,34 @@ export default function Layout( props ){
 
     if(props.data){
       props.fetch( {...params} )
-    }
-    else{
+    } else{
       dispatch( props.fetch( {...params} ) )
     }
   }
 
   useEffect( () => {
-    if(!isRouterReady) return;
+    if(!router?.isReady) return;
     if( render === "banner" && !config.banner.showData ) return
 
     fetch( params )    
-  }, [ isRouterReady ])
+  }, [ router?.isReady, params.id ])
 
   if(!render || render == "grid"){
     return <Error from={config.page.title} data="render property wasn't set"/>
   }
+
+  useEffect( () => {
+    if(errorMessage == "") return
+    dispatch( showMessage({ message: errorMessage}) )
+  }, [ errorMessage ])
 
   return (
     <MultiLayout 
       config={props.config}
       render={render}
       state={state}
-      loading={( !isRouterReady || !state || state.loading )}
+      loading={ !router?.isReady || !state || ( render === "detail" && state.data == null) || ( render == "list" && state.data?.length === 0 ) || state.loading || state?.error }
+      setErrorMessage={setErrorMessage}
       fetch={fetch}
       item={props.item}
       customDescription={props.customDescription}
@@ -82,31 +84,32 @@ export default function Layout( props ){
 
 function MultiLayout( props ){
   const dispatch = useDispatch();
-  const { config, item, mainCol, state, render, params, fetch } = props
+  const { config, item, mainCol, state, render, params, fetch, setErrorMessage} = props
   var loading = props.loading;
   const title = config.page.title;
 
-  const BANNER = <BannerLayout {...props} />
-
-  if( !loading ){
+  if( !loading && state ){
     if( render === "detail" ){
       if( state.data === null ){
-        dispatch( showMessage({ message: "this is a demo version, this record was filtered out to reduce the database size"}) )
+        setErrorMessage("this is a demo version, this record was filtered out to reduce the database size")
         loading = true;
       }
     }
 
     if( render === "list" ){
-      if( state.data.length === 0 ){
-        dispatch( showMessage({ message: "data not found"}) )
+      if( state.data?.length === 0 ){
+        setErrorMessage("data not found")
         loading = true;
       }
     }
 
     if(state.error){
+      setErrorMessage(state.error.message)
       loading = true;
-    }
+    }    
   }
+
+  const BANNER = <BannerLayout {...props} />
 
   return (
     <>
@@ -117,7 +120,7 @@ function MultiLayout( props ){
           {...props}
           id={config.automata.name}
           banner={ BANNER } 
-          mainCol={(mainCol) ? mainCol( props ) : <ListLayout {...props} />}          
+          mainCol={( loading && props.skeleton ) ? props.skeleton : <ListLayout {...props}/>}
         />
       }
       {render === "page" && 
@@ -127,7 +130,7 @@ function MultiLayout( props ){
           banner={ BANNER } 
           mainCol={(mainCol) ? 
             <>
-              {( loading && props.skeleton )  ? props.skeleton : mainCol( { data: state?.data ?? null, loading: props.loading, params: params, fetch: fetch, item: item } )}
+              {( loading && props.skeleton )  ? props.skeleton : mainCol( { data: state?.data ?? null, loading: loading, params: params, fetch: fetch, item: item } )}
             </>                      
             : 
             <Error from={title} data="main component missing, not found in mainCol or detail prop"/>
@@ -140,7 +143,7 @@ function MultiLayout( props ){
           id={config.automata.name}
           mainCol={(mainCol) ? 
             <>
-              {( loading && props.skeleton )  ? props.skeleton : mainCol( { data: state?.data ?? null, loading: props.loading } )}
+              {( loading && props.skeleton )  ? props.skeleton : mainCol( { data: state?.data ?? null, loading: loading } )}
             </>                      
             : 
             <Error from={title} data="main component missing, not found in mainCol or detail prop"/>

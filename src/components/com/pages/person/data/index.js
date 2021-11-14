@@ -30,8 +30,8 @@ query getPerson($id:String!) {
   person(id: $id){
     id
     name
-    birthDate
-    deathDate
+    birthYear
+    deathYear
     profession
     awards {
       category

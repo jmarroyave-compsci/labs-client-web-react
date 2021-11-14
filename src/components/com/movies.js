@@ -5,21 +5,29 @@ import HList from 'com/ui/hlist';
 import Item from 'com/entities/movie/item'
 
 function Movies( props ){
-  const { data, loading, type } = props;
+  const { data, loading, type, filter } = props;
 
   if(!data || data.length == 0) return <div/>;
 
-  var movies = ( props.tiny ) ? data.slice(0,5) : data;
+  var movies = ( props.tiny ) ? data.slice(0,3) : data;
+  movies = (filter) ? movies.filter(filter) : movies;
 
-  var subtitle = <SubTitle>{type}<Small> [{data.length}]</Small></SubTitle>
+  var subtitle = <SubTitle>{type}<Small> [{movies.length}]</Small></SubTitle>
 
   return (
     <Frame>
       {!props.tiny && subtitle}
-      <HList
-        data={movies}
-        item={(item) => <Item tiny {...item} {...item.id} />}
-      />
+      {props.tiny && movies.map( (item, key) => 
+        <div key={key}>
+          <Item format='tiny' {...item.id}/>
+        </div>
+      )}
+      {!props.tiny &&
+        <HList
+          data={movies}
+          item={(item) => <Item format='list' {...item} {...item.id} />}
+        />
+      }
       {props.tiny && data.length > movies.length && <Small>and {data.length - movies.length} more</Small>}
     </Frame>
   )

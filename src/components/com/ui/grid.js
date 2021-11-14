@@ -45,22 +45,21 @@ export default function Grid( props ){
     }
 
     const Item = ( props ) => {
-      const { data, idx } = props;
       return (
-        <GridItem key={idx} xs={xs} sm={sm} md={md} lg={lg}>
-            {itemWrapper((loading) ?
-              (skeleton) ? skeleton : <Placeholder/>
-              : 
-              (item) ? animateItem(item(data)) : null
-            )} 
+        <GridItem key={props.key} xs={xs} sm={sm} md={md} lg={lg}>
+          {itemWrapper((loading) ?
+            (skeleton) ? skeleton : <Placeholder/>
+            : 
+            (item) ? animateItem(item(props.data)) : null
+          )} 
         </GridItem>
       )
     }
 
     var output = (
-        <GridContainer justify='center' fill style={{width: '100%'}}>
+        <GridContainer spacing={2} justify='center' fill style={{width: '100%'}}>
           {data.map( (_item, idx) => 
-            (<Item key={idx} data={_item} params={props} idx={idx}/>)
+            <Item key={idx} data={_item} params={props}/>
           )}
         </GridContainer>
     )

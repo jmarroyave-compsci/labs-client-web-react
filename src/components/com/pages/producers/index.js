@@ -12,7 +12,7 @@ export default function Layout( props ){
 			config={config}
 			fetch={ (params) => fetchData({ ...params }) }
 			item={(data) => <Item full {...data}/>}
-			customDescription={<Quote tag="director"/>}			
+			customDescription={<Quote tag="productor"/>}			
             customUrl={ (params) => config.page.url(params.entity)}
 		/>
 	)
