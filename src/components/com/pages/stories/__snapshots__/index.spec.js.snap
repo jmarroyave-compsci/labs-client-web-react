@@ -94,7 +94,7 @@ exports[`Search Page compare against snapshot 1`] = `
   margin: 0 0 0.75rem 0;
 }
 
-.emotion-11 {
+.emotion-10 {
   cursor: pointer;
   display: -webkit-box;
   display: -webkit-flex;
@@ -107,7 +107,7 @@ exports[`Search Page compare against snapshot 1`] = `
   width: 100%;
 }
 
-.emotion-12 {
+.emotion-11 {
   width: 100%;
   height: 7rem;
   padding: 1rem;
@@ -136,7 +136,7 @@ exports[`Search Page compare against snapshot 1`] = `
   text-transform: lowercase;
 }
 
-.emotion-67 {
+.emotion-60 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -145,24 +145,24 @@ exports[`Search Page compare against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-68 {
+.emotion-61 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-69 {
+.emotion-62 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-70 {
+.emotion-63 {
   font-size: 0.9rem;
   color: inherit;
 }
 
-.emotion-71 {
+.emotion-64 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -228,122 +228,117 @@ exports[`Search Page compare against snapshot 1`] = `
                   movies
                 </h2>
                 <div
-                  class="emotion-8"
+                  class="MuiGrid-root MuiGrid-container"
                 >
                   <div
-                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-center"
-                    style="width: 100%;"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
                   >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Movie Awards
-                        </div>
+                        Movie Awards
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Movie Remakes
-                        </div>
+                        Movie Remakes
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Movie Directors
-                        </div>
+                        Movie Directors
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Movie Producers
-                        </div>
+                        Movie Producers
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Movie Actors
-                        </div>
+                        Movie Actors
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Movie Writers
-                        </div>
+                        Movie Writers
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Movies Dashboard
-                        </div>
+                        Movies Dashboard
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Festivals Dashboard
-                        </div>
+                        Festivals Dashboard
                       </div>
                     </div>
                   </div>
@@ -358,24 +353,19 @@ exports[`Search Page compare against snapshot 1`] = `
                   people
                 </h2>
                 <div
-                  class="emotion-8"
+                  class="MuiGrid-root MuiGrid-container"
                 >
                   <div
-                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-center"
-                    style="width: 100%;"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
                   >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          People Dashboard
-                        </div>
+                        People Dashboard
                       </div>
                     </div>
                   </div>
@@ -390,38 +380,33 @@ exports[`Search Page compare against snapshot 1`] = `
                   podcasts
                 </h2>
                 <div
-                  class="emotion-8"
+                  class="MuiGrid-root MuiGrid-container"
                 >
                   <div
-                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-center"
-                    style="width: 100%;"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
                   >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Podcasts Dashboard
-                        </div>
+                        Podcasts Dashboard
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Music Podcasts
-                        </div>
+                        Music Podcasts
                       </div>
                     </div>
                   </div>
@@ -436,24 +421,19 @@ exports[`Search Page compare against snapshot 1`] = `
                   music
                 </h2>
                 <div
-                  class="emotion-8"
+                  class="MuiGrid-root MuiGrid-container"
                 >
                   <div
-                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-center"
-                    style="width: 100%;"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
                   >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Music Podcasts
-                        </div>
+                        Music Podcasts
                       </div>
                     </div>
                   </div>
@@ -468,80 +448,75 @@ exports[`Search Page compare against snapshot 1`] = `
                   tv-shows
                 </h2>
                 <div
-                  class="emotion-8"
+                  class="MuiGrid-root MuiGrid-container"
                 >
                   <div
-                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-center"
-                    style="width: 100%;"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
                   >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          TV Shows Dashboard
-                        </div>
+                        TV Shows Dashboard
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          TV Shows Remakes
-                        </div>
+                        TV Shows Remakes
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          TV Shows Directors
-                        </div>
+                        TV Shows Directors
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          TV Shows Writers
-                        </div>
+                        TV Shows Writers
                       </div>
                     </div>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                  >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          TV Shows Actors
-                        </div>
+                        TV Shows Actors
                       </div>
                     </div>
                   </div>
@@ -556,24 +531,19 @@ exports[`Search Page compare against snapshot 1`] = `
                   video-games
                 </h2>
                 <div
-                  class="emotion-8"
+                  class="MuiGrid-root MuiGrid-container"
                 >
                   <div
-                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-center"
-                    style="width: 100%;"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
                   >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Video Games Dashboard
-                        </div>
+                        Video Games Dashboard
                       </div>
                     </div>
                   </div>
@@ -588,24 +558,19 @@ exports[`Search Page compare against snapshot 1`] = `
                   festivals
                 </h2>
                 <div
-                  class="emotion-8"
+                  class="MuiGrid-root MuiGrid-container"
                 >
                   <div
-                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-center"
-                    style="width: 100%;"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
                   >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4"
+                      class="emotion-10"
                     >
                       <div
                         class="emotion-11"
+                        img="/img/ba_pro_act.jpg"
                       >
-                        <div
-                          class="emotion-12"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          Festivals Dashboard
-                        </div>
+                        Festivals Dashboard
                       </div>
                     </div>
                   </div>
@@ -621,57 +586,57 @@ exports[`Search Page compare against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-67"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-60"
             >
               <div
-                class="emotion-68"
+                class="emotion-61"
               >
                 <div
-                  class="emotion-69"
+                  class="emotion-62"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-70"
+                  class="emotion-63"
                 >
                   <span
-                    class="emotion-71"
+                    class="emotion-64"
                   >
                     Movie Awards
                   </span>
                 </div>
                 <div
-                  class="emotion-70"
+                  class="emotion-63"
                 >
                   <span
-                    class="emotion-71"
+                    class="emotion-64"
                   >
                     Movie Remakes
                   </span>
                 </div>
                 <div
-                  class="emotion-70"
+                  class="emotion-63"
                 >
                   <span
-                    class="emotion-71"
+                    class="emotion-64"
                   >
                     Movie Directors
                   </span>
                 </div>
                 <div
-                  class="emotion-70"
+                  class="emotion-63"
                 >
                   <span
-                    class="emotion-71"
+                    class="emotion-64"
                   >
                     Movie Producers
                   </span>
                 </div>
                 <div
-                  class="emotion-70"
+                  class="emotion-63"
                 >
                   <span
-                    class="emotion-71"
+                    class="emotion-64"
                   >
                     Movie Actors
                   </span>

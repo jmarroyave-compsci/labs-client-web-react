@@ -1415,7 +1415,51 @@
           "children": null
         }
       ],
-      "Day 5": []
+      "Day 5": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[DATA] Data problems",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Local preferenes",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Community ratings",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] animations",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] Login",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] horizontal lists",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 6": []
     }
   }
 }

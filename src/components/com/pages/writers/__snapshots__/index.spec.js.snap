@@ -433,7 +433,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                   class="emotion-11"
                 >
                   <div
-                    class="MuiGrid-root MuiGrid-container MuiGrid-justify-content-xs-center"
+                    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-content-xs-center"
                     style="width: 100%;"
                   >
                     <div
