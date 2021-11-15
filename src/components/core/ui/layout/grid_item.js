@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 
 const GridItem = (props) =>{
-	var { visible, className, xs, sm, md, style, fill, flex, center, key } = props;
+	var { visible, className, xs, sm, md, style, fill, flex, center } = props;
 	visible = (visible)	? visible : true; 
 
 	var styles = { ...style }
@@ -18,7 +18,7 @@ const GridItem = (props) =>{
 	}
 
 	return visible &&
-			<Grid key={key} className={className} item xs={xs} sm={sm} md={md} style={styles}>
+			<Grid className={className} item xs={xs} sm={sm} md={md} style={styles}>
 				{props.children} 
 			</Grid>			
 }

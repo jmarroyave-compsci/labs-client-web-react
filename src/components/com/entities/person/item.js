@@ -24,11 +24,11 @@ export default function PersonItem( props ){
 }
 
 function ItemTiny( props ){
-  const {id, name, as} = props;
+  const {id, name, releaseYear} = props;
 
   return (
-      <Link id={item.id}>
-        <Field value={item.title} title={item.releaseYear}/>
+      <Link id={id}>
+        <Field value={name} title={releaseYear}/>
       </Link>
   )
 }

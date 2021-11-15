@@ -16,9 +16,8 @@ const GET_DATA = gql`
     rating {
       averageRating
       name
-      votes
     }
-    releasedDate
+    releaseYear
     classification
     streamBy {
       name

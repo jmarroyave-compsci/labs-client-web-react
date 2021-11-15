@@ -7,7 +7,6 @@ const GET_DATA = gql`
   query GetData($id: String!)
   {
     videoGame(id: $id) {
-
     id
     title
     country
@@ -17,9 +16,8 @@ const GET_DATA = gql`
     rating {
       averageRating
       name
-      votes
     }
-    releasedDate
+    releaseYear
     classification
     references {
       imdb
@@ -30,7 +28,6 @@ const GET_DATA = gql`
     boxOffice
     production
     language
-
     }
   }
 `

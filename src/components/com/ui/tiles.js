@@ -6,10 +6,12 @@ export default function Tiles( props ){
     var { data, item, xs=12, sm=6, md=6, lg=4 } = props;
     return (
       <GridContainer>
-        {data.map( _item => 
-          <GridItem xs={xs} sm={sm} md={md} lg={lg}>
-            {item(_item)}
-          </GridItem>
+        {data.map( (_item, idx) => 
+          <React.Fragment key={idx}>
+            <GridItem xs={xs} sm={sm} md={md} lg={lg}>
+              {item(_item)}
+            </GridItem>
+          </React.Fragment>
         )}
       </GridContainer>
     )

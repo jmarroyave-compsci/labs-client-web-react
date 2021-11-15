@@ -233,7 +233,7 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
   animation: animation-0 1.5s ease-in-out 0.5s infinite;
 }
 
-.emotion-75 {
+.emotion-82 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -247,12 +247,12 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
   justify-content: center;
 }
 
-.emotion-75>:not(style)+:not(style) {
+.emotion-82>:not(style)+:not(style) {
   margin: 0;
   margin-left: 16px;
 }
 
-.emotion-76 {
+.emotion-83 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -300,23 +300,23 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
   color: #1976d2;
 }
 
-.emotion-76::-moz-focus-inner {
+.emotion-83::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-76.Mui-disabled {
+.emotion-83.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-76 {
+  .emotion-83 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-76:hover {
+.emotion-83:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: rgba(25, 118, 210, 0.04);
@@ -324,17 +324,29 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
 }
 
 @media (hover: none) {
-  .emotion-76:hover {
+  .emotion-83:hover {
     background-color: transparent;
   }
 }
 
-.emotion-76.Mui-disabled {
+.emotion-83.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.emotion-78 {
+.emotion-85 {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: inherit;
+}
+
+.emotion-86 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -343,24 +355,24 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-79 {
+.emotion-87 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-80 {
+.emotion-88 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-81 {
+.emotion-89 {
   font-size: 0.9rem;
   color: inherit;
 }
 
-.emotion-82 {
+.emotion-90 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -760,12 +772,48 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                         </div>
                       </div>
                     </div>
+                    <div
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                    >
+                      <div
+                        class="emotion-12"
+                      >
+                        <div
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-13"
+                        >
+                          <div
+                            class="emotion-14"
+                          >
+                            <div
+                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
+                            >
+                              <div
+                                class="emotion-15"
+                              >
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  style="width: 80%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-17"
+                                  style="height: 240px;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                   <div
-                    class="emotion-75"
+                    class="emotion-82"
                   >
                     <button
-                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-76"
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-83"
                       disabled=""
                       tabindex="-1"
                       type="button"
@@ -773,12 +821,14 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
                       Back
                     </button>
                     <button
-                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-76"
-                      disabled=""
-                      tabindex="-1"
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-83"
+                      tabindex="0"
                       type="button"
                     >
                       Next
+                      <span
+                        class="MuiTouchRipple-root emotion-85"
+                      />
                     </button>
                   </div>
                 </div>
@@ -793,57 +843,57 @@ exports[`STORIES_WRITERS compare Page against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-78"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-86"
             >
               <div
-                class="emotion-79"
+                class="emotion-87"
               >
                 <div
-                  class="emotion-80"
+                  class="emotion-88"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-81"
+                  class="emotion-89"
                 >
                   <span
-                    class="emotion-82"
+                    class="emotion-90"
                   >
                     Movie Awards
                   </span>
                 </div>
                 <div
-                  class="emotion-81"
+                  class="emotion-89"
                 >
                   <span
-                    class="emotion-82"
+                    class="emotion-90"
                   >
                     Movie Remakes
                   </span>
                 </div>
                 <div
-                  class="emotion-81"
+                  class="emotion-89"
                 >
                   <span
-                    class="emotion-82"
+                    class="emotion-90"
                   >
                     Movie Directors
                   </span>
                 </div>
                 <div
-                  class="emotion-81"
+                  class="emotion-89"
                 >
                   <span
-                    class="emotion-82"
+                    class="emotion-90"
                   >
                     Movie Producers
                   </span>
                 </div>
                 <div
-                  class="emotion-81"
+                  class="emotion-89"
                 >
                   <span
-                    class="emotion-82"
+                    class="emotion-90"
                   >
                     Movie Actors
                   </span>

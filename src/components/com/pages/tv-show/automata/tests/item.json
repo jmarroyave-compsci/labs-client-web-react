@@ -1,44 +1,28 @@
 {
     "params": {
-        "id": "tt10699240"
+        "id": "tt0528241",
+        "render": "detail",
+        "renderer": "detail"
     },
     "data": {
-        "__typename": "TVShow",
-        "id": "tt10699240",
-        "title": "Test",
+        "id": "tt0528241",
+        "title": "Think Pretty",
         "country": [],
-        "type": "tvMovie",
-        "genre": [
-            "comedy",
-            "drama",
-            "family"
-        ],
-        "duration": "?",
-        "rating": {
-            "__typename": "Rating2",
-            "averageRating": null,
-            "name": null,
-            "votes": null
-        },
-        "releasedDate": "2013-01-01T05:00:00.000Z",
-        "classification": "?",
-        "streamBy": {
-            "__typename": "StreamBy2",
-            "name": null,
-            "yearAdded": null
-        },
-        "director": null,
-        "cast": [],
+        "type": "tvEpisode",
+        "genre": [],
+        "duration": "60",
+        "rating": [],
+        "releaseYear": 1964,
+        "classification": null,
+        "streamBy": [],
         "awards": [],
         "references": null,
-        "image": {
-            "__typename": "Image",
-            "poster": null
-        },
+        "image": null,
         "boxOffice": null,
         "production": null,
         "language": null,
-        "plot": null
+        "plot": null,
+        "__typename": "TVShow"
     },
     "loading": false
 }

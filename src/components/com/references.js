@@ -9,7 +9,7 @@ export default function References( props ){
   if(!data || !( website || 
     data.id?.startsWith("tt") || 
     data.id?.startsWith("nm") || 
-    data.wikiTopic ) ) return <div/>;
+    data.wiki ) ) return <div/>;
 
   return (
     <Frame>

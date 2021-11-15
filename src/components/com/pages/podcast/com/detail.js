@@ -22,7 +22,7 @@ export default function Dashboard( props ){
 
   return (
     <Stack>
-      <Media src={data.image}/>
+      <Media src={(data.image) ? data.image.poster : null}/>
 
       <Categories data={data.category}/>
       <Title text={data.title} subText1={data.subtitle} subText2={data.author} link={data.link}/>

@@ -18,7 +18,7 @@ function People( props ){
       {data && data.length > 0 && subtitle}
       <HList
         data={data}
-        item={(item) => <PersonItem tiny {...item} {...item.id} />}
+        item={(item) => <PersonItem format="list" {...item} {...item.id} />}
       />
     </Frame>
   )

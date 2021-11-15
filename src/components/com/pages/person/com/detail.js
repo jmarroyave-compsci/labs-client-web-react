@@ -21,7 +21,7 @@ function Dashboard( props ){
 
   return (
     <Stack>
-      <Media src={data.image}/>
+      <Media src={(data.image) ? data.image.poster : null}/>
       <Professions data={data.profession}/>
       <_Title text={data.name}/>
 

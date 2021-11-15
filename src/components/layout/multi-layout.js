@@ -11,6 +11,8 @@ import Grid from 'com/ui/grid';
 import Stack from 'com/ui/stack';
 import Banner from 'com/ui/banner';
 
+import fs from 'fs'
+
 export default function Layout( props ){
   const dispatch = useDispatch();
   const router = useRouter();
@@ -25,9 +27,12 @@ export default function Layout( props ){
 
   var forceLoading = false;
 
+
   useEffect( () => {
     if(!state) return;
     dispatch( setLoading( { status: state.loading, sender: config.automata.name } ) )
+
+    console.log(config.automata.name, state);
   }, [state])
 
   useEffect( () => {

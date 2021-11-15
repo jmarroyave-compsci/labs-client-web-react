@@ -22,15 +22,17 @@ export default function Stories( props ){
 
   return (
       <>
-        {tags.map( tag => 
-          <Frame>
-            <Title>{tag}</Title>
-            <Tiles 
-              data={data.filter( d => d.tags.includes(tag))}
-              item={(data) => <Item {...data}/>}
-              xs={12} sm={6} md={4} lg={3}
-            />
-          </Frame>
+        {tags.map( (tag, idx) => 
+          <React.Fragment key={idx}>
+            <Frame>
+              <Title>{tag}</Title>
+              <Tiles 
+                data={data.filter( d => d.tags.includes(tag))}
+                item={(data) => <Item {...data}/>}
+                xs={12} sm={6} md={4} lg={3}
+              />
+            </Frame>
+          </React.Fragment>
         )}
       </>
   )

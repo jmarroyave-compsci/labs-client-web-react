@@ -1,6 +1,6 @@
 {
     "params": {
-        "qry": "test",
+        "qry": "test drive",
         "page": 1,
         "entities": [
             "person",
@@ -9,79 +9,91 @@
             "video_game",
             "podcast",
             "festival"
-        ]
+        ],
+        "year": null,
+        "timeFrame": null
     },
     "results": {
         "data": [
             {
-                "__typename": "SearchResultsListItem",
-                "entity": "test",
-                "entityId": "tt0463244",
-                "type": "movie",
-                "desc": ""
+                "entity": "test drive",
+                "entityId": "tt0852703",
+                "type": "video_game",
+                "desc": "released: 1987",
+                "year": 1987,
+                "__typename": "SearchResultsListItem"
             },
             {
-                "__typename": "SearchResultsListItem",
-                "entity": "test",
-                "entityId": "tt10383196",
+                "entity": "test drive",
+                "entityId": "tt12546798",
                 "type": "movie",
-                "desc": ""
+                "desc": "",
+                "year": 2018,
+                "__typename": "SearchResultsListItem"
             },
             {
-                "__typename": "SearchResultsListItem",
-                "entity": "test",
-                "entityId": "tt6988290",
+                "entity": "test drive",
+                "entityId": "tt2149171",
                 "type": "movie",
-                "desc": ""
+                "desc": "",
+                "year": 2011,
+                "__typename": "SearchResultsListItem"
             },
             {
-                "__typename": "SearchResultsListItem",
-                "entity": "test",
-                "entityId": "tt0316748",
+                "entity": "test drive",
+                "entityId": "tt0410748",
                 "type": "movie",
-                "desc": ""
+                "desc": "",
+                "year": 2003,
+                "__typename": "SearchResultsListItem"
             },
             {
-                "__typename": "SearchResultsListItem",
-                "entity": "test",
-                "entityId": "tt8388732",
-                "type": "movie",
-                "desc": ""
+                "entity": "test drive 4",
+                "entityId": "tt6079198",
+                "type": "video_game",
+                "desc": "released: 1997",
+                "year": 1997,
+                "__typename": "SearchResultsListItem"
             },
             {
-                "__typename": "SearchResultsListItem",
-                "entity": "test",
-                "entityId": "tt5086444",
-                "type": "movie",
-                "desc": ""
+                "entity": "test drive 5",
+                "entityId": "tt6085870",
+                "type": "video_game",
+                "desc": "released: 1998",
+                "year": 1998,
+                "__typename": "SearchResultsListItem"
             },
             {
-                "__typename": "SearchResultsListItem",
-                "entity": "test",
-                "entityId": "tt2407380",
-                "type": "movie",
-                "desc": ""
+                "entity": "test drive 6",
+                "entityId": "tt0292274",
+                "type": "video_game",
+                "desc": "released: 1999",
+                "year": 1999,
+                "__typename": "SearchResultsListItem"
             },
             {
-                "__typename": "SearchResultsListItem",
-                "entity": "test",
-                "entityId": "tt11196276",
-                "type": "movie",
-                "desc": ""
+                "entity": "test drive ii car disk: the supercars",
+                "entityId": "tt6176356",
+                "type": "video_game",
+                "desc": "released: 1989",
+                "year": 1989,
+                "__typename": "SearchResultsListItem"
             },
             {
-                "__typename": "SearchResultsListItem",
-                "entity": "test",
-                "entityId": "tt4131188",
-                "type": "movie",
-                "desc": ""
+                "entity": "test drive ii scenery disk: california challenge",
+                "entityId": "tt6175344",
+                "type": "video_game",
+                "desc": "released: 1989",
+                "year": 1989,
+                "__typename": "SearchResultsListItem"
             },
             {
-                "__typename": "SearchResultsListItem",
-                "entity": "test",
-                "entityId": "tt0278090",
-                "type": "movie",
-                "desc": ""
+                "entity": "test drive ii scenery disk: european challenge",
+                "entityId": "tt6174056",
+                "type": "video_game",
+                "desc": "released: 1989",
+                "year": 1989,
+                "__typename": "SearchResultsListItem"
             }
         ],
         "loading": false,

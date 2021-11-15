@@ -1,885 +1,989 @@
 {
     "params": {
         "renderer": "page",
-        "year": "1992",
+        "year": "2017",
         "entity": "movies",
-        "page": 1
+        "page": 1,
+        "breadcrumbs": "/movies/stories/awards",
+        "render": "page"
     },
     "data": [
         {
             "festival": {
                 "id": "mf00001",
                 "name": "Academy Awards",
+                "image": {
+                    "poster": null,
+                    "__typename": "Image"
+                },
                 "__typename": "MovieFestival"
             },
-            "year": 1992,
+            "year": 2017,
             "awarded": [
                 {
                     "category": "ACTOR IN A LEADING ROLE",
-                    "entity": "Al Pacino",
-                    "won": true,
-                    "id": null,
+                    "entity": "Daniel Day-Lewis",
+                    "won": false,
+                    "entityId": "nm0000358",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTOR IN A LEADING ROLE",
-                    "entity": "Clint Eastwood",
+                    "entity": "Daniel Kaluuya",
                     "won": false,
-                    "id": "nm0000142",
+                    "entityId": "nm2257207",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTOR IN A LEADING ROLE",
                     "entity": "Denzel Washington",
                     "won": false,
-                    "id": "nm0000243",
+                    "entityId": "nm0000243",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTOR IN A LEADING ROLE",
-                    "entity": "Robert Downey Jr.",
-                    "won": false,
-                    "id": "nm0000375",
+                    "entity": "Gary Oldman",
+                    "won": true,
+                    "entityId": "nm0000198",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTOR IN A LEADING ROLE",
-                    "entity": "Stephen Rea",
+                    "entity": "Timothée Chalamet",
                     "won": false,
-                    "id": null,
+                    "entityId": "nm3154303",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTOR IN A SUPPORTING ROLE",
-                    "entity": "Al Pacino",
+                    "entity": "Christopher Plummer",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt13597846",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTOR IN A SUPPORTING ROLE",
-                    "entity": "David Paymer",
+                    "entity": "Richard Jenkins",
                     "won": false,
-                    "id": "nm0001601",
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTOR IN A SUPPORTING ROLE",
-                    "entity": "Gene Hackman",
+                    "entity": "Sam Rockwell",
                     "won": true,
-                    "id": "nm0000432",
+                    "entityId": "nm0005377",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTOR IN A SUPPORTING ROLE",
-                    "entity": "Jack Nicholson",
+                    "entity": "Willem Dafoe",
                     "won": false,
-                    "id": null,
+                    "entityId": "nm0000353",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTOR IN A SUPPORTING ROLE",
-                    "entity": "Jaye Davidson",
+                    "entity": "Woody Harrelson",
                     "won": false,
-                    "id": null,
+                    "entityId": "nm0000437",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTRESS IN A LEADING ROLE",
-                    "entity": "Catherine Deneuve",
-                    "won": false,
-                    "id": "nm0000366",
+                    "entity": "Frances McDormand",
+                    "won": true,
+                    "entityId": "nm0000531",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTRESS IN A LEADING ROLE",
-                    "entity": "Emma Thompson",
-                    "won": true,
-                    "id": null,
+                    "entity": "Margot Robbie",
+                    "won": false,
+                    "entityId": "nm3053338",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTRESS IN A LEADING ROLE",
-                    "entity": "Mary McDonnell",
+                    "entity": "Meryl Streep",
                     "won": false,
-                    "id": null,
+                    "entityId": "nm0000658",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTRESS IN A LEADING ROLE",
-                    "entity": "Michelle Pfeiffer",
+                    "entity": "Sally Hawkins",
                     "won": false,
-                    "id": "nm0000201",
+                    "entityId": "tt7896106",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTRESS IN A LEADING ROLE",
-                    "entity": "Susan Sarandon",
+                    "entity": "Saoirse Ronan",
                     "won": false,
-                    "id": "nm0000215",
+                    "entityId": "nm1519680",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTRESS IN A SUPPORTING ROLE",
-                    "entity": "Joan Plowright",
-                    "won": false,
-                    "id": "nm0687506",
+                    "entity": "Allison Janney",
+                    "won": true,
+                    "entityId": "nm0005049",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTRESS IN A SUPPORTING ROLE",
-                    "entity": "Judy Davis",
+                    "entity": "Laurie Metcalf",
                     "won": false,
-                    "id": null,
+                    "entityId": "nm0582418",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTRESS IN A SUPPORTING ROLE",
-                    "entity": "Marisa Tomei",
-                    "won": true,
-                    "id": "nm0000673",
+                    "entity": "Lesley Manville",
+                    "won": false,
+                    "entityId": "nm0544334",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTRESS IN A SUPPORTING ROLE",
-                    "entity": "Miranda Richardson",
+                    "entity": "Mary J. Blige",
                     "won": false,
-                    "id": null,
+                    "entityId": "nm0004763",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "ACTRESS IN A SUPPORTING ROLE",
-                    "entity": "Vanessa Redgrave",
+                    "entity": "Octavia Spencer",
                     "won": false,
-                    "id": "nm0000603",
+                    "entityId": "nm0818055",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "ART DIRECTION",
-                    "entity": "Bram Stoker's Dracula",
-                    "won": false,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "ART DIRECTION",
-                    "entity": "Chaplin",
-                    "won": false,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "ART DIRECTION",
-                    "entity": "Howards End",
+                    "category": "ANIMATED FEATURE FILM",
+                    "entity": "Coco",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "ART DIRECTION",
-                    "entity": "Toys",
+                    "category": "ANIMATED FEATURE FILM",
+                    "entity": "Ferdinand",
                     "won": false,
-                    "id": "nm8313441",
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "ART DIRECTION",
-                    "entity": "Unforgiven",
+                    "category": "ANIMATED FEATURE FILM",
+                    "entity": "Loving Vincent",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt3262342",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "AWARD OF COMMENDATION",
-                    "entity": "To The International Alliance of Theatrical Stage Employees in recognition of the indispensable contributions of its members, who represent the full spectrum of artists, technicians and craftspeople, to the art of motion pictures on the occasion of the one-hundredth anniversary of the Alliance's founding.",
-                    "won": true,
-                    "id": null,
+                    "category": "ANIMATED FEATURE FILM",
+                    "entity": "The Boss Baby",
+                    "won": false,
+                    "entityId": "tt3874544",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "ANIMATED FEATURE FILM",
+                    "entity": "The Breadwinner",
+                    "won": false,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "BEST PICTURE",
-                    "entity": "A Few Good Men",
+                    "entity": "Call Me by Your Name",
                     "won": false,
-                    "id": "nm3826635",
+                    "entityId": "tt5726616",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "BEST PICTURE",
-                    "entity": "Howards End",
+                    "entity": "Darkest Hour",
                     "won": false,
-                    "id": null,
+                    "entityId": "nm8818794",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "BEST PICTURE",
-                    "entity": "Scent of a Woman",
+                    "entity": "Dunkirk",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "BEST PICTURE",
-                    "entity": "The Crying Game",
+                    "entity": "Get Out",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "BEST PICTURE",
-                    "entity": "Unforgiven",
+                    "entity": "Lady Bird",
+                    "won": false,
+                    "entityId": "tt4925292",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "BEST PICTURE",
+                    "entity": "Phantom Thread",
+                    "won": false,
+                    "entityId": "tt5776858",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "BEST PICTURE",
+                    "entity": "The Post",
+                    "won": false,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "BEST PICTURE",
+                    "entity": "The Shape of Water",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "BEST PICTURE",
+                    "entity": "Three Billboards Outside Ebbing, Missouri",
+                    "won": false,
+                    "entityId": "tt5027774",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "CINEMATOGRAPHY",
-                    "entity": "A River Runs through It",
+                    "entity": "Blade Runner 2049",
                     "won": true,
-                    "id": null,
+                    "entityId": "tt1856101",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "CINEMATOGRAPHY",
-                    "entity": "Hoffa",
+                    "entity": "Darkest Hour",
                     "won": false,
-                    "id": "tt0104427",
+                    "entityId": "nm8818794",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "CINEMATOGRAPHY",
-                    "entity": "Howards End",
+                    "entity": "Dunkirk",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "CINEMATOGRAPHY",
-                    "entity": "The Lover",
+                    "entity": "Mudbound",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt2396589",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "CINEMATOGRAPHY",
-                    "entity": "Unforgiven",
+                    "entity": "The Shape of Water",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "COSTUME DESIGN",
-                    "entity": "Bram Stoker's Dracula",
-                    "won": true,
-                    "id": null,
+                    "entity": "Beauty and the Beast",
+                    "won": false,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "COSTUME DESIGN",
-                    "entity": "Enchanted April",
+                    "entity": "Darkest Hour",
                     "won": false,
-                    "id": null,
+                    "entityId": "nm8818794",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "COSTUME DESIGN",
-                    "entity": "Howards End",
-                    "won": false,
-                    "id": null,
+                    "entity": "Phantom Thread",
+                    "won": true,
+                    "entityId": "tt5776858",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "COSTUME DESIGN",
-                    "entity": "Malcolm X",
+                    "entity": "The Shape of Water",
                     "won": false,
-                    "id": "nm0944318",
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "COSTUME DESIGN",
-                    "entity": "Toys",
+                    "entity": "Victoria & Abdul",
                     "won": false,
-                    "id": "nm8313441",
+                    "entityId": "tt5816682",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DIRECTING",
-                    "entity": "Howards End",
+                    "entity": "Dunkirk",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DIRECTING",
-                    "entity": "Scent of a Woman",
+                    "entity": "Get Out",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DIRECTING",
-                    "entity": "The Crying Game",
+                    "entity": "Lady Bird",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt4925292",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DIRECTING",
-                    "entity": "The Player",
+                    "entity": "Phantom Thread",
                     "won": false,
-                    "id": "nm7495408",
+                    "entityId": "tt5776858",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DIRECTING",
-                    "entity": "Unforgiven",
+                    "entity": "The Shape of Water",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DOCUMENTARY (Feature)",
-                    "entity": "Changing Our Minds: The Story of Dr. Evelyn Hooker",
+                    "entity": "Abacus: Small Enough to Jail",
                     "won": false,
-                    "id": "tt0103938",
+                    "entityId": "tt5952382",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DOCUMENTARY (Feature)",
-                    "entity": "Fires of Kuwait",
+                    "entity": "Faces Places",
                     "won": false,
-                    "id": "tt0104275",
+                    "entityId": "tt5598102",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DOCUMENTARY (Feature)",
-                    "entity": "Liberators: Fighting on Two Fronts in World War II",
-                    "won": false,
-                    "id": "tt0104721",
+                    "entity": "Icarus",
+                    "won": true,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DOCUMENTARY (Feature)",
-                    "entity": "Music for the Movies: Bernard Herrmann",
+                    "entity": "Last Men in Aleppo",
                     "won": false,
-                    "id": "tt0104946",
+                    "entityId": "tt6333074",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DOCUMENTARY (Feature)",
-                    "entity": "The Panama Deception",
+                    "entity": "Strong Island",
+                    "won": false,
+                    "entityId": "tt5873150",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "DOCUMENTARY (Short Subject)",
+                    "entity": "Edith+Eddie",
+                    "won": false,
+                    "entityId": "tt6519356",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "DOCUMENTARY (Short Subject)",
+                    "entity": "Heaven Is a Traffic Jam on the 405",
                     "won": true,
-                    "id": "tt0105089",
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DOCUMENTARY (Short Subject)",
-                    "entity": "At the Edge of Conquest: The Journey of Chief Wai-Wai",
+                    "entity": "Heroin(e)",
                     "won": false,
-                    "id": "tt0103728",
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DOCUMENTARY (Short Subject)",
-                    "entity": "Beyond Imagining: Margaret Anderson and the 'Little Review'",
+                    "entity": "Knife Skills",
                     "won": false,
-                    "id": "tt0103803",
+                    "entityId": "tt5745110",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "DOCUMENTARY (Short Subject)",
-                    "entity": "Educating Peter",
+                    "entity": "Traffic Stop",
+                    "won": false,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "FILM EDITING",
+                    "entity": "Baby Driver",
+                    "won": false,
+                    "entityId": "tt3890160",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "FILM EDITING",
+                    "entity": "Dunkirk",
                     "won": true,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "DOCUMENTARY (Short Subject)",
-                    "entity": "The Colours of My Father: A Portrait of Sam Borenstein",
-                    "won": false,
-                    "id": "tt0103985",
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "DOCUMENTARY (Short Subject)",
-                    "entity": "When Abortion Was Illegal: Untold Stories",
-                    "won": false,
-                    "id": "tt0105805",
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "FILM EDITING",
-                    "entity": "A Few Good Men",
+                    "entity": "I, Tonya",
                     "won": false,
-                    "id": "nm3826635",
+                    "entityId": "tt5580036",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "FILM EDITING",
-                    "entity": "Basic Instinct",
+                    "entity": "The Shape of Water",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "FILM EDITING",
-                    "entity": "The Crying Game",
+                    "entity": "Three Billboards Outside Ebbing, Missouri",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt5027774",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "FILM EDITING",
-                    "entity": "The Player",
-                    "won": false,
-                    "id": "nm7495408",
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "FILM EDITING",
-                    "entity": "Unforgiven",
+                    "category": "FOREIGN LANGUAGE FILM",
+                    "entity": "A Fantastic Woman",
                     "won": true,
-                    "id": null,
+                    "entityId": "tt5639354",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "FOREIGN LANGUAGE FILM",
-                    "entity": "A Place in the World",
+                    "entity": "Loveless",
                     "won": false,
-                    "id": null,
+                    "entityId": "nm10393304",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "FOREIGN LANGUAGE FILM",
-                    "entity": "Close to Eden",
+                    "entity": "On Body and Soul",
                     "won": false,
-                    "id": "tt0103176",
+                    "entityId": "tt5607714",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "FOREIGN LANGUAGE FILM",
-                    "entity": "Daens",
+                    "entity": "The Insult",
                     "won": false,
-                    "id": "tt0104046",
+                    "entityId": "tt7048622",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "FOREIGN LANGUAGE FILM",
-                    "entity": "Indochine",
-                    "won": true,
-                    "id": "nm2617747",
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "FOREIGN LANGUAGE FILM",
-                    "entity": "Schtonk!",
+                    "entity": "The Square",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "GORDON E. SAWYER AWARD",
-                    "entity": "Erich Kaestner",
+                    "entity": "Jonathan Erland",
                     "won": true,
-                    "id": "nm3802684",
+                    "entityId": "nm0259510",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "HONORARY AWARD",
-                    "entity": "To Federico Fellini in recognition of his place as one of the screen's master storytellers.",
+                    "entity": "To Agnès Varda, whose compassion and curiosity inform a uniquely personal cinema.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "JEAN HERSHOLT HUMANITARIAN AWARD",
-                    "entity": "Audrey Hepburn",
+                    "category": "HONORARY AWARD",
+                    "entity": "To Charles Burnett, a resolutely independent and influential film pioneer who has chronicled the lives of black Americans with eloquence and insight.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "JEAN HERSHOLT HUMANITARIAN AWARD",
-                    "entity": "Elizabeth Taylor",
+                    "category": "HONORARY AWARD",
+                    "entity": "To Donald Sutherland for a lifetime of indelible characters, rendered with unwavering truthfulness.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "MAKEUP",
-                    "entity": "Batman Returns",
+                    "category": "HONORARY AWARD",
+                    "entity": "To Owen Roizman, whose expansive visual style and technical innovation have advanced the art of cinematography.",
+                    "won": true,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "MAKEUP AND HAIRSTYLING",
+                    "entity": "Darkest Hour",
+                    "won": true,
+                    "entityId": "nm8818794",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "MAKEUP AND HAIRSTYLING",
+                    "entity": "Victoria & Abdul",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt5816682",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "MAKEUP",
-                    "entity": "Bram Stoker's Dracula",
-                    "won": true,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "MAKEUP",
-                    "entity": "Hoffa",
+                    "category": "MAKEUP AND HAIRSTYLING",
+                    "entity": "Wonder",
                     "won": false,
-                    "id": "tt0104427",
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "MEDAL OF COMMENDATION",
-                    "entity": "To Petro Vlahos in appreciation for outstanding service and dedication in upholding the high standards of the Academy of Motion Picture Arts and Sciences.",
-                    "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "MUSIC (Original Score)",
-                    "entity": "A River Runs through It",
+                    "entity": "Dunkirk",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "MUSIC (Original Score)",
-                    "entity": "Aladdin",
+                    "entity": "Phantom Thread",
+                    "won": false,
+                    "entityId": "tt5776858",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "MUSIC (Original Score)",
+                    "entity": "Star Wars: The Last Jedi",
+                    "won": false,
+                    "entityId": "tt3486354",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "MUSIC (Original Score)",
+                    "entity": "The Shape of Water",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "MUSIC (Original Score)",
-                    "entity": "Basic Instinct",
+                    "entity": "Three Billboards Outside Ebbing, Missouri",
                     "won": false,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "MUSIC (Original Score)",
-                    "entity": "Chaplin",
-                    "won": false,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "MUSIC (Original Score)",
-                    "entity": "Howards End",
-                    "won": false,
-                    "id": null,
+                    "entityId": "tt5027774",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "MUSIC (Original Song)",
-                    "entity": "Aladdin",
+                    "entity": "Call Me by Your Name",
+                    "won": false,
+                    "entityId": "tt5726616",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "MUSIC (Original Song)",
+                    "entity": "Coco",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "MUSIC (Original Song)",
-                    "entity": "The Bodyguard",
+                    "entity": "Marshall",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "MUSIC (Original Song)",
-                    "entity": "The Mambo Kings",
+                    "entity": "Mudbound",
                     "won": false,
-                    "id": "tt0104802",
+                    "entityId": "tt2396589",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "MUSIC (Original Song)",
+                    "entity": "The Greatest Showman",
+                    "won": false,
+                    "entityId": "nm11368167",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "PRODUCTION DESIGN",
+                    "entity": "Beauty and the Beast",
+                    "won": false,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "PRODUCTION DESIGN",
+                    "entity": "Blade Runner 2049",
+                    "won": false,
+                    "entityId": "tt1856101",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "PRODUCTION DESIGN",
+                    "entity": "Darkest Hour",
+                    "won": false,
+                    "entityId": "nm8818794",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "PRODUCTION DESIGN",
+                    "entity": "Dunkirk",
+                    "won": false,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "PRODUCTION DESIGN",
+                    "entity": "The Shape of Water",
+                    "won": true,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SCIENTIFIC AND TECHNICAL AWARD (Academy Award of Merit)",
-                    "entity": "To CHADWELL O'CONNOR of the O'Connor Engineering Laboratories for the concept and engineering of the fluid-damped camera head for motion picture photography.",
+                    "entity": "To MARK ELENDT and SIDE EFFECTS SOFTWARE for the creation and development of the Houdini visual effects and animation system.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
-                    "entity": "To AL MAYER for the camera design; IAIN NEIL and GEORGE KRAEMER for the optical design; HANS SPIRAWSKI and BILL ESLICK for the opto-mechanical design; and DON EARL for technical support in developing the Panavision System 65 Studio Sync Sound Reflex Camera for 65mm motion picture photography.",
+                    "entity": "To ABIGAIL BRADY, JON WADELTON and JERRY HUXTABLE for their significant contributions to the architecture and extensibility of the Nuke compositing system.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
-                    "entity": "To ARNOLD & RICHTER, OTTO BLASCHEK and the ENGINEERING DEPARTMENT OF ARRI, AUSTRIA for the design and development of the Arriflex 765 Camera System for 65mm motion picture photography.",
+                    "entity": "To BILL SPITZAK and JONATHAN EGSTAD for the visionary design, development and stewardship of the Nuke compositing system.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
-                    "entity": "To CLAUS WIEDEMANN and ROBERT ORBAN for the design and DOLBY LABORATORIES for the development of the Dolby Labs 'Container.'",
+                    "entity": "To JEFF LAIT, MARK TUCKER, CRISTIN BARGHIEL and JOHN LYNCH for their contributions to the design and architecture of the Houdini visual effects and animation system.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
-                    "entity": "To DOUGLAS TRUMBULL for the concept; GEOFFREY H. WILLIAMSON for the movement design; ROBERT D. AUGUSTE for the electronic design and EDMUND M. DI GIULIO for the camera system design of the CP-65 Showscan Camera System for 65mm motion picture photography.",
+                    "entity": "To JOHN COYLE, BRAD HURNDELL, VIKAS SATHAYE and SHANE BUCKHAM for the concept, design, engineering and implementation of the Shotover K1 Camera System.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
-                    "entity": "To KEN BATES for the design and development of the Bates Decelerator System for accurately and safely arresting the descent of stunt persons in high freefalls.",
+                    "entity": "To LEONARD CHAPMAN for the overall concept, design and development, to STANISLAV GORBATOV for the electronic system design, and to DAVID GASPARIAN and SOUHAIL ISSA for the mechanical design and integration of the Hydrascope telescoping camera crane systems.",
                     "won": true,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
-                    "entity": "To LOREN CARPENTER, ROB COOK, ED CATMULL, TOM PORTER, PAT HANRAHAN, TONY APODACA and DARWYN PEACHEY for the development of \"RenderMan\" software which produces images used in motion pictures from 3D computer descriptions of shape and appearance.",
-                    "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
-                    "entity": "To IAIN NEIL for the optical design and KAZ FUDANO for the mechanical design of the Panavision Slant Focus Lens for motion picture photography.",
+                    "entity": "To ALEX POWELL for his contribution to the design and engineering, to JASON REISIG for his contribution to the interaction design, and to MARTIN WATT and ALEX WELLS for their contributions to the high-performance execution engine of the Premo character animation system at DreamWorks Animation.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
-                    "entity": "To IRA TIFFEN of the Tiffen Manufacturing Corporation for the production of the Ultra Contrast Filter Series for motion picture photography.",
+                    "entity": "To JASON SMITH and JEFF WHITE for the original design, and to RACHEL MARIE ROSE and MICHAEL JUSTIN LEE JUTAN for the architecture and engineering, of the BlockParty procedural rigging system at Industrial Light & Magic.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
-                    "entity": "To ROBERT R. BURTON of Audio Rents, Incorporated, for the development of the Model S-27 4-Band Splitter/Combiner.",
+                    "entity": "To JOE MANCEWICZ, MATT DERKSEN and HANS RIJPKEMA for the design, architecture and implementation of the Rhythm & Hues Construction Kit rigging system.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
-                    "entity": "To TOM BRIGHAM for the original concept and pioneering work; and DOUGLAS SMYTHE and the COMPUTER GRAPHICS DEPARTMENT OF INDUSTRIAL LIGHT & MAGIC for the development and the first implementation in feature motion pictures of the \"MORF\" system for digital metamorphosis of high resolution images.",
+                    "entity": "To ROB JENSEN for the foundational design and continued development, to THOMAS HAHN for the animation toolset, and to GEORGE ELKOURA, ADAM WOODBURY and DIRK VAN GELDER for the high-performance execution engine of the Presto Animation System at Pixar Animation Studios.",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SHORT FILM (Animated)",
-                    "entity": "Adam",
-                    "won": false,
-                    "id": null,
+                    "entity": "Dear Basketball",
+                    "won": true,
+                    "entityId": "tt6794476",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SHORT FILM (Animated)",
-                    "entity": "Mona Lisa Descending a Staircase",
-                    "won": true,
-                    "id": "tt0104908",
+                    "entity": "Garden Party",
+                    "won": false,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SHORT FILM (Animated)",
-                    "entity": "Reci, Reci, Reci... (Words, Words, Words)",
+                    "entity": "Lou",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SHORT FILM (Animated)",
-                    "entity": "Screen Play",
+                    "entity": "Negative Space",
                     "won": false,
-                    "id": null,
+                    "entityId": "nm9575112",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SHORT FILM (Animated)",
-                    "entity": "The Sandman",
+                    "entity": "Revolting Rhymes",
                     "won": false,
-                    "id": "nm1677174",
+                    "entityId": "tt13062174",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SHORT FILM (Live Action)",
-                    "entity": "Contact",
+                    "entity": "DeKalb Elementary",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt5926890",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SHORT FILM (Live Action)",
-                    "entity": "Cruise Control",
+                    "entity": "My Nephew Emmett",
                     "won": false,
-                    "id": "nm8791429",
+                    "entityId": "tt6598290",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SHORT FILM (Live Action)",
-                    "entity": "Omnibus",
+                    "entity": "The Eleven O'Clock",
+                    "won": false,
+                    "entityId": "tt6023474",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "SHORT FILM (Live Action)",
+                    "entity": "The Silent Child",
                     "won": true,
-                    "id": null,
+                    "entityId": "tt14454760",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "SHORT FILM (Live Action)",
-                    "entity": "Swan Song",
+                    "entity": "Watu Wote/All of Us",
                     "won": false,
-                    "id": "nm6413621",
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "SHORT FILM (Live Action)",
-                    "entity": "The Lady in Waiting",
+                    "category": "SOUND EDITING",
+                    "entity": "Baby Driver",
                     "won": false,
-                    "id": "tt0104669",
+                    "entityId": "tt3890160",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "SOUND",
-                    "entity": "A Few Good Men",
+                    "category": "SOUND EDITING",
+                    "entity": "Blade Runner 2049",
                     "won": false,
-                    "id": "nm3826635",
+                    "entityId": "tt1856101",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "SOUND",
-                    "entity": "Aladdin",
-                    "won": false,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "SOUND",
-                    "entity": "The Last of the Mohicans",
+                    "category": "SOUND EDITING",
+                    "entity": "Dunkirk",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "SOUND",
-                    "entity": "Under Siege",
+                    "category": "SOUND EDITING",
+                    "entity": "Star Wars: The Last Jedi",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt3486354",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "SOUND",
-                    "entity": "Unforgiven",
+                    "category": "SOUND EDITING",
+                    "entity": "The Shape of Water",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "SOUND EFFECTS EDITING",
-                    "entity": "Aladdin",
+                    "category": "SOUND MIXING",
+                    "entity": "Baby Driver",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt3890160",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "SOUND EFFECTS EDITING",
-                    "entity": "Bram Stoker's Dracula",
+                    "category": "SOUND MIXING",
+                    "entity": "Blade Runner 2049",
+                    "won": false,
+                    "entityId": "tt1856101",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "SOUND MIXING",
+                    "entity": "Dunkirk",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "SOUND EFFECTS EDITING",
-                    "entity": "Under Siege",
+                    "category": "SOUND MIXING",
+                    "entity": "Star Wars: The Last Jedi",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt3486354",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "SOUND MIXING",
+                    "entity": "The Shape of Water",
+                    "won": false,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "SPECIAL AWARD",
+                    "entity": "To Alejandro G. Iñárritu's CARNE y ARENA virtual reality installation, in recognition of a visionary and powerful experience in storytelling.",
+                    "won": true,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "VISUAL EFFECTS",
-                    "entity": "Alien 3",
-                    "won": false,
-                    "id": "tt0103644",
+                    "entity": "Blade Runner 2049",
+                    "won": true,
+                    "entityId": "tt1856101",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "VISUAL EFFECTS",
-                    "entity": "Batman Returns",
+                    "entity": "Guardians of the Galaxy Vol. 2",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt3896198",
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "VISUAL EFFECTS",
-                    "entity": "Death Becomes Her",
+                    "entity": "Kong: Skull Island",
+                    "won": false,
+                    "entityId": "tt3731562",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "VISUAL EFFECTS",
+                    "entity": "Star Wars: The Last Jedi",
+                    "won": false,
+                    "entityId": "tt3486354",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "VISUAL EFFECTS",
+                    "entity": "War for the Planet of the Apes",
+                    "won": false,
+                    "entityId": "tt3450958",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "WRITING (Adapted Screenplay)",
+                    "entity": "Call Me by Your Name",
                     "won": true,
-                    "id": "tt0104070",
+                    "entityId": "tt5726616",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "WRITING (Screenplay Based on Material Previously Produced or Published)",
-                    "entity": "A River Runs through It",
+                    "category": "WRITING (Adapted Screenplay)",
+                    "entity": "Logan",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "WRITING (Screenplay Based on Material Previously Produced or Published)",
-                    "entity": "Enchanted April",
+                    "category": "WRITING (Adapted Screenplay)",
+                    "entity": "Molly's Game",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt4209788",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "WRITING (Screenplay Based on Material Previously Produced or Published)",
-                    "entity": "Howards End",
+                    "category": "WRITING (Adapted Screenplay)",
+                    "entity": "Mudbound",
+                    "won": false,
+                    "entityId": "tt2396589",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "WRITING (Adapted Screenplay)",
+                    "entity": "The Disaster Artist",
+                    "won": false,
+                    "entityId": "tt3521126",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "WRITING (Original Screenplay)",
+                    "entity": "Get Out",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "WRITING (Screenplay Based on Material Previously Produced or Published)",
-                    "entity": "Scent of a Woman",
+                    "category": "WRITING (Original Screenplay)",
+                    "entity": "Lady Bird",
                     "won": false,
-                    "id": null,
+                    "entityId": "tt4925292",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "WRITING (Screenplay Based on Material Previously Produced or Published)",
-                    "entity": "The Player",
+                    "category": "WRITING (Original Screenplay)",
+                    "entity": "The Big Sick",
                     "won": false,
-                    "id": "nm7495408",
+                    "entityId": "tt5462602",
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "WRITING (Screenplay Written Directly for the Screen)",
-                    "entity": "Husbands and Wives",
+                    "category": "WRITING (Original Screenplay)",
+                    "entity": "The Shape of Water",
                     "won": false,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
-                    "category": "WRITING (Screenplay Written Directly for the Screen)",
-                    "entity": "Lorenzo's Oil",
+                    "category": "WRITING (Original Screenplay)",
+                    "entity": "Three Billboards Outside Ebbing, Missouri",
                     "won": false,
-                    "id": "tt0104756",
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "WRITING (Screenplay Written Directly for the Screen)",
-                    "entity": "Passion Fish",
-                    "won": false,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "WRITING (Screenplay Written Directly for the Screen)",
-                    "entity": "The Crying Game",
-                    "won": true,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                },
-                {
-                    "category": "WRITING (Screenplay Written Directly for the Screen)",
-                    "entity": "Unforgiven",
-                    "won": false,
-                    "id": null,
+                    "entityId": "tt5027774",
                     "__typename": "AwardedListItem"
                 }
             ],
@@ -887,17 +991,72 @@
         },
         {
             "festival": {
-                "id": "mf00050",
-                "name": "Changchun Film Festival",
+                "id": "mf00026",
+                "name": "Silwerskerm Film Festival",
+                "image": {
+                    "poster": null,
+                    "__typename": "Image"
+                },
                 "__typename": "MovieFestival"
             },
-            "year": 1992,
+            "year": 2017,
             "awarded": [
                 {
-                    "category": "golden deer award (best film)",
-                    "entity": "The Story of Qiu Ju",
+                    "category": "silwerskerm award for best feature film",
+                    "entity": "Vaselinetjie",
                     "won": true,
-                    "id": "tt0105197",
+                    "entityId": "tt5335438",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "silwerskerm award for best short film",
+                    "entity": "Soldaat",
+                    "won": true,
+                    "entityId": "tt7291020",
+                    "__typename": "AwardedListItem"
+                }
+            ],
+            "__typename": "StoryMovieAward"
+        },
+        {
+            "festival": {
+                "id": "mf00035",
+                "name": "Asia Pacific Film Festival",
+                "image": {
+                    "poster": "https://wikipedia.org/wiki/Special:Redirect/file/%EB%B6%80%EC%82%B0%EC%8B%9C%EB%AF%BC%ED%9A%8C%EA%B4%80%EC%97%90%EC%84%9C_%EC%97%B4%EB%A6%B0_%EC%A0%9C22%ED%9A%8C_%EC%95%84%EC%8B%9C%EC%95%84%EC%98%81%ED%99%94%EC%A0%9C_%EA%B0%9C%EB%A7%89%ED%96%89%EC%82%AC.jpg",
+                    "__typename": "Image"
+                },
+                "__typename": "MovieFestival"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "category": "best film winners",
+                    "entity": "The Unnamed",
+                    "won": true,
+                    "entityId": "tt8126360",
+                    "__typename": "AwardedListItem"
+                }
+            ],
+            "__typename": "StoryMovieAward"
+        },
+        {
+            "festival": {
+                "id": "mf00080",
+                "name": "International Film Festival of Kerala",
+                "image": {
+                    "poster": null,
+                    "__typename": "Image"
+                },
+                "__typename": "MovieFestival"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "category": "golden crow pheasant for best film - winners",
+                    "entity": "Wajib",
+                    "won": true,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 }
             ],
@@ -907,22 +1066,26 @@
             "festival": {
                 "id": "mf00175",
                 "name": "Flanders International Film Festival Ghent",
+                "image": {
+                    "poster": null,
+                    "__typename": "Image"
+                },
                 "__typename": "MovieFestival"
             },
-            "year": 1992,
+            "year": 2017,
             "awarded": [
                 {
                     "category": "georges delerue award for best soundtrack/sound design",
-                    "entity": "Bob Roberts (David Robbins)",
+                    "entity": "A Ciambra (Dan Romer)",
                     "won": true,
-                    "id": null,
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 },
                 {
                     "category": "grand prix for best film",
-                    "entity": "A Woman's Tale",
+                    "entity": "Zagros",
                     "won": true,
-                    "id": "tt0103282",
+                    "entityId": null,
                     "__typename": "AwardedListItem"
                 }
             ],
@@ -932,15 +1095,197 @@
             "festival": {
                 "id": "mf00189",
                 "name": "Göteborg International Film Festival",
+                "image": {
+                    "poster": null,
+                    "__typename": "Image"
+                },
                 "__typename": "MovieFestival"
             },
-            "year": 1992,
+            "year": 2017,
             "awarded": [
                 {
                     "category": "dragon award for best nordic film",
-                    "entity": "Freud flyttar hemifrån",
+                    "entity": "Sameblod",
                     "won": true,
-                    "id": null,
+                    "entityId": "nm8097679",
+                    "__typename": "AwardedListItem"
+                }
+            ],
+            "__typename": "StoryMovieAward"
+        },
+        {
+            "festival": {
+                "id": "mf00199",
+                "name": "Jewish Motifs International Film Festival",
+                "image": {
+                    "poster": null,
+                    "__typename": "Image"
+                },
+                "__typename": "MovieFestival"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "category": "warsaw phoenix for the best feature film",
+                    "entity": "שבוע ויום",
+                    "won": true,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                }
+            ],
+            "__typename": "StoryMovieAward"
+        },
+        {
+            "festival": {
+                "id": "mf00206",
+                "name": "Küstendorf",
+                "image": {
+                    "poster": null,
+                    "__typename": "Image"
+                },
+                "__typename": "MovieFestival"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "category": "golden egg for best short film",
+                    "entity": "Thorn",
+                    "won": true,
+                    "entityId": "tt5081298",
+                    "__typename": "AwardedListItem"
+                }
+            ],
+            "__typename": "StoryMovieAward"
+        },
+        {
+            "festival": {
+                "id": "mf00226",
+                "name": "Norway Tamil Film Festival Awards",
+                "image": {
+                    "poster": null,
+                    "__typename": "Image"
+                },
+                "__typename": "MovieFestival"
+            },
+            "year": 2017,
+            "awarded": [
+                {
+                    "category": "best actor",
+                    "entity": "Dharma Durai",
+                    "won": true,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best actress",
+                    "entity": "Tharai Thappattai",
+                    "won": true,
+                    "entityId": "tt5340516",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best cinematographer",
+                    "entity": "Kidaari",
+                    "won": true,
+                    "entityId": "tt6056530",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best comedian",
+                    "entity": "Aandavan Kattalai",
+                    "won": true,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best director",
+                    "entity": "Visaranai",
+                    "won": true,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best editor",
+                    "entity": "Dhuruvangal Pathinaaru",
+                    "won": true,
+                    "entityId": "tt6380520",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best female playback singer",
+                    "entity": "Rekka",
+                    "won": true,
+                    "entityId": "tt6126312",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best film",
+                    "entity": "Joker",
+                    "won": true,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best lyricist",
+                    "entity": "Kabali",
+                    "won": true,
+                    "entityId": "nm9675773",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best male playback singer",
+                    "entity": "Kabali",
+                    "won": true,
+                    "entityId": "nm9675773",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best music director",
+                    "entity": "Joker",
+                    "won": true,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best producer",
+                    "entity": "Uriyadi",
+                    "won": true,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best screenplay",
+                    "entity": "Dhuruvangal Pathinaaru",
+                    "won": true,
+                    "entityId": "tt6380520",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best social awareness award",
+                    "entity": "Ammani",
+                    "won": true,
+                    "entityId": "tt6262750",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best supporting actor",
+                    "entity": "Appa & Visaranai",
+                    "won": true,
+                    "entityId": null,
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best supporting actress",
+                    "entity": "Kuttrame Thandanai",
+                    "won": true,
+                    "entityId": "tt5857968",
+                    "__typename": "AwardedListItem"
+                },
+                {
+                    "category": "best villain",
+                    "entity": "Tharai Thappattai",
+                    "won": true,
+                    "entityId": "tt5340516",
                     "__typename": "AwardedListItem"
                 }
             ],
@@ -950,105 +1295,19 @@
             "festival": {
                 "id": "mf00231",
                 "name": "Paris Lesbian and Feminist Film Festival",
+                "image": {
+                    "poster": null,
+                    "__typename": "Image"
+                },
                 "__typename": "MovieFestival"
             },
-            "year": 1992,
+            "year": 2017,
             "awarded": [
                 {
                     "category": "best feature film awards",
-                    "entity": "Anne Trister",
+                    "entity": "Signature Move",
                     "won": true,
-                    "id": "tt0090648",
-                    "__typename": "AwardedListItem"
-                }
-            ],
-            "__typename": "StoryMovieAward"
-        },
-        {
-            "festival": {
-                "id": "mf00253",
-                "name": "Stockholm International Film Festival",
-                "__typename": "MovieFestival"
-            },
-            "year": 1992,
-            "awarded": [
-                {
-                    "category": "bronze horse: best film",
-                    "entity": "Reservoir Dogs",
-                    "won": true,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                }
-            ],
-            "__typename": "StoryMovieAward"
-        },
-        {
-            "festival": {
-                "id": "mf00412",
-                "name": "Montreal World Film Festival",
-                "__typename": "MovieFestival"
-            },
-            "year": 1992,
-            "awarded": [
-                {
-                    "category": "golden zenith winners for the best feature film in competition first films world competition",
-                    "entity": "Kleine Haie",
-                    "won": true,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                }
-            ],
-            "__typename": "StoryMovieAward"
-        },
-        {
-            "festival": {
-                "id": "mf00470",
-                "name": "Seattle International Film Festival",
-                "__typename": "MovieFestival"
-            },
-            "year": 1992,
-            "awarded": [
-                {
-                    "category": "golden space needle (best film) and siff awards for best short and documentary",
-                    "entity": "IP 5 - L'île aux pachydermes (dir. Jean-Jacques Beineix, France)",
-                    "won": true,
-                    "id": null,
-                    "__typename": "AwardedListItem"
-                }
-            ],
-            "__typename": "StoryMovieAward"
-        },
-        {
-            "festival": {
-                "id": "mf00515",
-                "name": "Melbourne International Film Festival",
-                "__typename": "MovieFestival"
-            },
-            "year": 1992,
-            "awarded": [
-                {
-                    "category": "winners of grand prix for best short film",
-                    "entity": "The Writing in the Sand",
-                    "won": true,
-                    "id": "tt0247060",
-                    "__typename": "AwardedListItem"
-                }
-            ],
-            "__typename": "StoryMovieAward"
-        },
-        {
-            "festival": {
-                "id": "mf00525",
-                "name": "Cartagena Film Festival",
-                "__typename": "MovieFestival"
-            },
-            "year": 1992,
-            "awarded": [
-                {
-                    "category": "best film winners",
-                    "entity": "Tacones lejanos",
-                    "won": true,
-                    "id": null,
+                    "entityId": "tt5328952",
                     "__typename": "AwardedListItem"
                 }
             ],

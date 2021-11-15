@@ -1,98 +1,140 @@
 {
     "params": {
         "renderer": "list",
-        "page": 1
+        "page": 1,
+        "breadcrumbs": "/movies/stories/awards",
+        "render": "list"
     },
     "data": [
         {
-            "__typename": "MovieFestival",
             "id": "mf00001",
             "name": "Academy Awards",
-            "wikiTopic": "Academy Awards",
-            "established": "1929",
+            "wiki": "Academy Awards",
+            "startYear": "1929",
             "country": "?",
-            "continent": "America"
+            "continent": "America",
+            "image": {
+                "poster": null,
+                "__typename": "Image"
+            },
+            "__typename": "MovieFestival"
         },
         {
-            "__typename": "MovieFestival",
             "id": "mf00002",
             "name": "Emmy Awards",
-            "wikiTopic": "Emmy Awards",
-            "established": "1949",
+            "wiki": "Emmy Awards",
+            "startYear": "1949",
             "country": "?",
-            "continent": "America"
+            "continent": "America",
+            "image": {
+                "poster": null,
+                "__typename": "Image"
+            },
+            "__typename": "MovieFestival"
         },
         {
-            "__typename": "MovieFestival",
             "id": "mf00003",
             "name": "Golden Globe Awards",
-            "wikiTopic": "Golden Globe Awards",
-            "established": "1944",
+            "wiki": "Golden Globe Awards",
+            "startYear": "1944",
             "country": "?",
-            "continent": "America"
+            "continent": "America",
+            "image": {
+                "poster": null,
+                "__typename": "Image"
+            },
+            "__typename": "MovieFestival"
         },
         {
-            "__typename": "MovieFestival",
             "id": "mf00004",
             "name": "Alexandria International Film Festival",
-            "wikiTopic": "Alexandria International Film Festival",
-            "established": "1984",
+            "wiki": "Alexandria International Film Festival",
+            "startYear": "1984",
             "country": "Egypt",
-            "continent": "Africa"
+            "continent": "Africa",
+            "image": {
+                "poster": null,
+                "__typename": "Image"
+            },
+            "__typename": "MovieFestival"
         },
         {
-            "__typename": "MovieFestival",
             "id": "mf00005",
             "name": "Amakula International Film Festival",
-            "wikiTopic": "Amakula International Film Festival",
-            "established": "2004",
+            "wiki": "Amakula International Film Festival",
+            "startYear": "2004",
             "country": "Uganda",
-            "continent": "Africa"
+            "continent": "Africa",
+            "image": {
+                "poster": null,
+                "__typename": "Image"
+            },
+            "__typename": "MovieFestival"
         },
         {
-            "__typename": "MovieFestival",
             "id": "mf00006",
             "name": "Cabo Verde International Film Festival",
-            "wikiTopic": "Cabo Verde International Film Festival",
-            "established": "2010",
+            "wiki": "Cabo Verde International Film Festival",
+            "startYear": "2010",
             "country": "Cape Verde",
-            "continent": "Africa"
+            "continent": "Africa",
+            "image": {
+                "poster": null,
+                "__typename": "Image"
+            },
+            "__typename": "MovieFestival"
         },
         {
-            "__typename": "MovieFestival",
             "id": "mf00007",
             "name": "Cairo International Film Festival",
-            "wikiTopic": "Cairo International Film Festival",
-            "established": "1976",
+            "wiki": "Cairo International Film Festival",
+            "startYear": "1976",
             "country": "Egypt",
-            "continent": "Africa"
+            "continent": "Africa",
+            "image": {
+                "poster": null,
+                "__typename": "Image"
+            },
+            "__typename": "MovieFestival"
         },
         {
-            "__typename": "MovieFestival",
             "id": "mf00008",
             "name": "Cairo International Women's Film Festival",
-            "wikiTopic": "Cairo International Women's Film Festival",
-            "established": "2008",
+            "wiki": "Cairo International Women's Film Festival",
+            "startYear": "2008",
             "country": "Egypt",
-            "continent": "Africa"
+            "continent": "Africa",
+            "image": {
+                "poster": null,
+                "__typename": "Image"
+            },
+            "__typename": "MovieFestival"
         },
         {
-            "__typename": "MovieFestival",
             "id": "mf00009",
             "name": "Carthage Film Festival",
-            "wikiTopic": "Carthage Film Festival",
-            "established": "1966",
+            "wiki": "Carthage Film Festival",
+            "startYear": "1966",
             "country": "Tunisia",
-            "continent": "Africa"
+            "continent": "Africa",
+            "image": {
+                "poster": "https://wikipedia.org/wiki/Special:Redirect/file/Taher_Chriaa-edit.jpg",
+                "__typename": "Image"
+            },
+            "__typename": "MovieFestival"
         },
         {
-            "__typename": "MovieFestival",
             "id": "mf00010",
             "name": "Cinekambiya International Film Festival",
-            "wikiTopic": "Cinekambiya International Film Festival",
-            "established": "2015",
+            "wiki": "Cinekambiya International Film Festival",
+            "startYear": "2015",
             "country": null,
-            "continent": "Africa"
+            "continent": "Africa",
+            "image": {
+                "poster": null,
+                "__typename": "Image"
+            },
+            "__typename": "MovieFestival"
         }
     ],
     "loading": false

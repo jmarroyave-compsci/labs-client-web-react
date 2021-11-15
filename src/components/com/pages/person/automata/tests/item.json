@@ -1,31 +1,1155 @@
 {
-    "__typename": "Person",
-    "id": "nm0000881",
-    "name": "Michael Bay",
-    "birthDate": "1965-01-01T05:00:00.000Z",
-    "deathDate": null,
-    "profession": [
-        "producer",
-        "director",
-        "actor"
-    ],
-    "awards": [],
-    "references": null,
-    "directed": [
-        {
-            "__typename": "Movie",
-            "id": "tt0112442",
-            "title": "Bad Boys",
-            "releaseYear": "1995"
-        }
-    ],
-    "wrote": [
-        {
-            "__typename": "Movie",
-            "id": "tt10883414",
-            "title": "Black 5",
-            "releaseYear": "2001"
-        }
-    ],
-    "acted": []
+    "params": {
+        "id": "nm0000531",
+        "render": "detail",
+        "renderer": "detail"
+    },
+    "data": {
+        "id": "nm0000531",
+        "name": "Frances McDormand",
+        "birthYear": "1957",
+        "deathYear": null,
+        "profession": [
+            "actress",
+            "producer",
+            "soundtrack"
+        ],
+        "awards": [
+            {
+                "category": "ACTRESS IN A SUPPORTING ROLE",
+                "festival": {
+                    "id": "mf00001",
+                    "name": "Academy Awards",
+                    "__typename": "MovieFestival"
+                },
+                "won": false,
+                "year": 1988,
+                "__typename": "Award"
+            },
+            {
+                "category": "ACTRESS IN A LEADING ROLE",
+                "festival": {
+                    "id": "mf00001",
+                    "name": "Academy Awards",
+                    "__typename": "MovieFestival"
+                },
+                "won": true,
+                "year": 1996,
+                "__typename": "Award"
+            },
+            {
+                "category": "ACTRESS IN A SUPPORTING ROLE",
+                "festival": {
+                    "id": "mf00001",
+                    "name": "Academy Awards",
+                    "__typename": "MovieFestival"
+                },
+                "won": false,
+                "year": 2000,
+                "__typename": "Award"
+            },
+            {
+                "category": "ACTRESS IN A SUPPORTING ROLE",
+                "festival": {
+                    "id": "mf00001",
+                    "name": "Academy Awards",
+                    "__typename": "MovieFestival"
+                },
+                "won": false,
+                "year": 2005,
+                "__typename": "Award"
+            },
+            {
+                "category": "ACTRESS IN A LEADING ROLE",
+                "festival": {
+                    "id": "mf00001",
+                    "name": "Academy Awards",
+                    "__typename": "MovieFestival"
+                },
+                "won": true,
+                "year": 2017,
+                "__typename": "Award"
+            }
+        ],
+        "references": null,
+        "produced": [
+            {
+                "id": {
+                    "id": "tt1706598",
+                    "title": "Every Secret Thing",
+                    "releaseYear": 2014,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "__typename": "Produced2ListItem"
+            }
+        ],
+        "directed": [],
+        "acted": [
+            {
+                "id": {
+                    "id": "tt0086979",
+                    "title": "Blood Simple",
+                    "releaseYear": 1984,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        },
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Abby\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Willie Pipal\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0095647",
+                    "title": "Mississippi Burning",
+                    "releaseYear": 1988,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Mrs. Pell\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0099242",
+                    "title": "Chattahoochee",
+                    "releaseYear": 1989,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Mae Foley\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0099365",
+                    "title": "Darkman",
+                    "releaseYear": 1990,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Julie Hastings\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0099768",
+                    "title": "Hidden Agenda",
+                    "releaseYear": 1990,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Ingrid Jessner\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0112495",
+                    "title": "Beyond Rangoon",
+                    "releaseYear": 1995,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Andy Bowman\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Eve Calloway\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0116282",
+                    "title": "Fargo",
+                    "releaseYear": 1996,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        },
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Marge Gunderson\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0119416",
+                    "title": "Johnny Skidmarks",
+                    "releaseYear": 1998,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Alice\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0119859",
+                    "title": "Paradise Road",
+                    "releaseYear": 1997,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Dr. Verstak\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0120271",
+                    "title": "Talk of Angels",
+                    "releaseYear": 1998,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Conlon\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0123987",
+                    "title": "Madeline",
+                    "releaseYear": 1998,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Miss Clavel\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0158093",
+                    "title": "Plain Pleasures",
+                    "releaseYear": 1996,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": null,
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0181875",
+                    "title": "Almost Famous",
+                    "releaseYear": 2000,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Elaine Miller\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0185014",
+                    "title": "Wonder Boys",
+                    "releaseYear": 2000,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Sara Gaskell\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0240885",
+                    "title": "Scottsboro: An American Tragedy",
+                    "releaseYear": 2000,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        },
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Voices\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0243133",
+                    "title": "The Man Who Wasn't There",
+                    "releaseYear": 2001,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Doris Crane\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0255980",
+                    "title": "Edwurd Fudwupper Fibbed Big",
+                    "releaseYear": 2000,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"The Adult Fannie\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0269095",
+                    "title": "City by the Sea",
+                    "releaseYear": 2002,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Michelle\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0298408",
+                    "title": "Laurel Canyon",
+                    "releaseYear": 2002,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Jane\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": null,
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0338524",
+                    "title": "Upheaval",
+                    "releaseYear": 2001,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Anne\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0395972",
+                    "title": "North Country",
+                    "releaseYear": 2005,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Glory\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0402022",
+                    "title": "Æon Flux",
+                    "releaseYear": 2005,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Handler\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0427450",
+                    "title": "Last Night",
+                    "releaseYear": 2004,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Marit Such\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0436331",
+                    "title": "Friends with Money",
+                    "releaseYear": 2006,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Jane\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Willie Pipal\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Willie Pipal\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Willie Pipal\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Willie Pipal\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Willie Pipal\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Willie Pipal\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Willie Pipal\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Willie Pipal\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Amanda Strickland (segment \\\"Need to Know\\\")\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0887883",
+                    "title": "Burn After Reading",
+                    "releaseYear": 2008,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        },
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Linda Litzke\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Willie Pipal\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Willie Pipal\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt0970468",
+                    "title": "Miss Pettigrew Lives for a Day",
+                    "releaseYear": 2008,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Miss Pettigrew\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt10095582",
+                    "title": "The Tragedy of Macbeth",
+                    "releaseYear": 2021,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Lady Macbeth\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt13669038",
+                    "title": "Women Talking",
+                    "releaseYear": 2022,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": null,
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Narrator\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt1440345",
+                    "title": "This Must Be the Place",
+                    "releaseYear": 2011,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Jane\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"God\",\"Narrator\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt1979388",
+                    "title": "The Good Dinosaur",
+                    "releaseYear": 2015,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Momma\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt2091473",
+                    "title": "Promised Land",
+                    "releaseYear": 2012,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Sue Thomason\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt2231578",
+                    "title": "Rebels with a Cause",
+                    "releaseYear": 2013,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Narrator\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Olive Kitteridge\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Olive Kitteridge\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Olive Kitteridge\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Olive Kitteridge\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Olive Kitteridge\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt5027774",
+                    "title": "Three Billboards Outside Ebbing, Missouri",
+                    "releaseYear": 2017,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Mildred\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt6627700",
+                    "title": "Habitat Earth",
+                    "releaseYear": 2015,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Narrator\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Narrator\",\"God\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Narrator\",\"God\"]",
+                "__typename": "ActedListItem"
+            },
+            {
+                "id": {
+                    "id": "tt9770150",
+                    "title": "Nomadland",
+                    "releaseYear": 2020,
+                    "directed": [
+                        {
+                            "id": {
+                                "id": null,
+                                "name": null,
+                                "__typename": "Person"
+                            },
+                            "__typename": "Directed2ListItem"
+                        }
+                    ],
+                    "__typename": "Movie"
+                },
+                "as": "[\"Fern\"]",
+                "__typename": "ActedListItem"
+            }
+        ],
+        "wrote": [],
+        "crew": [
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self - Guest\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "archive_footage",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "archive_footage",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self - Guest\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "archive_footage",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "archive_footage",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "archive_footage",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "archive_footage",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "archive_footage",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "archive_footage",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self - Guest\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self - Guest\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self - Guest\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self - Guest\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "archive_footage",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self - Best Actress\"]",
+                "cat": "self",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "archive_footage",
+                "job": null,
+                "__typename": "CrewListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Self\"]",
+                "cat": "archive_footage",
+                "job": null,
+                "__typename": "CrewListItem"
+            }
+        ],
+        "__typename": "Person"
+    },
+    "loading": false
 }

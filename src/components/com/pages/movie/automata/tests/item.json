@@ -1,92 +1,154 @@
 {
     "params": {
-        "id": "tt1399103"
+        "id": "tt0086979",
+        "render": "detail",
+        "renderer": "detail"
     },
     "data": {
-        "__typename": "Movie",
-        "id": "tt1399103",
-        "title": "Transformers: Dark of the Moon",
+        "id": "tt0086979",
+        "title": "Blood Simple",
         "country": [],
         "type": "movie",
-        "genre": [
-            "action",
-            "adventure",
-            "sciFi"
-        ],
-        "duration": "154",
-        "rating": [
-            {
-                "__typename": "RatingListItem",
-                "averageRating": "6.2/10",
-                "name": "Internet Movie Database"
-            },
-            {
-                "__typename": "RatingListItem",
-                "averageRating": "35%",
-                "name": "Rotten Tomatoes"
-            },
-            {
-                "__typename": "RatingListItem",
-                "averageRating": "42/100",
-                "name": "Metacritic"
-            },
-            {
-                "__typename": "RatingListItem",
-                "averageRating": "6.2",
-                "name": "imdb"
-            }
-        ],
-        "releaseYear": "2011",
-        "classification": "?",
+        "genre": [],
+        "duration": "99",
+        "rating": [],
+        "releaseYear": 1984,
+        "classification": null,
         "streamBy": [],
-        "directors": [
+        "produced": [],
+        "directed": [
             {
-                "__typename": "Person",
-                "id": "nm0000881",
-                "name": "Michael Bay"
-            }
-        ],
-        "cast": [],
-        "writers": [
-            {
-                "__typename": "Person",
-                "id": "nm0472567",
-                "name": "Ehren Kruger"
-            }
-        ],
-        "crew": [],
-        "awards": [
-            {
-                "__typename": "Award",
-                "category": "SOUND EDITING",
-                "name": "oscar",
-                "won": false,
-                "year": 2011
+                "id": {
+                    "id": "nm0001054",
+                    "name": "Joel Coen",
+                    "__typename": "Person"
+                },
+                "__typename": "Directed2ListItem"
             },
             {
-                "__typename": "Award",
-                "category": "SOUND MIXING",
-                "name": "oscar",
-                "won": false,
-                "year": 2011
-            },
-            {
-                "__typename": "Award",
-                "category": "VISUAL EFFECTS",
-                "name": "oscar",
-                "won": false,
-                "year": 2011
+                "id": {
+                    "id": "nm0001053",
+                    "name": "Ethan Coen",
+                    "__typename": "Person"
+                },
+                "__typename": "Directed2ListItem"
             }
         ],
+        "cast": [
+            {
+                "id": null,
+                "as": "[\"Ray\"]",
+                "__typename": "Cast2ListItem"
+            },
+            {
+                "id": {
+                    "id": "nm0000531",
+                    "name": "Frances McDormand",
+                    "__typename": "Person"
+                },
+                "as": "[\"Abby\"]",
+                "__typename": "Cast2ListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Julian Marty\"]",
+                "__typename": "Cast2ListItem"
+            },
+            {
+                "id": null,
+                "as": "[\"Private Detective Loren Visser\"]",
+                "__typename": "Cast2ListItem"
+            }
+        ],
+        "written": [],
+        "crew": [
+            {
+                "id": {
+                    "id": "nm0615788",
+                    "name": "Jane Musky",
+                    "__typename": "Person"
+                },
+                "as": null,
+                "cat": "production_designer",
+                "job": null,
+                "__typename": "Crew2ListItem"
+            },
+            {
+                "id": {
+                    "id": "nm0001980",
+                    "name": "Carter Burwell",
+                    "__typename": "Person"
+                },
+                "as": null,
+                "cat": "composer",
+                "job": null,
+                "__typename": "Crew2ListItem"
+            },
+            {
+                "id": {
+                    "id": "nm0001756",
+                    "name": "Barry Sonnenfeld",
+                    "__typename": "Person"
+                },
+                "as": null,
+                "cat": "cinematographer",
+                "job": "director of photography",
+                "__typename": "Crew2ListItem"
+            },
+            {
+                "id": null,
+                "as": null,
+                "cat": "editor",
+                "job": null,
+                "__typename": "Crew2ListItem"
+            }
+        ],
+        "awards": [],
         "references": null,
-        "image": {
-            "__typename": "Image",
-            "poster": "https://m.media-amazon.com/images/M/MV5BMTkwOTY0MTc1NV5BMl5BanBnXkFtZTcwMDQwNjA2NQ@@._V1_SX300.jpg"
-        },
+        "image": null,
         "boxOffice": null,
-        "production": "Don Murphy/Tom DeSanto, Ian Bryce, Di Bonaventura Pictures",
-        "language": "English",
-        "plot": "Autobots Bumblebee, Ratchet, Ironhide, Mirage (aka Dino), Wheeljack (aka Que) and Sideswipe led by Optimus Prime, are back in action taking on the evil Decepticons, who are eager to avenge their recent defeat. The Autobots and Decepticons become involved in a perilous space race between the United States and Russia to reach a hidden Cybertronian spacecraft on the moon and learn its secrets, and once again Sam Witwicky has to go to the aid of his robot friends. The new villain Shockwave is on the scene while the Autobots and Decepticons continue to battle it out on Earth."
+        "production": null,
+        "language": null,
+        "plot": null,
+        "remakes": [
+            {
+                "id": "tt0086979",
+                "title": "Blood Simple",
+                "releaseYear": 1984,
+                "directed": [
+                    {
+                        "id": {
+                            "id": "nm0001054",
+                            "name": "Joel Coen",
+                            "__typename": "Person"
+                        },
+                        "__typename": "Directed2ListItem"
+                    },
+                    {
+                        "id": {
+                            "id": "nm0001053",
+                            "name": "Ethan Coen",
+                            "__typename": "Person"
+                        },
+                        "__typename": "Directed2ListItem"
+                    }
+                ],
+                "__typename": "Movie"
+            },
+            {
+                "id": "tt4226410",
+                "title": "Blood Simple",
+                "releaseYear": 2007,
+                "directed": [
+                    {
+                        "id": null,
+                        "__typename": "Directed2ListItem"
+                    }
+                ],
+                "__typename": "Movie"
+            }
+        ],
+        "__typename": "Movie"
     },
     "loading": false
 }

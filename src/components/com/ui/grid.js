@@ -46,20 +46,23 @@ export default function Grid( props ){
 
     const Item = ( props ) => {
       return (
-        <GridItem key={props.key} xs={xs} sm={sm} md={md} lg={lg}>
+        <GridItem xs={xs} sm={sm} md={md} lg={lg}>
           {itemWrapper((loading) ?
             (skeleton) ? skeleton : <Placeholder/>
             : 
             (item) ? animateItem(item(props.data)) : null
           )} 
         </GridItem>
+
       )
     }
 
     var output = (
         <GridContainer spacing={2} justify='center' fill style={{width: '100%'}}>
           {data.map( (_item, idx) => 
-            <Item key={idx} data={_item} params={props}/>
+            <React.Fragment key={idx} >
+            <Item data={_item} params={props}/>
+            </React.Fragment>
           )}
         </GridContainer>
     )

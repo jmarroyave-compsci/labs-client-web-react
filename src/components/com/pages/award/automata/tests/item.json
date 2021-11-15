@@ -1,844 +1,991 @@
 {
     "params": {
-        "id": "mf00001",
-        "year": "1987"
+        "id": "mf00265",
+        "year": "2017",
+        "entity": "movies",
+        "render": "detail",
+        "renderer": "detail"
     },
     "data": {
-        "__typename": "StoryMovieAward",
         "festival": {
-            "__typename": "MovieFestival",
             "id": "mf00001",
-            "name": "Academy Awards"
+            "name": "Academy Awards",
+            "image": {
+                "poster": null,
+                "__typename": "Image"
+            },
+            "__typename": "MovieFestival"
         },
-        "year": 1987,
+        "year": 2017,
         "awarded": [
             {
-                "__typename": "AwardedListItem",
                 "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "William Hurt",
+                "entity": "Daniel Day-Lewis",
                 "won": false,
-                "id": "nm0000458"
+                "entityId": "nm0000358",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
                 "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Marcello Mastroianni",
+                "entity": "Daniel Kaluuya",
                 "won": false,
-                "id": "nm0000052"
+                "entityId": "nm2257207",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
                 "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A SUPPORTING ROLE",
-                "entity": "Sean Connery",
-                "won": true,
-                "id": "nm0000125"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A SUPPORTING ROLE",
-                "entity": "Vincent Gardenia",
-                "won": false,
-                "id": "nm0306696"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A SUPPORTING ROLE",
                 "entity": "Denzel Washington",
                 "won": false,
-                "id": "nm0000243"
+                "entityId": "nm0000243",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
                 "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "entity": "Gary Oldman",
                 "won": true,
-                "id": null
+                "entityId": "nm0000198",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTRESS IN A LEADING ROLE",
-                "entity": "Glenn Close",
+                "category": "ACTOR IN A LEADING ROLE",
+                "entity": "Timothée Chalamet",
                 "won": false,
-                "id": "nm0000335"
+                "entityId": "nm3154303",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "ACTOR IN A SUPPORTING ROLE",
+                "entity": "Christopher Plummer",
+                "won": false,
+                "entityId": "tt13597846",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "ACTOR IN A SUPPORTING ROLE",
+                "entity": "Richard Jenkins",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "ACTOR IN A SUPPORTING ROLE",
+                "entity": "Sam Rockwell",
                 "won": true,
-                "id": null
+                "entityId": "nm0005377",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "ACTOR IN A SUPPORTING ROLE",
+                "entity": "Willem Dafoe",
+                "won": false,
+                "entityId": "nm0000353",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "ACTOR IN A SUPPORTING ROLE",
+                "entity": "Woody Harrelson",
+                "won": false,
+                "entityId": "nm0000437",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "ACTRESS IN A LEADING ROLE",
+                "entity": "Frances McDormand",
                 "won": true,
-                "id": null
+                "entityId": "nm0000531",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
+                "category": "ACTRESS IN A LEADING ROLE",
+                "entity": "Margot Robbie",
+                "won": false,
+                "entityId": "nm3053338",
+                "__typename": "AwardedListItem"
+            },
+            {
                 "category": "ACTRESS IN A LEADING ROLE",
                 "entity": "Meryl Streep",
                 "won": false,
-                "id": "nm0000658"
+                "entityId": "nm0000658",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTRESS IN A SUPPORTING ROLE",
-                "entity": "Norma Aleandro",
+                "category": "ACTRESS IN A LEADING ROLE",
+                "entity": "Sally Hawkins",
                 "won": false,
-                "id": "nm0001903"
+                "entityId": "tt7896106",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTRESS IN A SUPPORTING ROLE",
-                "entity": "Anne Archer",
+                "category": "ACTRESS IN A LEADING ROLE",
+                "entity": "Saoirse Ronan",
                 "won": false,
-                "id": "nm0000271"
+                "entityId": "nm1519680",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
                 "category": "ACTRESS IN A SUPPORTING ROLE",
-                "entity": "Olympia Dukakis",
+                "entity": "Allison Janney",
                 "won": true,
-                "id": "nm0001156"
+                "entityId": "nm0005049",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
                 "category": "ACTRESS IN A SUPPORTING ROLE",
-                "entity": "Anne Ramsey",
+                "entity": "Laurie Metcalf",
                 "won": false,
-                "id": "nm0001649"
+                "entityId": "nm0582418",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
                 "category": "ACTRESS IN A SUPPORTING ROLE",
-                "entity": "Ann Sothern",
+                "entity": "Lesley Manville",
                 "won": false,
-                "id": "nm0815433"
+                "entityId": "nm0544334",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ART DIRECTION",
-                "entity": "Empire of the Sun",
+                "category": "ACTRESS IN A SUPPORTING ROLE",
+                "entity": "Mary J. Blige",
                 "won": false,
-                "id": "nm5815499"
+                "entityId": "nm0004763",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "ACTRESS IN A SUPPORTING ROLE",
+                "entity": "Octavia Spencer",
+                "won": false,
+                "entityId": "nm0818055",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "ANIMATED FEATURE FILM",
+                "entity": "Coco",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "ANIMATED FEATURE FILM",
+                "entity": "Ferdinand",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "ANIMATED FEATURE FILM",
+                "entity": "Loving Vincent",
+                "won": false,
+                "entityId": "tt3262342",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "ANIMATED FEATURE FILM",
+                "entity": "The Boss Baby",
+                "won": false,
+                "entityId": "tt3874544",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "ANIMATED FEATURE FILM",
+                "entity": "The Breadwinner",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "BEST PICTURE",
+                "entity": "Call Me by Your Name",
+                "won": false,
+                "entityId": "tt5726616",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "BEST PICTURE",
+                "entity": "Darkest Hour",
+                "won": false,
+                "entityId": "nm8818794",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "BEST PICTURE",
+                "entity": "Dunkirk",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "BEST PICTURE",
+                "entity": "Get Out",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "BEST PICTURE",
+                "entity": "Lady Bird",
+                "won": false,
+                "entityId": "tt4925292",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "BEST PICTURE",
+                "entity": "Phantom Thread",
+                "won": false,
+                "entityId": "tt5776858",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "BEST PICTURE",
+                "entity": "The Post",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "BEST PICTURE",
+                "entity": "The Shape of Water",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
+                "category": "BEST PICTURE",
+                "entity": "Three Billboards Outside Ebbing, Missouri",
+                "won": false,
+                "entityId": "tt5027774",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
                 "category": "CINEMATOGRAPHY",
-                "entity": "Broadcast News",
-                "won": false,
-                "id": "tt0092699"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ART DIRECTION",
-                "entity": "Empire of the Sun",
-                "won": false,
-                "id": "nm5815499"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "entity": "Blade Runner 2049",
                 "won": true,
-                "id": null
+                "entityId": "tt1856101",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
                 "category": "CINEMATOGRAPHY",
-                "entity": "Matewan",
+                "entity": "Darkest Hour",
                 "won": false,
-                "id": "tt0093509"
+                "entityId": "nm8818794",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
+                "category": "CINEMATOGRAPHY",
+                "entity": "Dunkirk",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "CINEMATOGRAPHY",
+                "entity": "Mudbound",
+                "won": false,
+                "entityId": "tt2396589",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "CINEMATOGRAPHY",
+                "entity": "The Shape of Water",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
                 "category": "COSTUME DESIGN",
-                "entity": "The Dead",
+                "entity": "Beauty and the Beast",
                 "won": false,
-                "id": "nm2031698"
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ART DIRECTION",
-                "entity": "Empire of the Sun",
-                "won": false,
-                "id": "nm5815499"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "DIRECTING",
-                "entity": "Fatal Attraction",
-                "won": false,
-                "id": "nm2101643"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "DOCUMENTARY (Feature)",
-                "entity": "Hellfire: A Journey from Hiroshima",
-                "won": false,
-                "id": "tt0093173"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "DOCUMENTARY (Feature)",
-                "entity": "A Stitch for Time",
-                "won": false,
-                "id": "tt0094042"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "DOCUMENTARY (Short Subject)",
-                "entity": "Frances Steloff: Memoirs of a Bookseller",
-                "won": false,
-                "id": "tt0093047"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "DOCUMENTARY (Short Subject)",
-                "entity": "In the Wee Wee Hours...",
-                "won": false,
-                "id": "tt0093254"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "DOCUMENTARY (Short Subject)",
-                "entity": "Language Says It All",
-                "won": false,
-                "id": "tt0093388"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "CINEMATOGRAPHY",
-                "entity": "Broadcast News",
-                "won": false,
-                "id": "tt0092699"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ART DIRECTION",
-                "entity": "Empire of the Sun",
-                "won": false,
-                "id": "nm5815499"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "DIRECTING",
-                "entity": "Fatal Attraction",
-                "won": false,
-                "id": "nm2101643"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "FILM EDITING",
-                "entity": "RoboCop",
-                "won": false,
-                "id": "nm8778829"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "FOREIGN LANGUAGE FILM",
-                "entity": "Babette's Feast",
-                "won": true,
-                "id": "tt0092603"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "FOREIGN LANGUAGE FILM",
-                "entity": "Course Completed",
-                "won": false,
-                "id": "tt0092584"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ART DIRECTION",
-                "entity": "Empire of the Sun",
-                "won": false,
-                "id": "nm5815499"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "MUSIC (Original Song)",
-                "entity": "Beverly Hills Cop II",
-                "won": false,
-                "id": "tt0092644"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "CINEMATOGRAPHY",
-                "entity": "Broadcast News",
-                "won": false,
-                "id": "tt0092699"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "DIRECTING",
-                "entity": "Fatal Attraction",
-                "won": false,
-                "id": "nm2101643"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "SHORT FILM (Animated)",
-                "entity": "George and Rosemary",
-                "won": false,
-                "id": "tt0093084"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "SHORT FILM (Animated)",
-                "entity": "The Man Who Planted Trees",
-                "won": true,
-                "id": "tt0093488"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "SHORT FILM (Live Action)",
-                "entity": "Ray's Male Heterosexual Dance Hall",
-                "won": true,
-                "id": "tt0093826"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ART DIRECTION",
-                "entity": "Empire of the Sun",
-                "won": false,
-                "id": "nm5815499"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "FILM EDITING",
-                "entity": "RoboCop",
-                "won": false,
-                "id": "nm8778829"
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "VISUAL EFFECTS",
-                "entity": "Predator",
-                "won": false,
-                "id": "nm0695740"
-            },
-            {
-                "__typename": "AwardedListItem",
                 "category": "COSTUME DESIGN",
-                "entity": "The Dead",
+                "entity": "Darkest Hour",
                 "won": false,
-                "id": "nm2031698"
+                "entityId": "nm8818794",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
+                "category": "COSTUME DESIGN",
+                "entity": "Phantom Thread",
+                "won": true,
+                "entityId": "tt5776858",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "COSTUME DESIGN",
+                "entity": "The Shape of Water",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "COSTUME DESIGN",
+                "entity": "Victoria & Abdul",
+                "won": false,
+                "entityId": "tt5816682",
+                "__typename": "AwardedListItem"
+            },
+            {
                 "category": "DIRECTING",
-                "entity": "Fatal Attraction",
+                "entity": "Dunkirk",
                 "won": false,
-                "id": "nm2101643"
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "WRITING (Screenplay Based on Material from Another Medium)",
-                "entity": "Full Metal Jacket",
+                "category": "DIRECTING",
+                "entity": "Get Out",
                 "won": false,
-                "id": "nm10224474"
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
-            },
-            {
-                "__typename": "AwardedListItem",
-                "category": "CINEMATOGRAPHY",
-                "entity": "Broadcast News",
+                "category": "DIRECTING",
+                "entity": "Lady Bird",
                 "won": false,
-                "id": "tt0092699"
+                "entityId": "tt4925292",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "DIRECTING",
+                "entity": "Phantom Thread",
+                "won": false,
+                "entityId": "tt5776858",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "DIRECTING",
+                "entity": "The Shape of Water",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "DOCUMENTARY (Feature)",
+                "entity": "Abacus: Small Enough to Jail",
+                "won": false,
+                "entityId": "tt5952382",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "DOCUMENTARY (Feature)",
+                "entity": "Faces Places",
+                "won": false,
+                "entityId": "tt5598102",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "DOCUMENTARY (Feature)",
+                "entity": "Icarus",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "DOCUMENTARY (Feature)",
+                "entity": "Last Men in Aleppo",
+                "won": false,
+                "entityId": "tt6333074",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "DOCUMENTARY (Feature)",
+                "entity": "Strong Island",
+                "won": false,
+                "entityId": "tt5873150",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "DOCUMENTARY (Short Subject)",
+                "entity": "Edith+Eddie",
+                "won": false,
+                "entityId": "tt6519356",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "DOCUMENTARY (Short Subject)",
+                "entity": "Heaven Is a Traffic Jam on the 405",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
+                "category": "DOCUMENTARY (Short Subject)",
+                "entity": "Heroin(e)",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "DOCUMENTARY (Short Subject)",
+                "entity": "Knife Skills",
+                "won": false,
+                "entityId": "tt5745110",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "DOCUMENTARY (Short Subject)",
+                "entity": "Traffic Stop",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
                 "category": "FILM EDITING",
-                "entity": "RoboCop",
+                "entity": "Baby Driver",
                 "won": false,
-                "id": "nm8778829"
+                "entityId": "tt3890160",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "FILM EDITING",
+                "entity": "Dunkirk",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
+                "category": "FILM EDITING",
+                "entity": "I, Tonya",
+                "won": false,
+                "entityId": "tt5580036",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "FILM EDITING",
+                "entity": "The Shape of Water",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "FILM EDITING",
+                "entity": "Three Billboards Outside Ebbing, Missouri",
+                "won": false,
+                "entityId": "tt5027774",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "FOREIGN LANGUAGE FILM",
+                "entity": "A Fantastic Woman",
+                "won": true,
+                "entityId": "tt5639354",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "FOREIGN LANGUAGE FILM",
+                "entity": "Loveless",
+                "won": false,
+                "entityId": "nm10393304",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "FOREIGN LANGUAGE FILM",
+                "entity": "On Body and Soul",
+                "won": false,
+                "entityId": "tt5607714",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "FOREIGN LANGUAGE FILM",
+                "entity": "The Insult",
+                "won": false,
+                "entityId": "tt7048622",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "FOREIGN LANGUAGE FILM",
+                "entity": "The Square",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
                 "category": "GORDON E. SAWYER AWARD",
-                "entity": "Fred Hynes",
+                "entity": "Jonathan Erland",
                 "won": true,
-                "id": "nm0405261"
+                "entityId": "nm0259510",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "HONORARY AWARD",
+                "entity": "To Agnès Varda, whose compassion and curiosity inform a uniquely personal cinema.",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "HONORARY AWARD",
+                "entity": "To Charles Burnett, a resolutely independent and influential film pioneer who has chronicled the lives of black Americans with eloquence and insight.",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "HONORARY AWARD",
+                "entity": "To Donald Sutherland for a lifetime of indelible characters, rendered with unwavering truthfulness.",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "HONORARY AWARD",
+                "entity": "To Owen Roizman, whose expansive visual style and technical innovation have advanced the art of cinematography.",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "MAKEUP AND HAIRSTYLING",
+                "entity": "Darkest Hour",
                 "won": true,
-                "id": null
+                "entityId": "nm8818794",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
+                "category": "MAKEUP AND HAIRSTYLING",
+                "entity": "Victoria & Abdul",
+                "won": false,
+                "entityId": "tt5816682",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
+                "category": "MAKEUP AND HAIRSTYLING",
+                "entity": "Wonder",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
+                "category": "MUSIC (Original Score)",
+                "entity": "Dunkirk",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
+                "category": "MUSIC (Original Score)",
+                "entity": "Phantom Thread",
+                "won": false,
+                "entityId": "tt5776858",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
+                "category": "MUSIC (Original Score)",
+                "entity": "Star Wars: The Last Jedi",
+                "won": false,
+                "entityId": "tt3486354",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "MUSIC (Original Score)",
+                "entity": "The Shape of Water",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
+                "category": "MUSIC (Original Score)",
+                "entity": "Three Billboards Outside Ebbing, Missouri",
+                "won": false,
+                "entityId": "tt5027774",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
-                "won": true,
-                "id": null
+                "category": "MUSIC (Original Song)",
+                "entity": "Call Me by Your Name",
+                "won": false,
+                "entityId": "tt5726616",
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "MUSIC (Original Song)",
+                "entity": "Coco",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
             },
             {
-                "__typename": "AwardedListItem",
-                "category": "ACTOR IN A LEADING ROLE",
-                "entity": "Michael Douglas",
+                "category": "MUSIC (Original Song)",
+                "entity": "Marshall",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "MUSIC (Original Song)",
+                "entity": "Mudbound",
+                "won": false,
+                "entityId": "tt2396589",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "MUSIC (Original Song)",
+                "entity": "The Greatest Showman",
+                "won": false,
+                "entityId": "nm11368167",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "PRODUCTION DESIGN",
+                "entity": "Beauty and the Beast",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "PRODUCTION DESIGN",
+                "entity": "Blade Runner 2049",
+                "won": false,
+                "entityId": "tt1856101",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "PRODUCTION DESIGN",
+                "entity": "Darkest Hour",
+                "won": false,
+                "entityId": "nm8818794",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "PRODUCTION DESIGN",
+                "entity": "Dunkirk",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "PRODUCTION DESIGN",
+                "entity": "The Shape of Water",
                 "won": true,
-                "id": null
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SCIENTIFIC AND TECHNICAL AWARD (Academy Award of Merit)",
+                "entity": "To MARK ELENDT and SIDE EFFECTS SOFTWARE for the creation and development of the Houdini visual effects and animation system.",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
+                "entity": "To ABIGAIL BRADY, JON WADELTON and JERRY HUXTABLE for their significant contributions to the architecture and extensibility of the Nuke compositing system.",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
+                "entity": "To BILL SPITZAK and JONATHAN EGSTAD for the visionary design, development and stewardship of the Nuke compositing system.",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
+                "entity": "To JEFF LAIT, MARK TUCKER, CRISTIN BARGHIEL and JOHN LYNCH for their contributions to the design and architecture of the Houdini visual effects and animation system.",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
+                "entity": "To JOHN COYLE, BRAD HURNDELL, VIKAS SATHAYE and SHANE BUCKHAM for the concept, design, engineering and implementation of the Shotover K1 Camera System.",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SCIENTIFIC AND TECHNICAL AWARD (Scientific and Engineering Award)",
+                "entity": "To LEONARD CHAPMAN for the overall concept, design and development, to STANISLAV GORBATOV for the electronic system design, and to DAVID GASPARIAN and SOUHAIL ISSA for the mechanical design and integration of the Hydrascope telescoping camera crane systems.",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
+                "entity": "To ALEX POWELL for his contribution to the design and engineering, to JASON REISIG for his contribution to the interaction design, and to MARTIN WATT and ALEX WELLS for their contributions to the high-performance execution engine of the Premo character animation system at DreamWorks Animation.",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
+                "entity": "To JASON SMITH and JEFF WHITE for the original design, and to RACHEL MARIE ROSE and MICHAEL JUSTIN LEE JUTAN for the architecture and engineering, of the BlockParty procedural rigging system at Industrial Light & Magic.",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
+                "entity": "To JOE MANCEWICZ, MATT DERKSEN and HANS RIJPKEMA for the design, architecture and implementation of the Rhythm & Hues Construction Kit rigging system.",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SCIENTIFIC AND TECHNICAL AWARD (Technical Achievement Award)",
+                "entity": "To ROB JENSEN for the foundational design and continued development, to THOMAS HAHN for the animation toolset, and to GEORGE ELKOURA, ADAM WOODBURY and DIRK VAN GELDER for the high-performance execution engine of the Presto Animation System at Pixar Animation Studios.",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SHORT FILM (Animated)",
+                "entity": "Dear Basketball",
+                "won": true,
+                "entityId": "tt6794476",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SHORT FILM (Animated)",
+                "entity": "Garden Party",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SHORT FILM (Animated)",
+                "entity": "Lou",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SHORT FILM (Animated)",
+                "entity": "Negative Space",
+                "won": false,
+                "entityId": "nm9575112",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SHORT FILM (Animated)",
+                "entity": "Revolting Rhymes",
+                "won": false,
+                "entityId": "tt13062174",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SHORT FILM (Live Action)",
+                "entity": "DeKalb Elementary",
+                "won": false,
+                "entityId": "tt5926890",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SHORT FILM (Live Action)",
+                "entity": "My Nephew Emmett",
+                "won": false,
+                "entityId": "tt6598290",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SHORT FILM (Live Action)",
+                "entity": "The Eleven O'Clock",
+                "won": false,
+                "entityId": "tt6023474",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SHORT FILM (Live Action)",
+                "entity": "The Silent Child",
+                "won": true,
+                "entityId": "tt14454760",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SHORT FILM (Live Action)",
+                "entity": "Watu Wote/All of Us",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SOUND EDITING",
+                "entity": "Baby Driver",
+                "won": false,
+                "entityId": "tt3890160",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SOUND EDITING",
+                "entity": "Blade Runner 2049",
+                "won": false,
+                "entityId": "tt1856101",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SOUND EDITING",
+                "entity": "Dunkirk",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SOUND EDITING",
+                "entity": "Star Wars: The Last Jedi",
+                "won": false,
+                "entityId": "tt3486354",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SOUND EDITING",
+                "entity": "The Shape of Water",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SOUND MIXING",
+                "entity": "Baby Driver",
+                "won": false,
+                "entityId": "tt3890160",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SOUND MIXING",
+                "entity": "Blade Runner 2049",
+                "won": false,
+                "entityId": "tt1856101",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SOUND MIXING",
+                "entity": "Dunkirk",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SOUND MIXING",
+                "entity": "Star Wars: The Last Jedi",
+                "won": false,
+                "entityId": "tt3486354",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SOUND MIXING",
+                "entity": "The Shape of Water",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "SPECIAL AWARD",
+                "entity": "To Alejandro G. Iñárritu's CARNE y ARENA virtual reality installation, in recognition of a visionary and powerful experience in storytelling.",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "VISUAL EFFECTS",
+                "entity": "Blade Runner 2049",
+                "won": true,
+                "entityId": "tt1856101",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "VISUAL EFFECTS",
+                "entity": "Guardians of the Galaxy Vol. 2",
+                "won": false,
+                "entityId": "tt3896198",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "VISUAL EFFECTS",
+                "entity": "Kong: Skull Island",
+                "won": false,
+                "entityId": "tt3731562",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "VISUAL EFFECTS",
+                "entity": "Star Wars: The Last Jedi",
+                "won": false,
+                "entityId": "tt3486354",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "VISUAL EFFECTS",
+                "entity": "War for the Planet of the Apes",
+                "won": false,
+                "entityId": "tt3450958",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "WRITING (Adapted Screenplay)",
+                "entity": "Call Me by Your Name",
+                "won": true,
+                "entityId": "tt5726616",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "WRITING (Adapted Screenplay)",
+                "entity": "Logan",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "WRITING (Adapted Screenplay)",
+                "entity": "Molly's Game",
+                "won": false,
+                "entityId": "tt4209788",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "WRITING (Adapted Screenplay)",
+                "entity": "Mudbound",
+                "won": false,
+                "entityId": "tt2396589",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "WRITING (Adapted Screenplay)",
+                "entity": "The Disaster Artist",
+                "won": false,
+                "entityId": "tt3521126",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "WRITING (Original Screenplay)",
+                "entity": "Get Out",
+                "won": true,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "WRITING (Original Screenplay)",
+                "entity": "Lady Bird",
+                "won": false,
+                "entityId": "tt4925292",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "WRITING (Original Screenplay)",
+                "entity": "The Big Sick",
+                "won": false,
+                "entityId": "tt5462602",
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "WRITING (Original Screenplay)",
+                "entity": "The Shape of Water",
+                "won": false,
+                "entityId": null,
+                "__typename": "AwardedListItem"
+            },
+            {
+                "category": "WRITING (Original Screenplay)",
+                "entity": "Three Billboards Outside Ebbing, Missouri",
+                "won": false,
+                "entityId": "tt5027774",
+                "__typename": "AwardedListItem"
             }
-        ]
+        ],
+        "__typename": "StoryMovieAward"
     },
     "loading": false
 }

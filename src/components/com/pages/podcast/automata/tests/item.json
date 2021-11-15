@@ -1,9 +1,27 @@
 {
-  "params": {
-    "id": "test-id"
-  },
-  "data": {"id":"002f4ad4-f714-353a-b4e1-dff07ecfa456","title":"Gilles Peterson","subtitle":"Searching for the Perfect Beat","feedUrl":null,"description":null,"summary":"Searching for the Perfect Beat","author":"Gilles Peterson","link":null,"language":"English","image":"http://az592690.vo.msecnd.net/media/channels/gillespetersonww/images/original/gillespeterson_logo-square-thumb-e1352205457791.jpg","category":"music","subcategory":null,"createdDate":"2016-11-25T08:03:58.000Z","__typename":"Podcast"},
-  "loading": false,
-  "error": ""
+    "params": {
+        "id": "630f356e-7143-3e32-8791-74f47b65729d",
+        "render": "detail",
+        "renderer": "detail"
+    },
+    "data": {
+        "id": "630f356e-7143-3e32-8791-74f47b65729d",
+        "title": "Test Pattern",
+        "subtitle": "Pre- and post-shows, deleted material, special announcements, and a testing ground for shows on ESN.fm",
+        "feedUrl": null,
+        "description": "Pre- and post-shows, deleted material, special announcements, and a testing ground for shows on ESN.fm",
+        "summary": "Pre- and post-shows, deleted material, special announcements, and a testing ground for shows on ESN.fm",
+        "author": "ESN.fm",
+        "link": "http://www.esn.fm/testpattern/",
+        "language": "English",
+        "image": {
+            "poster": "http://static1.squarespace.com/static/52edbc9de4b0b870f5f7ed49/t/5519cc82e4b036a3f57b07a2/1427754116498/1500w/Test-Pattern.jpg",
+            "__typename": "Image"
+        },
+        "category": "tvFilm",
+        "subcategory": "",
+        "createdDate": null,
+        "__typename": "Podcast"
+    },
+    "loading": false
 }
-
