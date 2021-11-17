@@ -4,18 +4,18 @@ import '@testing-library/jest-dom'
 
 import { itMustHaveNoErrors, TestProvider } from "tests/jest/shared"
 
-import itemState from './automata/tests/item.json'
-import TestComponent from '.';
+import itemDashboardState from './automata/tests/item.json'
+import DashboardComponent from './dashboard';
 import config from './.config';
 
 describe(`${config.automata.name.toUpperCase()}`, () => {
   beforeEach(() => { 
   }); 
  
-  it('compare Page against snapshot', () => {
+  it('compare Dashboard against snapshot', () => {
     const renderer = render(
-      <TestProvider state={{[config.automata.name]: itemState}}>
-        <TestComponent render="page"/>
+      <TestProvider state={{[config.automata.name]: itemDashboardState}}>
+        <DashboardComponent/>
       </TestProvider>
     )
 
@@ -23,15 +23,5 @@ describe(`${config.automata.name.toUpperCase()}`, () => {
     //expect(renderer.container).toMatchSnapshot();
   });
 
-  it('compare against snapshot', () => {
-    const renderer = render(
-      <TestProvider state={{[config.automata.name]: itemState}}>
-        <TestComponent render="banner"/>
-      </TestProvider>
-    )
-
-    itMustHaveNoErrors(renderer)
-    expect(renderer.container).toMatchSnapshot();
-  });
 });
 

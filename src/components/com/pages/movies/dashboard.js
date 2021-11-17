@@ -7,7 +7,7 @@ import { fetchData } from './automata';
 export default function Layout( props ){
 	return (
 		<MultiLayout
-			params={props}
+    		params={{ ...props, render:"page"}}
 			config={config}
 			fetch={ (params) => fetchData({ ...params }) }
 			dashboard={( {data, loading } ) => <Dashboard data={data} loading={loading}/>}

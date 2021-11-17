@@ -19,8 +19,6 @@ ${PERSON_TINY_FRAGMENT}
     recs{
       id
       releaseYear
-      type
-      genre
       directed{
         id{
           ...PersonInfoTiny

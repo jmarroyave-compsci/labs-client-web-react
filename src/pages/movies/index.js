@@ -1,9 +1,11 @@
 import React from 'react'
-import Layout from 'com/pages/movies/page';
+import Dashboard from 'com/pages/movies/dashboard';
 
 const Page = ( props ) => {
   return (
-      <Layout breadcrumbs={`/movies`}/> 
+    <>
+      <Dashboard breadcrumbs={`/movies`}/> 
+    </>
   )
 }
 

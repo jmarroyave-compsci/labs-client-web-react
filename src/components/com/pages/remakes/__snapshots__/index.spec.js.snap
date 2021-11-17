@@ -396,6 +396,7 @@ exports[`STORIES_REMAKES compare against snapshot 1`] = `
             <div
               class="emotion-6"
             >
+              <div />
               <div
                 class="emotion-6"
               >

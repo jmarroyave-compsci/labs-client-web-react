@@ -11,9 +11,9 @@ const GET_DATA = gql`
     title
     country
     type
-    genre
+    genres
     duration
-    rating {
+    ratings {
       averageRating
       name
     }

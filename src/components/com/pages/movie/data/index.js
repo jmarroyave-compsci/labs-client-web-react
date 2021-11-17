@@ -18,9 +18,9 @@ query getMovie($id:String!) {
     title
     country
     type
-    genre
+    genres
     duration
-    rating {
+    ratings {
       averageRating
       name
     }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { styled } from '@mui/material/styles';
 import { useRouter } from 'next/router'
 import Stack from 'com/ui/stack';
@@ -9,19 +9,20 @@ import { Title } from 'style/detail'
 
 export default function Paging(props){
   const router = useRouter();
+  const bottom = useRef(null)
   var { children, route, loading, data, url, skeleton, onPageChange, page, pageSize=10 } = props || {};
 
   page = (page) ? page : ((route && route.page) ? route.page : null); 
   page = (page) ? parseInt(page) : 1;
 
   const goToPage = ( toPage ) => {
+    bottom.current.scrollIntoView(false)
+
     if(onPageChange) {
       onPageChange(toPage)
-      return;
     }
 
     if(url){
-      window.scrollTo(0,0);
       var urlTo = `${url}/${toPage}`;
       router.push(urlTo)      
     }
@@ -32,21 +33,24 @@ export default function Paging(props){
   const previousButton = (page == 1)
 
   return (
-    <Frame>
-      { (data && data.length > 0) ? 
-        <Stack
-            spacing={2}
-        >
-          {children}
-          <Stack direction='row' spacing={2} justifyContent='center'>
-            <Button variant="outlined" disabled={previousButton} onClick={ previousPage }>Back</Button>
-            <Button variant="outlined" disabled={nextButton} onClick={ nextPage }>Next</Button>
+    <>
+      <div ref={bottom}/>
+      <Frame>
+        { (data && data.length > 0) ? 
+          <Stack
+              spacing={2}
+          >
+            {children}
+            <Stack direction='row' spacing={2} justifyContent='center'>
+              <Button variant="outlined" disabled={previousButton} onClick={ previousPage }>Back</Button>
+              <Button variant="outlined" disabled={nextButton} onClick={ nextPage }>Next</Button>
+            </Stack>
           </Stack>
-        </Stack>
-      :
-        <Title>{(loading) ? ((skeleton) ? skeleton : "loading") : "No results"}</Title>
-      }
-    </Frame>
+        :
+          <Title>{(loading) ? ((skeleton) ? skeleton : "loading") : "No results"}</Title>
+        }
+      </Frame>
+    </>
   )
 }
 

@@ -8,7 +8,7 @@ import Field from 'com/field'
 
 export default function RemakeItem( props ){
   const { image, name, count, recs } = props;
-
+  
   return (   
       <Card
         image={(image) ? image.poster : image}

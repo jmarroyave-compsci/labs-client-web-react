@@ -1,31 +1,30 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { store } from 'app/state/store'
 import Router from 'next/router'
-import * as dataPerson from 'com/entities/person/data'; 
-import * as dataMovie from 'com/entities/movie/data'; 
+import { fetchItems } from 'com/entities/movie/data';
 import config from "../.config.js";
 
 const MODEL_NAME = config.automata.name;
 
 const initialState = {
   params: {
+    renderer: null,
+    entity: null,
     page: null,
+    type: null,
+    decade: null,    
+    op: null,
   },
   data: null,
-  loading: false,
+  loading: true,
   error: null,
 }
 
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     thunkAPI.dispatch(setParams( params ))
-
-    switch(params.type){
-      case "person":
-        return await dataPerson.fetchItems(params)      
-      case "movie":
-        return await dataMovie.fetchItems(params)      
-    }    
+    console.log(params)
+    return await fetchItems( params );
   }
 )
 
@@ -34,7 +33,12 @@ const slice = createSlice({
   initialState,
   reducers: {
     setParams : (state, action) => {
-      state.params.page = action.payload.page;
+            state.params = {
+        ...state.params,
+        ...action.payload
+      }
+      if(state.params.renderer == "banner" || state.params.page == 1) return;
+      Router.push(`${config.page.url(state.params)}/?page=${state.params.page}`, null, { shallow: true })  
     }
   },
   extraReducers: {
