@@ -158,12 +158,18 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
 }
 
 .emotion-13:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgba(0, 0, 0, 0.54);
+  color: #fff;
 }
 
 .emotion-13:last-child td,
 .emotion-13:last-child th {
   border: 0;
+}
+
+.emotion-13:hover {
+  background-color: rgba(0, 0, 0, 0.54);
+  color: #fff;
 }
 
 .emotion-14 {

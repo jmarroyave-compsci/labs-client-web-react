@@ -130,12 +130,18 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
 }
 
 .emotion-13:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgba(0, 0, 0, 0.54);
+  color: #fff;
 }
 
 .emotion-13:last-child td,
 .emotion-13:last-child th {
   border: 0;
+}
+
+.emotion-13:hover {
+  background-color: rgba(0, 0, 0, 0.54);
+  color: #fff;
 }
 
 .emotion-14 {
@@ -512,7 +518,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                             class="makeStyles-cardTitle-20"
                           >
                             <span>
-                              227
+                              231
                             </span>
                           </h3>
                         </div>
@@ -535,7 +541,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                             class="makeStyles-cardTitle-20"
                           >
                             <span>
-                              78
+                              80
                             </span>
                           </h3>
                         </div>

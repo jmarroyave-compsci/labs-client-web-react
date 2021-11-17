@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`STORIES_TV_SHOWS compare against snapshot 1`] = `
+exports[`PEOPLE compare against snapshot 1`] = `
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;

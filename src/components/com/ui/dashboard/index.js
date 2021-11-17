@@ -1,3 +1,4 @@
+import React from 'react'
 import GridItem from 'core/ui/layout/grid_item';
 import Indicator from 'com/ui/dashboard/indicator';
 import Dataset from "com/ui/dashboard/dataset";
