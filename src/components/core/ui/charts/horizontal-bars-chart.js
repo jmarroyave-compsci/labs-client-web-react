@@ -22,7 +22,7 @@ const styles = {
 
 class HorizontalBarsChart extends Component {
 
-    plot(data, svg, width, height) {
+    plot(data, svg, width, height, onBarClick, interactive) {
         const { classes, small } = this.props;
 
         var y = d3.scaleBand()
@@ -37,6 +37,11 @@ class HorizontalBarsChart extends Component {
         x.domain([0, d3.max(data, function(d){ return d.value; })])
         y.domain(data.map(function(d) { return d.label; }));
 
+        const lineOpacity = (interactive) ? "1" : "0.5";
+        const lineOpacityHover = (interactive) ? "0.75" : lineOpacity;
+        const lineOpacityClicked = (interactive) ? "1" : lineOpacity;;
+        const otherLinesOpacityHover = (interactive) ? "0.25" : lineOpacity;;
+
         svg.selectAll(".bar")
           .data(data)
           .enter().append("rect")
@@ -45,6 +50,30 @@ class HorizontalBarsChart extends Component {
           .attr("y", function(d) { return y(d.label); })
           .attr("height", y.bandwidth())
           .style('fill', (d, i) => (small) ? colorScale(i) : colorScale(i))
+          .style("opacity", lineOpacity)
+          .on("mouseover", (d, i) => {
+            if(!interactive) return
+
+            //console.log("mouseover")
+            d3.select(d.target.parentNode).selectAll(".bar")
+                .style("opacity", otherLinesOpacityHover);
+            d3.select(d.target)
+                .style("opacity", lineOpacityHover)            
+          })
+          .on("mouseout", (d, i) => {
+            if(!interactive) return
+            setTimeout( ()=>{
+                d3.select(d.target.parentNode).selectAll(".bar")
+                    .style("opacity", lineOpacity);
+            }, 1000)
+          })
+          .on("click", (d, i) => {
+            if(!interactive) return
+            d3.select(d.target)
+                .style("opacity", lineOpacityClicked);
+            if(onBarClick)
+                onBarClick(d, i)
+          })
 
         svg.append("g")
           .attr("transform", "translate(0," + height + ")")
@@ -81,7 +110,7 @@ class HorizontalBarsChart extends Component {
 
     drawChart() {
         const { parentWidth, parentHeight, small } = this.props;
-        var { data, width, height } = this.props;
+        var { data, width, height, onBarClick } = this.props;
 
         width = (width) ? width : Math.max(parentWidth, width);
         width = (width <= 0) ? 300 : width;
@@ -113,7 +142,7 @@ class HorizontalBarsChart extends Component {
 
         const chartWidth = width - margin.left - margin.right;
         const chartHeight = height - margin.top - margin.bottom
-        this.plot(data, chart, chartWidth, chartHeight);
+        this.plot(data, chart, chartWidth, chartHeight, onBarClick, this.props.interactive);
 
         return el.toReact();
     }
@@ -133,6 +162,7 @@ HorizontalBarsChart.propTypes = {
     height: PropTypes.number,
     small: PropTypes.bool,
     marginLeft: PropTypes.number,
+    onBarClick: PropTypes.func,
 }
 
 HorizontalBarsChart.defaultProps = {
@@ -141,6 +171,7 @@ HorizontalBarsChart.defaultProps = {
     height: 100,
     small: false,
     marginLeft: 80,
+    onBarClick: null,
 }
 
 HorizontalBarsChart = ResponsiveWrapper(HorizontalBarsChart);

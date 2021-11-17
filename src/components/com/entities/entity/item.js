@@ -1,27 +1,28 @@
 import React from 'react';
-import LinkMovie from 'com/entities/movie/link';
-import LinkPerson from 'com/entities/person/link';
-import LinkPodcast from 'com/entities/podcast/link';
-import LinkTVShow from 'com/entities/tv-show/link';
-import LinkVideoGame from 'com/entities/video-game/link';
+import ItemMovie from 'com/entities/movie/item';
+import ItemPerson from 'com/entities/person/item';
+import ItemPodcast from 'com/entities/podcast/item';
+import ItemTVShow from 'com/entities/tv-show/item';
+import ItemVideoGame from 'com/entities/video-game/item';
+import Error from 'core/ui/error';
 
-function EntityLink( params ) {
+function EntityItem( params ) {
 	const { id, type, children, box } = params;
 
 	switch( type ){
 		case "movie":
-			return <LinkMovie box={box} id={id}>{children}</LinkMovie>
+			return <ItemMovie {...params}/>
 		case "person":
-			return <LinkPerson box={box} id={id}>{children}</LinkPerson>
+			return <ItemPerson {...params}/>
 		case "podcast":
-			return <LinkPodcast box={box} id={id}>{children}</LinkPodcast>
+			return <ItemPodcast {...params}/>
 		case "tv-show":
-			return <LinkTVShow box={box} id={id}>{children}</LinkTVShow>
+			return <ItemTVShow {...params}/>
 		case "video-game":
-			return <LinkVideoGame box={box} id={id}>{children}</LinkVideoGame>
+			return <ItemVideoGame {...params}/>
 	}
 
-	return <div>ENTITY {type} NOT FOUND</div>
+	return <Error from={"Entity Item"} data={`ENTITY ${type} NOT FOUND`}/>	
 }
 
-export default EntityLink;
+export default EntityItem;

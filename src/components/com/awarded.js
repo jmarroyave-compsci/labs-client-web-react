@@ -26,6 +26,9 @@ function setAwarded(data, mini){
   var groups = []
   var rendered = []
   var key = 0;
+
+  const getEntityText = ( a ) => `${a.entity} ${(a.won) ? "✓" : ""}`
+
   for( var i = 0; i < data.length; i++){
     var a = data[i]
     if(cat !== a.category){
@@ -37,8 +40,8 @@ function setAwarded(data, mini){
 
     const type = (a.entityType) ? a.entityType : ((a.entityId?.startsWith("nm")) ? "person" : "movie")
 
-    groups.push(<Medium key={key++}>{(!a.entityId) ? a.entity : 
-      <LinkEntity type={type} id={a.entityId}>{a.entity}</LinkEntity>
+    groups.push(<Medium key={key++}>{(!a.entityId) ? getEntityText(a) : 
+      <LinkEntity type={type} id={a.entityId}>{getEntityText(a)}</LinkEntity>
     }</Medium>)
   }
 

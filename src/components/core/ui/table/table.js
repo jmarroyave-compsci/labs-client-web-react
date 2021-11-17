@@ -23,22 +23,31 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
   },
 }));
 
-const StyledTableRow = styled(TableRow)(({ theme }) => ({
+const StyledTableRow = styled(TableRow)(({ theme, interactive }) => ({
   '&:nth-of-type(odd)': {
-    backgroundColor: theme.palette.action.hover,
+    backgroundColor: theme.palette.action.active,
+    color: theme.palette.getContrastText(theme.palette.action.active),
   },
   // hide last border
   '&:last-child td, &:last-child th': {
     border: 0,
   },
+  ':hover' : {
+    backgroundColor: (interactive) ? theme.palette.action.hover : theme.palette.action.active,
+    color: theme.palette.getContrastText((interactive) ? theme.palette.action.hover : theme.palette.action.active),
+  },
 }));
 
 var CustomTable = function(props) {
   const classes = useStyles();
-  var { tableHead,tableHeader, tableData, tableHeaderColor, showHeader, tableDataExclude } = props;
+  var { onRowClick,tableHead,tableHeader, tableData, tableHeaderColor, showHeader, tableDataExclude } = props;
   tableHead = (tableHead) ? tableHead : tableHeader;
 
   if((showHeader === true && !tableHead) || !tableData) return "No Data";
+
+  const onClick = (params) => {
+    if(onRowClick) onRowClick(params)
+  }
 
   return (
     <div className={classes.tableResponsive}>
@@ -62,7 +71,7 @@ var CustomTable = function(props) {
         <TableBody>
           {getData(tableData, (prop, key) => {
             return (
-              <StyledTableRow key={key} className={classes.tableBodyRow}>
+              <StyledTableRow interactive={props.interactive} onClick={()=> onClick(prop)} key={key} className={classes.tableBodyRow}>
                 {getData(prop, (p, key) => {
                   if(tableDataExclude && tableDataExclude.includes(key)) return
                   return (

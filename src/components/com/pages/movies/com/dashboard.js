@@ -1,59 +1,57 @@
-import React from 'react'
+import React, { useState } from 'react'
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
-import Indicator from 'com/ui/dashboard/indicator';
-import Dataset from "com/ui/dashboard/dataset";
 import Stack from 'com/ui/stack';
 import { Title } from 'style/infography'
+import BottomSheetData from 'com/pages/dashboard/com/bottom-sheet-data';
+import { tileIndicator, tileChart } from 'com/ui/dashboard'
 
-class Dashboard extends React.Component {
-  render(){
-    const { data, loading } = this.props;
+const Dashboard = ( props ) => {
+    const [ query, setQuery ] = useState(null);
+    const { data, loading } = props;
     const { total, awards, writers, actors, producers, directors, countries, duration, genres, production, ratings, releaseYear, type } = data || {};
 
-    const tileIndicator = (title, data, icon) =>               
-              <GridItem xs={12} sm={6} md={6} lg={4} style={{paddingRight: '1rem'}}>
-                <Indicator loading={loading} title={title} data={(data) ? data.toString() : data} icon={icon}/>
-              </GridItem>
-    const tileChart = (title, data, ranges) =>               
-              <GridItem xs={12} sm={6} md={6} lg={6} style={{paddingRight: '1rem'}}>
-                <Dataset loading={loading} title={title} data={(data) ? data : {}} ranges={ranges}/>
-              </GridItem>
-
-          console.log(data)
+    const onClick = (data, title, field) => {
+      var op;
+      switch(field){
+        case "genre":
+          op = {op: "eq", field: "genres", value: data.label}
+          break;
+      }
+      setQuery({ op: op, title: `${title}: ${data.label}`, type: "movie"})
+    }
 
     return (
       <Stack spacing={2}>
+        <BottomSheetData query={query}/>
         <Title>general</Title>
         <GridContainer justifyContent='center' fill>
-          {tileIndicator("movies", total, "local_movies")}
+          {tileIndicator(loading, "movies", total, "local_movies")}
         </GridContainer>
 
         <Title>segments</Title>
         <GridContainer justifyContent='center' fill>
-          {tileChart("type", type, [])}
-          {tileChart("genre", genres, [])}
-          {tileChart("countries", countries, [10])}
-          {tileChart("ratings", ratings, [])}
-          {tileChart("released", releaseYear, [])}
-          {tileChart("duration", duration, [10])}
-          {tileChart("production", production, [])}
+          {tileChart(loading, "type", type, [])}
+          {tileChart(loading, "genre", genres, [], onClick, "genre")}
+          {tileChart(loading, "countries", countries, [10])}
+          {tileChart(loading, "ratings", ratings, [])}
+          {tileChart(loading, "released", releaseYear, [])}
+          {tileChart(loading, "duration", duration, [10])}
+          {tileChart(loading, "production", production, [])}
         </GridContainer>
 
 
         <Title>crew per movie</Title>
           <GridContainer justifyContent='center' fill>
-              {tileChart("actors", actors, [10, 50, 250, 500])}
-              {tileChart("directors", directors, [10, 50, 100, 250, 500])}
-              {tileChart("producers", producers, [10, 50, 100, 250, 500])}
-              {tileChart("writers", writers, [10, 50, 100, 250, 500])}
+              {tileChart(loading, "actors", actors, [10, 50, 250, 500])}
+              {tileChart(loading, "directors", directors, [10, 50, 100, 250, 500])}
+              {tileChart(loading, "producers", producers, [10, 50, 100, 250, 500])}
+              {tileChart(loading, "writers", writers, [10, 50, 100, 250, 500])}
           </GridContainer>
 
 
       </Stack>
     )
-  }
-
 }
 
 export default Dashboard;

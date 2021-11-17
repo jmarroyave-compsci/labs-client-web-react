@@ -8,7 +8,7 @@ import ErrorBoundry from 'core/ui/error-boundry';
 import DatasetInternals from './dataset_internal';
 
 export default function Dataset( params ){
-  const { loading, data, title, ranges, height } = params;
+  const { loading, data, title, ranges, height, interactive } = params;
   const [ format , setFormat] = useState("chart");
 
   const button = (ico, f) => <Button outlined={true} color='primary' icon={ico} render="icon" disabled={f === format} onClick={()=> setFormat(f)}>{f}</Button>

@@ -1,6 +1,6 @@
 export default {
 	automata: {
-		name: "stories_tv_shows"
+		name: "people"
 	},
 	page: {
 		title: "People",

@@ -8,28 +8,28 @@ import Table from './table';
 import TreeMap from "./charts/tree-map";
 
 export default function Dataset( params ){
-  const { format, data, title, ranges, height } = params;
+  const { format, data, title, ranges, height, onClick, interactive } = params;
 
   return (
       <>
-        {(format === "table") && renderText( params.data, ranges, height )}
-        {(format === "chart") && renderGraph( title, params.data, ranges, height )}
+        {(format === "table") && renderText( params.data, ranges, height, onClick, interactive )}
+        {(format === "chart") && renderChart( title, params.data, ranges, height, onClick, interactive )}
         {(format === "tree") && renderTreeMap( title, params.data, ranges, height )}
       </>
    )
 }
 
-function renderText( data, ranges, height ){
+function renderText( data, ranges, height, onRowClick, interactive ){
   return (
     <div style={{height: height + 8, overflowY: 'scroll'}}> 
-      <Table data={data} ranges={ranges}/>
+      <Table interactive={interactive} data={data} ranges={ranges} onRowClick={(params)=>onRowClick({label: params[0], value: params[1] })}/>
     </div>
   )
 }
 
-function renderGraph( title, data, ranges, height ){
+function renderChart( title, data, ranges, height, onBarClick, interactive ){
   return(
-    <HorizontalBarsChart title={title} data={data} ranges={ranges} small={true} height={height}/>
+    <HorizontalBarsChart interactive={interactive} onBarClick={(d,i) => onBarClick(i)} title={title} data={data} ranges={ranges} small={true} height={height}/>
   )
 }
 

@@ -20,6 +20,7 @@ import Typography from '@material-ui/core/Typography';
 import Footer from './footer'
 import Head from 'next/head';
 import Snackbar from './snackbar';
+import BottomSheet from './bottom-sheet';
 
 import ReactGA from 'react-ga';
 
@@ -51,6 +52,7 @@ function App( props ) {
         <CssBaseline />
         <Box sx={{ display: 'flex' }} style={{padding: 0, margin: 0}}>
           <Snackbar/>
+          <BottomSheet/>
           <Toolbar/>
           <Drawer/>
           <Box

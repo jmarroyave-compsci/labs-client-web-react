@@ -25,6 +25,11 @@ const initialState = {
     message : "",
     duration: 5000,
   },
+  bottomSheet : {
+    title: null,
+    children: null,
+    show: false,
+  },
   credentials : {
     loggedIn: false,
     user: {
@@ -97,6 +102,12 @@ export const AppModel = createSlice({
       state.messages.message = message;
       state.messages.show = (message && message !== "") ? true : false;
     },
+    showBottomSheet: (state, action) => {
+      const { children, title }  = action.payload;
+      state.bottomSheet.show = (children != null);
+      state.bottomSheet.children = children;
+      state.bottomSheet.title = title;
+    },
     logIn: (state, action) => {
       const { name, avatar }  = action.payload;
       state.credentials.loggedIn = true;
@@ -113,5 +124,5 @@ export const AppModel = createSlice({
   },
 })
 
-export const { setPage, toggleThemeMode, toggleDrawer, initializeApp, updateUsers, setLoading, showMessage, logIn, logOut } = AppModel.actions
+export const { setPage, toggleThemeMode, toggleDrawer, initializeApp, updateUsers, setLoading, showMessage, logIn, logOut, showBottomSheet } = AppModel.actions
 export default AppModel.reducer

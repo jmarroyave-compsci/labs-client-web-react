@@ -24,7 +24,7 @@ const transitionStyles = {
 };
 
 export default function Grid( props ){
-    var { animations=true, data, loading, url, skeleton, item, onPageChange, page, xs=12, sm=6, md=6, lg=4, noPaging=false, noPadding } = props;
+    var { animations=true, data, loading, url, skeleton, item, onPageChange, page, pageSize, xs=12, sm=6, md=6, lg=4, noPaging=false, noPadding } = props;   
 
     data = (data && data.length > 0) ? data : [1,2,3,4,5,6];
 
@@ -69,7 +69,7 @@ export default function Grid( props ){
 
     if(!noPaging){
       output = (
-        <Paging data={ data } url={url} onPageChange={onPageChange} page={page} loading={loading}>
+        <Paging pageSize={pageSize} data={ data } url={url} onPageChange={onPageChange} page={page} loading={loading}>
           {output}
         </Paging>
       )      

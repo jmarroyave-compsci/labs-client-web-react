@@ -36,7 +36,7 @@ const MediaCard = (props) => {
           <CardHeader sx={{width: "100%"}}
             classes={{ content: classes.headerContent, root: classes.headerRoot }}
             title={               
-                  <Tooltip title={title} placement="bottom-start">
+                  <Tooltip title={(title) ? title : "" } placement="bottom-start">
                     <div style={{display: 'inline-block', width: '100%'}}>
                       <Typography noWrap={true} variant='subtitle' style={{display: 'inline-block', width: '100%'}}>{title}</Typography>
                     </div>    

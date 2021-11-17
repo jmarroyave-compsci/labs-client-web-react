@@ -1459,7 +1459,19 @@
           "children": null
         }
       ],
-      "Day 6": []
+      "Day 6": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "[WEB] horizontal lists",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 7": []
+    },
+    "Sprint 11": {
+      "Day 1": []
     }
   }
 }
