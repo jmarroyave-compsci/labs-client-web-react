@@ -9,15 +9,12 @@ import { Title } from 'style/detail'
 
 export default function Paging(props){
   const router = useRouter();
-  const bottom = useRef(null)
   var { children, route, loading, data, url, skeleton, onPageChange, page, pageSize=10 } = props || {};
 
   page = (page) ? page : ((route && route.page) ? route.page : null); 
   page = (page) ? parseInt(page) : 1;
 
   const goToPage = ( toPage ) => {
-    bottom.current.scrollIntoView(false)
-
     if(onPageChange) {
       onPageChange(toPage)
     }
@@ -34,7 +31,6 @@ export default function Paging(props){
 
   return (
     <>
-      <div ref={bottom}/>
       <Frame>
         { (data && data.length > 0) ? 
           <Stack

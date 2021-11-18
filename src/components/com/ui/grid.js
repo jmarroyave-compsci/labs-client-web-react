@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Paper from '@material-ui/core/Paper';
@@ -25,8 +25,14 @@ const transitionStyles = {
 
 export default function Grid( props ){
     var { animations=true, data, loading, url, skeleton, item, onPageChange, page, pageSize, xs=12, sm=6, md=6, lg=4, noPaging=false, noPadding } = props;   
+    const start = useRef(null)
 
     data = (data && data.length > 0) ? data : [1,2,3,4,5,6];
+
+    const goToPage = ( toPage ) => {
+      start.current.scrollIntoView(false)
+      if(onPageChange) onPageChange(toPage)
+    }
 
     const itemWrapper = ( data ) => (noPadding) ? data : <ItemFrame>{data}</ItemFrame>
     const animateItem = (item) =>{ return (animations) ?
@@ -34,7 +40,8 @@ export default function Grid( props ){
         {state => (
           <div style={{
             ...defaultStyle,
-            ...transitionStyles[state]
+            ...transitionStyles[state],
+            width: "100%",
           }}>
             {item}
           </div>
@@ -58,18 +65,22 @@ export default function Grid( props ){
     }
 
     var output = (
-        <GridContainer spacing={2} justify='center' fill style={{width: '100%'}}>
-          {data.map( (_item, idx) => 
-            <React.Fragment key={idx} >
-            <Item data={_item} params={props}/>
-            </React.Fragment>
-          )}
-        </GridContainer>
+        <>
+          <div ref={start}/>
+
+          <GridContainer spacing={2} justify='center' fill style={{width: '100%'}}>
+            {data.map( (_item, idx) => 
+              <React.Fragment key={idx} >
+              <Item data={_item} params={props}/>
+              </React.Fragment>
+            )}
+          </GridContainer>
+        </>
     )
 
     if(!noPaging){
       output = (
-        <Paging pageSize={pageSize} data={ data } url={url} onPageChange={onPageChange} page={page} loading={loading}>
+        <Paging pageSize={pageSize} data={ data } url={url} onPageChange={goToPage} page={page} loading={loading}>
           {output}
         </Paging>
       )      
@@ -87,8 +98,10 @@ function Placeholder(){
     <Paper style={{backgroundColor: 'transparent', flexGrow: 1, padding: '0.5rem'}}>
       <Stack spacing={1}>
         <Skeleton variant="text" width={"80%"}/>
-        <Skeleton variant="rectangular" height={240} />
-        <Skeleton variant="text"/>
+        <Skeleton variant="rectangular" height={100} />
+        <Skeleton variant="text" width={"50%"}/>
+        <Skeleton variant="text" width={"40%"}/>
+        <Skeleton variant="text" width={"70%"}/>
       </Stack>  
     </Paper>
   )    

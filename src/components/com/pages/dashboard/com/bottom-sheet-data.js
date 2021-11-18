@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import EntityGrid from 'com/entities/entity/grid';
+import EntityItems from 'com/entities/entity/items';
 import { fetchData } from 'com/pages/dashboard/automata'
 import { useDispatch, useSelector } from 'react-redux'
 import { setLoading, showBottomSheet } from 'app' 
@@ -28,13 +28,15 @@ function BottomSheetData(props) {
     if(state == null) return
     dispatch( showBottomSheet( { 
         title: query.title, 
-        children: <EntityGrid 
+        children: <EntityItems 
                     page={state.params.page}  
                     loading={state.loading} 
                     data={state.data} 
                     type={query.type}
+                    format="grid"
                     onPageChange={ ( page ) => fetch( page) } 
                     pageSize={4}
+                    noPaging={false}
                   />,
       }) 
     )

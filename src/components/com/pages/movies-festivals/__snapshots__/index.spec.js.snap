@@ -216,7 +216,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   animation: animation-0 1.5s ease-in-out 0.5s infinite;
 }
 
-.emotion-79 {
+.emotion-99 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -230,12 +230,12 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   justify-content: center;
 }
 
-.emotion-79>:not(style)+:not(style) {
+.emotion-99>:not(style)+:not(style) {
   margin: 0;
   margin-left: 16px;
 }
 
-.emotion-80 {
+.emotion-100 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -283,23 +283,23 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   color: #1976d2;
 }
 
-.emotion-80::-moz-focus-inner {
+.emotion-100::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-80.Mui-disabled {
+.emotion-100.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-80 {
+  .emotion-100 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-80:hover {
+.emotion-100:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: rgba(25, 118, 210, 0.04);
@@ -307,17 +307,17 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
 }
 
 @media (hover: none) {
-  .emotion-80:hover {
+  .emotion-100:hover {
     background-color: transparent;
   }
 }
 
-.emotion-80.Mui-disabled {
+.emotion-100.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.emotion-82 {
+.emotion-102 {
   overflow: hidden;
   pointer-events: none;
   position: absolute;
@@ -329,7 +329,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   border-radius: inherit;
 }
 
-.emotion-83 {
+.emotion-103 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -338,24 +338,24 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-84 {
+.emotion-104 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-85 {
+.emotion-105 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-86 {
+.emotion-106 {
   font-size: 0.9rem;
   color: inherit;
 }
 
-.emotion-87 {
+.emotion-107 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -408,13 +408,13 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
             <div
               class="emotion-6"
             >
-              <div />
               <div
                 class="emotion-6"
               >
                 <div
                   class="emotion-8"
                 >
+                  <div />
                   <div
                     class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-content-xs-center"
                     style="width: 100%;"
@@ -444,10 +444,19 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 240px;"
+                                  style="height: 100px;"
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 50%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 40%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 70%;"
                                 />
                               </div>
                             </div>
@@ -480,10 +489,19 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 240px;"
+                                  style="height: 100px;"
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 50%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 40%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 70%;"
                                 />
                               </div>
                             </div>
@@ -516,10 +534,19 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 240px;"
+                                  style="height: 100px;"
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 50%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 40%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 70%;"
                                 />
                               </div>
                             </div>
@@ -552,10 +579,19 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 240px;"
+                                  style="height: 100px;"
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 50%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 40%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 70%;"
                                 />
                               </div>
                             </div>
@@ -588,10 +624,19 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 240px;"
+                                  style="height: 100px;"
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 50%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 40%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 70%;"
                                 />
                               </div>
                             </div>
@@ -624,10 +669,19 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 240px;"
+                                  style="height: 100px;"
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 50%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 40%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 70%;"
                                 />
                               </div>
                             </div>
@@ -660,10 +714,19 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 240px;"
+                                  style="height: 100px;"
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 50%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 40%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 70%;"
                                 />
                               </div>
                             </div>
@@ -696,10 +759,19 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 240px;"
+                                  style="height: 100px;"
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 50%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 40%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 70%;"
                                 />
                               </div>
                             </div>
@@ -732,10 +804,19 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 240px;"
+                                  style="height: 100px;"
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 50%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 40%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 70%;"
                                 />
                               </div>
                             </div>
@@ -768,10 +849,19 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 240px;"
+                                  style="height: 100px;"
                                 />
                                 <span
                                   class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 50%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 40%;"
+                                />
+                                <span
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
+                                  style="width: 70%;"
                                 />
                               </div>
                             </div>
@@ -781,10 +871,10 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-79"
+                    class="emotion-99"
                   >
                     <button
-                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-80"
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-100"
                       disabled=""
                       tabindex="-1"
                       type="button"
@@ -792,13 +882,13 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                       Back
                     </button>
                     <button
-                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-80"
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-100"
                       tabindex="0"
                       type="button"
                     >
                       Next
                       <span
-                        class="MuiTouchRipple-root emotion-82"
+                        class="MuiTouchRipple-root emotion-102"
                       />
                     </button>
                   </div>
@@ -814,57 +904,57 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-83"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-103"
             >
               <div
-                class="emotion-84"
+                class="emotion-104"
               >
                 <div
-                  class="emotion-85"
+                  class="emotion-105"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-86"
+                  class="emotion-106"
                 >
                   <span
-                    class="emotion-87"
+                    class="emotion-107"
                   >
                     Movie Awards
                   </span>
                 </div>
                 <div
-                  class="emotion-86"
+                  class="emotion-106"
                 >
                   <span
-                    class="emotion-87"
+                    class="emotion-107"
                   >
                     Movie Remakes
                   </span>
                 </div>
                 <div
-                  class="emotion-86"
+                  class="emotion-106"
                 >
                   <span
-                    class="emotion-87"
+                    class="emotion-107"
                   >
                     Movie Directors
                   </span>
                 </div>
                 <div
-                  class="emotion-86"
+                  class="emotion-106"
                 >
                   <span
-                    class="emotion-87"
+                    class="emotion-107"
                   >
                     Movie Producers
                   </span>
                 </div>
                 <div
-                  class="emotion-86"
+                  class="emotion-106"
                 >
                   <span
-                    class="emotion-87"
+                    class="emotion-107"
                   >
                     Movie Actors
                   </span>

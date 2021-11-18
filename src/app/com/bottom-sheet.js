@@ -59,8 +59,8 @@ function BottomSheet(props) {
         onClose={toggleDrawer(false)}
         onOpen={toggleDrawer(true)}
         swipeAreaWidth={drawerBleeding}
-        disableSwipeToOpen={false}
-        disableDiscovery={false}
+        disableSwipeToOpen={true}
+        disableDiscovery={true}
         ModalProps={{
           keepMounted: true,
         }}
