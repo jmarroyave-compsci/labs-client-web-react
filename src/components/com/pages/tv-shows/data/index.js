@@ -9,7 +9,7 @@ const GET_DATA = gql`
     dashboardTV {
       total
       type
-      releaseYear
+      releaseDecade
       duration
       genres
       awards

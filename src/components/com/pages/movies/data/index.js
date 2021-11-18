@@ -9,7 +9,7 @@ const GET_DATA = gql`
     dashboardMovies {
       total
       type
-      releaseYear
+      releaseDecade
       duration
       genres
       awards

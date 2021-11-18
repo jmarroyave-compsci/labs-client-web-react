@@ -9,7 +9,7 @@ import { tileIndicator, tileChart } from 'com/ui/dashboard'
 const Dashboard = ( props ) => {
     const [ query, setQuery ] = useState(null);
     const { data, loading } = props;
-    const { total, awards, writers, cast, producers, directors, countries, duration, genres, production, ratings, releaseYear, type } = data || {};
+    const { total, awards, writers, cast, producers, directors, countries, duration, genres, production, ratings, releaseDecade, type } = data || {};
 
     const onClick = (data, title, field) => {
       var op;
@@ -33,15 +33,15 @@ const Dashboard = ( props ) => {
         <GridContainer justifyContent='center' fill>
           {tileChart(loading, "type", type, [])}
           {tileChart(loading, "genre", genres, [], onClick, "genre")}
-          {tileChart(loading, "countries", countries, [10])}
+          {tileChart(loading, "countries", countries, [10,100])}
           {tileChart(loading, "ratings", ratings, [])}
-          {tileChart(loading, "released", releaseYear, [])}
+          {tileChart(loading, "released", releaseDecade, [])}
           {tileChart(loading, "duration", duration, [10])}
           {tileChart(loading, "production", production, [])}
         </GridContainer>
 
 
-        <Title>crew per movie</Title>
+        <Title>crew</Title>
           <GridContainer justifyContent='center' fill>
               {tileChart(loading, "cast", cast, [10, 50, 250, 500])}
               {tileChart(loading, "directors", directors, [10, 50, 100, 250, 500])}

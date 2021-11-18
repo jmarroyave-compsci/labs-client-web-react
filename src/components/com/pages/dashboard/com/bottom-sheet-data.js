@@ -33,7 +33,7 @@ function BottomSheetData(props) {
                     loading={state.loading} 
                     data={state.data} 
                     type={query.type}
-                    format="grid"
+                    format="hlist"
                     onPageChange={ ( page ) => fetch( page) } 
                     pageSize={4}
                     noPaging={false}

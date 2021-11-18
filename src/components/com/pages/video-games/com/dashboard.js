@@ -9,7 +9,7 @@ import { Title } from 'style/infography'
 class Dashboard extends React.Component {
   render(){
     const { data, loading } = this.props;
-    const { total, awards, writers, actors, producers, directors, countries, duration, genres, production, ratings, releaseYear, type } = data || {};
+    const { total, awards, writers, cast, producers, directors, countries, duration, genres, production, ratings, releaseDecade, type } = data || {};
 
     const tileIndicator = (title, data, icon) =>               
               <GridItem xs={12} sm={6} md={6} lg={4} style={{paddingRight: '1rem'}}>
@@ -32,16 +32,17 @@ class Dashboard extends React.Component {
         <Title>segments</Title>
         <GridContainer justifyContent='center' fill>
           {tileChart("genre", genres, [])}
-          {tileChart("released", releaseYear, [])}
+          {tileChart("released", releaseDecade, [])}
           {tileChart("duration", duration, [10])}
         </GridContainer>
 
 
-        <Title>crew per movie</Title>
+        <Title>crew</Title>
           <GridContainer justifyContent='center' fill>
-              {tileChart("directors", directors, [10, 50, 100, 250, 500])}
-              {tileChart("producers", producers, [10, 50, 100, 250, 500])}
-              {tileChart("writers", writers, [10, 50, 100, 250, 500])}
+              {tileChart("actors", cast, [])}
+              {tileChart("directors", directors, [])}
+              {tileChart("producers", producers, [])}
+              {tileChart("writers", writers, [])}
           </GridContainer>
 
 
