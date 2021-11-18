@@ -1,7 +1,7 @@
 import sitemap from '../../../data/sitemap/data.json'
-import { ERROR_HEADER_TEXT } from 'core/ui/error'
+import { ERROR_HEADER_TEXT } from '../../../components/core/ui/error'
 
-describe('Check for broken links', () => {
+describe('Check for render', () => {
 
     console.log(sitemap)
 
@@ -12,7 +12,7 @@ describe('Check for broken links', () => {
             expect(response.status).to.eq(200)
           })        
           .its('body')
-          .to.not.should('include', ERROR_HEADER_TEXT)
+          .should('not.contain', ERROR_HEADER_TEXT)
       })
 
 
@@ -21,7 +21,7 @@ describe('Check for broken links', () => {
       Object.keys( children ).forEach( path => {
         if( path.startsWith("____")) path = path.substring(4);          
         console.log(path)
-        visit( `${root}${path}/`, children[path] )  
+        visit( `${(root == "/") ? "" : root}/${path}`, children[path] )  
       })
       
     }
