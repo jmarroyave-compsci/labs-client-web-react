@@ -1,27 +1,21 @@
 import { gql } from "@apollo/client";
 import { fetch }  from 'lib/graphql'; 
+import { PERSON_TINY_FRAGMENT } from 'com/entities/person/data'
 
-export const PERSON_TINY_FRAGMENT = gql`
-fragment PersonInfoTiny on Person {
-  id
-  name
-}
-`;
+export const fetchData = ( { page, entity } ) => fetch( GET_DATA( { ENTITY: entity } ), { page: page } , (resp) => { return { ...resp, data: resp.data.storyRemakes } } )
 
-export const fetchData = ( page ) => fetch( GET_DATA, { page: page } , (resp) => { return { ...resp, data: resp.data.storiesMoviesRemakes } } )
-
-const GET_DATA = gql`
+const GET_DATA = ( { ENTITY } ) => gql`
 ${PERSON_TINY_FRAGMENT}
-  query GetData($page: Int){
-  storiesMoviesRemakes(page: $page){
+  query ${ENTITY}_remakes($page: Int){
+  storyRemakes(page: $page){
     name
     count
     recs{
-      id
+      id: _id
       releaseYear
       directed{
         id{
-          ...PersonInfoTiny
+          ...PersonTinyFragment
         } 
       }
     }

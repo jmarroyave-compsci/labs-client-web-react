@@ -3,6 +3,10 @@ import { store } from 'app/state/store'
 import Router from 'next/router'
 import * as dataPerson from 'com/entities/person/data'; 
 import * as dataMovie from 'com/entities/movie/data'; 
+import * as dataTVShow from 'com/entities/tv-show/data'; 
+import * as dataVideoGame from 'com/entities/video-game/data'; 
+import * as dataPodcast from 'com/entities/podcast/data'; 
+import * as dataMovieFestival from 'com/entities/movie-festival/data'; 
 import config from "../.config.js";
 
 const MODEL_NAME = config.automata.name;
@@ -20,11 +24,22 @@ export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     thunkAPI.dispatch(setParams( params ))
 
+    params.qryName = "dashboard_click"
+    //console.log(params)
+
     switch(params.type){
       case "person":
         return await dataPerson.fetchItems(params)      
       case "movie":
         return await dataMovie.fetchItems(params)      
+      case "tvShow":
+        return await dataTVShow.fetchItems(params)      
+      case "videoGame":
+        return await dataVideoGame.fetchItems(params)      
+      case "movieFestival":
+        return await dataMovieFestival.fetchItems(params)      
+      case "podcast":
+        return await dataPodcast.fetchItems(params)      
     }    
   }
 )

@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { store } from 'app/state/store'
 import Router from 'next/router'
-import * as data from '../data'; 
+import * as data from 'com/entities/tv-show/data'; 
 import config from "../.config.js";
 
 const MODEL_NAME = config.automata.name;
@@ -18,7 +18,7 @@ const initialState = {
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     thunkAPI.dispatch(setParams( params ))
-    return ( params.renderer !== 'banner' ) ? await data.fetchData() : { data : null, loading: false, error: null }
+    return ( params.renderer !== 'banner' ) ? await data.fetchDashboard({dataEntity: "TVShows"}) : { data : null, loading: false, error: null }
   }
 )
 
@@ -27,7 +27,7 @@ const slice = createSlice({
   initialState,
   reducers: {
     setParams : (state, action) => {
-            state.params = {
+      state.params = {
         ...state.params,
         ...action.payload
       }

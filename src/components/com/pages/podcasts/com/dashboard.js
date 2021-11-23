@@ -1,37 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
-import Indicator from 'com/ui/dashboard/indicator';
-import Dataset from "com/ui/dashboard/dataset";
 import Stack from 'com/ui/stack';
 import { Title } from 'style/infography'
+import BottomSheetData from 'com/pages/dashboard/com/bottom-sheet-data';
+import { tileIndicator, tileChart } from 'com/ui/dashboard'
+import { getDashboardQuery } from 'com/entities/podcast/query';
 
 function Dashboard( props ){
-  const { data, loading, route } = props;
+  const [ query, setQuery ] = useState(null);
+  const { data, loading } = props;
   const { total, category, language, author, yearCreated, countries, languages } = data || {};
 
-  const tileIndicator = (title, data, icon) =>               
-            <GridItem xs={12} sm={6} md={6} lg={3} style={{paddingRight: '1rem'}}>
-              <Indicator loading={loading} title={title} data={(data) ? data.toString() : data} icon={icon}/>
-            </GridItem>
-  const tileChart = (title, data, ranges) =>               
-            <GridItem xs={12} sm={6} md={6} lg={6} style={{paddingRight: '1rem'}}>
-              <Dataset loading={loading} title={title} data={(data) ? data : {}} ranges={ranges}/>
-            </GridItem>
+  const onClick = (data, title) => {
+    const op = getDashboardQuery(data, title);
+    setQuery({ op: op, title: `${title}: ${data.label}`, type: "podcast"})
+  }
 
   return (
       <Stack spacing={2}>
+        <BottomSheetData query={query}/>
         <Title>general</Title>
         <GridContainer justifyContent='center' fill>
-          {tileIndicator("podcasts", total, "podcasts")}
+          {tileIndicator(loading, "podcasts", total, "podcasts")}
         </GridContainer>
 
         <Title>segments</Title>
           <GridContainer justifyContent='center' fill>
-              {tileChart("category", category, [10, 100])}
-              {tileChart("languages", languages, [10, 50])}
-              {tileChart("countries", countries, [10, 50])}
-              {tileChart("author", author, [10, 35])}
+              {tileChart(loading, "category", category, [10, 100], onClick)}
+              {tileChart(loading, "languages", languages, [10, 50], onClick)}
+              {tileChart(loading, "countries", countries, [10, 50], onClick)}
+              {tileChart(loading, "author", author, [10, 35], onClick)}
           </GridContainer>
       </Stack>
   )

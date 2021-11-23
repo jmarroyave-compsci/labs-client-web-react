@@ -158,7 +158,7 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
 }
 
 .emotion-13:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.54);
+  background-color: #42a5f5;
   color: #fff;
 }
 
@@ -167,8 +167,13 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
   border: 0;
 }
 
+.emotion-13:nth-of-type(odd):hover {
+  background-color: #42a5f5;
+  color: #fff;
+}
+
 .emotion-13:hover {
-  background-color: rgba(0, 0, 0, 0.54);
+  background-color: #fff;
   color: #fff;
 }
 
@@ -300,6 +305,7 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
                       >
                         <tr
                           class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-13"
+                          interactive="0"
                         >
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-14"
@@ -319,6 +325,7 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
                         </tr>
                         <tr
                           class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-13"
+                          interactive="0"
                         >
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-14"
@@ -338,6 +345,7 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
                         </tr>
                         <tr
                           class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-13"
+                          interactive="0"
                         >
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-14"
@@ -357,6 +365,7 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
                         </tr>
                         <tr
                           class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-13"
+                          interactive="0"
                         >
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-14"
@@ -376,6 +385,7 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
                         </tr>
                         <tr
                           class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-13"
+                          interactive="0"
                         >
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-14"
@@ -395,6 +405,7 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
                         </tr>
                         <tr
                           class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-13"
+                          interactive="0"
                         >
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-14"
@@ -414,6 +425,7 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
                         </tr>
                         <tr
                           class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-13"
+                          interactive="0"
                         >
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-14"
@@ -458,6 +470,7 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
                       >
                         <tr
                           class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-13"
+                          interactive="0"
                         >
                           <td
                             class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-14"
@@ -498,47 +511,72 @@ exports[`ABOUT/DATA compare Page against snapshot 1`] = `
                 <div
                   class="emotion-52"
                 >
-                  <span
-                    class="emotion-53"
+                  <a
+                    href="/movies/stories/awards"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Awards
-                  </span>
+                    <span
+                      class="emotion-53"
+                    >
+                      Movie Awards
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-52"
                 >
-                  <span
-                    class="emotion-53"
+                  <a
+                    href="/movies/stories/remakes"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Remakes
-                  </span>
+                    <span
+                      class="emotion-53"
+                    >
+                      Movie Remakes
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-52"
                 >
-                  <span
-                    class="emotion-53"
+                  <a
+                    href="/movies/stories/directors"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Directors
-                  </span>
+                    <span
+                      class="emotion-53"
+                    >
+                      Movie Directors
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-52"
                 >
-                  <span
-                    class="emotion-53"
+                  <a
+                    href="/movies/stories/producers"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Producers
-                  </span>
+                    <span
+                      class="emotion-53"
+                    >
+                      Movie Producers
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-52"
                 >
-                  <span
-                    class="emotion-53"
+                  <a
+                    href="/movies/stories/actors"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Actors
-                  </span>
+                    <span
+                      class="emotion-53"
+                    >
+                      Movie Actors
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>

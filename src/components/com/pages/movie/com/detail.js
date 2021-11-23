@@ -62,7 +62,7 @@ export default function Dashboard( props ){
 
       <People type="writers" data={data.writers} story="/movies/stories/writers"/>
 
-      <People type="crew" data={data.cast}/>
+      <People type="crew" data={data.crew}/>
 
 
       <StreamBy data={data.streamBy}/>

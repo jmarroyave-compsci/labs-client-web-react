@@ -1,34 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
-@keyframes animation-0 {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.4;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes animation-0 {
-  0% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.4;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
 .emotion-0 {
   display: -webkit-box;
   display: -webkit-flex;
@@ -105,12 +77,6 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
 }
 
 .emotion-6 {
-  margin: 0 0 2rem 0;
-  padding: 0;
-  width: 100%;
-}
-
-.emotion-8 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -120,242 +86,45 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   flex-direction: column;
 }
 
-.emotion-8>:not(style)+:not(style) {
+.emotion-6>:not(style)+:not(style) {
   margin: 0;
   margin-top: 16px;
 }
 
+.emotion-7 {
+  padding: 0;
+  margin: 1rem 0 0.5rem 0;
+  text-transform: lowercase;
+  font-size: 2.5rem;
+}
+
 .emotion-9 {
-  margin: 0;
-  padding: 0 1rem 1rem 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  overflow: hidden;
-  width: 100%;
+  background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
-  background-color: transparent;
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
 .emotion-10 {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.87);
-  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  margin: 0.1rem;
-  width: 100%;
-}
-
-.emotion-11 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  width: 100%;
-}
-
-.emotion-12 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-12>:not(style)+:not(style) {
-  margin: 0;
-  margin-top: 8px;
-}
-
-.emotion-13 {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.11);
-  height: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  transform-origin: 0 55%;
-  -webkit-transform: scale(1, 0.60);
-  -moz-transform: scale(1, 0.60);
-  -ms-transform: scale(1, 0.60);
-  transform: scale(1, 0.60);
-  border-radius: 4px/6.7px;
-  -webkit-animation: animation-0 1.5s ease-in-out 0.5s infinite;
-  animation: animation-0 1.5s ease-in-out 0.5s infinite;
-}
-
-.emotion-13:empty:before {
-  content: "\\00a0";
-}
-
-.emotion-14 {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.11);
-  height: 1.2em;
-  -webkit-animation: animation-0 1.5s ease-in-out 0.5s infinite;
-  animation: animation-0 1.5s ease-in-out 0.5s infinite;
-}
-
-.emotion-99 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.emotion-99>:not(style)+:not(style) {
-  margin: 0;
-  margin-left: 16px;
-}
-
-.emotion-100 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.75;
-  letter-spacing: 0.02857em;
-  text-transform: uppercase;
-  min-width: 64px;
-  padding: 5px 15px;
-  border-radius: 4px;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border: 1px solid rgba(25, 118, 210, 0.5);
-  color: #1976d2;
-}
-
-.emotion-100::-moz-focus-inner {
-  border-style: none;
-}
-
-.emotion-100.Mui-disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-@media print {
-  .emotion-100 {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
-.emotion-100:hover {
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  background-color: rgba(25, 118, 210, 0.04);
-  border: 1px solid #1976d2;
-}
-
-@media (hover: none) {
-  .emotion-100:hover {
-    background-color: transparent;
-  }
-}
-
-.emotion-100.Mui-disabled {
-  color: rgba(0, 0, 0, 0.26);
-  border: 1px solid rgba(0, 0, 0, 0.12);
-}
-
-.emotion-102 {
-  overflow: hidden;
-  pointer-events: none;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: inherit;
-}
-
-.emotion-103 {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.87);
-  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
-}
-
-.emotion-104 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-105 {
+.emotion-11 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-106 {
+.emotion-12 {
   font-size: 0.9rem;
   color: inherit;
 }
 
-.emotion-107 {
+.emotion-13 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -408,489 +177,362 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
             <div
               class="emotion-6"
             >
+              <h2
+                class="emotion-7"
+              >
+                general
+              </h2>
               <div
-                class="emotion-6"
+                class="MuiGrid-root MuiGrid-container"
               >
                 <div
-                  class="emotion-8"
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                  style="padding-right: 1rem;"
                 >
-                  <div />
                   <div
-                    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-content-xs-center"
-                    style="width: 100%;"
+                    class="makeStyles-card-9 makeStyles-cardHeader-4"
                   >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="makeStyles-cardHeader-13 makeStyles-primaryCardHeader-21 makeStyles-cardHeaderStats-15 makeStyles-cardHeaderIcon-16"
                     >
                       <div
-                        class="emotion-9"
+                        class="makeStyles-cardIcon-23 makeStyles-primaryCardHeader-28"
+                      >
+                        <span
+                          aria-hidden="true"
+                          class="material-icons MuiIcon-root"
+                        >
+                          festival
+                        </span>
+                      </div>
+                      <p
+                        class="makeStyles-cardCategory-5"
+                      >
+                        movie festivals
+                      </p>
+                      <h3
+                        class="makeStyles-cardTitle-7"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-10"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
-                            >
-                              <div
-                                class="emotion-12"
-                              >
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 80%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 100px;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 50%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 40%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 70%;"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                          style="z-index: 9999; position: absolute; top: 0px; right: 0px; left: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.376);"
+                        />
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2
+                class="emotion-7"
+              >
+                segments
+              </h2>
+              <div
+                class="MuiGrid-root MuiGrid-container"
+              >
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                  style="padding-right: 1rem;"
+                >
+                  <div
+                    class="makeStyles-card-9"
+                    style="display: flex; flex-flow: column;"
+                  >
+                    <div
+                      class="makeStyles-cardHeader-13 makeStyles-primaryCardHeader-21"
+                    >
+                      <h4
+                        class="makeStyles-cardTitleWhite-31"
+                      >
+                        started
+                      </h4>
+                      <p
+                        class="makeStyles-cardCategoryWhite-30"
+                      />
                     </div>
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="makeStyles-cardBody-32"
+                      style="flex: 1;"
                     >
                       <div
-                        class="emotion-9"
-                      >
-                        <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-10"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
-                            >
-                              <div
-                                class="emotion-12"
-                              >
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 80%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 100px;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 50%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 40%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 70%;"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
+                        style="z-index: 9999; position: absolute; top: 0px; right: 0px; left: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.376);"
+                      />
                     </div>
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="makeStyles-cardFooter-35 makeStyles-cardFooterStats-38"
                     >
                       <div
-                        class="emotion-9"
+                        style="padding: 0.5rem;"
                       >
-                        <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-10"
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary Mui-disabled Mui-disabled"
+                          disabled=""
+                          style="padding: 0.15rem 0.25rem;"
+                          tabindex="-1"
+                          type="button"
+                          variant="outlined"
                         >
-                          <div
-                            class="emotion-11"
+                          <span
+                            class="MuiIconButton-label"
                           >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
+                            <span
+                              aria-hidden="true"
+                              class="material-icons MuiIcon-root"
+                              icon="bar_chart"
                             >
-                              <div
-                                class="emotion-12"
-                              >
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 80%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 100px;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 50%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 40%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 70%;"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
-                    >
-                      <div
-                        class="emotion-9"
-                      >
-                        <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-10"
+                              bar_chart
+                            </span>
+                          </span>
+                        </button>
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                          style="padding: 0.15rem 0.25rem;"
+                          tabindex="0"
+                          type="button"
+                          variant="outlined"
                         >
-                          <div
-                            class="emotion-11"
+                          <span
+                            class="MuiIconButton-label"
                           >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
+                            <span
+                              aria-hidden="true"
+                              class="material-icons MuiIcon-root"
+                              icon="table_chart"
                             >
-                              <div
-                                class="emotion-12"
-                              >
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 80%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 100px;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 50%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 40%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 70%;"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
-                    >
-                      <div
-                        class="emotion-9"
-                      >
-                        <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-10"
+                              table_chart
+                            </span>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root"
+                          />
+                        </button>
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                          style="padding: 0.15rem 0.25rem;"
+                          tabindex="0"
+                          type="button"
+                          variant="outlined"
                         >
-                          <div
-                            class="emotion-11"
+                          <span
+                            class="MuiIconButton-label"
                           >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
+                            <span
+                              aria-hidden="true"
+                              class="material-icons MuiIcon-root"
+                              icon="table_rows"
                             >
-                              <div
-                                class="emotion-12"
-                              >
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 80%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 100px;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 50%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 40%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 70%;"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
-                    >
-                      <div
-                        class="emotion-9"
-                      >
-                        <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-10"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
-                            >
-                              <div
-                                class="emotion-12"
-                              >
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 80%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 100px;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 50%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 40%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 70%;"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
-                    >
-                      <div
-                        class="emotion-9"
-                      >
-                        <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-10"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
-                            >
-                              <div
-                                class="emotion-12"
-                              >
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 80%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 100px;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 50%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 40%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 70%;"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
-                    >
-                      <div
-                        class="emotion-9"
-                      >
-                        <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-10"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
-                            >
-                              <div
-                                class="emotion-12"
-                              >
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 80%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 100px;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 50%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 40%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 70%;"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
-                    >
-                      <div
-                        class="emotion-9"
-                      >
-                        <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-10"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
-                            >
-                              <div
-                                class="emotion-12"
-                              >
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 80%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 100px;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 50%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 40%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 70%;"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
-                    >
-                      <div
-                        class="emotion-9"
-                      >
-                        <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-10"
-                        >
-                          <div
-                            class="emotion-11"
-                          >
-                            <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
-                              style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
-                            >
-                              <div
-                                class="emotion-12"
-                              >
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 80%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-14"
-                                  style="height: 100px;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 50%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 40%;"
-                                />
-                                <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-13"
-                                  style="width: 70%;"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+                              table_rows
+                            </span>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root"
+                          />
+                        </button>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                  style="padding-right: 1rem;"
+                >
                   <div
-                    class="emotion-99"
+                    class="makeStyles-card-9"
+                    style="display: flex; flex-flow: column;"
                   >
-                    <button
-                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-100"
-                      disabled=""
-                      tabindex="-1"
-                      type="button"
+                    <div
+                      class="makeStyles-cardHeader-13 makeStyles-primaryCardHeader-21"
                     >
-                      Back
-                    </button>
-                    <button
-                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-100"
-                      tabindex="0"
-                      type="button"
-                    >
-                      Next
-                      <span
-                        class="MuiTouchRipple-root emotion-102"
+                      <h4
+                        class="makeStyles-cardTitleWhite-31"
+                      >
+                        country
+                      </h4>
+                      <p
+                        class="makeStyles-cardCategoryWhite-30"
                       />
-                    </button>
+                    </div>
+                    <div
+                      class="makeStyles-cardBody-32"
+                      style="flex: 1;"
+                    >
+                      <div
+                        style="z-index: 9999; position: absolute; top: 0px; right: 0px; left: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.376);"
+                      />
+                    </div>
+                    <div
+                      class="makeStyles-cardFooter-35 makeStyles-cardFooterStats-38"
+                    >
+                      <div
+                        style="padding: 0.5rem;"
+                      >
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary Mui-disabled Mui-disabled"
+                          disabled=""
+                          style="padding: 0.15rem 0.25rem;"
+                          tabindex="-1"
+                          type="button"
+                          variant="outlined"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="material-icons MuiIcon-root"
+                              icon="bar_chart"
+                            >
+                              bar_chart
+                            </span>
+                          </span>
+                        </button>
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                          style="padding: 0.15rem 0.25rem;"
+                          tabindex="0"
+                          type="button"
+                          variant="outlined"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="material-icons MuiIcon-root"
+                              icon="table_chart"
+                            >
+                              table_chart
+                            </span>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root"
+                          />
+                        </button>
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                          style="padding: 0.15rem 0.25rem;"
+                          tabindex="0"
+                          type="button"
+                          variant="outlined"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="material-icons MuiIcon-root"
+                              icon="table_rows"
+                            >
+                              table_rows
+                            </span>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                  style="padding-right: 1rem;"
+                >
+                  <div
+                    class="makeStyles-card-9"
+                    style="display: flex; flex-flow: column;"
+                  >
+                    <div
+                      class="makeStyles-cardHeader-13 makeStyles-primaryCardHeader-21"
+                    >
+                      <h4
+                        class="makeStyles-cardTitleWhite-31"
+                      >
+                        continent
+                      </h4>
+                      <p
+                        class="makeStyles-cardCategoryWhite-30"
+                      />
+                    </div>
+                    <div
+                      class="makeStyles-cardBody-32"
+                      style="flex: 1;"
+                    >
+                      <div
+                        style="z-index: 9999; position: absolute; top: 0px; right: 0px; left: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.376);"
+                      />
+                    </div>
+                    <div
+                      class="makeStyles-cardFooter-35 makeStyles-cardFooterStats-38"
+                    >
+                      <div
+                        style="padding: 0.5rem;"
+                      >
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary Mui-disabled Mui-disabled"
+                          disabled=""
+                          style="padding: 0.15rem 0.25rem;"
+                          tabindex="-1"
+                          type="button"
+                          variant="outlined"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="material-icons MuiIcon-root"
+                              icon="bar_chart"
+                            >
+                              bar_chart
+                            </span>
+                          </span>
+                        </button>
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                          style="padding: 0.15rem 0.25rem;"
+                          tabindex="0"
+                          type="button"
+                          variant="outlined"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="material-icons MuiIcon-root"
+                              icon="table_chart"
+                            >
+                              table_chart
+                            </span>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root"
+                          />
+                        </button>
+                        <button
+                          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorPrimary"
+                          style="padding: 0.15rem 0.25rem;"
+                          tabindex="0"
+                          type="button"
+                          variant="outlined"
+                        >
+                          <span
+                            class="MuiIconButton-label"
+                          >
+                            <span
+                              aria-hidden="true"
+                              class="material-icons MuiIcon-root"
+                              icon="table_rows"
+                            >
+                              table_rows
+                            </span>
+                          </span>
+                          <span
+                            class="MuiTouchRipple-root"
+                          />
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -904,60 +546,85 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-103"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-9"
             >
               <div
-                class="emotion-104"
+                class="emotion-10"
               >
                 <div
-                  class="emotion-105"
+                  class="emotion-11"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-106"
+                  class="emotion-12"
                 >
-                  <span
-                    class="emotion-107"
+                  <a
+                    href="/movies/stories/awards"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Awards
-                  </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      Movie Awards
+                    </span>
+                  </a>
                 </div>
                 <div
-                  class="emotion-106"
+                  class="emotion-12"
                 >
-                  <span
-                    class="emotion-107"
+                  <a
+                    href="/movies/stories/remakes"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Remakes
-                  </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      Movie Remakes
+                    </span>
+                  </a>
                 </div>
                 <div
-                  class="emotion-106"
+                  class="emotion-12"
                 >
-                  <span
-                    class="emotion-107"
+                  <a
+                    href="/movies/stories/directors"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Directors
-                  </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      Movie Directors
+                    </span>
+                  </a>
                 </div>
                 <div
-                  class="emotion-106"
+                  class="emotion-12"
                 >
-                  <span
-                    class="emotion-107"
+                  <a
+                    href="/movies/stories/producers"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Producers
-                  </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      Movie Producers
+                    </span>
+                  </a>
                 </div>
                 <div
-                  class="emotion-106"
+                  class="emotion-12"
                 >
-                  <span
-                    class="emotion-107"
+                  <a
+                    href="/movies/stories/actors"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Actors
-                  </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      Movie Actors
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>

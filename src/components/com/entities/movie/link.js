@@ -7,7 +7,7 @@ function MovieLinkComponent( params ) {
 	if(!id) return children;
 
 	return (
-		<Link box={box}  border={false} to={`/movies/${id}`}>{children}</Link>
+		<Link box={box} border={false} to={`/movies/${id}`}>{children}</Link>
 	);
 }
 

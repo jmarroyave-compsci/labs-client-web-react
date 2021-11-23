@@ -20,7 +20,7 @@ const initialState = {
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     thunkAPI.dispatch(setParams( params ))
-    return await data.fetchData( params.page );
+    return await data.fetchData( params );
   }
 )
 

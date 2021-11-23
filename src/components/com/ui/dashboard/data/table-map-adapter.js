@@ -8,7 +8,7 @@ export default TableComponent => (
       var resp = [];
       Object.keys(data).forEach( c => {
         var value = data[c].toString();
-        var label = format.stringToText(c.startsWith("_") ? c.substring(1) : c);
+        var label = format.stringToHeader(c.startsWith("_") ? c.substring(1) : c);
 
         resp.push( [label, value] );
       })

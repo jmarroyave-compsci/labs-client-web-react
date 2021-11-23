@@ -15,7 +15,7 @@ export default function HList( props ){
     var { skeleton, data, item, noPaging=true, pageSize, loading, onPageChange, page, url } = props;
     const start = useRef(null)
 
-    data = (data && data.length > 0) ? data : [1,2,3,4];
+    data = (data) ? data : [1,2,3,4];
 
     const itemWrapper = ( data ) => data
 

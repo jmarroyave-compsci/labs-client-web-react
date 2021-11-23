@@ -7,7 +7,7 @@ import { ItemFrame, ItemContent, Title, Small } from 'style/item'
 import Field from 'com/field'
 
 
-export default function MovieItem( props ){
+export default function Item( props ){
   const { tiny } = props;
   var { format } = props;
 
@@ -25,6 +25,7 @@ export default function MovieItem( props ){
 }
 
 function ItemTiny( props ){
+
   return (
       <Link id={props.id}>
         <Field title={props?.releaseYear ?? "?"} value={props?.title ?? "?"} />
@@ -38,8 +39,8 @@ function ItemList( props ){
   return (
     <ItemFrame key={id} width="220px" height="125px">
       <Link id={id}>
-          <div><Small>{releaseYear ?? "?"}</Small></div>
-          <div><Title>{title ?? "?"}</Title></div>
+          <Small>{releaseYear ?? "?"}</Small>
+          <Title>{title ?? "?"}</Title>
           {as && <div><Small>as {as.replace(/[\[\]\'\"]/g, "")}</Small></div>}
       </Link>
     </ItemFrame>
@@ -48,18 +49,15 @@ function ItemList( props ){
 
 
 function ItemCard( props ){
-  const { full, year, all, id, title, awards, image, box } = props;
-
+  const { full, year, all, id, title, awards, image } = props;
   return (
-    
-    <Link box id={id}>
+    <Link box={true} id={id}>
       <Card
         image={(image) ? image.poster : image}
         text={<Awards mini={!full} data={awards} year={year} all={all}/>}
         title={title}
       />
     </Link>    
-    
   )
   
 }

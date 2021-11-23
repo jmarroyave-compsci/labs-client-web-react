@@ -25,16 +25,20 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 
 const StyledTableRow = styled(TableRow)(({ theme, interactive }) => ({
   '&:nth-of-type(odd)': {
-    backgroundColor: theme.palette.action.active,
-    color: theme.palette.getContrastText(theme.palette.action.active),
+    backgroundColor: theme.palette.primary[theme.palette.mode],
+    color: theme.palette.primary.contrastText,
   },
   // hide last border
   '&:last-child td, &:last-child th': {
     border: 0,
   },
+  '&:nth-of-type(odd):hover': {
+    backgroundColor: (interactive) ? theme.palette.primary.main : theme.palette.primary[theme.palette.mode],
+    color: theme.palette.primary.contrastText,
+  },
   ':hover' : {
-    backgroundColor: (interactive) ? theme.palette.action.hover : theme.palette.action.active,
-    color: theme.palette.getContrastText((interactive) ? theme.palette.action.hover : theme.palette.action.active),
+    backgroundColor: (interactive) ? theme.palette.primary.main : theme.palette.background.paper,
+    color: theme.palette.primary.contrastText,
   },
 }));
 
@@ -42,11 +46,12 @@ var CustomTable = function(props) {
   const classes = useStyles();
   var { onRowClick,tableHead,tableHeader, tableData, tableHeaderColor, showHeader, tableDataExclude } = props;
   tableHead = (tableHead) ? tableHead : tableHeader;
+  const interactive = +(props.onRowClick != null);
 
   if((showHeader === true && !tableHead) || !tableData) return "No Data";
 
   const onClick = (params) => {
-    if(onRowClick) onRowClick(params)
+    if(props.onRowClick) props.onRowClick(params)
   }
 
   return (
@@ -71,7 +76,7 @@ var CustomTable = function(props) {
         <TableBody>
           {getData(tableData, (prop, key) => {
             return (
-              <StyledTableRow interactive={props.interactive} onClick={()=> onClick(prop)} key={key} className={classes.tableBodyRow}>
+              <StyledTableRow interactive={interactive} onClick={() => onClick(prop)} key={key} className={classes.tableBodyRow}>
                 {getData(prop, (p, key) => {
                   if(tableDataExclude && tableDataExclude.includes(key)) return
                   return (

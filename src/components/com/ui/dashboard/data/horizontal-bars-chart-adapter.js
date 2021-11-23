@@ -12,7 +12,7 @@ export default ChartComponent => (
       var others = {};
       Object.keys(data).forEach( c => {
         var value = data[c];
-        var obj = { label: format.stringToText(c.startsWith("_") ? c.substring(1) : c ) , value: value };
+        var obj = { label: format.stringToHeader(c.startsWith("_") ? c.substring(1) : c ) , value: value };
         for( var i = 0; i < ranges.length; i++){
           var range = ranges[i];
           if( value > range ) continue;

@@ -1,6 +1,6 @@
 export default {
 	automata: {
-		name: "stories_remakes"
+		name: "stories-remakes"
 	},
 	page: {
 		title: "Remakes",

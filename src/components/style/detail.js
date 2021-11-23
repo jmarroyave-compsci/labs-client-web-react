@@ -37,6 +37,8 @@ export const FieldValue = styled('div')({
   fontSize: "1rem",
   lineHeight: "1.25rem",
   margin: '0 0 0.5rem 0',
+  textOverflow: "ellipsis",
+  whiteSpace: 'nowrap',
 });
 
 export const Paragraph = styled('div')({

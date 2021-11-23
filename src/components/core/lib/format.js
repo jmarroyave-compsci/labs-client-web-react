@@ -47,3 +47,6 @@ export const stringToText = function(value=""){
 	return jsConvert.toSentenceCase(value)
 }
 
+export const stringToHeader = function(value=""){
+  return jsConvert.toHeaderCase(value)
+}

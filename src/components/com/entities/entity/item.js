@@ -4,21 +4,24 @@ import ItemPerson from 'com/entities/person/item';
 import ItemPodcast from 'com/entities/podcast/item';
 import ItemTVShow from 'com/entities/tv-show/item';
 import ItemVideoGame from 'com/entities/video-game/item';
+import ItemMovieFestival from 'com/entities/movie-festival/item';
 import Error from 'core/ui/error';
 
 function EntityItem( params ) {
-	const { id, type, children, box } = params;
+	const { type } = params;
 
 	switch( type ){
 		case "movie":
 			return <ItemMovie {...params}/>
+		case "movieFestival":
+			return <ItemMovieFestival {...params}/>
 		case "person":
 			return <ItemPerson {...params}/>
 		case "podcast":
 			return <ItemPodcast {...params}/>
-		case "tv-show":
+		case "tvShow":
 			return <ItemTVShow {...params}/>
-		case "video-game":
+		case "videoGame":
 			return <ItemVideoGame {...params}/>
 	}
 

@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { store } from 'app/state/store'
 import Router from 'next/router'
-import * as data from '../data'; 
+import * as data from 'com/entities/person/data'; 
 import config from "../.config.js";
 
 const MODEL_NAME = config.automata.name;
@@ -20,7 +20,11 @@ const initialState = {
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     thunkAPI.dispatch(setParams( params ))
-    return await data.fetchData( params.page );
+    params.op = { op: "in", field: "profession", value: ["actor", "actress"] }
+    params.withActed = true;
+    params.withDirected = false;
+    params.qryName = "actors"
+    return await data.fetchItems( params );
   }
 )
 

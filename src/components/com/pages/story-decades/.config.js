@@ -1,6 +1,6 @@
 export default {
 	automata: {
-		name: "story_decades"
+		name: "story-decades"
 	},
 	page: {
 		title: "Decades",

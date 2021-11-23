@@ -23,7 +23,7 @@ const initialState = {
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     thunkAPI.dispatch(setParams( params ))
-    console.log(params)
+    params.qryName = "decades";
     return await fetchItems( params );
   }
 )

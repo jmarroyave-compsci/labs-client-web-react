@@ -29,7 +29,7 @@ export default function Layout( props ){
     if(!state) return;
     dispatch( setLoading( { status: state.loading, sender: config.automata.name } ) )
 
-    console.log(config.automata.name, state);
+    //console.log(config.automata.name, state);
   }, [state])
 
   useEffect( () => {

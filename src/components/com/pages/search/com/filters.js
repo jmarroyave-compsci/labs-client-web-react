@@ -71,6 +71,9 @@ export default function Filters( props ){
   const { params, onFiltersChanged } = props;
   const entities = getEntities();  ;
 
+
+  console.log(params)
+
   useEffect( () => {
     dispatch( { type: "INIT", payload: params } )
     dispatch( { type: "UPDATE_TIMEFRAME_NOTES" } )

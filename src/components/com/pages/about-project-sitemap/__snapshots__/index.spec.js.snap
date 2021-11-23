@@ -344,11 +344,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                       <div
                         class="MuiTreeItem-label"
                       >
-                        <span
-                          class="emotion-13"
+                        <a
+                          href="/"
+                          style="flex: 1; display: flex; width: 100%;"
                         >
-                          home
-                        </span>
+                          <span
+                            class="emotion-13"
+                          >
+                            home
+                          </span>
+                        </a>
                       </div>
                     </div>
                     <ul
@@ -377,11 +382,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                               <div
                                 class="MuiTreeItem-label"
                               >
-                                <span
-                                  class="emotion-13"
+                                <a
+                                  href="/stories"
+                                  style="flex: 1; display: flex; width: 100%;"
                                 >
-                                  stories
-                                </span>
+                                  <span
+                                    class="emotion-13"
+                                  >
+                                    stories
+                                  </span>
+                                </a>
                               </div>
                             </div>
                             <ul
@@ -426,11 +436,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                               <div
                                 class="MuiTreeItem-label"
                               >
-                                <span
-                                  class="emotion-13"
+                                <a
+                                  href="/movies"
+                                  style="flex: 1; display: flex; width: 100%;"
                                 >
-                                  movies
-                                </span>
+                                  <span
+                                    class="emotion-13"
+                                  >
+                                    movies
+                                  </span>
+                                </a>
                               </div>
                             </div>
                             <ul
@@ -472,11 +487,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                       <div
                                         class="MuiTreeItem-label"
                                       >
-                                        <span
-                                          class="emotion-13"
+                                        <a
+                                          href="/movies/festivals"
+                                          style="flex: 1; display: flex; width: 100%;"
                                         >
-                                          festivals
-                                        </span>
+                                          <span
+                                            class="emotion-13"
+                                          >
+                                            festivals
+                                          </span>
+                                        </a>
                                       </div>
                                     </div>
                                     <ul
@@ -521,11 +541,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                       <div
                                         class="MuiTreeItem-label"
                                       >
-                                        <span
-                                          class="emotion-13"
+                                        <a
+                                          href="/movies/stories"
+                                          style="flex: 1; display: flex; width: 100%;"
                                         >
-                                          stories
-                                        </span>
+                                          <span
+                                            class="emotion-13"
+                                          >
+                                            stories
+                                          </span>
+                                        </a>
                                       </div>
                                     </div>
                                     <ul
@@ -554,11 +579,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                               <div
                                                 class="MuiTreeItem-label"
                                               >
-                                                <span
-                                                  class="emotion-13"
+                                                <a
+                                                  href="/movies/stories/actors"
+                                                  style="flex: 1; display: flex; width: 100%;"
                                                 >
-                                                  actors
-                                                </span>
+                                                  <span
+                                                    class="emotion-13"
+                                                  >
+                                                    actors
+                                                  </span>
+                                                </a>
                                               </div>
                                             </div>
                                             <ul
@@ -603,11 +633,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                               <div
                                                 class="MuiTreeItem-label"
                                               >
-                                                <span
-                                                  class="emotion-13"
+                                                <a
+                                                  href="/movies/stories/awards"
+                                                  style="flex: 1; display: flex; width: 100%;"
                                                 >
-                                                  awards
-                                                </span>
+                                                  <span
+                                                    class="emotion-13"
+                                                  >
+                                                    awards
+                                                  </span>
+                                                </a>
                                               </div>
                                             </div>
                                             <ul
@@ -639,11 +674,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                               <div
                                                 class="MuiTreeItem-label"
                                               >
-                                                <span
-                                                  class="emotion-13"
+                                                <a
+                                                  href="/movies/stories/directors"
+                                                  style="flex: 1; display: flex; width: 100%;"
                                                 >
-                                                  directors
-                                                </span>
+                                                  <span
+                                                    class="emotion-13"
+                                                  >
+                                                    directors
+                                                  </span>
+                                                </a>
                                               </div>
                                             </div>
                                             <ul
@@ -675,11 +715,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                               <div
                                                 class="MuiTreeItem-label"
                                               >
-                                                <span
-                                                  class="emotion-13"
+                                                <a
+                                                  href="/movies/stories/remakes"
+                                                  style="flex: 1; display: flex; width: 100%;"
                                                 >
-                                                  remakes
-                                                </span>
+                                                  <span
+                                                    class="emotion-13"
+                                                  >
+                                                    remakes
+                                                  </span>
+                                                </a>
                                               </div>
                                             </div>
                                             <ul
@@ -711,11 +756,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                               <div
                                                 class="MuiTreeItem-label"
                                               >
-                                                <span
-                                                  class="emotion-13"
+                                                <a
+                                                  href="/movies/stories/writers"
+                                                  style="flex: 1; display: flex; width: 100%;"
                                                 >
-                                                  writers
-                                                </span>
+                                                  <span
+                                                    class="emotion-13"
+                                                  >
+                                                    writers
+                                                  </span>
+                                                </a>
                                               </div>
                                             </div>
                                             <ul
@@ -768,11 +818,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                               <div
                                 class="MuiTreeItem-label"
                               >
-                                <span
-                                  class="emotion-13"
+                                <a
+                                  href="/tv-shows"
+                                  style="flex: 1; display: flex; width: 100%;"
                                 >
-                                  tv-shows
-                                </span>
+                                  <span
+                                    class="emotion-13"
+                                  >
+                                    tv-shows
+                                  </span>
+                                </a>
                               </div>
                             </div>
                             <ul
@@ -817,11 +872,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                               <div
                                 class="MuiTreeItem-label"
                               >
-                                <span
-                                  class="emotion-13"
+                                <a
+                                  href="/video-games"
+                                  style="flex: 1; display: flex; width: 100%;"
                                 >
-                                  video-games
-                                </span>
+                                  <span
+                                    class="emotion-13"
+                                  >
+                                    video-games
+                                  </span>
+                                </a>
                               </div>
                             </div>
                             <ul
@@ -866,11 +926,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                               <div
                                 class="MuiTreeItem-label"
                               >
-                                <span
-                                  class="emotion-13"
+                                <a
+                                  href="/podcasts"
+                                  style="flex: 1; display: flex; width: 100%;"
                                 >
-                                  podcasts
-                                </span>
+                                  <span
+                                    class="emotion-13"
+                                  >
+                                    podcasts
+                                  </span>
+                                </a>
                               </div>
                             </div>
                             <ul
@@ -915,11 +980,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                               <div
                                 class="MuiTreeItem-label"
                               >
-                                <span
-                                  class="emotion-13"
+                                <a
+                                  href="/people"
+                                  style="flex: 1; display: flex; width: 100%;"
                                 >
-                                  people
-                                </span>
+                                  <span
+                                    class="emotion-13"
+                                  >
+                                    people
+                                  </span>
+                                </a>
                               </div>
                             </div>
                             <ul
@@ -951,11 +1021,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                               <div
                                 class="MuiTreeItem-label"
                               >
-                                <span
-                                  class="emotion-13"
+                                <a
+                                  href="/search"
+                                  style="flex: 1; display: flex; width: 100%;"
                                 >
-                                  search
-                                </span>
+                                  <span
+                                    class="emotion-13"
+                                  >
+                                    search
+                                  </span>
+                                </a>
                               </div>
                             </div>
                             <ul
@@ -1000,11 +1075,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                               <div
                                 class="MuiTreeItem-label"
                               >
-                                <span
-                                  class="emotion-13"
+                                <a
+                                  href="/about"
+                                  style="flex: 1; display: flex; width: 100%;"
                                 >
-                                  about
-                                </span>
+                                  <span
+                                    class="emotion-13"
+                                  >
+                                    about
+                                  </span>
+                                </a>
                               </div>
                             </div>
                             <ul
@@ -1033,11 +1113,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                       <div
                                         class="MuiTreeItem-label"
                                       >
-                                        <span
-                                          class="emotion-13"
+                                        <a
+                                          href="/about/data"
+                                          style="flex: 1; display: flex; width: 100%;"
                                         >
-                                          data
-                                        </span>
+                                          <span
+                                            class="emotion-13"
+                                          >
+                                            data
+                                          </span>
+                                        </a>
                                       </div>
                                     </div>
                                     <ul
@@ -1082,11 +1167,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                       <div
                                         class="MuiTreeItem-label"
                                       >
-                                        <span
-                                          class="emotion-13"
+                                        <a
+                                          href="/about/project"
+                                          style="flex: 1; display: flex; width: 100%;"
                                         >
-                                          project
-                                        </span>
+                                          <span
+                                            class="emotion-13"
+                                          >
+                                            project
+                                          </span>
+                                        </a>
                                       </div>
                                     </div>
                                     <ul
@@ -1128,11 +1218,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                               <div
                                                 class="MuiTreeItem-label"
                                               >
-                                                <span
-                                                  class="emotion-13"
+                                                <a
+                                                  href="/about/project/log"
+                                                  style="flex: 1; display: flex; width: 100%;"
                                                 >
-                                                  log
-                                                </span>
+                                                  <span
+                                                    class="emotion-13"
+                                                  >
+                                                    log
+                                                  </span>
+                                                </a>
                                               </div>
                                             </div>
                                             <ul
@@ -1164,11 +1259,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                               <div
                                                 class="MuiTreeItem-label"
                                               >
-                                                <span
-                                                  class="emotion-13"
+                                                <a
+                                                  href="/about/project/roadmap"
+                                                  style="flex: 1; display: flex; width: 100%;"
                                                 >
-                                                  roadmap
-                                                </span>
+                                                  <span
+                                                    class="emotion-13"
+                                                  >
+                                                    roadmap
+                                                  </span>
+                                                </a>
                                               </div>
                                             </div>
                                             <ul
@@ -1200,11 +1300,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                               <div
                                                 class="MuiTreeItem-label"
                                               >
-                                                <span
-                                                  class="emotion-13"
+                                                <a
+                                                  href="/about/project/sitemap"
+                                                  style="flex: 1; display: flex; width: 100%;"
                                                 >
-                                                  sitemap
-                                                </span>
+                                                  <span
+                                                    class="emotion-13"
+                                                  >
+                                                    sitemap
+                                                  </span>
+                                                </a>
                                               </div>
                                             </div>
                                             <ul
@@ -1240,11 +1345,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                       <div
                                         class="MuiTreeItem-label"
                                       >
-                                        <span
-                                          class="emotion-13"
+                                        <a
+                                          href="/about/tech"
+                                          style="flex: 1; display: flex; width: 100%;"
                                         >
-                                          tech
-                                        </span>
+                                          <span
+                                            class="emotion-13"
+                                          >
+                                            tech
+                                          </span>
+                                        </a>
                                       </div>
                                     </div>
                                     <ul
@@ -1276,11 +1386,16 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                                       <div
                                         class="MuiTreeItem-label"
                                       >
-                                        <span
-                                          class="emotion-13"
+                                        <a
+                                          href="/about/timeline"
+                                          style="flex: 1; display: flex; width: 100%;"
                                         >
-                                          timeline
-                                        </span>
+                                          <span
+                                            class="emotion-13"
+                                          >
+                                            timeline
+                                          </span>
+                                        </a>
                                       </div>
                                     </div>
                                     <ul
@@ -1330,47 +1445,72 @@ exports[`ABOUT-PROJECT-SITEMAP compare Page against snapshot 1`] = `
                 <div
                   class="emotion-163"
                 >
-                  <span
-                    class="emotion-13"
+                  <a
+                    href="/movies/stories/awards"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Awards
-                  </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      Movie Awards
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-163"
                 >
-                  <span
-                    class="emotion-13"
+                  <a
+                    href="/movies/stories/remakes"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Remakes
-                  </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      Movie Remakes
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-163"
                 >
-                  <span
-                    class="emotion-13"
+                  <a
+                    href="/movies/stories/directors"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Directors
-                  </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      Movie Directors
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-163"
                 >
-                  <span
-                    class="emotion-13"
+                  <a
+                    href="/movies/stories/producers"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Producers
-                  </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      Movie Producers
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-163"
                 >
-                  <span
-                    class="emotion-13"
+                  <a
+                    href="/movies/stories/actors"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Actors
-                  </span>
+                    <span
+                      class="emotion-13"
+                    >
+                      Movie Actors
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>

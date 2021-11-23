@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router';
-import Layout from 'com/pages/movies-festivals/list';
+import Layout from 'com/pages/movies-festivals/page';
 
 const Page = ( props ) => {
   const router = useRouter(); 
@@ -9,7 +9,7 @@ const Page = ( props ) => {
 
   return (
       <Layout 
-        breadcrumbs={`/movies/stories/awards`} 
+        breadcrumbs={`/movies/festivals`} 
         page={page}
       /> 
   )

@@ -19,7 +19,7 @@ const _ItemFrame = styled('div')(({theme, width, height}) => ({
 const _ItemContent = styled('div')(({theme, width}) => ({
   backgroundColor: 'transparent',
   color: theme.palette.text.primary,
-  padding: '1rem',
+  padding: '0.7rem',
   display: 'block', 
   flexGrow: 1, 
   margin: "0.1rem",  
@@ -38,15 +38,18 @@ export const ItemFrame = ( props ) =>{
 }
 
 export const Title = styled('h2')({
-  fontSize: "1.5rem",
-  lineHeight: "1.8rem",
+  fontSize: "1.3rem",
+  lineHeight: "1.5rem",
   padding: 0,
   margin: 0,
+  textOverflow: "ellipsis",
+  whiteSpace: 'nowrap',
+  overflow: 'hidden',
 });
 
 export const SubTitle = styled('h3')({
-  fontSize: "1.2rem",
-  lineHeight: "1.5rem",
+  fontSize: "1.1rem",
+  lineHeight: "1.3rem",
   textTransform: 'lowercase',
   padding: '0',
   paddingBottom: "0.25rem",

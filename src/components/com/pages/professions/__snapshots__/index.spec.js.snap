@@ -166,58 +166,78 @@ exports[`STORIES_PROFESSIONS compare against snapshot 1`] = `
       <div
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
       >
-        <div
-          class="emotion-5"
+        <a
+          href="/movies/stories/actors"
+          style="flex: 1; display: flex; width: 100%;"
         >
           <div
-            class="emotion-6"
-            img="/img/ba_pro_act.jpg"
+            class="emotion-5"
           >
-            Actors
+            <div
+              class="emotion-6"
+              img="/img/ba_pro_act.jpg"
+            >
+              Actors
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
       >
-        <div
-          class="emotion-5"
+        <a
+          href="/movies/stories/directors"
+          style="flex: 1; display: flex; width: 100%;"
         >
           <div
-            class="emotion-8"
-            img="/img/ba_pro_dir.jpg"
+            class="emotion-5"
           >
-            Directors
+            <div
+              class="emotion-8"
+              img="/img/ba_pro_dir.jpg"
+            >
+              Directors
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
       >
-        <div
-          class="emotion-5"
+        <a
+          href="/movies/stories/writers"
+          style="flex: 1; display: flex; width: 100%;"
         >
           <div
-            class="emotion-10"
-            img="/img/ba_pro_wri.jpg"
+            class="emotion-5"
           >
-            Writers
+            <div
+              class="emotion-10"
+              img="/img/ba_pro_wri.jpg"
+            >
+              Writers
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div
         class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-3"
       >
-        <div
-          class="emotion-5"
+        <a
+          href="/movies/stories/producers"
+          style="flex: 1; display: flex; width: 100%;"
         >
           <div
-            class="emotion-10"
-            img="/img/ba_pro_wri.jpg"
+            class="emotion-5"
           >
-            Producers
+            <div
+              class="emotion-10"
+              img="/img/ba_pro_wri.jpg"
+            >
+              Producers
+            </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
     <div

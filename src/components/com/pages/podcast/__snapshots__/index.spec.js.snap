@@ -227,47 +227,72 @@ exports[`PAGE_PODCAST compare Page against snapshot 1`] = `
                 <div
                   class="emotion-14"
                 >
-                  <span
-                    class="emotion-15"
+                  <a
+                    href="/movies/stories/awards"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Awards
-                  </span>
+                    <span
+                      class="emotion-15"
+                    >
+                      Movie Awards
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-14"
                 >
-                  <span
-                    class="emotion-15"
+                  <a
+                    href="/movies/stories/remakes"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Remakes
-                  </span>
+                    <span
+                      class="emotion-15"
+                    >
+                      Movie Remakes
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-14"
                 >
-                  <span
-                    class="emotion-15"
+                  <a
+                    href="/movies/stories/directors"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Directors
-                  </span>
+                    <span
+                      class="emotion-15"
+                    >
+                      Movie Directors
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-14"
                 >
-                  <span
-                    class="emotion-15"
+                  <a
+                    href="/movies/stories/producers"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Producers
-                  </span>
+                    <span
+                      class="emotion-15"
+                    >
+                      Movie Producers
+                    </span>
+                  </a>
                 </div>
                 <div
                   class="emotion-14"
                 >
-                  <span
-                    class="emotion-15"
+                  <a
+                    href="/movies/stories/actors"
+                    style="flex: 1; display: flex; width: 100%;"
                   >
-                    Movie Actors
-                  </span>
+                    <span
+                      class="emotion-15"
+                    >
+                      Movie Actors
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>

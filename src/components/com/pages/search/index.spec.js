@@ -14,7 +14,7 @@ describe(`${config.automata.name.toUpperCase()}`, () => {
  
   it('compare Page against snapshot', () => {
     const renderer = render(
-      <TestProvider state={{[config.automata.name]: itemState}}>
+      <TestProvider query="search" namespace={config.automata.name} state={itemState}>
         <TestComponent render="page"/>
       </TestProvider>
     )

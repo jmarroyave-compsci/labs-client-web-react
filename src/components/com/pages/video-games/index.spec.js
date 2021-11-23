@@ -14,7 +14,7 @@ describe(`${config.automata.name.toUpperCase()}`, () => {
  
   it('compare Page against snapshot', () => {
     const renderer = render(
-      <TestProvider state={{[config.automata.name]: itemState}}>
+      <TestProvider query="dashboard_video_games" namespace={config.automata.name} state={itemState}>
         <TestComponent render="page"/>
       </TestProvider>
     )
@@ -23,15 +23,5 @@ describe(`${config.automata.name.toUpperCase()}`, () => {
     //expect(renderer.container).toMatchSnapshot();
   });
 
-  it('compare against snapshot', () => {
-    const renderer = render(
-      <TestProvider state={{[config.automata.name]: itemState}}>
-        <TestComponent render="banner"/>
-      </TestProvider>
-    )
-
-    itMustHaveNoErrors(renderer)
-    expect(renderer.container).toMatchSnapshot();
-  });
 });
 

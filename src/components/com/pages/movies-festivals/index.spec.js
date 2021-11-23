@@ -5,7 +5,7 @@ import '@testing-library/jest-dom'
 import { itMustHaveNoErrors, TestProvider } from "tests/jest/shared"
 
 import itemState from './automata/tests/item.json'
-import TestComponent from './list';
+import TestComponent from './page';
 import config from './.config';
 
 describe(`${config.automata.name.toUpperCase()}`, () => {
@@ -14,7 +14,7 @@ describe(`${config.automata.name.toUpperCase()}`, () => {
  
   it('compare Page against snapshot', () => {
     const renderer = render(
-      <TestProvider state={{[config.automata.name]: itemState}}>
+      <TestProvider query="dashboard_movie_festivals" namespace={config.automata.name} state={itemState}>
         <TestComponent/>
       </TestProvider>
     )
