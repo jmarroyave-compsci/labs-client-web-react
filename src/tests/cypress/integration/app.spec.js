@@ -7,12 +7,8 @@ describe('Check for render', () => {
 
     const visit = ( root, children ) => {
       it(`should navigate to the '${root}' page`, () => {
-        cy.request({url: root})
-          .should((response) => {
-            expect(response.status).to.eq(200)
-          })        
-          .its('body')
-          .should('not.contain', ERROR_HEADER_TEXT)
+        cy.visit(root)
+        cy.get("body").should('not.contain', ERROR_HEADER_TEXT)
       })
 
 

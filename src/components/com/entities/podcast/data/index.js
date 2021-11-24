@@ -8,6 +8,7 @@ const GET_ITEMS = ( { qryName } ) => gql`
     podcasts(page: $page, field: $field){
       id: _id
       title
+      author
     }
   }
 `

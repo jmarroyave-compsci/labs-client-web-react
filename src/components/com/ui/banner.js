@@ -17,7 +17,6 @@ const Banner = function( props ){
         {!hero &&
           <Footer>
             {actions && actions.map( (item, idx) => 
-
               <LinkButton key={idx} border href={item.url}>{item.title}</LinkButton>
             )}
             {footer}

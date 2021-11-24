@@ -23,10 +23,13 @@ export default function Layout( props ){
 
   state = ( props.data ) ? { data: props.data, params: {page: props.params.page} } : state;
 
+
+  console.log(state)
+
   var forceLoading = false;
 
   useEffect( () => {
-    if(!state) return;
+    if(!state || props.data) return;
     dispatch( setLoading( { status: state.loading, sender: config.automata.name } ) )
 
     //console.log(config.automata.name, state);
@@ -53,7 +56,8 @@ export default function Layout( props ){
   useEffect( () => {
     if(!router?.isReady) return;
     if( render === "banner" && !config.banner.showData ) return
-
+    if( props.data ) return;
+  
     fetch( params )    
   }, [ router?.isReady, params.id ])
 

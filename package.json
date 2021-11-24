@@ -1,6 +1,6 @@
 {
   "name": "labs-web-client-react",
-  "version": "2.0.8",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "dev": "cross-env BABEL_ENV=dev next dev",
@@ -12,8 +12,7 @@
     "test-cypress": "cypress open",
     "test-cypress:headless": "cypress run",
     "e2e": "start-server-and-test start http://localhost:3000 test-cypress",
-    "e2e:headless": "start-server-and-test start http://localhost:3000 test-cypress:headless",
-    "sitemap": "next-sitemap --config next.sitemap.config.js --sourceDir ./.next"
+    "e2e:headless": "start-server-and-test start http://localhost:3000 test-cypress:headless"
   },
   "dependencies": {
     "@apollo/client": "^3.4.15",
@@ -73,6 +72,8 @@
     "cypress": "^8.6.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "26.4.2",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.0",
     "react-test-renderer": "^17.0.2",
     "redux-mock-store": "^1.5.4",
     "regenerator-runtime": "^0.13.9",

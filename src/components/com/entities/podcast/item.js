@@ -47,13 +47,13 @@ function ItemList( props ){
 
 
 function ItemCard( props ){
-  const { id, title, awards, full, image, description, box} = props;
+  const { id, title, author, image, box} = props;
   return (
     <Link box id={id} entity={name} style={{width : '100%'}}>
       <Card
         image={image?.poster}
-        text={description}
         title={title}
+        subtitle={author}
       />
     </Link>    
   )

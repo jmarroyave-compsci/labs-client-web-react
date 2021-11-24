@@ -10,7 +10,7 @@ const LinkButton = function( props ){
     //console.log(url)
     router.push(url)
   }
-  return <Button variant="outlined" size="large" onClick={() => onClick()}>{children}</Button>
+  return <Button variant="contained" size="large" onClick={() => onClick()}>{children}</Button>
 }
 
 export default LinkButton;

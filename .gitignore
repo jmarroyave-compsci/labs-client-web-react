@@ -35,3 +35,5 @@ src/data/loc/reports
 
 # cypress
 src/tests/cypress/videos
+src/tests/cypress/screenshots
+

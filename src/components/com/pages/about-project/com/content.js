@@ -8,7 +8,7 @@ import BannerLog from 'com/pages/about-project-blog/banner'
 const Content = ( props ) => {
   return (
     <Stack>
-      <Section><BannerLog data={props.blog}/></Section>
+      <Section><BannerLog data={props.data}/></Section>
       <Section><BannerRoadmap/></Section>
       <Section><BannerSitemap/></Section>
    </Stack>

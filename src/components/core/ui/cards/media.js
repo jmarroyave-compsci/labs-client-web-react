@@ -52,7 +52,7 @@ const MediaCard = (props) => {
               onError={onMediaFallback}
             />
           }
-          {text  && 
+          {text && 
             <CardContent>            
               { isString(text) ?
                   <Typography variant="body2" color="text.secondary" component="div">

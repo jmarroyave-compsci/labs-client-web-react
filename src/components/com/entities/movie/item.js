@@ -49,13 +49,14 @@ function ItemList( props ){
 
 
 function ItemCard( props ){
-  const { full, year, all, id, title, awards, image } = props;
+  const { full, releaseYear, all, id, title, awards, image } = props;
   return (
     <Link box={true} id={id}>
       <Card
         image={(image) ? image.poster : image}
-        text={<Awards mini={!full} data={awards} year={year} all={all}/>}
+        text={(awards) ? <Awards mini={!full} data={awards} year={year} all={all}/> : null}
         title={title}
+        subtitle={releaseYear}
       />
     </Link>    
   )

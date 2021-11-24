@@ -12,11 +12,17 @@ export default function RemakeItem( props ){
       <Card
         image={(image) ? image.poster : image}
         text={ <div>
-                  {recs.slice(0,3).map( (r, key) =>                     
-                    <Field key={key}
-                      title={r.releaseYear} 
-                      value={<Linkit id={r.id} key={key}>{r.directed[0]?.id?.name ?? "?"}</Linkit>}
-                    />                    
+                  {recs.slice(0,3).map( (r, key) =>                    
+                      (r.directed[0]?.id) ? 
+                        <Field key={key}
+                          title={r.releaseYear} 
+                          value={<Linkit id={r.id} key={key}>{r.directed[0]?.id?.name}</Linkit>}
+                        />       
+                      :
+                        <Field key={key}
+                          title="&nbsp;"
+                          value={<Linkit id={r.id} key={key}>{r.releaseYear}</Linkit>} 
+                        />                                               
                   )}
                 </div>
               }

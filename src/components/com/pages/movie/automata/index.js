@@ -27,7 +27,7 @@ const slice = createSlice({
   initialState,
   reducers: {
     setParams : (state, action) => {
-            state.params = {
+      state.params = {
         ...state.params,
         ...action.payload
       }
@@ -42,10 +42,10 @@ const slice = createSlice({
       state.error = "";
     },
     [fetchData.fulfilled]: (state, action) => {
-      const { loading, error, data } = action.payload;
+      const { loading, errors, data } = action.payload;
       state.data = data;
       state.loading = loading;
-      state.error = error;
+      state.error = errors?.[0] ?? null;
     },
     [fetchData.rejected]: (state, action) => {
       const { error } = action;

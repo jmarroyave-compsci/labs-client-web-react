@@ -7,5 +7,13 @@
 	"screenshotsFolder": "src/tests/cypress/screenshots",
 	"supportFile": "src/tests/cypress/support",
 	"videosFolder": "src/tests/cypress/videos",
-	"testFiles": "**/*.*"
+	"testFiles": "**/*.*",
+	"reporter": "mochawesome",
+	"reporterOptions": {
+		"charts": true,
+		"overwrite": false,
+		"html": false,
+		"json": true,
+		"reportDir": "src/tests/cypress/reports"
+	}
 }
