@@ -1,38 +1,30 @@
 import React, { useEffect, useState } from 'react'
 import { useRouter } from 'next/router'
 import Stack from 'com/ui/stack';
-import Parameters from './parameters';
+import Parameters from 'com/ui/parameters';
+import AwardParameters from './parameters';
 import Grid from 'com/ui/grid';
 
 function Content(props){
-    var { data, loading, fetch, params, item } = props;
+    const { data, loading, fetch, params, item } = props;
 
-    const [ year, setYear ] = useState( params.year );
-    const [ entity, setEntity ] = useState( params.entity );
-    const page = params.page;
-
-    useEffect( ()=> {
-      setYear(params.year);
-      setEntity(params.entity)
-    }, [params])
-
-    const parametersChanged = ( year, entity ) => {
-      setYear(year)
-      setEntity(entity)
-      window.scrollTo(0,0);
-      fetch( { year: year, page: page} )
+    const parametersChanged = ( state ) => {
+      fetch( { ...state, page: 1 } )
     }
 
     return (
       <Stack>
-        {!loading && <Parameters year={year} entity={entity} onChange={parametersChanged}/>}
+        <Parameters             
+          onChange={parametersChanged}
+          filters={ ( { onChange } ) => <AwardParameters onChange={onChange} params={ params } /> }
+        />
         <Grid 
             data={data}
             loading={loading}
             item={item}
             page={props.params.page}
             params={params}
-            onPageChange={ ( page ) => fetch( { year: year, page: page} ) } 
+            onPageChange={ ( page ) => fetch( params ) } 
         />
       </Stack>
     )

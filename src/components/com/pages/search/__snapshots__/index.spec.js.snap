@@ -57,10 +57,6 @@ exports[`SEARCH compare Page against snapshot 1`] = `
 }
 
 .emotion-6 {
-  padding-bottom: 2rem;
-}
-
-.emotion-7 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -107,49 +103,49 @@ exports[`SEARCH compare Page against snapshot 1`] = `
   color: #1976d2;
 }
 
-.emotion-7::-moz-focus-inner {
+.emotion-6::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-7.Mui-disabled {
+.emotion-6.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-7 {
+  .emotion-6 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-7:hover {
+.emotion-6:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: rgba(25, 118, 210, 0.04);
 }
 
 @media (hover: none) {
-  .emotion-7:hover {
+  .emotion-6:hover {
     background-color: transparent;
   }
 }
 
-.emotion-7.Mui-disabled {
+.emotion-6.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
 }
 
-.emotion-8 {
+.emotion-7 {
   display: inherit;
   margin-right: -4px;
   margin-left: 8px;
 }
 
-.emotion-8>*:nth-of-type(1) {
+.emotion-7>*:nth-of-type(1) {
   font-size: 20px;
 }
 
-.emotion-9 {
+.emotion-8 {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -166,7 +162,7 @@ exports[`SEARCH compare Page against snapshot 1`] = `
   font-size: 1.5rem;
 }
 
-.emotion-10 {
+.emotion-9 {
   overflow: hidden;
   pointer-events: none;
   position: absolute;
@@ -179,6 +175,12 @@ exports[`SEARCH compare Page against snapshot 1`] = `
 }
 
 .emotion-11 {
+  margin: 0 0 2rem 0;
+  padding: 0;
+  width: 100%;
+}
+
+.emotion-12 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -186,25 +188,64 @@ exports[`SEARCH compare Page against snapshot 1`] = `
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
-.emotion-12 {
-  margin: 0 0 2rem 0;
-  padding: 0;
-  width: 100%;
+.emotion-12>:not(style)+:not(style) {
+  margin: 0;
+  margin-top: 16px;
 }
 
 .emotion-13 {
-  font-size: 0.7rem;
-  line-height: 0.75rem;
-  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
-.emotion-14 {
+.emotion-13>:not(style)+:not(style) {
+  margin: 0;
+  margin-top: 48px;
+}
+
+.emotion-15 {
+  font-size: 0.65rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+}
+
+.emotion-16 {
+  margin-top: 0;
+  font-size: 0.85rem;
+  line-height: 1rem;
+}
+
+.emotion-19 {
+  cursor: pointer;
+  color: inherit;
+  background-color: transparent;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: inherit;
+  text-decoration-thickness: 1px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+.emotion-20 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+}
+
+.emotion-47 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -212,571 +253,18 @@ exports[`SEARCH compare Page against snapshot 1`] = `
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
-.emotion-14>:not(style)+:not(style) {
+.emotion-47>:not(style)+:not(style) {
   margin: 0;
   margin-left: 16px;
 }
 
-.emotion-15 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  vertical-align: middle;
-  -webkit-tap-highlight-color: transparent;
-  margin-left: -11px;
-  margin-right: 16px;
-}
-
-.emotion-15.Mui-disabled {
-  cursor: default;
-}
-
-.emotion-15 .MuiFormControlLabel-label.Mui-disabled {
-  color: rgba(0, 0, 0, 0.38);
-}
-
-.emotion-16 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 58px;
-  height: 38px;
-  overflow: hidden;
-  padding: 12px;
-  box-sizing: border-box;
-  position: relative;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  z-index: 0;
-  vertical-align: middle;
-}
-
-@media print {
-  .emotion-16 {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
-.emotion-17 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  padding: 9px;
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  color: #fff;
-  -webkit-transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,-webkit-transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: left 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.emotion-17::-moz-focus-inner {
-  border-style: none;
-}
-
-.emotion-17.Mui-disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-@media print {
-  .emotion-17 {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
-.emotion-17.Mui-checked {
-  -webkit-transform: translateX(20px);
-  -moz-transform: translateX(20px);
-  -ms-transform: translateX(20px);
-  transform: translateX(20px);
-}
-
-.emotion-17.Mui-disabled {
-  color: #f5f5f5;
-}
-
-.emotion-17.Mui-checked+.MuiSwitch-track {
-  opacity: 0.5;
-}
-
-.emotion-17.Mui-disabled+.MuiSwitch-track {
-  opacity: 0.12;
-}
-
-.emotion-17 .MuiSwitch-input {
-  left: -100%;
-  width: 300%;
-}
-
-.emotion-17:hover {
-  background-color: rgba(0, 0, 0, 0.04);
-}
-
-@media (hover: none) {
-  .emotion-17:hover {
-    background-color: transparent;
-  }
-}
-
-.emotion-17.Mui-checked {
-  color: #1976d2;
-}
-
-.emotion-17.Mui-checked:hover {
-  background-color: rgba(25, 118, 210, 0.04);
-}
-
-@media (hover: none) {
-  .emotion-17.Mui-checked:hover {
-    background-color: transparent;
-  }
-}
-
-.emotion-17.Mui-checked.Mui-disabled {
-  color: rgb(167, 202, 237);
-}
-
-.emotion-17.Mui-checked+.MuiSwitch-track {
-  background-color: #1976d2;
-}
-
-.emotion-18 {
-  cursor: inherit;
-  position: absolute;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-}
-
-.emotion-19 {
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
-  background-color: currentColor;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-
-.emotion-21 {
-  height: 100%;
-  width: 100%;
-  border-radius: 7px;
-  z-index: -1;
-  -webkit-transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  background-color: #000;
-  opacity: 0.38;
-}
-
-.emotion-22 {
-  margin: 0;
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.5;
-  letter-spacing: 0.00938em;
-}
-
-.emotion-65 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  position: relative;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-  background-color: transparent;
-  outline: 0;
-  border: 0;
-  margin: 0;
-  border-radius: 0;
-  padding: 0;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  vertical-align: middle;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  color: inherit;
-  padding: 9px;
-  border-radius: 50%;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.emotion-65::-moz-focus-inner {
-  border-style: none;
-}
-
-.emotion-65.Mui-disabled {
-  pointer-events: none;
-  cursor: default;
-}
-
-@media print {
-  .emotion-65 {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-  }
-}
-
-.emotion-65:hover {
-  background-color: rgba(25, 118, 210, 0.04);
-}
-
-@media (hover: none) {
-  .emotion-65:hover {
-    background-color: transparent;
-  }
-}
-
-.emotion-65.Mui-checked,
-.emotion-65.MuiCheckbox-indeterminate {
-  color: #1976d2;
-}
-
-.emotion-65.Mui-disabled {
-  color: rgba(0, 0, 0, 0.26);
-}
-
-.emotion-67 {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  width: 1em;
-  height: 1em;
-  display: inline-block;
-  fill: currentColor;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  font-size: 1.25rem;
-}
-
-.emotion-70 {
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  position: relative;
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  vertical-align: top;
-  margin-top: 16px;
-  margin-bottom: 8px;
-}
-
-.emotion-71 {
-  color: rgba(0, 0, 0, 0.6);
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.4375em;
-  letter-spacing: 0.00938em;
-  padding: 0;
-  position: relative;
-  display: block;
-  transform-origin: top left;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: calc(133% - 24px);
-  position: absolute;
-  left: 0;
-  top: 0;
-  -webkit-transform: translate(14px, -9px) scale(0.75);
-  -moz-transform: translate(14px, -9px) scale(0.75);
-  -ms-transform: translate(14px, -9px) scale(0.75);
-  transform: translate(14px, -9px) scale(0.75);
-  -webkit-transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,-webkit-transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,max-width 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-  transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms,max-width 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.emotion-71.Mui-focused {
-  color: #1976d2;
-}
-
-.emotion-71.Mui-disabled {
-  color: rgba(0, 0, 0, 0.38);
-}
-
-.emotion-71.Mui-error {
-  color: #d32f2f;
-}
-
-.emotion-72 {
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 1.4375em;
-  letter-spacing: 0.00938em;
-  color: rgba(0, 0, 0, 0.87);
-  box-sizing: border-box;
-  position: relative;
-  cursor: text;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-  border-radius: 4px;
-}
-
-.emotion-72.Mui-disabled {
-  color: rgba(0, 0, 0, 0.38);
-  cursor: default;
-}
-
-.emotion-72:hover .MuiOutlinedInput-notchedOutline {
-  border-color: rgba(0, 0, 0, 0.87);
-}
-
-@media (hover: none) {
-  .emotion-72:hover .MuiOutlinedInput-notchedOutline {
-    border-color: rgba(0, 0, 0, 0.23);
-  }
-}
-
-.emotion-72.Mui-focused .MuiOutlinedInput-notchedOutline {
-  border-color: #1976d2;
-  border-width: 2px;
-}
-
-.emotion-72.Mui-error .MuiOutlinedInput-notchedOutline {
-  border-color: #d32f2f;
-}
-
-.emotion-72.Mui-disabled .MuiOutlinedInput-notchedOutline {
-  border-color: rgba(0, 0, 0, 0.26);
-}
-
-.emotion-73 {
-  font: inherit;
-  letter-spacing: inherit;
-  color: currentColor;
-  padding: 4px 0 5px;
-  border: 0;
-  box-sizing: content-box;
-  background: none;
-  height: 1.4375em;
-  margin: 0;
-  -webkit-tap-highlight-color: transparent;
-  display: block;
-  min-width: 0;
-  width: 100%;
-  -webkit-animation-name: mui-auto-fill-cancel;
-  animation-name: mui-auto-fill-cancel;
-  -webkit-animation-duration: 10ms;
-  animation-duration: 10ms;
-  padding-top: 1px;
-  padding: 8.5px 14px;
-}
-
-.emotion-73::-webkit-input-placeholder {
-  color: currentColor;
-  opacity: 0.42;
-  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.emotion-73::-moz-placeholder {
-  color: currentColor;
-  opacity: 0.42;
-  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.emotion-73:-ms-input-placeholder {
-  color: currentColor;
-  opacity: 0.42;
-  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.emotion-73::-ms-input-placeholder {
-  color: currentColor;
-  opacity: 0.42;
-  -webkit-transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-
-.emotion-73:focus {
-  outline: 0;
-}
-
-.emotion-73:invalid {
-  box-shadow: none;
-}
-
-.emotion-73::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-73::-webkit-input-placeholder {
-  opacity: 0!important;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-73::-moz-placeholder {
-  opacity: 0!important;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:-ms-input-placeholder {
-  opacity: 0!important;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-73::-ms-input-placeholder {
-  opacity: 0!important;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-webkit-input-placeholder {
-  opacity: 0.42;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-moz-placeholder {
-  opacity: 0.42;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus:-ms-input-placeholder {
-  opacity: 0.42;
-}
-
-label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-placeholder {
-  opacity: 0.42;
-}
-
-.emotion-73.Mui-disabled {
-  opacity: 1;
-  -webkit-text-fill-color: rgba(0, 0, 0, 0.38);
-}
-
-.emotion-73:-webkit-autofill {
-  -webkit-animation-duration: 5000s;
-  animation-duration: 5000s;
-  -webkit-animation-name: mui-auto-fill;
-  animation-name: mui-auto-fill;
-}
-
-.emotion-73:-webkit-autofill {
-  border-radius: inherit;
-}
-
-.emotion-74 {
-  text-align: left;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  top: -5px;
-  left: 0;
-  margin: 0;
-  padding: 0 8px;
-  pointer-events: none;
-  border-radius: inherit;
-  border-style: solid;
-  border-width: 1px;
-  overflow: hidden;
-  min-width: 0%;
-  border-color: rgba(0, 0, 0, 0.23);
-}
-
-.emotion-75 {
-  display: block;
-  width: auto;
-  padding: 0;
-  height: 11px;
-  font-size: 0.75em;
-  visibility: hidden;
-  max-width: 100%;
-  -webkit-transition: max-width 100ms cubic-bezier(0.0, 0, 0.2, 1) 50ms;
-  transition: max-width 100ms cubic-bezier(0.0, 0, 0.2, 1) 50ms;
-}
-
-.emotion-75>span {
-  padding-left: 5px;
-  padding-right: 5px;
-  display: inline-block;
-}
-
-.emotion-82 {
-  font-size: 0.6rem;
-  line-height: 0.75rem;
-  font-style: italic;
-  margin: 0;
-}
-
-.emotion-84 {
+.emotion-48 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -824,23 +312,23 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
   color: #1976d2;
 }
 
-.emotion-84::-moz-focus-inner {
+.emotion-48::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-84.Mui-disabled {
+.emotion-48.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-84 {
+  .emotion-48 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-84:hover {
+.emotion-48:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: rgba(25, 118, 210, 0.04);
@@ -848,98 +336,17 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
 }
 
 @media (hover: none) {
-  .emotion-84:hover {
+  .emotion-48:hover {
     background-color: transparent;
   }
 }
 
-.emotion-84.Mui-disabled {
+.emotion-48.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.emotion-88 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.emotion-88>:not(style)+:not(style) {
-  margin: 0;
-  margin-top: 16px;
-}
-
-.emotion-91 {
-  font-size: 0.65rem;
-  line-height: 1rem;
-  text-transform: uppercase;
-}
-
-.emotion-92 {
-  margin-top: 0;
-}
-
-.emotion-93 {
-  cursor: pointer;
-  color: inherit;
-  background-color: transparent;
-  -webkit-text-decoration: underline;
-  text-decoration: underline;
-  text-decoration-style: dotted;
-  text-decoration-color: inherit;
-  text-decoration-thickness: 1px;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-.emotion-94 {
-  margin-top: 0;
-  font-size: 0.85rem;
-  line-height: 1rem;
-}
-
-.emotion-95 {
-  margin: 0;
-  -webkit-flex-shrink: 0;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  border-width: 0;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.12);
-  border-bottom-width: thin;
-  -webkit-align-self: stretch;
-  -ms-flex-item-align: stretch;
-  align-self: stretch;
-  height: auto;
-}
-
-.emotion-146 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-
-.emotion-146>:not(style)+:not(style) {
-  margin: 0;
-  margin-left: 16px;
-}
-
-.emotion-150 {
+.emotion-51 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -948,19 +355,19 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-151 {
+.emotion-52 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-152 {
+.emotion-53 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-153 {
+.emotion-54 {
   font-size: 0.9rem;
   color: inherit;
 }
@@ -996,696 +403,285 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
                   </span>
                 </div>
               </div>
-              <div
-                class="emotion-6"
+              <button
+                class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root emotion-6"
+                tabindex="0"
+                type="button"
               >
-                <button
-                  class="MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeMedium MuiButton-textSizeMedium MuiButtonBase-root emotion-7"
-                  tabindex="0"
-                  type="button"
+                Filter
+                <span
+                  class="MuiButton-endIcon MuiButton-iconSizeMedium emotion-7"
                 >
-                  Filters
-                  <span
-                    class="MuiButton-endIcon MuiButton-iconSizeMedium emotion-8"
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-8"
+                    data-testid="ExpandMoreIcon"
+                    focusable="false"
+                    viewBox="0 0 24 24"
                   >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium emotion-9"
-                      data-testid="ExpandMoreIcon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
-                      />
-                    </svg>
-                  </span>
-                  <span
-                    class="MuiTouchRipple-root emotion-10"
-                  />
-                </button>
-                <div
-                  style="display: none;"
-                >
-                  <div
-                    class="MuiFormGroup-root emotion-11"
-                  >
-                    <div
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        entities
-                      </span>
-                      <div
-                        class="emotion-14"
-                        style="width: 100%; overflow-x: auto;"
-                      >
-                        <label
-                          class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd emotion-15"
-                        >
-                          <span
-                            class="MuiSwitch-root MuiSwitch-sizeMedium emotion-16"
-                          >
-                            <span
-                              class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked emotion-17"
-                            >
-                              <input
-                                class="MuiSwitch-input PrivateSwitchBase-input emotion-18"
-                                name="person"
-                                type="checkbox"
-                              />
-                              <span
-                                class="MuiSwitch-thumb emotion-19"
-                              />
-                              <span
-                                class="MuiTouchRipple-root emotion-10"
-                              />
-                            </span>
-                            <span
-                              class="MuiSwitch-track emotion-21"
-                            />
-                          </span>
-                          <span
-                            class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-22"
-                          >
-                            people
-                          </span>
-                        </label>
-                        <label
-                          class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd emotion-15"
-                        >
-                          <span
-                            class="MuiSwitch-root MuiSwitch-sizeMedium emotion-16"
-                          >
-                            <span
-                              class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked emotion-17"
-                            >
-                              <input
-                                class="MuiSwitch-input PrivateSwitchBase-input emotion-18"
-                                name="movie"
-                                type="checkbox"
-                              />
-                              <span
-                                class="MuiSwitch-thumb emotion-19"
-                              />
-                              <span
-                                class="MuiTouchRipple-root emotion-10"
-                              />
-                            </span>
-                            <span
-                              class="MuiSwitch-track emotion-21"
-                            />
-                          </span>
-                          <span
-                            class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-22"
-                          >
-                            movies
-                          </span>
-                        </label>
-                        <label
-                          class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd emotion-15"
-                        >
-                          <span
-                            class="MuiSwitch-root MuiSwitch-sizeMedium emotion-16"
-                          >
-                            <span
-                              class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked emotion-17"
-                            >
-                              <input
-                                class="MuiSwitch-input PrivateSwitchBase-input emotion-18"
-                                name="tv_show"
-                                type="checkbox"
-                              />
-                              <span
-                                class="MuiSwitch-thumb emotion-19"
-                              />
-                              <span
-                                class="MuiTouchRipple-root emotion-10"
-                              />
-                            </span>
-                            <span
-                              class="MuiSwitch-track emotion-21"
-                            />
-                          </span>
-                          <span
-                            class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-22"
-                          >
-                            tv shows
-                          </span>
-                        </label>
-                        <label
-                          class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd emotion-15"
-                        >
-                          <span
-                            class="MuiSwitch-root MuiSwitch-sizeMedium emotion-16"
-                          >
-                            <span
-                              class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked emotion-17"
-                            >
-                              <input
-                                class="MuiSwitch-input PrivateSwitchBase-input emotion-18"
-                                name="video_game"
-                                type="checkbox"
-                              />
-                              <span
-                                class="MuiSwitch-thumb emotion-19"
-                              />
-                              <span
-                                class="MuiTouchRipple-root emotion-10"
-                              />
-                            </span>
-                            <span
-                              class="MuiSwitch-track emotion-21"
-                            />
-                          </span>
-                          <span
-                            class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-22"
-                          >
-                            video games
-                          </span>
-                        </label>
-                        <label
-                          class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd emotion-15"
-                        >
-                          <span
-                            class="MuiSwitch-root MuiSwitch-sizeMedium emotion-16"
-                          >
-                            <span
-                              class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked emotion-17"
-                            >
-                              <input
-                                class="MuiSwitch-input PrivateSwitchBase-input emotion-18"
-                                name="podcast"
-                                type="checkbox"
-                              />
-                              <span
-                                class="MuiSwitch-thumb emotion-19"
-                              />
-                              <span
-                                class="MuiTouchRipple-root emotion-10"
-                              />
-                            </span>
-                            <span
-                              class="MuiSwitch-track emotion-21"
-                            />
-                          </span>
-                          <span
-                            class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-22"
-                          >
-                            podcasts
-                          </span>
-                        </label>
-                        <label
-                          class="MuiFormControlLabel-root MuiFormControlLabel-labelPlacementEnd emotion-15"
-                        >
-                          <span
-                            class="MuiSwitch-root MuiSwitch-sizeMedium emotion-16"
-                          >
-                            <span
-                              class="MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked MuiButtonBase-root MuiSwitch-switchBase MuiSwitch-colorPrimary Mui-checked PrivateSwitchBase-root Mui-checked emotion-17"
-                            >
-                              <input
-                                class="MuiSwitch-input PrivateSwitchBase-input emotion-18"
-                                name="festival"
-                                type="checkbox"
-                              />
-                              <span
-                                class="MuiSwitch-thumb emotion-19"
-                              />
-                              <span
-                                class="MuiTouchRipple-root emotion-10"
-                              />
-                            </span>
-                            <span
-                              class="MuiSwitch-track emotion-21"
-                            />
-                          </span>
-                          <span
-                            class="MuiTypography-root MuiTypography-body1 MuiFormControlLabel-label emotion-22"
-                          >
-                            movie festivals
-                          </span>
-                        </label>
-                      </div>
-                    </div>
-                    <div
-                      class="emotion-12"
-                    >
-                      <span
-                        class="emotion-13"
-                      >
-                        <span>
-                          time frame 
-                        </span>
-                        <span
-                          class="MuiCheckbox-root MuiCheckbox-colorPrimary MuiButtonBase-root MuiCheckbox-root MuiCheckbox-colorPrimary PrivateSwitchBase-root emotion-65"
-                        >
-                          <input
-                            class="PrivateSwitchBase-input emotion-18"
-                            data-indeterminate="false"
-                            type="checkbox"
-                          />
-                          <svg
-                            aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall emotion-67"
-                            data-testid="CheckBoxOutlineBlankIcon"
-                            focusable="false"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z"
-                            />
-                          </svg>
-                          <span
-                            class="MuiTouchRipple-root emotion-10"
-                          />
-                        </span>
-                      </span>
-                      <div
-                        class="emotion-14"
-                        style="width: 100%; overflow-x: auto;"
-                      >
-                        <div>
-                          <div
-                            class="MuiFormControl-root MuiFormControl-marginNormal MuiTextField-root emotion-70"
-                          >
-                            <label
-                              class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-disabled MuiFormLabel-filled emotion-71"
-                              data-shrink="true"
-                              for="year"
-                              id="year-label"
-                            >
-                              year
-                            </label>
-                            <div
-                              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary Mui-disabled MuiInputBase-formControl MuiInputBase-sizeSmall emotion-72"
-                            >
-                              <input
-                                aria-invalid="false"
-                                class="MuiOutlinedInput-input MuiInputBase-input Mui-disabled MuiInputBase-inputSizeSmall emotion-73"
-                                disabled=""
-                                id="year"
-                                inputmode="numeric"
-                                name="year"
-                                pattern="[0-9]*"
-                                type="text"
-                                value="2021"
-                              />
-                              <fieldset
-                                aria-hidden="true"
-                                class="MuiOutlinedInput-notchedOutline emotion-74"
-                              >
-                                <legend
-                                  class="emotion-75"
-                                >
-                                  <span>
-                                    year
-                                  </span>
-                                </legend>
-                              </fieldset>
-                            </div>
-                          </div>
-                        </div>
-                        <div>
-                          <div
-                            class="MuiFormControl-root MuiFormControl-marginNormal MuiTextField-root emotion-70"
-                          >
-                            <label
-                              class="MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-sizeSmall MuiInputLabel-outlined MuiFormLabel-root MuiFormLabel-colorPrimary Mui-disabled MuiFormLabel-filled emotion-71"
-                              data-shrink="true"
-                              for="time-frame"
-                              id="time-frame-label"
-                            >
-                              window
-                            </label>
-                            <div
-                              class="MuiOutlinedInput-root MuiInputBase-root MuiInputBase-colorPrimary Mui-disabled MuiInputBase-formControl MuiInputBase-sizeSmall emotion-72"
-                            >
-                              <input
-                                aria-invalid="false"
-                                class="MuiOutlinedInput-input MuiInputBase-input Mui-disabled MuiInputBase-inputSizeSmall emotion-73"
-                                disabled=""
-                                id="time-frame"
-                                inputmode="numeric"
-                                name="timeFrame"
-                                pattern="[0-9]*"
-                                type="text"
-                                value="1"
-                              />
-                              <fieldset
-                                aria-hidden="true"
-                                class="MuiOutlinedInput-notchedOutline emotion-74"
-                              >
-                                <legend
-                                  class="emotion-75"
-                                >
-                                  <span>
-                                    window
-                                  </span>
-                                </legend>
-                              </fieldset>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <span
-                        class="emotion-82"
-                      >
-                         no time frame filter 
-                      </span>
-                    </div>
-                    <div
-                      class="emotion-12"
-                    >
-                      <button
-                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-84"
-                        tabindex="0"
-                        type="button"
-                      >
-                        Filter
-                        <span
-                          class="MuiTouchRipple-root emotion-10"
-                        />
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    <path
+                      d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root emotion-9"
+                />
+              </button>
+              <div />
               <div
-                class="emotion-86"
+                class="emotion-10"
               >
                 <div
-                  class="emotion-12"
+                  class="emotion-11"
                 >
                   <div
-                    class="emotion-88"
+                    class="emotion-12"
                   >
                     <div
-                      class="emotion-88"
+                      class="emotion-13"
                     >
                       <div
-                        class="emotion-86"
+                        class="emotion-10"
                       >
                         <div
-                          class="emotion-91"
+                          class="emotion-15"
                         >
-                          Video Game
+                          VIDEO_GAME
+                           [
+                          1987
+                          ]
                         </div>
-                        <h3
-                          class="emotion-92"
-                        >
-                          <a
-                            href="/video-games/tt0852703"
-                            style="flex: 1; display: flex; width: 100%;"
-                          >
-                            <span
-                              class="emotion-93"
-                            >
-                              test drive
-                            </span>
-                          </a>
-                        </h3>
+                        <div>
+                          ENTITY 
+                          video_game
+                           NOT FOUND
+                        </div>
                         <div
-                          class="emotion-94"
+                          class="emotion-16"
                         >
                           released: 1987
                         </div>
                       </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-95"
-                      />
                       <div
-                        class="emotion-86"
+                        class="emotion-10"
                       >
                         <div
-                          class="emotion-91"
+                          class="emotion-15"
                         >
-                          Movie
+                          MOVIE
+                           [
+                          2018
+                          ]
                         </div>
-                        <h3
-                          class="emotion-92"
+                        <a
+                          href="/movies/tt12546798"
+                          style="flex: 1; display: flex; width: 100%;"
                         >
-                          <a
-                            href="/movies/tt12546798"
-                            style="flex: 1; display: flex; width: 100%;"
+                          <span
+                            class="emotion-19"
                           >
-                            <span
-                              class="emotion-93"
+                            <h3
+                              class="emotion-20"
                             >
                               test drive
-                            </span>
-                          </a>
-                        </h3>
+                            </h3>
+                          </span>
+                        </a>
                         
                       </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-95"
-                      />
                       <div
-                        class="emotion-86"
+                        class="emotion-10"
                       >
                         <div
-                          class="emotion-91"
+                          class="emotion-15"
                         >
-                          Movie
+                          MOVIE
+                           [
+                          2011
+                          ]
                         </div>
-                        <h3
-                          class="emotion-92"
+                        <a
+                          href="/movies/tt2149171"
+                          style="flex: 1; display: flex; width: 100%;"
                         >
-                          <a
-                            href="/movies/tt2149171"
-                            style="flex: 1; display: flex; width: 100%;"
+                          <span
+                            class="emotion-19"
                           >
-                            <span
-                              class="emotion-93"
+                            <h3
+                              class="emotion-20"
                             >
                               test drive
-                            </span>
-                          </a>
-                        </h3>
+                            </h3>
+                          </span>
+                        </a>
                         
                       </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-95"
-                      />
                       <div
-                        class="emotion-86"
+                        class="emotion-10"
                       >
                         <div
-                          class="emotion-91"
+                          class="emotion-15"
                         >
-                          Movie
+                          MOVIE
+                           [
+                          2003
+                          ]
                         </div>
-                        <h3
-                          class="emotion-92"
+                        <a
+                          href="/movies/tt0410748"
+                          style="flex: 1; display: flex; width: 100%;"
                         >
-                          <a
-                            href="/movies/tt0410748"
-                            style="flex: 1; display: flex; width: 100%;"
+                          <span
+                            class="emotion-19"
                           >
-                            <span
-                              class="emotion-93"
+                            <h3
+                              class="emotion-20"
                             >
                               test drive
-                            </span>
-                          </a>
-                        </h3>
+                            </h3>
+                          </span>
+                        </a>
                         
                       </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-95"
-                      />
                       <div
-                        class="emotion-86"
+                        class="emotion-10"
                       >
                         <div
-                          class="emotion-91"
+                          class="emotion-15"
                         >
-                          Video Game
+                          VIDEO_GAME
+                           [
+                          1997
+                          ]
                         </div>
-                        <h3
-                          class="emotion-92"
-                        >
-                          <a
-                            href="/video-games/tt6079198"
-                            style="flex: 1; display: flex; width: 100%;"
-                          >
-                            <span
-                              class="emotion-93"
-                            >
-                              test drive 4
-                            </span>
-                          </a>
-                        </h3>
+                        <div>
+                          ENTITY 
+                          video_game
+                           NOT FOUND
+                        </div>
                         <div
-                          class="emotion-94"
+                          class="emotion-16"
                         >
                           released: 1997
                         </div>
                       </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-95"
-                      />
                       <div
-                        class="emotion-86"
+                        class="emotion-10"
                       >
                         <div
-                          class="emotion-91"
+                          class="emotion-15"
                         >
-                          Video Game
+                          VIDEO_GAME
+                           [
+                          1998
+                          ]
                         </div>
-                        <h3
-                          class="emotion-92"
-                        >
-                          <a
-                            href="/video-games/tt6085870"
-                            style="flex: 1; display: flex; width: 100%;"
-                          >
-                            <span
-                              class="emotion-93"
-                            >
-                              test drive 5
-                            </span>
-                          </a>
-                        </h3>
+                        <div>
+                          ENTITY 
+                          video_game
+                           NOT FOUND
+                        </div>
                         <div
-                          class="emotion-94"
+                          class="emotion-16"
                         >
                           released: 1998
                         </div>
                       </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-95"
-                      />
                       <div
-                        class="emotion-86"
+                        class="emotion-10"
                       >
                         <div
-                          class="emotion-91"
+                          class="emotion-15"
                         >
-                          Video Game
+                          VIDEO_GAME
+                           [
+                          1999
+                          ]
                         </div>
-                        <h3
-                          class="emotion-92"
-                        >
-                          <a
-                            href="/video-games/tt0292274"
-                            style="flex: 1; display: flex; width: 100%;"
-                          >
-                            <span
-                              class="emotion-93"
-                            >
-                              test drive 6
-                            </span>
-                          </a>
-                        </h3>
+                        <div>
+                          ENTITY 
+                          video_game
+                           NOT FOUND
+                        </div>
                         <div
-                          class="emotion-94"
+                          class="emotion-16"
                         >
                           released: 1999
                         </div>
                       </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-95"
-                      />
                       <div
-                        class="emotion-86"
+                        class="emotion-10"
                       >
                         <div
-                          class="emotion-91"
+                          class="emotion-15"
                         >
-                          Video Game
+                          VIDEO_GAME
+                           [
+                          1989
+                          ]
                         </div>
-                        <h3
-                          class="emotion-92"
-                        >
-                          <a
-                            href="/video-games/tt6176356"
-                            style="flex: 1; display: flex; width: 100%;"
-                          >
-                            <span
-                              class="emotion-93"
-                            >
-                              test drive ii car disk: the supercars
-                            </span>
-                          </a>
-                        </h3>
+                        <div>
+                          ENTITY 
+                          video_game
+                           NOT FOUND
+                        </div>
                         <div
-                          class="emotion-94"
+                          class="emotion-16"
                         >
                           released: 1989
                         </div>
                       </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-95"
-                      />
                       <div
-                        class="emotion-86"
+                        class="emotion-10"
                       >
                         <div
-                          class="emotion-91"
+                          class="emotion-15"
                         >
-                          Video Game
+                          VIDEO_GAME
+                           [
+                          1989
+                          ]
                         </div>
-                        <h3
-                          class="emotion-92"
-                        >
-                          <a
-                            href="/video-games/tt6175344"
-                            style="flex: 1; display: flex; width: 100%;"
-                          >
-                            <span
-                              class="emotion-93"
-                            >
-                              test drive ii scenery disk: california challenge
-                            </span>
-                          </a>
-                        </h3>
+                        <div>
+                          ENTITY 
+                          video_game
+                           NOT FOUND
+                        </div>
                         <div
-                          class="emotion-94"
+                          class="emotion-16"
                         >
                           released: 1989
                         </div>
                       </div>
-                      <hr
-                        class="MuiDivider-root MuiDivider-fullWidth MuiDivider-flexItem emotion-95"
-                      />
                       <div
-                        class="emotion-86"
+                        class="emotion-10"
                       >
                         <div
-                          class="emotion-91"
+                          class="emotion-15"
                         >
-                          Video Game
+                          VIDEO_GAME
+                           [
+                          1989
+                          ]
                         </div>
-                        <h3
-                          class="emotion-92"
-                        >
-                          <a
-                            href="/video-games/tt6174056"
-                            style="flex: 1; display: flex; width: 100%;"
-                          >
-                            <span
-                              class="emotion-93"
-                            >
-                              test drive ii scenery disk: european challenge
-                            </span>
-                          </a>
-                        </h3>
+                        <div>
+                          ENTITY 
+                          video_game
+                           NOT FOUND
+                        </div>
                         <div
-                          class="emotion-94"
+                          class="emotion-16"
                         >
                           released: 1989
                         </div>
                       </div>
                     </div>
                     <div
-                      class="emotion-146"
+                      class="emotion-47"
                     >
                       <button
-                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-84"
+                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-48"
                         disabled=""
                         tabindex="-1"
                         type="button"
@@ -1693,13 +689,13 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
                         Back
                       </button>
                       <button
-                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-84"
+                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-48"
                         tabindex="0"
                         type="button"
                       >
                         Next
                         <span
-                          class="MuiTouchRipple-root emotion-10"
+                          class="MuiTouchRipple-root emotion-9"
                         />
                       </button>
                     </div>
@@ -1716,81 +712,81 @@ label[data-shrink=false]+.MuiInputBase-formControl .emotion-73:focus::-ms-input-
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-150"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-51"
             >
               <div
-                class="emotion-151"
+                class="emotion-52"
               >
                 <div
-                  class="emotion-152"
+                  class="emotion-53"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-153"
+                  class="emotion-54"
                 >
                   <a
                     href="/movies/stories/awards"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-93"
+                      class="emotion-19"
                     >
                       Movie Awards
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-153"
+                  class="emotion-54"
                 >
                   <a
                     href="/movies/stories/remakes"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-93"
+                      class="emotion-19"
                     >
                       Movie Remakes
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-153"
+                  class="emotion-54"
                 >
                   <a
                     href="/movies/stories/directors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-93"
+                      class="emotion-19"
                     >
                       Movie Directors
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-153"
+                  class="emotion-54"
                 >
                   <a
                     href="/movies/stories/producers"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-93"
+                      class="emotion-19"
                     >
                       Movie Producers
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-153"
+                  class="emotion-54"
                 >
                   <a
                     href="/movies/stories/actors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-93"
+                      class="emotion-19"
                     >
                       Movie Actors
                     </span>

@@ -14,6 +14,7 @@ const initialState = {
     entities: null,
     year: null,
     timeFrame: null, 
+    filterByTimeFrame: false,
   },
   results : {
     data: null,
@@ -41,6 +42,7 @@ export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
     params.qry = decodeURIComponent(params.qry)
     params.page = (params.page) ? parseInt(params.page) : 1;
     params.entities = (params.entities) ? params.entities : getEntitiesArrayState(true);
+
     thunkAPI.dispatch(setParams( params ))
     if( params.entities.length > 0){
       return await data.fetchResults( params );      

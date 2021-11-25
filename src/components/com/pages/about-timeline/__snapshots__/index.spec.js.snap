@@ -88,12 +88,12 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
   font-size: 2.5rem;
 }
 
-.emotion-12 {
+.emotion-10 {
   margin-top: 1rem;
   margin-bottom: 0rem;
 }
 
-.emotion-13 {
+.emotion-17 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -103,18 +103,18 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
   flex-direction: row;
 }
 
-.emotion-13>:not(style)+:not(style) {
+.emotion-17>:not(style)+:not(style) {
   margin: 0;
   margin-left: 16px;
 }
 
-.emotion-14 {
+.emotion-18 {
   font-size: 0.7rem;
   line-height: 0.75rem;
   margin: 0;
 }
 
-.emotion-15 {
+.emotion-19 {
   position: relative;
   overflow: hidden;
   background-color: #efefef;
@@ -131,7 +131,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
   margin: 0;
 }
 
-.emotion-116 {
+.emotion-292 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -140,24 +140,24 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-117 {
+.emotion-293 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-118 {
+.emotion-294 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-119 {
+.emotion-295 {
   font-size: 0.9rem;
   color: inherit;
 }
 
-.emotion-120 {
+.emotion-296 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -194,7 +194,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
           <div
             class="emotion-4"
           >
-            a timeline since the project creation
+            a timeline since the project's creation
           </div>
         </div>
       </div>
@@ -220,14 +220,17 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                 <h2
                   class="emotion-9"
                 >
-                  Lines of Code
+                  Code in numbers
                 </h2>
+                <h3
+                  class="emotion-10"
+                >
+                  LoC
+                </h3>
                 <div
                   class="Responsive-wrapper"
                 >
-                  <div
-                    id="chart"
-                  >
+                  <div>
                     <svg
                       height="350px"
                       width="0px"
@@ -236,7 +239,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         transform="translate(50, 50)"
                       >
                         <g
-                          style="fill: none"
+                          style="fill: none;"
                         >
                           <g
                             class="line-group"
@@ -274,7 +277,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-25"
                                 cy="237.19354653499457"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -284,7 +287,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-30"
                                 cy="236.71700063156686"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -294,7 +297,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-75"
                                 cy="234.54670724005283"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -304,7 +307,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-80"
                                 cy="234.5323534477809"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -314,7 +317,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-85"
                                 cy="234.5323534477809"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -324,7 +327,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-95"
                                 cy="234.6730206120457"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -334,7 +337,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-100"
                                 cy="234.98306252511912"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -348,7 +351,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="0"
                                 cy="154.74536372509618"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -358,7 +361,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-25"
                                 cy="141.79250157891715"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -368,7 +371,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-30"
                                 cy="141.07481196532123"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -378,7 +381,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-60"
                                 cy="99.37704541539874"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -388,7 +391,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-65"
                                 cy="99.41436527530573"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -398,7 +401,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-75"
                                 cy="89.42412585405063"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -408,7 +411,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-80"
                                 cy="89.55043922604352"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -418,7 +421,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-85"
                                 cy="88.93609691680543"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -428,7 +431,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-95"
                                 cy="88.64040879600391"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -438,7 +441,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-100"
                                 cy="0"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -452,7 +455,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-25"
                                 cy="238.7494976172705"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -462,7 +465,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-30"
                                 cy="238.7466268588161"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -472,7 +475,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-75"
                                 cy="218.3470172819659"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -482,7 +485,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-80"
                                 cy="218.34988804042027"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -492,7 +495,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-85"
                                 cy="218.31543893896767"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -502,7 +505,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-95"
                                 cy="218.19773784233794"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
@@ -512,11 +515,35 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                               <circle
                                 cx="-100"
                                 cy="218.19773784233794"
-                                r="8"
+                                r="2"
                                 style="opacity: 0.85;"
                               />
                             </g>
                           </g>
+                          <text
+                            class="text"
+                            style="fill: #1f77b4; font-size: 0.75rem;"
+                            x="-95"
+                            y="234.98306252511912"
+                          >
+                            scripts
+                          </text>
+                          <text
+                            class="text"
+                            style="fill: #ff7f0e; font-size: 0.75rem;"
+                            x="-95"
+                            y="0"
+                          >
+                            client
+                          </text>
+                          <text
+                            class="text"
+                            style="fill: #2ca02c; font-size: 0.75rem;"
+                            x="-95"
+                            y="218.19773784233794"
+                          >
+                            server
+                          </text>
                         </g>
                         <g
                           class="x axis"
@@ -667,9 +694,1492 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                             fill="#000"
                             transform="rotate(-90)"
                             y="15"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h3
+                  class="emotion-10"
+                >
+                  files
+                </h3>
+                <div
+                  class="Responsive-wrapper"
+                >
+                  <div>
+                    <svg
+                      height="350px"
+                      width="0px"
+                    >
+                      <g
+                        transform="translate(50, 50)"
+                      >
+                        <g
+                          style="fill: none;"
+                        >
+                          <g
+                            class="line-group"
                           >
-                            Total values
+                            <path
+                              class="line"
+                              d="M-25,217.95774647887322L-30,216.90140845070422L-75,212.67605633802816L-80,212.67605633802816L-85,212.67605633802816L-95,213.73239436619718L-100,213.73239436619718"
+                              style="stroke: #1f77b4; stroke-width: 5px; opacity: 0.25;"
+                            />
+                          </g>
+                          <g
+                            class="line-group"
+                          >
+                            <path
+                              class="line"
+                              d="M0,63.38028169014084L-25,50.35211267605633L-30,47.535211267605625L-60,13.732394366197193L-65,11.619718309859167L-75,0L-80,5.281690140845063L-85,2.1126760563380254L-95,2.1126760563380254L-100,1.7605633802816878"
+                              style="stroke: #ff7f0e; stroke-width: 5px; opacity: 0.25;"
+                            />
+                          </g>
+                          <g
+                            class="line-group"
+                          >
+                            <path
+                              class="line"
+                              d="M-25,223.59154929577466L-30,223.59154929577466L-75,195.77464788732397L-80,195.77464788732397L-85,195.77464788732397L-95,195.77464788732397L-100,195.77464788732397"
+                              style="stroke: #2ca02c; stroke-width: 5px; opacity: 0.25;"
+                            />
+                          </g>
+                          <g
+                            style="fill: #1f77b4;"
+                          >
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-25"
+                                cy="217.95774647887322"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-30"
+                                cy="216.90140845070422"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-75"
+                                cy="212.67605633802816"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-80"
+                                cy="212.67605633802816"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-85"
+                                cy="212.67605633802816"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-95"
+                                cy="213.73239436619718"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-100"
+                                cy="213.73239436619718"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                          </g>
+                          <g
+                            style="fill: #ff7f0e;"
+                          >
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="0"
+                                cy="63.38028169014084"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-25"
+                                cy="50.35211267605633"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-30"
+                                cy="47.535211267605625"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-60"
+                                cy="13.732394366197193"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-65"
+                                cy="11.619718309859167"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-75"
+                                cy="0"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-80"
+                                cy="5.281690140845063"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-85"
+                                cy="2.1126760563380254"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-95"
+                                cy="2.1126760563380254"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-100"
+                                cy="1.7605633802816878"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                          </g>
+                          <g
+                            style="fill: #2ca02c;"
+                          >
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-25"
+                                cy="223.59154929577466"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-30"
+                                cy="223.59154929577466"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-75"
+                                cy="195.77464788732397"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-80"
+                                cy="195.77464788732397"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-85"
+                                cy="195.77464788732397"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-95"
+                                cy="195.77464788732397"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-100"
+                                cy="195.77464788732397"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                          </g>
+                          <text
+                            class="text"
+                            style="fill: #1f77b4; font-size: 0.75rem;"
+                            x="-95"
+                            y="213.73239436619718"
+                          >
+                            scripts
                           </text>
+                          <text
+                            class="text"
+                            style="fill: #ff7f0e; font-size: 0.75rem;"
+                            x="-95"
+                            y="1.7605633802816878"
+                          >
+                            client
+                          </text>
+                          <text
+                            class="text"
+                            style="fill: #2ca02c; font-size: 0.75rem;"
+                            x="-95"
+                            y="195.77464788732397"
+                          >
+                            server
+                          </text>
+                        </g>
+                        <g
+                          class="x axis"
+                          fill="none"
+                          font-family="sans-serif"
+                          font-size="10"
+                          text-anchor="middle"
+                          transform="translate(0, 250)"
+                        >
+                          <path
+                            class="domain"
+                            d="M0.5,6V0.5H-99.5V6"
+                            stroke="currentColor"
+                          />
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(-30.333333333333336,0)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              y2="6"
+                            />
+                            <text
+                              dy="0.71em"
+                              fill="currentColor"
+                              y="9"
+                            >
+                              Oct 17
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(-65.33333333333333,0)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              y2="6"
+                            />
+                            <text
+                              dy="0.71em"
+                              fill="currentColor"
+                              y="9"
+                            >
+                              Oct 24
+                            </text>
+                          </g>
+                        </g>
+                        <g
+                          class="y axis"
+                          fill="none"
+                          font-family="sans-serif"
+                          font-size="10"
+                          text-anchor="end"
+                        >
+                          <path
+                            class="domain"
+                            d="M-6,250.5H0.5V0.5H-6"
+                            stroke="currentColor"
+                          />
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,250.5)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              0
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,180.07746478873239)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              200
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,109.65492957746478)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              400
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,39.232394366197184)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              600
+                            </text>
+                          </g>
+                          <text
+                            fill="#000"
+                            transform="rotate(-90)"
+                            y="15"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h3
+                  class="emotion-10"
+                >
+                  modules LoC
+                </h3>
+                <div
+                  class="Responsive-wrapper"
+                >
+                  <div>
+                    <svg
+                      height="350px"
+                      width="0px"
+                    >
+                      <g
+                        transform="translate(50, 50)"
+                      >
+                        <g
+                          style="fill: none;"
+                        >
+                          <g
+                            class="line-group"
+                          >
+                            <path
+                              class="line"
+                              d="M-25,70.63131613568451L-30,69.3888661862912L-75,67.90579743880213L-80,67.90579743880213L-85,67.90579743880213L-95,66.6633474894088L-100,53.07933437133058"
+                              style="stroke: #1f77b4; stroke-width: 5px; opacity: 0.25;"
+                            />
+                          </g>
+                          <g
+                            class="line-group"
+                          >
+                            <path
+                              class="line"
+                              d="M0,161.1814029515676L-25,157.527204321655L-30,157.527204321655L-60,7.629322905081865L-65,0.27165526076664004L-75,0.021294461888088367L-80,0.021294461888088367L-85,0L-95,0L-100,0"
+                              style="stroke: #ff7f0e; stroke-width: 5px; opacity: 0.25;"
+                            />
+                          </g>
+                          <g
+                            class="line-group"
+                          >
+                            <path
+                              class="line"
+                              d="M-25,172.86421720006277L-30,172.86421720006277L-75,170.61028031098536L-80,170.61028031098536L-85,170.61028031098536L-95,170.61028031098536L-100,170.61028031098536"
+                              style="stroke: #2ca02c; stroke-width: 5px; opacity: 0.25;"
+                            />
+                          </g>
+                          <g
+                            style="fill: #1f77b4;"
+                          >
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-25"
+                                cy="70.63131613568451"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-30"
+                                cy="69.3888661862912"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-75"
+                                cy="67.90579743880213"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-80"
+                                cy="67.90579743880213"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-85"
+                                cy="67.90579743880213"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-95"
+                                cy="66.6633474894088"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-100"
+                                cy="53.07933437133058"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                          </g>
+                          <g
+                            style="fill: #ff7f0e;"
+                          >
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="0"
+                                cy="161.1814029515676"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-25"
+                                cy="157.527204321655"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-30"
+                                cy="157.527204321655"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-60"
+                                cy="7.629322905081865"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-65"
+                                cy="0.27165526076664004"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-75"
+                                cy="0.021294461888088367"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-80"
+                                cy="0.021294461888088367"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-85"
+                                cy="0"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-95"
+                                cy="0"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-100"
+                                cy="0"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                          </g>
+                          <g
+                            style="fill: #2ca02c;"
+                          >
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-25"
+                                cy="172.86421720006277"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-30"
+                                cy="172.86421720006277"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-75"
+                                cy="170.61028031098536"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-80"
+                                cy="170.61028031098536"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-85"
+                                cy="170.61028031098536"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-95"
+                                cy="170.61028031098536"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-100"
+                                cy="170.61028031098536"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                          </g>
+                          <text
+                            class="text"
+                            style="fill: #1f77b4; font-size: 0.75rem;"
+                            x="-95"
+                            y="53.07933437133058"
+                          >
+                            scripts
+                          </text>
+                          <text
+                            class="text"
+                            style="fill: #ff7f0e; font-size: 0.75rem;"
+                            x="-95"
+                            y="0"
+                          >
+                            client
+                          </text>
+                          <text
+                            class="text"
+                            style="fill: #2ca02c; font-size: 0.75rem;"
+                            x="-95"
+                            y="170.61028031098536"
+                          >
+                            server
+                          </text>
+                        </g>
+                        <g
+                          class="x axis"
+                          fill="none"
+                          font-family="sans-serif"
+                          font-size="10"
+                          text-anchor="middle"
+                          transform="translate(0, 250)"
+                        >
+                          <path
+                            class="domain"
+                            d="M0.5,6V0.5H-99.5V6"
+                            stroke="currentColor"
+                          />
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(-30.333333333333336,0)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              y2="6"
+                            />
+                            <text
+                              dy="0.71em"
+                              fill="currentColor"
+                              y="9"
+                            >
+                              Oct 17
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(-65.33333333333333,0)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              y2="6"
+                            />
+                            <text
+                              dy="0.71em"
+                              fill="currentColor"
+                              y="9"
+                            >
+                              Oct 24
+                            </text>
+                          </g>
+                        </g>
+                        <g
+                          class="y axis"
+                          fill="none"
+                          font-family="sans-serif"
+                          font-size="10"
+                          text-anchor="end"
+                        >
+                          <path
+                            class="domain"
+                            d="M-6,250.5H0.5V0.5H-6"
+                            stroke="currentColor"
+                          />
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,250.5)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              0
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,207.39380184597982)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              1,000,000
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,164.28760369195965)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              2,000,000
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,121.1814055379395)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              3,000,000
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,78.07520738391932)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              4,000,000
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,34.96900922989915)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              5,000,000
+                            </text>
+                          </g>
+                          <text
+                            fill="#000"
+                            transform="rotate(-90)"
+                            y="15"
+                          />
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <h3
+                  class="emotion-10"
+                >
+                  modules files
+                </h3>
+                <div
+                  class="Responsive-wrapper"
+                >
+                  <div>
+                    <svg
+                      height="350px"
+                      width="0px"
+                    >
+                      <g
+                        transform="translate(50, 50)"
+                      >
+                        <g
+                          style="fill: none;"
+                        >
+                          <g
+                            class="line-group"
+                          >
+                            <path
+                              class="line"
+                              d="M-25,235.8227495940114L-30,235.43293586351018L-75,234.89593105634668L-80,234.89593105634668L-85,234.89593105634668L-95,234.50611732584545L-100,231.4151047159374"
+                              style="stroke: #1f77b4; stroke-width: 5px; opacity: 0.25;"
+                            />
+                          </g>
+                          <g
+                            class="line-group"
+                          >
+                            <path
+                              class="line"
+                              d="M0,183.07011471199075L-25,182.33254184432036L-30,182.33254184432036L-60,8.38827388539154L-65,0.1471910766622786L-75,0.009704906153568116L-80,0.009704906153568116L-85,0L-95,0L-100,0"
+                              style="stroke: #ff7f0e; stroke-width: 5px; opacity: 0.25;"
+                            />
+                          </g>
+                          <g
+                            class="line-group"
+                          >
+                            <path
+                              class="line"
+                              d="M-25,233.2396270728062L-30,233.2396270728062L-75,232.64601031308027L-80,232.64601031308027L-85,232.64601031308027L-95,232.64601031308027L-100,232.64601031308027"
+                              style="stroke: #2ca02c; stroke-width: 5px; opacity: 0.25;"
+                            />
+                          </g>
+                          <g
+                            style="fill: #1f77b4;"
+                          >
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-25"
+                                cy="235.8227495940114"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-30"
+                                cy="235.43293586351018"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-75"
+                                cy="234.89593105634668"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-80"
+                                cy="234.89593105634668"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-85"
+                                cy="234.89593105634668"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-95"
+                                cy="234.50611732584545"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-100"
+                                cy="231.4151047159374"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                          </g>
+                          <g
+                            style="fill: #ff7f0e;"
+                          >
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="0"
+                                cy="183.07011471199075"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-25"
+                                cy="182.33254184432036"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-30"
+                                cy="182.33254184432036"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-60"
+                                cy="8.38827388539154"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-65"
+                                cy="0.1471910766622786"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-75"
+                                cy="0.009704906153568116"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-80"
+                                cy="0.009704906153568116"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-85"
+                                cy="0"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-95"
+                                cy="0"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-100"
+                                cy="0"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                          </g>
+                          <g
+                            style="fill: #2ca02c;"
+                          >
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-25"
+                                cy="233.2396270728062"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-30"
+                                cy="233.2396270728062"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-75"
+                                cy="232.64601031308027"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-80"
+                                cy="232.64601031308027"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-85"
+                                cy="232.64601031308027"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-95"
+                                cy="232.64601031308027"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                            <g
+                              class="circle"
+                            >
+                              <circle
+                                cx="-100"
+                                cy="232.64601031308027"
+                                r="2"
+                                style="opacity: 0.85;"
+                              />
+                            </g>
+                          </g>
+                          <text
+                            class="text"
+                            style="fill: #1f77b4; font-size: 0.75rem;"
+                            x="-95"
+                            y="231.4151047159374"
+                          >
+                            scripts
+                          </text>
+                          <text
+                            class="text"
+                            style="fill: #ff7f0e; font-size: 0.75rem;"
+                            x="-95"
+                            y="0"
+                          >
+                            client
+                          </text>
+                          <text
+                            class="text"
+                            style="fill: #2ca02c; font-size: 0.75rem;"
+                            x="-95"
+                            y="232.64601031308027"
+                          >
+                            server
+                          </text>
+                        </g>
+                        <g
+                          class="x axis"
+                          fill="none"
+                          font-family="sans-serif"
+                          font-size="10"
+                          text-anchor="middle"
+                          transform="translate(0, 250)"
+                        >
+                          <path
+                            class="domain"
+                            d="M0.5,6V0.5H-99.5V6"
+                            stroke="currentColor"
+                          />
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(-30.333333333333336,0)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              y2="6"
+                            />
+                            <text
+                              dy="0.71em"
+                              fill="currentColor"
+                              y="9"
+                            >
+                              Oct 17
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(-65.33333333333333,0)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              y2="6"
+                            />
+                            <text
+                              dy="0.71em"
+                              fill="currentColor"
+                              y="9"
+                            >
+                              Oct 24
+                            </text>
+                          </g>
+                        </g>
+                        <g
+                          class="y axis"
+                          fill="none"
+                          font-family="sans-serif"
+                          font-size="10"
+                          text-anchor="end"
+                        >
+                          <path
+                            class="domain"
+                            d="M-6,250.5H0.5V0.5H-6"
+                            stroke="currentColor"
+                          />
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,250.5)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              0
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,218.150312821475)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              20,000
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,185.80062564295002)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              40,000
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,153.45093846442504)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              60,000
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,121.10125128590008)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              80,000
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,88.75156410737509)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              100,000
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,56.4018769288501)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              120,000
+                            </text>
+                          </g>
+                          <g
+                            class="tick"
+                            opacity="1"
+                            transform="translate(0,24.05218975032511)"
+                          >
+                            <line
+                              stroke="currentColor"
+                              x2="-6"
+                            />
+                            <text
+                              dy="0.32em"
+                              fill="currentColor"
+                              x="-9"
+                            >
+                              140,000
+                            </text>
+                          </g>
+                          <text
+                            fill="#000"
+                            transform="rotate(-90)"
+                            y="15"
+                          />
                         </g>
                       </g>
                     </svg>
@@ -685,7 +2195,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                   Screenshots
                 </h2>
                 <h3
-                  class="emotion-12"
+                  class="emotion-10"
                 >
                   home
                 </h3>
@@ -693,11 +2203,11 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                   style="width: 100%; overflow-x: auto;"
                 >
                   <div
-                    class="emotion-13"
+                    class="emotion-17"
                   >
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         09-04
                       </span>
@@ -705,7 +2215,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0346.png"
@@ -716,7 +2226,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         09-03
                       </span>
@@ -724,7 +2234,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0322.png"
@@ -735,7 +2245,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         08-05
                       </span>
@@ -743,7 +2253,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0272.png"
@@ -754,7 +2264,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         08-04
                       </span>
@@ -762,7 +2272,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0259.png"
@@ -773,7 +2283,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         07-07
                       </span>
@@ -781,7 +2291,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0222.png"
@@ -792,7 +2302,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         07-05
                       </span>
@@ -800,7 +2310,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0185.png"
@@ -811,7 +2321,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         07-02
                       </span>
@@ -819,7 +2329,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0148.png"
@@ -830,7 +2340,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         06-07
                       </span>
@@ -838,7 +2348,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0111.png"
@@ -849,7 +2359,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         06-05
                       </span>
@@ -857,7 +2367,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0093.png"
@@ -868,7 +2378,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         06-04
                       </span>
@@ -876,7 +2386,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0060.png"
@@ -887,7 +2397,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         06-04
                       </span>
@@ -895,7 +2405,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0048.png"
@@ -906,7 +2416,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         06-01
                       </span>
@@ -914,7 +2424,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0039.png"
@@ -925,7 +2435,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         06-01
                       </span>
@@ -933,7 +2443,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0032.png"
@@ -944,7 +2454,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         05-07
                       </span>
@@ -952,7 +2462,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0023.png"
@@ -963,7 +2473,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         05-07
                       </span>
@@ -971,7 +2481,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0014.png"
@@ -982,7 +2492,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         05-07
                       </span>
@@ -990,7 +2500,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0008.png"
@@ -1001,7 +2511,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         05-02
                       </span>
@@ -1009,7 +2519,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0635.png"
@@ -1020,7 +2530,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         05-02
                       </span>
@@ -1028,7 +2538,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0007.png"
@@ -1039,7 +2549,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         05-01
                       </span>
@@ -1047,7 +2557,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0625.png"
@@ -1058,7 +2568,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         05-01
                       </span>
@@ -1066,7 +2576,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0612.png"
@@ -1077,7 +2587,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         05-01
                       </span>
@@ -1085,7 +2595,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0595.png"
@@ -1096,7 +2606,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         05-01
                       </span>
@@ -1104,7 +2614,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0592.png"
@@ -1115,7 +2625,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         05-01
                       </span>
@@ -1123,7 +2633,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0006.png"
@@ -1134,7 +2644,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         05-01
                       </span>
@@ -1142,7 +2652,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0005.png"
@@ -1153,7 +2663,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-06
                       </span>
@@ -1161,7 +2671,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0582.png"
@@ -1172,7 +2682,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-06
                       </span>
@@ -1180,7 +2690,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0572.png"
@@ -1191,7 +2701,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-06
                       </span>
@@ -1199,7 +2709,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0561.png"
@@ -1210,7 +2720,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-06
                       </span>
@@ -1218,7 +2728,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0004.png"
@@ -1229,7 +2739,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-06
                       </span>
@@ -1237,7 +2747,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0003.png"
@@ -1248,7 +2758,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-06
                       </span>
@@ -1256,7 +2766,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0002.png"
@@ -1267,7 +2777,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-05
                       </span>
@@ -1275,7 +2785,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0549.png"
@@ -1286,7 +2796,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-05
                       </span>
@@ -1294,7 +2804,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0536.png"
@@ -1305,7 +2815,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-05
                       </span>
@@ -1313,7 +2823,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0523.png"
@@ -1324,7 +2834,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-05
                       </span>
@@ -1332,7 +2842,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0510.png"
@@ -1343,7 +2853,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-05
                       </span>
@@ -1351,7 +2861,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0497.png"
@@ -1362,7 +2872,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-05
                       </span>
@@ -1370,7 +2880,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0001.png"
@@ -1381,7 +2891,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-05
                       </span>
@@ -1389,7 +2899,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0000.png"
@@ -1400,7 +2910,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-04
                       </span>
@@ -1408,7 +2918,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0471.png"
@@ -1419,7 +2929,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-04
                       </span>
@@ -1427,7 +2937,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0457.png"
@@ -1438,7 +2948,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-03
                       </span>
@@ -1446,7 +2956,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0452.png"
@@ -1457,7 +2967,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-03
                       </span>
@@ -1465,7 +2975,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0449.png"
@@ -1476,7 +2986,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-03
                       </span>
@@ -1484,7 +2994,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0440.png"
@@ -1495,7 +3005,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-02
                       </span>
@@ -1503,7 +3013,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0436.png"
@@ -1514,7 +3024,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-02
                       </span>
@@ -1522,7 +3032,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0431.png"
@@ -1533,7 +3043,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-02
                       </span>
@@ -1541,7 +3051,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0426.png"
@@ -1552,7 +3062,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-01
                       </span>
@@ -1560,7 +3070,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0418.png"
@@ -1571,7 +3081,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         04-01
                       </span>
@@ -1579,7 +3089,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0408.png"
@@ -1590,7 +3100,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         03-07
                       </span>
@@ -1598,7 +3108,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0398.png"
@@ -1609,7 +3119,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         03-06
                       </span>
@@ -1617,7 +3127,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0388.png"
@@ -1628,7 +3138,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         03-06
                       </span>
@@ -1636,7 +3146,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0378.png"
@@ -1647,7 +3157,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-14"
+                        class="emotion-18"
                       >
                         03-05
                       </span>
@@ -1655,10 +3165,1632 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-15"
+                          class="emotion-19"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0376.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3
+                  class="emotion-10"
+                >
+                  movies
+                </h3>
+                <div
+                  style="width: 100%; overflow-x: auto;"
+                >
+                  <div
+                    class="emotion-17"
+                  >
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        09-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0365.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        09-03
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0339.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        09-02
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0316.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        08-06
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0299.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        08-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0289.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        08-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0261.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        08-03
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0242.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-07
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0224.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-07
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0205.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0187.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-03
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0168.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-02
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0150.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0131.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        06-07
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0113.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        06-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0095.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        06-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0080.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        06-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0062.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        06-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0049.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        06-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0040.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        06-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0033.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-07
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0024.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-07
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0015.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-07
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0009.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-02
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0637.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0627.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0614.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0606.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0597.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-06
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0584.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-06
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0574.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-06
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0563.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0551.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0538.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0525.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0512.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0499.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0486.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0473.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0459.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-03
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0453.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-03
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0451.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-03
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0442.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-02
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0432.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-02
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0427.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0420.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0410.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        03-07
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0400.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        03-06
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0390.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        03-06
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0380.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <h3
+                  class="emotion-10"
+                >
+                  person
+                </h3>
+                <div
+                  style="width: 100%; overflow-x: auto;"
+                >
+                  <div
+                    class="emotion-17"
+                  >
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        08-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0263.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        08-03
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0244.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-07
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0226.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-07
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0207.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0189.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-03
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0170.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-02
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0152.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        07-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0133.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        06-07
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0115.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        06-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0097.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        06-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0082.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        06-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0064.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-02
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0639.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0629.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0616.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0608.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        05-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0599.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-06
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0586.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-06
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0565.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0553.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0540.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0527.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0514.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-05
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0501.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0488.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0475.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-04
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0461.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-03
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0444.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-02
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0434.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-02
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0429.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0422.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        04-01
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0412.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        03-07
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0402.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        03-06
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0392.png"
+                            width="200"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <span
+                        class="emotion-18"
+                      >
+                        03-06
+                      </span>
+                      <div
+                        style="height: 200px; overflow: hidden;"
+                      >
+                        <div
+                          class="emotion-19"
+                        >
+                          <img
+                            src="/labs-client-web-react/app/img/screenshots/0382.png"
                             width="200"
                           />
                         </div>
@@ -1677,81 +4809,81 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-116"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-292"
             >
               <div
-                class="emotion-117"
+                class="emotion-293"
               >
                 <div
-                  class="emotion-118"
+                  class="emotion-294"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-119"
+                  class="emotion-295"
                 >
                   <a
                     href="/movies/stories/awards"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-120"
+                      class="emotion-296"
                     >
                       Movie Awards
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-119"
+                  class="emotion-295"
                 >
                   <a
                     href="/movies/stories/remakes"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-120"
+                      class="emotion-296"
                     >
                       Movie Remakes
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-119"
+                  class="emotion-295"
                 >
                   <a
                     href="/movies/stories/directors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-120"
+                      class="emotion-296"
                     >
                       Movie Directors
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-119"
+                  class="emotion-295"
                 >
                   <a
                     href="/movies/stories/producers"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-120"
+                      class="emotion-296"
                     >
                       Movie Producers
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-119"
+                  class="emotion-295"
                 >
                   <a
                     href="/movies/stories/actors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-120"
+                      class="emotion-296"
                     >
                       Movie Actors
                     </span>
@@ -1832,12 +4964,13 @@ exports[`ABOUT-TIMELINE compare against snapshot 1`] = `
   letter-spacing: 0.02857em;
   text-transform: uppercase;
   min-width: 64px;
-  padding: 7px 21px;
+  padding: 8px 22px;
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border: 1px solid rgba(25, 118, 210, 0.5);
-  color: #1976d2;
+  color: #fff;
+  background-color: #1976d2;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
 }
 
 .emotion-4::-moz-focus-inner {
@@ -1859,19 +4992,28 @@ exports[`ABOUT-TIMELINE compare against snapshot 1`] = `
 .emotion-4:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: rgba(25, 118, 210, 0.04);
-  border: 1px solid #1976d2;
+  background-color: #1565c0;
+  box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
 }
 
 @media (hover: none) {
   .emotion-4:hover {
-    background-color: transparent;
+    background-color: #1976d2;
   }
+}
+
+.emotion-4:active {
+  box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.2),0px 8px 10px 1px rgba(0,0,0,0.14),0px 3px 14px 2px rgba(0,0,0,0.12);
+}
+
+.emotion-4.Mui-focusVisible {
+  box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12);
 }
 
 .emotion-4.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
-  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0.12);
 }
 
 .emotion-5 {
@@ -1898,13 +5040,13 @@ exports[`ABOUT-TIMELINE compare against snapshot 1`] = `
     <div
       class="emotion-2"
     >
-      a timeline since the project creation
+      a timeline since the project's creation
     </div>
     <div
       class="emotion-3"
     >
       <button
-        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeLarge MuiButton-outlinedSizeLarge MuiButtonBase-root emotion-4"
+        class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeLarge MuiButton-containedSizeLarge MuiButtonBase-root emotion-4"
         tabindex="0"
         type="button"
       >

@@ -23,9 +23,6 @@ export default function Layout( props ){
 
   state = ( props.data ) ? { data: props.data, params: {page: props.params.page} } : state;
 
-
-  console.log(state)
-
   var forceLoading = false;
 
   useEffect( () => {
@@ -75,12 +72,13 @@ export default function Layout( props ){
       config={props.config}
       render={render}
       state={state}
-      loading={ !router?.isReady || !state || ( render === "detail" && state.data == null) || ( render == "list" && state.data?.length === 0 ) || state.loading || state?.error }
+      loading={ !router?.isReady || !state || state === null || state?.loading }
+      forceLoading={( render === "detail" && state?.data?.length == 0) || ( render == "list" && state?.data?.length === 0 )  || state?.error}      
       setErrorMessage={setErrorMessage}
       fetch={fetch}
       item={props.item}
-      customDescription={props.customDescription}
-      customTitle={props.customTitle}
+      customDescription={ props.customDescription }
+      customTitle={ props.customTitle }
       mainCol={ props.mainCol || props.dashboard || props.detail }
       skeleton={ props.skeleton }
       params={params}
@@ -91,12 +89,12 @@ export default function Layout( props ){
 function MultiLayout( props ){
   const dispatch = useDispatch();
   const { config, item, mainCol, state, render, params, fetch, setErrorMessage} = props
-  var loading = props.loading;
+  var loading = props.loading || props.forceLoading;
   const title = config.page.title;
 
-  if( !loading && state ){
+  if( props.loading == false && state ){
     if( render === "detail" ){
-      if( state.data === null ){
+      if( state.data === null || state.data?.length == 0 ){
         setErrorMessage("this is a demo version, this record was filtered out to reduce the database size")
         loading = true;
       }
@@ -163,14 +161,11 @@ function MultiLayout( props ){
 
 function BannerLayout( props ){
   const { config, state } = props;
-
   const showDataInBanner = config.banner?.showData ?? false; 
-  const title = (props.customTitle) ? props.customTitle : config.page?.title ?? "NO TITLE";
-  const description = (props.customDescription) ? props.customDescription : config.page?.description ?? "NO DESCRIPTION";
+  const title = (props.customTitle) ? ((typeof props.customTitle === 'function') ? ((state) ? props.customTitle(state?.params ?? {} ) : "") : props.customTitle) : config.page?.title ?? "NO TITLE";
+  const description = (props.customDescription) ? ((typeof props.customDescription === 'function') ? ((state) ? props.customDescription(state?.params ?? {}) : "") : props.customDescription) : config.page?.description ?? "NO DESCRIPTION";
   const url = config.page?.url;
   
-  //console.log("banner", config.page.title, state, url({}))
-
   return (
     <Banner 
       showData={showDataInBanner}

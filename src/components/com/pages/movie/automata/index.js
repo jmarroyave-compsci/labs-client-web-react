@@ -42,10 +42,10 @@ const slice = createSlice({
       state.error = "";
     },
     [fetchData.fulfilled]: (state, action) => {
-      const { loading, errors, data } = action.payload;
+      const { loading, error, data } = action.payload;
       state.data = data;
       state.loading = loading;
-      state.error = errors?.[0] ?? null;
+      state.error = error;
     },
     [fetchData.rejected]: (state, action) => {
       const { error } = action;

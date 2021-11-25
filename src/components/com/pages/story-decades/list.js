@@ -4,7 +4,7 @@ import Layout from '.';
 const Page = ( props ) => {
 
   return (
-      <Layout {...props} render="list"/> 
+      <Layout {...props} render="page"/> 
   )
 }
 

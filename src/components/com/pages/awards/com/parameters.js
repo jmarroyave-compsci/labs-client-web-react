@@ -1,50 +1,70 @@
-import React, { useState, useMemo } from 'react'
-import { styled } from '@mui/material/styles';
+import React, { useReducer, useEffect, useState, useMemo } from 'react';
 import Stack from 'com/ui/stack';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 import { Frame } from 'style/boxes'
+import { getYears } from 'data/enums/years';
+import Button from '@mui/material/Button';
+
+const initialState = {
+  year: null,
+}
+
+function reducer(state, action){
+  switch( action.type ){
+    case "INIT":
+      return {
+        ...state,
+        year: (action.payload.year) ? action.payload.year : state.year, 
+      };
+    case "YEAR_CHANGE":
+      return {
+        ...state,
+        year: action.payload
+      }    
+    default:
+      throw new Error(`operation ${ action.type?.toUpperCase() } not implemented`)      
+  }
+}
 
 export default function Parameters( props ){
-    const { onChange } = props;
+  const [ expanded, setExpanded ] = useState(false);
+  const [ state, dispatch ] = useReducer( reducer, initialState )
+  const { params, onChange } = props;
+  const yearData = useMemo( () => getYears().map( r => ( { label: r, id: r } )  ) , [])  
 
-    const fromData = () => [
-      {label: "Movies", id: "movies"},
-    ]
-    const yearData = () => {
-      const now = new Date() 
-      var resp = [];
-      for(var i = now.getFullYear(); i > 1920 ; i--){
-        resp.push({label: i.toString(), id: i.toString()})
-      }
-      return resp;
-    }
+  useEffect( () => {
+    dispatch( { type: "INIT", payload: { year : yearData.find( r => r.id == params.year ) } } )
+  }, [ params ] )
 
-    const fData = useMemo(() => fromData(), []);
-    const yData = useMemo(() => yearData(), []);
 
-    const [ entity, setEntity ] = useState(fData.find( i => i.id == props.entity ));
-    const [ year, setYear ] = useState(yData.find( i => i.id == props.year));
+  const onFiltersChanged = () => {    
+    const response = { year: state.year.id }
+    if (onChange) onChange( response )
+  }
 
-    const handleOnChange = (year, entity) => {
-      if (onChange) onChange(year.id, entity.id)
-    }
+  if(!state.year) return null;
 
-    return (
-      <Frame>
-        <Stack spacing={2}>
-          <Autocomplete
-            id="year"
-            disableClearable
-            options={yData}
-            value={year}
-            onChange={(e, value) => {handleOnChange(value, entity); setYear(value)} }
-            sx={{ width: 300 }}
-            renderInput={(params) => <TextField {...params} label="Year" />}
-          />      
-        </Stack>
-      </Frame>
-    )
+  return (
+    <Frame>
+      <Stack spacing={2}>
+        <Autocomplete
+          id="year"
+          disableClearable
+          options={yearData}
+          value={state.year}
+          onChange={(e, value) => dispatch( { type: "YEAR_CHANGE", payload: value } ) }
+          sx={{ width: 300 }}
+          renderInput={(params) => <TextField {...params} label="Year" />}
+        />      
+        <Frame>
+          <Button variant='outlined' onClick={ () => {
+            onFiltersChanged();
+          } }>Filter</Button>
+        </Frame>
+      </Stack>
+    </Frame>
+  )
 }
 
 

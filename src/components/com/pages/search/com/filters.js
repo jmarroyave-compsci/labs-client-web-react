@@ -6,8 +6,6 @@ import { getEntities } from 'com/entities'
 import TextField from '@mui/material/TextField';
 import Switch from '@mui/material/Switch';
 import Button from '@mui/material/Button';
-import ExpandIcon from '@mui/icons-material/ExpandLess';
-import CollapseIcon from '@mui/icons-material/ExpandMore';
 
 const initialState = {
   entities: [],
@@ -27,6 +25,7 @@ function reducer(state, action){
         entities : (action.payload.entities) ? action.payload.entities : state.entities,
         year: (action.payload.year) ? action.payload.year : state.year, 
         timeFrame: (action.payload.timeFrame) ? action.payload.timeFrame : state.timeFrame,
+        filterByTimeFrame: (action.payload.filterByTimeFrame) ? action.payload.filterByTimeFrame : state.filterByTimeFrame,
       };
     case "ENTITIES_CHANGED":
       var nItem = action.payload.name
@@ -66,13 +65,9 @@ function reducer(state, action){
 }
 
 export default function Filters( props ){
-  const [ expanded, setExpanded ] = useState(false);
   const [ state, dispatch ] = useReducer( reducer, initialState )
-  const { params, onFiltersChanged } = props;
+  const { params, onChange } = props;
   const entities = getEntities();  ;
-
-
-  console.log(params)
 
   useEffect( () => {
     dispatch( { type: "INIT", payload: params } )
@@ -81,71 +76,68 @@ export default function Filters( props ){
 
   return (
     <>
-      <Button onClick={ () => setExpanded(!expanded)} endIcon={(expanded) ? <ExpandIcon/> : <CollapseIcon/>}>Filters</Button>
-        <div style={{display: (expanded === false) ? "none" : "block"}}>
-          <FormGroup>
-            <Frame>        
-              <Small>entities</Small>
-              <Stack spacing={2} direction='row' style={{width: '100%', overflowX: 'auto'}}>
-                {entities.map( (ent, key) => 
-                    <FormControlLabel
-                        key={key}
-                        control={
-                          <Switch/>
-                        }
-                        label={ent.name}
-                        labelPlacement="end"
-                        name={ent.value}
-                        checked={state.entities.includes(ent.value)} 
-                        size="small"
-                        onChange={(e) => dispatch({ type: "ENTITIES_CHANGED", payload: e.target })}
-                    />
-                )}
-              </Stack>
-            </Frame>
-            <Frame>
-              <Small>
-                  <span>time frame </span>
-                  <Checkbox size="small" checked={state.filterByTimeFrame} onChange={ ( e ) => { 
-                      dispatch( { type: "TOGGLE_FILTER_BY_TIMEFRAME", payload: e.target } ); 
-                      dispatch( { type : "UPDATE_TIMEFRAME_NOTES" } ) 
-                  }}/>
-              </Small>
-              <Stack direction='row' spacing={2} style={{width: '100%', overflowX: 'auto'}}>
-                <div>
-                  <TextField id="year" margin="normal" disabled={!state.filterByTimeFrame} label="year" name="year" value={state.year} 
-                    onChange={ (e) => { 
-                      dispatch( { type : "FIELD_CHANGED", payload: e.target } ); 
-                      dispatch( { type : "UPDATE_TIMEFRAME_NOTES" } ) 
-                    } }
-                    size="small" inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} 
-                  />
-                </div>
-                <div>
-                  <TextField id="time-frame" margin="normal" disabled={!state.filterByTimeFrame} label="window" name="timeFrame" value={state.timeFrame} 
-                    onChange={ (e) => { 
-                      dispatch( { type : "FIELD_CHANGED", payload: e.target } ); 
-                      dispatch( { type : "UPDATE_TIMEFRAME_NOTES" } )  
-                    } }
-                    size="small" inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} 
-                  />
-                </div>
-              </Stack>
-              <Notes>{state.timeFrameNotes}</Notes>
-            </Frame>
-            <Frame>
-              <Button variant='outlined' onClick={ () => {
-                var response = { 
-                  ...params,
-                  entities: state.entities,
-                  year: (state.filterByTimeFrame) ? state.year : null,
-                  timeFrame : (state.filterByTimeFrame) ? state.timeFrame : null,                
-                } 
-                onFiltersChanged( response );
-              } }>Filter</Button>
-            </Frame>
-          </FormGroup>
-        </div>
+      <FormGroup>
+        <Frame>        
+          <Small>entities</Small>
+          <Stack spacing={2} direction='row' style={{width: '100%', overflowX: 'auto'}}>
+            {entities.map( (ent, key) => 
+                <FormControlLabel
+                    key={key}
+                    control={
+                      <Switch/>
+                    }
+                    label={ent.name}
+                    labelPlacement="end"
+                    name={ent.value}
+                    checked={state.entities.includes(ent.value)} 
+                    size="small"
+                    onChange={(e) => dispatch({ type: "ENTITIES_CHANGED", payload: e.target })}
+                />
+            )}
+          </Stack>
+        </Frame>
+        <Frame>
+          <Small>
+              <span>time frame </span>
+              <Checkbox size="small" checked={state.filterByTimeFrame} onChange={ ( e ) => { 
+                  dispatch( { type: "TOGGLE_FILTER_BY_TIMEFRAME", payload: e.target } ); 
+                  dispatch( { type : "UPDATE_TIMEFRAME_NOTES" } ) 
+              }}/>
+          </Small>
+          <Stack direction='row' spacing={2} style={{width: '100%', overflowX: 'auto'}}>
+            <div>
+              <TextField id="year" margin="normal" disabled={!state.filterByTimeFrame} label="year" name="year" value={state.year} 
+                onChange={ (e) => { 
+                  dispatch( { type : "FIELD_CHANGED", payload: e.target } ); 
+                  dispatch( { type : "UPDATE_TIMEFRAME_NOTES" } ) 
+                } }
+                size="small" inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} 
+              />
+            </div>
+            <div>
+              <TextField id="time-frame" margin="normal" disabled={!state.filterByTimeFrame} label="window" name="timeFrame" value={state.timeFrame} 
+                onChange={ (e) => { 
+                  dispatch( { type : "FIELD_CHANGED", payload: e.target } ); 
+                  dispatch( { type : "UPDATE_TIMEFRAME_NOTES" } )  
+                } }
+                size="small" inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} 
+              />
+            </div>
+          </Stack>
+          <Notes>{state.timeFrameNotes}</Notes>
+        </Frame>
+        <Frame>
+          <Button variant='outlined' onClick={ () => {
+            var response = { 
+              ...params,
+              ...state,
+              year: (state.filterByTimeFrame) ? state.year : null,
+              timeFrame : (state.filterByTimeFrame) ? state.timeFrame : null,
+            } 
+            onChange( response );
+          } }>Filter</Button>
+        </Frame>
+      </FormGroup>
     </>
   )
 }

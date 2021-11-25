@@ -24,6 +24,7 @@ export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     thunkAPI.dispatch(setParams( params ))
     params.qryName = "decades";
+    params.op = { op: "range", field: "releaseYear", value: [parseInt(params.decade), parseInt(params.decade) + 10] }
     return await fetchItems( params );
   }
 )
@@ -33,12 +34,12 @@ const slice = createSlice({
   initialState,
   reducers: {
     setParams : (state, action) => {
-            state.params = {
+      state.params = {
         ...state.params,
         ...action.payload
       }
-      if(state.params.renderer == "banner" || state.params.page == 1) return;
-      Router.push(`${config.page.url(state.params)}/?page=${state.params.page}`, null, { shallow: true })  
+      if(state.params.renderer == "banner") return;
+      Router.push(`${config.page.url(state.params)}?page=${state.params.page}`, null, { shallow: true })  
     }
   },
   extraReducers: {

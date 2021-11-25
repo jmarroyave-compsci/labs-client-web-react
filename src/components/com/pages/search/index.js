@@ -33,7 +33,7 @@ export default function Proxy( props ){
 					{...state} 
 					{...state.results}
 					onPageChange={(page) => dispatch( fetchData({ ...state.params, page: page }) ) }
-					onFiltersChanged={( params ) => dispatch( fetchData({ ...params }) ) }
+					onFiltersChanged={( params ) => dispatch( fetchData({ ...params, page: 1 }) ) }
 				/>
 			}
 		/>

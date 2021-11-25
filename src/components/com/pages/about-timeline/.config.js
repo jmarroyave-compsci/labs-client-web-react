@@ -4,7 +4,7 @@ export default {
 	},
 	page: {
 		title: "How the project has evolved?",
-		description: "a timeline since the project creation",
+		description: "a timeline since the project's creation",
 		url: ()=>`/about/timeline`,
 	},
 	banner: {

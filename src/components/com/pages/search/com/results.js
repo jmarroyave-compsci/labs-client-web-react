@@ -1,18 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { styled } from '@mui/material/styles';
 import Stack from 'com/ui/stack';
 import Divider from '@mui/material/Divider';
 import Paging from 'com/ui/paging';
 import Skeleton from './skeleton';
 
-import LinkTVShow from 'com/entities/tv-show/link';
-import LinkVideoGame from 'com/entities/video-game/link';
-import LinkPerson from 'com/entities/person/link';
-import LinkMovie from 'com/entities/movie/link';
-import LinkPodcast from 'com/entities/podcast/link';
-import LinkFestival from 'com/entities/movie-festival/link';
+import LinkEntity from 'com/entities/entity/link';
+import Field from 'com/field'
 import Pill from 'core/ui/pill';
 import Button from '@mui/material/Button';
+import Parameters from 'com/ui/parameters';
 import Filters from './filters';
 
 const Results = styled('div')({
@@ -21,10 +18,6 @@ const Results = styled('div')({
 
 const ResultsHeader = styled('div')({
   paddingBottom: '1rem',
-});
-
-const FiltersBox = styled('div')({
-  paddingBottom: '2rem',
 });
 
 const Query = styled('span')({
@@ -44,7 +37,10 @@ const ResultType = styled('div')({
 });
 
 const ResultText = styled('h3')({
-  marginTop: 0,
+  margin: 0,
+  padding: 0,
+  fontSize: '1.5rem',
+  lineHeight: '1.9rem',
 });
 
 const ResultExtra = styled('div')({
@@ -54,10 +50,17 @@ const ResultExtra = styled('div')({
 });
 
 function _Results(props){
-  const { data, loading, qry, onPageChanged, params } = props;
+  const start = useRef(null)
+  const { data, loading, qry, params } = props;
 
   const onFiltersChanged = ( params ) => {
+    start.current.scrollIntoView(false)
     props.onFiltersChanged( params )    
+  }
+
+  const onPageChange = (params) => {
+    start.current.scrollIntoView(false)
+    props.onPageChange(params)
   }
 
   return (
@@ -65,17 +68,15 @@ function _Results(props){
       <ResultsHeader>
         <div>search results for: <Query>{params.qry}</Query></div>    
       </ResultsHeader>
-      <FiltersBox>
-        <Filters
-          params={ params }
-          onFiltersChanged={ onFiltersChanged }
-        />
-      </FiltersBox>
+      <Parameters             
+        onChange={onFiltersChanged}
+        filters={ ( { onChange } ) => <Filters onChange={onChange} params={ params } /> }
+      />
+      <div ref={start}/>
       <ResultsData>
-        <Paging {...props} onPageChanged skeleton={<Skeleton/>}>
+        <Paging {...props} onPageChange={onPageChange} skeleton={<Skeleton/>}>
           <Stack
-            divider={<Divider flexItem />}
-            spacing={2}
+            spacing={6}
           >
             {data && data.map( (r, idx) => 
               <SearchResults key={idx} r={r}/>    
@@ -89,61 +90,15 @@ function _Results(props){
 
 function SearchResults( props ){
   const { r } = props; 
-
-  switch(r.type){
-    case "movie":
-      return (
-        <Result>
-          <ResultType>Movie</ResultType>
-          <ResultText><LinkMovie id={r.entityId} entity={r.entity}>{r.entity}</LinkMovie></ResultText>
-          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
-        </Result>
-      )
-    case "people":
-    case "person":
-      return (
-        <Result>
-          <ResultType>Person</ResultType>
-          <ResultText><LinkPerson id={r.entityId} entity={r.entity}>{r.entity}</LinkPerson></ResultText>
-          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
-        </Result>
-      )
-    case "podcast":
-    case "podcasts":
-      return (
-        <Result>
-          <ResultType>Podcast</ResultType>
-          <ResultText><LinkPodcast id={r.entityId} entity={r.entity}>{r.entity}</LinkPodcast></ResultText>
-          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
-        </Result>
-      )
-    case "video_game":
-      return (
-        <Result>
-          <ResultType>Video Game</ResultType>
-          <ResultText><LinkVideoGame id={r.entityId} entity={r.entity}>{r.entity}</LinkVideoGame></ResultText>
-          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
-        </Result>
-      )
-    case "tv_show":
-      return (
-        <Result>
-          <ResultType>TV Show</ResultType>
-          <ResultText><LinkTVShow id={r.entityId} entity={r.entity}>{r.entity}</LinkTVShow></ResultText>
-          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
-        </Result>
-      )
-    case "festival":
-      return (
-        <Result>
-          <ResultType>Festival</ResultType>
-          <ResultText><LinkFestival id={r.entityId} entity={r.entity}>{r.entity}</LinkFestival></ResultText>
-          {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
-        </Result>
-      )
-  }
-
-  return `ERROR: type ${r.type}`;
+  return (
+    <Result>
+      <ResultType>{r.type.toUpperCase()} [{r.year ?? "?"}]</ResultType>
+      <LinkEntity id={r.entityId} type={r.type} entity={r.entity}>
+        <ResultText>{r.entity}</ResultText>
+      </LinkEntity>
+      {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
+    </Result>
+  )
 }
 
 export default _Results;
