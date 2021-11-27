@@ -10,6 +10,8 @@ import Error from "core/ui/error"
 function EntityLink( params ) {
 	const { id, type, children, box } = params;
 
+
+
 	switch( type ){
 		case "movie":
 			return <LinkMovie box={box} id={id}>{children}</LinkMovie>
@@ -18,14 +20,16 @@ function EntityLink( params ) {
 		case "podcast":
 			return <LinkPodcast box={box} id={id}>{children}</LinkPodcast>
 		case "tv-show":
+		case "tv_show":
 			return <LinkTVShow box={box} id={id}>{children}</LinkTVShow>
 		case "video-game":
+		case "video_game":
 			return <LinkVideoGame box={box} id={id}>{children}</LinkVideoGame>
 		case "festival":
 			return <LinkFestival box={box} id={id}>{children}</LinkFestival>
 	}
 
-	return <Error from="ENTITY-LINK" data={`ENTITY {type} NOT FOUND`}/>
+	return <Error from="ENTITY-LINK" data={`ENTITY ${type} NOT FOUND`}/>
 }
 
 export default EntityLink;

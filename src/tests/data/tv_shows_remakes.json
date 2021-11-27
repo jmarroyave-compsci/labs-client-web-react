@@ -1,0 +1,75 @@
+{
+  "data": {
+    "data": {
+      "storyRemakes": [
+        {
+          "name": "Home",
+          "count": 353,
+          "recs": [],
+          "__typename": "StoryMovieRemakes"
+        },
+        {
+          "name": "Alone",
+          "count": 299,
+          "recs": [],
+          "__typename": "StoryMovieRemakes"
+        },
+        {
+          "name": "Broken",
+          "count": 226,
+          "recs": [],
+          "__typename": "StoryMovieRemakes"
+        },
+        {
+          "name": "Trapped",
+          "count": 192,
+          "recs": [],
+          "__typename": "StoryMovieRemakes"
+        },
+        {
+          "name": "The Gift",
+          "count": 180,
+          "recs": [],
+          "__typename": "StoryMovieRemakes"
+        },
+        {
+          "name": "The Interview",
+          "count": 179,
+          "recs": [],
+          "__typename": "StoryMovieRemakes"
+        },
+        {
+          "name": "The Box",
+          "count": 173,
+          "recs": [],
+          "__typename": "StoryMovieRemakes"
+        },
+        {
+          "name": "Silence",
+          "count": 168,
+          "recs": [],
+          "__typename": "StoryMovieRemakes"
+        },
+        {
+          "name": "Hope",
+          "count": 165,
+          "recs": [],
+          "__typename": "StoryMovieRemakes"
+        },
+        {
+          "name": "Escape",
+          "count": 162,
+          "recs": [],
+          "__typename": "StoryMovieRemakes"
+        }
+      ]
+    }
+  },
+  "body": {
+    "operationName": "tv_shows_remakes",
+    "variables": {
+      "page": 1
+    },
+    "query": "fragment PersonTinyFragment on Person {\n  id: _id\n  name\n  __typename\n}\n\nquery tv_shows_remakes($page: Int) {\n  storyRemakes(page: $page) {\n    name\n    count\n    recs {\n      id: _id\n      releaseYear\n      directed {\n        id {\n          ...PersonTinyFragment\n          __typename\n        }\n        __typename\n      }\n      __typename\n    }\n    __typename\n  }\n}\n"
+  }
+}

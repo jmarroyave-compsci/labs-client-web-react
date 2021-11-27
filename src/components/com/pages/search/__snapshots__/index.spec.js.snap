@@ -217,12 +217,6 @@ exports[`SEARCH compare Page against snapshot 1`] = `
 }
 
 .emotion-16 {
-  margin-top: 0;
-  font-size: 0.85rem;
-  line-height: 1rem;
-}
-
-.emotion-19 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -238,14 +232,20 @@ exports[`SEARCH compare Page against snapshot 1`] = `
   width: 100%;
 }
 
-.emotion-20 {
+.emotion-17 {
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
   line-height: 1.9rem;
 }
 
-.emotion-47 {
+.emotion-18 {
+  margin-top: 0;
+  font-size: 0.85rem;
+  line-height: 1rem;
+}
+
+.emotion-61 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -259,12 +259,12 @@ exports[`SEARCH compare Page against snapshot 1`] = `
   justify-content: center;
 }
 
-.emotion-47>:not(style)+:not(style) {
+.emotion-61>:not(style)+:not(style) {
   margin: 0;
   margin-left: 16px;
 }
 
-.emotion-48 {
+.emotion-62 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -312,23 +312,23 @@ exports[`SEARCH compare Page against snapshot 1`] = `
   color: #1976d2;
 }
 
-.emotion-48::-moz-focus-inner {
+.emotion-62::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-48.Mui-disabled {
+.emotion-62.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-48 {
+  .emotion-62 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-48:hover {
+.emotion-62:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   background-color: rgba(25, 118, 210, 0.04);
@@ -336,17 +336,17 @@ exports[`SEARCH compare Page against snapshot 1`] = `
 }
 
 @media (hover: none) {
-  .emotion-48:hover {
+  .emotion-62:hover {
     background-color: transparent;
   }
 }
 
-.emotion-48.Mui-disabled {
+.emotion-62.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.emotion-51 {
+.emotion-65 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -355,19 +355,19 @@ exports[`SEARCH compare Page against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-52 {
+.emotion-66 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-53 {
+.emotion-67 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-54 {
+.emotion-68 {
   font-size: 0.9rem;
   color: inherit;
 }
@@ -452,13 +452,22 @@ exports[`SEARCH compare Page against snapshot 1`] = `
                           1987
                           ]
                         </div>
-                        <div>
-                          ENTITY 
-                          video_game
-                           NOT FOUND
-                        </div>
+                        <a
+                          href="/video-games/tt0852703"
+                          style="flex: 1; display: flex; width: 100%;"
+                        >
+                          <span
+                            class="emotion-16"
+                          >
+                            <h3
+                              class="emotion-17"
+                            >
+                              test drive
+                            </h3>
+                          </span>
+                        </a>
                         <div
-                          class="emotion-16"
+                          class="emotion-18"
                         >
                           released: 1987
                         </div>
@@ -479,10 +488,10 @@ exports[`SEARCH compare Page against snapshot 1`] = `
                           style="flex: 1; display: flex; width: 100%;"
                         >
                           <span
-                            class="emotion-19"
+                            class="emotion-16"
                           >
                             <h3
-                              class="emotion-20"
+                              class="emotion-17"
                             >
                               test drive
                             </h3>
@@ -506,10 +515,10 @@ exports[`SEARCH compare Page against snapshot 1`] = `
                           style="flex: 1; display: flex; width: 100%;"
                         >
                           <span
-                            class="emotion-19"
+                            class="emotion-16"
                           >
                             <h3
-                              class="emotion-20"
+                              class="emotion-17"
                             >
                               test drive
                             </h3>
@@ -533,10 +542,10 @@ exports[`SEARCH compare Page against snapshot 1`] = `
                           style="flex: 1; display: flex; width: 100%;"
                         >
                           <span
-                            class="emotion-19"
+                            class="emotion-16"
                           >
                             <h3
-                              class="emotion-20"
+                              class="emotion-17"
                             >
                               test drive
                             </h3>
@@ -555,13 +564,22 @@ exports[`SEARCH compare Page against snapshot 1`] = `
                           1997
                           ]
                         </div>
-                        <div>
-                          ENTITY 
-                          video_game
-                           NOT FOUND
-                        </div>
+                        <a
+                          href="/video-games/tt6079198"
+                          style="flex: 1; display: flex; width: 100%;"
+                        >
+                          <span
+                            class="emotion-16"
+                          >
+                            <h3
+                              class="emotion-17"
+                            >
+                              test drive 4
+                            </h3>
+                          </span>
+                        </a>
                         <div
-                          class="emotion-16"
+                          class="emotion-18"
                         >
                           released: 1997
                         </div>
@@ -577,13 +595,22 @@ exports[`SEARCH compare Page against snapshot 1`] = `
                           1998
                           ]
                         </div>
-                        <div>
-                          ENTITY 
-                          video_game
-                           NOT FOUND
-                        </div>
+                        <a
+                          href="/video-games/tt6085870"
+                          style="flex: 1; display: flex; width: 100%;"
+                        >
+                          <span
+                            class="emotion-16"
+                          >
+                            <h3
+                              class="emotion-17"
+                            >
+                              test drive 5
+                            </h3>
+                          </span>
+                        </a>
                         <div
-                          class="emotion-16"
+                          class="emotion-18"
                         >
                           released: 1998
                         </div>
@@ -599,13 +626,22 @@ exports[`SEARCH compare Page against snapshot 1`] = `
                           1999
                           ]
                         </div>
-                        <div>
-                          ENTITY 
-                          video_game
-                           NOT FOUND
-                        </div>
+                        <a
+                          href="/video-games/tt0292274"
+                          style="flex: 1; display: flex; width: 100%;"
+                        >
+                          <span
+                            class="emotion-16"
+                          >
+                            <h3
+                              class="emotion-17"
+                            >
+                              test drive 6
+                            </h3>
+                          </span>
+                        </a>
                         <div
-                          class="emotion-16"
+                          class="emotion-18"
                         >
                           released: 1999
                         </div>
@@ -621,13 +657,22 @@ exports[`SEARCH compare Page against snapshot 1`] = `
                           1989
                           ]
                         </div>
-                        <div>
-                          ENTITY 
-                          video_game
-                           NOT FOUND
-                        </div>
+                        <a
+                          href="/video-games/tt6176356"
+                          style="flex: 1; display: flex; width: 100%;"
+                        >
+                          <span
+                            class="emotion-16"
+                          >
+                            <h3
+                              class="emotion-17"
+                            >
+                              test drive ii car disk: the supercars
+                            </h3>
+                          </span>
+                        </a>
                         <div
-                          class="emotion-16"
+                          class="emotion-18"
                         >
                           released: 1989
                         </div>
@@ -643,13 +688,22 @@ exports[`SEARCH compare Page against snapshot 1`] = `
                           1989
                           ]
                         </div>
-                        <div>
-                          ENTITY 
-                          video_game
-                           NOT FOUND
-                        </div>
+                        <a
+                          href="/video-games/tt6175344"
+                          style="flex: 1; display: flex; width: 100%;"
+                        >
+                          <span
+                            class="emotion-16"
+                          >
+                            <h3
+                              class="emotion-17"
+                            >
+                              test drive ii scenery disk: california challenge
+                            </h3>
+                          </span>
+                        </a>
                         <div
-                          class="emotion-16"
+                          class="emotion-18"
                         >
                           released: 1989
                         </div>
@@ -665,23 +719,32 @@ exports[`SEARCH compare Page against snapshot 1`] = `
                           1989
                           ]
                         </div>
-                        <div>
-                          ENTITY 
-                          video_game
-                           NOT FOUND
-                        </div>
+                        <a
+                          href="/video-games/tt6174056"
+                          style="flex: 1; display: flex; width: 100%;"
+                        >
+                          <span
+                            class="emotion-16"
+                          >
+                            <h3
+                              class="emotion-17"
+                            >
+                              test drive ii scenery disk: european challenge
+                            </h3>
+                          </span>
+                        </a>
                         <div
-                          class="emotion-16"
+                          class="emotion-18"
                         >
                           released: 1989
                         </div>
                       </div>
                     </div>
                     <div
-                      class="emotion-47"
+                      class="emotion-61"
                     >
                       <button
-                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-48"
+                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-62"
                         disabled=""
                         tabindex="-1"
                         type="button"
@@ -689,7 +752,7 @@ exports[`SEARCH compare Page against snapshot 1`] = `
                         Back
                       </button>
                       <button
-                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-48"
+                        class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-62"
                         tabindex="0"
                         type="button"
                       >
@@ -712,81 +775,81 @@ exports[`SEARCH compare Page against snapshot 1`] = `
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-51"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-65"
             >
               <div
-                class="emotion-52"
+                class="emotion-66"
               >
                 <div
-                  class="emotion-53"
+                  class="emotion-67"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-54"
+                  class="emotion-68"
                 >
                   <a
                     href="/movies/stories/awards"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-19"
+                      class="emotion-16"
                     >
                       Movie Awards
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-54"
+                  class="emotion-68"
                 >
                   <a
                     href="/movies/stories/remakes"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-19"
+                      class="emotion-16"
                     >
                       Movie Remakes
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-54"
+                  class="emotion-68"
                 >
                   <a
                     href="/movies/stories/directors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-19"
+                      class="emotion-16"
                     >
                       Movie Directors
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-54"
+                  class="emotion-68"
                 >
                   <a
                     href="/movies/stories/producers"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-19"
+                      class="emotion-16"
                     >
                       Movie Producers
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-54"
+                  class="emotion-68"
                 >
                   <a
                     href="/movies/stories/actors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-19"
+                      class="emotion-16"
                     >
                       Movie Actors
                     </span>

@@ -20,8 +20,12 @@ function EntityItem( params ) {
 		case "podcast":
 			return <ItemPodcast {...params}/>
 		case "tvShow":
+		case "tv-show":
+		case "tv_show":
 			return <ItemTVShow {...params}/>
 		case "videoGame":
+		case "video-game":
+		case "video_game":
 			return <ItemVideoGame {...params}/>
 	}
 
