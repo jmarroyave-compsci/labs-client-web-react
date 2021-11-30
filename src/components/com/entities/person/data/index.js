@@ -10,8 +10,8 @@ fragment PersonTinyFragment on Person {
 }
 `;
 
-export const fetchItems = ( { page, op, qryName="", withDirected=true, withActed=false, withWrote=false, withProduced=false } ) => fetch( GET_ITEMS( { qryName } ) , { page: page, withActed: withActed, withDirected: withDirected ?? false, withProduced: withProduced, withWrote: withWrote, field: JSON.stringify(op) } , (resp) => { return { ...resp, data: resp.data.people } } )
-const GET_ITEMS = ( { qryName, withActed, withDirected, withProduced, withWrote } ) => gql`
+export const fetchItems = ( { page, op, qryName="", withDirected=true, withActed=false, withWrote=false, withProduced=false, withActedWith=false, withDirectedTo=false, withDirectedBy=false } ) => fetch( GET_ITEMS( { qryName } ) , { page: page, withActed: withActed, withDirected: withDirected ?? false, withProduced: withProduced, withWrote: withWrote, withActedWith, withDirectedBy, withDirectedTo, field: JSON.stringify(op) } , (resp) => { return { ...resp, data: resp.data.people } } )
+const GET_ITEMS = ( { qryName, withActed, withDirected, withProduced, withWrote, withDirectedTo, withDirectedBy, withActedWith } ) => gql`
   ${ENTITY_TINY_FRAGMENT}
   ${PERSON_TINY_FRAGMENT}
   query people_${qryName}($page: Int, $field: String, $withActed: Boolean!, $withProduced: Boolean!, $withDirected: Boolean!, $withWrote: Boolean!)
@@ -63,6 +63,7 @@ const GET_DASHBOARD = (  ) => gql`
 
 export const fetchItem = ( {id, qryName=""} ) => fetch( GET_ITEM({qryName}), { id } , (resp) => { return { ...resp, data: resp.data.person } } )
 const GET_ITEM = ( { qryName } ) => gql`
+${PERSON_TINY_FRAGMENT}
 ${MOVIE_FESTIVAL_TINY_FRAGMENT}
 ${ENTITY_TINY_FRAGMENT}
 query person($id:String!) {
@@ -111,6 +112,15 @@ query person($id:String!) {
       as
       cat
       job
+    }    
+    directedTo{
+      ...PersonTinyFragment
+    }
+    directedBy{
+      ...PersonTinyFragment
+    }
+    actedWith{
+      ...PersonTinyFragment
     }    
   }
 }
