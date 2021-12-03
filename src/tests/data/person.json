@@ -562,39 +562,6 @@
             "id": null,
             "as": "[\"Chris\"]",
             "__typename": "ActedListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Bob Smith\"]",
-            "__typename": "ActedListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Virgil Tanner\"]",
-            "__typename": "ActedListItem"
-          },
-          {
-            "id": {
-              "id": "tt0069704",
-              "title": "American Graffiti",
-              "__typename": "Entity"
-            },
-            "as": "[\"Steve\"]",
-            "__typename": "ActedListItem"
-          },
-          {
-            "id": {
-              "id": "tt0070992",
-              "title": "Happy Days",
-              "__typename": "Entity"
-            },
-            "as": "[\"Richie Cunningham\",\"Asst. DA Cecil Cunningham\"]",
-            "__typename": "ActedListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Donny Fletcher\"]",
-            "__typename": "ActedListItem"
           }
         ],
         "wrote": [
@@ -703,78 +670,7 @@
             "__typename": "WroteListItem"
           }
         ],
-        "crew": [
-          {
-            "id": null,
-            "as": "[\"Self - Host and Narrator\"]",
-            "cat": "self",
-            "job": null,
-            "__typename": "Crew2ListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Self\"]",
-            "cat": "self",
-            "job": null,
-            "__typename": "Crew2ListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Self\"]",
-            "cat": "self",
-            "job": null,
-            "__typename": "Crew2ListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Self\"]",
-            "cat": "self",
-            "job": null,
-            "__typename": "Crew2ListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Self\"]",
-            "cat": "self",
-            "job": null,
-            "__typename": "Crew2ListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Self\"]",
-            "cat": "self",
-            "job": null,
-            "__typename": "Crew2ListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Self\"]",
-            "cat": "self",
-            "job": null,
-            "__typename": "Crew2ListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Self - Director\"]",
-            "cat": "self",
-            "job": null,
-            "__typename": "Crew2ListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Self\"]",
-            "cat": "self",
-            "job": null,
-            "__typename": "Crew2ListItem"
-          },
-          {
-            "id": null,
-            "as": "[\"Self - ABC Team\"]",
-            "cat": "self",
-            "job": null,
-            "__typename": "Crew2ListItem"
-          }
-        ],
+        "crew": [],
         "directedTo": [
           {
             "p": {
@@ -811,47 +707,6 @@
               "__typename": "Person"
             },
             "n": 23,
-            "__typename": "DirectedToListItem"
-          },
-          {
-            "p": null,
-            "n": 18,
-            "__typename": "DirectedToListItem"
-          },
-          {
-            "p": {
-              "id": "nm0918659",
-              "name": "Don Weis",
-              "__typename": "Person"
-            },
-            "n": 10,
-            "__typename": "DirectedToListItem"
-          },
-          {
-            "p": {
-              "id": "nm0370749",
-              "name": "Jeffrey Hayden",
-              "__typename": "Person"
-            },
-            "n": 8,
-            "__typename": "DirectedToListItem"
-          },
-          {
-            "p": {
-              "id": "nm0001077",
-              "name": "Richard Crenna",
-              "__typename": "Person"
-            },
-            "n": 8,
-            "__typename": "DirectedToListItem"
-          },
-          {
-            "p": {
-              "id": "nm0606593",
-              "name": "Howard Morris",
-              "__typename": "Person"
-            },
-            "n": 8,
             "__typename": "DirectedToListItem"
           }
         ],
@@ -892,50 +747,55 @@
             },
             "n": 23,
             "__typename": "DirectedByListItem"
-          },
-          {
-            "p": null,
-            "n": 18,
-            "__typename": "DirectedByListItem"
-          },
-          {
-            "p": {
-              "id": "nm0918659",
-              "name": "Don Weis",
-              "__typename": "Person"
-            },
-            "n": 10,
-            "__typename": "DirectedByListItem"
-          },
-          {
-            "p": {
-              "id": "nm0370749",
-              "name": "Jeffrey Hayden",
-              "__typename": "Person"
-            },
-            "n": 8,
-            "__typename": "DirectedByListItem"
-          },
-          {
-            "p": {
-              "id": "nm0001077",
-              "name": "Richard Crenna",
-              "__typename": "Person"
-            },
-            "n": 8,
-            "__typename": "DirectedByListItem"
-          },
-          {
-            "p": {
-              "id": "nm0606593",
-              "name": "Howard Morris",
-              "__typename": "Person"
-            },
-            "n": 8,
-            "__typename": "DirectedByListItem"
           }
         ],
-        "actedWith": [],
+        "actedWith": [
+          {
+            "p": {
+              "id": "nm0341431",
+              "name": "Andy Griffith",
+              "__typename": "Person"
+            },
+            "n": 236,
+            "__typename": "ActedWithListItem"
+          },
+          {
+            "p": {
+              "id": "nm0005385",
+              "name": "Marion Ross",
+              "__typename": "Person"
+            },
+            "n": 169,
+            "__typename": "ActedWithListItem"
+          },
+          {
+            "p": {
+              "id": "nm0062592",
+              "name": "Frances Bavier",
+              "__typename": "Person"
+            },
+            "n": 165,
+            "__typename": "ActedWithListItem"
+          },
+          {
+            "p": {
+              "id": "nm0930041",
+              "name": "Anson Williams",
+              "__typename": "Person"
+            },
+            "n": 164,
+            "__typename": "ActedWithListItem"
+          },
+          {
+            "p": {
+              "id": "nm0461455",
+              "name": "Don Knotts",
+              "__typename": "Person"
+            },
+            "n": 160,
+            "__typename": "ActedWithListItem"
+          }
+        ],
         "__typename": "Person"
       }
     }

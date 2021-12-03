@@ -42,38 +42,6 @@
                 "__typename": "Entity"
               },
               "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0028757",
-                "title": "A Damsel in Distress",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0029546",
-                "title": "Shall We Dance",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0029971",
-                "title": "Carefree",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
             }
           ]
         },
@@ -109,34 +77,6 @@
             {
               "id": null,
               "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0082200",
-                "title": "Continental Divide",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0082801",
-                "title": "Neighbors",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
             }
           ]
         },
@@ -145,10 +85,6 @@
           "name": "Ingmar Bergman",
           "__typename": "Person",
           "acted": [
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
             {
               "id": null,
               "__typename": "ActedListItem"
@@ -203,42 +139,6 @@
             {
               "id": null,
               "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0023153",
-                "title": "Love Affair",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0025499",
-                "title": "Midnight",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0027367",
-                "title": "Black Legion",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0027407",
-                "title": "Bullets or Ballots",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
             }
           ]
         },
@@ -282,42 +182,6 @@
                 "__typename": "Entity"
               },
               "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0047296",
-                "title": "On the Waterfront",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0047677",
-                "title": "The Wild One",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0048140",
-                "title": "Guys and Dolls",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0050933",
-                "title": "Sayonara",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
             }
           ]
         },
@@ -353,38 +217,6 @@
                 "__typename": "Entity"
               },
               "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0046247",
-                "title": "The Robe",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0047585",
-                "title": "Thursday's Children",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0048538",
-                "title": "The Rains of Ranchipur",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
             }
           ]
         },
@@ -419,42 +251,6 @@
                 "title": "The Public Enemy",
                 "__typename": "Entity"
               },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0022403",
-                "title": "Smart Money",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0022792",
-                "title": "The Crowd Roars",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0023556",
-                "title": "Taxi",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0023701",
-                "title": "Winner Take All",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
               "__typename": "ActedListItem"
             }
           ]
@@ -495,38 +291,6 @@
                 "__typename": "Entity"
               },
               "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0018199",
-                "title": "Nevada",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0018846",
-                "title": "Doomsday",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0018892",
-                "title": "The First Kiss",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
             }
           ]
         },
@@ -557,26 +321,6 @@
                 "title": "Giant",
                 "__typename": "Entity"
               },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
               "__typename": "ActedListItem"
             },
             {
@@ -624,38 +368,6 @@
                 "title": "The Walls of Jericho",
                 "__typename": "Entity"
               },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0041239",
-                "title": "Champion",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0041587",
-                "title": "A Letter to Three Wives",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": {
-                "id": "tt0042509",
-                "title": "The Glass Menagerie",
-                "__typename": "Entity"
-              },
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
-              "__typename": "ActedListItem"
-            },
-            {
-              "id": null,
               "__typename": "ActedListItem"
             }
           ]

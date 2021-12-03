@@ -23,11 +23,7 @@
         "streamBy": [],
         "produced": [
           {
-            "id": {
-              "id": "nm0490165",
-              "name": "Amanda Lathroum",
-              "__typename": "Person"
-            },
+            "id": null,
             "__typename": "ProducedListItem"
           }
         ],
@@ -85,11 +81,7 @@
             "__typename": "WrittenListItem"
           },
           {
-            "id": {
-              "id": "nm0644595",
-              "name": "Charlie Ogden",
-              "__typename": "Person"
-            },
+            "id": null,
             "__typename": "WrittenListItem"
           },
           {
