@@ -1,6 +1,6 @@
 import React from 'react';
 import Autosuggest from 'react-autosuggest';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from "@mui/styles";
 
 const styles = [];
 

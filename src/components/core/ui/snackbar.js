@@ -1,6 +1,6 @@
 import React from 'react';
 import UIComponent from 'core/ui/ui_component.js';
-import Snackbar from '@material-ui/core/Snackbar';
+import Snackbar from '@mui/material/Snackbar';
 
 class UISnackbar extends UIComponent {
   constructor() {

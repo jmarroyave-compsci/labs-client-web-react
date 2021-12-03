@@ -81,11 +81,7 @@
         ],
         "written": [
           {
-            "id": {
-              "id": "nm0323128",
-              "name": "J. Garrett Glover",
-              "__typename": "Person"
-            },
+            "id": null,
             "__typename": "WrittenListItem"
           },
           {
@@ -105,7 +101,7 @@
             "__typename": "WrittenListItem"
           }
         ],
-        "crew": null,
+        "crew": [],
         "awards": [],
         "image": null,
         "boxOffice": null,

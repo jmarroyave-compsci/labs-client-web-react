@@ -8,6 +8,8 @@ import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
 import { ERROR_HEADER_TEXT } from 'core/ui/error'
 import * as fs from 'fs';
+import { ThemeProvider } from '@mui/material/styles';
+import { getTheme } from 'app/config/theme'
 
 export const itMustHaveNoErrors = ( container ) => {
   var errors = container.queryByText(ERROR_HEADER_TEXT);
@@ -34,9 +36,13 @@ export const StateProvider = ( { children, state={} } ) => {
     const mockStore = configureMockStore(middlewares)
     //console.log("Mocked Store", state)
     const store = mockStore(state);
+    const theme = getTheme( "light" );
+
     return (
       <Provider store={store}>
-        {children}
+        <ThemeProvider theme={ theme }>
+          {children}
+        </ThemeProvider>
       </Provider>
     );    
   };

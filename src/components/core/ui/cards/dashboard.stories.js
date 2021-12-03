@@ -1,7 +1,7 @@
 import React from 'react';
 import CardDashboard from './dashboard';
 
-import Warning from "@material-ui/icons/Warning";
+import Warning from "@mui/icons-material/Warning";
 import Danger from "core/ui/boxes/danger";
 
 export default {

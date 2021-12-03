@@ -1,6 +1,7 @@
 import React from 'react'
 import { Frame } from 'style/boxes'
 import { SubTitle, Small } from 'style/detail'
+import { Badge } from 'style/item'
 import PersonItem from 'com/entities/person/item'
 import Link from 'core/ui/link'
 import HList from 'com/ui/hlist';
@@ -11,7 +12,7 @@ function People( props ){
 
   if(!data || data.length == 0) return <div/>;
 
-  var subtitle = (type) ? <SubTitle>{type}<Small> [{data.length}]</Small></SubTitle> : ""
+  var subtitle = (type) ? <SubTitle><Badge content={data.length} >{type}</Badge></SubTitle> : ""
   subtitle = (type && story) ? <Link href={story}>{subtitle}</Link> : subtitle;
 
   return (
@@ -19,7 +20,7 @@ function People( props ){
       {data && data.length > 0 && subtitle}
       {format === "list" && <HList
         data={data}
-        item={(item) => <PersonItem format="list" {...item} {...item.id} />}
+        item={(item) => <PersonItem format="list" {...item} />}
       />}
       {format === "tiny" && <Stack>
         {data.map( (item, idx) => 

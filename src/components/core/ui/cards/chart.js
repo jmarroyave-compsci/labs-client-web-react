@@ -7,7 +7,7 @@ import {
   CardIcon,
   CardFooter
 } from "./creative-tim";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
 const styles = {
   cardCategoryWhite: {

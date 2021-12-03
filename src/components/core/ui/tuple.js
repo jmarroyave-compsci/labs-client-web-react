@@ -1,6 +1,6 @@
 import React from 'react';
 import UIComponent from 'core/ui/ui_component';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from "@mui/styles";
 import UIDate from 'core/ui/date';
 import UINumber from 'core/ui/number';
 import UIDuration from 'core/ui/duration';

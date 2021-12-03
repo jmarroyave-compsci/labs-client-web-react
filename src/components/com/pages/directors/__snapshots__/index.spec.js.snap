@@ -44,7 +44,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   width: 100%;
   height: inherit;
   border-radius: 0;
-  background: linear-gradient(60deg, #1976d2 75%, #000 150%);
+  background: linear-gradient(60deg, #556cd6 75%, #000 150%);
   color: #fff;
 }
 
@@ -118,16 +118,74 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
 }
 
 .emotion-8 {
-  padding: 0rem 0rem 4rem 0rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 .emotion-9 {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+@media (min-width:600px) {
+  .emotion-9 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-9 {
+    -webkit-flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 75%;
+  }
+}
+
+.emotion-10 {
+  padding: 0rem 0rem 4rem 0rem;
+}
+
+.emotion-11 {
   margin: 0 0 2rem 0;
   padding: 0;
   width: 100%;
 }
 
-.emotion-11 {
+.emotion-13 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -137,12 +195,85 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   flex-direction: column;
 }
 
-.emotion-11>:not(style)+:not(style) {
+.emotion-13>:not(style)+:not(style) {
   margin: 0;
   margin-top: 16px;
 }
 
-.emotion-12 {
+.emotion-14 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin-top: -16px;
+  width: calc(100% + 16px);
+  margin-left: -16px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.emotion-14>.MuiGrid-item {
+  padding-top: 16px;
+}
+
+.emotion-14>.MuiGrid-item {
+  padding-left: 16px;
+}
+
+.emotion-15 {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+@media (min-width:600px) {
+  .emotion-15 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 50%;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-15 {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 50%;
+  }
+}
+
+.emotion-16 {
   margin: 0;
   padding: 0 1rem 1rem 0;
   display: -webkit-box;
@@ -159,7 +290,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   background-color: transparent;
 }
 
-.emotion-13 {
+.emotion-17 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -178,7 +309,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   width: 100%;
 }
 
-.emotion-14 {
+.emotion-18 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -190,7 +321,16 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   width: 100%;
 }
 
-.emotion-15 {
+.emotion-19 {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+
+.emotion-20 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -200,12 +340,12 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   flex-direction: column;
 }
 
-.emotion-15>:not(style)+:not(style) {
+.emotion-20>:not(style)+:not(style) {
   margin: 0;
   margin-top: 8px;
 }
 
-.emotion-16 {
+.emotion-21 {
   display: block;
   background-color: rgba(0, 0, 0, 0.11);
   height: auto;
@@ -221,11 +361,11 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   animation: animation-0 1.5s ease-in-out 0.5s infinite;
 }
 
-.emotion-16:empty:before {
+.emotion-21:empty:before {
   content: "\\00a0";
 }
 
-.emotion-17 {
+.emotion-22 {
   display: block;
   background-color: rgba(0, 0, 0, 0.11);
   height: 1.2em;
@@ -233,7 +373,7 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   animation: animation-0 1.5s ease-in-out 0.5s infinite;
 }
 
-.emotion-102 {
+.emotion-125 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -247,12 +387,12 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   justify-content: center;
 }
 
-.emotion-102>:not(style)+:not(style) {
+.emotion-125>:not(style)+:not(style) {
   margin: 0;
   margin-left: 16px;
 }
 
-.emotion-103 {
+.emotion-126 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -296,45 +436,45 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border: 1px solid rgba(25, 118, 210, 0.5);
-  color: #1976d2;
+  border: 1px solid rgba(85, 108, 214, 0.5);
+  color: #556cd6;
 }
 
-.emotion-103::-moz-focus-inner {
+.emotion-126::-moz-focus-inner {
   border-style: none;
 }
 
-.emotion-103.Mui-disabled {
+.emotion-126.Mui-disabled {
   pointer-events: none;
   cursor: default;
 }
 
 @media print {
-  .emotion-103 {
+  .emotion-126 {
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
   }
 }
 
-.emotion-103:hover {
+.emotion-126:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: rgba(25, 118, 210, 0.04);
-  border: 1px solid #1976d2;
+  background-color: rgba(85, 108, 214, 0.04);
+  border: 1px solid #556cd6;
 }
 
 @media (hover: none) {
-  .emotion-103:hover {
+  .emotion-126:hover {
     background-color: transparent;
   }
 }
 
-.emotion-103.Mui-disabled {
+.emotion-126.Mui-disabled {
   color: rgba(0, 0, 0, 0.26);
   border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-.emotion-105 {
+.emotion-128 {
   overflow: hidden;
   pointer-events: none;
   position: absolute;
@@ -346,33 +486,66 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
   border-radius: inherit;
 }
 
-.emotion-106 {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.87);
-  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+.emotion-129 {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  max-width: 100%;
 }
 
-.emotion-107 {
+@media (min-width:600px) {
+  .emotion-129 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-129 {
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 25%;
+  }
+}
+
+.emotion-131 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-108 {
+.emotion-132 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-109 {
+.emotion-133 {
   font-size: 0.9rem;
   color: inherit;
 }
 
-.emotion-110 {
+.emotion-134 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -427,65 +600,65 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
       class="emotion-7"
     >
       <div
-        class="MuiGrid-root page-module MuiGrid-container"
+        class="MuiGrid-root MuiGrid-container page-module emotion-8"
       >
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9 emotion-9"
         >
           <div
-            class="emotion-8"
+            class="emotion-10"
           >
             <div
-              class="emotion-9"
+              class="emotion-11"
             >
               <div
-                class="emotion-9"
+                class="emotion-11"
               >
                 <div
-                  class="emotion-11"
+                  class="emotion-13"
                 >
                   <div />
                   <div
-                    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 MuiGrid-justify-content-xs-center"
+                    class="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 emotion-14"
                     style="width: 100%;"
                   >
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-15"
                     >
                       <div
-                        class="emotion-12"
+                        class="emotion-16"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-13"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-17"
                         >
                           <div
-                            class="emotion-14"
+                            class="emotion-18"
                           >
                             <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-19"
                               style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="emotion-15"
+                                class="emotion-20"
                               >
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 80%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-17"
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-22"
                                   style="height: 100px;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 50%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 40%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 70%;"
                                 />
                               </div>
@@ -495,42 +668,42 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                       </div>
                     </div>
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-15"
                     >
                       <div
-                        class="emotion-12"
+                        class="emotion-16"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-13"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-17"
                         >
                           <div
-                            class="emotion-14"
+                            class="emotion-18"
                           >
                             <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-19"
                               style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="emotion-15"
+                                class="emotion-20"
                               >
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 80%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-17"
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-22"
                                   style="height: 100px;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 50%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 40%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 70%;"
                                 />
                               </div>
@@ -540,42 +713,42 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                       </div>
                     </div>
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-15"
                     >
                       <div
-                        class="emotion-12"
+                        class="emotion-16"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-13"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-17"
                         >
                           <div
-                            class="emotion-14"
+                            class="emotion-18"
                           >
                             <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-19"
                               style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="emotion-15"
+                                class="emotion-20"
                               >
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 80%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-17"
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-22"
                                   style="height: 100px;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 50%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 40%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 70%;"
                                 />
                               </div>
@@ -585,42 +758,42 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                       </div>
                     </div>
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-15"
                     >
                       <div
-                        class="emotion-12"
+                        class="emotion-16"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-13"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-17"
                         >
                           <div
-                            class="emotion-14"
+                            class="emotion-18"
                           >
                             <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-19"
                               style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="emotion-15"
+                                class="emotion-20"
                               >
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 80%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-17"
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-22"
                                   style="height: 100px;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 50%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 40%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 70%;"
                                 />
                               </div>
@@ -630,42 +803,42 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                       </div>
                     </div>
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-15"
                     >
                       <div
-                        class="emotion-12"
+                        class="emotion-16"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-13"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-17"
                         >
                           <div
-                            class="emotion-14"
+                            class="emotion-18"
                           >
                             <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-19"
                               style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="emotion-15"
+                                class="emotion-20"
                               >
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 80%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-17"
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-22"
                                   style="height: 100px;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 50%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 40%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 70%;"
                                 />
                               </div>
@@ -675,42 +848,42 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                       </div>
                     </div>
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-15"
                     >
                       <div
-                        class="emotion-12"
+                        class="emotion-16"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-13"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-17"
                         >
                           <div
-                            class="emotion-14"
+                            class="emotion-18"
                           >
                             <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-19"
                               style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="emotion-15"
+                                class="emotion-20"
                               >
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 80%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-17"
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-22"
                                   style="height: 100px;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 50%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 40%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 70%;"
                                 />
                               </div>
@@ -720,42 +893,42 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                       </div>
                     </div>
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-15"
                     >
                       <div
-                        class="emotion-12"
+                        class="emotion-16"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-13"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-17"
                         >
                           <div
-                            class="emotion-14"
+                            class="emotion-18"
                           >
                             <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-19"
                               style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="emotion-15"
+                                class="emotion-20"
                               >
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 80%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-17"
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-22"
                                   style="height: 100px;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 50%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 40%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 70%;"
                                 />
                               </div>
@@ -765,42 +938,42 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                       </div>
                     </div>
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-15"
                     >
                       <div
-                        class="emotion-12"
+                        class="emotion-16"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-13"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-17"
                         >
                           <div
-                            class="emotion-14"
+                            class="emotion-18"
                           >
                             <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-19"
                               style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="emotion-15"
+                                class="emotion-20"
                               >
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 80%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-17"
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-22"
                                   style="height: 100px;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 50%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 40%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 70%;"
                                 />
                               </div>
@@ -810,42 +983,42 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                       </div>
                     </div>
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-15"
                     >
                       <div
-                        class="emotion-12"
+                        class="emotion-16"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-13"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-17"
                         >
                           <div
-                            class="emotion-14"
+                            class="emotion-18"
                           >
                             <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-19"
                               style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="emotion-15"
+                                class="emotion-20"
                               >
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 80%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-17"
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-22"
                                   style="height: 100px;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 50%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 40%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 70%;"
                                 />
                               </div>
@@ -855,42 +1028,42 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                       </div>
                     </div>
                     <div
-                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6"
+                      class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-15"
                     >
                       <div
-                        class="emotion-12"
+                        class="emotion-16"
                       >
                         <div
-                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-13"
+                          class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-17"
                         >
                           <div
-                            class="emotion-14"
+                            class="emotion-18"
                           >
                             <div
-                              class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+                              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-19"
                               style="background-color: transparent; flex-grow: 1; padding: 0.5rem;"
                             >
                               <div
-                                class="emotion-15"
+                                class="emotion-20"
                               >
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 80%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-17"
+                                  class="MuiSkeleton-root MuiSkeleton-rectangular MuiSkeleton-pulse emotion-22"
                                   style="height: 100px;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 50%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 40%;"
                                 />
                                 <span
-                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-16"
+                                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-pulse emotion-21"
                                   style="width: 70%;"
                                 />
                               </div>
@@ -901,10 +1074,10 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                     </div>
                   </div>
                   <div
-                    class="emotion-102"
+                    class="emotion-125"
                   >
                     <button
-                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-103"
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root Mui-disabled emotion-126"
                       disabled=""
                       tabindex="-1"
                       type="button"
@@ -912,13 +1085,13 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
                       Back
                     </button>
                     <button
-                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-103"
+                      class="MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary MuiButton-sizeMedium MuiButton-outlinedSizeMedium MuiButtonBase-root emotion-126"
                       tabindex="0"
                       type="button"
                     >
                       Next
                       <span
-                        class="MuiTouchRipple-root emotion-105"
+                        class="MuiTouchRipple-root emotion-128"
                       />
                     </button>
                   </div>
@@ -928,87 +1101,87 @@ exports[`STORIES_DIRECTORS compare Page against snapshot 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3 emotion-129"
         >
           <div
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-106"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-19"
             >
               <div
-                class="emotion-107"
+                class="emotion-131"
               >
                 <div
-                  class="emotion-108"
+                  class="emotion-132"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-109"
+                  class="emotion-133"
                 >
                   <a
                     href="/movies/stories/awards"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-110"
+                      class="emotion-134"
                     >
                       Movie Awards
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-109"
+                  class="emotion-133"
                 >
                   <a
                     href="/movies/stories/remakes"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-110"
+                      class="emotion-134"
                     >
                       Movie Remakes
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-109"
+                  class="emotion-133"
                 >
                   <a
                     href="/movies/stories/directors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-110"
+                      class="emotion-134"
                     >
                       Movie Directors
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-109"
+                  class="emotion-133"
                 >
                   <a
                     href="/movies/stories/producers"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-110"
+                      class="emotion-134"
                     >
                       Movie Producers
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-109"
+                  class="emotion-133"
                 >
                   <a
                     href="/movies/stories/actors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-110"
+                      class="emotion-134"
                     >
                       Movie Actors
                     </span>

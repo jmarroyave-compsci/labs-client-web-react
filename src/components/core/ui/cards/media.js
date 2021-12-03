@@ -7,8 +7,8 @@ import CardActions from '@mui/material/CardActions';
 import Typography from '@mui/material/Typography';
 import { isString } from 'core/lib/data'
 import config from 'app/config'
-import Tooltip from "@material-ui/core/Tooltip";
-import { makeStyles } from '@material-ui/styles';
+import Tooltip from "@mui/material/Tooltip";
+import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles(theme => ({
   headerContent: {

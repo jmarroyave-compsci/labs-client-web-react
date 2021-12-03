@@ -4,7 +4,7 @@ import { Frame, Item } from 'style/boxes'
 import { SubTitle } from 'style/detail'
 
 import Field from 'com/field';
-import Typography from '@material-ui/core/Typography';
+import Typography from '@mui/material/Typography';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Value from 'core/ui/value';

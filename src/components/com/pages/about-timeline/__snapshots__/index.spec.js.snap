@@ -16,7 +16,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
   width: 100%;
   height: inherit;
   border-radius: 0;
-  background: linear-gradient(60deg, #1976d2 75%, #000 150%);
+  background: linear-gradient(60deg, #556cd6 75%, #000 150%);
   color: #fff;
 }
 
@@ -78,22 +78,80 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
 }
 
 .emotion-6 {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+@media (min-width:600px) {
+  .emotion-7 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-7 {
+    -webkit-flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 75%;
+  }
+}
+
+.emotion-8 {
   padding: 0rem 0rem 4rem 0rem;
 }
 
-.emotion-9 {
+.emotion-11 {
   padding: 0;
   margin: 1rem 0 0.5rem 0;
   text-transform: lowercase;
   font-size: 2.5rem;
 }
 
-.emotion-10 {
+.emotion-12 {
   margin-top: 1rem;
   margin-bottom: 0rem;
 }
 
-.emotion-17 {
+.emotion-19 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -103,18 +161,18 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
   flex-direction: row;
 }
 
-.emotion-17>:not(style)+:not(style) {
+.emotion-19>:not(style)+:not(style) {
   margin: 0;
   margin-left: 16px;
 }
 
-.emotion-18 {
+.emotion-20 {
   font-size: 0.7rem;
   line-height: 0.75rem;
   margin: 0;
 }
 
-.emotion-19 {
+.emotion-21 {
   position: relative;
   overflow: hidden;
   background-color: #efefef;
@@ -131,7 +189,49 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
   margin: 0;
 }
 
-.emotion-292 {
+.emotion-294 {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+@media (min-width:600px) {
+  .emotion-294 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-294 {
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 25%;
+  }
+}
+
+.emotion-295 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -140,24 +240,24 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-293 {
+.emotion-296 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-294 {
+.emotion-297 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-295 {
+.emotion-298 {
   font-size: 0.9rem;
   color: inherit;
 }
 
-.emotion-296 {
+.emotion-299 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -203,13 +303,13 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
       class="emotion-5"
     >
       <div
-        class="MuiGrid-root page-module MuiGrid-container"
+        class="MuiGrid-root MuiGrid-container page-module emotion-6"
       >
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9 emotion-7"
         >
           <div
-            class="emotion-6"
+            class="emotion-8"
           >
             <div
               class="emotion-0"
@@ -218,12 +318,12 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                 class="emotion-0"
               >
                 <h2
-                  class="emotion-9"
+                  class="emotion-11"
                 >
                   Code in numbers
                 </h2>
                 <h3
-                  class="emotion-10"
+                  class="emotion-12"
                 >
                   LoC
                 </h3>
@@ -701,7 +801,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                   </div>
                 </div>
                 <h3
-                  class="emotion-10"
+                  class="emotion-12"
                 >
                   files
                 </h3>
@@ -1162,7 +1262,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                   </div>
                 </div>
                 <h3
-                  class="emotion-10"
+                  class="emotion-12"
                 >
                   modules LoC
                 </h3>
@@ -1657,7 +1757,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                   </div>
                 </div>
                 <h3
-                  class="emotion-10"
+                  class="emotion-12"
                 >
                   modules files
                 </h3>
@@ -2190,12 +2290,12 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                 class="emotion-0"
               >
                 <h2
-                  class="emotion-9"
+                  class="emotion-11"
                 >
                   Screenshots
                 </h2>
                 <h3
-                  class="emotion-10"
+                  class="emotion-12"
                 >
                   home
                 </h3>
@@ -2203,11 +2303,11 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                   style="width: 100%; overflow-x: auto;"
                 >
                   <div
-                    class="emotion-17"
+                    class="emotion-19"
                   >
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         09-04
                       </span>
@@ -2215,7 +2315,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0346.png"
@@ -2226,7 +2326,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         09-03
                       </span>
@@ -2234,7 +2334,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0322.png"
@@ -2245,7 +2345,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         08-05
                       </span>
@@ -2253,7 +2353,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0272.png"
@@ -2264,7 +2364,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         08-04
                       </span>
@@ -2272,7 +2372,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0259.png"
@@ -2283,7 +2383,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-07
                       </span>
@@ -2291,7 +2391,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0222.png"
@@ -2302,7 +2402,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-05
                       </span>
@@ -2310,7 +2410,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0185.png"
@@ -2321,7 +2421,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-02
                       </span>
@@ -2329,7 +2429,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0148.png"
@@ -2340,7 +2440,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-07
                       </span>
@@ -2348,7 +2448,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0111.png"
@@ -2359,7 +2459,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-05
                       </span>
@@ -2367,7 +2467,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0093.png"
@@ -2378,7 +2478,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-04
                       </span>
@@ -2386,7 +2486,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0060.png"
@@ -2397,7 +2497,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-04
                       </span>
@@ -2405,7 +2505,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0048.png"
@@ -2416,7 +2516,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-01
                       </span>
@@ -2424,7 +2524,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0039.png"
@@ -2435,7 +2535,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-01
                       </span>
@@ -2443,7 +2543,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0032.png"
@@ -2454,7 +2554,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-07
                       </span>
@@ -2462,7 +2562,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0023.png"
@@ -2473,7 +2573,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-07
                       </span>
@@ -2481,7 +2581,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0014.png"
@@ -2492,7 +2592,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-07
                       </span>
@@ -2500,7 +2600,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0008.png"
@@ -2511,7 +2611,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-02
                       </span>
@@ -2519,7 +2619,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0635.png"
@@ -2530,7 +2630,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-02
                       </span>
@@ -2538,7 +2638,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0007.png"
@@ -2549,7 +2649,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -2557,7 +2657,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0625.png"
@@ -2568,7 +2668,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -2576,7 +2676,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0612.png"
@@ -2587,7 +2687,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -2595,7 +2695,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0595.png"
@@ -2606,7 +2706,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -2614,7 +2714,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0592.png"
@@ -2625,7 +2725,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -2633,7 +2733,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0006.png"
@@ -2644,7 +2744,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -2652,7 +2752,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0005.png"
@@ -2663,7 +2763,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-06
                       </span>
@@ -2671,7 +2771,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0582.png"
@@ -2682,7 +2782,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-06
                       </span>
@@ -2690,7 +2790,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0572.png"
@@ -2701,7 +2801,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-06
                       </span>
@@ -2709,7 +2809,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0561.png"
@@ -2720,7 +2820,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-06
                       </span>
@@ -2728,7 +2828,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0004.png"
@@ -2739,7 +2839,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-06
                       </span>
@@ -2747,7 +2847,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0003.png"
@@ -2758,7 +2858,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-06
                       </span>
@@ -2766,7 +2866,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0002.png"
@@ -2777,7 +2877,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -2785,7 +2885,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0549.png"
@@ -2796,7 +2896,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -2804,7 +2904,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0536.png"
@@ -2815,7 +2915,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -2823,7 +2923,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0523.png"
@@ -2834,7 +2934,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -2842,7 +2942,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0510.png"
@@ -2853,7 +2953,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -2861,7 +2961,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0497.png"
@@ -2872,7 +2972,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -2880,7 +2980,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0001.png"
@@ -2891,7 +2991,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -2899,7 +2999,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0000.png"
@@ -2910,7 +3010,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-04
                       </span>
@@ -2918,7 +3018,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0471.png"
@@ -2929,7 +3029,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-04
                       </span>
@@ -2937,7 +3037,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0457.png"
@@ -2948,7 +3048,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-03
                       </span>
@@ -2956,7 +3056,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0452.png"
@@ -2967,7 +3067,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-03
                       </span>
@@ -2975,7 +3075,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0449.png"
@@ -2986,7 +3086,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-03
                       </span>
@@ -2994,7 +3094,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0440.png"
@@ -3005,7 +3105,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-02
                       </span>
@@ -3013,7 +3113,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0436.png"
@@ -3024,7 +3124,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-02
                       </span>
@@ -3032,7 +3132,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0431.png"
@@ -3043,7 +3143,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-02
                       </span>
@@ -3051,7 +3151,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0426.png"
@@ -3062,7 +3162,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-01
                       </span>
@@ -3070,7 +3170,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0418.png"
@@ -3081,7 +3181,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-01
                       </span>
@@ -3089,7 +3189,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0408.png"
@@ -3100,7 +3200,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         03-07
                       </span>
@@ -3108,7 +3208,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0398.png"
@@ -3119,7 +3219,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         03-06
                       </span>
@@ -3127,7 +3227,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0388.png"
@@ -3138,7 +3238,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         03-06
                       </span>
@@ -3146,7 +3246,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0378.png"
@@ -3157,7 +3257,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         03-05
                       </span>
@@ -3165,7 +3265,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0376.png"
@@ -3177,7 +3277,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                   </div>
                 </div>
                 <h3
-                  class="emotion-10"
+                  class="emotion-12"
                 >
                   movies
                 </h3>
@@ -3185,11 +3285,11 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                   style="width: 100%; overflow-x: auto;"
                 >
                   <div
-                    class="emotion-17"
+                    class="emotion-19"
                   >
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         09-04
                       </span>
@@ -3197,7 +3297,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0365.png"
@@ -3208,7 +3308,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         09-03
                       </span>
@@ -3216,7 +3316,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0339.png"
@@ -3227,7 +3327,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         09-02
                       </span>
@@ -3235,7 +3335,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0316.png"
@@ -3246,7 +3346,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         08-06
                       </span>
@@ -3254,7 +3354,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0299.png"
@@ -3265,7 +3365,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         08-05
                       </span>
@@ -3273,7 +3373,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0289.png"
@@ -3284,7 +3384,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         08-04
                       </span>
@@ -3292,7 +3392,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0261.png"
@@ -3303,7 +3403,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         08-03
                       </span>
@@ -3311,7 +3411,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0242.png"
@@ -3322,7 +3422,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-07
                       </span>
@@ -3330,7 +3430,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0224.png"
@@ -3341,7 +3441,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-07
                       </span>
@@ -3349,7 +3449,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0205.png"
@@ -3360,7 +3460,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-05
                       </span>
@@ -3368,7 +3468,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0187.png"
@@ -3379,7 +3479,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-03
                       </span>
@@ -3387,7 +3487,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0168.png"
@@ -3398,7 +3498,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-02
                       </span>
@@ -3406,7 +3506,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0150.png"
@@ -3417,7 +3517,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-01
                       </span>
@@ -3425,7 +3525,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0131.png"
@@ -3436,7 +3536,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-07
                       </span>
@@ -3444,7 +3544,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0113.png"
@@ -3455,7 +3555,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-05
                       </span>
@@ -3463,7 +3563,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0095.png"
@@ -3474,7 +3574,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-05
                       </span>
@@ -3482,7 +3582,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0080.png"
@@ -3493,7 +3593,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-04
                       </span>
@@ -3501,7 +3601,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0062.png"
@@ -3512,7 +3612,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-04
                       </span>
@@ -3520,7 +3620,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0049.png"
@@ -3531,7 +3631,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-01
                       </span>
@@ -3539,7 +3639,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0040.png"
@@ -3550,7 +3650,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-01
                       </span>
@@ -3558,7 +3658,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0033.png"
@@ -3569,7 +3669,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-07
                       </span>
@@ -3577,7 +3677,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0024.png"
@@ -3588,7 +3688,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-07
                       </span>
@@ -3596,7 +3696,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0015.png"
@@ -3607,7 +3707,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-07
                       </span>
@@ -3615,7 +3715,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0009.png"
@@ -3626,7 +3726,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-02
                       </span>
@@ -3634,7 +3734,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0637.png"
@@ -3645,7 +3745,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -3653,7 +3753,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0627.png"
@@ -3664,7 +3764,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -3672,7 +3772,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0614.png"
@@ -3683,7 +3783,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -3691,7 +3791,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0606.png"
@@ -3702,7 +3802,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -3710,7 +3810,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0597.png"
@@ -3721,7 +3821,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-06
                       </span>
@@ -3729,7 +3829,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0584.png"
@@ -3740,7 +3840,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-06
                       </span>
@@ -3748,7 +3848,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0574.png"
@@ -3759,7 +3859,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-06
                       </span>
@@ -3767,7 +3867,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0563.png"
@@ -3778,7 +3878,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -3786,7 +3886,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0551.png"
@@ -3797,7 +3897,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -3805,7 +3905,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0538.png"
@@ -3816,7 +3916,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -3824,7 +3924,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0525.png"
@@ -3835,7 +3935,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -3843,7 +3943,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0512.png"
@@ -3854,7 +3954,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -3862,7 +3962,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0499.png"
@@ -3873,7 +3973,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-04
                       </span>
@@ -3881,7 +3981,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0486.png"
@@ -3892,7 +3992,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-04
                       </span>
@@ -3900,7 +4000,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0473.png"
@@ -3911,7 +4011,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-04
                       </span>
@@ -3919,7 +4019,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0459.png"
@@ -3930,7 +4030,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-03
                       </span>
@@ -3938,7 +4038,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0453.png"
@@ -3949,7 +4049,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-03
                       </span>
@@ -3957,7 +4057,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0451.png"
@@ -3968,7 +4068,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-03
                       </span>
@@ -3976,7 +4076,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0442.png"
@@ -3987,7 +4087,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-02
                       </span>
@@ -3995,7 +4095,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0432.png"
@@ -4006,7 +4106,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-02
                       </span>
@@ -4014,7 +4114,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0427.png"
@@ -4025,7 +4125,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-01
                       </span>
@@ -4033,7 +4133,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0420.png"
@@ -4044,7 +4144,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-01
                       </span>
@@ -4052,7 +4152,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0410.png"
@@ -4063,7 +4163,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         03-07
                       </span>
@@ -4071,7 +4171,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0400.png"
@@ -4082,7 +4182,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         03-06
                       </span>
@@ -4090,7 +4190,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0390.png"
@@ -4101,7 +4201,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         03-06
                       </span>
@@ -4109,7 +4209,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0380.png"
@@ -4121,7 +4221,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                   </div>
                 </div>
                 <h3
-                  class="emotion-10"
+                  class="emotion-12"
                 >
                   person
                 </h3>
@@ -4129,11 +4229,11 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                   style="width: 100%; overflow-x: auto;"
                 >
                   <div
-                    class="emotion-17"
+                    class="emotion-19"
                   >
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         08-04
                       </span>
@@ -4141,7 +4241,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0263.png"
@@ -4152,7 +4252,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         08-03
                       </span>
@@ -4160,7 +4260,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0244.png"
@@ -4171,7 +4271,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-07
                       </span>
@@ -4179,7 +4279,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0226.png"
@@ -4190,7 +4290,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-07
                       </span>
@@ -4198,7 +4298,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0207.png"
@@ -4209,7 +4309,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-05
                       </span>
@@ -4217,7 +4317,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0189.png"
@@ -4228,7 +4328,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-03
                       </span>
@@ -4236,7 +4336,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0170.png"
@@ -4247,7 +4347,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-02
                       </span>
@@ -4255,7 +4355,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0152.png"
@@ -4266,7 +4366,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         07-01
                       </span>
@@ -4274,7 +4374,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0133.png"
@@ -4285,7 +4385,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-07
                       </span>
@@ -4293,7 +4393,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0115.png"
@@ -4304,7 +4404,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-05
                       </span>
@@ -4312,7 +4412,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0097.png"
@@ -4323,7 +4423,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-05
                       </span>
@@ -4331,7 +4431,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0082.png"
@@ -4342,7 +4442,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         06-04
                       </span>
@@ -4350,7 +4450,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0064.png"
@@ -4361,7 +4461,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-02
                       </span>
@@ -4369,7 +4469,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0639.png"
@@ -4380,7 +4480,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -4388,7 +4488,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0629.png"
@@ -4399,7 +4499,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -4407,7 +4507,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0616.png"
@@ -4418,7 +4518,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -4426,7 +4526,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0608.png"
@@ -4437,7 +4537,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         05-01
                       </span>
@@ -4445,7 +4545,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0599.png"
@@ -4456,7 +4556,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-06
                       </span>
@@ -4464,7 +4564,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0586.png"
@@ -4475,7 +4575,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-06
                       </span>
@@ -4483,7 +4583,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0565.png"
@@ -4494,7 +4594,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -4502,7 +4602,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0553.png"
@@ -4513,7 +4613,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -4521,7 +4621,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0540.png"
@@ -4532,7 +4632,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -4540,7 +4640,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0527.png"
@@ -4551,7 +4651,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -4559,7 +4659,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0514.png"
@@ -4570,7 +4670,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-05
                       </span>
@@ -4578,7 +4678,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0501.png"
@@ -4589,7 +4689,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-04
                       </span>
@@ -4597,7 +4697,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0488.png"
@@ -4608,7 +4708,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-04
                       </span>
@@ -4616,7 +4716,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0475.png"
@@ -4627,7 +4727,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-04
                       </span>
@@ -4635,7 +4735,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0461.png"
@@ -4646,7 +4746,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-03
                       </span>
@@ -4654,7 +4754,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0444.png"
@@ -4665,7 +4765,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-02
                       </span>
@@ -4673,7 +4773,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0434.png"
@@ -4684,7 +4784,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-02
                       </span>
@@ -4692,7 +4792,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0429.png"
@@ -4703,7 +4803,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-01
                       </span>
@@ -4711,7 +4811,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0422.png"
@@ -4722,7 +4822,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         04-01
                       </span>
@@ -4730,7 +4830,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0412.png"
@@ -4741,7 +4841,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         03-07
                       </span>
@@ -4749,7 +4849,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0402.png"
@@ -4760,7 +4860,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         03-06
                       </span>
@@ -4768,7 +4868,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0392.png"
@@ -4779,7 +4879,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                     </div>
                     <div>
                       <span
-                        class="emotion-18"
+                        class="emotion-20"
                       >
                         03-06
                       </span>
@@ -4787,7 +4887,7 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
                         style="height: 200px; overflow: hidden;"
                       >
                         <div
-                          class="emotion-19"
+                          class="emotion-21"
                         >
                           <img
                             src="/labs-client-web-react/app/img/screenshots/0382.png"
@@ -4803,87 +4903,87 @@ exports[`ABOUT-TIMELINE compare Page against snapshot 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3 emotion-294"
         >
           <div
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-292"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-295"
             >
               <div
-                class="emotion-293"
+                class="emotion-296"
               >
                 <div
-                  class="emotion-294"
+                  class="emotion-297"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-295"
+                  class="emotion-298"
                 >
                   <a
                     href="/movies/stories/awards"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-296"
+                      class="emotion-299"
                     >
                       Movie Awards
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-295"
+                  class="emotion-298"
                 >
                   <a
                     href="/movies/stories/remakes"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-296"
+                      class="emotion-299"
                     >
                       Movie Remakes
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-295"
+                  class="emotion-298"
                 >
                   <a
                     href="/movies/stories/directors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-296"
+                      class="emotion-299"
                     >
                       Movie Directors
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-295"
+                  class="emotion-298"
                 >
                   <a
                     href="/movies/stories/producers"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-296"
+                      class="emotion-299"
                     >
                       Movie Producers
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-295"
+                  class="emotion-298"
                 >
                   <a
                     href="/movies/stories/actors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-296"
+                      class="emotion-299"
                     >
                       Movie Actors
                     </span>
@@ -4969,7 +5069,7 @@ exports[`ABOUT-TIMELINE compare against snapshot 1`] = `
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   color: #fff;
-  background-color: #1976d2;
+  background-color: #556cd6;
   box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
 }
 
@@ -4992,13 +5092,13 @@ exports[`ABOUT-TIMELINE compare against snapshot 1`] = `
 .emotion-4:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #1565c0;
+  background-color: rgb(59, 75, 149);
   box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
 }
 
 @media (hover: none) {
   .emotion-4:hover {
-    background-color: #1976d2;
+    background-color: #556cd6;
   }
 }
 

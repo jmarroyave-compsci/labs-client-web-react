@@ -1,9 +1,9 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import AppBar from '@material-ui/core/AppBar';
-import { MuiThemeProvider } from '@material-ui/core/styles';
-import { createTheme } from '@material-ui/core/styles';
+import { withStyles } from "@mui/styles";
+import CssBaseline from '@mui/material/CssBaseline';
+import AppBar from '@mui/material/AppBar';
+import { MuiThemeProvider } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import ErrorBoundry from '../components/error';
 import Drawer from './drawer';
 import Toolbar from './toolbar';

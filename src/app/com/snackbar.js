@@ -2,11 +2,11 @@ import React, { useReducer } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
 import { showMessage } from 'app' 
 
-import IconButton from '@material-ui/core/IconButton';
-import Modal from '@material-ui/core/Modal';
-import Button from '@material-ui/core/Button';
+import IconButton from '@mui/material/IconButton';
+import Modal from '@mui/material/Modal';
+import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
-import Snackbar from '@material-ui/core/Snackbar';
+import Snackbar from '@mui/material/Snackbar';
 
 const _Snackbar = ( props ) => {
   const dispatch = useDispatch();

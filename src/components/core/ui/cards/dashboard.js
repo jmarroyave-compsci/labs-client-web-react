@@ -7,9 +7,9 @@ import {
   CardIcon,
   CardFooter
 } from "./creative-tim";
-import Icon from "@material-ui/core/Icon";
+import Icon from "@mui/material/Icon";
 
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@mui/styles";
 
 import styles from "./dashboardStyle.js";
 const useStyles = makeStyles(styles);

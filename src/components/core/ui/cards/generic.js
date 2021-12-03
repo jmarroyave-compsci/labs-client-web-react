@@ -1,7 +1,7 @@
 import React from 'react';
-import MDCard from '@material-ui/core/Card';
-import MDCardContent from '@material-ui/core/CardContent';
-import MDCardHeader from '@material-ui/core/CardHeader';
+import MDCard from '@mui/material/Card';
+import MDCardContent from '@mui/material/CardContent';
+import MDCardHeader from '@mui/material/CardHeader';
 
 class List extends React.Component {
   render() {

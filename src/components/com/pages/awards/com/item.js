@@ -1,9 +1,9 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
 import Card from 'core/ui/cards/media';
-import MDCard from '@material-ui/core/Card';
-import MDCardContent from '@material-ui/core/CardContent';
-import MDCardHeader from '@material-ui/core/CardHeader';
+import MDCard from '@mui/material/Card';
+import MDCardContent from '@mui/material/CardContent';
+import MDCardHeader from '@mui/material/CardHeader';
 import LinkEntity from 'com/entities/entity/link'
 import LinkFestival from 'com/entities/movie-festival/link'
 import LinkAward from 'com/entities/award/link'

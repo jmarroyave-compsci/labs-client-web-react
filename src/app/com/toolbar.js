@@ -1,17 +1,17 @@
 import React, { useContext } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { styled } from '@material-ui/core/styles';
+import { styled } from '@mui/material/styles';
 
-import AppBar from '@material-ui/core/AppBar';
-import MuiToolbar from '@material-ui/core/Toolbar';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
-import Typography from '@material-ui/core/Typography';
-import NotificationsIcon from '@material-ui/icons/Notifications';
-import LinearProgress from '@material-ui/core/LinearProgress';
+import AppBar from '@mui/material/AppBar';
+import MuiToolbar from '@mui/material/Toolbar';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import Typography from '@mui/material/Typography';
+import NotificationsIcon from '@mui/icons-material/Notifications';
+import LinearProgress from '@mui/material/LinearProgress';
 import Link from 'core/ui/link';
 import Search from './search';
-import Box from '@material-ui/core/Box';
+import Box from '@mui/material/Box';
 import User from './user'
 
 

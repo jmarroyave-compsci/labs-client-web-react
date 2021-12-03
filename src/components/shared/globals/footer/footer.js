@@ -6,7 +6,7 @@ import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import CoreProxy from 'core/ui/layout/proxy';
 import Box from '@mui/material/Box';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@mui/material/styles';
 
 const Footer = ( {socialNetworksLinks, footerLinks, version} ) => {
 	const theme = useTheme();

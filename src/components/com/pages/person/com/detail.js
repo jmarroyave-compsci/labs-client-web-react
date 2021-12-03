@@ -41,9 +41,9 @@ function Dashboard( props ){
       <Movies type="produced" data={data.produced}/>
       <Movies type="wrote" data={data.wrote}/>
 
-      <People type="directed by" data={data.directedBy} story="/movies/stories/directors"/>
-      <People type="directed to" data={data.directedTo} story="/movies/stories/actors"/>
-      <People type="acted with" data={data.actedWith} story="/movies/stories/actors"/>      
+      <People type="directed by" data={data.directedBy}/>
+      <People type="directed to" data={data.directedTo}/>
+      <People type="acted with" data={data.actedWith}/>      
 
     </Stack>
   )

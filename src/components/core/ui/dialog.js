@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Dialog from '@material-ui/core/Dialog';
+import { withStyles } from "@mui/styles";
+import Dialog from '@mui/material/Dialog';
 import UIAppBar from 'core/ui/appbar.js';
 import UIToolBar from 'core/ui/toolbar.js';
 import UIButton from 'core/ui/button.js';

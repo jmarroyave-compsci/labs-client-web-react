@@ -10,7 +10,7 @@ import {
 } from "core/ui/theme";
 
 import classNames from "classnames";
-import { withStyles } from "@material-ui/core/styles";
+import { withStyles } from "@mui/styles";
 
 const styles = {
   grid: {

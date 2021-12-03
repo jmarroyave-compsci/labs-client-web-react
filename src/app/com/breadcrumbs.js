@@ -1,9 +1,9 @@
 import React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import { useSelector } from 'react-redux'
-import _Breadcrumbs from '@material-ui/core/Breadcrumbs';
+import _Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from 'core/ui/link';
-import Typography from '@material-ui/core/Typography';
+import Typography from '@mui/material/Typography';
 import { isArray } from 'core/lib/data'
 
 export default function Breadcrumbs( props ) {

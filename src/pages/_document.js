@@ -2,7 +2,7 @@ import React, { useEffect} from 'react';
 // Modules
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 // MUI Core
-import { ServerStyleSheets } from '@material-ui/core/styles';
+import { ServerStyleSheets } from '@mui/styles';
 import config from 'app/config'
 
 export default class MyDocument extends Document {

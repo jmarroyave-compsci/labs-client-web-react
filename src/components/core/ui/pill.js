@@ -1,6 +1,6 @@
 import React from 'react';
 import { styled } from '@mui/material/styles';
-import MDChip from '@material-ui/core/Chip';
+import MDChip from '@mui/material/Chip';
 
 export default function Pill({text, color, variant, onClick}) {
 	

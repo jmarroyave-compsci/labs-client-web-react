@@ -6,7 +6,7 @@ import GridItem from 'core/ui/layout/grid_item';
 import Date from "core/ui/date";
 import Pill from 'core/ui/pill'
 import Media from 'com/media';
-import Icon from '@material-ui/core/Icon';
+import Icon from '@mui/material/Icon';
 import Title from "com/title";
 import Stack from 'com/ui/stack';
 import Categories from "com/categories";

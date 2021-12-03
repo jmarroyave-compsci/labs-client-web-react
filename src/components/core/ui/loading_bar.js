@@ -1,6 +1,6 @@
 import React from 'react';
 import UIComponent from 'core/ui/ui_component.js';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles } from "@mui/styles";
 
 const styles = [{
 }];

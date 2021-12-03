@@ -2,7 +2,7 @@ import React from 'react'
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Image from 'core/ui/image';
-import Icon from '@material-ui/core/Icon';
+import Icon from '@mui/material/Icon';
 import { Frame } from 'style/boxes'
 
 function Media( props ){

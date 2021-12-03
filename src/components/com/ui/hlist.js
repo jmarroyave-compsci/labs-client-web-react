@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { styled } from '@mui/material/styles';
 import Stack from '@mui/material/Stack';
 import Paging from 'com/ui/paging';
-import Paper from '@material-ui/core/Paper';
+import Paper from '@mui/material/Paper';
 import Skeleton from '@mui/material/Skeleton';
 
 const Frame = styled('div')(() => ({

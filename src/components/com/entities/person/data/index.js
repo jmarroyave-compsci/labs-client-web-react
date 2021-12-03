@@ -114,13 +114,22 @@ query person($id:String!) {
       job
     }    
     directedTo{
-      ...PersonTinyFragment
+      p{
+        ...PersonTinyFragment
+      }
+      n
     }
     directedBy{
-      ...PersonTinyFragment
+      p{
+        ...PersonTinyFragment
+      }
+      n
     }
     actedWith{
-      ...PersonTinyFragment
+      p{
+        ...PersonTinyFragment
+      }
+      n
     }    
   }
 }

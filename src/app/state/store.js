@@ -3,10 +3,8 @@ import { setupListeners } from '@reduxjs/toolkit/query'
 import * as rtk  from '@reduxjs/toolkit'
 
 import AppReducer from './app-model'
-import { api as APILocal } from 'app/services/api-local'
 
 const staticReducers = {
-  [APILocal.reducerPath]: APILocal.reducer,
   app: AppReducer,
 }
 
@@ -82,7 +80,7 @@ function configureStore(initialState) {
 
   const store = rtk.configureStore({
     reducer: reducerManager.reduce, //reducerManager.getReducerMap(), 
-    middleware: (getDefaultMiddleware) => customizedMiddleware(getDefaultMiddleware).concat(APILocal.middleware),
+    middleware: (getDefaultMiddleware) => customizedMiddleware(getDefaultMiddleware),
     preloadedState: initialState,
     devTools: true,
   })

@@ -1,7 +1,7 @@
 import React from 'react'
 import Card from 'core/ui/cards/media';
 import Link from 'com/entities/movie-festival/link'
-import Typography from '@material-ui/core/Typography';
+import Typography from '@mui/material/Typography';
 import { ItemFrame, ItemContent, Title, Small } from 'style/item'
 import Field from 'com/field'
 

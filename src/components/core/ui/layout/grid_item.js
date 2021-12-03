@@ -1,5 +1,5 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
+import Grid from '@mui/material/Grid';
 
 const GridItem = (props) =>{
 	var { visible, className, xs, sm, md, style, fill, flex, center } = props;

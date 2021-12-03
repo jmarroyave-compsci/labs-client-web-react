@@ -1,6 +1,26 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
 import Paper from 'core/ui/paper';
+import _Badge from '@mui/material/Badge';
+import _Tooltip from "@mui/material/Tooltip";
+
+export const Tooltip = ( { children, content } ) => {
+  if(!content || content == null || content === "?") return children;
+  return (
+    <_Tooltip title={content} placement="bottom-start">
+      {children}
+    </_Tooltip>  
+  )
+}
+
+export const Badge = ( { children, content } ) => {
+  if(!content || content == null || content == 0) return children;
+  return (
+    <_Badge badgeContent={content} color="primary">
+      {children}
+    </_Badge>
+  )
+}
 
 const _ItemFrame = styled('div')(({theme, width, height}) => ({
   backgroundColor: theme.palette.action.selected,

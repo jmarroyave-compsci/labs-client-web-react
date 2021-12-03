@@ -16,7 +16,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   width: 100%;
   height: inherit;
   border-radius: 0;
-  background: linear-gradient(60deg, #1976d2 75%, #000 150%);
+  background: linear-gradient(60deg, #556cd6 75%, #000 150%);
   color: #fff;
 }
 
@@ -78,23 +78,81 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
 }
 
 .emotion-6 {
-  padding: 0rem 0rem 4rem 0rem;
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-7 {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+@media (min-width:600px) {
+  .emotion-7 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-7 {
+    -webkit-flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 75%;
+  }
 }
 
 .emotion-8 {
+  padding: 0rem 0rem 4rem 0rem;
+}
+
+.emotion-10 {
   margin: 0 0 2rem 0;
   padding: 0;
   width: 100%;
 }
 
-.emotion-11 {
+.emotion-13 {
   display: table;
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-.emotion-11 caption {
+.emotion-13 caption {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
@@ -106,50 +164,50 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   caption-side: bottom;
 }
 
-.emotion-12 {
+.emotion-14 {
   display: table-header-group;
 }
 
-.emotion-13 {
+.emotion-15 {
   color: inherit;
   display: table-row;
   vertical-align: middle;
   outline: 0;
 }
 
-.emotion-13.MuiTableRow-hover:hover {
+.emotion-15.MuiTableRow-hover:hover {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-.emotion-13.Mui-selected {
-  background-color: rgba(25, 118, 210, 0.08);
+.emotion-15.Mui-selected {
+  background-color: rgba(85, 108, 214, 0.08);
 }
 
-.emotion-13.Mui-selected:hover {
-  background-color: rgba(25, 118, 210, 0.12);
+.emotion-15.Mui-selected:hover {
+  background-color: rgba(85, 108, 214, 0.12);
 }
 
-.emotion-13:nth-of-type(odd) {
-  background-color: #42a5f5;
+.emotion-15:nth-of-type(odd) {
+  background-color: rgb(119, 137, 222);
   color: #fff;
 }
 
-.emotion-13:last-child td,
-.emotion-13:last-child th {
+.emotion-15:last-child td,
+.emotion-15:last-child th {
   border: 0;
 }
 
-.emotion-13:nth-of-type(odd):hover {
-  background-color: #42a5f5;
+.emotion-15:nth-of-type(odd):hover {
+  background-color: rgb(119, 137, 222);
   color: #fff;
 }
 
-.emotion-13:hover {
+.emotion-15:hover {
   background-color: #fff;
   color: #fff;
 }
 
-.emotion-14 {
+.emotion-16 {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
@@ -163,20 +221,20 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   color: rgba(0, 0, 0, 0.87);
 }
 
-.emotion-14.MuiTableCell-head {
+.emotion-16.MuiTableCell-head {
   background-color: #000;
   color: #fff;
 }
 
-.emotion-14.MuiTableCell-body {
+.emotion-16.MuiTableCell-body {
   font-size: 0.75rem;
 }
 
-.emotion-21 {
+.emotion-23 {
   display: table-row-group;
 }
 
-.emotion-23 {
+.emotion-25 {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
@@ -190,16 +248,16 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   color: rgba(0, 0, 0, 0.87);
 }
 
-.emotion-23.MuiTableCell-head {
+.emotion-25.MuiTableCell-head {
   background-color: #000;
   color: #fff;
 }
 
-.emotion-23.MuiTableCell-body {
+.emotion-25.MuiTableCell-body {
   font-size: 0.75rem;
 }
 
-.emotion-49 {
+.emotion-51 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -209,12 +267,54 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   flex-direction: row;
 }
 
-.emotion-49>:not(style)+:not(style) {
+.emotion-51>:not(style)+:not(style) {
   margin: 0;
   margin-left: 16px;
 }
 
-.emotion-50 {
+.emotion-52 {
+  box-sizing: border-box;
+  margin: 0;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex-grow: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  max-width: 100%;
+}
+
+@media (min-width:600px) {
+  .emotion-52 {
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 100%;
+  }
+}
+
+@media (min-width:900px) {
+  .emotion-52 {
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 25%;
+  }
+}
+
+.emotion-53 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -223,24 +323,24 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-51 {
+.emotion-54 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-52 {
+.emotion-55 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-53 {
+.emotion-56 {
   font-size: 0.9rem;
   color: inherit;
 }
 
-.emotion-54 {
+.emotion-57 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -286,19 +386,19 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
       class="emotion-5"
     >
       <div
-        class="MuiGrid-root page-module MuiGrid-container"
+        class="MuiGrid-root MuiGrid-container page-module emotion-6"
       >
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9 emotion-7"
         >
           <div
-            class="emotion-6"
+            class="emotion-8"
           >
             <div
               class="emotion-0"
             >
               <div
-                class="emotion-8"
+                class="emotion-10"
               >
                 <div
                   class="emotion-0"
@@ -312,52 +412,52 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                     class="makeStyles-tableResponsive-11"
                   >
                     <table
-                      class="MuiTable-root makeStyles-table-8 emotion-11"
+                      class="MuiTable-root makeStyles-table-8 emotion-13"
                     >
                       <thead
-                        class="MuiTableHead-root makeStyles-grayTableHeader-7 emotion-12"
+                        class="MuiTableHead-root makeStyles-grayTableHeader-7 emotion-14"
                       >
                         <tr
-                          class="MuiTableRow-root MuiTableRow-head makeStyles-tableHeadRow-12 emotion-13"
+                          class="MuiTableRow-root MuiTableRow-head makeStyles-tableHeadRow-12 emotion-15"
                         >
                           <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-14"
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
                             scope="col"
                           >
                             area
                           </th>
                           <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-14"
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
                             scope="col"
                           >
                             total files
                           </th>
                           <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-14"
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
                             scope="col"
                           >
                             LoC
                           </th>
                           <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-14"
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
                             scope="col"
                           >
                             node_modules
                           </th>
                           <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-14"
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
                             scope="col"
                           >
                             LoC
                           </th>
                           <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-14"
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
                             scope="col"
                           >
                             files
                           </th>
                           <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-14"
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
                             scope="col"
                           >
                             LoC
@@ -365,124 +465,124 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                         </tr>
                       </thead>
                       <tbody
-                        class="MuiTableBody-root emotion-21"
+                        class="MuiTableBody-root emotion-23"
                       >
                         <tr
-                          class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-13"
+                          class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-15"
                           interactive="0"
                         >
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             scripts
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             11,593
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             4,573,499
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             11,490
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             4,568,268
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             103
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             5,231
                           </td>
                         </tr>
                         <tr
-                          class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-13"
+                          class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-15"
                           interactive="0"
                         >
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             client
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             155,266
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             5,886,715
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             154,561
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             5,799,630
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             705
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             87,085
                           </td>
                         </tr>
                         <tr
-                          class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-13"
+                          class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-15"
                           interactive="0"
                         >
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             server
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             10,883
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             1,852,802
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             10,729
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             1,841,724
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             154
                           </td>
                           <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-23"
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
                           >
                             11,078
                           </td>
@@ -507,7 +607,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                     number of commits
                   </div>
                   <div
-                    class="emotion-49"
+                    class="emotion-51"
                   >
                     <span>
                       <div
@@ -562,87 +662,87 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3 emotion-52"
         >
           <div
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-50"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-53"
             >
               <div
-                class="emotion-51"
+                class="emotion-54"
               >
                 <div
-                  class="emotion-52"
+                  class="emotion-55"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-53"
+                  class="emotion-56"
                 >
                   <a
                     href="/movies/stories/awards"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-54"
+                      class="emotion-57"
                     >
                       Movie Awards
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-53"
+                  class="emotion-56"
                 >
                   <a
                     href="/movies/stories/remakes"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-54"
+                      class="emotion-57"
                     >
                       Movie Remakes
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-53"
+                  class="emotion-56"
                 >
                   <a
                     href="/movies/stories/directors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-54"
+                      class="emotion-57"
                     >
                       Movie Directors
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-53"
+                  class="emotion-56"
                 >
                   <a
                     href="/movies/stories/producers"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-54"
+                      class="emotion-57"
                     >
                       Movie Producers
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-53"
+                  class="emotion-56"
                 >
                   <a
                     href="/movies/stories/actors"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-54"
+                      class="emotion-57"
                     >
                       Movie Actors
                     </span>
@@ -728,7 +828,7 @@ exports[`ABOUT-TECH compare against snapshot 1`] = `
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   color: #fff;
-  background-color: #1976d2;
+  background-color: #556cd6;
   box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
 }
 
@@ -751,13 +851,13 @@ exports[`ABOUT-TECH compare against snapshot 1`] = `
 .emotion-4:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: #1565c0;
+  background-color: rgb(59, 75, 149);
   box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12);
 }
 
 @media (hover: none) {
   .emotion-4:hover {
-    background-color: #1976d2;
+    background-color: #556cd6;
   }
 }
 

@@ -3,6 +3,7 @@ import { Frame } from 'style/boxes'
 import { SubTitle, Small } from 'style/detail'
 import HList from 'com/ui/hlist';
 import Item from 'com/entities/movie/item'
+import { Badge } from 'style/item'
 
 function Movies( props ){
   const { data, loading, type, filter } = props;
@@ -12,7 +13,7 @@ function Movies( props ){
   var movies = ( props.tiny ) ? data.slice(0,3) : data;
   movies = (filter) ? movies.filter(filter) : movies;
 
-  var subtitle = <SubTitle>{type}<Small> [{movies.length}]</Small></SubTitle>
+  var subtitle = (type) ? <SubTitle><Badge content={data.length} >{type}</Badge></SubTitle> : ""
 
   return (
     <Frame>

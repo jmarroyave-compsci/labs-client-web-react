@@ -1,6 +1,6 @@
 import React from 'react';
 import theme from 'core/ui/theme';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@mui/material/styles';
 
 function AppOffline( props ) {
   const { error } = props;

@@ -2,7 +2,7 @@ import React from 'react'
 import Card from 'core/ui/cards/media';
 import LinkMovie from 'com/entities/movie/link'
 import Awards from 'com/awards'
-import Typography from '@material-ui/core/Typography';
+import Typography from '@mui/material/Typography';
 import { date } from 'core/lib/format'
 import Field from 'com/field'
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import ComButton from '@material-ui/core/Button';
-import ComIconButton from '@material-ui/core/IconButton';
+import ComButton from '@mui/material/Button';
+import ComIconButton from '@mui/material/IconButton';
 import Icon from './icon';
 
 class Button extends React.Component { 

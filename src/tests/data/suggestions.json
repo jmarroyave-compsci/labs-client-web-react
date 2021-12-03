@@ -3,11 +3,11 @@
     "data": {
       "suggestions": {
         "suggestions": [
-          "test it 2",
+          "testen",
+          "testament",
+          "test film 2",
           "test it!",
-          "test pressing podcast",
-          "test drive 6",
-          "test drive: ferrari racing legends"
+          "test pressing podcast"
         ],
         "__typename": "SearchSuggestions"
       }

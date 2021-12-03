@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@mui/material/styles';
 
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -8,15 +8,15 @@ import CssBaseline from '@mui/material/CssBaseline';
 import { initializeApp } from 'app' 
 import config from 'app/config'
 
-import AppBar from '@material-ui/core/AppBar';
+import AppBar from '@mui/material/AppBar';
 import ErrorBoundry from 'core/ui/error-boundry';
 import Drawer from './drawer';
 import Toolbar from './toolbar';
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/Grid';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 import Breadcrumbs from './breadcrumbs';
-import Typography from '@material-ui/core/Typography';
+import Typography from '@mui/material/Typography';
 import Footer from './footer'
 import Head from 'next/head';
 import Snackbar from './snackbar';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme } from '@mui/material/styles';
 
 import { getTheme } from 'app/config/theme';
 

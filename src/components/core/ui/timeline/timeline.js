@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import Icon from "@material-ui/core/Icon";
-import { useTheme } from '@material-ui/core/styles';
+import Icon from "@mui/material/Icon";
+import { useTheme } from '@mui/material/styles';
 
 export const Timeline = function( { data } ) {  
   return (

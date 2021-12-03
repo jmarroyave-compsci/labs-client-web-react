@@ -1,27 +1,27 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { styled } from '@material-ui/core/styles';
+import { styled } from '@mui/material/styles';
 import classNames from 'classnames';
 import Link from 'core/ui/link';
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
-import MuiDrawer from '@material-ui/core/Drawer';
-import MuiToolbar from '@material-ui/core/Toolbar';
-import Badge from '@material-ui/core/Badge';
-import Icon from "@material-ui/core/Icon";
-import IconButton from '@material-ui/core/IconButton';
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import PeopleIcon from '@material-ui/icons/People';
-import List from '@material-ui/core/List';
-import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import ListSubheader from '@material-ui/core/ListSubheader';
+import MuiDrawer from '@mui/material/Drawer';
+import MuiToolbar from '@mui/material/Toolbar';
+import Badge from '@mui/material/Badge';
+import Icon from "@mui/material/Icon";
+import IconButton from '@mui/material/IconButton';
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import PeopleIcon from '@mui/icons-material/People';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import ListSubheader from '@mui/material/ListSubheader';
 import Box from '@mui/material/Box';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
-import { useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@mui/material/styles';
 
 import { toggleDrawer, toggleThemeMode } from 'app';
 

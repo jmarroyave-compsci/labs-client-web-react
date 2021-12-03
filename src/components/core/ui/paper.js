@@ -1,6 +1,6 @@
 import React from 'react';
 
-import MDPaper from '@material-ui/core/Paper';
+import MDPaper from '@mui/material/Paper';
 
 
 class Paper extends React.Component {
