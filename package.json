@@ -1,6 +1,6 @@
 {
   "name": "labs-web-client-react",
-  "version": "2.2.5",
+  "version": "2.2.6",
   "private": true,
   "scripts": {
     "dev": "cross-env BABEL_ENV=dev next dev",

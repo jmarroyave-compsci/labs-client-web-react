@@ -44,7 +44,7 @@ export default function Layout( props ){
     if(!props.fetch) return;
 
     if(props.data){
-      props.fetch( {...params} )
+      props.fetch( { ...state.params, ...params} )
     } else{
       dispatch( props.fetch( {...params} ) )
     }
@@ -190,10 +190,7 @@ function ListLayout( props ){
       loading={ loading }
       page={ state?.params.page ?? null }
       data={ state?.data ?? null }
-      onPageChange={ ( page ) => {
-          fetch( { ...state.params, page: page } ) 
-        }
-      }
+      onPageChange={ ( page ) => fetch( { page: page } ) }
       item={ item }
     />     
   )

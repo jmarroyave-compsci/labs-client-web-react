@@ -24,7 +24,7 @@ function Content(props){
             item={item}
             page={props.params.page}
             params={params}
-            onPageChange={ ( page ) => fetch( params ) } 
+            onPageChange={ ( page ) => fetch( { ...params, page: page } ) } 
         />
       </Stack>
     )
