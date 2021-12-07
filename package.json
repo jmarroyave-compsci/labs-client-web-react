@@ -1,6 +1,6 @@
 {
   "name": "labs-web-client-react",
-  "version": "2.3.1",
+  "version": "2.3.2",
   "private": true,
   "scripts": {
     "dev": "cross-env BABEL_ENV=dev next dev",
@@ -34,6 +34,7 @@
     "react": "17.0.2",
     "react-d3-treemap": "^1.0.29",
     "react-dom": "17.0.2",
+    "react-fast-marquee": "^1.2.1",
     "react-faux-dom": "^4.5.0",
     "react-ga": "^3.3.0",
     "react-lazyload": "^3.2.0",
