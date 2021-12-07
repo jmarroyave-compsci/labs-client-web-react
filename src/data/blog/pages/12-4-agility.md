@@ -5,7 +5,7 @@ day:	4
 published: true
 ---
 
-- From a youtube video, sorry i didn't bookmarked it
+- From a youtube video, sorry i didn't bookmark it
 	- Agility
 		- the agile context
 			- where you are?

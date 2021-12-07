@@ -6,6 +6,7 @@
 	"pluginsFile": "src/tests/cypress/plugins/index.js",
 	"screenshotsFolder": "src/tests/cypress/screenshots",
 	"supportFile": "src/tests/cypress/support",
+	"video": false,
 	"videosFolder": "src/tests/cypress/videos",
 	"testFiles": "**/*.*",
 	"reporter": "mochawesome",
