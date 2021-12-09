@@ -43,10 +43,14 @@ export default function Layout( props ){
   const fetch = ( params ) => {
     if(!props.fetch) return;
 
+    if(state){
+      params = { ...state.params, ...params}  
+    }
+    
     if(props.data){
-      props.fetch( { ...state.params, ...params} )
+      props.fetch( params )
     } else{
-      dispatch( props.fetch( {...params} ) )
+      dispatch( props.fetch( params ) )
     }
   }
 
@@ -167,7 +171,8 @@ function BannerLayout( props ){
   const url = config.page?.url;
   
   return (
-    <Banner 
+    <Banner
+      renderer={(config.banner.renderer) ? config.banner.renderer : "carousel"}
       showData={showDataInBanner}
       loading={ props.loading }
       title={title}

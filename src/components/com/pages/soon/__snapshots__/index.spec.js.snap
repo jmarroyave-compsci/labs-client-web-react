@@ -228,13 +228,13 @@ exports[`Search Page compare against snapshot 1`] = `
                   class="emotion-9"
                 >
                   <a
-                    href="/movies/stories/awards"
+                    href="/about/log"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
                       class="emotion-10"
                     >
-                      Movie Awards
+                      Project's log
                     </span>
                   </a>
                 </div>
@@ -242,13 +242,13 @@ exports[`Search Page compare against snapshot 1`] = `
                   class="emotion-9"
                 >
                   <a
-                    href="/movies/stories/remakes"
+                    href="/about/timeline"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
                       class="emotion-10"
                     >
-                      Movie Remakes
+                      Project's timeline
                     </span>
                   </a>
                 </div>
@@ -256,13 +256,13 @@ exports[`Search Page compare against snapshot 1`] = `
                   class="emotion-9"
                 >
                   <a
-                    href="/movies/stories/directors"
+                    href="/podcasts"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
                       class="emotion-10"
                     >
-                      Movie Directors
+                      Podcasts Dashboard
                     </span>
                   </a>
                 </div>
@@ -270,27 +270,13 @@ exports[`Search Page compare against snapshot 1`] = `
                   class="emotion-9"
                 >
                   <a
-                    href="/movies/stories/producers"
+                    href="/movies/stories/topics"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
                       class="emotion-10"
                     >
-                      Movie Producers
-                    </span>
-                  </a>
-                </div>
-                <div
-                  class="emotion-9"
-                >
-                  <a
-                    href="/movies/stories/actors"
-                    style="flex: 1; display: flex; width: 100%;"
-                  >
-                    <span
-                      class="emotion-10"
-                    >
-                      Movie Actors
+                      Movie topics
                     </span>
                   </a>
                 </div>

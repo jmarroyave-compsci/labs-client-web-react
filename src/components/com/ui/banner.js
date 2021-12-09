@@ -27,9 +27,18 @@ const Banner = function( props ){
     )
 }
 
-const Data = function( renderer, data, item, xs, sm, md, lg ){
-
+const Data = function( renderer, data, item, xs, sm, md, lg ){ 
   switch(renderer) {
+    case "marquee":
+      if(!data) return null
+      return (
+        data.map( (it, idx) => 
+          <React.Fragment key={idx}>
+            {item(it)}
+          </React.Fragment>
+        )
+      )
+
     case "tiles":
       return (
           <Tiles 

@@ -168,5 +168,25 @@
       "name": "server",
       "commits": 90
     }
+  ],
+  "2021-12-08": [
+    {
+      "name": "client",
+      "commits": 261
+    },
+    {
+      "name": "server",
+      "commits": 90
+    }
+  ],
+  "2021-12-09": [
+    {
+      "name": "client",
+      "commits": 261
+    },
+    {
+      "name": "server",
+      "commits": 90
+    }
   ]
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { useRouter } from 'next/router'
 import Stack from 'com/ui/stack';
 import Body from 'core/ui/layout/body';
 import Section from 'core/ui/layout/section';
@@ -8,6 +9,7 @@ import RelatedStories from "com/related_stories"
 import { FrameSkeleton } from 'style/boxes';
 
 export default function Cols2Layout( props ){
+  const router = useRouter();
   const { banner, mainCol, rightCol, id } = props 
   const noPadding = (props.noPadding) ? props.noPadding : false;
   return (
@@ -28,7 +30,7 @@ export default function Cols2Layout( props ){
           </GridItem>
           <GridItem xs={12} sm={12} md={3} lg={2}>
             <div style={{paddingLeft: '1rem', paddingRight: '0.5rem'}}>
-              <RelatedStories {...props} filter={id} breadcrumbs={props.breadcrumbs}/>
+              <RelatedStories {...props} filter={id} breadcrumbs={(props.breadcrumbs) ? props.breadcrumbs : (router) ? router.route : "?"}/>
               {rightCol}
             </div>
           </GridItem>

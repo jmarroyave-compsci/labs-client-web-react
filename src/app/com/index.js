@@ -26,6 +26,9 @@ import ReactGA from 'react-ga';
 
 import { getTheme } from 'app/config/theme'
 
+import Snowfall from 'react-snowfall'
+
+
 function App( props ) {
   const dispatch = useDispatch();
   const appState = useSelector(( state ) => state['app'] )
@@ -51,6 +54,7 @@ function App( props ) {
       <ThemeProvider theme={ theme }>
         <CssBaseline />
         <Box sx={{ display: 'flex' }} style={{padding: 0, margin: 0}}>
+          {appState.theme.snowMode && <Snowfall   snowflakeCount={200}/>}
           <Snackbar/>
           <BottomSheet/>
           <Toolbar/>

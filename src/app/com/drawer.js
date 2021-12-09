@@ -23,7 +23,7 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { useTheme } from '@mui/material/styles';
 
-import { toggleDrawer, toggleThemeMode } from 'app';
+import { toggleDrawer, toggleThemeMode, toggleSnowMode } from 'app';
 
 function Drawer_( props ) {
   const appState = useSelector(( state ) => state.app )
@@ -32,10 +32,18 @@ function Drawer_( props ) {
 
   const _toggleDrawer = () => dispatch( toggleDrawer() ) 
   const _toggleThemeMode = () => dispatch( toggleThemeMode() ) 
+  const _toggleSnowMode = () => dispatch( toggleSnowMode() ) 
 
 	const options = getOptions( appState, _toggleDrawer );
   const anchor = "left";
   const drawerWidth = 260;
+
+  const DrawerButton = ( { children} ) => (
+    <div style={{paddingLeft: '0.5rem', paddingRight: '0.5rem'}}>
+      {children}
+    </div>
+
+  )
 
   return (
     <MuiDrawer       
@@ -64,20 +72,33 @@ function Drawer_( props ) {
             <ChevronLeftIcon />
           </IconButton>
           <div style={{flex: 1}}/>
-          <Badge badgeContent={appState.users} color="primary" showZero>
-            <PeopleIcon/>
-          </Badge>
-          <IconButton edge="end"
-            color="primary"
-            onClick={ _toggleThemeMode }
-          >
-            { theme.palette.mode === "dark" ?
-              <LightModeIcon/>
-              :
-              <DarkModeIcon/>
-            } 
-          </IconButton>
 
+          <DrawerButton>
+            <Badge badgeContent={appState.users} color="primary" showZero>
+              <PeopleIcon color="primary"/>
+            </Badge>
+          </DrawerButton>
+          <DrawerButton>
+            <IconButton edge="end"
+              color="primary"
+              onClick={ _toggleThemeMode }
+            >
+              { theme.palette.mode === "dark" ?
+                <LightModeIcon/>
+                :
+                <DarkModeIcon/>
+              } 
+            </IconButton>
+          </DrawerButton>
+          <DrawerButton>
+            <IconButton edge="end"
+              color={(appState.theme.snowMode) ? "primary" : "secondary"}
+              onClick={ _toggleSnowMode }
+            >
+              <Icon>ac_unit</Icon>
+            </IconButton>
+          </DrawerButton>
+  
         </MuiToolbar>
         {options}
       </Box>

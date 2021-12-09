@@ -99,11 +99,7 @@ const User = ( props ) => {
         <Avatar alt={appState.credentials.user.name} src={appState.credentials.user.avatar} />
       }
       {!state.loggedIn &&
-        <Button
-          onClick={ clickLoggingIn }
-        >
-          Log in
-        </Button>
+        <Button color="inherit" onClick={ clickLoggingIn }>Log in</Button>
       }
       {!state.loggedIn && state.loggingIn && <UserLogin onSuccess={ onLoginSuccess } onFailure={ onLoginFailure }/>}
     </>

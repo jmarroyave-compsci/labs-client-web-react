@@ -3156,13 +3156,13 @@ exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
                   class="emotion-76"
                 >
                   <a
-                    href="/movies/stories/awards"
+                    href="/about/log"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
                       class="emotion-77"
                     >
-                      Movie Awards
+                      Project's log
                     </span>
                   </a>
                 </div>
@@ -3170,13 +3170,13 @@ exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
                   class="emotion-76"
                 >
                   <a
-                    href="/movies/stories/remakes"
+                    href="/about/timeline"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
                       class="emotion-77"
                     >
-                      Movie Remakes
+                      Project's timeline
                     </span>
                   </a>
                 </div>
@@ -3184,13 +3184,13 @@ exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
                   class="emotion-76"
                 >
                   <a
-                    href="/movies/stories/directors"
+                    href="/podcasts"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
                       class="emotion-77"
                     >
-                      Movie Directors
+                      Podcasts Dashboard
                     </span>
                   </a>
                 </div>
@@ -3198,27 +3198,13 @@ exports[`ABOUT-PROJECT-ROADMAP compare Page against snapshot 1`] = `
                   class="emotion-76"
                 >
                   <a
-                    href="/movies/stories/producers"
+                    href="/movies/stories/topics"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
                       class="emotion-77"
                     >
-                      Movie Producers
-                    </span>
-                  </a>
-                </div>
-                <div
-                  class="emotion-76"
-                >
-                  <a
-                    href="/movies/stories/actors"
-                    style="flex: 1; display: flex; width: 100%;"
-                  >
-                    <span
-                      class="emotion-77"
-                    >
-                      Movie Actors
+                      Movie topics
                     </span>
                   </a>
                 </div>

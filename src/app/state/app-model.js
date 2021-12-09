@@ -10,6 +10,7 @@ const initialState = {
   breadcrumbs: null,
   users: 0,
   theme: {
+    snowMode: true,
     mode: "light",
   },
   nav: nav,
@@ -87,6 +88,10 @@ export const AppModel = createSlice({
       state.theme.mode = ( state.theme.mode === "light" ) ? "dark" : "light";
       saveState(state);
     },
+    toggleSnowMode: (state, action) => {
+      state.theme.snowMode = !state.theme.snowMode;
+      saveState(state);
+    },
     updateUsers: (state, action) => {
       state.users = action.payload.users;
     },
@@ -124,5 +129,5 @@ export const AppModel = createSlice({
   },
 })
 
-export const { setPage, toggleThemeMode, toggleDrawer, initializeApp, updateUsers, setLoading, showMessage, logIn, logOut, showBottomSheet } = AppModel.actions
+export const { setPage, toggleThemeMode, toggleSnowMode, toggleDrawer, initializeApp, updateUsers, setLoading, showMessage, logIn, logOut, showBottomSheet } = AppModel.actions
 export default AppModel.reducer

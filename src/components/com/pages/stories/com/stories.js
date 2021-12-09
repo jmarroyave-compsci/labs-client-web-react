@@ -1,15 +1,16 @@
 import React, { useMemo } from 'react';
+import { useRouter } from 'next/router';
 import Layout from "layout/cols-2-layout";
-import { getAll, getAllTags } from 'data/stories'
+import { getAreaRelated } from 'data/stories'
 import { Title, Subtitle } from 'style/detail'
 import { Frame } from 'style/boxes'
 import Tiles from 'com/ui/tiles';
 import Item from './item'
 
 export default function Stories( props ){
+  const router = useRouter();
   var data = useMemo( () => {
-    const data = getAll()
-    return (props.tag) ? data.filter( t => t.tags.includes( props.tag )) : data;
+    return getAreaRelated(null, props.tag)
   }, [])
 
   var tags = useMemo( () => {

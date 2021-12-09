@@ -1,6 +1,6 @@
 {
   "name": "labs-web-client-react",
-  "version": "2.3.2",
+  "version": "2.3.4",
   "private": true,
   "scripts": {
     "dev": "cross-env BABEL_ENV=dev next dev",
@@ -41,6 +41,7 @@
     "react-markdown": "^7.0.1",
     "react-multi-carousel": "^2.6.5",
     "react-redux": "^7.2.5",
+    "react-snowfall": "^1.1.1",
     "react-syntax-highlighter": "^15.4.4",
     "react-vertical-timeline-component": "^3.3.3",
     "socket.io-client": "^4.1.2"

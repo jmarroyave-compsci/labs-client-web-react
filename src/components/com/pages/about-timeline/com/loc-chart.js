@@ -109,8 +109,6 @@ class Chart extends React.Component {
       
       const px = d3.select(p)._groups[0][0].childNodes[0].props
       
-      console.log( px )
-
       lines.append("text")
         .text(l.__data__.name)
         .attr("class", "text")

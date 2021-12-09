@@ -17,7 +17,7 @@ export default function Devops( props ){
         <Stack direction='row' spacing={2}>
         { data.map( d => 
           <span key={d.name}>
-            <Indicator title={d.name} value={d.commits} format={"0a"} width={130}/>
+            <Indicator title={d.name} value={d.commits} format={"0a"} width={150}/>
           </span>
         )}
         </Stack>

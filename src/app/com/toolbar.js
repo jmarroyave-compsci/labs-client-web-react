@@ -32,23 +32,21 @@ function Toolbar( props ){
               pr: '24px',
             }}
           >
-            <IconButton
-              edge="start"
-              color="inherit"
-              aria-label="open drawer"
-              onClick={ _toggleDrawer }
-              sx={{
-                marginRight: '36px',
-                ...(appState.drawer.open && { display: 'none' }),
-              }}
-            >
-              <MenuIcon />
-            </IconButton>
-
-            <Box sx={{ flexGrow: 1, padding: "0.5rem 0.75rem 0.5rem 1rem" }}>
-              <Search/>
-            </Box>
-            <User/>
+              <IconButton
+                edge="start"
+                color="inherit"
+                aria-label="open drawer"
+                onClick={ _toggleDrawer }
+                sx={{
+                  ...(appState.drawer.open && { display: 'none' }),
+                }}
+              >
+                <MenuIcon />
+              </IconButton>
+              <Box sx={{ flexGrow: 1, padding: "0.5rem 0.75rem 0.5rem 1rem" }}>
+                <Search/>
+              </Box>
+              <User/>
           </MuiToolbar>
 
         </AppBar>

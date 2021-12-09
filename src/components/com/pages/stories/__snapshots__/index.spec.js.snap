@@ -236,7 +236,7 @@ exports[`Search Page compare against snapshot 1`] = `
   text-transform: lowercase;
 }
 
-.emotion-88 {
+.emotion-100 {
   box-sizing: border-box;
   margin: 0;
   -webkit-flex-direction: row;
@@ -253,7 +253,7 @@ exports[`Search Page compare against snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-88 {
+  .emotion-100 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -266,7 +266,7 @@ exports[`Search Page compare against snapshot 1`] = `
 }
 
 @media (min-width:900px) {
-  .emotion-88 {
+  .emotion-100 {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
@@ -278,7 +278,7 @@ exports[`Search Page compare against snapshot 1`] = `
   }
 }
 
-.emotion-89 {
+.emotion-101 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -287,24 +287,24 @@ exports[`Search Page compare against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-90 {
+.emotion-102 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-91 {
+.emotion-103 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-92 {
+.emotion-104 {
   font-size: 0.9rem;
   color: inherit;
 }
 
-.emotion-93 {
+.emotion-105 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -509,7 +509,7 @@ exports[`Search Page compare against snapshot 1`] = `
                     class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
                   >
                     <a
-                      href="/movies/festivals"
+                      href="/movies/stories/decades"
                       style="flex: 1; display: flex; width: 100%;"
                     >
                       <div
@@ -519,7 +519,134 @@ exports[`Search Page compare against snapshot 1`] = `
                           class="emotion-15"
                           img="/img/ba_pro_act.jpg"
                         >
-                          Festivals Dashboard
+                          Movies by decade
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
+                  >
+                    <a
+                      href="/movies/stories/topics"
+                      style="flex: 1; display: flex; width: 100%;"
+                    >
+                      <div
+                        class="emotion-14"
+                      >
+                        <div
+                          class="emotion-15"
+                          img="/img/ba_pro_act.jpg"
+                        >
+                          Movie topics
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="emotion-10"
+              >
+                <h2
+                  class="emotion-11"
+                >
+                  tv-shows
+                </h2>
+                <div
+                  class="MuiGrid-root MuiGrid-container emotion-6"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
+                  >
+                    <a
+                      href="/tv-shows"
+                      style="flex: 1; display: flex; width: 100%;"
+                    >
+                      <div
+                        class="emotion-14"
+                      >
+                        <div
+                          class="emotion-15"
+                          img="/img/ba_pro_act.jpg"
+                        >
+                          TV Shows Dashboard
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
+                  >
+                    <a
+                      href="/tv-shows/stories/remakes"
+                      style="flex: 1; display: flex; width: 100%;"
+                    >
+                      <div
+                        class="emotion-14"
+                      >
+                        <div
+                          class="emotion-15"
+                          img="/img/ba_pro_act.jpg"
+                        >
+                          TV Shows Remakes
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
+                  >
+                    <a
+                      href="/tv-shows/stories/directors"
+                      style="flex: 1; display: flex; width: 100%;"
+                    >
+                      <div
+                        class="emotion-14"
+                      >
+                        <div
+                          class="emotion-15"
+                          img="/img/ba_pro_act.jpg"
+                        >
+                          TV Shows Directors
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
+                  >
+                    <a
+                      href="/tv-shows/stories/writers"
+                      style="flex: 1; display: flex; width: 100%;"
+                    >
+                      <div
+                        class="emotion-14"
+                      >
+                        <div
+                          class="emotion-15"
+                          img="/img/ba_pro_act.jpg"
+                        >
+                          TV Shows Writers
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
+                  >
+                    <a
+                      href="/tv-shows/stories/actors"
+                      style="flex: 1; display: flex; width: 100%;"
+                    >
+                      <div
+                        class="emotion-14"
+                      >
+                        <div
+                          class="emotion-15"
+                          img="/img/ba_pro_act.jpg"
+                        >
+                          TV Shows Actors
                         </div>
                       </div>
                     </a>
@@ -647,114 +774,6 @@ exports[`Search Page compare against snapshot 1`] = `
                 <h2
                   class="emotion-11"
                 >
-                  tv-shows
-                </h2>
-                <div
-                  class="MuiGrid-root MuiGrid-container emotion-6"
-                >
-                  <div
-                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
-                  >
-                    <a
-                      href="/tv-shows"
-                      style="flex: 1; display: flex; width: 100%;"
-                    >
-                      <div
-                        class="emotion-14"
-                      >
-                        <div
-                          class="emotion-15"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          TV Shows Dashboard
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
-                  >
-                    <a
-                      href="/tv-shows/stories/remakes"
-                      style="flex: 1; display: flex; width: 100%;"
-                    >
-                      <div
-                        class="emotion-14"
-                      >
-                        <div
-                          class="emotion-15"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          TV Shows Remakes
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
-                  >
-                    <a
-                      href="/tv-shows/stories/directors"
-                      style="flex: 1; display: flex; width: 100%;"
-                    >
-                      <div
-                        class="emotion-14"
-                      >
-                        <div
-                          class="emotion-15"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          TV Shows Directors
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
-                  >
-                    <a
-                      href="/tv-shows/stories/writers"
-                      style="flex: 1; display: flex; width: 100%;"
-                    >
-                      <div
-                        class="emotion-14"
-                      >
-                        <div
-                          class="emotion-15"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          TV Shows Writers
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                  <div
-                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
-                  >
-                    <a
-                      href="/tv-shows/stories/actors"
-                      style="flex: 1; display: flex; width: 100%;"
-                    >
-                      <div
-                        class="emotion-14"
-                      >
-                        <div
-                          class="emotion-15"
-                          img="/img/ba_pro_act.jpg"
-                        >
-                          TV Shows Actors
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="emotion-10"
-              >
-                <h2
-                  class="emotion-11"
-                >
                   video-games
                 </h2>
                 <div
@@ -813,93 +832,130 @@ exports[`Search Page compare against snapshot 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="emotion-10"
+              >
+                <h2
+                  class="emotion-11"
+                >
+                  about
+                </h2>
+                <div
+                  class="MuiGrid-root MuiGrid-container emotion-6"
+                >
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
+                  >
+                    <a
+                      href="/about/log"
+                      style="flex: 1; display: flex; width: 100%;"
+                    >
+                      <div
+                        class="emotion-14"
+                      >
+                        <div
+                          class="emotion-15"
+                          img="/img/ba_pro_act.jpg"
+                        >
+                          Project's log
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-4 emotion-13"
+                  >
+                    <a
+                      href="/about/timeline"
+                      style="flex: 1; display: flex; width: 100%;"
+                    >
+                      <div
+                        class="emotion-14"
+                      >
+                        <div
+                          class="emotion-15"
+                          img="/img/ba_pro_act.jpg"
+                        >
+                          Project's timeline
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3 emotion-88"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3 emotion-100"
         >
           <div
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-89"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-101"
             >
               <div
-                class="emotion-90"
+                class="emotion-102"
               >
                 <div
-                  class="emotion-91"
+                  class="emotion-103"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-92"
+                  class="emotion-104"
                 >
                   <a
-                    href="/movies/stories/awards"
+                    href="/about/log"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-93"
+                      class="emotion-105"
                     >
-                      Movie Awards
+                      Project's log
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-92"
+                  class="emotion-104"
                 >
                   <a
-                    href="/movies/stories/remakes"
+                    href="/about/timeline"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-93"
+                      class="emotion-105"
                     >
-                      Movie Remakes
+                      Project's timeline
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-92"
+                  class="emotion-104"
                 >
                   <a
-                    href="/movies/stories/directors"
+                    href="/podcasts"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-93"
+                      class="emotion-105"
                     >
-                      Movie Directors
+                      Podcasts Dashboard
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-92"
+                  class="emotion-104"
                 >
                   <a
-                    href="/movies/stories/producers"
+                    href="/movies/stories/topics"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-93"
+                      class="emotion-105"
                     >
-                      Movie Producers
-                    </span>
-                  </a>
-                </div>
-                <div
-                  class="emotion-92"
-                >
-                  <a
-                    href="/movies/stories/actors"
-                    style="flex: 1; display: flex; width: 100%;"
-                  >
-                    <span
-                      class="emotion-93"
-                    >
-                      Movie Actors
+                      Movie topics
                     </span>
                   </a>
                 </div>

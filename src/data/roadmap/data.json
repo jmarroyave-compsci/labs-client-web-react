@@ -1765,7 +1765,40 @@
           "children": null
         }
       ],
-      "Day 4": []
+      "Day 4": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "-",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 5": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "DEV Pipeline : data, tests, jenkins",
+          "level": 3,
+          "children": null
+        }
+      ],
+      "Day 6": [
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "DATA: Data pipeline",
+          "level": 3,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "UI: Fix paging",
+          "level": 3,
+          "children": null
+        }
+      ]
     }
   }
 }

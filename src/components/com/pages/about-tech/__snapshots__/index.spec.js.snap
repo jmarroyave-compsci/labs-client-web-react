@@ -139,20 +139,35 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   padding: 0rem 0rem 4rem 0rem;
 }
 
-.emotion-10 {
+.emotion-13 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.emotion-13>:not(style)+:not(style) {
+  margin: 0;
+  margin-left: 16px;
+}
+
+.emotion-14 {
   margin: 0 0 2rem 0;
   padding: 0;
   width: 100%;
 }
 
-.emotion-13 {
+.emotion-20 {
   display: table;
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-.emotion-13 caption {
+.emotion-20 caption {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
@@ -164,50 +179,50 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   caption-side: bottom;
 }
 
-.emotion-14 {
+.emotion-21 {
   display: table-header-group;
 }
 
-.emotion-15 {
+.emotion-22 {
   color: inherit;
   display: table-row;
   vertical-align: middle;
   outline: 0;
 }
 
-.emotion-15.MuiTableRow-hover:hover {
+.emotion-22.MuiTableRow-hover:hover {
   background-color: rgba(0, 0, 0, 0.04);
 }
 
-.emotion-15.Mui-selected {
+.emotion-22.Mui-selected {
   background-color: rgba(85, 108, 214, 0.08);
 }
 
-.emotion-15.Mui-selected:hover {
+.emotion-22.Mui-selected:hover {
   background-color: rgba(85, 108, 214, 0.12);
 }
 
-.emotion-15:nth-of-type(odd) {
+.emotion-22:nth-of-type(odd) {
   background-color: rgb(119, 137, 222);
   color: #fff;
 }
 
-.emotion-15:last-child td,
-.emotion-15:last-child th {
+.emotion-22:last-child td,
+.emotion-22:last-child th {
   border: 0;
 }
 
-.emotion-15:nth-of-type(odd):hover {
+.emotion-22:nth-of-type(odd):hover {
   background-color: rgb(119, 137, 222);
   color: #fff;
 }
 
-.emotion-15:hover {
+.emotion-22:hover {
   background-color: #fff;
   color: #fff;
 }
 
-.emotion-16 {
+.emotion-23 {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
@@ -221,20 +236,20 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   color: rgba(0, 0, 0, 0.87);
 }
 
-.emotion-16.MuiTableCell-head {
+.emotion-23.MuiTableCell-head {
   background-color: #000;
   color: #fff;
 }
 
-.emotion-16.MuiTableCell-body {
+.emotion-23.MuiTableCell-body {
   font-size: 0.75rem;
 }
 
-.emotion-23 {
+.emotion-30 {
   display: table-row-group;
 }
 
-.emotion-25 {
+.emotion-32 {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
@@ -248,31 +263,16 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   color: rgba(0, 0, 0, 0.87);
 }
 
-.emotion-25.MuiTableCell-head {
+.emotion-32.MuiTableCell-head {
   background-color: #000;
   color: #fff;
 }
 
-.emotion-25.MuiTableCell-body {
+.emotion-32.MuiTableCell-body {
   font-size: 0.75rem;
 }
 
-.emotion-51 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-}
-
-.emotion-51>:not(style)+:not(style) {
-  margin: 0;
-  margin-left: 16px;
-}
-
-.emotion-52 {
+.emotion-55 {
   box-sizing: border-box;
   margin: 0;
   -webkit-flex-direction: row;
@@ -289,7 +289,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
 }
 
 @media (min-width:600px) {
-  .emotion-52 {
+  .emotion-55 {
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
@@ -302,7 +302,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
 }
 
 @media (min-width:900px) {
-  .emotion-52 {
+  .emotion-55 {
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
@@ -314,7 +314,7 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   }
 }
 
-.emotion-53 {
+.emotion-56 {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.87);
   -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -323,24 +323,24 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
   box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
 }
 
-.emotion-54 {
+.emotion-57 {
   color: rgba(0, 0, 0, 0.87);
   background-color: #fff;
   padding: 1rem;
 }
 
-.emotion-55 {
+.emotion-58 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
   color: inherit;
 }
 
-.emotion-56 {
+.emotion-59 {
   font-size: 0.9rem;
   color: inherit;
 }
 
-.emotion-57 {
+.emotion-60 {
   cursor: pointer;
   color: inherit;
   background-color: transparent;
@@ -398,201 +398,6 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
               class="emotion-0"
             >
               <div
-                class="emotion-10"
-              >
-                <div
-                  class="emotion-0"
-                >
-                  <h2
-                    class="emotion-3"
-                  >
-                    Lines of Code (LoC)
-                  </h2>
-                  <div
-                    class="makeStyles-tableResponsive-11"
-                  >
-                    <table
-                      class="MuiTable-root makeStyles-table-8 emotion-13"
-                    >
-                      <thead
-                        class="MuiTableHead-root makeStyles-grayTableHeader-7 emotion-14"
-                      >
-                        <tr
-                          class="MuiTableRow-root MuiTableRow-head makeStyles-tableHeadRow-12 emotion-15"
-                        >
-                          <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
-                            scope="col"
-                          >
-                            area
-                          </th>
-                          <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
-                            scope="col"
-                          >
-                            total files
-                          </th>
-                          <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
-                            scope="col"
-                          >
-                            LoC
-                          </th>
-                          <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
-                            scope="col"
-                          >
-                            node_modules
-                          </th>
-                          <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
-                            scope="col"
-                          >
-                            LoC
-                          </th>
-                          <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
-                            scope="col"
-                          >
-                            files
-                          </th>
-                          <th
-                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-10 makeStyles-tableHeadCell-9 emotion-16"
-                            scope="col"
-                          >
-                            LoC
-                          </th>
-                        </tr>
-                      </thead>
-                      <tbody
-                        class="MuiTableBody-root emotion-23"
-                      >
-                        <tr
-                          class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-15"
-                          interactive="0"
-                        >
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            scripts
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            11,593
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            4,573,499
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            11,490
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            4,568,268
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            103
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            5,231
-                          </td>
-                        </tr>
-                        <tr
-                          class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-15"
-                          interactive="0"
-                        >
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            client
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            155,266
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            5,886,715
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            154,561
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            5,799,630
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            705
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            87,085
-                          </td>
-                        </tr>
-                        <tr
-                          class="MuiTableRow-root makeStyles-tableBodyRow-13 emotion-15"
-                          interactive="0"
-                        >
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            server
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            10,883
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            1,852,802
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            10,729
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            1,841,724
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            154
-                          </td>
-                          <td
-                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-10 emotion-25"
-                          >
-                            11,078
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-              <div
                 class="emotion-0"
               >
                 <h2
@@ -607,26 +412,26 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                     number of commits
                   </div>
                   <div
-                    class="emotion-51"
+                    class="emotion-13"
                   >
                     <span>
                       <div
-                        class="makeStyles-card-22 makeStyles-cardHeader-17"
-                        style="width: 130px;"
+                        class="makeStyles-card-9 makeStyles-cardHeader-4"
+                        style="width: 150px;"
                       >
                         <div
-                          class="makeStyles-cardHeader-26 makeStyles-primaryCardHeader-34 makeStyles-cardHeaderStats-28 makeStyles-cardHeaderIcon-29"
+                          class="makeStyles-cardHeader-13 makeStyles-primaryCardHeader-21 makeStyles-cardHeaderStats-15 makeStyles-cardHeaderIcon-16"
                         >
                           <p
-                            class="makeStyles-cardCategory-18"
+                            class="makeStyles-cardCategory-5"
                           >
                             client
                           </p>
                           <h3
-                            class="makeStyles-cardTitle-20"
+                            class="makeStyles-cardTitle-7"
                           >
                             <span>
-                              254
+                              261
                             </span>
                           </h3>
                         </div>
@@ -634,19 +439,19 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                     </span>
                     <span>
                       <div
-                        class="makeStyles-card-22 makeStyles-cardHeader-17"
-                        style="width: 130px;"
+                        class="makeStyles-card-9 makeStyles-cardHeader-4"
+                        style="width: 150px;"
                       >
                         <div
-                          class="makeStyles-cardHeader-26 makeStyles-primaryCardHeader-34 makeStyles-cardHeaderStats-28 makeStyles-cardHeaderIcon-29"
+                          class="makeStyles-cardHeader-13 makeStyles-primaryCardHeader-21 makeStyles-cardHeaderStats-15 makeStyles-cardHeaderIcon-16"
                         >
                           <p
-                            class="makeStyles-cardCategory-18"
+                            class="makeStyles-cardCategory-5"
                           >
                             server
                           </p>
                           <h3
-                            class="makeStyles-cardTitle-20"
+                            class="makeStyles-cardTitle-7"
                           >
                             <span>
                               90
@@ -658,93 +463,308 @@ exports[`ABOUT-TECH compare Page against snapshot 1`] = `
                   </div>
                 </div>
               </div>
+              <div
+                class="emotion-14"
+              >
+                <div
+                  class="emotion-0"
+                >
+                  <h2
+                    class="emotion-3"
+                  >
+                    Q&A
+                  </h2>
+                  <div
+                    class="makeStyles-card-9 makeStyles-cardHeader-4"
+                    style="width: 150px;"
+                  >
+                    <div
+                      class="makeStyles-cardHeader-13 makeStyles-primaryCardHeader-21 makeStyles-cardHeaderStats-15 makeStyles-cardHeaderIcon-16"
+                    >
+                      <p
+                        class="makeStyles-cardCategory-5"
+                      >
+                        days since last accident
+                      </p>
+                      <h3
+                        class="makeStyles-cardTitle-7"
+                      >
+                        <span>
+                          5
+                        </span>
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="emotion-14"
+              >
+                <div
+                  class="emotion-0"
+                >
+                  <h2
+                    class="emotion-3"
+                  >
+                    Lines of Code (LoC)
+                  </h2>
+                  <div
+                    class="makeStyles-tableResponsive-33"
+                  >
+                    <table
+                      class="MuiTable-root makeStyles-table-30 emotion-20"
+                    >
+                      <thead
+                        class="MuiTableHead-root makeStyles-grayTableHeader-29 emotion-21"
+                      >
+                        <tr
+                          class="MuiTableRow-root MuiTableRow-head makeStyles-tableHeadRow-34 emotion-22"
+                        >
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-32 makeStyles-tableHeadCell-31 emotion-23"
+                            scope="col"
+                          >
+                            area
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-32 makeStyles-tableHeadCell-31 emotion-23"
+                            scope="col"
+                          >
+                            total files
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-32 makeStyles-tableHeadCell-31 emotion-23"
+                            scope="col"
+                          >
+                            LoC
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-32 makeStyles-tableHeadCell-31 emotion-23"
+                            scope="col"
+                          >
+                            node_modules
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-32 makeStyles-tableHeadCell-31 emotion-23"
+                            scope="col"
+                          >
+                            LoC
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-32 makeStyles-tableHeadCell-31 emotion-23"
+                            scope="col"
+                          >
+                            files
+                          </th>
+                          <th
+                            class="MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium makeStyles-tableCell-32 makeStyles-tableHeadCell-31 emotion-23"
+                            scope="col"
+                          >
+                            LoC
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody
+                        class="MuiTableBody-root emotion-30"
+                      >
+                        <tr
+                          class="MuiTableRow-root makeStyles-tableBodyRow-35 emotion-22"
+                          interactive="0"
+                        >
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            scripts
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            11,593
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            4,573,499
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            11,490
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            4,568,268
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            103
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            5,231
+                          </td>
+                        </tr>
+                        <tr
+                          class="MuiTableRow-root makeStyles-tableBodyRow-35 emotion-22"
+                          interactive="0"
+                        >
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            client
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            155,266
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            5,886,715
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            154,561
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            5,799,630
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            705
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            87,085
+                          </td>
+                        </tr>
+                        <tr
+                          class="MuiTableRow-root makeStyles-tableBodyRow-35 emotion-22"
+                          interactive="0"
+                        >
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            server
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            10,883
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            1,852,802
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            10,729
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            1,841,724
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            154
+                          </td>
+                          <td
+                            class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium makeStyles-tableCell-32 emotion-32"
+                          >
+                            11,078
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div
-          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3 emotion-52"
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-3 emotion-55"
         >
           <div
             style="padding-left: 1rem; padding-right: 0.5rem;"
           >
             <div
-              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-53"
+              class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 emotion-56"
             >
               <div
-                class="emotion-54"
+                class="emotion-57"
               >
                 <div
-                  class="emotion-55"
+                  class="emotion-58"
                 >
                   See also
                 </div>
                 <div
-                  class="emotion-56"
+                  class="emotion-59"
                 >
                   <a
-                    href="/movies/stories/awards"
+                    href="/about/log"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-57"
+                      class="emotion-60"
                     >
-                      Movie Awards
+                      Project's log
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-56"
+                  class="emotion-59"
                 >
                   <a
-                    href="/movies/stories/remakes"
+                    href="/about/timeline"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-57"
+                      class="emotion-60"
                     >
-                      Movie Remakes
+                      Project's timeline
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-56"
+                  class="emotion-59"
                 >
                   <a
-                    href="/movies/stories/directors"
+                    href="/podcasts"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-57"
+                      class="emotion-60"
                     >
-                      Movie Directors
+                      Podcasts Dashboard
                     </span>
                   </a>
                 </div>
                 <div
-                  class="emotion-56"
+                  class="emotion-59"
                 >
                   <a
-                    href="/movies/stories/producers"
+                    href="/movies/stories/topics"
                     style="flex: 1; display: flex; width: 100%;"
                   >
                     <span
-                      class="emotion-57"
+                      class="emotion-60"
                     >
-                      Movie Producers
-                    </span>
-                  </a>
-                </div>
-                <div
-                  class="emotion-56"
-                >
-                  <a
-                    href="/movies/stories/actors"
-                    style="flex: 1; display: flex; width: 100%;"
-                  >
-                    <span
-                      class="emotion-57"
-                    >
-                      Movie Actors
+                      Movie topics
                     </span>
                   </a>
                 </div>
