@@ -40,21 +40,21 @@ const initialState = {
   },
 }
 
-function restoreState(){
+function restoreState( initialState ){
   const restoreLocalStorage = ( key ) => (localStorage.getItem(key)) ? JSON.parse(localStorage.getItem(key)) : initialState[key]
   const restoreSessionStorage = ( key ) => (sessionStorage.getItem(key)) ? JSON.parse(sessionStorage.getItem(key)) : initialState[key]
   const state = {} 
-
-  state.theme = restoreLocalStorage("theme")
-  state.credentials = restoreSessionStorage("credentials")
-
-  return state;
+  state.theme = { ...initialState.theme, ...restoreLocalStorage("theme") } 
+  state.credentials = { ...initialState.credentials, ...restoreSessionStorage("credentials")}
+  return {
+    ...initialState,
+    ...state,
+  }
 }
 
 function saveState( st ){
   const saveLocalStorage = ( key ) => localStorage.setItem(key, JSON.stringify(st[key]))
   const saveSessionStorage = ( key ) => sessionStorage.setItem(key, JSON.stringify(st[key]))
-
   saveLocalStorage("theme")
   saveSessionStorage("credentials")
 }
@@ -66,13 +66,7 @@ export const AppModel = createSlice({
   reducers: {
     initializeApp: (state, action) => {
       const [ webSocket ] = initializeWebSockets( action.payload.dispatch );
-      const savedState = restoreState();
-      state = {
-        ...state,
-        ...savedState
-      }
-
-      //console.log("initial state", state)
+      state = restoreState(state);
       return state;
     },
     setPage: (state, action) => {
