@@ -62,7 +62,7 @@ const slice = createSlice({
   initialState,
   reducers: {
     setParams : (state, action) => {
-            state.params = {
+      state.params = {
         ...state.params,
         ...action.payload
       }

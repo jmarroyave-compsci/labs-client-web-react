@@ -30,7 +30,7 @@ const _ItemFrame = styled('div')(({theme, width, height}) => ({
   color: theme.palette.text.primary,
   alignItems: 'center',
   minWidth: width,
-  maxWidth: width,
+  maxWidth: "100%",
   minHeight: height,
   maxHeight: height,
   borderRadius: '5px',

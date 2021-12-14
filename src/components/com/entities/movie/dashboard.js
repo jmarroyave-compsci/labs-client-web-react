@@ -3,7 +3,7 @@ import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Stack from 'com/ui/stack';
 import { Title } from 'style/infography'
-import BottomSheetData from 'com/pages/dashboard/com/bottom-sheet-data';
+import BottomSheet from 'com/modules/bottom-sheet/com/bottom-sheet-entities';
 import { tileIndicator, tileChart } from 'com/ui/dashboard'
 import { getDashboardQuery } from 'com/entities/movie/query';
 
@@ -19,7 +19,7 @@ const Dashboard = ( props ) => {
 
     return (
       <Stack spacing={2}>
-        <BottomSheetData query={query}/>
+        <BottomSheet query={query}/>
         <Title>general</Title>
         <GridContainer justifyContent='center' fill>
           {tileIndicator(loading, props.title.toLowerCase(), total, props.icon)}

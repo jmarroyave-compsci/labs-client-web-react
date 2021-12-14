@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useMemo } from 'react'
 import GridContainer from 'core/ui/layout/grid_container';
 import GridItem from 'core/ui/layout/grid_item';
 import Paper from '@mui/material/Paper';
@@ -51,32 +51,33 @@ export default function Grid( props ){
       item 
     }
 
+
     const Item = ( props ) => {
       return (
         <GridItem xs={xs} sm={sm} md={md} lg={lg}>
           {itemWrapper((loading) ?
             (skeleton) ? skeleton : <Placeholder/>
             : 
-            (item) ? animateItem(item(props.data)) : null
+            (item) ? item(props.data) : null
           )} 
         </GridItem>
 
       )
     }
 
-    var output = (
+    var output = useMemo( () => (
         <>
           <div ref={start}/>
 
           <GridContainer spacing={2} justify='center' fill style={{width: '100%'}}>
             {data.map( (_item, idx) => 
-              <React.Fragment key={idx} >
-              <Item data={_item} params={props}/>
+              <React.Fragment key={idx}>
+                <Item key={idx} data={_item} params={props}/>
               </React.Fragment>
             )}
           </GridContainer>
         </>
-    )
+    ), [data])
 
     if(!noPaging){
       output = (

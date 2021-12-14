@@ -11,6 +11,7 @@ import StoryProfessions from 'com/pages/professions/banner'
 import StoryDashboards from 'com/pages/dashboards/banner'
 import StoryDecade from 'com/pages/story-decades/banner'
 import StoryTopics from 'com/pages/story-topics/banner'
+import BottomSheetData from 'com/pages/dashboard/com/bottom-sheet-data';
 
 export default function Content( props ){
 	const dispatch = useDispatch();

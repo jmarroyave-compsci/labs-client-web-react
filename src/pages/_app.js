@@ -35,7 +35,6 @@ export default function BaseApp(props) {
   }, [])
 
 
-
   return (
     <StateProvider store={store}>
       <CacheProvider value={emotionCache}>

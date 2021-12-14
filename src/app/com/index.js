@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useTheme } from '@mui/material/styles';
 
@@ -32,6 +32,7 @@ import Snowfall from 'react-snowfall'
 function App( props ) {
   const dispatch = useDispatch();
   const appState = useSelector(( state ) => state['app'] )
+  const [ clientReady, setClientReady ] = useState(false)
 
   const theme = useMemo( () => {
     return getTheme( appState.theme.mode )
@@ -42,6 +43,8 @@ function App( props ) {
     ReactGA.pageview(window.location.pathname + window.location.search);
 
     dispatch( initializeApp( { dispatch : dispatch } ) ) 
+
+    setClientReady(true)
   }, [])
 
   return (
@@ -54,7 +57,7 @@ function App( props ) {
       <ThemeProvider theme={ theme }>
         <CssBaseline />
         <Box sx={{ display: 'flex' }} style={{padding: 0, margin: 0}}>
-          {appState.theme.snowMode && <Snowfall   snowflakeCount={200}/>}
+          {clientReady && appState.theme.snowMode && <Snowfall snowflakeCount={200}/>}
           <Snackbar/>
           <BottomSheet/>
           <Toolbar/>

@@ -28,10 +28,17 @@ function onChange(qry, handler) {
 export default function SearchBox( props ) {
   const appState = useSelector(( state ) => state.app )
   const dispatch = useDispatch();
+  const [ loaded, setLoaded ] = React.useState(false);
+  const [open, setOpen] = React.useState(false);
+  const [options, setOptions] = React.useState([]);
+  const [inputValue, setInputValue] = React.useState('');
+  const [value, setValue] = React.useState(null);
+  const loading = open && options.length === 0;
 
   const onSearchQuery = (qry) => {
     qry = qry.toLowerCase()
     dispatch( searchFetch( { qry : qry } ) )
+    setValue("")
   }
 
   const onSearchSuggestions = async (qry) => {
@@ -40,18 +47,8 @@ export default function SearchBox( props ) {
     return data.suggestions;
   }
 
-  const [ loaded, setLoaded ] = React.useState(false);
-  const [open, setOpen] = React.useState(false);
-  const [options, setOptions] = React.useState([]);
-  const [inputValue, setInputValue] = React.useState('');
-  const [value, setValue] = React.useState(null);
-  const loading = open && options.length === 0;
-
-
   React.useEffect(() => {
     let active = true;
-
-
 
     (async () => {
       await setTimeout( async() => {
