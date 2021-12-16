@@ -8,10 +8,11 @@ export const getTheme = ( mode ) => {
     palette: {
       mode: mode,
       primary: {
-        main: '#556cd6',
+        main: '#06388c',
       },
       secondary: {
-        main: '#19857b',
+        main: '#ff6d00',
+        contrastText: '#fbf0f0',
       },
       error: {
         main: red.A400,

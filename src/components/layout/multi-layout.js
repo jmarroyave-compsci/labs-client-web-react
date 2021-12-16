@@ -23,6 +23,9 @@ export default function Layout( props ){
 
   state = ( props.data ) ? { data: props.data, params: {page: props.params.page} } : state;
 
+
+  //console.log(state)
+
   var forceLoading = false;
 
   useEffect( () => {
@@ -161,7 +164,6 @@ function MultiLayout( props ){
     </>
   )
 } 
-
 
 function BannerLayout( props ){
   const { config, state } = props;
