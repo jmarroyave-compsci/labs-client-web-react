@@ -1,0 +1,848 @@
+{
+    "params": {
+        "renderer": "page",
+        "entity": "movies",
+        "page": 1,
+        "genre": "comedy",
+        "breadcrumbs": "/movies/stories/genre-timeline/comedy",
+        "render": "page"
+    },
+    "data": [
+        {
+            "timeline": [
+                {
+                    "year": 1870,
+                    "genre": "comedy",
+                    "max": 41,
+                    "min": 6,
+                    "words": [
+                        {
+                            "n": 41,
+                            "p": "story",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 27,
+                            "p": "life",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 9,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 9,
+                            "p": "lost",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 8,
+                            "p": "dream",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 7,
+                            "p": "untitled",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 7,
+                            "p": "movie",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 7,
+                            "p": "king",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 7,
+                            "p": "day",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 6,
+                            "p": "untold",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 1900,
+                    "genre": "comedy",
+                    "max": 12,
+                    "min": 6,
+                    "words": [
+                        {
+                            "n": 12,
+                            "p": "tramp",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 9,
+                            "p": "the,tramp",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 9,
+                            "p": "girls",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 9,
+                            "p": "burglar",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 8,
+                            "p": "girl",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 8,
+                            "p": "fight",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 7,
+                            "p": "interrupted",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 6,
+                            "p": "troubles",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 6,
+                            "p": "return",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 6,
+                            "p": "lover",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 1910,
+                    "genre": "comedy",
+                    "max": 62,
+                    "min": 34,
+                    "words": [
+                        {
+                            "n": 62,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 53,
+                            "p": "day",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 48,
+                            "p": "dream",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 45,
+                            "p": "dog",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 38,
+                            "p": "joke",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 37,
+                            "p": "tramp",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 37,
+                            "p": "revenge",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 35,
+                            "p": "troubles",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 34,
+                            "p": "husband",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 34,
+                            "p": "baby",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 1920,
+                    "genre": "comedy",
+                    "max": 394,
+                    "min": 102,
+                    "words": [
+                        {
+                            "n": 394,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 224,
+                            "p": "kri",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 185,
+                            "p": "rigadin",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 178,
+                            "p": "day",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 169,
+                            "p": "girl",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 144,
+                            "p": "polidor",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 136,
+                            "p": "baby",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 126,
+                            "p": "wife",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 119,
+                            "p": "romance",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 102,
+                            "p": "tontolini",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 1930,
+                    "genre": "comedy",
+                    "max": 158,
+                    "min": 48,
+                    "words": [
+                        {
+                            "n": 158,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 76,
+                            "p": "night",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 72,
+                            "p": "felix",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 71,
+                            "p": "life",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 68,
+                            "p": "hot",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 68,
+                            "p": "day",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 59,
+                            "p": "wild",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 55,
+                            "p": "girl",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 55,
+                            "p": "cat",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 48,
+                            "p": "dog",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 1940,
+                    "genre": "comedy",
+                    "max": 151,
+                    "min": 34,
+                    "words": [
+                        {
+                            "n": 151,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 82,
+                            "p": "night",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 75,
+                            "p": "girl",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 68,
+                            "p": "hollywood",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 53,
+                            "p": "mickey's",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 51,
+                            "p": "lady",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 44,
+                            "p": "trouble",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 42,
+                            "p": "day",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 35,
+                            "p": "life",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 34,
+                            "p": "parade",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 1950,
+                    "genre": "comedy",
+                    "max": 59,
+                    "min": 24,
+                    "words": [
+                        {
+                            "n": 59,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 45,
+                            "p": "girl",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 37,
+                            "p": "lady",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 36,
+                            "p": "trouble",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 35,
+                            "p": "night",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 30,
+                            "p": "hare",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 26,
+                            "p": "town",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 25,
+                            "p": "wife",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 25,
+                            "p": "life",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 24,
+                            "p": "animals",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 1960,
+                    "genre": "comedy",
+                    "max": 80,
+                    "min": 21,
+                    "words": [
+                        {
+                            "n": 80,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 42,
+                            "p": "paris",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 37,
+                            "p": "girl",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 28,
+                            "p": "hare",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 27,
+                            "p": "magoo",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 23,
+                            "p": "time",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 23,
+                            "p": "night",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 22,
+                            "p": "trouble",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 21,
+                            "p": "stacheltier",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 21,
+                            "p": "happy",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 1970,
+                    "genre": "comedy",
+                    "max": 92,
+                    "min": 22,
+                    "words": [
+                        {
+                            "n": 92,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 55,
+                            "p": "pink",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 45,
+                            "p": "girl",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 39,
+                            "p": "girls",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 32,
+                            "p": "wild",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 32,
+                            "p": "amor",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 26,
+                            "p": "ang",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 24,
+                            "p": "woman",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 24,
+                            "p": "life",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 22,
+                            "p": "night",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 1980,
+                    "genre": "comedy",
+                    "max": 111,
+                    "min": 29,
+                    "words": [
+                        {
+                            "n": 111,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 62,
+                            "p": "pink",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 50,
+                            "p": "girls",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 46,
+                            "p": "sex",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 39,
+                            "p": "ang",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 34,
+                            "p": "girl",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 31,
+                            "p": "shi",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 30,
+                            "p": "hot",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 29,
+                            "p": "night",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 29,
+                            "p": "amor",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 1990,
+                    "genre": "comedy",
+                    "max": 81,
+                    "min": 25,
+                    "words": [
+                        {
+                            "n": 81,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 46,
+                            "p": "girls",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 35,
+                            "p": "night",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 32,
+                            "p": "life",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 31,
+                            "p": "kai",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 28,
+                            "p": "à",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 28,
+                            "p": "movie",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 28,
+                            "p": "crazy",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 27,
+                            "p": "time",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 25,
+                            "p": "hot",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 2000,
+                    "genre": "comedy",
+                    "max": 157,
+                    "min": 36,
+                    "words": [
+                        {
+                            "n": 157,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 64,
+                            "p": "life",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 63,
+                            "p": "movie",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 53,
+                            "p": "story",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 51,
+                            "p": "girl",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 46,
+                            "p": "day",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 44,
+                            "p": "night",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 43,
+                            "p": "ang",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 39,
+                            "p": "time",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 36,
+                            "p": "adventures",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 2010,
+                    "genre": "comedy",
+                    "max": 630,
+                    "min": 127,
+                    "words": [
+                        {
+                            "n": 630,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 291,
+                            "p": "life",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 272,
+                            "p": "day",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 259,
+                            "p": "movie",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 216,
+                            "p": "night",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 202,
+                            "p": "story",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 166,
+                            "p": "time",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 155,
+                            "p": "dead",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 142,
+                            "p": "girl",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 127,
+                            "p": "film",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                },
+                {
+                    "year": 2020,
+                    "genre": "comedy",
+                    "max": 226,
+                    "min": 67,
+                    "words": [
+                        {
+                            "n": 226,
+                            "p": "love",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 124,
+                            "p": "movie",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 120,
+                            "p": "night",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 115,
+                            "p": "christmas",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 109,
+                            "p": "day",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 99,
+                            "p": "time",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 93,
+                            "p": "story",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 87,
+                            "p": "life",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 67,
+                            "p": "quarantine",
+                            "__typename": "WordsListItem"
+                        },
+                        {
+                            "n": 67,
+                            "p": "mugsey",
+                            "__typename": "WordsListItem"
+                        }
+                    ],
+                    "__typename": "StoryMovieTopics"
+                }
+            ]
+        }
+    ],
+    "loading": false,
+    "topic": {
+        "data": null,
+        "loading": true,
+        "error": null
+    }
+}

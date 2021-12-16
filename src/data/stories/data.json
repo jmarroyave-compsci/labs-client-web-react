@@ -20,7 +20,8 @@
 	{ "title": "Project's log", "url": "/about/log", "tags" : ["about"] },
 	{ "title": "Project's timeline", "url": "/about/timeline", "tags" : ["about"] },
 	{ "title": "Movies by decade", "url": "/movies/stories/decades", "tags" : ["movies"] },
-	{ "title": "Movie topics", "url": "/movies/stories/topics", "tags" : ["movies"] }
+	{ "title": "Movie topics", "url": "/movies/stories/topics", "tags" : ["movies"] },
+	{ "title": "Movie genre timeline", "url": "/movies/stories/genre-timeline", "tags" : ["movies"] }
 ],
 	"relatedness" : {
 		"movies" : ["festivals", "tv-shows"],

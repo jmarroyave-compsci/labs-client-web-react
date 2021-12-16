@@ -24,6 +24,13 @@ const get = function(current, area=null, n=0 ){
 export const getBy = ( ID, breadcrumbs ) =>{	
 	var resp = [];
 
+	breadcrumbs = breadcrumbs.split("/")
+	if( breadcrumbs[ breadcrumbs.length - 1 ].includes("index") ) {
+		breadcrumbs = breadcrumbs.slice(0, breadcrumbs.length - 1 )
+	}
+
+	breadcrumbs = breadcrumbs.join("/")
+
 	//console.log("stories:", area, ID, breadcrumbs)
 
 	var areas = [];

@@ -24,7 +24,7 @@ export default function Layout( props ){
   state = ( props.data ) ? { data: props.data, params: {page: props.params.page} } : state;
 
 
-  //console.log(state)
+  //console.log("state", state)
 
   var forceLoading = false;
 

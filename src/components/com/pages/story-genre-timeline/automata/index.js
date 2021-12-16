@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { store } from 'app/state/store'
 import Router from 'next/router'
-import { fetchItems, qryFetchTopic } from '../data';
+import { fetchItems, qryFetchTopic } from 'com/entities/topics/data';
 import config from "../.config.js";
 
 const MODEL_NAME = config.automata.name;
@@ -12,7 +12,6 @@ const initialState = {
     entity: null,
     page: null,
     genre: null,
-    decade: null,    
   },
   data: null,
   loading: true,
@@ -30,11 +29,14 @@ export const fetchTopic = createAsyncThunk(`${MODEL_NAME}/fetchTopic`,
   }
 )
 
-
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     thunkAPI.dispatch(setParams( params )) 
-    return await fetchItems( params );
+    params.decade = 0
+    
+    var resp = await fetchItems( params );
+    resp.data = [{timeline : resp.data}];
+    return resp;
   }
 )
 

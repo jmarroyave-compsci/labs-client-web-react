@@ -16,7 +16,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   width: 100%;
   height: inherit;
   border-radius: 0;
-  background: linear-gradient(60deg, #556cd6 75%, #000 150%);
+  background: linear-gradient(60deg, #06388c 75%, #000 150%);
   color: #fff;
 }
 
@@ -258,7 +258,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
   color: rgba(0, 0, 0, 0.54);
   -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  color: #556cd6;
+  color: #06388c;
 }
 
 .emotion-16::-moz-focus-inner {
@@ -288,7 +288,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
 }
 
 .emotion-16:hover {
-  background-color: rgba(85, 108, 214, 0.04);
+  background-color: rgba(6, 56, 140, 0.04);
 }
 
 @media (hover: none) {

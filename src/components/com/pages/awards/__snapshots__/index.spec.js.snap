@@ -44,7 +44,7 @@ exports[`STORIES_AWARDS compare Page against snapshot 1`] = `
   width: 100%;
   height: inherit;
   border-radius: 0;
-  background: linear-gradient(60deg, #556cd6 75%, #000 150%);
+  background: linear-gradient(60deg, #06388c 75%, #000 150%);
   color: #fff;
 }
 
@@ -211,7 +211,7 @@ exports[`STORIES_AWARDS compare Page against snapshot 1`] = `
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  color: #556cd6;
+  color: #06388c;
 }
 
 .emotion-10::-moz-focus-inner {
@@ -233,7 +233,7 @@ exports[`STORIES_AWARDS compare Page against snapshot 1`] = `
 .emotion-10:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: rgba(85, 108, 214, 0.04);
+  background-color: rgba(6, 56, 140, 0.04);
 }
 
 @media (hover: none) {
@@ -542,8 +542,8 @@ exports[`STORIES_AWARDS compare Page against snapshot 1`] = `
   border-radius: 4px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  border: 1px solid rgba(85, 108, 214, 0.5);
-  color: #556cd6;
+  border: 1px solid rgba(6, 56, 140, 0.5);
+  color: #06388c;
 }
 
 .emotion-30::-moz-focus-inner {
@@ -565,8 +565,8 @@ exports[`STORIES_AWARDS compare Page against snapshot 1`] = `
 .emotion-30:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  background-color: rgba(85, 108, 214, 0.04);
-  border: 1px solid #556cd6;
+  background-color: rgba(6, 56, 140, 0.04);
+  border: 1px solid #06388c;
 }
 
 @media (hover: none) {
