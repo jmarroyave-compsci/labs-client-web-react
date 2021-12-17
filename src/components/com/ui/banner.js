@@ -4,6 +4,7 @@ import TextLink from "core/ui/link"
 import { Title, Description, Footer } from 'style/banner'
 import Carousel from 'com/ui/carousel'
 import Tiles from 'com/ui/tiles'
+import Paper from 'com/ui/paper'
 import LinkButton from 'com/ui/link-button';
 
 const Banner = function( props ){
@@ -32,11 +33,13 @@ const Data = function( renderer, data, item, xs, sm, md, lg ){
     case "marquee":
       if(!data) return null
       return (
-        data.map( (it, idx) => 
+        <Paper sx={{ padding : '1rem'}}>
+        {data.map( (it, idx) => 
           <React.Fragment key={idx}>
             {item(it)}
           </React.Fragment>
-        )
+        )}
+        </Paper>
       )
 
     case "tiles":

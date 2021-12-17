@@ -38,9 +38,9 @@ function TopicTimeline( props ){
 
 
   return (
-      <div>
+      <div style={{padding: '1rem'}}>
         <Stack direction="row" style={{marginBottom: '1rem'}}>
-          <Chip label={topic} onDelete={ onExit } />
+          <Chip label={topic.replaceAll(",", " ")} onDelete={ onExit } />
           <div style={{flex: 1}}/>
         </Stack>
 

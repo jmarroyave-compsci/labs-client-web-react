@@ -20,8 +20,12 @@ const TopicsMarquee = ( { data, max, min, onTopicClick } ) => {
     const slices = "i-".repeat(SLICES - 1).split("-")
     const size = Math.floor(data.length / SLICES)
 
-    return slices.map( (xxx, i) => 
-        <Line onClick={onTopicClick} max={max} min={min} key={i} words={data.slice( size * i, size * ( i + 1 ) ) } direction={(i % 2 == 0) ? "left" : "right"}/>
+    return (
+        <div>
+        {slices.map( (xxx, i) => 
+            <Line onClick={onTopicClick} max={max} min={min} key={i} words={data.slice( size * i, size * ( i + 1 ) ) } direction={(i % 2 == 0) ? "left" : "right"}/>
+        )}
+        </div>
     )
 }
 
