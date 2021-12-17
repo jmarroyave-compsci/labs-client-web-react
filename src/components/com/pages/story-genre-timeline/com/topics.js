@@ -1,8 +1,9 @@
 import React, { useEffect, useState, useReducer } from 'react'
-
+import { useDispatch, useSelector } from 'react-redux'
 import TopicTimeline from './topic-timeline';
 import GenreTimeline from './genre-timeline';
 import Skeleton from "./skeleton";
+import { fetchTopic } from '../automata'
 
 const initialState = {
   showLines: true,
@@ -39,13 +40,15 @@ function reducer(state, action){
 }
 
 function Topics( props ){
-  const { data, genre, year, topicData, loading } = props;
+  const appDispatch = useDispatch()
+  const topicData = useSelector(( state ) => state['story-genre-timeline'] )   
+  const { data, genre, year, loading } = props;
 
   const [ state, dispatch ] = useReducer( reducer, initialState )
 
   const onTopicClick = ( topic ) => {
-    if(props.onTopicClick) props.onTopicClick(topic)
     dispatch({type: "SELECT_WORD", payload: { topic: topic } })
+    appDispatch( fetchTopic( { entity: "movie", topic: topic } ) )
   }
 
   const onTopicExit = ( topic ) => {
@@ -58,7 +61,9 @@ function Topics( props ){
 
   return (
     <div>
-      {state.showLines && <GenreTimeline data={data} onTopicClick={onTopicClick} />}
+      {<GenreTimeline topic={state.topic} data={data} onTopicClick={onTopicClick} />}
+      <br/>
+      <br/>
       {state.showTimeline && <TopicTimeline topic={state.topic} genre={genre} year={year} data={topicData} onExit={onTopicExit} />}
     </div>
   )

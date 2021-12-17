@@ -1,16 +1,16 @@
 import React from 'react'
 import { styled, useTheme } from '@mui/material/styles';
-import { grey } from '@mui/material/colors';
 import Marquee from "react-fast-marquee";
+import { getGrey } from 'style/colors'
 
-const Word = styled('span')( ({ fontSize, color, theme }) => ({
+const Word = styled('span')( ({ fontSize, color, backgroundColor, theme }) => ({
     border: '1px solid rgba(0,0,0,0.2)', 
     padding: "0.5rem", 
     marginRight: '1rem', 
     marginBottom: '0.25rem', 
     fontSize: `${fontSize}`,
     color: `${color}`,
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: `${backgroundColor}`,
     cursor: 'pointer',
     borderRadius: '5px',
 }));
@@ -29,8 +29,8 @@ const Line = ( { data, direction, words, max, min, onClick } ) => (
   <Marquee gradient={false} direction={direction} pauseOnHover={true} pauseOnClick={true}>
     {words.map( (w,idx) => 
         <Word key={idx}            
+          {...color(w.n, max, min )}
           fontSize={fontSize(w.n, max, min )}
-          color={color(w.n, max, min )}
           onClick={() => onClick(w.p) }
         >
           {w.p.split(",").join(" ")}
@@ -68,11 +68,8 @@ const color = ( n, max, min ) => {
     }
   }
   pos = (pos > sizes.length - 1) ? sizes.length - 1 : pos; 
-  pos += ( sizes.length > 9 ) ? 0 : 9 - (sizes.length - 1);
-  pos = (pos < 4) ? 4 : pos; 
-  pos = ( theme.palette.mode === "dark" ) ? 10 - pos : pos
-  const resp = grey[pos * 100]
-  return resp;
+  pos = sizes.length -1 - pos;
+  return getGrey( theme, pos )
 }
 
 export default TopicsMarquee

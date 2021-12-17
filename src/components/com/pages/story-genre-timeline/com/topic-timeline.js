@@ -15,7 +15,7 @@ function TopicTimeline( props ){
   const cellBG = ( i, active ) => (active) ? "rgba(0,0,0,0.4)" : ( ( i % 2 == 0) ? "rgba(0,0,0,0.1)" : "inherit") 
 
   useEffect( () => {
-    if(!data.topic.data) return;
+    if(!data?.topic?.data) return;
 
     var tl = {}
     var genres  = {};
@@ -34,7 +34,7 @@ function TopicTimeline( props ){
 
     setTopicTimeline(resp)
 
-  }, [data.topic.data] )
+  }, [data] )
 
 
   return (

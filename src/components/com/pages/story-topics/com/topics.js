@@ -54,8 +54,9 @@ function Topics( props ){
 
   return (
     <div>
-      {state.showLines && <TopicsMarquee max={max} min={min} data={words} onTopicClick={onTopicClick} />}
-      {state.showTimeline && <TopicTimeline topic={state.topic} genre={genre} year={year} data={props.topicData} onExit={onTopicExit} />}
+      {<TopicsMarquee max={max} min={min} data={words} onTopicClick={onTopicClick} />}
+      <br/><br/>
+      {state.topic && <TopicTimeline topic={state.topic} genre={genre} year={year} data={props.topicData} onExit={onTopicExit} />}
     </div>
   )
 

@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 import { store } from 'app/state/store'
 import Router from 'next/router'
-import { fetchItems, qryFetchTopic } from '../data';
+import { fetchItems, qryFetchTopic } from 'com/entities/topics/data';
 import config from "../.config.js";
 
 const MODEL_NAME = config.automata.name;
