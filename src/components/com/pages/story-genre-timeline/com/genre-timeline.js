@@ -56,7 +56,7 @@ function GenreTimeline( props ){
               { words.map( (i) => 
                 <TableRow key={i}>
                 { Object.keys(timeline).map( (year, idx) => 
-                    <TableCell key={idx} onClick={() => onTopicClick(timeline[year].words[i]?.p)} key={idx} style={{fontWeight: (topic === timeline[year].words[i]?.p) ? "bold" : "inherit" ,...getGrey(theme, i)}} align='center'>{ ( timeline[year].words[i] ) ?  timeline[year].words[i].p.replaceAll(",", " ") : "-" }</TableCell>
+                    <TableCell key={idx} onClick={() => onTopicClick(timeline[year].words[i]?.p)} key={idx} style={{fontWeight: (topic === timeline[year].words[i]?.p) ? "bold" : "inherit" ,...getGrey(theme, i)}} align='center'>{ ( timeline[year].words[i] ) ?  timeline[year].words[i].p.replace(/,/g, " ") : "-" }</TableCell>
                 )}
                 </TableRow>
               )}
