@@ -3,6 +3,7 @@ import { store } from 'app/state/store'
 import Router from 'next/router'
 import * as data from '../data'; 
 import config from "../.config.js";
+import { fetchItems, qryFetchTopic } from 'com/entities/topics/data';
 
 const MODEL_NAME = config.automata.name;
 
@@ -15,12 +16,32 @@ const initialState = {
   data: null,
   loading: true,
   error: null,
+  topic: {
+    data: null,
+    loading: true,
+    error: null,    
+  },
 }
+
+export const fetchTopic = createAsyncThunk(`${MODEL_NAME}/fetchTopic`,
+  async ( params, thunkAPI ) => {
+    return await qryFetchTopic( params );
+  }
+)
 
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     await thunkAPI.dispatch(setParams( params ))
-    return await data.fetchData( params );
+    params.extended = (params.renderer === "banner" ) ? false: true;
+    params.limit = (params.renderer === "banner" ) ? 100 : 10;
+
+    const resp = await data.fetchData( params );
+
+    if(params.renderer === "banner"){
+      resp.data = [{ words: resp.data}]
+    }
+    
+    return resp;
   }
 )
 
@@ -55,7 +76,23 @@ const slice = createSlice({
       state.loading = false;
       state.error = error;
     },
-  },
+    [fetchTopic.pending]: (state, action) => {
+      state.topic.data = null;
+      state.topic.loading = true;
+      state.topic.error = "";
+    },
+    [fetchTopic.fulfilled]: (state, action) => {
+      const { loading, error, data } = action.payload;
+      state.topic.data = data;
+      state.topic.loading = loading;
+      state.topic.error = error;
+    },
+    [fetchTopic.rejected]: (state, action) => {
+      const { error } = action;
+      state.topic.data = [];
+      state.topic.loading = false;
+      state.topic.error = error;
+    },  },
 })
 
 store.reducerManager.add(MODEL_NAME, slice.reducer);

@@ -9,5 +9,6 @@ export default {
 	},
 	banner: {
 		showData : true,
+		renderer: "marquee",
 	}
 }

@@ -16,7 +16,10 @@ const Word = styled('span')( ({ fontSize, color, backgroundColor, theme }) => ({
 }));
 
 const SLICES = 4
-const TopicsMarquee = ( { data, max, min, onTopicClick } ) => {
+const TopicsMarquee = ( props ) => {
+    const { data, max, min, onTopicClick } = props;
+    console.log(props)
+    if(data == null) return null;
     const slices = "i-".repeat(SLICES - 1).split("-")
     const size = Math.floor(data.length / SLICES)
 
@@ -33,11 +36,11 @@ const Line = ( { data, direction, words, max, min, onClick } ) => (
   <Marquee gradient={false} direction={direction} pauseOnHover={true} pauseOnClick={true}>
     {words.map( (w,idx) => 
         <Word key={idx}            
-          {...color(w.n, max, min )}
-          fontSize={fontSize(w.n, max, min )}
-          onClick={() => onClick(w.p) }
+          {...color(w.count, max, min )}
+          fontSize={fontSize(w.count, max, min )}
+          onClick={() => onClick(w.name) }
         >
-          {w.p.split(",").join(" ")}
+          {w.name}
         </Word>
     )}
   </Marquee>      

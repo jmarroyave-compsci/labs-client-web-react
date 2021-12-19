@@ -23,15 +23,11 @@ export default function Layout( props ){
 
   state = ( props.data ) ? { data: props.data, params: {page: props.params.page} } : state;
 
-
-  //console.log("state", state)
-
   var forceLoading = false;
 
   useEffect( () => {
     if(!state || props.data) return;
     dispatch( setLoading( { status: state.loading, sender: config.automata.name } ) )
-
     //console.log(config.automata.name, state);
   }, [state])
 
