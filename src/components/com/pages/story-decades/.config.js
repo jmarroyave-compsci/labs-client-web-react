@@ -5,7 +5,7 @@ export default {
 	page: {
 		title: "Decades",
 		description: "",
-		url: ({entity, decade}) => `/${entity}/stories/decades/${decade}`,
+		url: ({entity, decade, page}) => `/${entity}/stories/decades?decade=${decade}&page=${page}`,
 	},
 	banner: {
 		showData : true,

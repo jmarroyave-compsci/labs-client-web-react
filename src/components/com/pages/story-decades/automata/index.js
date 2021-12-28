@@ -39,7 +39,7 @@ const slice = createSlice({
         ...action.payload
       }
       if(state.params.renderer == "banner") return;
-      Router.push(`${config.page.url(state.params)}?page=${state.params.page}`, null, { shallow: false })  
+      Router.push(`${config.page.url(state.params)}`, null, { shallow: true })  
     }
   },
   extraReducers: {

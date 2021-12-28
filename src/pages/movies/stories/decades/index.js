@@ -7,9 +7,8 @@ const TYPE = "movie"
 
 const Page = ( props ) => {
   const router = useRouter(); 
-  var [ decade ] = (router?.query?.index) ? router.query.index : []; 
+  var { page, decade } = (router && router.query) ? router.query : {}; 
   decade = (decade) ? decade : new Date().getFullYear().toString().slice(0,3) + "0"
-  var { page } = (router && router.query) ? router.query : []; 
   page = (page) ? parseInt(page) : 1;
 
   return (

@@ -29,6 +29,7 @@ describe('Check for render', () => {
         it(`should not contain component errors`, () => {
 
           if(root == "/"){
+            cy.log("wait a little while for the home page")
             cy.wait(WAIT_FOR)
             cy.wait(WAIT_FOR)
           }
@@ -73,8 +74,8 @@ describe('Check for render', () => {
       
     }
 
-    //visit( "/",  sitemap["home"] );
-    visit( "/",  null );
+    visit( "/",  sitemap["home"] );
+    //visit( "/",  null );
     //visit( "/movies/stories",  null );
     //visit( "/movies/stories/actors",  null );
     //visit( "/movies/stories/decades",  null );

@@ -5,7 +5,7 @@ export default {
 	page: {
 		title: "Genre timeline",
 		description: "",
-		url: ({entity, genre}) => `/${entity}/stories/genre-timeline/${genre}`,
+		url: ({entity, genre, page}) => `/${entity}/stories/genre-timeline?genre=${genre}&page=${page}`,
 	},
 	banner: {
 		showData : true,

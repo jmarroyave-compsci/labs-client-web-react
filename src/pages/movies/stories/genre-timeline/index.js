@@ -6,9 +6,8 @@ const ENTITY = "movies"
 
 const Page = ( props ) => {
   const router = useRouter(); 
-  var [ genre ] = (router?.query?.index) ? router.query.index : []; 
+  var { page, genre } = (router && router.query) ? router.query : {}; 
   genre = (genre) ? genre : "action";
-  var { page } = (router && router.query) ? router.query : []; 
   page = (page) ? parseInt(page) : 1;
 
   return (
