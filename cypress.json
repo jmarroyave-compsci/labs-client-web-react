@@ -1,5 +1,5 @@
 {
-	"baseUrl": "https://jmarroyave-compsci.github.io/labs-client-web-react/app",
+	"baseUrl": "https://jmarroyave-compsci.github.io",
 	"downloadsFolder": "src/tests/cypress/downloads",
 	"fixturesFolder": "src/tests/cypress/fixtures",
 	"integrationFolder": "src/tests/cypress/integration",
