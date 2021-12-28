@@ -351,6 +351,13 @@
           "task": "Consistency in the look and feel",
           "level": 3,
           "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "WEEK PLAN",
+          "level": 1,
+          "children": null
         }
       ]
     },
@@ -462,7 +469,7 @@
         {
           "area": null,
           "hour": 0,
-          "task": "PRIORITIES:",
+          "task": "WEEK PLAN",
           "level": 1,
           "children": null
         }
@@ -562,6 +569,13 @@
           "hour": 0,
           "task": "Improve the dev process",
           "level": 3,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "WEEK PLAN",
+          "level": 1,
           "children": null
         }
       ]
@@ -814,7 +828,7 @@
         {
           "area": null,
           "hour": 0,
-          "task": "PRIORITIES:",
+          "task": "WEEK PLAN",
           "level": 1,
           "children": null
         }
@@ -933,6 +947,13 @@
       "Day 7": [
         {
           "area": null,
+          "hour": 0,
+          "task": "WEEK PLAN",
+          "level": 1,
+          "children": null
+        },
+        {
+          "area": "STORIES",
           "hour": 0,
           "task": "PRIORITIES",
           "level": 1,
@@ -1125,6 +1146,13 @@
         {
           "area": null,
           "hour": 0,
+          "task": "WEEK PLAN",
+          "level": 1,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
           "task": "PRIORITIES",
           "level": 1,
           "children": null
@@ -1305,6 +1333,13 @@
           "task": "[WEB] app state",
           "level": 3,
           "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "WEEK PLAN",
+          "level": 1,
+          "children": null
         }
       ]
     },
@@ -1468,7 +1503,15 @@
           "children": null
         }
       ],
-      "Day 7": []
+      "Day 7": [
+        {
+          "area": null,
+          "hour": 0,
+          "task": "WEEK PLAN",
+          "level": 1,
+          "children": null
+        }
+      ]
     },
     "Sprint 11": {
       "Day 1": [
@@ -1643,6 +1686,13 @@
           "task": "[WEB] - Writers",
           "level": 3,
           "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "WEEK PLAN",
+          "level": 1,
+          "children": null
         }
       ]
     },
@@ -1720,6 +1770,13 @@
           "hour": 0,
           "task": "[DATA] preparing computes and batches",
           "level": 3,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "WEEK PLAN",
+          "level": 1,
           "children": null
         }
       ]
@@ -1801,12 +1858,34 @@
         {
           "area": null,
           "hour": 0,
+          "task": "WEEK PLAN",
+          "level": 1,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Day 1:",
+          "level": 1,
+          "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "WEEK PLAN",
+          "level": 1,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
           "task": "Day 1:",
           "level": 1,
           "children": null
         }
       ]
     },
+    "Sprint 14 - V.2.2": {},
     "Sprint 15": {}
   }
 }
