@@ -7,4 +7,3 @@ fragment EntityTinyFragment on Entity {
   title
 }
 `;
-

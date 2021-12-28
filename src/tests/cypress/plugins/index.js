@@ -12,6 +12,8 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
+const dotenv = require('dotenv')
+
 /**
  * @type {Cypress.PluginConfig}
  */
@@ -19,4 +21,19 @@
 module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
+
+  //console.log(config.env, config.env.local)
+  const CONFIG_PATH = `${"./.env.production"}${(config.env.local) ? ".local" : ""}`
+  //console.log(CONFIG_PATH)
+  const conf = dotenv.config({path: CONFIG_PATH});
+  
+
+  config.env.SITE_URL = process.env.SITE_URL
+  config.env.SERVER_URL = process.env.NEXT_PUBLIC__SERVER
+  config.env.BASE_URL = config.baseUrl
+  config.env.BASE_PATH = process.env.BASE_PATH
+
+  //console.log("conf", conf, config.env)
+  
+  return config  
 }

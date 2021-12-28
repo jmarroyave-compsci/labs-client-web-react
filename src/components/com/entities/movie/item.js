@@ -25,9 +25,8 @@ export default function Item( props ){
 }
 
 function ItemTiny( props ){
-
   return (
-    <Tooltip content={title}>    
+    <Tooltip content={props.title}>    
       <Link id={props.id}>
         <Field title={props?.releaseYear ?? "?"} value={props?.title ?? "?"} />
       </Link>

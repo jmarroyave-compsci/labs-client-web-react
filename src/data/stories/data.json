@@ -17,7 +17,7 @@
 	{ "title": "Music Podcasts", "url": "/podcasts/stories/music", "tags" : ["podcasts", "music"] },
 	{ "title": "Video Games Dashboard", "url": "/video-games", "tags" : ["video-games"] },
 	{ "title": "Festivals Dashboard", "url": "/movies/festivals", "tags" : ["festivals"] },
-	{ "title": "Project's log", "url": "/about/log", "tags" : ["about"] },
+	{ "title": "Project's log", "url": "/about/project/log", "tags" : ["about"] },
 	{ "title": "Project's timeline", "url": "/about/timeline", "tags" : ["about"] },
 	{ "title": "Movies by decade", "url": "/movies/stories/decades", "tags" : ["movies"] },
 	{ "title": "Movie topics", "url": "/movies/stories/topics", "tags" : ["movies"] },

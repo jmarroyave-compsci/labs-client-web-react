@@ -18,5 +18,9 @@
 		"html": false,
 		"json": true,
 		"reportDir": "src/tests/cypress/reports"
+	},
+	"chromeWebSecurity": false,
+	"env": {
+		"local" : false
 	}
 }
