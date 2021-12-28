@@ -23,7 +23,7 @@ export const ItemMarquee = ( props ) => {
             <Title>{genre.toUpperCase()} {year}</Title>
           </Frame>
         }
-        <Topics onTopicClick={onTopicClick} props={props} topicData={topicData} />
+        <Topics {...props} onTopicClick={onTopicClick} props={props} topicData={topicData} />
     </div>
   )
 }

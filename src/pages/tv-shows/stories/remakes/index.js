@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router';
-import Layout from 'com/pages/remakes/list';
+import Layout from 'com/pages/story-remakes/list';
 
 const ENTITY = "tv-shows"
 

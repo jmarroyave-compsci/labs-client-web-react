@@ -17,8 +17,6 @@ export const ItemBanner = ( props ) => {
     dispatch( fetchTopic( { entity: "movie", topic: topic } ) )
   }
 
-  console.log(topicData)
-
   return (
     <div style={{padding: '1rem', width: '100%'}}>
         <Topics onTopicClick={onTopicClick} props={props} topicData={topicData} />

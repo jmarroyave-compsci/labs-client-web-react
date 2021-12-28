@@ -2,6 +2,7 @@ import React from 'react'
 import { styled, useTheme } from '@mui/material/styles';
 import Marquee from "react-fast-marquee";
 import { getGrey } from 'style/colors'
+import Skeleton from './topics-marquee-skeleton';
 
 const Word = styled('span')( ({ fontSize, color, backgroundColor, theme }) => ({
     border: '1px solid rgba(0,0,0,0.2)', 
@@ -17,30 +18,31 @@ const Word = styled('span')( ({ fontSize, color, backgroundColor, theme }) => ({
 
 const SLICES = 4
 const TopicsMarquee = ( props ) => {
-    const { data, max, min, onTopicClick } = props;
-    console.log(props)
-    if(data == null) return null;
+    const { data, max, min, onTopicClick, loading } = props;
+
+    if(data == null || loading) return <Skeleton/>;    
+
     const slices = "i-".repeat(SLICES - 1).split("-")
     const size = Math.floor(data.length / SLICES)
 
     return (
         <div>
         {slices.map( (xxx, i) => 
-            <Line onClick={onTopicClick} max={max} min={min} key={i} words={data.slice( size * i, size * ( i + 1 ) ) } direction={(i % 2 == 0) ? "left" : "right"}/>
+            <Line {...props} onClick={onTopicClick} max={max} min={min} key={i} words={data.slice( size * i, size * ( i + 1 ) ) } direction={(i % 2 == 0) ? "left" : "right"}/>
         )}
         </div>
     )
 }
 
-const Line = ( { data, direction, words, max, min, onClick } ) => (
+const Line = ( { data, direction, words, max, min, onClick, wordName, wordCount } ) => (
   <Marquee gradient={false} direction={direction} pauseOnHover={true} pauseOnClick={true}>
     {words.map( (w,idx) => 
         <Word key={idx}            
-          {...color(w.count, max, min )}
-          fontSize={fontSize(w.count, max, min )}
-          onClick={() => onClick(w.name) }
+          {...color(wordCount(w), max, min )}
+          fontSize={fontSize(wordCount(w), max, min )}
+          onClick={() => onClick(wordName(w).toLowerCase()) }
         >
-          {w.name}
+          {wordName(w).toLowerCase()}
         </Word>
     )}
   </Marquee>      

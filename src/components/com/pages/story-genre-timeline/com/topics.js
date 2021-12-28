@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useReducer } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import TopicTimeline from './topic-timeline';
+import TopicTimeline from 'com/entities/topics/topic-timeline';
 import GenreTimeline from './genre-timeline';
 import Skeleton from "./skeleton";
 import { fetchTopic } from '../automata'
@@ -61,9 +61,9 @@ function Topics( props ){
 
   return (
     <div>
-      {<GenreTimeline topic={state.topic} data={data} onTopicClick={onTopicClick} />}
+      {<GenreTimeline {...props} topic={state.topic} data={data} onTopicClick={onTopicClick} />}
       <br/>
-      {state.showTimeline && <TopicTimeline topic={state.topic} genre={genre} year={year} data={topicData} onExit={onTopicExit} />}
+      {state.showTimeline && <TopicTimeline {...props} topic={state.topic} genre={genre} year={year} data={topicData} onExit={onTopicExit} />}
     </div>
   )
 

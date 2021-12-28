@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useReducer } from 'react'
 
-import TopicTimeline from './topic-timeline';
-import TopicsMarquee from './topics-marquee';
+import TopicTimeline from 'com/entities/topics/topic-timeline';
+import TopicsMarquee from 'com/entities/topics/topics-marquee';
 
 
 const initialState = {
@@ -54,7 +54,14 @@ function Topics( props ){
 
   return (
     <div>
-      {<TopicsMarquee max={max} min={min} data={words} onTopicClick={onTopicClick} />}
+      {<TopicsMarquee 
+          max={max} 
+          min={min} 
+          data={words} 
+          onTopicClick={onTopicClick} 
+          wordName={(w) => w.p.split(",").join(" ") }
+          wordCount={(w) => w.n }
+        />}
       <br/>
       {state.topic && <TopicTimeline topic={state.topic} genre={genre} year={year} data={props.topicData} onExit={onTopicExit} />}
     </div>

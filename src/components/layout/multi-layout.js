@@ -76,7 +76,7 @@ export default function Layout( props ){
       render={render}
       state={state}
       loading={ !router?.isReady || !state || state === null || state?.loading }
-      forceLoading={( render === "detail" && state?.data?.length == 0) || ( render == "list" && state?.data?.length === 0 )  || state?.error}      
+      forceLoading={( render === "detail" && state?.data?.length == 0) || ( render == "list" && state?.data?.length === 0 )  || state?.error != null}      
       setErrorMessage={setErrorMessage}
       fetch={fetch}
       item={props.item}
@@ -93,6 +93,7 @@ function MultiLayout( props ){
   const dispatch = useDispatch();
   const { config, item, mainCol, state, render, params, fetch, setErrorMessage} = props
   var loading = props.loading || props.forceLoading;
+  loading = (loading === false) ? false : true;
   const title = config.page.title;
 
   if( props.loading == false && state ){
@@ -116,7 +117,7 @@ function MultiLayout( props ){
     }    
   }
 
-  const BANNER = <BannerLayout {...props} />
+  const BANNER = <BannerLayout {...props} loading={loading} />
 
   return (
     <>
@@ -162,7 +163,7 @@ function MultiLayout( props ){
 } 
 
 function BannerLayout( props ){
-  const { config, state } = props;
+  const { config, state, loading } = props;
   const showDataInBanner = config.banner?.showData ?? false; 
   const title = (props.customTitle) ? ((typeof props.customTitle === 'function') ? ((state) ? props.customTitle(state?.params ?? {} ) : "") : props.customTitle) : config.page?.title ?? "NO TITLE";
   const description = (props.customDescription) ? ((typeof props.customDescription === 'function') ? ((state) ? props.customDescription(state?.params ?? {}) : "") : props.customDescription) : config.page?.description ?? "NO DESCRIPTION";
@@ -172,7 +173,7 @@ function BannerLayout( props ){
     <Banner
       renderer={(config.banner.renderer) ? config.banner.renderer : "carousel"}
       showData={showDataInBanner}
-      loading={ props.loading }
+      loading={ loading }
       title={title}
       description={description}
       data={ state?.data }

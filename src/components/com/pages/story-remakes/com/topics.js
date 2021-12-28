@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useReducer } from 'react'
 
-import TopicTimeline from './topic-timeline';
-import TopicsMarquee from './topics-marquee';
+import TopicTimeline from 'com/entities/topics/topic-timeline';
+import TopicsMarquee from 'com/entities/topics/topics-marquee';
 
 
 const initialState = {
@@ -40,7 +40,6 @@ function reducer(state, action){
 
 function Topics( props ){
   const { max, min, words, genre, year } = props.props;
-
   const [ state, dispatch ] = useReducer( reducer, initialState )
 
   const onTopicClick = ( topic ) => {
@@ -54,7 +53,14 @@ function Topics( props ){
 
   return (
     <div>
-      {<TopicsMarquee max={max} min={min} data={words} onTopicClick={onTopicClick} />}
+      {<TopicsMarquee 
+          max={max} 
+          min={min} 
+          data={words} 
+          onTopicClick={onTopicClick} 
+          wordName={(w) => w.name }
+          wordCount={(w) => w.count }
+        />}
       <br/>
       {state.topic && <TopicTimeline topic={state.topic} data={props.topicData} onExit={onTopicExit} />}
     </div>

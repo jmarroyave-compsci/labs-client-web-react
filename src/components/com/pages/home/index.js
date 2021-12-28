@@ -4,7 +4,7 @@ import { setPage } from 'app';
 import Stack from 'com/ui/stack';
 import Section from 'core/ui/layout/section';
 import StoryAwards from 'com/pages/awards/banner'
-import StoryRemakes from 'com/pages/remakes/banner'
+import StoryRemakes from 'com/pages/story-remakes/banner'
 import StoryPodcastMusic from 'com/pages/podcast-music/banner'
 import StoryLog from 'com/pages/about-project-blog/banner'
 import StoryProfessions from 'com/pages/professions/banner'
