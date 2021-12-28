@@ -1,10 +1,10 @@
 import sitemap from '../../../data/sitemap/data.json'
 import { ERROR_HEADER_TEXT } from '../../../components/core/ui/error'
 
-
 const BASE_PATH = Cypress.env('BASE_PATH')
 const SERVER_URL = Cypress.env('SERVER_URL')
 const SITE_URL = Cypress.env('SITE_URL')
+const SERVERLESS = !Cypress.env('LOCAL')
 const WAIT_FOR = 5 * 1000
 
 describe('Check for render', () => {
@@ -26,24 +26,42 @@ describe('Check for render', () => {
           cy.wait(WAIT_FOR)
         })      
 
-        it(`should not contain errors in the page`, () => {
+        it(`should not contain component errors`, () => {
+
+          if(root == "/"){
+            cy.wait(WAIT_FOR)
+            cy.wait(WAIT_FOR)
+          }
+
           cy.get("body").should('not.contain', ERROR_HEADER_TEXT)
         })
 
-        it(`checking for broken links`, () => {
+        it(`should not have broken links`, () => {
           cy.get('a')
            .each( a => {
               const href = a.attr('href') 
               console.log(a, a.href)
               if(href.startsWith("mailto")) return;
               if(href.includes("linkedin")) return;
-              cy.request(href)
+
+              if(SERVERLESS){
+                if(href.includes("movies/tt")) return;
+                if(href.includes("tv-shows/tt")) return;
+                if(href.includes("podcasts/pc")) return;
+                if(href.includes("people/nm")) return;
+                if(href.includes("awards/mf")) return;
+                if(href.includes("festivals/mf")) return;
+              }
+
+              cy.request({
+                url: href,
+                followRedirect: true,
+              })
 
            })        
         });
 
       })
-
 
       if(!children) return;
 
@@ -55,7 +73,8 @@ describe('Check for render', () => {
       
     }
 
-    visit( "/",  sitemap["home"] );
+    //visit( "/",  sitemap["home"] );
+    visit( "/",  null );
     //visit( "/movies/stories",  null );
     //visit( "/movies/stories/actors",  null );
     //visit( "/movies/stories/decades",  null );

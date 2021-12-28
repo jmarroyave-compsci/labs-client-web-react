@@ -21,6 +21,6 @@
 	},
 	"chromeWebSecurity": false,
 	"env": {
-		"local" : false
+		"LOCAL" : false
 	}
 }

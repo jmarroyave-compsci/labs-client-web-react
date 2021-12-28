@@ -22,12 +22,11 @@ module.exports = (on, config) => {
   // `on` is used to hook into various events Cypress emits
   // `config` is the resolved Cypress config
 
-  //console.log(config.env, config.env.local)
-  const CONFIG_PATH = `${"./.env.production"}${(config.env.local) ? ".local" : ""}`
-  //console.log(CONFIG_PATH)
+  console.log(config.env, config.env.LOCAL)
+  const CONFIG_PATH = `${"./.env.production"}${(config.env.LOCAL) ? ".local" : ""}`
+  console.log(CONFIG_PATH)
   const conf = dotenv.config({path: CONFIG_PATH});
   
-
   config.env.SITE_URL = process.env.SITE_URL
   config.env.SERVER_URL = process.env.NEXT_PUBLIC__SERVER
   config.env.BASE_URL = config.baseUrl
