@@ -42,7 +42,13 @@ const MediaCard = (props) => {
                     </div>    
                   </Tooltip>
             }
-            subheader={subtitle}
+            subheader={
+                  <Tooltip title={(subtitle) ? subtitle : "" } placement="bottom-start">
+                    <div style={{display: 'inline-block', width: '100%'}}>
+                      <Typography noWrap={true} style={{display: 'inline-block', width: '100%'}}>{subtitle}</Typography>
+                    </div>    
+                  </Tooltip>
+            }
           />
           {!noImage && 
             <CardMedia 

@@ -18,12 +18,14 @@ const Word = styled('span')( ({ fontSize, color, backgroundColor, theme }) => ({
 
 const SLICES = 4
 const TopicsMarquee = ( props ) => {
-    const { data, max, min, onTopicClick, loading } = props;
+    const { data, onTopicClick, loading, wordName, wordCount } = props;
 
     if(data == null || loading) return <Skeleton/>;    
 
     const slices = "i-".repeat(SLICES - 1).split("-")
     const size = Math.floor(data.length / SLICES)
+    const max = wordCount(data[0])
+    const min = wordCount(data[ data.length - 1 ])
 
     return (
         <div>
@@ -77,7 +79,6 @@ const color = ( n, max, min ) => {
     }
   }
   pos = (pos > sizes.length - 1) ? sizes.length - 1 : pos; 
-  pos = sizes.length -1 - pos;
   return getGrey( theme, pos )
 }
 

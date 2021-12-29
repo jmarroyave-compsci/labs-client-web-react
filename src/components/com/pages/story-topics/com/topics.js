@@ -39,7 +39,7 @@ function reducer(state, action){
 }
 
 function Topics( props ){
-  const { max, min, words, genre, year } = props.props;
+  const { words, genre, year } = props.props;
 
   const [ state, dispatch ] = useReducer( reducer, initialState )
 
@@ -55,8 +55,6 @@ function Topics( props ){
   return (
     <div>
       {<TopicsMarquee 
-          max={max} 
-          min={min} 
           data={words} 
           onTopicClick={onTopicClick} 
           wordName={(w) => w.p.split(",").join(" ") }

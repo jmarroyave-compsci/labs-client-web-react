@@ -471,9 +471,11 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
                       <h3
                         class="makeStyles-cardTitle-7"
                       >
-                        <div
-                          style="z-index: 9999; position: absolute; top: 0px; right: 0px; left: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.376);"
-                        />
+                        <span>
+                          <div
+                            style="z-index: 9999; position: absolute; top: 0px; right: 0px; left: 0px; bottom: 0px; background-color: rgba(0, 0, 0, 0.376);"
+                          />
+                        </span>
                       </h3>
                     </div>
                   </div>

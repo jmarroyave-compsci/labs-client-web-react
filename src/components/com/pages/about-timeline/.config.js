@@ -3,7 +3,7 @@ export default {
 		name: "about-timeline"
 	},
 	page: {
-		title: "How the project has evolved?",
+		title: "How the project evolved?",
 		description: "a timeline since the project's creation",
 		url: ()=>`/about/timeline`,
 	},

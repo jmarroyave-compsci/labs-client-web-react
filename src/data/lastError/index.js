@@ -3,6 +3,6 @@ import data from './resume.json'
 import dataTest from './resume.test.json'
 
 export const getLastError = function( ){
-	return (config.TEST) ? { lastError : new Date().toISOString() } : data;
+	return (config.TEST) ? { ...dataTest, lastError : new Date().toISOString() } : data;
 }
 

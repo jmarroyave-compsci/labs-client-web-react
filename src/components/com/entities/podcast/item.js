@@ -6,7 +6,7 @@ import { ItemFrame, ItemContent, Title, Small } from 'style/item'
 import Field from 'com/field'
 
 
-export default function Item( props ){
+export default function Item( props ){  
   const { tiny } = props;
   var { format } = props;
 
@@ -14,12 +14,12 @@ export default function Item( props ){
 
   switch( format ){
     case "list":
-      return ItemList( props ); 
+      return ItemList( { ...props } ); 
     case "tiny":
-      return ItemTiny( props ); 
+      return ItemTiny( { ...props } ); 
     case "card":
     default:
-      return ItemCard( props )
+      return ItemCard( { ...props } )
   }
 }
 

@@ -21,10 +21,8 @@ export default function BaseApp(props) {
 
   useEffect(() => {
     const handleRouteChange = (url) => {
-      console.log(
-        `App is changing to ${url}`
-      )
-      console.log({ clicked: false, menuName: "Menu" })
+      //console.log(`App is changing to ${url}`)
+      //console.log({ clicked: false, menuName: "Menu" })
     }
 
     router.events.on('routeChangeStart', handleRouteChange)

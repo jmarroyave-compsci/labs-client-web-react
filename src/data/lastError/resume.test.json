@@ -1,3 +1,65 @@
 {
-  "lastError": "2021-12-04T22:23:44.961Z"
+  "lastError": "2021-12-14T00:33:56.194Z",
+  "log": [
+    {
+      "date": "2021-11-23T16:06:13.555Z",
+      "failures": 2,
+      "responseTime": 0
+    },
+    {
+      "date": "2021-11-25T22:15:40.686Z",
+      "failures": 2,
+      "responseTime": 2
+    },
+    {
+      "date": "2021-11-25T23:29:40.758Z",
+      "failures": 2,
+      "responseTime": 2
+    },
+    {
+      "date": "2021-12-04T22:23:44.961Z",
+      "failures": 1,
+      "responseTime": 11
+    },
+    {
+      "date": "2021-12-06T22:20:51.855Z",
+      "failures": 0,
+      "responseTime": 0
+    },
+    {
+      "date": "2021-12-07T15:07:13.041Z",
+      "failures": 0,
+      "responseTime": 0
+    },
+    {
+      "date": "2021-12-08T00:29:42.376Z",
+      "failures": 0,
+      "responseTime": 0
+    },
+    {
+      "date": "2021-12-11T00:30:55.340Z",
+      "failures": 2,
+      "responseTime": 0
+    },
+    {
+      "date": "2021-12-12T00:37:06.599Z",
+      "failures": 2,
+      "responseTime": 1
+    },
+    {
+      "date": "2021-12-14T00:33:56.194Z",
+      "failures": 2,
+      "responseTime": 3
+    },
+    {
+      "date": "2021-12-28T17:16:39.429Z",
+      "failures": 0,
+      "responseTime": 0
+    },
+    {
+      "date": "2021-12-29T01:04:07.024Z",
+      "failures": 0,
+      "responseTime": 0
+    }
+  ]
 }
