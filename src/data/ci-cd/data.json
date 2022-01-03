@@ -248,5 +248,35 @@
       "name": "server",
       "commits": 98
     }
+  ],
+  "2021-12-30": [
+    {
+      "name": "client",
+      "commits": 294
+    },
+    {
+      "name": "server",
+      "commits": 98
+    }
+  ],
+  "2021-12-31": [
+    {
+      "name": "client",
+      "commits": 295
+    },
+    {
+      "name": "server",
+      "commits": 98
+    }
+  ],
+  "2022-01-03": [
+    {
+      "name": "client",
+      "commits": 296
+    },
+    {
+      "name": "server",
+      "commits": 98
+    }
   ]
 }

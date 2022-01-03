@@ -1,5 +1,5 @@
 {
-  "lastError": "2021-12-14T00:33:56.194Z",
+  "lastError": "2021-12-31T01:03:39.378Z",
   "log": [
     {
       "date": "2021-11-23T16:06:13.555Z",
@@ -58,6 +58,21 @@
     },
     {
       "date": "2021-12-29T01:04:07.024Z",
+      "failures": 0,
+      "responseTime": 0
+    },
+    {
+      "date": "2021-12-30T17:23:53.822Z",
+      "failures": 0,
+      "responseTime": 0
+    },
+    {
+      "date": "2021-12-31T01:03:39.378Z",
+      "failures": 3,
+      "responseTime": 0
+    },
+    {
+      "date": "2022-01-03T01:04:17.637Z",
       "failures": 0,
       "responseTime": 0
     }
