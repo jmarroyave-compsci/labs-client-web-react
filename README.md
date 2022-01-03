@@ -4,6 +4,14 @@
 - [Storybook](https://jmarroyave-compsci.github.io/labs-client-web-react/storybook/) 
 
 
+## Previous versions
+
+| version | site |
+|--|--|
+| current     | https://jmarroyave-compsci.github.io/labs-client-web-react/app/ |
+| 2.x     | https://jmarroyave-compsci.github.io/labs-client-web-react/archive/v.2/ |
+
+
 ## Available Scripts
 
 In the project directory, you can run:
