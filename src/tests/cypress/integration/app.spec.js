@@ -62,6 +62,19 @@ describe('Check for render', () => {
            })        
         });
 
+        it(`should not have broken images`, () => {
+          cy.get('img')
+           .each( img => {
+              const src = img.attr('src') 
+              console.log(src)
+
+              cy.request({
+                url: src,
+                followRedirect: true,
+              })
+
+           })        
+        });
       })
 
       if(!children) return;
