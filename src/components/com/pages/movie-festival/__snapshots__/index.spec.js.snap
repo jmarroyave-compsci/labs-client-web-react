@@ -274,6 +274,7 @@ exports[`PAGE_MOVIE_FESTIVAL compare Page against snapshot 1`] = `
     >
       <div
         class="MuiGrid-root MuiGrid-container page-module emotion-2"
+        style="width: 100%;"
       >
         <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9 emotion-3"

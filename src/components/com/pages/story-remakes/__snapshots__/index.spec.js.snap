@@ -571,6 +571,7 @@ exports[`STORIES-REMAKES compare against snapshot 1`] = `
     >
       <div
         class="MuiGrid-root MuiGrid-container page-module emotion-5"
+        style="width: 100%;"
       >
         <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9 emotion-6"

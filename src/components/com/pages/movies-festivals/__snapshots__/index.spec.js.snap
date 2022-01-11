@@ -425,6 +425,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
     >
       <div
         class="MuiGrid-root MuiGrid-container page-module emotion-5"
+        style="width: 100%;"
       >
         <div
           class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-12 MuiGrid-grid-md-9 emotion-6"
@@ -442,6 +443,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
               </h2>
               <div
                 class="MuiGrid-root MuiGrid-container emotion-5"
+                style="width: 100%;"
               >
                 <div
                   class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-11"
@@ -488,6 +490,7 @@ exports[`PAGE_MOVIES_FESTIVALS compare Page against snapshot 1`] = `
               </h2>
               <div
                 class="MuiGrid-root MuiGrid-container emotion-5"
+                style="width: 100%;"
               >
                 <div
                   class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-6 MuiGrid-grid-md-6 emotion-11"

@@ -14,6 +14,8 @@ const Content = ( props ) => {
 		}));
 	}, [])
 
+	if(!appState) return null;
+
 	return ( appState.theme.newVersion ) ? <V3 {...props}/> : <V2 {...props}/>
 }
 
