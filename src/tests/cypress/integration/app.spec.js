@@ -38,10 +38,16 @@ describe('Check for render', () => {
         })
 
         it(`should not have broken links`, () => {
+          const done = [];
+          if (Cypress.$('a').length == 0) return
           cy.get('a')
            .each( a => {
               const href = a.attr('href') 
-              console.log(a, a.href)
+
+              if( done.includes(href) ) return;
+
+              done.push(href)
+
               if(href.startsWith("mailto")) return;
               if(href.includes("linkedin")) return;
 
@@ -63,10 +69,18 @@ describe('Check for render', () => {
         });
 
         it(`should not have broken images`, () => {
+          const done = []
+          if (Cypress.$('img').length == 0) return
+
           cy.get('img')
            .each( img => {
               const src = img.attr('src') 
-              console.log(src)
+              if( done.includes(src) ) return;
+
+              done.push(src)
+              console.log("img src", src)
+
+              if (!src) return;
 
               cy.request({
                 url: src,
@@ -81,7 +95,6 @@ describe('Check for render', () => {
 
       Object.keys( children ).forEach( path => {
         if( path.startsWith("____")) path = path.substring(4);          
-        console.log(path)
         visit( `${(root == "/") ? "" : root}/${path}`, children[path] )  
       })
       

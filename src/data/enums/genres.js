@@ -1,7 +1,7 @@
 const START_YEAR = 1880;
 
-export const getGenres = () => { 
-  return [
+export const getGenres = ( { all=true } ) => { 
+  var data = [
         "all",
         "Action",
         "Adult",
@@ -32,4 +32,10 @@ export const getGenres = () => {
         "War",
         "Western"
   ].map( m => m.toLowerCase())
+
+  if( !all ){
+    data = data.filter( d => d != "all")    
+  }
+  
+  return data;
 }

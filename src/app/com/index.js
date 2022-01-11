@@ -57,7 +57,7 @@ function App( props ) {
       <ThemeProvider theme={ theme }>
         <CssBaseline />
         <Box sx={{ display: 'flex' }} style={{padding: 0, margin: 0}}>
-          {clientReady && appState.theme.snowMode && <Snowfall snowflakeCount={200}/>}
+          {clientReady && appState.features.snow && appState.theme.snowMode && <Snowfall snowflakeCount={200}/>}
           <Snackbar/>
           <BottomSheet/>
           <Toolbar/>

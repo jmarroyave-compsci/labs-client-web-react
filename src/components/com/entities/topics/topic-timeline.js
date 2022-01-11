@@ -10,17 +10,18 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 
 function TopicTimeline( props ){
-  const { data, onExit, topic } = props;
+  const { onExit, topic } = props;
+  const data = (props.data?.records) ? props.data?.records : props.data?.topic?.data;
   const [ topicTimeline, setTopicTimeline ] = useState( {} )
   const cellBG = ( i, active ) => (active) ? "rgba(0,0,0,0.4)" : ( ( i % 2 == 0) ? "rgba(0,0,0,0.1)" : "inherit") 
 
   useEffect( () => {
-    if(!data.topic.data) return;
+    if(!data) return;
 
     var tl = {}
     var genres  = {};
 
-    data.topic.data.forEach( t => {
+    data.forEach( t => {
       if(!tl[t.year]) tl[t.year] = {}
       if(!genres[t.genre]) genres[t.genre] = {}
     })  
@@ -28,13 +29,13 @@ function TopicTimeline( props ){
     var resp = {}
     Object.keys(genres).forEach( k => resp[k] = {...tl})
 
-    data.topic.data.forEach( t => {
+    data.forEach( t => {
       resp[t.genre][t.year] = 1
     })
 
     setTopicTimeline(resp)
 
-  }, [data.topic.data] )
+  }, [data] )
 
 
   return (
@@ -62,7 +63,7 @@ function TopicTimeline( props ){
                 <TableRow key={idx} style={{ backgroundColor: cellBG( idx, false) }}>
                   <TableCell style={{ backgroundColor: cellBG( 0, (genre == props.genre)) }} >{genre}</TableCell>
                   {Object.keys( topicTimeline[genre] ).map( (year) => 
-                    <TableCell style={{ backgroundColor: cellBG( 0, ( year == props.year || genre == props.genre)) }} align='center'>{(topicTimeline[genre][year] == 1) ? "✓" : " " }</TableCell>
+                    <TableCell key={year} style={{ backgroundColor: cellBG( 0, ( year == props.year || genre == props.genre)) }} align='center'>{(topicTimeline[genre][year] == 1) ? "✓" : " " }</TableCell>
                   )}
                   <TableCell style={{ backgroundColor: cellBG( 0, (genre == props.genre)) }} >{genre}</TableCell>
                 </TableRow>

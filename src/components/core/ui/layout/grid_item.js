@@ -14,6 +14,7 @@ const GridItem = (props) =>{
 	}
 
 	if(flex){
+		styles.display = 'flex';
 		styles.flex = 1;
 	}
 

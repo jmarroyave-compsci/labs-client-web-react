@@ -9,9 +9,13 @@ const initialState = {
   title: config.APP.TITLE,
   breadcrumbs: null,
   users: 0,
+  features: {
+    snow : false,
+  },
   theme: {
     snowMode: true,
     mode: "light",
+    newVersion: true,
   },
   nav: nav,
   loading : {
@@ -86,6 +90,10 @@ export const AppModel = createSlice({
       state.theme.snowMode = !state.theme.snowMode;
       saveState(state);
     },
+    toggleNewVersion: (state, action) => {
+      state.theme.newVersion = !state.theme.newVersion;
+      saveState(state);
+    },
     updateUsers: (state, action) => {
       state.users = action.payload.users;
     },
@@ -123,5 +131,5 @@ export const AppModel = createSlice({
   },
 })
 
-export const { setPage, toggleThemeMode, toggleSnowMode, toggleDrawer, initializeApp, updateUsers, setLoading, showMessage, logIn, logOut, showBottomSheet } = AppModel.actions
+export const { setPage, toggleThemeMode, toggleSnowMode, toggleNewVersion, toggleDrawer, initializeApp, updateUsers, setLoading, showMessage, logIn, logOut, showBottomSheet } = AppModel.actions
 export default AppModel.reducer

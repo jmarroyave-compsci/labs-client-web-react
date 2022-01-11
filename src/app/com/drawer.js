@@ -23,7 +23,7 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { useTheme } from '@mui/material/styles';
 
-import { toggleDrawer, toggleThemeMode, toggleSnowMode } from 'app';
+import { toggleDrawer, toggleThemeMode, toggleSnowMode, toggleNewVersion } from 'app';
 
 function Drawer_( props ) {
   const appState = useSelector(( state ) => state.app )
@@ -33,8 +33,9 @@ function Drawer_( props ) {
   const _toggleDrawer = () => dispatch( toggleDrawer() ) 
   const _toggleThemeMode = () => dispatch( toggleThemeMode() ) 
   const _toggleSnowMode = () => dispatch( toggleSnowMode() ) 
+  const _toggleNewVersion = () => dispatch( toggleNewVersion() ) 
 
-	const options = getOptions( appState, _toggleDrawer );
+	const options = getOptions( appState, _toggleDrawer, _toggleNewVersion );
   const anchor = "left";
   const drawerWidth = 260;
 
@@ -90,15 +91,16 @@ function Drawer_( props ) {
               } 
             </IconButton>
           </DrawerButton>
-          <DrawerButton>
-            <IconButton edge="end"
-              color={(appState.theme.snowMode) ? "primary" : "secondary"}
-              onClick={ _toggleSnowMode }
-            >
-              <Icon>ac_unit</Icon>
-            </IconButton>
-          </DrawerButton>
-  
+          {appState.features.snow &&
+            <DrawerButton>
+              <IconButton edge="end"
+                color={(appState.theme.snowMode) ? "primary" : "secondary"}
+                onClick={ _toggleSnowMode }
+              >
+                <Icon>ac_unit</Icon>
+              </IconButton>
+            </DrawerButton>            
+          }  
         </MuiToolbar>
         {options}
       </Box>
@@ -106,12 +108,46 @@ function Drawer_( props ) {
 	);
 }
 
-function getOptions( appState, toggle ){
+function getOptions( appState, toggleDrawer, toggleNewVersion ){
   var nav = appState.nav.options;
 	nav = (nav) ? nav.filter(item => (item.showInDrawer) ? item : null) : [];
 	var key = 0;
 	var options = [];
   var current = "";
+
+  const appendDivider = () => <Divider key={key++}/>
+  const appendItem = ( name, icon, route, onClick ) => {
+    const item = ( 
+      <ListItem key={key++} button onClick={ () => {
+        toggleDrawer()
+        if(onClick){
+          onClick()
+        }
+      }} >
+        {icon && <ListItemIcon>
+          <Icon alt={name} color="primary">{icon}</Icon>
+        </ListItemIcon>
+        }
+
+        <ListItemText inset={(!icon)} primary={name} />
+      </ListItem>
+    )    
+
+    return ( route ) ?  ( 
+      <Link to={route} box 
+        key={key++}>
+        {item}
+      </Link>
+      ) 
+    :
+      item
+  }
+
+
+  options.push(appendItem( (appState.theme.newVersion ) ? "older version" : "new version", ( !appState.theme.newVersion ) ? "update" : "history" , null, () => { 
+    toggleNewVersion()
+  } ));
+  options.push( appendDivider() )
 
 	for(var i = 0; i < nav.length; i++){
 		var item = nav[i];
@@ -122,27 +158,14 @@ function getOptions( appState, toggle ){
     }
 
     if(item.group){
-      options.push( (appState.drawer.open) ? <ListSubheader key={key++}>{item.group.toUpperCase()}</ListSubheader> : <Divider key={key++}/> );
+      options.push( (appState.drawer.open) ? <ListSubheader key={key++}>{item.group.toUpperCase()}</ListSubheader> : appendDivider() );
       continue;
     } 
 
     if(item.onMini === false && !appState.drawer.open) continue;
 
     var name = (appState.drawer.open) ? ((item.nameOpen) ? item.nameOpen : item.name) : item.name; 
-
-		var opt = 
-		<Link box 
-      key={key++} to={(item.link) ? item.link : item.route} onClick={() => console.log("click")}>
-		    <ListItem button onClick={ toggle } >
-          {item.icon && <ListItemIcon>
-            <Icon alt={name} color="primary">{item.icon}</Icon>
-          </ListItemIcon>
-          }
-
-		      <ListItemText inset={(!item.icon)} primary={name} />
-		    </ListItem>
-	    </Link>
-	    options.push(opt);
+    options.push(appendItem( name, item.icon, (item.link) ? item.link : item.route, () => {} ));
 	}
 
 	return options;
