@@ -21,7 +21,7 @@ const _Item = styled('div')( ( {  } ) => ({
   fontFamily: 'Roboto',
 }));
 
-const Item = ( { selected, selectedStyle={fontSize: '150%'}, onClick, children, style={} } ) => {
+const Item = ( { selected, selectedStyle={fontWeight: 800}, onClick, children, style={} } ) => {
   return (
       <ButtonBase
           onClick={event => { if(onClick) onClick(event) }}

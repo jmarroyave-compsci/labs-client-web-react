@@ -13,7 +13,7 @@ import {
 
 export const Frame = styled('div')({
   margin: "0 0 2rem 0",
-  padding: "0rem",
+  padding: "0rem 0.5rem",
   width: '100%',
   overflow: 'hidden',
 });

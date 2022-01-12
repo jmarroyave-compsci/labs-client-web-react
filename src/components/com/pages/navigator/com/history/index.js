@@ -23,12 +23,15 @@ function History(props){
       <Frame>
         <Stack style={{ display: 'flex', overflow: 'hidden', height: "100%"}}>
           <Title>History</Title>
-          <Stack direction='row' spacing={2} style={{ overflowX : 'auto', margin: "0 1rem"}}>
-            {years.map( (_year, ydx) =>
-              <Item key={_year} selected={ year == _year} onClick={() => setYear(_year) } >
-                {(year == _year || ydx == 0) ? _year : _year.slice(3,4)}
-              </Item>
-            )}   
+          <Stack direction='row' spacing={2}>
+            <div>{year}</div>
+            <Stack direction='row' spacing={2} style={{ overflowX : 'auto', margin: "0 1rem"}}>
+              {years.map( (_year, ydx) =>
+                <Item key={_year} selected={ year == _year} onClick={() => setYear(_year) } >
+                  {(year == _year || ydx == 0) ? _year : _year.slice(3,4)}
+                </Item>
+              )}   
+            </Stack>
           </Stack>
           <div style={{ flex: 1, overflowY: "scroll"}}>
             {year && history[year].map( (item, idx) => 
