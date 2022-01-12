@@ -11,7 +11,7 @@ import TableRow from '@mui/material/TableRow';
 
 function TopicTimeline( props ){
   const { onExit, topic } = props;
-  const data = (props.data?.records) ? props.data?.records : props.data?.topic?.data;
+  const data = (props.data?.records) ? props.data.records : props.data?.topic?.data;
   const [ topicTimeline, setTopicTimeline ] = useState( {} )
   const cellBG = ( i, active ) => (active) ? "rgba(0,0,0,0.4)" : ( ( i % 2 == 0) ? "rgba(0,0,0,0.1)" : "inherit") 
 

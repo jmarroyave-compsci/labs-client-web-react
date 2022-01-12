@@ -25,7 +25,7 @@ export function useContext( config ){
 			state: state,
 			dispatch: dispatch,
 		})
-	}, [ dataState?.data?.timeline, state ])
+	}, [ dataState?.data?.timeline, dataState?.data?.topic, state ])
 
 	return [ context ]
 }

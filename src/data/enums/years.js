@@ -1,4 +1,4 @@
-const START_YEAR = 1880;
+const START_YEAR = 1870;
 
 export const getDecades = ( { ascending=false } ) => { 
   var resp = [];

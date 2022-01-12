@@ -24,7 +24,7 @@ function Item(props){
       <Frame>      
         <Stack>
           <h1>Topic</h1>
-          {topic && <TopicTimeline topic={topic} genre={genre} year={year} data={topicData}  />}
+          {<TopicTimeline topic={topic} genre={genre} year={year} data={topicData}  />}
         </Stack>
       </Frame>
     )

@@ -2,43 +2,57 @@ import React from 'react'
 import { styled } from '@mui/material/styles';
 import Paper from 'core/ui/paper';
 import ButtonBase from '@mui/material/ButtonBase';
+import { Title, SubTitle, Small, Medium, Notes } from './item'
 
-export const Title = styled("h3")( ( {  } ) => ({
-  padding: 0,
-  margin: 0,
-  marginBottom: '1rem',
-}));
-
-export const Subtitle = styled("h6")( ( {  } ) => ({
-  padding: 0,
-  margin: 0,
-  marginBottom: '1rem',
-}));
-
-export const Frame = styled(Paper)( ( { padding="1rem" } ) => ({
+const Frame = styled(Paper)( ( { padding="1rem", height='inherit' } ) => ({
   margin: "0 0 1rem 0",
   padding: padding,
   width: '100%',
   overflow: 'hidden',
   flex: 1,
+  height: height,
 }));
 
-export const _Item = styled('div')( ( { padding="1rem", selected=false } ) => ({
+const _Item = styled('div')( ( {  } ) => ({
   margin: "0",
-  padding: padding,
+  padding: "0.5rem",
   cursor: 'pointer',
-  fontWeight: (selected) ? 'bold' : 'inherit',
+  whiteSpace: 'nowrap',
+  fontFamily: 'Roboto',
 }));
 
-
-export const Item = ( props ) => {
+const Item = ( { selected, selectedStyle={fontSize: '150%'}, onClick, children, style={} } ) => {
   return (
       <ButtonBase
-          onClick={event => props.onClick }
+          onClick={event => { if(onClick) onClick(event) }}
       >
-        <_Item {...props}>
-          {props.children}
+        <_Item>
+          {( selected ) ? 
+            <span style={ { ...style, ...selectedStyle  } }>{children}</span>
+            :
+            <span style={ { ...style } }>{children}</span>
+          }
+          
         </_Item>
       </ButtonBase>  
     )
+}
+
+
+const _Sub = styled('span')( ( {  } ) => ({
+  margin: 0,
+  marginLeft: "0.25rem",
+  padding: 0,
+  fontSize: "0.5rem",
+  lineHeight: "0.55rem",    
+}));
+
+const Sub = ( props ) => {
+  return (
+      <_Sub {...props}>[{props.children}]</_Sub>
+    )
+}
+
+export {
+  Title, SubTitle, Small, Medium, Notes, Frame, Item, Sub, 
 }
