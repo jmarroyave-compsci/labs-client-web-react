@@ -44,6 +44,9 @@ describe('Check for render', () => {
            .each( a => {
               const href = a.attr('href') 
 
+              if(!href) return;
+              if(href === "#") return;
+
               if( done.includes(href) ) return;
 
               done.push(href)
