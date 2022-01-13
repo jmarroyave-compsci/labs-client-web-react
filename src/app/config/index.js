@@ -14,7 +14,7 @@ const Constants = {
 	SERVERS: {
 		DATA: process.env.NEXT_PUBLIC__SERVER, 
 		WEB_SOCKETS: process.env.NEXT_PUBLIC__SERVER, 
-		GRAPHQL :  `${process.env.NEXT_PUBLIC__SERVER}/2.0/graphql`,
+		GRAPHQL :  `${process.env.NEXT_PUBLIC__SERVER}/${process.env.NEXT_PUBLIC__SERVER_API_VERSION}/graphql`,
 	},
 	DEFAULTS : {
 		PAGING_PAGE_SIZE: 10,

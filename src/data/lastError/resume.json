@@ -1,5 +1,5 @@
 {
-  "lastError": "2022-01-06T02:22:11.069Z",
+  "lastError": "2022-01-11T22:15:58.189Z",
   "log": [
     {
       "date": "2021-11-23T16:06:13.555Z",
@@ -93,6 +93,21 @@
     },
     {
       "date": "2022-01-07T01:04:48.221Z",
+      "failures": 0,
+      "responseTime": 0
+    },
+    {
+      "date": "2022-01-11T22:15:58.189Z",
+      "failures": 1,
+      "responseTime": 0
+    },
+    {
+      "date": "2022-01-12T22:34:56.940Z",
+      "failures": 0,
+      "responseTime": 0
+    },
+    {
+      "date": "2022-01-13T01:10:02.108Z",
       "failures": 0,
       "responseTime": 0
     }

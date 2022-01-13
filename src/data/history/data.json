@@ -7837,7 +7837,11 @@
       },
       {
         "date": "8 January",
-        "event": "Ukraine International Airlines Flight 752 is shot down by Iranian Islamic Revolutionary Guards Corps (IRGC) shortly after taking off from Tehran, killing all 176 onboard."
+        "event": "Ukraine International Airlines Flight 752 is shot down by Iranian Islamic Revolutionary Guards Corps (IRGC) shortly after taking off from Tehran, killing all 176 onboard.",
+        "tags": [
+          {"type": "CC", "text": "Ukraine"}
+        ]
+
       },
       {
         "date": "16 January to 5 February",

@@ -18,8 +18,8 @@ const LayoutProxy = ( props ) => {
 	return (
 		<div ref={ref}>
 		<Proxy 
-			xs={<XS height={height - 100} offset={offset}/>}
-			md={<MD height={height - 130} offset={offset}/>}
+			xs={<XS height={height - 80} offset={offset}/>}
+			md={<MD height={height - 60} offset={offset}/>}
 		/>
 		</div>
 	) 

@@ -12,6 +12,7 @@ import TableRow from '@mui/material/TableRow';
 function TopicTimeline( props ){
   const { onExit, topic } = props;
   const data = (props.data?.records) ? props.data.records : props.data?.topic?.data;
+  const v3 = (props.data?.records);
   const [ topicTimeline, setTopicTimeline ] = useState( {} )
   const cellBG = ( i, active ) => (active) ? "rgba(0,0,0,0.4)" : ( ( i % 2 == 0) ? "rgba(0,0,0,0.1)" : "inherit") 
 
@@ -37,22 +38,24 @@ function TopicTimeline( props ){
 
   }, [data] )
 
+  const textMap = (d, idx) => (d.slice(2,4) == "00" || idx == 0) ? d : d.slice(2,4)
 
   return (
-      <div>
-        <Stack direction="row" style={{marginBottom: '1rem'}}>
-          <Chip label={topic.replace(/,/g, " ")} onDelete={ onExit } />
-          <div style={{flex: 1}}/>
-        </Stack>
+      <div style={{height: "100%", display: "flex"}}>
+        {!v3 &&
+          <Stack direction="row" style={{marginBottom: '1rem'}}>
+            <Chip label={topic.replace(/,/g, " ")} onDelete={ onExit } />
+          </Stack>
+        }
 
-        <div style={{ fontSize: '0.6rem', width : '100%', maxHeight: "400px", overflow: 'auto'}}>
+        <div style={{ fontSize: '0.6rem', width : '100%', maxHeight: '600px', flex: 1, overflow: 'auto'}}>
           <Table size="small" stickyHeader >
             <TableHead>
               <TableRow>
               <TableCell>&nbsp;</TableCell>
               { Object.keys(topicTimeline).slice(0,1).map( genre => 
-                  Object.keys( topicTimeline[genre] ).map( year => 
-                    <TableCell key={year} align='center'>{year}</TableCell>
+                  Object.keys( topicTimeline[genre] ).map( (year, ydx) => 
+                    <TableCell key={year} align='center'>{textMap(year, ydx)}</TableCell>
                   )
               )}
               <TableCell>&nbsp;</TableCell>

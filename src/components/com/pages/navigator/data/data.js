@@ -36,16 +36,8 @@ export const fetchTopic = createAsyncThunk(`${MODEL_NAME}/fetchTopic`,
 
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
-    thunkAPI.dispatch(setParams( params ));
-
-    const resp = await fetchItems( params );
-
-    resp.data = resp.data.map( r => {
-      r.words = r.words.map( w => ( {...w, p: w.p.replace(/,/g, " ")}))
-      return r;
-    })
-
-    return resp;
+    thunkAPI.dispatch(setParams( params ));    
+    return await fetchItems( params );
   }
 )
 

@@ -3,6 +3,7 @@ import { styled } from '@mui/material/styles';
 import Stack from 'com/ui/stack';
 import GridItem from 'core/ui/layout/grid_item';
 import GridContainer from 'core/ui/layout/grid_container';
+import Shortcuts from '../shortcuts'
 
 import { 
   Timeline,
@@ -23,14 +24,18 @@ function Content(props){
 
     return (
     <Frame>
+        <Shortcuts showHistory={true} />
         <GridContainer>
           <GridItem xs={12} style={{height: (height), overflow: 'hidden', paddingBottom: '2rem'}} >
+            <div id='timeline'/>
             <Timeline/>
           </GridItem>
           <GridItem xs={12} style={{height: (height), overflow: 'hidden'}} >
+            <div id='history'/>
             <History/>
           </GridItem>
           <GridItem xs={12} style={{height: (height), overflow: 'hidden', paddingTop: '2rem'}} >
+            <div id='topic'/>
             <ItemDetails/>
           </GridItem>
         </GridContainer>      

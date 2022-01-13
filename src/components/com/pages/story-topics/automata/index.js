@@ -33,8 +33,13 @@ export const fetchTopic = createAsyncThunk(`${MODEL_NAME}/fetchTopic`,
 
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
-    thunkAPI.dispatch(setParams( params )) 
-    return await fetchItems( params );
+    thunkAPI.dispatch(setParams( params ))   
+    const resp = await fetchItems( params );
+
+    console.log(resp)
+    resp.data = resp.data.filter( r => r.year == params.decade )
+
+    return resp;
   }
 )
 

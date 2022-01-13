@@ -1,8 +1,7 @@
 import React, { useContext, useMemo } from 'react'
-import Stack from 'com/ui/stack';
 import { ComponentContext } from '../../context';
 import { getGenres } from 'data/enums/genres';
-import { Item } from 'style/component';
+import ParameterList from '../parameter-list'
 
 const GenresParameters = (props) => {
     const context = useContext( ComponentContext );
@@ -11,14 +10,7 @@ const GenresParameters = (props) => {
     const onClick = ( p ) => context.dispatch( { type: "CHANGE_GENRE", payload: p }) 
 
     return (
-      <Stack direction='row' spacing={2}>
-        <div>{current}</div>
-        <Stack direction='row' spacing={2} style={{ overflowX: "scroll", margin: '0 1rem'}}>
-          { genres.map( (g,idx) => 
-            <Item key={g} onClick={ () => onClick(g) } selected={(current === g)}>{g}</Item>
-          )}
-        </Stack>
-      </Stack>
+      <ParameterList data={genres} current={current} onClick={onClick}/>
     )
 
 }

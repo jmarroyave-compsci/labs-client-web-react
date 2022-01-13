@@ -4,7 +4,7 @@ const InitialState = {
 	initialized: false,
 	parameters: {
 		genre: "action",
-		decade: 1980,
+		decade: 2020,
 		page: 1,
 		entity: "movies",		
 		topic: null,

@@ -338,5 +338,15 @@
       "name": "server",
       "commits": 100
     }
+  ],
+  "2022-01-13": [
+    {
+      "name": "client",
+      "commits": 314
+    },
+    {
+      "name": "server",
+      "commits": 100
+    }
   ]
 }
