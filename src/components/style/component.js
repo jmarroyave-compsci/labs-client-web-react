@@ -2,16 +2,24 @@ import React from 'react'
 import { styled } from '@mui/material/styles';
 import Paper from 'core/ui/paper';
 import ButtonBase from '@mui/material/ButtonBase';
-import { Title, SubTitle, Small, Medium, Notes } from './item'
+import { Title, SubTitle, Small, Medium } from './item'
 
 const Frame = styled(Paper)( ( { padding="1rem", height='inherit' } ) => ({
-  margin: "0 0 1rem 0",
+  margin: "0.1rem",
+  marginBottom: "1rem",
   padding: padding,
   width: '100%',
   overflow: 'hidden',
   flex: 1,
   height: height,
 }));
+
+const Notes = styled('span')({
+  fontSize: "0.6rem",
+  lineHeight: "0.75rem",    
+  fontWeight: 500,
+  margin: 0,
+});
 
 const _Item = styled('div')( ( {  } ) => ({
   margin: "0",

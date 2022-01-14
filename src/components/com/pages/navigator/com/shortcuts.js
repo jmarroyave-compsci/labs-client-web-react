@@ -1,39 +1,34 @@
-import React from 'react'
+import React, { useContext, useEffect, useRef } from 'react'
+import { ComponentContext } from '../context';
 import { styled } from '@mui/material/styles';
+import __Button from '@mui/material/Fab'
+import Stack from '@mui/material/Stack'
+import Icon from "@mui/material/Icon";
 
-
-export const Frame = styled('div')({
+export const Frame = styled(Stack)({
   padding: "1rem",
   position: "fixed",
   right: 0,
   bottom: 0,
   zIndex: 1000,
+  alignItems: 'end',
 });
 
-export const _Button = styled('div')( ({theme}) => ({
-  margin: "0 0 0.5rem 0",
-  padding: "0.5rem",
-  cursor: "pointer",
-  border: "1px solid",
-  borderColor: theme.palette.text.primary,
-  backgroundColor: theme.palette.action.selected,
-  color: theme.palette.text.primary,
-  fontSize: '0.75rem',
-  textAlign: 'center',
-}));
-
 function Shortcuts( { showHistory=false, showResults=false } ){
+    const context = useContext( ComponentContext );
+    const { topic } = context.state.parameters;
+
     return (
-      <Frame>
-        <Button target={"timeline"}>Timeline</Button>
-        {showHistory && <Button target="history">History</Button>}
-        <Button target="topic">Topic</Button>
-        {showResults && <Button target="results">Results</Button>}
+      <Frame direction='column' spacing={1}>
+        <Button target={"timeline"} icon="calendar_month" label="Timeline">Timeline</Button>
+        {showHistory && <Button target="history" icon="history" label="History">History</Button>}
+        <Button disabled={topic == null} extended={topic} target="topic" icon="calendar_view_week" label="Topic">Topic</Button>
+        {showResults && <Button disabled={topic == null} target="results" icon="grid_view" label="results">Results</Button>}
       </Frame>
     )
 }
 
-function Button( { children, target } ){
+function Button( { children, target, icon, label, disabled=false, extended=null } ){
   const scrollTo = (target) => {
     var d = document.getElementById(target)
     if(!d) return
@@ -42,9 +37,10 @@ function Button( { children, target } ){
   }
 
   return (
-      <_Button onClick={() => scrollTo(target)}>
-        { children }
-      </_Button>
+      <__Button size="small" variant={(extended != null)? "extended" : "circular"} icon={icon} aria-label={label} disabled={disabled} onClick={() => scrollTo(target)}>
+        { extended != null && <span style={{ fontSize: '60%', paddingRight: '0.5rem' }}>{extended}</span> }
+        <Icon>{(icon) ? icon : "ac_unit"}</Icon>
+      </__Button>
   )
 }
 

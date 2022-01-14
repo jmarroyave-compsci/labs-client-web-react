@@ -12,7 +12,7 @@ import {
 
 export const Frame = styled('div')({
   margin: "0 0 2rem 0",
-  padding: "2rem",
+  padding: "3rem 2rem",
   width: '100%',
   overflow: 'hidden',
 });
@@ -20,14 +20,14 @@ export const Frame = styled('div')({
 
 const Content = (props) => {
     const { data, loading, fetch, params, item } = props;
-    const height = (props.height - props.offset - 64)
+    const height = (props.height)
 
     return (
     <Frame>
         <Shortcuts/>
         <GridContainer flex fill style={{height: height, overflow: 'hidden'}} >
           <GridItem md={12} style={{height: '100%'}} >
-            <GridContainer flex style={{height: '100%', paddingBottom: '1rem'}} >
+            <GridContainer flex style={{height: '100%', paddingBottom: '1.5rem'}} >
               <GridItem md={8} flex style={{height: '100%', paddingRight: '1rem'}} >
                 <div id='timeline'/>
                 <Timeline/>
@@ -39,7 +39,7 @@ const Content = (props) => {
           </GridItem>
         </GridContainer>
         <GridContainer flex fill style={{height: height, overflow: 'hidden'}} >
-          <GridItem md={12} style={{height: '100%'}} >
+          <GridItem md={12} style={{height: '100%', marginBottom: '1.5rem'}} >
             <div id='topic'/>
             <ItemDetails/>
           </GridItem>

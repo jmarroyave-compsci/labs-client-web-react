@@ -1,9 +1,8 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Stack from 'com/ui/stack';
-import { Small, Notes, Item  } from 'style/component'
-import { Scrollbars } from 'react-custom-scrollbars';
+import HistoryItem from './history-item'
 
-function YearsParameters( { data, year, onClick} ){
+function HistoryData( { data, year, tagsSelected, onClick } ){
     const clickWord = (e) => {
       const w = findWord();
       if(!w || w.trim() == "") return;
@@ -39,21 +38,28 @@ function YearsParameters( { data, year, onClick} ){
         return word
     }
 
+    const includesTag = ( { tags } ) => {
+      if(!tagsSelected) return true;
+
+      for(var tag of tags){
+        if( tagsSelected[tag.type] && tagsSelected[tag.type].includes(tag.text) ) return true;
+      }
+
+      return false;
+    }
+
     return (
       <React.Fragment>
-        <Scrollbars autoHide style={{flex: 1}}>
           <div onClick={clickWord}>
-            {year && data[year].map( (item, idx) => 
-              <div key={idx} >
-                <div><Notes>{item.date}</Notes></div>
-                <div><Small>{item.event}</Small></div>
-              </div>
+            {Object.keys(data).map( y =>
+              ( y == year || tagsSelected != null ) && data[y].map( (item, idx) => 
+                includesTag(item) && <HistoryItem year={(tagsSelected) ? y : null} key={idx} item={item}/>
+              )
             )}
           </div>
-        </Scrollbars>
       </React.Fragment>
     )
 
 }
 
-export default YearsParameters
+export default HistoryData

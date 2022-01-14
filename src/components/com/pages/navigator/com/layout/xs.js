@@ -14,7 +14,7 @@ import {
 
 export const Frame = styled('div')({
   margin: "0 0 2rem 0",
-  padding: "0rem 0.5rem",
+  padding: "1rem 0.5rem",
   width: '100%',
   overflow: 'hidden',
 });
@@ -26,7 +26,7 @@ function Content(props){
     <Frame>
         <Shortcuts showHistory={true} />
         <GridContainer>
-          <GridItem xs={12} style={{height: (height), overflow: 'hidden', paddingBottom: '2rem'}} >
+          <GridItem xs={12} style={{height: (height), overflow: 'hidden', marginBottom: '1.5rem'}} >
             <div id='timeline'/>
             <Timeline/>
           </GridItem>
@@ -34,7 +34,7 @@ function Content(props){
             <div id='history'/>
             <History/>
           </GridItem>
-          <GridItem xs={12} style={{height: (height), overflow: 'hidden', paddingTop: '2rem'}} >
+          <GridItem xs={12} style={{height: (height), overflow: 'hidden', paddingTop: '1.5rem'}} >
             <div id='topic'/>
             <ItemDetails/>
           </GridItem>

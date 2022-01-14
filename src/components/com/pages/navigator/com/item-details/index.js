@@ -12,11 +12,8 @@ function Item(props){
 
     return (
       <Frame>      
-        <Stack>
           <Title>Topic: {(topic) ? topic : "no topic selected"}</Title>
-          <br/>
           {topic && <TopicTimeline topic={topic} genre={genre} year={year} data={topicData}  />}
-        </Stack>
       </Frame>
     )
 

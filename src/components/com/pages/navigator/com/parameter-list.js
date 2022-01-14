@@ -12,6 +12,7 @@ const Selected = styled('div')(({theme, width, height}) => ({
   color: theme.palette.text.primary,
   alignItems: 'center',
   whiteSpace: 'nowrap',  
+  userSelect: 'none',
 }));
 
 const Frame = styled(Stack)(({theme}) => ({
@@ -27,10 +28,10 @@ const ParameterList = ( { data, current, onClick, textMap=(i)=>i } ) => {
     return (
       <Frame direction='row' spacing={2}>
         <Selected>{current}</Selected>
-        <Scrollbars autoHide autoHeight>
+        <Scrollbars autoHeight>
             <Stack direction='row' spacing={2} style={{paddingBottom: "0.75rem"}}>
               { data.map( (g,idx) => 
-                <Item key={idx} onClick={ () => _onClick(g) } selected={(current == g)}>
+                <Item key={idx} onClick={ () => _onClick(g) } selected={(current == g)} style={{userSelect : 'none'}}>
                   {textMap(g, idx)}
                 </Item>
               )}
