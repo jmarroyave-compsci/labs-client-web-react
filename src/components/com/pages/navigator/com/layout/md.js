@@ -21,6 +21,7 @@ export const Frame = styled('div')({
 const Content = (props) => {
     const { data, loading, fetch, params, item } = props;
     const height = (props.height)
+    const size = "MD"
 
     return (
     <Frame>
@@ -30,7 +31,7 @@ const Content = (props) => {
             <GridContainer flex style={{height: '100%', paddingBottom: '1.5rem'}} >
               <GridItem md={8} flex style={{height: '100%', paddingRight: '1rem'}} >
                 <div id='timeline'/>
-                <Timeline/>
+                <Timeline size={size}/>
               </GridItem>
               <GridItem md={4} flex style={{height: '100%'}} >
                 <History/>

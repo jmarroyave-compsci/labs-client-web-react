@@ -75,7 +75,7 @@ export const AppModel = createSlice({
     },
     setPage: (state, action) => {
       const { title, breadcrumbs, pageTitle } = action.payload
-      state.breadcrumbs = (breadcrumbs) ? breadcrumbs : state.breadcrumbs;
+      state.breadcrumbs = ( breadcrumbs !== null ) ? breadcrumbs : state.breadcrumbs;
       state.title = (title && title != "") ? title : initialState.title;
       state.pageTitle = (pageTitle && pageTitle != "") ? pageTitle : initialState.pageTitle;
     },

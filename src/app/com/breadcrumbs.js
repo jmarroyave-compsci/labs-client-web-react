@@ -11,6 +11,8 @@ export default function Breadcrumbs( props ) {
   const { style } = props;
   const theme = useTheme();
 
+  if( appState.breadcrumbs === false ) return null
+
   var data = appState.breadcrumbs;
 
   if( data && data == "/" ){
@@ -32,6 +34,7 @@ export default function Breadcrumbs( props ) {
 
   data = [{url : '/', name: 'home'}].concat(data);
   delete data[ data.length - 1 ].url;
+
   return (
     
       <_Breadcrumbs maxItems={4} aria-label="breadcrumb" style={{...style, color: theme.palette.text.primary}}>

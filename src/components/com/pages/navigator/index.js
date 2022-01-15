@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import config from "./.config.js";
 import { ComponentContext, useContext } from './context';
 import { useData } from './data'
@@ -10,8 +10,6 @@ const Layout = ( props ) => {
 	const [ data ] = useData( context );
 
 	if(!context.isReady) return <Loading/>
-
-	//console.log("navigator", context)
 
 	return (
 		<ComponentContext.Provider value={context}>

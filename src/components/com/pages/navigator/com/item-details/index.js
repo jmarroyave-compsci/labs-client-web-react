@@ -11,9 +11,14 @@ function Item(props){
     const topicData = context.data.topic
 
     return (
-      <Frame>      
+      <Frame style={{height: '100%', display: 'flex', flexDirection : 'column'}}>
+        <div>
           <Title>Topic: {(topic) ? topic : "no topic selected"}</Title>
+          <br/>
+        </div>
+        <div style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
           {topic && <TopicTimeline topic={topic} genre={genre} year={year} data={topicData}  />}
+        </div>
       </Frame>
     )
 

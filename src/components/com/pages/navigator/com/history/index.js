@@ -25,8 +25,10 @@ function History(props){
     return (
       <Frame>
         <Stack style={{ display: 'flex', overflow: 'hidden', height: "100%"}}>
-          <Title>History</Title>
-          <br/>
+          <div>
+            <Title>Historical Events (wikipedia)</Title>
+            <br/>
+          </div>
           <Scrollbars height={'100%'} style={{ height: '100%'}}>
             <YearParameter data={history} current={year} onClick={(year) => setYear(year) } />
             <TagParameter data={history} onClick={(w) => setTagsSelected( w ) } />

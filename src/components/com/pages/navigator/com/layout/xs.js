@@ -21,6 +21,7 @@ export const Frame = styled('div')({
 
 function Content(props){
     const { data, loading, fetch, params, item, height, offset } = props;
+    const size = "XS"
 
     return (
     <Frame>
@@ -28,7 +29,7 @@ function Content(props){
         <GridContainer>
           <GridItem xs={12} style={{height: (height), overflow: 'hidden', marginBottom: '1.5rem'}} >
             <div id='timeline'/>
-            <Timeline/>
+            <Timeline size={size}/>
           </GridItem>
           <GridItem xs={12} style={{height: (height), overflow: 'hidden'}} >
             <div id='history'/>

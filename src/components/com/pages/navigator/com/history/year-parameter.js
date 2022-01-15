@@ -18,7 +18,7 @@ function YearsParameters( { data, current, onClick} ){
       if(onClick) onClick(year)
     }
 
-    const textMap = (d, i) => (d == current || i == 0) ? d : d.slice(3,4)
+    const textMap = (d, i) => (d == current || i == 0) ? d : d.slice(2,4)
 
     return (
       <ParameterList data={years} current={current} onClick={onClick} textMap={textMap} />

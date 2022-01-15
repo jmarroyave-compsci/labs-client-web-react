@@ -63,7 +63,8 @@ function TagParameters( { data, onClick} ){
     const [tagsSelected, setTagsSelected] = useState( null )
 
     const onTagsSelected = ( group, v ) => {
-      const resp = { ...tagsSelected, [group] : v }
+      const newVal = (group) ? ( { [group] : v } ) : v 
+      const resp = { ...tagsSelected, ...newVal }
       setTagsSelected( resp )
 
       const tmp = {}
@@ -77,14 +78,13 @@ function TagParameters( { data, onClick} ){
 
     useEffect(()=> {
       if(!tags) return;
-      initTags()
+      setTagsSelected(initTags())
     }, [tags])
-
 
     const initTags = () => {
       const tagsInit = {}
       Object.keys(tags).forEach( k => tagsInit[k] = [])
-      setTagsSelected(tagsInit)
+      return tagsInit;      
     }
 
     if(!tagsSelected) return null;
@@ -96,11 +96,21 @@ function TagParameters( { data, onClick} ){
             {Object.keys(tagsSelected).reduce( (t,c) => t + tagsSelected[c].length, 0 ) == 0 ? 
                 <Small>click here to select tags</Small> 
               : 
-                <TagsSelected data={tagsSelected}/>
+                <>
+                  <TagsSelected data={tagsSelected}/>
+                  <span style={{fontSize: "50%", cursor: 'pointer', userSelect: 'none'}} onClick={(e) => {
+                      onTagsSelected(null, initTags()); 
+                      setExpanded(false);
+                      e.stopPropagation();
+                  }}>
+                    [ clear all ]
+                  </span>                  
+                </>
             }
           </div>
         </Selected>
         { expanded &&
+          <div style={{maxHeight: '300px', overflowY: 'scroll'}}>
           <Tags>
             {Object.keys(tags).map( group =>
                 <React.Fragment key={group}>
@@ -113,6 +123,7 @@ function TagParameters( { data, onClick} ){
                 </React.Fragment>
             )}
           </Tags>
+          </div>
       }
       </div>
     )

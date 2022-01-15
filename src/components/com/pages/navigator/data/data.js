@@ -37,6 +37,7 @@ export const fetchTopic = createAsyncThunk(`${MODEL_NAME}/fetchTopic`,
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
     thunkAPI.dispatch(setParams( params ));    
+    params.nratio = 2
     return await fetchItems( params );
   }
 )
