@@ -1,5 +1,7 @@
-![card-image](./public/img/cards/twitter_big.png | width=100)
-
+<p align='center'>
+<img src="./public/img/cards/twitter_big.png" />
+</p>
+  
 # LABS - React - Web Client 
 
 - [DEMO](https://jmarroyave-compsci.github.io/labs-client-web-react/app/) 
