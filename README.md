@@ -1,4 +1,4 @@
-![card-image](./public/img/cards/twitter_big.png)
+![card-image](./public/img/cards/twitter_big.png | width=100)
 
 # LABS - React - Web Client 
 
