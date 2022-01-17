@@ -1,3 +1,5 @@
+![card-image](./public/img/cards/twitter_big.png)
+
 # LABS - React - Web Client 
 
 - [DEMO](https://jmarroyave-compsci.github.io/labs-client-web-react/app/) 
