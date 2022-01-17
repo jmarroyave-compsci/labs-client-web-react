@@ -5,7 +5,7 @@ const Small = styled("div")(({theme}) => ({
   fontSize: "0.7rem", 
   lineHeight: '1rem',
   marginBottom: "-0.2rem",
-  opacity: 0.8,
+  opacity: 0.6,
   paddingBottom: 0,
 }))
 
@@ -18,15 +18,44 @@ const Medium = styled("div")(({theme}) => ({
   marginBottom: '0.5rem',
 }))
 
+const Tag = styled("span")(({theme}) => ({
+  fontWeight: 'bold',
+}))
 
 function HistoryItem( { item, year } ){
     return (
       <React.Fragment>
         {item.date != "?" &&<div><Small>{(year) ? `[${year}] ` : ""}{item.date}</Small></div>}
-        <Medium>{item.event}</Medium>
+        <Medium>{getHighlightedText(item.event, item.tags)}</Medium>
       </React.Fragment>
     )
 
+}
+
+
+
+
+function getHighlightedText(text, highlight) {
+    const groups = {
+        "ORDINAL" : false,
+        "PERCENT" : false,
+        "NORP": false,
+        "MONEY": false,
+        "DATE" : false, 
+        "CARDINAL": false,
+        "QUANTITY": false,
+        "LANGUAGE": false,
+    }
+
+    highlight = highlight.filter( f => !Object.keys(groups).includes(f.type) ).map( r => r.text)
+    const parts = text.split(new RegExp(`(${highlight.join("|")})`, 'gi'));
+    return <> { parts.map((part, i) => 
+        highlight.includes(part) ? 
+          <Tag>{part}</Tag>
+        : 
+          <span>{part}</span> 
+        )
+    } </>;
 }
 
 export default HistoryItem

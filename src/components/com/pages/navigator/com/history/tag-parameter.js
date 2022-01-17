@@ -90,11 +90,13 @@ function TagParameters( { data, onClick} ){
 
     if(!tagsSelected) return null;
 
+    const areTagsSelected = () => Object.keys(tagsSelected).reduce( (t,c) => t + tagsSelected[c].length, 0 ) == 0
+
     return (
       <div>
         <Selected style={{width: '100%'}} onClick={ () => setExpanded( !expanded ) }>
           <>
-            {Object.keys(tagsSelected).reduce( (t,c) => t + tagsSelected[c].length, 0 ) == 0 ? 
+            {areTagsSelected() ? 
                 <Small>click here to select tags</Small> 
               : 
                 <>

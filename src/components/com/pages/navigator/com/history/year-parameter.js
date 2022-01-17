@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import ParameterList from '../parameter-list'
 
-function YearsParameters( { data, current, onClick} ){
+function YearsParameters( { disabled, data, current, onClick} ){
     const [ years, setYears ] = useState( [] )
     const [ year, setYear ] = useState( null )
 
@@ -21,7 +21,7 @@ function YearsParameters( { data, current, onClick} ){
     const textMap = (d, i) => (d == current || i == 0) ? d : d.slice(2,4)
 
     return (
-      <ParameterList data={years} current={current} onClick={onClick} textMap={textMap} />
+      <ParameterList disabled={disabled} data={years} current={current} onClick={onClick} textMap={textMap} />
     )
 
 }

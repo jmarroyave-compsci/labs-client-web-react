@@ -15,12 +15,12 @@ const Selected = styled('div')(({theme, width, height}) => ({
   userSelect: 'none',
 }));
 
-const Frame = styled(Stack)(({theme}) => ({
+const Frame = styled(Stack)(({theme, disabled}) => ({
   border: "1px solid",
   borderColor: theme.palette.action.selected,
 }))
 
-const ParameterList = ( { data, current, onClick, textMap=(i)=>i } ) => {
+const ParameterList = ( { disabled=false, data, current, onClick, textMap=(i)=>i } ) => {
   const ref = useRef()
   const _onClick = ( p ) => {
     if(onClick) onClick(p)
@@ -39,7 +39,7 @@ const ParameterList = ( { data, current, onClick, textMap=(i)=>i } ) => {
       <Frame direction='row' spacing={2}>
         <Selected>{current}</Selected>
         <Scrollbars autoHeight ref={ref}>
-            <Stack direction='row' spacing={2} style={{paddingBottom: "0.75rem"}}>
+            <Stack direction='row' spacing={2} style={{paddingBottom: "0.75rem",  pointerEvents: (disabled) ? 'none' : 'inherit', filter: (disabled) ? 'blur(2px)' : 'none',}}>
               { data.map( (g,idx) => 
                 <React.Fragment key={idx}>
                   <Item id={`_${g}`} style={{ opacity: (isSelected(g)) ? 1 : 0.8 }} onClick={ () => _onClick(g) } selected={isSelected(g)}>

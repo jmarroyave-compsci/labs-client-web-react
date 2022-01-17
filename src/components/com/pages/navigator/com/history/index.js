@@ -30,7 +30,7 @@ function History(props){
             <Title>Historical Events <Help text="historical events for a [decade], fetched from wikipedia"/></Title>
             <br/>
           </div>
-          <YearParameter data={history} current={year} onClick={(year) => setYear(year) } />
+          <YearParameter disabled={tagsSelected != null} data={history} current={year} onClick={(year) => setYear(year) } />
           <TagParameter data={history} onClick={(w) => setTagsSelected( w ) } />
           <Scrollbars height={'100%'} style={{ height: '100%'}}>
             <HistoryData data={history} tagsSelected={tagsSelected} year={year} onClick={(w) => context.dispatch( { type: "SELECT_TOPIC", payload: w } ) }/>

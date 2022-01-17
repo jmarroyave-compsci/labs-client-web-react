@@ -4,9 +4,8 @@ import Paper from 'core/ui/paper';
 import ButtonBase from '@mui/material/ButtonBase';
 import { Title, SubTitle, Small, Medium } from './item'
 
-const Frame = styled(Paper)( ( { padding="1rem", height='inherit' } ) => ({
+const Frame = styled(Paper)( ( { padding="1rem", height='100%' } ) => ({
   margin: "0.1rem",
-  marginBottom: "1rem",
   padding: padding,
   width: '100%',
   overflow: 'hidden',

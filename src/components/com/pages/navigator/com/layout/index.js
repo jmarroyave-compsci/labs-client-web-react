@@ -20,7 +20,7 @@ const LayoutProxy = ( props ) => {
 		<div ref={ref} style={{backgroundColor: (theme.palette.mode == "light") ? "#f8f8f8" : 'inherit' }}>
 		{ height != null && offset != null &&
 			<Proxy 
-				xs={<XS height={height - 100} offset={offset}/>}
+				xs={<XS height={height - 110} offset={offset}/>}
 				md={<MD height={height - 100} offset={offset}/>}
 			/>
 		}
