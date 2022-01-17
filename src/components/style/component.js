@@ -21,20 +21,22 @@ const Notes = styled('span')({
   margin: 0,
 });
 
-const _Item = styled('div')( ( {  } ) => ({
+const _Item = styled('div')( ( { selected  } ) => ({
   margin: "0",
   padding: "0.5rem",
   cursor: 'pointer',
   whiteSpace: 'nowrap',
   fontFamily: 'Roboto',
+  userSelect : 'none',
 }));
 
-const Item = ( { selected, selectedStyle={fontWeight: 800}, onClick, children, style={} } ) => {
+const Item = ( { id="#", selected, selectedStyle={fontSize: "125%", fontWeight: "500"}, onClick, children, style={} } ) => {
   return (
+    <div id={id}>
       <ButtonBase
           onClick={event => { if(onClick) onClick(event) }}
       >
-        <_Item>
+        <_Item selected={selected}>
           {( selected ) ? 
             <span style={ { ...style, ...selectedStyle  } }>{children}</span>
             :
@@ -43,6 +45,7 @@ const Item = ( { selected, selectedStyle={fontWeight: 800}, onClick, children, s
           
         </_Item>
       </ButtonBase>  
+    </div>
     )
 }
 

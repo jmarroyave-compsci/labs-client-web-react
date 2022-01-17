@@ -4,6 +4,10 @@ NEXT_PUBLIC__LOCAL=false
 
 NEXT_PUBLIC__PAGE_TITLE=TV | Movies | Podcasts
 NEXT_PUBLIC__TITLE=TV | Movies | Podcasts
+NEXT_PUBLIC__DESCRIPTION=Entertainment analysis
+NEXT_PUBLIC__CARD_THUMBNAIL_TWITTER=/img/cards/twitter_big.png
+
+NEXT_PUBLIC__SOCIAL_NETWORKS_TWITTER=jmarroyave_cs
 
 // Data
 NEXT_PUBLIC__SERVER=https://jmarroyave-data-server-01.herokuapp.com

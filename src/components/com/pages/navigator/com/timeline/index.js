@@ -6,13 +6,14 @@ import DataArea from './data-area';
 import Paper from 'com/ui/paper';
 import { ComponentContext } from '../../context';
 import { Frame, Title  } from 'style/component'
+import Help from "../help"
 
 const Navigator = ( {size} ) => {
     const context = useContext( ComponentContext );
     return ( 
       <Frame style={{height: '100%', display: 'flex', flexDirection : 'column'}}>
         <div>
-          <Title>Topics Timeline (movie titles)</Title>
+          <Title>Words Timeline <Help text="presents the most frequent movie title's words for a [decade] and [genre], fetched from different movie database sources"/></Title>
           <br/>
         </div>
         <div style={{display: 'flex', flexDirection: 'column', height: '100%'}}>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import { styled } from '@mui/material/styles';
 import Stack from 'com/ui/stack';
 import { Item } from 'style/component';
@@ -21,19 +21,31 @@ const Frame = styled(Stack)(({theme}) => ({
 }))
 
 const ParameterList = ( { data, current, onClick, textMap=(i)=>i } ) => {
-    const _onClick = ( p ) => {
-      if(onClick) onClick(p)
-    }
+  const ref = useRef()
+  const _onClick = ( p ) => {
+    if(onClick) onClick(p)
+  }
+
+  const isSelected = ( item ) => current == item
+
+  useEffect( () => {    
+    const p = ref.current.container
+    const d = p.querySelector(`#_${current}`)
+    if(!d) return;
+    d.parentNode.parentNode.scrollTo(d.offsetLeft, 0)
+  }, [])
 
     return (
       <Frame direction='row' spacing={2}>
         <Selected>{current}</Selected>
-        <Scrollbars autoHeight>
+        <Scrollbars autoHeight ref={ref}>
             <Stack direction='row' spacing={2} style={{paddingBottom: "0.75rem"}}>
               { data.map( (g,idx) => 
-                <Item key={idx} onClick={ () => _onClick(g) } selected={(current == g)} style={{userSelect : 'none'}}>
-                  {textMap(g, idx)}
-                </Item>
+                <React.Fragment key={idx}>
+                  <Item id={`_${g}`} style={{ opacity: (isSelected(g)) ? 1 : 0.8 }} onClick={ () => _onClick(g) } selected={isSelected(g)}>
+                    {textMap(g, idx)}
+                  </Item>
+                </React.Fragment>
               )}
             </Stack>
         </Scrollbars>

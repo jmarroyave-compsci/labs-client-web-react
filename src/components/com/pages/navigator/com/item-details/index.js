@@ -4,16 +4,16 @@ import Stack from 'com/ui/stack';
 import Paper from 'com/ui/paper';
 import TopicTimeline from 'com/entities/topics/topic-timeline';
 import { Frame, Title } from 'style/component'
+import Help from "../help"
 
 function Item(props){
     const context = useContext( ComponentContext );
     const { topic, genre, year } = context.state.parameters;
     const topicData = context.data.topic
-
     return (
       <Frame style={{height: '100%', display: 'flex', flexDirection : 'column'}}>
         <div>
-          <Title>Topic: {(topic) ? topic : "no topic selected"}</Title>
+          <Title>{(topic) ? topic : "No topic selected"} <Help text="presents the utilization of a topic in the different genres across the timeline"/></Title>
           <br/>
         </div>
         <div style={{display: 'flex', flexDirection: 'column', height: '100%'}}>

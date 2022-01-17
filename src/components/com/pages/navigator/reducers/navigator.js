@@ -1,15 +1,5 @@
 import React, { useReducer } from 'react';
-
-const InitialState = {
-	initialized: false,
-	parameters: {
-		genre: "action",
-		decade: 2020,
-		page: 1,
-		entity: "movies",		
-		topic: null,
-	},
-}
+import { InitialState } from '../initial-state' 
 
 function NavigatorReducer(state, action) {
 	//console.log("NAVIGATOR", action.type, action.payload)

@@ -9,7 +9,10 @@ const Constants = {
 		SITE_URL: process.env.NEXT_PUBLIC__SITE_URL,
 		VERSION : _package_.version,
 		TITLE: process.env.NEXT_PUBLIC__TITLE,
-		PAGE_TITLE: process.env.NEXT_PUBLIC__PAGE_TITLE
+		DESCRIPTION: process.env.NEXT_PUBLIC__DESCRIPTION,
+		CARD_THUMBNAIL_TWITTER: process.env.NEXT_PUBLIC__CARD_THUMBNAIL_TWITTER,
+		PAGE_TITLE: process.env.NEXT_PUBLIC__PAGE_TITLE,
+		HOME_URL: `${process.env.NEXT_PUBLIC__SITE_URL}${process.env.NEXT_PUBLIC__BASE_PATH}`,
 	},
 	SERVERS: {
 		DATA: process.env.NEXT_PUBLIC__SERVER, 
@@ -29,6 +32,9 @@ const Constants = {
 	FEATURES : {
 		SEARCH : (process.env.NEXT_PUBLIC__FEATURE_SEARCH == "true"),
 	},
+	SOCIAL_NETWORKS: {
+		TWITTER: process.env.NEXT_PUBLIC__SOCIAL_NETWORKS_TWITTER,
+	}
 }
 
 export default Constants;

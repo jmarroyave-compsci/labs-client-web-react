@@ -4,6 +4,7 @@ import { ComponentContext } from '../../context';
 import { Loading } from '../';
 import { Item } from 'style/component';
 import { Scrollbars } from 'react-custom-scrollbars';
+import { styled } from '@mui/material/styles';
 
 function DataArea(props){
     const context = useContext( ComponentContext );
@@ -41,6 +42,13 @@ function DataArea(props){
 
 }
 
+
+
+const Label = styled('div')({
+  userSelect : 'none',
+  whiteSpace: 'nowrap',
+});
+
 function DataAreaColumn( { decade, level, current, records, onClick } ){
   records = ( !records || records.length == 0 || records[0].words.length == 0 ) ? null : records[0];
   var style = {}, n;
@@ -54,20 +62,20 @@ function DataAreaColumn( { decade, level, current, records, onClick } ){
     case 1:
       style.paddingTop = "1rem"
       style.fontSize = '1rem'
-      style.opacity = "0.65"      
+      style.opacity = "0.75"      
       n = 29
       break;
     case 2:
       style.paddingTop = "2rem"
       style.fontSize = '0.75rem'
-      style.opacity = "0.4"      
+      style.opacity = "0.6"      
       n = 30
       break;
   } 
   return (
-    <Stack direction='column' spacing={1} style={{width: "200px", textAlign: 'center'}}> 
-        <div style={{...style, userSelect: 'none'}}>{decade}</div>
-        {(!records || !records.words || records.words.length == 0) && <div style={{...style, whiteSpace: 'nowrap', userSelect: 'none'}}>[ no data ]</div>}
+    <Stack direction='column' spacing={1} style={{...style, width: "200px", textAlign: 'center'}}> 
+        <Label style={{fontSize: "60%", opacity: 0.8}}>{decade}</Label>
+        {(!records || !records.words || records.words.length == 0) && <Label>[ no data ]</Label>}
         {records && records.words.slice(0,n).map( (w, widx) => 
           <Item key={widx} onClick={() => onClick(w.p) } selectedStyle={{ fontWeight: 800}} selected={current === w.p} style={style} >
             {w.p}

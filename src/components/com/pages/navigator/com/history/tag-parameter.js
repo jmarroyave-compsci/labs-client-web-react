@@ -81,6 +81,7 @@ function TagParameters( { data, onClick} ){
       setTagsSelected(initTags())
     }, [tags])
 
+
     const initTags = () => {
       const tagsInit = {}
       Object.keys(tags).forEach( k => tagsInit[k] = [])
@@ -92,7 +93,7 @@ function TagParameters( { data, onClick} ){
     return (
       <div>
         <Selected style={{width: '100%'}} onClick={ () => setExpanded( !expanded ) }>
-          <div>
+          <>
             {Object.keys(tagsSelected).reduce( (t,c) => t + tagsSelected[c].length, 0 ) == 0 ? 
                 <Small>click here to select tags</Small> 
               : 
@@ -103,11 +104,11 @@ function TagParameters( { data, onClick} ){
                       setExpanded(false);
                       e.stopPropagation();
                   }}>
-                    [ clear all ]
+                    <span>[ clear all ]</span>
                   </span>                  
                 </>
             }
-          </div>
+          </>
         </Selected>
         { expanded &&
           <div style={{maxHeight: '300px', overflowY: 'scroll'}}>
@@ -160,15 +161,15 @@ function TagList({ group, title, tags, onChange, value }){
 
 function TagsSelected({data}){
   return (
-      Object.keys(data).map( k => 
-          <div>
+      Object.keys(data).map( (k, idx) => 
+          <React.Fragment key={idx}>
             {data[k].length > 0 &&               
-                <div>
-                  <Notes>{k}</Notes><br/>
-                  <Small>{data[k].join(", ")}</Small>
+                <div style={{width: '100%', whiteSpace: 'wrap', paddingBottom: "0.5rem"}}>
+                  <div style={{lineHeight: "0.6rem", fontSize: '0.5rem', padding: 0}}>{k}</div>
+                  <div style={{lineHeight: "0.75rem", fontSize: '0.7rem', padding: 0}}>{data[k].join(", ")}</div>
                 </div>
             }
-          </div>      
+          </React.Fragment>      
       )
   )
 }
