@@ -47,8 +47,13 @@ function getHighlightedText(text, highlight) {
         "LANGUAGE": false,
     }
 
-    highlight = highlight.filter( f => !Object.keys(groups).includes(f.type) ).map( r => r.text)
-    const parts = text.split(new RegExp(`(${highlight.join("|").replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')})`, 'g'));
+    var parts;    
+      try{
+        highlight = highlight.filter( f => !Object.keys(groups).includes(f.type) ).map( r => r.text)
+        parts = text.split(new RegExp(`(${highlight.join("|")})`, 'g'));        
+      } catch (ex){
+        return <span>{highlight}</span> 
+      }
     return <> { parts.map((part, i) => 
         highlight.includes(part) ? 
           <Tag key={i}>{part}</Tag>

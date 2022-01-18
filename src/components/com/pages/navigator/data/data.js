@@ -66,8 +66,8 @@ const slice = createSlice({
   initialState,
   reducers: {
     setParams : (state, action) => {
-      if(state.params.genre != action.payload.params.genre){
-        state.data.timeline = []
+      if(state.params.genre && state.params.genre != action.payload.genre){
+        state.data.timeline.records = []
       }
 
       state.params = {
