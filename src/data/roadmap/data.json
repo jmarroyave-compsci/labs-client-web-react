@@ -1910,6 +1910,20 @@
           "task": "Day 1:",
           "level": 1,
           "children": null
+        },
+        {
+          "area": null,
+          "hour": 0,
+          "task": "WEEK PLAN",
+          "level": 1,
+          "children": null
+        },
+        {
+          "area": "STORIES",
+          "hour": 0,
+          "task": "Day 1:",
+          "level": 1,
+          "children": null
         }
       ]
     },
@@ -1917,6 +1931,7 @@
     "Sprint 15": {},
     "Sprint 16 - Off": {},
     "Sprint 17": {},
-    "Sprint 18": {}
+    "Sprint 18": {},
+    "Sprint 19": {}
   }
 }

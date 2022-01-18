@@ -10,8 +10,8 @@ const Content = ( props ) => {
 
 	useEffect( () => {
 		dispatch(setPage({
-		  	breadcrumbs: ( appState.theme.newVersion ) ? false : props.breadcrumbs,
-		  	footer: ( appState.theme.newVersion ) ? false : true,
+		  	breadcrumbs: ( appState?.theme?.newVersion ) ? false : props.breadcrumbs,
+		  	footer: ( appState?.theme?.newVersion ) ? false : true,
 		}));
 	}, [])
 
