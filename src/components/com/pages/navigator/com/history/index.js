@@ -27,7 +27,7 @@ function History(props){
       <Frame>
         <Stack style={{ display: 'flex', overflow: 'hidden', height: "100%"}}>
           <div>
-            <Title>Historical Events <Help text="historical events for a [decade], fetched from wikipedia"/></Title>
+            <Title>Historical Events <Help text="historical events for a [decade]."/></Title>
             <br/>
           </div>
           <YearParameter disabled={tagsSelected != null} data={history} current={year} onClick={(year) => setYear(year) } />

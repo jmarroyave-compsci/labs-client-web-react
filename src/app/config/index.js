@@ -10,7 +10,6 @@ const Constants = {
 		VERSION : _package_.version,
 		TITLE: process.env.NEXT_PUBLIC__TITLE,
 		DESCRIPTION: process.env.NEXT_PUBLIC__DESCRIPTION,
-		CARD_THUMBNAIL_TWITTER: `${process.env.NEXT_PUBLIC__BASE_PATH}${process.env.NEXT_PUBLIC__CARD_THUMBNAIL_TWITTER}`,
 		PAGE_TITLE: process.env.NEXT_PUBLIC__PAGE_TITLE,
 		HOME_URL: `${process.env.NEXT_PUBLIC__SITE_URL}${process.env.NEXT_PUBLIC__BASE_PATH}`,
 	},
@@ -33,6 +32,10 @@ const Constants = {
 		SEARCH : (process.env.NEXT_PUBLIC__FEATURE_SEARCH == "true"),
 	},
 	SOCIAL_NETWORKS: {
+		CARD : {
+			TITLE : `${process.env.NEXT_PUBLIC__TITLE} v.${_package_.version}`,
+			THUMBNAIL_TWITTER: `${process.env.NEXT_PUBLIC__BASE_PATH}${process.env.NEXT_PUBLIC__CARD_THUMBNAIL_TWITTER}`,
+		},
 		TWITTER: process.env.NEXT_PUBLIC__SOCIAL_NETWORKS_TWITTER,
 	}
 }

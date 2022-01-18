@@ -17,26 +17,25 @@ function DataArea(props){
     const onClick = ( p ) => context.dispatch( { type: "SELECT_TOPIC", payload: p }) 
 
     var neighbors = [0]; for(var i = 1; i <= nratio; i++) { neighbors.push(i); neighbors.push(-i)}; neighbors = neighbors.sort( (a,b) => (parseInt(a) < parseInt(b)) ? -1 : 1 )
+    const widths = (nratio == 1) ? [50,25] : [30,20,15]
 
     return (
-      <div style={{ flex: 1, margin: "0.5rem 0 0.5rem 0", width: "100%", textAlign: 'center' }}>
-        {context.data.timeline.loading || !records ? 
-            <Loading/>
-          :
-            <Scrollbars style={{flex: 1}}>
-                <Stack direction='row' spacing={2} style={{justifyContent: "center", overflowX: 'hidden'}}>                  
-                  {neighbors.map( l => 
-                    <DataAreaColumn 
-                      key={l} 
-                      level={Math.abs(l)} 
-                      current={current} 
-                      records={records.filter( r => r.year == decade + (10 * l))} 
-                      decade={decade + (10 * l)} onClick={onClick}
-                    />  
-                  )}                  
-                </Stack> 
-            </Scrollbars>
-        }
+      <div style={{ flex: 1, margin: "0", width: "100%", textAlign: 'center' }}>
+        <Scrollbars style={{flex: 1}}>
+            <Stack direction='row' spacing={2} style={{justifyContent: "center", overflowX: 'hidden'}}>                  
+            {neighbors.map( l => 
+              <div key={l} style={{margin: 0, padding: 0, width: `${widths[Math.abs(l)]}%`, overflow: 'hidden'}}>
+                <DataAreaColumn 
+                  level={Math.abs(l)} 
+                  current={current} 
+                  records={records?.filter( r => r.year == decade + (10 * l))} 
+                  decade={decade + (10 * l)} onClick={onClick}
+                  loading={context.data.timeline.loading}
+                />  
+              </div>               
+            )}   
+            </Stack> 
+        </Scrollbars>
       </div>
     )
 
@@ -49,7 +48,7 @@ const Label = styled('div')({
   whiteSpace: 'nowrap',
 });
 
-function DataAreaColumn( { decade, level, current, records, onClick } ){
+function DataAreaColumn( { decade, level, current, records, onClick, loading } ){
   records = ( !records || records.length == 0 || records[0].words.length == 0 ) ? null : records[0];
   var style = {}, n;
 
@@ -73,14 +72,17 @@ function DataAreaColumn( { decade, level, current, records, onClick } ){
       break;
   } 
   return (
-    <Stack direction='column' spacing={1} style={{...style, width: "200px", textAlign: 'center'}}> 
+    <Stack direction='column' spacing={1} style={{...style, width: "100%", textAlign: 'center'}}> 
         <Label style={{fontSize: "60%", opacity: 0.8}}>{decade}</Label>
-        {(!records || !records.words || records.words.length == 0) && <Label>[ no data ]</Label>}
-        {records && records.words.slice(0,n).map( (w, widx) => 
-          <Item key={widx} onClick={() => onClick(w.p) } selectedStyle={{ fontWeight: 800}} selected={current === w.p} style={style} >
-            {w.p}
-          </Item>
-        )}
+        {(!records || !records.words || records.words.length == 0) ? 
+          ((loading) ? <Loading/> : <Label>[ no data ]</Label>)
+        :
+          records && records.words.slice(0,n).map( (w, widx) => 
+            <Item key={widx} onClick={() => onClick(w.p) } selectedStyle={{ fontWeight: 800}} selected={current === w.p} style={style} >
+              {w.p}
+            </Item>
+          )
+        }
       </Stack>
 
   )

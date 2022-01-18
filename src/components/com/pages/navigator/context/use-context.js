@@ -9,23 +9,53 @@ export function useContext( config ){
 	const [ state, dispatch ] = useNavigatorReducer()
 
 	useEffect( ()=>{
-		if(!dataState) return;
 		if(!state) return;
+		if(!dataState) return;
 
 		const data = {
-			...context.data,
 			timeline: dataState.data.timeline,				
-			topic: dataState.data.topic,
+			topic: dataState.data.topic,				
+			results: dataState.data.results,				
 		}
 
 		setContext( { 
 			...context, 
-			isReady: true,
 			data: data,
+			isReady: true,
 			state: state,
 			dispatch: dispatch,
 		})
-	}, [ dataState?.data?.timeline, dataState?.data?.topic, state ])
+	}, [ state, dataState ])
+
+	useEffect( ()=>{
+		if(!dataState) return;
+
+		const data = {
+			...context.data,
+			topic: dataState.data.topic,				
+		}
+
+	}, [ dataState?.data?.topic ])
+
+	useEffect( ()=>{
+		if(!dataState) return;
+
+		const data = {
+			...context.data,
+			timeline: dataState.data.timeline,				
+		}
+
+	}, [ dataState?.data?.timeline ])
+
+	useEffect( ()=>{
+		if(!dataState) return;
+
+		const data = {
+			...context.data,
+			results: dataState.data.results,
+		}
+
+	}, [ dataState?.data?.results ])
 
 	return [ context ]
 }

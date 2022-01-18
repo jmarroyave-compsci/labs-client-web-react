@@ -33,7 +33,7 @@ function App( props ) {
   const dispatch = useDispatch();
   const appState = useSelector(( state ) => state['app'] )
   const [ clientReady, setClientReady ] = useState(false)
-
+  const footer = appState.footer;
   const theme = useMemo( () => {
     return getTheme( appState.theme.mode )
   }, [appState.theme.mode])
@@ -79,9 +79,11 @@ function App( props ) {
             </div>
           </Box>
         </Box>
+        {footer && 
         <Box component="footer" style={{margin: 0, padding: 0}} >
           <Footer/>
         </Box>
+        }
 
       </ThemeProvider>
     </>

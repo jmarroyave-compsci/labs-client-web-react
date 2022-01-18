@@ -3,6 +3,26 @@ import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
 import Paper from 'com/ui/paper';
 
+export const Placeholder = styled(Paper)( ( ) => ({
+  margin: "0.1rem",
+  padding: '1rem',
+  width: '100%',
+  height: '100%',
+  overflow: 'hidden',
+  flex: 1,
+  display: 'flex',  
+}));
+
+export const PlaceholderXS = styled("div")( ( ) => ({
+  margin: "0.1rem",
+  padding: '0.5rem 0 0.5rem 0',
+  width: '100%',
+  height: '100%',
+  overflow: 'hidden',
+  flex: 1,
+  display: 'flex',  
+}));
+
 export const Frame = styled('div')({
   margin: "0 0 2rem 0",
   padding: 0,

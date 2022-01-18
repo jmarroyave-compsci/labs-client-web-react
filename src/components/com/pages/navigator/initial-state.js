@@ -1,6 +1,9 @@
 
 const InitialState = {
 	initialized: false,
+	ui: {
+		page: "TIMELINE",
+	},
 	parameters: {
 		genre: "comedy",
 		decade: 1950,

@@ -3,10 +3,8 @@ import Proxy from 'core/ui/layout/proxy';
 import XS from './xs'
 import MD from './md'
 import useWindowDimensions from '../../hooks/use-window-dimensions'
-import { useTheme } from "@mui/material/styles";
 
 const LayoutProxy = ( props ) => {
-  	const theme = useTheme();
   	const { height, width } = useWindowDimensions();
     const ref = useRef();
     const [ offset, setOffset ]  = useState(null)
@@ -17,11 +15,11 @@ const LayoutProxy = ( props ) => {
     }, [height])  	
 
 	return (
-		<div ref={ref} style={{backgroundColor: (theme.palette.mode == "light") ? "#f8f8f8" : 'inherit' }}>
+		<div ref={ref}>
 		{ height != null && offset != null &&
 			<Proxy 
-				xs={<XS height={height - 110} offset={offset}/>}
-				md={<MD height={height - 100} offset={offset}/>}
+				xs={<XS height={height - 90} offset={offset}/>}
+				md={<MD height={height - 80} offset={offset}/>}
 			/>
 		}
 		</div>

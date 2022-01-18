@@ -1,12 +1,9 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import Paper from 'core/ui/paper';
 import ButtonBase from '@mui/material/ButtonBase';
 import { Title, SubTitle, Small, Medium } from './item'
 
-const Frame = styled(Paper)( ( { padding="1rem", height='100%' } ) => ({
-  margin: "0.1rem",
-  padding: padding,
+const Frame = styled('div')( ( { height='100%' } ) => ({
   width: '100%',
   overflow: 'hidden',
   flex: 1,
@@ -27,19 +24,25 @@ const _Item = styled('div')( ( { selected  } ) => ({
   whiteSpace: 'nowrap',
   fontFamily: 'Roboto',
   userSelect : 'none',
+  width: "100%",
+  overflow: 'hidden',
+  textOverflow: 'ellipsis'
 }));
 
 const Item = ( { id="#", selected, selectedStyle={fontSize: "125%", fontWeight: "500"}, onClick, children, style={} } ) => {
+
+  const ellipsis = { width: "100%", textOverflow: 'ellipsis', whiteSpace: 'nowrap' }
   return (
-    <div id={id}>
+    <div id={id} style={{width: '100%'}}>
       <ButtonBase
           onClick={event => { if(onClick) onClick(event) }}
+          style={{width: '100%'}}
       >
         <_Item selected={selected}>
           {( selected ) ? 
             <span style={ { ...style, ...selectedStyle  } }>{children}</span>
             :
-            <span style={ { ...style } }>{children}</span>
+            <span style={ { ...style  } }>{children}</span>
           }
           
         </_Item>

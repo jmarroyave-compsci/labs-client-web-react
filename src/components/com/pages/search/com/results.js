@@ -51,7 +51,7 @@ const ResultExtra = styled('div')({
 
 function _Results(props){
   const start = useRef(null)
-  const { data, loading, qry, params } = props;
+  const { data, loading, qry, params, showFilters=true, showLegend=true } = props;
 
   const onFiltersChanged = ( params ) => {
     start.current.scrollIntoView(false)
@@ -65,13 +65,17 @@ function _Results(props){
 
   return (
     <Results>
-      <ResultsHeader>
-        <div>search results for: <Query>{params.qry}</Query></div>    
-      </ResultsHeader>
-      <Parameters             
-        onChange={onFiltersChanged}
-        filters={ ( { onChange } ) => <Filters onChange={onChange} params={ params } /> }
-      />
+      {showLegend && 
+        <ResultsHeader>
+          <div>search results for: <Query>{params.qry}</Query></div>    
+        </ResultsHeader>
+      }
+      {showFilters &&
+        <Parameters             
+          onChange={onFiltersChanged}
+          filters={ ( { onChange } ) => <Filters onChange={onChange} params={ params } /> }
+        />
+      }
       <div ref={start}/>
       <ResultsData>
         <Paging {...props} onPageChange={onPageChange} skeleton={<Skeleton/>}>

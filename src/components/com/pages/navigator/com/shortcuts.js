@@ -14,7 +14,7 @@ export const Frame = styled(Stack)({
   alignItems: 'end',
 });
 
-function Shortcuts( { showHistory=false, showResults=false } ){
+function Shortcuts( { showHistory=false, showResults=true } ){
     const context = useContext( ComponentContext );
     const { topic } = context.state.parameters;
 
@@ -29,6 +29,14 @@ function Shortcuts( { showHistory=false, showResults=false } ){
 }
 
 function Button( { children, target, icon, label, disabled=false, extended=null } ){
+  const context = useContext( ComponentContext );
+
+  const clickNav = ( target ) => {
+    scrollTo(target)
+    target = target.toUpperCase()
+    context.dispatch( { type: `UI_${target}`} )
+  }
+
   const scrollTo = (target) => {
     var d = document.getElementById(target)
     if(!d) return
@@ -37,7 +45,7 @@ function Button( { children, target, icon, label, disabled=false, extended=null 
   }
 
   return (
-      <__Button size="small" variant={(extended != null)? "extended" : "circular"} icon={icon} aria-label={label} disabled={disabled} onClick={() => scrollTo(target)}>
+      <__Button size="small" variant={(extended != null)? "extended" : "circular"} icon={icon} aria-label={label} disabled={disabled} onClick={() => clickNav(target)}>
         { extended != null && <span style={{ fontSize: '60%', paddingRight: '0.5rem' }}>{extended}</span> }
         <Icon>{(icon) ? icon : "ac_unit"}</Icon>
       </__Button>

@@ -30,6 +30,46 @@ function NavigatorReducer(state, action) {
 					topic: action.payload,
 				}
 			};
+    case 'CHANGE_RESULTS_PAGE':
+			return {
+				...state,
+				parameters: {
+					...state.parameters,
+					page: action.payload,
+				}
+			};
+    case 'UI_TIMELINE':
+			return {
+				...state,
+				ui : {
+					...state.ui,
+					page: "TIMELINE",
+				}
+			};
+    case 'UI_HISTORY':
+			return {
+				...state,
+				ui : {
+					...state.ui,
+					page: "HISTORY",
+				}
+			};
+    case 'UI_RESULTS':
+			return {
+				...state,
+				ui : {
+					...state.ui,
+					page: "RESULTS",
+				}
+			};
+    case 'UI_TOPIC':
+			return {
+				...state,
+				ui : {
+					...state.ui,
+					page: "TOPIC",
+				}
+			};
     default:
     	console.error("NavigatorReducer", "INVALID ACTION", action.type)
 		return state;

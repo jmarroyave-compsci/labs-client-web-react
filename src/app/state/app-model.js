@@ -8,6 +8,7 @@ const initialState = {
   pageTitle: config.APP.PAGE_TITLE,
   title: config.APP.TITLE,
   breadcrumbs: null,
+  footer: true,
   users: 0,
   features: {
     snow : false,
@@ -74,10 +75,11 @@ export const AppModel = createSlice({
       return state;
     },
     setPage: (state, action) => {
-      const { title, breadcrumbs, pageTitle } = action.payload
+      const { title, breadcrumbs, pageTitle, footer=true } = action.payload
       state.breadcrumbs = ( breadcrumbs !== null ) ? breadcrumbs : state.breadcrumbs;
       state.title = (title && title != "") ? title : initialState.title;
       state.pageTitle = (pageTitle && pageTitle != "") ? pageTitle : initialState.pageTitle;
+      state.footer = footer
     },
     toggleDrawer: (state, action) => {
       state.drawer.open = !state.drawer.open

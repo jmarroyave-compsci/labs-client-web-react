@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { fetchData, fetchTopic } from './data'
+import { fetchData, fetchTopic, fetchResults } from './data'
 import { useDispatch } from 'react-redux'
 
 export default function useContext( context ){
@@ -16,7 +16,15 @@ export default function useContext( context ){
 		if(!context.state.parameters.topic) return;
 
 		dispatch( fetchTopic( { ...context.state.parameters } ) )
+		dispatch( fetchResults( { ...context.state.parameters, page: 1 } ) )
 	}, [ context?.state?.parameters?.topic ])
+
+	useEffect( () => {
+		if(!context.state) return;
+		if(!context.state.parameters.topic) return;
+
+		dispatch( fetchResults( { ...context.state.parameters } ) )
+	}, [ context?.state?.parameters?.page ])
 
 	return [ {} ]
 }

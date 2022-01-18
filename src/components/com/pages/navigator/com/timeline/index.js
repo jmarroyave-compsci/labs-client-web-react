@@ -13,7 +13,7 @@ const Navigator = ( {size} ) => {
     return ( 
       <Frame style={{height: '100%', display: 'flex', flexDirection : 'column'}}>
         <div>
-          <Title>Words Timeline <Help text="presents the most frequent movie title's words for a [decade] and [genre], fetched from different movie database sources"/></Title>
+          <Title>Words Timeline <Help text="presents the most frequent movie title's words for a [decade] and [genre]."/></Title>
           <br/>
         </div>
         <div style={{display: 'flex', flexDirection: 'column', height: '100%'}}>

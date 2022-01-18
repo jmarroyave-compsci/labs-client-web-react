@@ -48,12 +48,12 @@ function getHighlightedText(text, highlight) {
     }
 
     highlight = highlight.filter( f => !Object.keys(groups).includes(f.type) ).map( r => r.text)
-    const parts = text.split(new RegExp(`(${highlight.join("|")})`, 'gi'));
+    const parts = text.split(new RegExp(`(${highlight.join("|").replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')})`, 'g'));
     return <> { parts.map((part, i) => 
         highlight.includes(part) ? 
-          <Tag>{part}</Tag>
+          <Tag key={i}>{part}</Tag>
         : 
-          <span>{part}</span> 
+          <span key={i}>{part}</span> 
         )
     } </>;
 }
