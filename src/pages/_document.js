@@ -19,12 +19,12 @@ export default class MyDocument extends Document {
           <meta name="twitter:site" content={config.APP.HOME_URL} />
           <meta name="twitter:title" content={config.SOCIAL_NETWORKS.CARD.TITLE} />
           <meta name="twitter:description" content={config.APP.DESCRIPTION} />
-          <meta name="twitter:image" content={config.APP.SOCIAL_NETWORKS.CARD.THUMBNAIL_TWITTER} />
+          <meta name="twitter:image" content={config.SOCIAL_NETWORKS.CARD.THUMBNAIL_TWITTER} />
           <meta name="twitter:creator" content={config.SOCIAL_NETWORKS.TWITTER} key="twhandle" />
 
           {/* Open Graph */}
           <meta property="og:url" content={config.APP.HOME_URL} key="ogurl" />
-          <meta property="og:image" content={config.APP.SOCIAL_NETWORKS.CARD.THUMBNAIL_TWITTER} key="ogimage" />
+          <meta property="og:image" content={config.SOCIAL_NETWORKS.CARD.THUMBNAIL_TWITTER} key="ogimage" />
           <meta property="og:site_name" content={config.APP.TITLE} key="ogsitename" />
           <meta property="og:title" content={config.SOCIAL_NETWORKS.CARD.TITLE} key="ogtitle" />
           <meta property="og:description" content={config.APP.DESCRIPTION} key="ogdesc" />
