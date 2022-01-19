@@ -3,11 +3,14 @@ import { styled } from '@mui/material/styles';
 import ButtonBase from '@mui/material/ButtonBase';
 import { Title, SubTitle, Small, Medium } from './item'
 
-const Frame = styled('div')( ( { height='100%' } ) => ({
+const Frame = styled('div')( ( { height='100%', border=false, theme } ) => ({
   width: '100%',
   overflow: 'hidden',
   flex: 1,
   height: height,
+  borderWidth: (border) ? "1px" : 0,
+  borderStyle: 'solid',
+  borderColor: theme.palette.action.selected,
 }));
 
 const Notes = styled('span')({
@@ -29,7 +32,7 @@ const _Item = styled('div')( ( { selected  } ) => ({
   textOverflow: 'ellipsis'
 }));
 
-const Item = ( { id="#", selected, selectedStyle={fontSize: "125%", fontWeight: "500"}, onClick, children, style={} } ) => {
+const Item = ( { id="#", selected, selectedStyle={fontWeight: "500"}, onClick, children, style={} } ) => {
 
   const ellipsis = { width: "100%", textOverflow: 'ellipsis', whiteSpace: 'nowrap' }
   return (

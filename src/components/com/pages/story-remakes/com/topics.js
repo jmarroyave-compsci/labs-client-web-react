@@ -39,7 +39,7 @@ function reducer(state, action){
 }
 
 function Topics( props ){
-  const { words, genre, year } = props.props;
+  const { words, genre, year, loading } = props.props;
   const [ state, dispatch ] = useReducer( reducer, initialState )
 
   const onTopicClick = ( topic ) => {
@@ -60,7 +60,7 @@ function Topics( props ){
           wordCount={(w) => w.count }
         />}
       <br/>
-      {state.topic && <TopicTimeline topic={state.topic} data={props.topicData} onExit={onTopicExit} />}
+      {state.topic && <TopicTimeline topic={state.topic} data={props.topicData?.topic?.data} loading={loading} onExit={onTopicExit} />}
     </div>
   )
 

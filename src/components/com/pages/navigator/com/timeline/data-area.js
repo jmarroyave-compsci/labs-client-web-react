@@ -20,7 +20,7 @@ function DataArea(props){
     const widths = (nratio == 1) ? [50,25] : [30,20,15]
 
     return (
-      <div style={{ flex: 1, margin: "0", width: "100%", textAlign: 'center' }}>
+      <div style={{ flex: 1, margin: "0", width: "100%", textAlign: 'center', padding: "0 0.5rem 0 0" }}>
         <Scrollbars style={{flex: 1}}>
             <Stack direction='row' spacing={2} style={{justifyContent: "center", overflowX: 'hidden'}}>                  
             {neighbors.map( l => 

@@ -5,7 +5,7 @@ const InitialState = {
 		page: "TIMELINE",
 	},
 	parameters: {
-		genre: "comedy",
+		genre: "action",
 		decade: 1950,
 		page: 1,
 		entity: "movies",		

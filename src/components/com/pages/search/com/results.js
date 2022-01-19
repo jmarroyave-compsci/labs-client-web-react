@@ -13,7 +13,7 @@ import Parameters from 'com/ui/parameters';
 import Filters from './filters';
 
 const Results = styled('div')({
-  marginBottom: '4rem',
+  marginBottom: '3rem',
 });
 
 const ResultsHeader = styled('div')({
@@ -28,26 +28,33 @@ const ResultsData = styled('div')({
 });
 
 const Result = styled('div')({
+  paddingRight: '1rem',
 });
 
 const ResultType = styled('div')({
-  fontSize: '0.65rem',
-  lineHeight: '1rem',
+  fontSize: '0.8rem',
+  lineHeight: '0.8rem',
   textTransform: "uppercase",
+  fontFamily: 'monospace',
 });
 
 const ResultText = styled('h3')({
   margin: 0,
   padding: 0,
-  fontSize: '1.5rem',
-  lineHeight: '1.9rem',
+  fontSize: '1.7rem',
+  lineHeight: '2.3rem',
 });
 
 const ResultExtra = styled('div')({
   marginTop: 0,
-  fontSize: '0.85rem',
-  lineHeight: '1rem',
+  fontSize: '1rem',
+  lineHeight: '1.3rem',
 });
+
+const Tag = styled("span")(({theme}) => ({
+  fontWeight: 'bold',
+  opacity: 0.7,
+}))
 
 function _Results(props){
   const start = useRef(null)
@@ -80,7 +87,7 @@ function _Results(props){
       <ResultsData>
         <Paging {...props} onPageChange={onPageChange} skeleton={<Skeleton/>}>
           <Stack
-            spacing={6}
+            spacing={4}
           >
             {data && data.map( (r, idx) => 
               <SearchResults key={idx} r={r}/>    
@@ -94,13 +101,26 @@ function _Results(props){
 
 function SearchResults( props ){
   const { r } = props; 
+  var desc = (r.desc) ? r.desc.split(" ") : [];
+  desc = (desc.length > 25) ? desc.slice(0,25).join(" ") + "..." : desc.join(" ")
+  const highlight = ["plot:", "genre:", "released:"]
+  desc = desc.split(new RegExp(`(${highlight.join("|")})`, 'g'));        
+
   return (
     <Result>
       <ResultType>{r.type.toUpperCase()} [{r.year ?? "?"}]</ResultType>
       <LinkEntity id={r.entityId} type={r.type} entity={r.entity}>
         <ResultText>{r.entity}</ResultText>
       </LinkEntity>
-      {r.desc && <ResultExtra>{r.desc}</ResultExtra>}
+      {r.desc && <ResultExtra>
+        { desc.map((part, i) => 
+          highlight.includes(part) ? 
+            <Tag key={i}>{part}</Tag>
+          : 
+            <span key={i}>{part}</span> 
+          )        
+        }
+      </ResultExtra>}
     </Result>
   )
 }

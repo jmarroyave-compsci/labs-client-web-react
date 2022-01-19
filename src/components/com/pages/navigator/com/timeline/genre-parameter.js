@@ -10,7 +10,10 @@ const GenresParameters = (props) => {
     const onClick = ( p ) => context.dispatch( { type: "CHANGE_GENRE", payload: p }) 
 
     return (
-      <ParameterList data={genres} current={current} onClick={onClick}/>
+      <ParameterList 
+        borderWidth="0 0 1px 0"
+        data={genres} current={current} onClick={onClick}
+      />
     )
 
 }

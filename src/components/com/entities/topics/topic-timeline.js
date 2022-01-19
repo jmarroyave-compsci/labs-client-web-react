@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useMemo } from 'react'
+import { styled } from '@mui/material/styles';
 
 import Stack from '@mui/material/Stack';
 import Chip from '@mui/material/Chip';
@@ -18,28 +19,61 @@ import { getDecades } from 'data/enums/years';
 import { getGenres } from 'data/enums/genres';
 
 function TopicTimeline( props ){
-  const [columns, data] = useMemo( () => getData(props.data), [props.data] )
-  const { onExit, topic } = props;
-  const v3 = (props.data?.records);
+  const [columns, data] = useMemo( () => getData( props.data, props.loading ), [props.data] )
+  const { onExit, topic, v3 } = props;
+
 
   if(columns == null) return null;
 
   return (
-      <div style={{height: "100%", display: "flex"}}>
-        {!v3 &&
-          <Stack direction="row" style={{marginBottom: '1rem'}}>
-            <Chip label={topic.replace(/,/g, " ")} onDelete={ onExit } />
-          </Stack>
-        }
-
-        <Scrollbars >
-          <div style={{ fontSize: '0.6rem', flex: 1}}>
-            <_Table columns={columns} data={data} />
-          </div>
-        </Scrollbars>
+      <div style={{width: '100%', display: "flex", flex: 1}}>
+        <Stack direction="column" spacing={1} style={{width: '100%'}}>
+          {!v3 &&
+            <span>
+              <Chip label={topic.replace(/,/g, " ")} onDelete={ onExit } />
+            </span>
+          }
+          <Scrollbars autoHeight={!v3} style={{flex: 1}}>
+            <div style={{ width: '100%', fontSize: '0.6rem', padding: '0 1rem 1rem 0'}}>
+              <_Table columns={columns} data={data} />
+            </div>
+          </Scrollbars>
+        </Stack>
       </div>
   )
 }
+
+const FreezeHeaderCell = styled(TableCell)( ( { theme, } ) => ({
+  backgroundColor: theme.palette.background.paper,
+  zIndex: "100!important",
+}));
+
+const HeaderCell = styled(TableCell)( ( { theme, } ) => ({
+  writingMode: "vertical-lr",
+  textAlign: 'center',
+  padding: 0,
+  fontSize: '0.8rem',
+  lineHeight: '0.8rem',
+  fontFamily: 'monospace',
+}));
+
+const FreezeCell = styled(TableCell)( ( { theme, } ) => ({
+  backgroundColor: theme.palette.background.paper,
+  zIndex: 90,
+  padding: "0.2rem",
+  paddingLeft: '1rem',
+  fontSize: '0.75rem',
+  lineHeight: '0.75rem',
+}));
+
+const Cell = styled(TableCell)( ( { theme, } ) => ({
+  padding: 0,
+  fontSize: '0.7rem',
+  lineHeight: '0.7rem',
+  borderRight: '1px dotted',
+  borderColor: theme.palette.action.selected,
+}));
+
 
 function _Table({ columns, data }) {
   const {
@@ -55,15 +89,26 @@ function _Table({ columns, data }) {
     useSticky,
   )
 
-  const cellBG = ( i, active ) => (active) ? "rgba(0,0,0,0.4)" : ( ( i % 2 == 0) ? "rgba(0,0,0,0.1)" : "inherit") 
+  const rowBG = ( i, active ) => {
+    return (active) ? "rgba(0,0,0,0.4)" : ( ( i % 2 == 0) ? "rgba(0,0,0,0.1)" : "inherit") 
+  }
+
+  const cellBG = ( i, active ) => {
+    if(col == 0) return "rgba(0,0,0)";
+
+    return (active) ? "rgba(0,0,0,0.4)" : ( ( i % 2 == 0) ? "rgba(0,0,0,0.1)" : "inherit") 
+  }
 
   return (
     <Table size="small" stickyHeader {...getTableProps()}>
       <TableHead>
         {headerGroups.map(headerGroup => (
           <TableRow {...headerGroup.getHeaderGroupProps()}>
-            {headerGroup.headers.map(column => (
-              <TableCell {...column.getHeaderProps()}>{column.render('Header')}</TableCell>
+            {headerGroup.headers.map((column, cx) => (
+              (cx == 0) ?
+              <FreezeHeaderCell  {...column.getHeaderProps()} >{column.render('Header')}</FreezeHeaderCell>
+              :
+              <HeaderCell  {...column.getHeaderProps()} >{column.render('Header')}</HeaderCell> 
             ))}
           </TableRow>
         ))}
@@ -72,10 +117,13 @@ function _Table({ columns, data }) {
         {rows.map((row, i) => {
           prepareRow(row)
           return (
-            <TableRow {...row.getRowProps()} style={{ backgroundColor: cellBG( i, false) }}>
-              {row.cells.map( (cell, cx) => {
-                return <TableCell {...cell.getCellProps()}><div style={{...((cx == 0) ? {zIndex: 99} : {})}}>{cell.render('Cell')}</div></TableCell>
-              })}
+            <TableRow {...row.getRowProps()} style={{ backgroundColor: rowBG( i, false) }}>
+              {row.cells.map( (cell, cx) => 
+              (cx == 0) ?
+              <FreezeCell  {...cell.getCellProps()} >{cell.render('Cell')}</FreezeCell>
+              :
+              <Cell align='center' {...cell.getCellProps()} >{cell.render('Cell')}</Cell>
+              )}
             </TableRow>
           )
         })}
@@ -84,11 +132,9 @@ function _Table({ columns, data }) {
   )
 }  
 
-function getData(data){
-  if(!data || data.loading) return [ null, null];
-
-  data = data.records ?? []
-    
+function getData(data, loading){
+  if(!data || data.length == 0 || loading ) return [ null, null ];
+   
   var resp = [], rec, columns = [];
   const decades = getDecades({ascending : true})
   const genres = getGenres({all : false})

@@ -8,17 +8,17 @@ import Help from "../help"
 
 function Item(props){
     const context = useContext( ComponentContext );
-    const { topic, genre, year } = context.state.parameters;
+    const { topic, genre, decade } = context.state.parameters;
     const topicData = context.data.topic
     return (
       <Frame style={{height: '100%', display: 'flex', flexDirection : 'column'}}>
-        <div style={{flex: 0}}>
-          <Title>Results for: {(topic) ? topic : "No topic selected"} <Help text="presents the search results for the word selected and the specified [decade]"/></Title>
+        <div style={{paddingLeft: '0.5rem'}}>
+          <Title>Results for: {(topic) ? `${topic.toUpperCase()} [ ${decade} - ${decade + 10} ]` : "No topic selected"} <Help text="presents the search results for the word selected and the specified [decade]"/></Title>
           <br/>
         </div>
-        <div style={{display: 'flex', flexDirection: 'column', height: '100%', flex: 1, overflow: 'hidden'}}>
+        <Frame border style={{padding: '1rem', display: 'flex', flexDirection: 'column', height: '100%'}}>
           {topic && <TopicResults/>}
-        </div>
+        </Frame>
       </Frame>
     )
 

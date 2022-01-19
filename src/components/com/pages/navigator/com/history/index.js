@@ -26,15 +26,17 @@ function History(props){
     return (
       <Frame>
         <Stack style={{ display: 'flex', overflow: 'hidden', height: "100%"}}>
-          <div>
+          <div style={{paddingLeft: '0.5rem'}}>
             <Title>Historical Events <Help text="historical events for a [decade]."/></Title>
             <br/>
           </div>
-          <YearParameter disabled={tagsSelected != null} data={history} current={year} onClick={(year) => setYear(year) } />
-          <TagParameter data={history} onClick={(w) => setTagsSelected( w ) } />
-          <Scrollbars height={'100%'} style={{ height: '100%'}}>
-            <HistoryData data={history} tagsSelected={tagsSelected} year={year} onClick={(w) => context.dispatch( { type: "SELECT_TOPIC", payload: w } ) }/>
-          </Scrollbars>
+          <Frame border style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+            <YearParameter disabled={tagsSelected != null} data={history} current={year} onClick={(year) => setYear(year) } />
+            <TagParameter data={history} onClick={(w) => setTagsSelected( w ) } />
+            <Scrollbars height={'100%'} style={{ height: '100%'}}>
+              <HistoryData data={history} tagsSelected={tagsSelected} year={year} onClick={(w) => context.dispatch( { type: "SELECT_TOPIC", payload: w } ) }/>
+            </Scrollbars>
+          </Frame>
         </Stack>
       </Frame>
     )

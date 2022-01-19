@@ -15,12 +15,13 @@ const Selected = styled('div')(({theme, width, height}) => ({
   userSelect: 'none',
 }));
 
-const Frame = styled(Stack)(({theme, disabled}) => ({
-  border: "1px solid",
+const Frame = styled(Stack)(({theme, disabled, borderWidth="1px 0 1px 0"}) => ({
+  borderWidth: borderWidth,
+  borderStyle: 'solid',
   borderColor: theme.palette.action.selected,
 }))
 
-const ParameterList = ( { disabled=false, data, current, onClick, textMap=(i)=>i } ) => {
+const ParameterList = ( { disabled=false, data, current, onClick, textMap=(i)=>i, borderWidth } ) => {
   const ref = useRef()
   const _onClick = ( p ) => {
     if(onClick) onClick(p)
@@ -32,14 +33,16 @@ const ParameterList = ( { disabled=false, data, current, onClick, textMap=(i)=>i
     const p = ref.current.container
     const d = p.querySelector(`#_${current}`)
     if(!d) return;
-    d.parentNode.parentNode.scrollTo(d.offsetLeft, 0)
+    var x = ((p.getBoundingClientRect().width - d.getBoundingClientRect().width) / 2)
+    x = d.offsetLeft - x
+    d.parentNode.parentNode.scrollTo( (x > 0) ? x : 0 , 0)
   }, [])
 
     return (
-      <Frame direction='row' spacing={2}>
+      <Frame direction='row' spacing={2} borderWidth={borderWidth}>
         <Selected>{current}</Selected>
         <Scrollbars autoHeight ref={ref}>
-            <Stack direction='row' spacing={2} style={{paddingBottom: "0.75rem",  pointerEvents: (disabled) ? 'none' : 'inherit', filter: (disabled) ? 'blur(2px)' : 'none',}}>
+            <Stack direction='row' spacing={2} style={{border: 0, paddingBottom: "0.75rem",  pointerEvents: (disabled) ? 'none' : 'inherit', filter: (disabled) ? 'blur(2px)' : 'none',}}>
               { data.map( (g,idx) => 
                 <React.Fragment key={idx}>
                   <Item id={`_${g}`} style={{ opacity: (isSelected(g)) ? 1 : 0.8 }} onClick={ () => _onClick(g) } selected={isSelected(g)}>

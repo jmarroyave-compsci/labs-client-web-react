@@ -12,13 +12,13 @@ function Item(props){
     const topicData = context.data.topic
     return (
       <Frame style={{height: '100%', display: 'flex', flexDirection : 'column'}}>
-        <div style={{flex: 0}}>
-          <Title>{(topic) ? topic : "No topic selected"} <Help text="presents the ocurrences of a word for the different genres through all the timeline"/></Title>
+        <div style={{paddingLeft: '0.5rem'}}>
+          <Title>{(topic) ? topic.toUpperCase() : "No topic selected"} <Help text="presents the ocurrences of a word for the different genres through all the timeline"/></Title>
           <br/>
         </div>
-        <div style={{display: 'flex', flexDirection: 'column', height: '100%', flex: 1, overflow: 'hidden'}}>
-          {topic && <TopicTimeline topic={topic} genre={genre} year={year} data={topicData}  />}
-        </div>
+        <Frame border style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
+          {topic && <TopicTimeline v3 topic={topic} genre={genre} year={year} data={topicData.records} loading={topicData.loading}  />}
+        </Frame>
       </Frame>
     )
 

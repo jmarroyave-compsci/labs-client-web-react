@@ -22,6 +22,7 @@ import Box from '@mui/material/Box';
 import LightModeIcon from '@mui/icons-material/LightMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import { useTheme } from '@mui/material/styles';
+import { Scrollbars } from 'react-custom-scrollbars';
 
 import { toggleDrawer, toggleThemeMode, toggleSnowMode, toggleNewVersion } from 'app';
 
@@ -51,13 +52,17 @@ function Drawer_( props ) {
       anchor={anchor}
       open={appState.drawer.open}
       onClose={ _toggleDrawer }      
-    >
+      PaperProps={{sx: {height: '100%!important'}}}
+    > 
       <Box
         sx={{ 
+          display: 'flex',
+          flexDirection: 'column',
           width: `${drawerWidth}px`,
+          height: '100vh',
           bgcolor: "background.paper",
           color: "text.primary",
-          borderColor : "text.primary"
+          borderColor : "text.primary",
         }}
         role="presentation"
       >
@@ -102,7 +107,11 @@ function Drawer_( props ) {
             </DrawerButton>            
           }  
         </MuiToolbar>
-        {options}
+        <Scrollbars style={{flex: 1}}>
+          <div>
+            {options}
+          </div>
+        </Scrollbars>
       </Box>
     </MuiDrawer>
 	);

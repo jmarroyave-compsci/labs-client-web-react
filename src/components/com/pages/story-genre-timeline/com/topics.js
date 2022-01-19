@@ -63,7 +63,7 @@ function Topics( props ){
     <div>
       {<GenreTimeline {...props} topic={state.topic} data={data} onTopicClick={onTopicClick} />}
       <br/>
-      {state.showTimeline && <TopicTimeline {...props} topic={state.topic} genre={genre} year={year} data={topicData} onExit={onTopicExit} />}
+      {state.showTimeline && <TopicTimeline {...props} topic={state.topic} genre={genre} year={year} data={topicData?.topic.data} loading={loading} onExit={onTopicExit} />}
     </div>
   )
 

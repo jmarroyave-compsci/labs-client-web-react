@@ -16,7 +16,7 @@ import {
 
 export const Frame = styled('div')({
   margin: "0",
-  padding: "0rem 0.5rem",
+  padding: "0rem 0",
   width: '100%',
   overflow: 'hidden',
 });
@@ -29,7 +29,7 @@ function Content(props){
 
     return (
     <Frame>
-        <Shortcuts showHistory={true} />
+        <Shortcuts showHistory={true} mobile />
         <GridContainer>
           {ui == "TIMELINE" &&
           <GridItem xs={12} style={{height: (height), overflow: 'hidden', paddingBottom: '1.5rem'}} >

@@ -5,9 +5,12 @@ import MD from './md'
 import useWindowDimensions from '../../hooks/use-window-dimensions'
 
 const LayoutProxy = ( props ) => {
-  	const { height, width } = useWindowDimensions();
+  	var { height, width } = useWindowDimensions();
     const ref = useRef();
     const [ offset, setOffset ]  = useState(null)
+    const minHeight = 400
+
+    height = (height < minHeight) ? minHeight : height  
 
     useEffect( ()=> {
       const div = ref.current
@@ -18,7 +21,7 @@ const LayoutProxy = ( props ) => {
 		<div ref={ref}>
 		{ height != null && offset != null &&
 			<Proxy 
-				xs={<XS height={height - 90} offset={offset}/>}
+				xs={<XS height={height - 125} offset={offset}/>}
 				md={<MD height={height - 80} offset={offset}/>}
 			/>
 		}

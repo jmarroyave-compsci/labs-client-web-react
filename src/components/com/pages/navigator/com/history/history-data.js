@@ -50,7 +50,7 @@ function HistoryData( { data, year, tagsSelected, onClick } ){
 
     return (
       <React.Fragment>
-          <div onClick={clickWord} style={{ padding: "1rem 0.5rem" }}>
+          <div onClick={clickWord} style={{ padding: "1rem 1.5rem 1rem 1rem" }}>
             {Object.keys(data).map( y =>
               ( y == year || tagsSelected != null ) && data[y].map( (item, idx) => 
                 includesTag(item) && <HistoryItem year={(tagsSelected) ? y : null} key={idx} item={item}/>
