@@ -17,7 +17,7 @@ export const Frame = styled('div')(( {theme} ) =>({
   padding: "0rem 1rem",
   width: '100%',
   overflow: 'hidden',
-  backgroundColor: (theme.palette.mode == "light") ? "#f8f8f8" : 'blue',  
+  backgroundColor: (theme.palette.mode == "light") ? "#f8f8f8" : 'inherit',  
 }));
 
 
