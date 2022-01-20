@@ -43,6 +43,7 @@ const ResultText = styled('h3')({
   padding: 0,
   fontSize: '1.7rem',
   lineHeight: '2.3rem',
+  whiteSpace: 'normal',
 });
 
 const ResultExtra = styled('div')({

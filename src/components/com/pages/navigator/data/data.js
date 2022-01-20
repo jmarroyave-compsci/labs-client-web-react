@@ -3,7 +3,7 @@ import { store } from 'app/state/store'
 import Router from 'next/router'
 import { fetchItems, qryFetchTopic } from 'com/entities/topics/data';
 import config from "../.config.js";
-import { fetchResults as _fetchResults } from "com/pages/search/data"
+import { fetchResults as qryFetchResults } from "com/pages/search/data"
 
 const MODEL_NAME = config.automata.name;
 
@@ -30,19 +30,39 @@ const initialState = {
       loading: true,
       error: null,
       records: null,
+      complete: false,
     },
   }
 }
 
-export const fetchResults = createAsyncThunk(`${MODEL_NAME}/fetchResults`,
-  async ( params, thunkAPI ) => {
+
+const __fetchResults = async ( params ) => {
     params.qry = decodeURIComponent(params.topic)
     params.page = (params.page) ? parseInt(params.page) : 1;
     params.entities = ["movie", "tv_show", "video_game"]
-    params.year = params.decade + 5
-    params.timeFrame = 5;
 
-    return await _fetchResults( params );      
+    if(params.year){
+      params.year = parseInt(params.year) + 5
+      params.timeFrame = 5;      
+    }
+
+    return await qryFetchResults( params );      
+}
+
+export const fetchResults = createAsyncThunk(`${MODEL_NAME}/fetchResults`,
+  async ( params, thunkAPI ) => {
+    //console.log('searching', params)
+
+    var resp = await __fetchResults( { ...params, year: params.decade } );      
+
+    if(resp.data.length > 0){
+      return resp;
+    }
+
+    resp = await __fetchResults( { ...params } );      
+    resp.complete = true;
+
+    return resp
   }
 )
 
@@ -121,10 +141,11 @@ const slice = createSlice({
       state.data.results.error = "";
     },
     [fetchResults.fulfilled]: (state, action) => {
-      const { loading, error, data } = action.payload;
+      const { loading, error, data, complete=false } = action.payload;
       state.data.results.records = data;
       state.data.results.loading = loading;
       state.data.results.error = error;
+      state.data.results.complete = complete;
     },
     [fetchResults.rejected]: (state, action) => {
       const { error } = action;

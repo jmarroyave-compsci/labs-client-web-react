@@ -22,20 +22,51 @@ const Tag = styled("span")(({theme}) => ({
   fontWeight: 'bold',
 }))
 
-function HistoryItem( { item, year } ){
-    return (
-      <React.Fragment>
-        {item.date != "?" &&<div><Small>{(year) ? `[${year}] ` : ""}{item.date}</Small></div>}
-        <Medium>{getHighlightedText(item.event, item.tags)}</Medium>
-      </React.Fragment>
-    )
+const findWord = () => {
+    var selection = window.getSelection();
+    if (!selection || selection.rangeCount < 1) return true;
+    var range = selection.getRangeAt(0);
+    var node = selection.anchorNode;
+    var word_regexp = /^\w*$/;
 
+    // Extend the range backward until it matches word beginning
+    while ((range.startOffset > 0) && range.toString().match(word_regexp)) {
+      range.setStart(node, (range.startOffset - 1));
+    }
+    // Restore the valid word match after overshooting
+    if (!range.toString().match(word_regexp)) {
+      range.setStart(node, range.startOffset + 1);
+    }
+
+    // Extend the range forward until it matches word ending
+    while ((range.endOffset < node.length) && range.toString().match(word_regexp)) {
+      range.setEnd(node, range.endOffset + 1);
+    }
+    // Restore the valid word match after overshooting
+    if (!range.toString().match(word_regexp)) {
+      range.setEnd(node, range.endOffset - 1);
+    }
+
+    var word = range.toString();
+    return word
 }
 
+function HistoryItem( { item, year, onClick } ){
+    const clickWord = (e) => {
+      const w = findWord();
+      if(!w || w.trim() == "") return;
+      if(onClick) onClick(w)
+    }
 
+    return (
+      <div onClick={clickWord} >
+        {item.date != "?" &&<div><Small>{(year) ? `[${year}] ` : ""}{item.date}</Small></div>}
+        <Medium>{getHighlightedText(item.event, item.tags, onClick)}</Medium>
+      </div>
+    )
+}
 
-
-function getHighlightedText(text, highlight) {
+function getHighlightedText(text, highlight, onClick) {
     const groups = {
         "ORDINAL" : false,
         "PERCENT" : false,
@@ -56,7 +87,10 @@ function getHighlightedText(text, highlight) {
       }
     return <> { parts.map((part, i) => 
         highlight.includes(part) ? 
-          <Tag key={i}>{part}</Tag>
+          <Tag key={i} onClick={(e) => {
+            onClick(part)
+            e.stopPropagation(true)
+          }}>{part}</Tag>
         : 
           <span key={i}>{part}</span> 
         )

@@ -33,8 +33,9 @@ const ParameterList = ( { disabled=false, data, current, onClick, textMap=(i)=>i
     const p = ref.current.container
     const d = p.querySelector(`#_${current}`)
     if(!d) return;
-    var x = ((p.getBoundingClientRect().width - d.getBoundingClientRect().width) / 2)
-    x = d.offsetLeft - x
+    const delta = p.parentNode.getBoundingClientRect().width - p.getBoundingClientRect().width
+    var x = ((p.getBoundingClientRect().width - (d.getBoundingClientRect().width)) / 2)
+    x = d.offsetLeft - x + (delta)
     d.parentNode.parentNode.scrollTo( (x > 0) ? x : 0 , 0)
   }, [])
 

@@ -7,18 +7,24 @@ import { Scrollbars } from 'react-custom-scrollbars';
 
 function ItemResults(props){
     const context = useContext( ComponentContext );
-    const { topic, year, page } = context.state.parameters;
+    const { topic, decade, page } = context.state.parameters;
     const resultsData = context.data.results
+
     return (
       <Scrollbars>
-        <Results
-            params={{qry : topic, page: page}}
-            page={page}
-            onPageChange={(page) => context.dispatch( { type: "CHANGE_RESULTS_PAGE", payload: page } ) }
-            data={resultsData.records}
-            showFilters={false}
-            showLegend={false}
-        />
+        <div>
+          <div style={{textAlign: 'center', width: '100%', marginBottom: '1rem'}}>
+            {(resultsData.complete) ? `[ no results found on ${decade}'s ]` : `[ ${decade} - ${parseInt(decade) + 10} ]`}
+          </div>
+          <Results
+              params={{qry : topic, page: page}}
+              page={page}
+              onPageChange={(page) => context.dispatch( { type: "CHANGE_RESULTS_PAGE", payload: page } ) }
+              data={resultsData.records}
+              showFilters={false}
+              showLegend={false}
+          />
+        </div>
       </Scrollbars>
     )
 }

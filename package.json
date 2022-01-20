@@ -1,6 +1,6 @@
 {
   "name": "labs-web-client-react",
-  "version": "3.2.3",
+  "version": "3.2.4",
   "private": true,
   "scripts": {
     "dev": "cross-env BABEL_ENV=dev next dev",
@@ -34,6 +34,7 @@
     "immer": "^9.0.6",
     "js-convert-case": "^4.1.2",
     "next": "^11.0.0",
+    "next-pwa": "^5.4.4",
     "numeral": "^2.0.6",
     "react": "17.0.2",
     "react-custom-scrollbars": "^4.2.1",

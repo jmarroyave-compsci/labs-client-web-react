@@ -13,7 +13,7 @@ function Item(props){
     return (
       <Frame style={{height: '100%', display: 'flex', flexDirection : 'column'}}>
         <div style={{paddingLeft: '0.5rem'}}>
-          <Title>Results for: {(topic) ? `${topic.toUpperCase()} [ ${decade} - ${decade + 10} ]` : "No topic selected"} <Help text="presents the search results for the word selected and the specified [decade]"/></Title>
+          <Title>Results for: {(topic) ? `${topic.toUpperCase()}` : "No topic selected"} <Help text="presents the search results for the word selected and the specified [decade]"/></Title>
           <br/>
         </div>
         <Frame border style={{padding: '1rem', display: 'flex', flexDirection: 'column', height: '100%'}}>

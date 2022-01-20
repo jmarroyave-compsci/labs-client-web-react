@@ -20,7 +20,7 @@ import { getGenres } from 'data/enums/genres';
 
 function TopicTimeline( props ){
   const [columns, data] = useMemo( () => getData( props.data, props.loading ), [props.data] )
-  const { onExit, topic, v3 } = props;
+  const { onExit, topic, v3, onClick } = props;
 
 
   if(columns == null) return null;
@@ -35,7 +35,7 @@ function TopicTimeline( props ){
           }
           <Scrollbars autoHeight={!v3} style={{flex: 1}}>
             <div style={{ width: '100%', fontSize: '0.6rem', padding: '0 1rem 1rem 0'}}>
-              <_Table columns={columns} data={data} />
+              <_Table columns={columns} data={data} onClick={ onClick }/>
             </div>
           </Scrollbars>
         </Stack>
@@ -75,7 +75,7 @@ const Cell = styled(TableCell)( ( { theme, } ) => ({
 }));
 
 
-function _Table({ columns, data }) {
+function _Table({ columns, data, onClick }) {
   const {
     getTableProps,
     getTableBodyProps,
@@ -122,7 +122,7 @@ function _Table({ columns, data }) {
               (cx == 0) ?
               <FreezeCell  {...cell.getCellProps()} >{cell.render('Cell')}</FreezeCell>
               :
-              <Cell align='center' {...cell.getCellProps()} >{cell.render('Cell')}</Cell>
+              <Cell align='center' {...cell.getCellProps()} onClick={ () => { if(onClick) onClick( {decade: cell.column.Header, genre: cell.row.values['genre']} )} } >{cell.render('Cell')}</Cell>
               )}
             </TableRow>
           )

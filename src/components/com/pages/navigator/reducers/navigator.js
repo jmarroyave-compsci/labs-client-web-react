@@ -5,21 +5,19 @@ function NavigatorReducer(state, action) {
 	//console.log("NAVIGATOR", action.type, action.payload)
   switch (action.type) {
     case 'CHANGE_DECADE':
-			return {
+			return (action.payload == state.parameters.decade) ? state : {
 				...state,
 				parameters: {
 					...state.parameters,
 					decade: action.payload,
-					topic: null,
 				}
 			};
     case 'CHANGE_GENRE':
-			return {
+			return (action.payload == state.parameters.genre) ? state : {
 				...state,
 				parameters: {
 					...state.parameters,
 					genre: action.payload,
-					topic: null,
 				}
 			};
     case 'SELECT_TOPIC':

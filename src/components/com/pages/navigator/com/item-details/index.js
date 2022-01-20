@@ -10,6 +10,12 @@ function Item(props){
     const context = useContext( ComponentContext );
     const { topic, genre, year } = context.state.parameters;
     const topicData = context.data.topic
+
+    const onClick = ( {decade, genre }) => {
+      context.dispatch( { type: "CHANGE_GENRE", payload: genre })
+      context.dispatch( { type: "CHANGE_DECADE", payload: decade })
+    }
+
     return (
       <Frame style={{height: '100%', display: 'flex', flexDirection : 'column'}}>
         <div style={{paddingLeft: '0.5rem'}}>
@@ -17,7 +23,7 @@ function Item(props){
           <br/>
         </div>
         <Frame border style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
-          {topic && <TopicTimeline v3 topic={topic} genre={genre} year={year} data={topicData.records} loading={topicData.loading}  />}
+          {topic && <TopicTimeline v3 topic={topic} genre={genre} year={year} data={topicData.records} loading={topicData.loading} onClick={onClick} />}
         </Frame>
       </Frame>
     )

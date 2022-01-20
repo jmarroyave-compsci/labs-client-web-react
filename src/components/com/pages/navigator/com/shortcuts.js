@@ -8,13 +8,13 @@ import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Paper from '@mui/material/Paper';
 
-export const Frame = styled(Stack)({
+export const FloatingNavigation = styled(Stack)({
   padding: "1rem",
   position: "fixed",
   right: 0,
-  bottom: 0,
+  bottom: '0px',
   zIndex: 1000,
-  alignItems: 'end',
+  alignItems: "end",
 });
 
 export const Status = styled("div")( ({theme}) => ({
@@ -27,55 +27,26 @@ export const Status = styled("div")( ({theme}) => ({
   boxShadow: "1px 1px 5px rgb(0 0 0 / 40%)",
 }));
 
-export const Label = styled("span")({
+export const Label = styled("span")( ( { fontSize='100%' } ) => ({
   fontFamily: "monospace",
   textTransform: "uppercase",
-});
+  fontSize: fontSize,
+  display: 'block',
+  maxWidth: '100px',
+  overflow: 'hidden',
+  textOverflow: 'ellipsis',
+  whiteSpace: 'nowrap',
+}));
 
-
-function Shortcuts( { showHistory=false, showResults=true, mobile=false } ){
-  return(
-    <>
-    {mobile && <ShortcutsMobile showHistory showResults/>}
-    {!mobile && <ShortcutsDesktop showHistory showResults/>}
-    </>
-  )
-}
-
-function ShortcutsMobile({ showHistory=false, showResults=true, mobile=false } ){
-    const context = useContext( ComponentContext );
-    const { topic, genre, decade } = context.state.parameters;
-
-    const clickNav = ( target ) => {
-      context.dispatch( { type: `UI_${target}`} )
-    }
-
-    return (
-      <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
-        <BottomNavigation
-          showLabels
-          value={context.state.ui.page}
-          onChange={(event, newValue) => {
-            clickNav(newValue)
-          }}
-        >
-          <BottomNavigationAction label="Timeline" value={"TIMELINE"} icon={<Icon>{"calendar_month"}</Icon>} />
-          <BottomNavigationAction label="History" value={"HISTORY"} icon={<Icon>{"history"}</Icon>} />
-          <BottomNavigationAction disabled={topic == null} label={(topic) ? <Label>{topic}</Label> : "Topic"} value={"TOPIC"} icon={<Icon>{"calendar_view_week"}</Icon>} />
-          <BottomNavigationAction disabled={topic == null} label={(topic) ? <Label>{`${topic}+${decade}`}</Label> : "Results"} value={"RESULTS"} icon={<Icon>{"grid_view"}</Icon>} />
-        </BottomNavigation>
-      </Paper>
-    )  
-}
-
-function ShortcutsDesktop({ showHistory=false, showResults=true, mobile=false } ){
-    const context = useContext( ComponentContext );
-    const { topic, decade } = context.state.parameters;
+function Shortcuts( { mobile=false } ){
+  const context = useContext( ComponentContext );
+  const { topic, genre, decade } = context.state.parameters;
 
   const onClick = ( target ) => {
+    context.dispatch( { type: `UI_${target.toUpperCase()}`} )
+    if(mobile) return;
+
     scrollTo(target)
-    target = target.toUpperCase()
-    context.dispatch( { type: `UI_${target}`} )
   }
 
   const scrollTo = (target) => {
@@ -85,23 +56,59 @@ function ShortcutsDesktop({ showHistory=false, showResults=true, mobile=false } 
     window.scrollTo(0, y)
   }
 
-  return (
-      <Frame direction='column' spacing={1}>
-        <Button target={"timeline"} icon="calendar_month" label="Timeline" onClick={onClick}>Timeline</Button>
-        {topic && <Status><Label>{`${topic}+${decade}`}</Label></Status>}
-        <Button disabled={topic == null} target="topic" icon="calendar_view_week" label="Topic" onClick={onClick}>Topic</Button>
-        <Button disabled={topic == null} target="results" icon="grid_view" label="results" onClick={onClick}>Results</Button>
-      </Frame>
-    )  
+  return(
+    <ShortcutsNav mobile={mobile} onClick={onClick}
+      buttons={[
+        {target:"timeline", icon:"calendar_month", label:"Timeline", extended: (mobile) ? genre : `${genre}+${decade}`, disabled: false, visible: true},
+        {target:"history", icon:"history", label:"History", extended: decade, disabled: false, visible: mobile},
+        {target:"topic", icon:"view_agenda", label:"Topic", extended: topic, disabled: topic == null, visible: true},
+        {target:"results", icon:"view_list", label:"Results", extended: null, disabled: topic == null, visible: true},
+      ]}
+    >
+    </ShortcutsNav>
+  )
 }
 
-function Button( { children, target, icon, label, disabled=false, extended=null, onClick } ){
+function ShortcutsNav( {mobile, buttons, onClick} ){
   return (
-      <__Button size="small" variant={(extended != null)? "extended" : "circular"} icon={icon} aria-label={label} disabled={disabled} onClick={() => onClick(target)}>
-        { extended != null && <span style={{ fontSize: '60%', paddingRight: '0.5rem' }}>{extended}</span> }
-        <Icon>{(icon) ? icon : "ac_unit"}</Icon>
-      </__Button>
+    (mobile) ? 
+      <ShortcutsNavMobile buttons={buttons} onClick={onClick}/>
+    :
+      <ShortcutsNavDesktop buttons={buttons} onClick={onClick}/>
   )
+}
+
+function ShortcutsNavMobile( { buttons, onClick } ){
+  const context = useContext( ComponentContext );
+
+  return (
+    <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }} elevation={3}>
+      <BottomNavigation
+        showLabels={true}
+        value={context.state.ui.page}
+        onChange={(event, newValue) => {
+          onClick(newValue)
+        }}
+      >
+      { buttons.filter( b => b.visible ).map( b =>
+        <BottomNavigationAction key={b.target} disabled={b.disabled} label={<Label>{(b.extended != null) ? b.extended : b.label}</Label>} value={b.target.toUpperCase()} icon={<Icon>{b.icon}</Icon>}/>
+      )}
+      </BottomNavigation>
+    </Paper>
+  )  
+}
+
+function ShortcutsNavDesktop( { buttons, onClick } ){
+  return (
+    <FloatingNavigation direction='column' spacing={1}>
+    { buttons.filter( b => b.visible ).map( b =>      
+      <__Button key={b.target} size="small" variant={"extended"} icon={b.icon} aria-label={b.label} disabled={b.disabled} onClick={() => onClick(b.target)}>
+        <Label fontSize={'60%'}>{(b.extended != null) ? b.extended : b.label }&nbsp;</Label>
+        <Icon>{b.icon}</Icon>
+      </__Button>    
+    )}
+    </FloatingNavigation>
+  )  
 }
 
 export default Shortcuts
