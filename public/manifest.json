@@ -6,7 +6,7 @@
     "start_url": "https://jmarroyave-compsci.github.io/labs-client-web-react/app/",
     "name": "Entertainment Analysis",
     "short_name": "Entertainment Analysis",
-    "description": "How the entertainment content changed across time and how its been influenced by historical events",
+    "description": "How the entertainment content changed through time and how its been influenced by historical events",
     "icons": [
         {
             "src": "ico/icon-192x192.png",
