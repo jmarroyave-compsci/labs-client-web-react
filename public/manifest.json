@@ -1,7 +1,7 @@
 {
     "theme_color": "#06388c",
     "background_color": "white",
-    "display": "standalone",
+    "display": "fullscreen",
     "scope": "/",
     "start_url": "https://jmarroyave-compsci.github.io/labs-client-web-react/app/",
     "name": "Entertainment Analysis",
