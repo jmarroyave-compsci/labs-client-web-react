@@ -11,12 +11,12 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <base href={(config.APP.BASE_PATH.endsWith("/")) ? config.APP.BASE_PATH : `${config.APP.BASE_PATH}/`} />
-          <link rel="manifest" href="/manifest.json" />
-          <link rel="apple-touch-icon" href="/ico/icon.png"></link>
+          <link rel="manifest" href="manifest.json" />
+          <link rel="apple-touch-icon" href="ico/icon.png"></link>
 
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-          <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css" /> 
+          <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" /> 
           <meta name="description" content={config.APP.DESCRIPTION} />
           {/* Twitter */}
           <meta name="twitter:card" content="summary_large_image" />
