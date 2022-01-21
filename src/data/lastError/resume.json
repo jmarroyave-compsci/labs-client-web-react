@@ -112,7 +112,12 @@
       "responseTime": 0
     },
     {
-      "date": "2022-01-18T17:28:41.331Z",
+      "date": "2022-01-18T23:01:54.127Z",
+      "failures": 0,
+      "responseTime": 0
+    },
+    {
+      "date": "2022-01-21T01:05:13.211Z",
       "failures": 0,
       "responseTime": 0
     }
