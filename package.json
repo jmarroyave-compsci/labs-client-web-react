@@ -1,6 +1,6 @@
 {
   "name": "labs-web-client-react",
-  "version": "3.2.4",
+  "version": "3.2.5",
   "private": true,
   "scripts": {
     "dev": "cross-env BABEL_ENV=dev next dev",
@@ -48,8 +48,10 @@
     "react-markdown": "^7.0.1",
     "react-multi-carousel": "^2.6.5",
     "react-redux": "^7.2.5",
+    "react-reveal": "^1.2.2",
     "react-scroll-ondrag": "^2.1.0",
     "react-snowfall": "^1.1.1",
+    "react-swipeable": "^6.2.0",
     "react-syntax-highlighter": "^15.4.4",
     "react-table": "^7.7.0",
     "react-table-hoc-fixed-columns": "^2.3.4",

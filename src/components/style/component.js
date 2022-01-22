@@ -11,6 +11,7 @@ const Frame = styled('div')( ( { height='100%', border=false, theme } ) => ({
   borderWidth: (border) ? "1px" : 0,
   borderStyle: 'solid',
   borderColor: theme.palette.action.selected,
+  borderRadius: '5px',
 }));
 
 const Notes = styled('span')({

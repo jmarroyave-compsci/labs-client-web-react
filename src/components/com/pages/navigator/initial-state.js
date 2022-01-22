@@ -6,7 +6,7 @@ const InitialState = {
 	},
 	parameters: {
 		genre: "action",
-		decade: 1950,
+		decade: 2020,
 		page: 1,
 		entity: "movies",		
 		topic: null,

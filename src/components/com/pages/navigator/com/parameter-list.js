@@ -30,12 +30,14 @@ const ParameterList = ( { disabled=false, data, current, onClick, textMap=(i)=>i
   const isSelected = ( item ) => current == item
 
   useEffect( () => {    
+    if(current == null) return
     const p = ref.current.container
     const d = p.querySelector(`#_${current}`)
     if(!d) return;
     const delta = p.parentNode.getBoundingClientRect().width - p.getBoundingClientRect().width
-    var x = ((p.getBoundingClientRect().width - (d.getBoundingClientRect().width)) / 2)
-    x = d.offsetLeft - x + (delta)
+    var x = (p.getBoundingClientRect().width - d.getBoundingClientRect().width) / 2
+    //x = d.offsetLeft - x
+    x = d.offsetLeft
     d.parentNode.parentNode.scrollTo( (x > 0) ? x : 0 , 0)
   }, [])
 

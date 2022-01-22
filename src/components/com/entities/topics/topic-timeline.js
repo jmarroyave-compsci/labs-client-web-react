@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useMemo } from 'react'
 import { styled } from '@mui/material/styles';
+import ButtonBase from '@mui/material/ButtonBase';
 
 import Stack from '@mui/material/Stack';
 import Chip from '@mui/material/Chip';
@@ -49,9 +50,8 @@ const FreezeHeaderCell = styled(TableCell)( ( { theme, } ) => ({
 }));
 
 const HeaderCell = styled(TableCell)( ( { theme, } ) => ({
-  writingMode: "vertical-lr",
   textAlign: 'center',
-  padding: 0,
+  padding: '0.2rem',
   fontSize: '0.8rem',
   lineHeight: '0.8rem',
   fontFamily: 'monospace',
@@ -122,7 +122,12 @@ function _Table({ columns, data, onClick }) {
               (cx == 0) ?
               <FreezeCell  {...cell.getCellProps()} >{cell.render('Cell')}</FreezeCell>
               :
-              <Cell align='center' {...cell.getCellProps()} onClick={ () => { if(onClick) onClick( {decade: cell.column.Header, genre: cell.row.values['genre']} )} } >{cell.render('Cell')}</Cell>
+              <Cell align='center' {...cell.getCellProps()}>
+                <Check 
+                  onClick={ () => { if(onClick) onClick( {decade: cell.column.Header, genre: cell.row.values['genre']} )} }
+                  cell={cell}
+                />
+              </Cell>
               )}
             </TableRow>
           )
@@ -131,6 +136,19 @@ function _Table({ columns, data, onClick }) {
     </Table>
   )
 }  
+
+const Check = ( { cell, onClick } ) => {
+  if(cell.value == "") return null;
+  return (
+      <ButtonBase
+          onClick={onClick}
+          style={{width: '100%'}}
+      >
+        ✓
+      </ButtonBase>  
+    )
+}
+
 
 function getData(data, loading){
   if(!data || data.length == 0 || loading ) return [ null, null ];

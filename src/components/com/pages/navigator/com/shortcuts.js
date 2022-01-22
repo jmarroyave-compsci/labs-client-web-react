@@ -7,6 +7,7 @@ import Icon from "@mui/material/Icon";
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import Paper from '@mui/material/Paper';
+import Flash from 'react-reveal/Flash';
 
 export const FloatingNavigation = styled(Stack)({
   padding: "1rem",
@@ -27,7 +28,7 @@ export const Status = styled("div")( ({theme}) => ({
   boxShadow: "1px 1px 5px rgb(0 0 0 / 40%)",
 }));
 
-export const Label = styled("span")( ( { fontSize='100%' } ) => ({
+export const _Label = styled("span")( ( { fontSize='100%' } ) => ({
   fontFamily: "monospace",
   textTransform: "uppercase",
   fontSize: fontSize,
@@ -37,6 +38,18 @@ export const Label = styled("span")( ( { fontSize='100%' } ) => ({
   textOverflow: 'ellipsis',
   whiteSpace: 'nowrap',
 }));
+
+function Label( props ){
+  const { children, value } = props
+  return (
+    <Flash spy={value}>
+      <_Label {...props}>
+        {value}
+      </_Label>
+    </Flash>
+  )
+}
+
 
 function Shortcuts( { mobile=false } ){
   const context = useContext( ComponentContext );
@@ -103,7 +116,7 @@ function ShortcutsNavDesktop( { buttons, onClick } ){
     <FloatingNavigation direction='column' spacing={1}>
     { buttons.filter( b => b.visible ).map( b =>      
       <__Button key={b.target} size="small" variant={"extended"} icon={b.icon} aria-label={b.label} disabled={b.disabled} onClick={() => onClick(b.target)}>
-        <Label fontSize={'60%'}>{(b.extended != null) ? b.extended : b.label }&nbsp;</Label>
+        <Label fontSize={'60%'} value={(b.extended != null) ? b.extended : b.label }/>
         <Icon>{b.icon}</Icon>
       </__Button>    
     )}
