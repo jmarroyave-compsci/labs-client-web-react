@@ -13,11 +13,11 @@ import { useSwipeable } from 'react-swipeable';
 function History(props){
     const [ history, setHistory ] = useState( {} )
     const context = useContext( ComponentContext );
-    const currentDecade = context.state.parameters.decade;
+    const currentDecade = parseInt(context.state.parameters.decade);
 
     const [ year, setYear ] = useState( null )
     const [tagsSelected, setTagsSelected] = useState( null )
-    
+
     useEffect( () => {
       if(!currentDecade) return;
       const d = getHistory( {decade : currentDecade} ) 
@@ -25,12 +25,13 @@ function History(props){
     }, [ currentDecade ])
 
     const slide = (direction) => {
-      if(direction == "NEXT" && year < 9){
-        setYear(year + 1)
+      const cYear = parseInt(year)
+      if(direction == "NEXT" && cYear < (currentDecade + Object.keys(history).length - 1)){
+        setYear(cYear + 1)
       }
 
-      if(direction == "PREV" && decade > 0){
-        setYear(year - 1)
+      if(direction == "PREV" && cYear > currentDecade){
+        setYear(cYear - 1)
       }
     }
 
@@ -51,11 +52,11 @@ function History(props){
           <Frame border style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
             <YearParameter disabled={tagsSelected != null} data={history} current={year} onClick={(year) => setYear(year) } />
             <TagParameter data={history} onClick={(w) => setTagsSelected( w ) } />
-            <div  {...handlers}>
-              <Scrollbars height={'100%'} style={{ height: '100%'}}>
+            <Scrollbars height={'100%'} style={{ height: '100%'}}>
+              <div  {...handlers}>
                 <HistoryData data={history} tagsSelected={tagsSelected} year={year} onClick={(w) => context.dispatch( { type: "SELECT_TOPIC", payload: w } ) }/>
-              </Scrollbars>
-            </div>
+              </div>
+            </Scrollbars>
           </Frame>
         </Stack>
       </Frame>
