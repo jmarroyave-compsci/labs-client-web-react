@@ -104,7 +104,7 @@ function ShortcutsNavMobile( { buttons, onClick } ){
         }}
       >
       { buttons.filter( b => b.visible ).map( b =>
-        <BottomNavigationAction key={b.target} disabled={b.disabled} label={<Label>{(b.extended != null) ? b.extended : b.label}</Label>} value={b.target.toUpperCase()} icon={<Icon>{b.icon}</Icon>}/>
+        <BottomNavigationAction key={b.target} disabled={b.disabled} label={<Label value={(b.extended != null) ? b.extended : b.label} />} value={b.target.toUpperCase()} icon={<Icon>{b.icon}</Icon>}/>
       )}
       </BottomNavigation>
     </Paper>
