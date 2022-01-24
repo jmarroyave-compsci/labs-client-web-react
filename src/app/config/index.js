@@ -3,9 +3,9 @@ import Thumbnails from 'data/app/thumbnails'
 import SocialNetworks from 'data/app/social-networks' 
 
 const Constants = {
-	TEST: (process.env.TESTING === "true") ? true : false,
 	DEBUG : process.env.NEXT_PUBLIC__DEBUG,
 	LOCAL : process.env.NEXT_PUBLIC__LOCAL,
+	TEST: (process.env.NEXT_PUBLIC__TESTING === "true") ? true : false,
 	APP : {
 		BASE_PATH: process.env.NEXT_PUBLIC__BASE_PATH,
 		SITE_URL: process.env.NEXT_PUBLIC__SITE_URL,

@@ -3,7 +3,11 @@ const withPWA = require("next-pwa");
 module.exports = withPWA({
   webpack5: true,
   webpack: (config) => {
-    config.resolve.fallback = { fs: false };
+    config.resolve.fallback = { 
+      buffer: false,
+      fs: false,
+      process: false,
+    };
     return config;
   },  
   basePath: process.env.NEXT_PUBLIC__BASE_PATH,

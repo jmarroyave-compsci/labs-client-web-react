@@ -55,4 +55,4 @@ Server:
 
 | Technology | Repo | Site |
 |--|--|--|
-| node-express     | [repo](https://github.com/jmarroyave-compsci/labs-server-node) | [graphql](https://jmarroyave-data-server-01.herokuapp.com/2.0/graphql) |
+| node-express     | [repo](https://github.com/jmarroyave-compsci/labs-server-node) | [graphql](https://jmarroyave-data-server-01.herokuapp.com/4.0/graphql) |
