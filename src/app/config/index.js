@@ -1,4 +1,6 @@
-import _package_ from 'package.json';
+import AppInfo from 'data/app/info' 
+import Thumbnails from 'data/app/thumbnails' 
+import SocialNetworks from 'data/app/social-networks' 
 
 const Constants = {
 	TEST: (process.env.TESTING === "true") ? true : false,
@@ -7,10 +9,10 @@ const Constants = {
 	APP : {
 		BASE_PATH: process.env.NEXT_PUBLIC__BASE_PATH,
 		SITE_URL: process.env.NEXT_PUBLIC__SITE_URL,
-		VERSION : _package_.version,
-		TITLE: process.env.NEXT_PUBLIC__TITLE,
-		DESCRIPTION: process.env.NEXT_PUBLIC__DESCRIPTION,
-		PAGE_TITLE: process.env.NEXT_PUBLIC__PAGE_TITLE,
+		VERSION : AppInfo.VERSION,
+		TITLE: AppInfo.TITLE,
+		DESCRIPTION: AppInfo.DESCRIPTION,
+		PAGE_TITLE: AppInfo.PAGE_TITLE,
 		HOME_URL: `${process.env.NEXT_PUBLIC__SITE_URL}${process.env.NEXT_PUBLIC__BASE_PATH}`,
 	},
 	SERVERS: {
@@ -33,10 +35,10 @@ const Constants = {
 	},
 	SOCIAL_NETWORKS: {
 		CARD : {
-			TITLE : `${process.env.NEXT_PUBLIC__TITLE} v.${_package_.version}`,
-			THUMBNAIL_TWITTER: `${process.env.NEXT_PUBLIC__BASE_PATH}${process.env.NEXT_PUBLIC__CARD_THUMBNAIL_TWITTER}`,
+			TITLE : `${AppInfo.TITLE} ${AppInfo.version}`,
+			THUMBNAIL_TWITTER: `${process.env.NEXT_PUBLIC__BASE_PATH}${Thumbnails.CARDS.LARGE}`,
 		},
-		TWITTER: process.env.NEXT_PUBLIC__SOCIAL_NETWORKS_TWITTER,
+		TWITTER: SocialNetworks.twitter.user,
 	}
 }
 

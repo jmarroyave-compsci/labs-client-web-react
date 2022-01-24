@@ -368,5 +368,25 @@
       "name": "server",
       "commits": 102
     }
+  ],
+  "2022-01-22": [
+    {
+      "name": "client",
+      "commits": 367
+    },
+    {
+      "name": "server",
+      "commits": 102
+    }
+  ],
+  "2022-01-24": [
+    {
+      "name": "client",
+      "commits": 368
+    },
+    {
+      "name": "server",
+      "commits": 102
+    }
   ]
 }
