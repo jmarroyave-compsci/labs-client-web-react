@@ -30,7 +30,7 @@ module.exports = (on, config) => {
   config.env.SITE_URL = process.env.SITE_URL
   config.env.SERVER_URL = process.env.NEXT_PUBLIC__SERVER
   config.env.BASE_URL = config.baseUrl
-  config.env.BASE_PATH = process.env.BASE_PATH
+  config.env.BASE_PATH = process.env.NEXT_PUBLIC__BASE_PATH
 
   //console.log("conf", conf, config.env)
   

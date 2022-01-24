@@ -6,7 +6,7 @@ module.exports = withPWA({
     config.resolve.fallback = { fs: false };
     return config;
   },  
-  basePath: process.env.BASE_PATH,
+  basePath: process.env.NEXT_PUBLIC__BASE_PATH,
   async redirects() {
     return [
     ]
