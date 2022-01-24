@@ -1,5 +1,18 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "app": ["src/app"],
+      "app/*": ["src/app/*"],
+      "lib/*": ["src/lib/*"],
+      "data/*": ["src/data/*"],
+      "res/*": ["src/res/*"],
+      "com/*": ["src/components/com/*"],
+      "core/*": ["src/components/core/*"],
+      "shared/*": ["src/components/shared/*"],
+      "layout/*": ["src/components/layout/*"],
+      "style/*": ["src/components/style/*"],
+    },
     "target": "es5",
     "lib": [
       "dom",

@@ -1,1 +1,0 @@
-(()=>{"use strict";var e=[,e=>{e.exports=()=>{}}],r={};function s(t){var o=r[t];if(void 0!==o)return o.exports;var a=r[t]={exports:{}};return e[t](a,a.exports,s),a.exports}(()=>{self.__WB_DISABLE_DEV_LOGS=!0;s(1)(),self.addEventListener("message",(e=>{console.log(e.data)}))})()})();
