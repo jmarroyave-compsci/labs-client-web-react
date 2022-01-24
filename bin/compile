@@ -1,0 +1,83 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+IFS="$(printf '\n\t')"
+
+readonly BUILD_DIR=$1
+readonly CLEAN_FILES=".slug-post-clean"
+
+if [[ ! -n "${BUILD_DIR}" ]]; then
+  echo "No build directory specified - exiting" >&2
+  exit 1
+fi
+
+cd ${BUILD_DIR}
+
+if [[ ! -f "${CLEAN_FILES}" ]]; then
+  echo "Could not find .slug-post-clean file - exiting" >&2
+  exit 1
+fi
+
+while read PATTERN; do
+
+  if [[ "${PATTERN}" == "" || "${PATTERN:0:1}" == "#" ]]
+  then
+    # empty string or comment
+    continue
+  fi
+  
+  if [[ "${PATTERN/\*/}" != "${PATTERN}" 
+     || "${PATTERN/\?/}" != "${PATTERN}" 
+     || "${PATTERN/\[/}" != "${PATTERN}" 
+     || "${PATTERN/\{/}" != "${PATTERN}" ]]
+  then
+    # wildcard matching - this works only because we've overridden IFS
+    echo "-----> Scanning glob pattern: '${PATTERN}'"
+    for FILENAME in ${PATTERN}; do
+      if [[ -d "${FILENAME}" ]]; then
+        echo "       Removing directory '${FILENAME}' from slug"
+        rm -rf "${FILENAME}"
+        continue
+      elif [[ -f "${FILENAME}" ]]; then
+        echo "       Removing file '${FILENAME}' from slug"
+      elif [[ -p "${FILENAME}" ]]; then
+        echo "       Removing pipe '${FILENAME}' from slug"
+      elif [[ -h "${FILENAME}" ]]; then
+        echo "       Removing symlink '${FILENAME}' from slug"
+      elif [[ -S "${FILENAME}" ]]; then
+        echo "       Removing socket '${FILENAME}' from slug"
+      elif [[ -e "${FILENAME}" ]]; then
+        echo "       Removing misc file entity '${FILENAME}' from slug"
+      elif [[ "${FILENAME}" == "${PATTERN}" ]]; then
+        echo "       No matches found for glob - ignoring"
+        continue
+      fi
+      rm -f "${FILENAME}"
+    done
+  else
+    # literal matching
+    FILENAME="${PATTERN}"
+    if [[ -d "${FILENAME}" ]]; then
+      echo "-----> Removing directory '${FILENAME}' from slug"
+      rm -rf "${FILENAME}"
+      continue
+    elif [[ -f "${FILENAME}" ]]; then
+      echo "-----> Removing file '${FILENAME}' from slug"
+    elif [[ -p "${FILENAME}" ]]; then
+      echo "-----> Removing pipe '${FILENAME}' from slug"
+    elif [[ -h "${FILENAME}" ]]; then
+      echo "-----> Removing symlink '${FILENAME}' from slug"
+    elif [[ -S "${FILENAME}" ]]; then
+      echo "-----> Removing socket '${FILENAME}' from slug"
+    elif [[ -e "${FILENAME}" ]]; then
+      echo "-----> Removing misc file entity '${FILENAME}' from slug"
+    else
+      echo "-----> Location '${FILENAME}' not found - ignoring"
+      continue
+    fi
+    rm -f "${FILENAME}"
+  fi
+
+done <${CLEAN_FILES}
+
+exit 0
