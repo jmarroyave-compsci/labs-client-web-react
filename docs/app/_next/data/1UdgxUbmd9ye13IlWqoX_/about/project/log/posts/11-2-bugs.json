@@ -1,0 +1,1 @@
+{"pageProps":{"article":{"meta":{"title":"Bugs","sprint":11,"day":2,"published":true,"slug":"11-2-bugs"},"content":"\r\n- Types of bugs\r\n\t- [identifier] typos\r\n\t- [identifier] wrong identifiers\r\n\t- [multi-language] writing \",\" in html or \"=\" in json\r\n\t- [sequence] paste in non-identical contexts\r\n\t- [knowledge] wrong output\r\n"}},"__N_SSG":true}

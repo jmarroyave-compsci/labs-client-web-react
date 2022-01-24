@@ -4,15 +4,15 @@
   
 # LABS - React - Web Client 
 
-- [DEMO](https://jmarroyave-compsci.github.io/labs-client-web-react/app/) 
-- [Storybook](https://jmarroyave-compsci.github.io/labs-client-web-react/storybook/) 
+- [DEMO](https://entertainment-analysis.herokuapp.com/) 
+- [Storybook - outdated](https://jmarroyave-compsci.github.io/labs-client-web-react/storybook/) 
 
 
 ## Previous versions
 
 | version | site |
 |--|--|
-| current     | https://jmarroyave-compsci.github.io/labs-client-web-react/app/ |
+| current     | https://entertainment-analysis.herokuapp.com/ |
 | 3.x     | https://jmarroyave-compsci.github.io/labs-client-web-react/archive/v.3/ |
 | 2.x     | https://jmarroyave-compsci.github.io/labs-client-web-react/archive/v.2/ |
 

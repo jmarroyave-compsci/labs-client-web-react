@@ -1,11 +1,12 @@
 {
   "name": "labs-web-client-react",
-  "version": "3.2.5",
+  "version": "4.0.0",
   "private": true,
+  "cacheDirectories": [".next/cache"],
   "scripts": {
     "dev": "cross-env BABEL_ENV=dev next dev",
     "build": "cross-env BABEL_ENV=dev next build && next export -o docs/app",
-    "start": "cross-env BABEL_ENV=dev next build && next start",
+    "start": "cross-env BABEL_ENV=dev next start -p $PORT",
     "test": "cross-env BABEL_ENV=test NODE_OPTIONS=--experimental-vm-modules jest",
     "test-cypress-local": "cypress open --config-file cypress.local.json",
     "test-cypress-local:headless": "cypress run --config-file cypress.local.json",

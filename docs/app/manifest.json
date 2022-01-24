@@ -1,0 +1,32 @@
+{
+    "theme_color": "#06388c",
+    "background_color": "white",
+    "display": "fullscreen",
+    "scope": "/",
+    "start_url": "https://jmarroyave-compsci.github.io/labs-client-web-react/app/",
+    "name": "Entertainment Analysis",
+    "short_name": "Entertainment Analysis",
+    "description": "How the entertainment content changed through time and how its been influenced by historical events",
+    "icons": [
+        {
+            "src": "ico/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "ico/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "ico/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "ico/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
