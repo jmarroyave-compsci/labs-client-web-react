@@ -13,6 +13,7 @@
 | version | site |
 |--|--|
 | current     | https://jmarroyave-compsci.github.io/labs-client-web-react/app/ |
+| 3.x     | https://jmarroyave-compsci.github.io/labs-client-web-react/archive/v.3/ |
 | 2.x     | https://jmarroyave-compsci.github.io/labs-client-web-react/archive/v.2/ |
 
 
