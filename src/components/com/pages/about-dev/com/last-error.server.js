@@ -4,7 +4,7 @@ import Stack from 'com/ui/stack';
 import { Title, SubTitle } from 'style/banner'
 import { Frame } from 'style/boxes'
 import { number as format } from 'core/lib/format'
-import Indicator from 'com/ui/dashboard/indicator';
+import Indicator from 'com/ui/dashboard/indicator.server';
 import LastErrorChart from './last-error-chart';
 import ResponseTimeChart from './response-time-chart';
 

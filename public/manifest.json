@@ -3,7 +3,7 @@
     "background_color": "white",
     "display": "fullscreen",
     "scope": "/",
-    "start_url": "https://jmarroyave-compsci.github.io/labs-client-web-react/app/",
+    "start_url": "https://entertainment-analysis.herokuapp.com/",
     "name": "Entertainment Analysis",
     "short_name": "Entertainment Analysis",
     "description": "How the entertainment content changed through time and how its been influenced by historical events",

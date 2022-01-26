@@ -17,7 +17,7 @@ import Container from '@mui/material/Container';
 import Grid from '@mui/material/Grid';
 import Breadcrumbs from './breadcrumbs';
 import Typography from '@mui/material/Typography';
-import Footer from './footer'
+import Footer from './footer.server'
 import Head from 'next/head';
 import Snackbar from './snackbar';
 import BottomSheet from './bottom-sheet';
