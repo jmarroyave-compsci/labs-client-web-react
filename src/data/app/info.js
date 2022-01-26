@@ -10,7 +10,7 @@ const info = {
   PAGE_TITLE: basics.TITLE,
   TITLE: basics.TITLE,
   DESCRIPTION: basics.DESCRIPTION,
-  VERSION: `V.${_package_.version}`,
+  VERSION: `v.${_package_.version}`,
 }
 
 export default info;

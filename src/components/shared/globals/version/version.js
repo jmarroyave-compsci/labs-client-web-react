@@ -8,6 +8,6 @@ export const Text = styled('span')({
 
 export default function Version({version}){
 	return (
-		<Text>v.{version}</Text>
+		<Text>{version}</Text>
 	)	
 }
