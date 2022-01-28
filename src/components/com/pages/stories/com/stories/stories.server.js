@@ -5,7 +5,7 @@ import { getAreaRelated } from 'data/stories'
 import { Title, Subtitle } from 'style/detail'
 import { Frame } from 'style/boxes'
 import Tiles from 'com/ui/tiles';
-import Item from './item'
+import Item from '../item'
 
 export default function Stories( props ){
   const router = useRouter();

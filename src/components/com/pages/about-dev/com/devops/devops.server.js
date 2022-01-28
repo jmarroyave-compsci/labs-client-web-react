@@ -4,7 +4,7 @@ import Stack from 'com/ui/stack';
 import { Title, SubTitle, Description } from 'style/banner'
 import { Frame } from 'style/boxes'
 import { getCICD } from 'data/ci-cd'
-import Indicator from 'com/ui/dashboard/indicator.server';
+import Indicator from 'com/ui/dashboard/indicator';
 
 export default function Devops( props ){
   var data = getCICD();

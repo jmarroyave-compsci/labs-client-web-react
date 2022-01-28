@@ -46,6 +46,11 @@ export default function BaseApp(props) {
   );
 }
 
+export function reportWebVitals(metric) {
+  if(process.env.NODE_ENV !== "development") return
+  console.log(metric)
+}
+
 BaseApp.propTypes = {
   Component: PropTypes.elementType.isRequired,
   emotionCache: PropTypes.object,
