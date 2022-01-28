@@ -1,12 +1,13 @@
-const withPWA = require("next-pwa");
-
-module.exports = withPWA({
+var configuration = {
+  distDir: 'build',  
   webpack5: true,
   webpack: (config) => {
     config.resolve.fallback = { 
-      buffer: false,
+      buffer: require.resolve('buffer/'),
       fs: false,
-      process: false,
+      process: require.resolve('process/'),
+      util: require.resolve('util/'),
+      assert: require.resolve('assert/'),
     };
     return config;
   },  
@@ -21,4 +22,14 @@ module.exports = withPWA({
     skipWaiting: true,
     disable: process.env.NODE_ENV === "development",    
   },
-});
+}
+
+const withPWA = require("next-pwa");
+configuration = withPWA(configuration);
+
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === "true",    
+})
+configuration = withBundleAnalyzer(configuration)
+
+module.exports = configuration
