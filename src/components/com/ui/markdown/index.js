@@ -1,3 +1,3 @@
-import Markdown from './markdown'
+import Markdown from './markdown.server'
 
 export default Markdown
