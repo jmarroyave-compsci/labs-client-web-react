@@ -9,6 +9,7 @@ const clientSideEmotionCache = createEmotionCache();
 
 import 'core/ui/theme/theme.css';
 import 'core/ui/theme/components.css';
+import '../../public/css/global.css';
 
 // State
 import { Provider as StateProvider } from 'react-redux'

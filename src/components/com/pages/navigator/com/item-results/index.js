@@ -3,8 +3,8 @@ import { ComponentContext } from '../../context';
 import Stack from 'com/ui/stack';
 import Paper from 'com/ui/paper';
 import TopicResults from './results';
-import { Frame, Title } from 'style/component'
-import Help from "../help"
+import { Frame } from 'style/component'
+import SectionTitle from '../section-title'
 
 function Item(props){
     const context = useContext( ComponentContext );
@@ -12,10 +12,10 @@ function Item(props){
     const topicData = context.data.topic
     return (
       <Frame style={{height: '100%', display: 'flex', flexDirection : 'column'}}>
-        <div style={{paddingLeft: '0.5rem'}}>
-          <Title>Results for: {(topic) ? `${topic.toUpperCase()}` : "No topic selected"} <Help text="presents the search results for the word selected and the specified [decade]"/></Title>
-          <br/>
-        </div>
+        <SectionTitle 
+          text={((topic) ? `Results for: ${topic.toUpperCase()}` : "Results: No topic selected")}
+          help="presents the search results for the word selected and the specified [decade]"
+        />
         <Frame border style={{padding: '1rem', display: 'flex', flexDirection: 'column', height: '100%'}}>
           {topic && <TopicResults/>}
         </Frame>

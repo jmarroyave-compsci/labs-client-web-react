@@ -7,7 +7,7 @@ import { getHistory } from 'data/history';
 import YearParameter from './year-parameter'
 import TagParameter from './tag-parameter'
 import HistoryData from './history-data'
-import Help from "../help"
+import SectionTitle from '../section-title'
 import { useSwipeable } from 'react-swipeable';
 
 function History(props){
@@ -45,10 +45,10 @@ function History(props){
     return (
       <Frame>
         <Stack style={{ display: 'flex', overflow: 'hidden', height: "100%"}}>
-          <div style={{paddingLeft: '0.5rem'}}>
-            <Title>Historical Events <Help text="historical events for a [decade]."/></Title>
-            <br/>
-          </div>
+          <SectionTitle 
+            text="Historical Events"
+            help="historical events for a [decade]."
+          />
           <Frame border style={{display: 'flex', flexDirection: 'column', height: '100%'}}>
             <YearParameter disabled={tagsSelected != null} data={history} current={year} onClick={(year) => setYear(year) } />
             <TagParameter data={history} onClick={(w) => setTagsSelected( w ) } />
