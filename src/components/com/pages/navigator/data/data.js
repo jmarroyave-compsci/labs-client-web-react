@@ -68,6 +68,7 @@ export const fetchResults = createAsyncThunk(`${MODEL_NAME}/fetchResults`,
 
 export const fetchTopic = createAsyncThunk(`${MODEL_NAME}/fetchTopic`,
   async ( params, thunkAPI ) => {
+    thunkAPI.dispatch(setParams( params ));        
     return await qryFetchTopic( params );
   }
 )

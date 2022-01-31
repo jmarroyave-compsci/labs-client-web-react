@@ -1,5 +1,4 @@
 import React, { useReducer } from 'react';
-import { InitialState } from '../initial-state' 
 
 function NavigatorReducer(state, action) {
 	//console.log("NAVIGATOR", action.type, action.payload)
@@ -75,8 +74,7 @@ function NavigatorReducer(state, action) {
 }
 
 
-export function useNavigatorReducer(){
-	const [ state, dispatch ] = useReducer(NavigatorReducer, InitialState);
-
+export function useNavigatorReducer( initialState ){
+	const [ state, dispatch ] = useReducer(NavigatorReducer, initialState);
 	return [ state, dispatch ]
 }

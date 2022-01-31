@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { InitialState } from './context';
 import { useSelector } from 'react-redux'
 import { useNavigatorReducer } from '../reducers'
+import { InitialState as InitialReducerState} from '../initial-state' 
 
 export function useContext( config ){
-	const [context, setContext] = useState( InitialState )
 	const dataState = useSelector(( state ) => state[ config.automata.name ] ) 
-	const [ state, dispatch ] = useNavigatorReducer()
+	const [context, setContext] = useState( InitialState )
+	const [ state, dispatch ] = useNavigatorReducer( { ...InitialReducerState, ...( (dataState?.params?.entity) ? ({ parameters: dataState.params }) : ({}) ) } )
 
 	useEffect( ()=>{
 		if(!state) return;

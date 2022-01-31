@@ -5,11 +5,11 @@ const InitialState = {
 		page: "TIMELINE",
 	},
 	parameters: {
+		entity: "movies",		
 		genre: "action",
 		decade: 2020,
-		page: 1,
-		entity: "movies",		
 		topic: null,
+		page: 1,
 	},
 }
 
