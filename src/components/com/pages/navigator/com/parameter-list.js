@@ -34,7 +34,13 @@ const ParameterList = ( { disabled=false, data, current, onClick, textMap=(i)=>i
 
   const scrollToCurrent = () => {
     const p = ref.current.container
-    const d = p.querySelector(`#_${current}`)
+    var d = null;
+
+    try{
+      d = p.querySelector(`#_${current}`)
+    } catch(ex){
+
+    }
     if(!d) return;
     const delta = p.parentNode.getBoundingClientRect().width - p.getBoundingClientRect().width
     var x = (p.getBoundingClientRect().width - d.getBoundingClientRect().width) / 2
