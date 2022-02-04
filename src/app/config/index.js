@@ -35,7 +35,7 @@ const Constants = {
 	},
 	SOCIAL_NETWORKS: {
 		CARD : {
-			TITLE : `${AppInfo.TITLE} ${AppInfo.version}`,
+			TITLE : `${AppInfo.TITLE} ${AppInfo.VERSION}`,
 			THUMBNAIL_TWITTER: `${process.env.NEXT_PUBLIC__BASE_PATH}${Thumbnails.CARDS.LARGE}`,
 		},
 		TWITTER: SocialNetworks.twitter.user,
