@@ -12,7 +12,7 @@ function DataArea(props){
     const context = useContext( ComponentContext );
     const records = context.data.timeline.records;
     const current = context.state.parameters.topic
-    const decade = parseInt(context.state.parameters.decade)
+    const decade = context.state.parameters.decade
     const { height=400, size } = props
     const nratio = (size == "XS") ? 1 : 2;
 
@@ -21,14 +21,18 @@ function DataArea(props){
     var neighbors = [0]; for(var i = 1; i <= nratio; i++) { neighbors.push(i); neighbors.push(-i)}; neighbors = neighbors.sort( (a,b) => (parseInt(a) < parseInt(b)) ? -1 : 1 )
     const widths = (nratio == 1) ? [50,25] : [30,20,15]
 
+    const decadeOthers = ["?", "all"]
+
     const slide = (direction) => {
+      if( decadeOthers.includes(decade) ) return;
+
       var nDecade = parseInt(decade)
 
-      if(direction == "NEXT" && decade < 2020){
+      if(direction == "NEXT" && nDecade < 2020){
         nDecade += 10
       }
 
-      if(direction == "PREV" && decade > 1870){
+      if(direction == "PREV" && nDecade > 1870){
         nDecade -= 10
       }
 
@@ -47,13 +51,24 @@ function DataArea(props){
       <div {...handlers} style={{ flex: 1, margin: "0", width: "100%", textAlign: 'center', padding: "0 0.5rem 0 0" }}>
         <Scrollbars style={{flex: 1}}>
             <Stack direction='row' spacing={2} style={{justifyContent: "center", overflowX: 'hidden'}}>                  
-            {neighbors.map( l => 
+            { (decadeOthers.includes(decade)) ?  
+              <div style={{margin: 0, padding: 0, width: `100%`, overflow: 'hidden'}}>
+                <DataAreaColumn 
+                  level={1} 
+                  current={decade} 
+                  records={records?.filter( r => r.year == decade)} 
+                  decade={decade} onClick={onClick}
+                  loading={context.data.timeline.loading}
+                />  
+              </div>               
+              :
+              neighbors.map( l => 
               <div key={l} style={{margin: 0, padding: 0, width: `${widths[Math.abs(l)]}%`, overflow: 'hidden'}}>
                 <DataAreaColumn 
                   level={Math.abs(l)} 
                   current={current} 
-                  records={records?.filter( r => r.year == decade + (10 * l))} 
-                  decade={decade + (10 * l)} onClick={onClick}
+                  records={records?.filter( r => r.year == parseInt(decade) + (10 * l))} 
+                  decade={parseInt(decade) + (10 * l)} onClick={onClick}
                   loading={context.data.timeline.loading}
                 />  
               </div>               

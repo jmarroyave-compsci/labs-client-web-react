@@ -1,6 +1,6 @@
 const START_YEAR = 1880;
 
-export const getGenres = ( { all=true } ) => { 
+export const getGenres = ( { all=true, unknown=true } ) => { 
   var data = [
         "all",
         "Action",
@@ -30,12 +30,17 @@ export const getGenres = ( { all=true } ) => {
         "Talk-Show",
         "Thriller",
         "War",
-        "Western"
+        "Western",
+        "?"
   ].map( m => m.toLowerCase())
 
   if( !all ){
     data = data.filter( d => d != "all")    
   }
   
+  if( !unknown ){
+    data = data.filter( d => d != "?")    
+  }
+
   return data;
 }

@@ -18,6 +18,7 @@ const Frame = styled(Stack)(({theme, disabled, borderWidth="1px 0 1px 0"}) => ({
   borderWidth: borderWidth,
   borderStyle: 'solid',
   borderColor: theme.palette.action.selected,
+  marginRight: '1rem',
 }))
 
 const ParameterList = ( { disabled=false, data, current, onClick, textMap=(i)=>i, borderWidth } ) => {

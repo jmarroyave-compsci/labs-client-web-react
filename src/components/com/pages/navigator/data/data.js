@@ -41,7 +41,7 @@ const __fetchResults = async ( params ) => {
     params.page = (params.page) ? parseInt(params.page) : 1;
     params.entities = ["movie", "tv_show", "video_game"]
 
-    if(params.year){
+    if(!isNaN(params.year)){
       params.year = parseInt(params.year) + 5
       params.timeFrame = 5;      
     }
@@ -75,6 +75,7 @@ export const fetchTopic = createAsyncThunk(`${MODEL_NAME}/fetchTopic`,
 
 export const fetchData = createAsyncThunk(`${MODEL_NAME}/fetchData`,
   async ( params, thunkAPI ) => {
+    console.log(params)
     thunkAPI.dispatch(setParams( params ));    
     params.nratio = 2
     return await fetchItems( params );

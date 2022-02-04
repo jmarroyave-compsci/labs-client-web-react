@@ -5,7 +5,7 @@ import ParameterList from '../parameter-list'
 
 const GenresParameters = (props) => {
     const context = useContext( ComponentContext );
-    const genres = useMemo( ()=> getGenres({all : false}), [])
+    const genres = useMemo( ()=> getGenres({all : true, unknown: true}), [])
     const current = context.state.parameters.genre
     const onClick = ( p ) => context.dispatch( { type: "CHANGE_GENRE", payload: p }) 
 
